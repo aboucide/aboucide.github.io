@@ -184,9 +184,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2024-08-08 18:05:59 / 修改时间：18:06:28" itemprop="dateCreated datePublished" datetime="2024-08-08T18:05:59+08:00">2024-08-08</time>
+      <time title="创建时间：2024-08-08 18:05:59" itemprop="dateCreated datePublished" datetime="2024-08-08T18:05:59+08:00">2024-08-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-08-09 19:10:14" itemprop="dateModified" datetime="2024-08-09T19:10:14+08:00">2024-08-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -205,7 +211,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>63</span>
+      <span>1.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -223,16 +229,51 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <hr>
-<p>目前网站拥有的分类   categories  </p>
-<p>未分类<br>Testing<br>技术分享<br>资源分享<br>生活记录</p>
-<p>标签<br>生活记录   常用标签tags有</p>
-<ul>
-<li>周记</li>
-<li>月记</li>
-<li>随手记</li>
-</ul>
+          <p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
+<p>hexo配置文件（博客根目录文件夹内的—config.yml）——博客配置文件</p>
+<h1 id="一、博客配置文件的修改"><a href="#一、博客配置文件的修改" class="headerlink" title="一、博客配置文件的修改"></a>一、博客配置文件的修改</h1><h2 id="1-修改站点语言为中文"><a href="#1-修改站点语言为中文" class="headerlink" title="1.修改站点语言为中文"></a>1.修改站点语言为中文</h2><p>打开配置文件，搜索 language，找到如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">author:</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
+
+<p>在 language 后面输入 <strong>zh-CN。</strong></p>
 <hr>
+<h1 id="二、主题配置文件的修改"><a href="#二、主题配置文件的修改" class="headerlink" title="二、主题配置文件的修改"></a>二、主题配置文件的修改</h1><h2 id="1、博客主页显示分类、标签等"><a href="#1、博客主页显示分类、标签等" class="headerlink" title="1、博客主页显示分类、标签等"></a>1、博客主页显示分类、标签等</h2><p>打开主题配置文件，修改menu对应的配置，“#”是注释的标志，删除代码前对应的#号即可激活。</p>
+<img src=" https://im.gurl.eu.org/file/682d06efd3f4ff44679cd.png "  style="zoom:50%;" />
+
+
+
+<h2 id="2、切换next显示的样式（默认提供4种选择）"><a href="#2、切换next显示的样式（默认提供4种选择）" class="headerlink" title="2、切换next显示的样式（默认提供4种选择）"></a>2、切换next显示的样式（默认提供4种选择）</h2><p>找到Schemes板块，选择喜欢的主题，去掉＃即可激活对应模式。</p>
+<p>Dark mode是黑夜模式，把ture改成false就是白天模式。</p>
+<img src=" https://im.gurl.eu.org/file/cf84358115ffcba437def.png "  style="zoom:50%;" />
+
+
+
+<h2 id="3、隐藏网页底部-powered-By-Hexo-强力驱动"><a href="#3、隐藏网页底部-powered-By-Hexo-强力驱动" class="headerlink" title="3、隐藏网页底部 powered By Hexo &#x2F; 强力驱动"></a>3、隐藏网页底部 powered By Hexo &#x2F; 强力驱动</h2><p>打开 themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;footer.swig</p>
+<p>像我这样把这段代码的前后分别加上<code>&lt;!--</code>和<code>--&gt;</code>，即可实现去除底部推广。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">&#123;%- if theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">    &#123;%- set next_site = &#x27;https://theme-next.js.org&#x27; if theme.scheme === &#x27;Gemini&#x27; else &#x27;https://theme-next.js.org/&#x27; + theme.scheme | lower + &#x27;/&#x27; %&#125;</span><br><span class="line">    &#123;&#123;- __(&#x27;footer.powered&#x27;, next_url(&#x27;https://hexo.io&#x27;, &#x27;Hexo&#x27;) + &#x27; &amp; &#x27; + next_url(next_site, &#x27;NexT.&#x27; + theme.scheme)) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;&#123;- next_inject(&#x27;footer&#x27;) &#125;&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、文章添加阴影"><a href="#3、文章添加阴影" class="headerlink" title="3、文章添加阴影"></a>3、文章添加阴影</h2><p>打开    themes\next\source\css_common\components\post\index.styl</p>
+<p>找到<code>.post-block</code></p>
+<img src=" https://im.gurl.eu.org/file/5ac08318ea0348ab2936b.png "  style="zoom:50%;" />
+
+<p>在它后面加{ }，在大括号中间插入如下代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if (hexo-config(&#x27;motion.transition.post_block&#x27;)) &#123;</span><br><span class="line">    .post_block &#123;</span><br><span class="line">   opacity: 0;</span><br><span class="line">   margin-top: 60px;</span><br><span class="line">   margin-bottom: 60px;</span><br><span class="line">   padding: 25px;</span><br><span class="line">   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);</span><br><span class="line">   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);</span><br></pre></td></tr></table></figure>
+
+<p>依次执行hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</p>
+<p>添加阴影前，可以看到这里3篇文章，分割线基本没有，看起来感官不佳。</p>
+<img src=" https://im.gurl.eu.org/file/c52e2863f2b224b8bbd0c.png "  style="zoom:25%;" />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       
     </div>
@@ -1561,17 +1602,21 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">11k</span>
+    <span title="站点总字数">12k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">10 分钟</span>
+    <span title="站点阅读时长">11 分钟</span>
   </span>
 </div>
+
+
+<!--
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
+-->
 
     </div>
   </footer>
