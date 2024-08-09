@@ -484,6 +484,23 @@
 
 
 
+<h2 id="6、修改博客的相关图标"><a href="#6、修改博客的相关图标" class="headerlink" title="6、修改博客的相关图标"></a>6、修改博客的相关图标</h2><p>博客的默认图标在对应主题的文件夹内<code>/themes/next/source/images</code></p>
+<p>只需要把你想要的图片修改成一模一样的名字并替换原文件即可。</p>
+<h2 id="7、打开博客分享按钮"><a href="#7、打开博客分享按钮" class="headerlink" title="7、打开博客分享按钮"></a>7、打开博客分享按钮</h2><p>打开主题配置文件，修改成如下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#打开网站分享的按钮，会显示在文章的底部</span><br><span class="line"># AddToAny Share. See: https://www.addtoany.com</span><br><span class="line">addtoany:</span><br><span class="line">  enable: true</span><br><span class="line">  buttons:</span><br><span class="line">    - facebook</span><br><span class="line">    - twitter</span><br><span class="line">    - telegram</span><br><span class="line">    - wechat</span><br><span class="line">    - qzone</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="8、文章加密访问"><a href="#8、文章加密访问" class="headerlink" title="8、文章加密访问"></a>8、文章加密访问</h2><p>这里提供两种方法，一种是next自带的加密；另一种需要安装加密插件。</p>
+<p>我本人使用的加密是第二种方法。</p>
+<p>8.1 next主题自带的加密</p>
+<p>8.2 使用加密插件hexo-blog-encrypt</p>
+<p>github有使用说明，很简单。</p>
+<h2 id="9、文章字数统计，阅读时间推荐"><a href="#9、文章字数统计，阅读时间推荐" class="headerlink" title="9、文章字数统计，阅读时间推荐"></a>9、文章字数统计，阅读时间推荐</h2><p>打开主题配置文件，修改post_wordcount对应如下代码即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_wordcount:</span><br><span class="line"></span><br><span class="line"> item_text: true</span><br><span class="line"></span><br><span class="line"> wordcount: true     # 单篇 字数统计</span><br><span class="line"></span><br><span class="line"> min2read: true      # 单篇 阅读时长</span><br><span class="line"></span><br><span class="line"> totalcount: false    # 网站 字数统计</span><br><span class="line"></span><br><span class="line"> separated_meta: true</span><br></pre></td></tr></table></figure>
+
+
+
 
 
 ]]></content>
@@ -503,36 +520,6 @@
       </categories>
       <tags>
         <tag>无标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
-    <url>/2024/08/08/wifi/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
-<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
-<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
-<p>问题已经描述完毕，下面是我的解决方法。</p>
-<hr>
-<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
-
-<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
-
-<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
-
-<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
-
-
-
-<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
-<hr>
-<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
-<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>wifi连接</tag>
       </tags>
   </entry>
   <entry>
@@ -565,19 +552,34 @@
       </categories>
   </entry>
   <entry>
-    <title>视频</title>
-    <url>/2024/01/19/%E8%A7%86%E9%A2%91/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是我从抖音下载上传的视频</p>
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVhFd25Eai1neGREa0h6ZkpOeHIzUGdCVGhWbnl3dzBLdkpSUnNVbDA1TmxRdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9bDlRZVVo.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
+    <url>/2024/08/08/wifi/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
+<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
+<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
+<p>问题已经描述完毕，下面是我的解决方法。</p>
+<hr>
+<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
+
+<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
+
+<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
+
+<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
 
 
 
-
-
+<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
+<hr>
+<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
+<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
 ]]></content>
       <categories>
-        <category>Testing</category>
+        <category>技术分享</category>
       </categories>
+      <tags>
+        <tag>wifi连接</tag>
+      </tags>
   </entry>
   <entry>
     <title>第二篇加密6666</title>
@@ -597,6 +599,21 @@
       <tags>
         <tag>Testing</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>视频</title>
+    <url>/2024/01/19/%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是我从抖音下载上传的视频</p>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVhFd25Eai1neGREa0h6ZkpOeHIzUGdCVGhWbnl3dzBLdkpSUnNVbDA1TmxRdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9bDlRZVVo.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>Testing</category>
+      </categories>
   </entry>
   <entry>
     <title>近三年全国各省市高考化学真题分享（学生版+教师版）</title>

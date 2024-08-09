@@ -219,7 +219,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-09 20:06:03" itemprop="dateModified" datetime="2024-08-09T20:06:03+08:00">2024-08-09</time>
+      <time title="修改时间：2024-08-09 21:39:11" itemprop="dateModified" datetime="2024-08-09T21:39:11+08:00">2024-08-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -238,7 +238,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.9k</span>
+      <span>3.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -317,6 +317,23 @@
 
 <p>修改后，如下图多了搜索功能。</p>
 <img src=" https://im.gurl.eu.org/file/d5b66cafdc27a65a8153d.png "  style="zoom:30%;" />
+
+
+
+<h2 id="6、修改博客的相关图标"><a href="#6、修改博客的相关图标" class="headerlink" title="6、修改博客的相关图标"></a>6、修改博客的相关图标</h2><p>博客的默认图标在对应主题的文件夹内<code>/themes/next/source/images</code></p>
+<p>只需要把你想要的图片修改成一模一样的名字并替换原文件即可。</p>
+<h2 id="7、打开博客分享按钮"><a href="#7、打开博客分享按钮" class="headerlink" title="7、打开博客分享按钮"></a>7、打开博客分享按钮</h2><p>打开主题配置文件，修改成如下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#打开网站分享的按钮，会显示在文章的底部</span><br><span class="line"># AddToAny Share. See: https://www.addtoany.com</span><br><span class="line">addtoany:</span><br><span class="line">  enable: true</span><br><span class="line">  buttons:</span><br><span class="line">    - facebook</span><br><span class="line">    - twitter</span><br><span class="line">    - telegram</span><br><span class="line">    - wechat</span><br><span class="line">    - qzone</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="8、文章加密访问"><a href="#8、文章加密访问" class="headerlink" title="8、文章加密访问"></a>8、文章加密访问</h2><p>这里提供两种方法，一种是next自带的加密；另一种需要安装加密插件。</p>
+<p>我本人使用的加密是第二种方法。</p>
+<p>8.1 next主题自带的加密</p>
+<p>8.2 使用加密插件hexo-blog-encrypt</p>
+<p>github有使用说明，很简单。</p>
+<h2 id="9、文章字数统计，阅读时间推荐"><a href="#9、文章字数统计，阅读时间推荐" class="headerlink" title="9、文章字数统计，阅读时间推荐"></a>9、文章字数统计，阅读时间推荐</h2><p>打开主题配置文件，修改post_wordcount对应如下代码即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">post_wordcount:</span><br><span class="line"></span><br><span class="line"> item_text: true</span><br><span class="line"></span><br><span class="line"> wordcount: true     # 单篇 字数统计</span><br><span class="line"></span><br><span class="line"> min2read: true      # 单篇 阅读时长</span><br><span class="line"></span><br><span class="line"> totalcount: false    # 网站 字数统计</span><br><span class="line"></span><br><span class="line"> separated_meta: true</span><br></pre></td></tr></table></figure>
 
 
 
@@ -1656,7 +1673,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">12 分钟</span>
+    <span title="站点阅读时长">13 分钟</span>
   </span>
 </div>
 
@@ -1665,6 +1682,8 @@
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 -->
+
+
 
     </div>
   </footer>
@@ -1698,6 +1717,7 @@
 
 
 
+  <script src="/js/third-party/addtoany.js"></script>
 
   
 
