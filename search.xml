@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>测试自动部署</title>
+    <url>//uncategorized/%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
+<p>目前网站采用的分类格式是</p>
+<p>英文单词翻译作为对应博客的网页地址，格式如下</p>
+<p>aboucide.github.io &#x2F;  一级分类 &#x2F; 二级分类 &#x2F; 三级分类（标签）.html     </p>
+<p>例如我做的md语法笔记，对应的博客地址为</p>
+<p>aboucide.github.io &#x2F;note&#x2F;markdown&#x2F;yufa.html</p>
+<table>
+<thead>
+<tr>
+<th>一级分类</th>
+<th>二级分类</th>
+<th>三级分类（其实就是加标签tag）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>笔记（note）</td>
+<td>hexo</td>
+<td>已有  hexo       next</td>
+</tr>
+<tr>
+<td>笔记（note）</td>
+<td>markdown</td>
+<td>test    用于测试相关功能的页面。</td>
+</tr>
+<tr>
+<td>笔记（note）</td>
+<td>ahk</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>解决某个小问题的方法（solution）</td>
+<td>标签wifi    与wifi有关的博客</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>高中化学（chemistry）</td>
+<td>实验视频（experiment videos）</td>
+<td>标签video   博客中有视频。</td>
+</tr>
+<tr>
+<td>资源分享（source）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>生活记录（liferecord）</td>
+<td>周记（week）</td>
+<td>2024-week33   表示2024年的第33周（8月12号至18号）的周记</td>
+</tr>
+<tr>
+<td></td>
+<td>月记（month）</td>
+<td>2024-8表示8月的月记</td>
+</tr>
+<tr>
+<td></td>
+<td>年记（year）</td>
+<td>2024</td>
+</tr>
+<tr>
+<td></td>
+<td>随手记录 &#x2F; 随笔 essay</td>
+<td>2024-8-12 表示这天有感而发，随手记录</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>未分类（uncategorized）</td>
+<td>这里用来储存未分类的笔记，默认的永久地址</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>无标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>观影记录</title>
     <url>//liferecord/essay/zhuifan.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
@@ -268,6 +385,118 @@
       </tags>
   </entry>
   <entry>
+    <title>观影记录</title>
+    <url>//liferecord/essay/zhuifan.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th>名称</th>
+<th align="left">日期  +  进度</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仙逆⭐⭐⭐⭐⭐</td>
+<td align="left">2024年8月12日   看完第49集</td>
+<td>王林，准备找腾化元报仇。</td>
+</tr>
+<tr>
+<td>凡人修仙传⭐⭐⭐⭐⭐</td>
+<td align="left">2024年8月12日   看完第114集</td>
+<td>韩立，小蜘蛛没了。</td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+]]></content>
+      <categories>
+        <category>生活记录</category>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>追番</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客内嵌入视频-测试</title>
     <url>//hexo/video1.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是我从抖音下载上传的视频（上传到了OneDrive），提取并引用视频的真实地址，采用的是 dplayer插件进行的，md文档不能播放视频。</p>
@@ -316,14 +545,20 @@
       </tags>
   </entry>
   <entry>
-    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
+    <title>深圳某老师与交警精彩的庭审现场视频（2020）自动部署</title>
     <url>//epicwebevent/szjsvsjc.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
 <p>最终结果：交警败诉。</p>
 <p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
-<p>下面是精彩回顾。（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
+<p>下面是精彩回顾（使用dplayer插件插入的视频）。（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
 <div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4","pic":"http://i1.hdslb.com/bfs/archive/87ac1047fd2c3f60c96c535e9e486391d007f5a6.jpg"},"danmaku":{"id":"somedefid","api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
+
+
+
+
+<p>下面是使用html标签插入的视频</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
 ]]></content>
       <categories>
         <category>时事分享</category>
@@ -360,6 +595,23 @@
       </categories>
       <tags>
         <tag>wifi</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
+    <url>//epicwebevent/szjsvsjc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
+<p>最终结果：交警败诉。</p>
+<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
+<p>下面是精彩回顾。（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
+<div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4","pic":"http://i1.hdslb.com/bfs/archive/87ac1047fd2c3f60c96c535e9e486391d007f5a6.jpg"},"danmaku":{"id":"somedefid","api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+]]></content>
+      <categories>
+        <category>时事分享</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
@@ -761,10 +1013,10 @@
   <entry>
     <title>高中化学90个实验视频汇总</title>
     <url>//chemistry/experiment-videos/allvideos.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
 <hr>
-<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
 
 
