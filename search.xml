@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>我的hexo博客设置以及next主题个人喜好</title>
-    <url>//note/hexo/diy.html</url>
+    <url>//blog/note/hexo/diy.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
 <p>hexo配置文件（博客根目录文件夹内的—config.yml）——博客配置文件</p>
 <h1 id="一、博客配置文件的修改"><a href="#一、博客配置文件的修改" class="headerlink" title="一、博客配置文件的修改"></a>一、博客配置文件的修改</h1><h2 id="1-修改站点语言为中文"><a href="#1-修改站点语言为中文" class="headerlink" title="1.修改站点语言为中文"></a>1.修改站点语言为中文</h2><p>打开配置文件，搜索 language，找到如下代码：</p>
@@ -157,236 +157,7 @@
   </entry>
   <entry>
     <title>观影记录</title>
-    <url>//liferecord/essay/zhuifan.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th>名称</th>
-<th align="left">日期  +  进度</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仙逆⭐⭐⭐⭐⭐</td>
-<td align="left">2024年8月12日   看完第49集</td>
-<td>王林，准备找腾化元报仇。</td>
-</tr>
-<tr>
-<td>凡人修仙传⭐⭐⭐⭐⭐</td>
-<td align="left">2024年8月12日   看完第114集</td>
-<td>韩立，小蜘蛛没了。</td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-</tbody></table>
-<hr>
-]]></content>
-      <categories>
-        <category>生活记录</category>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>追番</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试自动部署</title>
-    <url>//uncategorized/%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
-<p>目前网站采用的分类格式是</p>
-<p>英文单词翻译作为对应博客的网页地址，格式如下</p>
-<p>aboucide.github.io &#x2F;  一级分类 &#x2F; 二级分类 &#x2F; 三级分类（标签）.html     </p>
-<p>例如我做的md语法笔记，对应的博客地址为</p>
-<p>aboucide.github.io &#x2F;note&#x2F;markdown&#x2F;yufa.html</p>
-<table>
-<thead>
-<tr>
-<th>一级分类</th>
-<th>二级分类</th>
-<th>三级分类（其实就是加标签tag）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>笔记（note）</td>
-<td>hexo</td>
-<td>已有  hexo       next</td>
-</tr>
-<tr>
-<td>笔记（note）</td>
-<td>markdown</td>
-<td>test    用于测试相关功能的页面。</td>
-</tr>
-<tr>
-<td>笔记（note）</td>
-<td>ahk</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>解决某个小问题的方法（solution）</td>
-<td>标签wifi    与wifi有关的博客</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>高中化学（chemistry）</td>
-<td>实验视频（experiment videos）</td>
-<td>标签video   博客中有视频。</td>
-</tr>
-<tr>
-<td>资源分享（source）</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>生活记录（liferecord）</td>
-<td>周记（week）</td>
-<td>2024-week33   表示2024年的第33周（8月12号至18号）的周记</td>
-</tr>
-<tr>
-<td></td>
-<td>月记（month）</td>
-<td>2024-8表示8月的月记</td>
-</tr>
-<tr>
-<td></td>
-<td>年记（year）</td>
-<td>2024</td>
-</tr>
-<tr>
-<td></td>
-<td>随手记录 &#x2F; 随笔 essay</td>
-<td>2024-8-12 表示这天有感而发，随手记录</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>未分类（uncategorized）</td>
-<td>这里用来储存未分类的笔记，默认的永久地址</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<hr>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>无标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>观影记录</title>
-    <url>//liferecord/essay/zhuifan.html</url>
+    <url>//blog/liferecord/essay/zhuifan.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
 <thead>
 <tr>
@@ -498,21 +269,21 @@
   </entry>
   <entry>
     <title>博客内嵌入视频-测试</title>
-    <url>//hexo/video1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是我从抖音下载上传的视频（上传到了OneDrive），提取并引用视频的真实地址，采用的是 dplayer插件进行的，md文档不能播放视频。</p>
-<p>封面引用了一张携程旅行网的照片。</p>
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVhFd25Eai1neGREa0h6ZkpOeHIzUGdCVGhWbnl3dzBLdkpSUnNVbDA1TmxRdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9bDlRZVVo.mp4","pic":"https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg"},"danmaku":{"id":"somedefid","api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+    <url>//blog/hexo/video1.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这是使用html的video标签插入视频</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot;xxxxxx.mp4&quot;  width=&quot;100%&quot; height=&quot;100%&quot;  poster=&quot;xxxxxx.jpg&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+<p>src是视频的地址；poster是可以设置视频的封面（可选）</p>
+<p><video src="https://cesium.com/public/SandcastleSampleData/big-buck-bunny_trailer.mp4"  width="100%" height="100%" poster="https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg" controls="controls"></video></p>
+<p>下面是B站引用的视频。autoplay&#x3D;0          (1自动播放，0点击播放)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;autoplay=0&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
 
 
-
-<p>下面是B站引用的视频。</p>
 <iframe src="//player.bilibili.com/player.html?aid=754099091&bvid=BV1mk4y1m7nr&cid=220770745&page=1&autoplay=0&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 
 
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;autoplay=0&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
 
-<p>autoplay&#x3D;0          (1自动播放，0点击播放)</p>
+
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -523,8 +294,8 @@
       </tags>
   </entry>
   <entry>
-    <title>这是一篇加密文章的测试，6666</title>
-    <url>//hexo/jiami.html</url>
+    <title>这是一篇加密文章的测试，密码6666</title>
+    <url>//blog/hexo/jiami.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
   <script id="hbeData" type="hbeData" data-hmacdigest="e26dee1a51eed20189f2a1a4d48bf3a28d90b17252255e499297fd22a01d1268">591ad66477dc9f8d468bd98487d7d9f9cd9b9f6ee2197f4aecb152b8361f8df989fae85024aa73cbf6d601a62a94cdb2786bc0b21df69df0903f55ad88b8513e4bf063cb617d8927952d8c8ba2a1601a90220e318d0222df1369b77148628080447c436900b51a59a80a821f17e2ffc38e24067eee1b13d431501a466efaf4e1490bcb27c90c402294d46571296e0ecb375ba07fb653df0bad92e6206bf2716a2916d096ed008759a7f3f7969cfac9931ac8209418e004389735bb8526c89a48ff54c32629a92750400ebe535597ac1f2f6bd7fcc46a3f5d3c2766815f16fe2b1f82f3de3133ed4868a5d737d379dad0306f20df47a5dbbb2c64199ad4b9c075db8857a4068637cdcce3eb7803ca9287d52a63d058aad1e979eaf3c68fb6d9f46f54a410db42a2847148e9a9a02d1cd36f643416dc49425e44422ec57b11811a812cff5ed828d28d06a03fbf66b98ebcbc691cc20a887dff49d9a4b61452c8f49a0cdd1bb7dce96463c2e5ccba3eff2e394f463ead28bbe837a1b4a2702f7e115c641dc43898c2e118d32f88993ed1d03b1db23c98fac6280d3940695a79c0820dbc244add399fab081b729ccb0f89ba7d1fc2edcc419d0c864fb2c738ce92680417cfb06b9f9d8345a7ba31d4b10b9a</script>
   <div class="hbe hbe-content">
@@ -545,48 +316,8 @@
       </tags>
   </entry>
   <entry>
-    <title>深圳某老师与交警精彩的庭审现场视频（2020）自动部署</title>
-    <url>//epicwebevent/szjsvsjc2.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
-<p>最终结果：交警败诉。</p>
-<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
-<p>下面是精彩回顾（使用dplayer插件插入的视频）。（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
-<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4","pic":"http://i1.hdslb.com/bfs/archive/87ac1047fd2c3f60c96c535e9e486391d007f5a6.jpg"},"danmaku":{"id":"somedefid","api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-
-
-
-
-<p>下面是使用html标签插入的视频</p>
-<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
-]]></content>
-      <categories>
-        <category>时事分享</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
-    <url>//epicwebevent/szjsvsjc.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
-<p>最终结果：交警败诉。</p>
-<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
-<p>下面是精彩回顾。（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
-<div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4","pic":"http://i1.hdslb.com/bfs/archive/87ac1047fd2c3f60c96c535e9e486391d007f5a6.jpg"},"danmaku":{"id":"somedefid","api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-]]></content>
-      <categories>
-        <category>时事分享</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
-    <url>//solution/Wifi.html</url>
+    <url>//blog/solution/Wifi.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
 <p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
 <p>连接WiFi，提示<code>无法连接到该wifi</code></p>
@@ -615,8 +346,25 @@
       </tags>
   </entry>
   <entry>
+    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
+    <url>//blog/epicwebevent/szjsvsjc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
+<p>最终结果：交警败诉。</p>
+<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
+<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
+<p>下面是使用html标签插入的视频</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+]]></content>
+      <categories>
+        <category>时事分享</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法</title>
-    <url>//note/markdown/yufa.html</url>
+    <url>//blog/note/markdown/yufa.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>在需要目录出现的地方（一般在文章一开始）放置一个标记<code>[toc]</code>，这样会自动生成一个嵌套的包含所有标题的列表。</p>
 <p>[toc]</p>
 <hr>
@@ -799,7 +547,15 @@
 <p>超链接名：百度搜索，地址  <a href="http://www.baidu.com/">www.baidu.com</a>	,鼠标移到<code>百度搜索</code>这个文本上时，显示<code>百度搜索的官网</code></p>
 <p><a href="https://www.baidu.com/" title="百度搜索的官网">百度搜索</a></p>
 <p><a href="https://www.baidu.com/">我是无title的超链接</a></p>
-<h2 id="7-视频引用"><a href="#7-视频引用" class="headerlink" title="7.视频引用"></a>7.视频引用</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">引用Bilibili的视频代码如下</span><br><span class="line"></span><br><span class="line">官方给的嵌入代码（只需要在网页版的分享按钮里有嵌入代码）</span><br><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">修改后的代码</span><br><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="7-视频引用"><a href="#7-视频引用" class="headerlink" title="7.视频引用"></a>7.视频引用</h2><p>这里有两种方法，第一种是使用video标签，第二种是使用iframe标签。</p>
+<p>video标签语法如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot;xxxxxx.mp4&quot;  width=&quot;100%&quot; height=&quot;100%&quot;  poster=&quot;xxxxxx.jpg&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+<p>src是视频的地址；poster是可以设置视频的封面（可选）</p>
+<p><video src="https://cesium.com/public/SandcastleSampleData/big-buck-bunny_trailer.mp4"  width="100%" height="100%" poster="https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg" controls="controls"></video></p>
+<hr>
+<p>下面是使用iframe标签，这里一般是各大视频网站直接提供的，自己去他们的网站找到复制粘贴即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">引用Bilibili的视频代码如下</span><br><span class="line"></span><br><span class="line">官方给的嵌入代码（只需要在网页版的分享按钮里有嵌入代码）</span><br><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">修改后的代码</span><br><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
 
 
 
@@ -977,8 +733,31 @@
       </tags>
   </entry>
   <entry>
+    <title>高中化学90个实验视频汇总</title>
+    <url>//blog/chemistry/experiment-videos/allvideos.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+<hr>
+<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+
+
+
+
+
+<h1 id="03配置100毫升1mo1L氯化钠溶液"><a href="#03配置100毫升1mo1L氯化钠溶液" class="headerlink" title="03配置100毫升1mo1L氯化钠溶液"></a>03配置100毫升1mo1L氯化钠溶液</h1><h1 id="04氢氧化铁胶体制备、丁达尔效应"><a href="#04氢氧化铁胶体制备、丁达尔效应" class="headerlink" title="04氢氧化铁胶体制备、丁达尔效应"></a>04氢氧化铁胶体制备、丁达尔效应</h1><h1 id="05离子反应"><a href="#05离子反应" class="headerlink" title="05离子反应"></a>05离子反应</h1><h1 id="06钠的性质"><a href="#06钠的性质" class="headerlink" title="06钠的性质"></a>06钠的性质</h1><h1 id="07铁与水蒸气反应"><a href="#07铁与水蒸气反应" class="headerlink" title="07铁与水蒸气反应"></a>07铁与水蒸气反应</h1><h1 id="08铝与酸、碱溶液的反应"><a href="#08铝与酸、碱溶液的反应" class="headerlink" title="08铝与酸、碱溶液的反应"></a>08铝与酸、碱溶液的反应</h1><h1 id="09过氧化钠的性质"><a href="#09过氧化钠的性质" class="headerlink" title="09过氧化钠的性质"></a>09过氧化钠的性质</h1><h1 id="10碳酸钠和碳酸氢钠的性质"><a href="#10碳酸钠和碳酸氢钠的性质" class="headerlink" title="10碳酸钠和碳酸氢钠的性质"></a>10碳酸钠和碳酸氢钠的性质</h1><h1 id="11焰色反应"><a href="#11焰色反应" class="headerlink" title="11焰色反应"></a>11焰色反应</h1><h1 id="12铁的氢氧化物的制备"><a href="#12铁的氢氧化物的制备" class="headerlink" title="12铁的氢氧化物的制备"></a>12铁的氢氧化物的制备</h1><h1 id="13三价铁离子的检验"><a href="#13三价铁离子的检验" class="headerlink" title="13三价铁离子的检验"></a>13三价铁离子的检验</h1><h1 id="14铁盐和亚铁盐的一些性质"><a href="#14铁盐和亚铁盐的一些性质" class="headerlink" title="14铁盐和亚铁盐的一些性质"></a>14铁盐和亚铁盐的一些性质</h1><h1 id="15硅酸的制备、硅酸钠的性质"><a href="#15硅酸的制备、硅酸钠的性质" class="headerlink" title="15硅酸的制备、硅酸钠的性质"></a>15硅酸的制备、硅酸钠的性质</h1><h1 id="16氢气在氯气中燃烧"><a href="#16氢气在氯气中燃烧" class="headerlink" title="16氢气在氯气中燃烧"></a>16氢气在氯气中燃烧</h1><h1 id="17氯水、氯气的漂白作用"><a href="#17氯水、氯气的漂白作用" class="headerlink" title="17氯水、氯气的漂白作用"></a>17氯水、氯气的漂白作用</h1><h1 id="18氯离子的检验"><a href="#18氯离子的检验" class="headerlink" title="18氯离子的检验"></a>18氯离子的检验</h1><h1 id="19二氧化硫的制备与性质"><a href="#19二氧化硫的制备与性质" class="headerlink" title="19二氧化硫的制备与性质"></a>19二氧化硫的制备与性质</h1><h1 id="20氨溶于水的喷泉实验"><a href="#20氨溶于水的喷泉实验" class="headerlink" title="20氨溶于水的喷泉实验"></a>20氨溶于水的喷泉实验</h1><h1 id="21氨的实验室制法"><a href="#21氨的实验室制法" class="headerlink" title="21氨的实验室制法"></a>21氨的实验室制法</h1><h1 id="22铜与浓硫酸的反应"><a href="#22铜与浓硫酸的反应" class="headerlink" title="22铜与浓硫酸的反应"></a>22铜与浓硫酸的反应</h1><h1 id="23钾在空气中燃烧"><a href="#23钾在空气中燃烧" class="headerlink" title="23钾在空气中燃烧"></a>23钾在空气中燃烧</h1><h1 id="24钾与水的反应"><a href="#24钾与水的反应" class="headerlink" title="24钾与水的反应"></a>24钾与水的反应</h1><h1 id="25新制饱和氯水与溴化钠溶液的反应"><a href="#25新制饱和氯水与溴化钠溶液的反应" class="headerlink" title="25新制饱和氯水与溴化钠溶液的反应"></a>25新制饱和氯水与溴化钠溶液的反应</h1><h1 id="26新制饱和氯水与碘化钾溶液的反应"><a href="#26新制饱和氯水与碘化钾溶液的反应" class="headerlink" title="26新制饱和氯水与碘化钾溶液的反应"></a>26新制饱和氯水与碘化钾溶液的反应</h1><h1 id="27溴水与碘化钾溶液的反应"><a href="#27溴水与碘化钾溶液的反应" class="headerlink" title="27溴水与碘化钾溶液的反应"></a>27溴水与碘化钾溶液的反应</h1><h1 id="28镁与沸水的反应"><a href="#28镁与沸水的反应" class="headerlink" title="28镁与沸水的反应"></a>28镁与沸水的反应</h1><h1 id="29镁铝与盐酸反应的对比实验"><a href="#29镁铝与盐酸反应的对比实验" class="headerlink" title="29镁铝与盐酸反应的对比实验"></a>29镁铝与盐酸反应的对比实验</h1><h1 id="30钠与氯气反应"><a href="#30钠与氯气反应" class="headerlink" title="30钠与氯气反应"></a>30钠与氯气反应</h1><h1 id="31测定铝与盐酸反应的热效应"><a href="#31测定铝与盐酸反应的热效应" class="headerlink" title="31测定铝与盐酸反应的热效应"></a>31测定铝与盐酸反应的热效应</h1><h1 id="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"><a href="#32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应" class="headerlink" title="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"></a>32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应</h1><h1 id="33测定酸碱中和反应的热效应"><a href="#33测定酸碱中和反应的热效应" class="headerlink" title="33测定酸碱中和反应的热效应"></a>33测定酸碱中和反应的热效应</h1><h1 id="34乙醇与钠的反应"><a href="#34乙醇与钠的反应" class="headerlink" title="34乙醇与钠的反应"></a>34乙醇与钠的反应</h1><h1 id="35锌铜原电池"><a href="#35锌铜原电池" class="headerlink" title="35锌铜原电池"></a>35锌铜原电池</h1><h1 id="36水果电池"><a href="#36水果电池" class="headerlink" title="36水果电池"></a>36水果电池</h1><h1 id="37温度对化学反应速率的影响"><a href="#37温度对化学反应速率的影响" class="headerlink" title="37温度对化学反应速率的影响"></a>37温度对化学反应速率的影响</h1><h1 id="38催化剂对化学反应速率的影响"><a href="#38催化剂对化学反应速率的影响" class="headerlink" title="38催化剂对化学反应速率的影响"></a>38催化剂对化学反应速率的影响</h1><h1 id="39甲烷和氯气反应所需条件的对比实验"><a href="#39甲烷和氯气反应所需条件的对比实验" class="headerlink" title="39甲烷和氯气反应所需条件的对比实验"></a>39甲烷和氯气反应所需条件的对比实验</h1><h1 id="40石蜡油分解实验及其分解产物的性质实验"><a href="#40石蜡油分解实验及其分解产物的性质实验" class="headerlink" title="40石蜡油分解实验及其分解产物的性质实验"></a>40石蜡油分解实验及其分解产物的性质实验</h1><h1 id="41葡萄糖跟新制氢氧化铜悬浊液反应"><a href="#41葡萄糖跟新制氢氧化铜悬浊液反应" class="headerlink" title="41葡萄糖跟新制氢氧化铜悬浊液反应"></a>41葡萄糖跟新制氢氧化铜悬浊液反应</h1><h1 id="42碘酒与淀粉作用"><a href="#42碘酒与淀粉作用" class="headerlink" title="42碘酒与淀粉作用"></a>42碘酒与淀粉作用</h1><h1 id="43蛋白质的颜色反应"><a href="#43蛋白质的颜色反应" class="headerlink" title="43蛋白质的颜色反应"></a>43蛋白质的颜色反应</h1><h1 id="44蔗糖的水解及其产物的验证"><a href="#44蔗糖的水解及其产物的验证" class="headerlink" title="44蔗糖的水解及其产物的验证"></a>44蔗糖的水解及其产物的验证</h1><h1 id="45铝热反应"><a href="#45铝热反应" class="headerlink" title="45铝热反应"></a>45铝热反应</h1><h1 id="46葡萄糖的银镜反应"><a href="#46葡萄糖的银镜反应" class="headerlink" title="46葡萄糖的银镜反应"></a>46葡萄糖的银镜反应</h1><h1 id="47淀粉的水解"><a href="#47淀粉的水解" class="headerlink" title="47淀粉的水解"></a>47淀粉的水解</h1><h1 id="48蛋白质的性质"><a href="#48蛋白质的性质" class="headerlink" title="48蛋白质的性质"></a>48蛋白质的性质</h1><h1 id="49维生素C的还原性"><a href="#49维生素C的还原性" class="headerlink" title="49维生素C的还原性"></a>49维生素C的还原性</h1><h1 id="50不同条件下铁钉的锈蚀"><a href="#50不同条件下铁钉的锈蚀" class="headerlink" title="50不同条件下铁钉的锈蚀"></a>50不同条件下铁钉的锈蚀</h1><h1 id="51合成氨"><a href="#51合成氨" class="headerlink" title="51合成氨"></a>51合成氨</h1><h1 id="52硫酸铜跟氨水的反应"><a href="#52硫酸铜跟氨水的反应" class="headerlink" title="52硫酸铜跟氨水的反应"></a>52硫酸铜跟氨水的反应</h1><h1 id="53氯化铁溶液跟硫氰化钾溶液反应"><a href="#53氯化铁溶液跟硫氰化钾溶液反应" class="headerlink" title="53氯化铁溶液跟硫氰化钾溶液反应"></a>53氯化铁溶液跟硫氰化钾溶液反应</h1><h1 id="54碘单质在不同溶剂中的溶解性"><a href="#54碘单质在不同溶剂中的溶解性" class="headerlink" title="54碘单质在不同溶剂中的溶解性"></a>54碘单质在不同溶剂中的溶解性</h1><h1 id="55碘单质的升华"><a href="#55碘单质的升华" class="headerlink" title="55碘单质的升华"></a>55碘单质的升华</h1><h1 id="56镁条在二氧化碳中燃烧"><a href="#56镁条在二氧化碳中燃烧" class="headerlink" title="56镁条在二氧化碳中燃烧"></a>56镁条在二氧化碳中燃烧</h1><h1 id="57测量锌与硫酸反应速率"><a href="#57测量锌与硫酸反应速率" class="headerlink" title="57测量锌与硫酸反应速率"></a>57测量锌与硫酸反应速率</h1><h1 id="58高锰酸钾溶液与草酸溶液的反应"><a href="#58高锰酸钾溶液与草酸溶液的反应" class="headerlink" title="58高锰酸钾溶液与草酸溶液的反应"></a>58高锰酸钾溶液与草酸溶液的反应</h1><h1 id="59硫代硫酸钠溶液跟稀硫酸的反应"><a href="#59硫代硫酸钠溶液跟稀硫酸的反应" class="headerlink" title="59硫代硫酸钠溶液跟稀硫酸的反应"></a>59硫代硫酸钠溶液跟稀硫酸的反应</h1><h1 id="60温度与碘化钾被氧化的关系"><a href="#60温度与碘化钾被氧化的关系" class="headerlink" title="60温度与碘化钾被氧化的关系"></a>60温度与碘化钾被氧化的关系</h1><h1 id="61过氧化氢与二氧化锰作用"><a href="#61过氧化氢与二氧化锰作用" class="headerlink" title="61过氧化氢与二氧化锰作用"></a>61过氧化氢与二氧化锰作用</h1><h1 id="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"><a href="#62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用" class="headerlink" title="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"></a>62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用</h1><h1 id="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"><a href="#63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用" class="headerlink" title="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"></a>63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用</h1><h1 id="64淀粉溶液跟唾液、稀硫酸作用"><a href="#64淀粉溶液跟唾液、稀硫酸作用" class="headerlink" title="64淀粉溶液跟唾液、稀硫酸作用"></a>64淀粉溶液跟唾液、稀硫酸作用</h1><h1 id="65重硌酸钾溶液在不同酸度时的颜色"><a href="#65重硌酸钾溶液在不同酸度时的颜色" class="headerlink" title="65重硌酸钾溶液在不同酸度时的颜色"></a>65重硌酸钾溶液在不同酸度时的颜色</h1><h1 id="66三氯化铁跟不同浓度的硫氰化钾溶液反应"><a href="#66三氯化铁跟不同浓度的硫氰化钾溶液反应" class="headerlink" title="66三氯化铁跟不同浓度的硫氰化钾溶液反应"></a>66三氯化铁跟不同浓度的硫氰化钾溶液反应</h1><h1 id="67二氧化氮和四氧化二氮的相互转化"><a href="#67二氧化氮和四氧化二氮的相互转化" class="headerlink" title="67二氧化氮和四氧化二氮的相互转化"></a>67二氧化氮和四氧化二氮的相互转化</h1><h1 id="68相同条件下，镁条跟盐酸和醋酸的反应"><a href="#68相同条件下，镁条跟盐酸和醋酸的反应" class="headerlink" title="68相同条件下，镁条跟盐酸和醋酸的反应"></a>68相同条件下，镁条跟盐酸和醋酸的反应</h1><h1 id="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"><a href="#69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应" class="headerlink" title="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"></a>69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应</h1><h1 id="70用PH计测量溶液的PH"><a href="#70用PH计测量溶液的PH" class="headerlink" title="70用PH计测量溶液的PH"></a>70用PH计测量溶液的PH</h1><h1 id="71实验测定酸碱反应曲线"><a href="#71实验测定酸碱反应曲线" class="headerlink" title="71实验测定酸碱反应曲线"></a>71实验测定酸碱反应曲线</h1><h1 id="72相同条件下，测定不同盐溶液的PH"><a href="#72相同条件下，测定不同盐溶液的PH" class="headerlink" title="72相同条件下，测定不同盐溶液的PH"></a>72相同条件下，测定不同盐溶液的PH</h1><h1 id="73三氧化铁溶液的配制"><a href="#73三氧化铁溶液的配制" class="headerlink" title="73三氧化铁溶液的配制"></a>73三氧化铁溶液的配制</h1><h1 id="74沉淀的溶解"><a href="#74沉淀的溶解" class="headerlink" title="74沉淀的溶解"></a>74沉淀的溶解</h1><h1 id="75沉淀的转化"><a href="#75沉淀的转化" class="headerlink" title="75沉淀的转化"></a>75沉淀的转化</h1><h1 id="76铜锌硫酸原电池"><a href="#76铜锌硫酸原电池" class="headerlink" title="76铜锌硫酸原电池"></a>76铜锌硫酸原电池</h1><h1 id="77氯化钠溶液的电解"><a href="#77氯化钠溶液的电解" class="headerlink" title="77氯化钠溶液的电解"></a>77氯化钠溶液的电解</h1><h1 id="78氯化铜溶液的电解"><a href="#78氯化铜溶液的电解" class="headerlink" title="78氯化铜溶液的电解"></a>78氯化铜溶液的电解</h1><h1 id="79电镀"><a href="#79电镀" class="headerlink" title="79电镀"></a>79电镀</h1><h1 id="80铁的吸氧腐蚀"><a href="#80铁的吸氧腐蚀" class="headerlink" title="80铁的吸氧腐蚀"></a>80铁的吸氧腐蚀</h1><h1 id="81验证牺牲阳极的阴极保护法"><a href="#81验证牺牲阳极的阴极保护法" class="headerlink" title="81验证牺牲阳极的阴极保护法"></a>81验证牺牲阳极的阴极保护法</h1><h1 id="82水的电解与氢氧混合气爆鸣的微型实验"><a href="#82水的电解与氢氧混合气爆鸣的微型实验" class="headerlink" title="82水的电解与氢氧混合气爆鸣的微型实验"></a>82水的电解与氢氧混合气爆鸣的微型实验</h1><h1 id="83氯气的生成及其性质的微型实验"><a href="#83氯气的生成及其性质的微型实验" class="headerlink" title="83氯气的生成及其性质的微型实验"></a>83氯气的生成及其性质的微型实验</h1><h1 id="84污水处理"><a href="#84污水处理" class="headerlink" title="84污水处理"></a>84污水处理</h1><h1 id="85蒸馏"><a href="#85蒸馏" class="headerlink" title="85蒸馏"></a>85蒸馏</h1><h1 id="86从海带中提取碘"><a href="#86从海带中提取碘" class="headerlink" title="86从海带中提取碘"></a>86从海带中提取碘</h1><h1 id="87硫酸亚铁铵的制备"><a href="#87硫酸亚铁铵的制备" class="headerlink" title="87硫酸亚铁铵的制备"></a>87硫酸亚铁铵的制备</h1><h1 id="88乙酸乙酯的制备及反应条件探究"><a href="#88乙酸乙酯的制备及反应条件探究" class="headerlink" title="88乙酸乙酯的制备及反应条件探究"></a>88乙酸乙酯的制备及反应条件探究</h1><h1 id="89氢氧化铝的制"><a href="#89氢氧化铝的制" class="headerlink" title="89氢氧化铝的制"></a>89氢氧化铝的制</h1><h1 id="90几种无机离子的检验"><a href="#90几种无机离子的检验" class="headerlink" title="90几种无机离子的检验"></a>90几种无机离子的检验</h1>]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>实验视频</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>近三年全国各省市高考化学真题分享（学生版+教师版）</title>
-    <url>//chemistry/shijuan/2021-2023.html</url>
+    <url>//blog/chemistry/shijuan/2021-2023.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="一、获取通道"><a href="#一、获取通道" class="headerlink" title="一、获取通道"></a>一、获取通道</h1><p>链接:<a href="https://caiyun.139.com/m/i?065Ct6gI60upp">https://caiyun.139.com/m/i?065Ct6gI60upp</a><br>提取码:PgLi<br>复制内容打开移动云盘PC客户端，操作更方便哦</p>
 <img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVl6WldDeWhjVVJJa3FxRk5adFJVUmtCOTdNTmNLM0JyZVgwNk5JZTJDM1lqZz9lPVFKZGVYbQ.png" style="zoom:67%;" />
 
@@ -1008,29 +787,6 @@
       </categories>
       <tags>
         <tag>download</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高中化学90个实验视频汇总</title>
-    <url>//chemistry/experiment-videos/allvideos.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-<hr>
-<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-
-
-
-
-
-
-<h1 id="03配置100毫升1mo1L氯化钠溶液"><a href="#03配置100毫升1mo1L氯化钠溶液" class="headerlink" title="03配置100毫升1mo1L氯化钠溶液"></a>03配置100毫升1mo1L氯化钠溶液</h1><h1 id="04氢氧化铁胶体制备、丁达尔效应"><a href="#04氢氧化铁胶体制备、丁达尔效应" class="headerlink" title="04氢氧化铁胶体制备、丁达尔效应"></a>04氢氧化铁胶体制备、丁达尔效应</h1><h1 id="05离子反应"><a href="#05离子反应" class="headerlink" title="05离子反应"></a>05离子反应</h1><h1 id="06钠的性质"><a href="#06钠的性质" class="headerlink" title="06钠的性质"></a>06钠的性质</h1><h1 id="07铁与水蒸气反应"><a href="#07铁与水蒸气反应" class="headerlink" title="07铁与水蒸气反应"></a>07铁与水蒸气反应</h1><h1 id="08铝与酸、碱溶液的反应"><a href="#08铝与酸、碱溶液的反应" class="headerlink" title="08铝与酸、碱溶液的反应"></a>08铝与酸、碱溶液的反应</h1><h1 id="09过氧化钠的性质"><a href="#09过氧化钠的性质" class="headerlink" title="09过氧化钠的性质"></a>09过氧化钠的性质</h1><h1 id="10碳酸钠和碳酸氢钠的性质"><a href="#10碳酸钠和碳酸氢钠的性质" class="headerlink" title="10碳酸钠和碳酸氢钠的性质"></a>10碳酸钠和碳酸氢钠的性质</h1><h1 id="11焰色反应"><a href="#11焰色反应" class="headerlink" title="11焰色反应"></a>11焰色反应</h1><h1 id="12铁的氢氧化物的制备"><a href="#12铁的氢氧化物的制备" class="headerlink" title="12铁的氢氧化物的制备"></a>12铁的氢氧化物的制备</h1><h1 id="13三价铁离子的检验"><a href="#13三价铁离子的检验" class="headerlink" title="13三价铁离子的检验"></a>13三价铁离子的检验</h1><h1 id="14铁盐和亚铁盐的一些性质"><a href="#14铁盐和亚铁盐的一些性质" class="headerlink" title="14铁盐和亚铁盐的一些性质"></a>14铁盐和亚铁盐的一些性质</h1><h1 id="15硅酸的制备、硅酸钠的性质"><a href="#15硅酸的制备、硅酸钠的性质" class="headerlink" title="15硅酸的制备、硅酸钠的性质"></a>15硅酸的制备、硅酸钠的性质</h1><h1 id="16氢气在氯气中燃烧"><a href="#16氢气在氯气中燃烧" class="headerlink" title="16氢气在氯气中燃烧"></a>16氢气在氯气中燃烧</h1><h1 id="17氯水、氯气的漂白作用"><a href="#17氯水、氯气的漂白作用" class="headerlink" title="17氯水、氯气的漂白作用"></a>17氯水、氯气的漂白作用</h1><h1 id="18氯离子的检验"><a href="#18氯离子的检验" class="headerlink" title="18氯离子的检验"></a>18氯离子的检验</h1><h1 id="19二氧化硫的制备与性质"><a href="#19二氧化硫的制备与性质" class="headerlink" title="19二氧化硫的制备与性质"></a>19二氧化硫的制备与性质</h1><h1 id="20氨溶于水的喷泉实验"><a href="#20氨溶于水的喷泉实验" class="headerlink" title="20氨溶于水的喷泉实验"></a>20氨溶于水的喷泉实验</h1><h1 id="21氨的实验室制法"><a href="#21氨的实验室制法" class="headerlink" title="21氨的实验室制法"></a>21氨的实验室制法</h1><h1 id="22铜与浓硫酸的反应"><a href="#22铜与浓硫酸的反应" class="headerlink" title="22铜与浓硫酸的反应"></a>22铜与浓硫酸的反应</h1><h1 id="23钾在空气中燃烧"><a href="#23钾在空气中燃烧" class="headerlink" title="23钾在空气中燃烧"></a>23钾在空气中燃烧</h1><h1 id="24钾与水的反应"><a href="#24钾与水的反应" class="headerlink" title="24钾与水的反应"></a>24钾与水的反应</h1><h1 id="25新制饱和氯水与溴化钠溶液的反应"><a href="#25新制饱和氯水与溴化钠溶液的反应" class="headerlink" title="25新制饱和氯水与溴化钠溶液的反应"></a>25新制饱和氯水与溴化钠溶液的反应</h1><h1 id="26新制饱和氯水与碘化钾溶液的反应"><a href="#26新制饱和氯水与碘化钾溶液的反应" class="headerlink" title="26新制饱和氯水与碘化钾溶液的反应"></a>26新制饱和氯水与碘化钾溶液的反应</h1><h1 id="27溴水与碘化钾溶液的反应"><a href="#27溴水与碘化钾溶液的反应" class="headerlink" title="27溴水与碘化钾溶液的反应"></a>27溴水与碘化钾溶液的反应</h1><h1 id="28镁与沸水的反应"><a href="#28镁与沸水的反应" class="headerlink" title="28镁与沸水的反应"></a>28镁与沸水的反应</h1><h1 id="29镁铝与盐酸反应的对比实验"><a href="#29镁铝与盐酸反应的对比实验" class="headerlink" title="29镁铝与盐酸反应的对比实验"></a>29镁铝与盐酸反应的对比实验</h1><h1 id="30钠与氯气反应"><a href="#30钠与氯气反应" class="headerlink" title="30钠与氯气反应"></a>30钠与氯气反应</h1><h1 id="31测定铝与盐酸反应的热效应"><a href="#31测定铝与盐酸反应的热效应" class="headerlink" title="31测定铝与盐酸反应的热效应"></a>31测定铝与盐酸反应的热效应</h1><h1 id="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"><a href="#32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应" class="headerlink" title="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"></a>32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应</h1><h1 id="33测定酸碱中和反应的热效应"><a href="#33测定酸碱中和反应的热效应" class="headerlink" title="33测定酸碱中和反应的热效应"></a>33测定酸碱中和反应的热效应</h1><h1 id="34乙醇与钠的反应"><a href="#34乙醇与钠的反应" class="headerlink" title="34乙醇与钠的反应"></a>34乙醇与钠的反应</h1><h1 id="35锌铜原电池"><a href="#35锌铜原电池" class="headerlink" title="35锌铜原电池"></a>35锌铜原电池</h1><h1 id="36水果电池"><a href="#36水果电池" class="headerlink" title="36水果电池"></a>36水果电池</h1><h1 id="37温度对化学反应速率的影响"><a href="#37温度对化学反应速率的影响" class="headerlink" title="37温度对化学反应速率的影响"></a>37温度对化学反应速率的影响</h1><h1 id="38催化剂对化学反应速率的影响"><a href="#38催化剂对化学反应速率的影响" class="headerlink" title="38催化剂对化学反应速率的影响"></a>38催化剂对化学反应速率的影响</h1><h1 id="39甲烷和氯气反应所需条件的对比实验"><a href="#39甲烷和氯气反应所需条件的对比实验" class="headerlink" title="39甲烷和氯气反应所需条件的对比实验"></a>39甲烷和氯气反应所需条件的对比实验</h1><h1 id="40石蜡油分解实验及其分解产物的性质实验"><a href="#40石蜡油分解实验及其分解产物的性质实验" class="headerlink" title="40石蜡油分解实验及其分解产物的性质实验"></a>40石蜡油分解实验及其分解产物的性质实验</h1><h1 id="41葡萄糖跟新制氢氧化铜悬浊液反应"><a href="#41葡萄糖跟新制氢氧化铜悬浊液反应" class="headerlink" title="41葡萄糖跟新制氢氧化铜悬浊液反应"></a>41葡萄糖跟新制氢氧化铜悬浊液反应</h1><h1 id="42碘酒与淀粉作用"><a href="#42碘酒与淀粉作用" class="headerlink" title="42碘酒与淀粉作用"></a>42碘酒与淀粉作用</h1><h1 id="43蛋白质的颜色反应"><a href="#43蛋白质的颜色反应" class="headerlink" title="43蛋白质的颜色反应"></a>43蛋白质的颜色反应</h1><h1 id="44蔗糖的水解及其产物的验证"><a href="#44蔗糖的水解及其产物的验证" class="headerlink" title="44蔗糖的水解及其产物的验证"></a>44蔗糖的水解及其产物的验证</h1><h1 id="45铝热反应"><a href="#45铝热反应" class="headerlink" title="45铝热反应"></a>45铝热反应</h1><h1 id="46葡萄糖的银镜反应"><a href="#46葡萄糖的银镜反应" class="headerlink" title="46葡萄糖的银镜反应"></a>46葡萄糖的银镜反应</h1><h1 id="47淀粉的水解"><a href="#47淀粉的水解" class="headerlink" title="47淀粉的水解"></a>47淀粉的水解</h1><h1 id="48蛋白质的性质"><a href="#48蛋白质的性质" class="headerlink" title="48蛋白质的性质"></a>48蛋白质的性质</h1><h1 id="49维生素C的还原性"><a href="#49维生素C的还原性" class="headerlink" title="49维生素C的还原性"></a>49维生素C的还原性</h1><h1 id="50不同条件下铁钉的锈蚀"><a href="#50不同条件下铁钉的锈蚀" class="headerlink" title="50不同条件下铁钉的锈蚀"></a>50不同条件下铁钉的锈蚀</h1><h1 id="51合成氨"><a href="#51合成氨" class="headerlink" title="51合成氨"></a>51合成氨</h1><h1 id="52硫酸铜跟氨水的反应"><a href="#52硫酸铜跟氨水的反应" class="headerlink" title="52硫酸铜跟氨水的反应"></a>52硫酸铜跟氨水的反应</h1><h1 id="53氯化铁溶液跟硫氰化钾溶液反应"><a href="#53氯化铁溶液跟硫氰化钾溶液反应" class="headerlink" title="53氯化铁溶液跟硫氰化钾溶液反应"></a>53氯化铁溶液跟硫氰化钾溶液反应</h1><h1 id="54碘单质在不同溶剂中的溶解性"><a href="#54碘单质在不同溶剂中的溶解性" class="headerlink" title="54碘单质在不同溶剂中的溶解性"></a>54碘单质在不同溶剂中的溶解性</h1><h1 id="55碘单质的升华"><a href="#55碘单质的升华" class="headerlink" title="55碘单质的升华"></a>55碘单质的升华</h1><h1 id="56镁条在二氧化碳中燃烧"><a href="#56镁条在二氧化碳中燃烧" class="headerlink" title="56镁条在二氧化碳中燃烧"></a>56镁条在二氧化碳中燃烧</h1><h1 id="57测量锌与硫酸反应速率"><a href="#57测量锌与硫酸反应速率" class="headerlink" title="57测量锌与硫酸反应速率"></a>57测量锌与硫酸反应速率</h1><h1 id="58高锰酸钾溶液与草酸溶液的反应"><a href="#58高锰酸钾溶液与草酸溶液的反应" class="headerlink" title="58高锰酸钾溶液与草酸溶液的反应"></a>58高锰酸钾溶液与草酸溶液的反应</h1><h1 id="59硫代硫酸钠溶液跟稀硫酸的反应"><a href="#59硫代硫酸钠溶液跟稀硫酸的反应" class="headerlink" title="59硫代硫酸钠溶液跟稀硫酸的反应"></a>59硫代硫酸钠溶液跟稀硫酸的反应</h1><h1 id="60温度与碘化钾被氧化的关系"><a href="#60温度与碘化钾被氧化的关系" class="headerlink" title="60温度与碘化钾被氧化的关系"></a>60温度与碘化钾被氧化的关系</h1><h1 id="61过氧化氢与二氧化锰作用"><a href="#61过氧化氢与二氧化锰作用" class="headerlink" title="61过氧化氢与二氧化锰作用"></a>61过氧化氢与二氧化锰作用</h1><h1 id="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"><a href="#62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用" class="headerlink" title="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"></a>62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用</h1><h1 id="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"><a href="#63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用" class="headerlink" title="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"></a>63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用</h1><h1 id="64淀粉溶液跟唾液、稀硫酸作用"><a href="#64淀粉溶液跟唾液、稀硫酸作用" class="headerlink" title="64淀粉溶液跟唾液、稀硫酸作用"></a>64淀粉溶液跟唾液、稀硫酸作用</h1><h1 id="65重硌酸钾溶液在不同酸度时的颜色"><a href="#65重硌酸钾溶液在不同酸度时的颜色" class="headerlink" title="65重硌酸钾溶液在不同酸度时的颜色"></a>65重硌酸钾溶液在不同酸度时的颜色</h1><h1 id="66三氯化铁跟不同浓度的硫氰化钾溶液反应"><a href="#66三氯化铁跟不同浓度的硫氰化钾溶液反应" class="headerlink" title="66三氯化铁跟不同浓度的硫氰化钾溶液反应"></a>66三氯化铁跟不同浓度的硫氰化钾溶液反应</h1><h1 id="67二氧化氮和四氧化二氮的相互转化"><a href="#67二氧化氮和四氧化二氮的相互转化" class="headerlink" title="67二氧化氮和四氧化二氮的相互转化"></a>67二氧化氮和四氧化二氮的相互转化</h1><h1 id="68相同条件下，镁条跟盐酸和醋酸的反应"><a href="#68相同条件下，镁条跟盐酸和醋酸的反应" class="headerlink" title="68相同条件下，镁条跟盐酸和醋酸的反应"></a>68相同条件下，镁条跟盐酸和醋酸的反应</h1><h1 id="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"><a href="#69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应" class="headerlink" title="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"></a>69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应</h1><h1 id="70用PH计测量溶液的PH"><a href="#70用PH计测量溶液的PH" class="headerlink" title="70用PH计测量溶液的PH"></a>70用PH计测量溶液的PH</h1><h1 id="71实验测定酸碱反应曲线"><a href="#71实验测定酸碱反应曲线" class="headerlink" title="71实验测定酸碱反应曲线"></a>71实验测定酸碱反应曲线</h1><h1 id="72相同条件下，测定不同盐溶液的PH"><a href="#72相同条件下，测定不同盐溶液的PH" class="headerlink" title="72相同条件下，测定不同盐溶液的PH"></a>72相同条件下，测定不同盐溶液的PH</h1><h1 id="73三氧化铁溶液的配制"><a href="#73三氧化铁溶液的配制" class="headerlink" title="73三氧化铁溶液的配制"></a>73三氧化铁溶液的配制</h1><h1 id="74沉淀的溶解"><a href="#74沉淀的溶解" class="headerlink" title="74沉淀的溶解"></a>74沉淀的溶解</h1><h1 id="75沉淀的转化"><a href="#75沉淀的转化" class="headerlink" title="75沉淀的转化"></a>75沉淀的转化</h1><h1 id="76铜锌硫酸原电池"><a href="#76铜锌硫酸原电池" class="headerlink" title="76铜锌硫酸原电池"></a>76铜锌硫酸原电池</h1><h1 id="77氯化钠溶液的电解"><a href="#77氯化钠溶液的电解" class="headerlink" title="77氯化钠溶液的电解"></a>77氯化钠溶液的电解</h1><h1 id="78氯化铜溶液的电解"><a href="#78氯化铜溶液的电解" class="headerlink" title="78氯化铜溶液的电解"></a>78氯化铜溶液的电解</h1><h1 id="79电镀"><a href="#79电镀" class="headerlink" title="79电镀"></a>79电镀</h1><h1 id="80铁的吸氧腐蚀"><a href="#80铁的吸氧腐蚀" class="headerlink" title="80铁的吸氧腐蚀"></a>80铁的吸氧腐蚀</h1><h1 id="81验证牺牲阳极的阴极保护法"><a href="#81验证牺牲阳极的阴极保护法" class="headerlink" title="81验证牺牲阳极的阴极保护法"></a>81验证牺牲阳极的阴极保护法</h1><h1 id="82水的电解与氢氧混合气爆鸣的微型实验"><a href="#82水的电解与氢氧混合气爆鸣的微型实验" class="headerlink" title="82水的电解与氢氧混合气爆鸣的微型实验"></a>82水的电解与氢氧混合气爆鸣的微型实验</h1><h1 id="83氯气的生成及其性质的微型实验"><a href="#83氯气的生成及其性质的微型实验" class="headerlink" title="83氯气的生成及其性质的微型实验"></a>83氯气的生成及其性质的微型实验</h1><h1 id="84污水处理"><a href="#84污水处理" class="headerlink" title="84污水处理"></a>84污水处理</h1><h1 id="85蒸馏"><a href="#85蒸馏" class="headerlink" title="85蒸馏"></a>85蒸馏</h1><h1 id="86从海带中提取碘"><a href="#86从海带中提取碘" class="headerlink" title="86从海带中提取碘"></a>86从海带中提取碘</h1><h1 id="87硫酸亚铁铵的制备"><a href="#87硫酸亚铁铵的制备" class="headerlink" title="87硫酸亚铁铵的制备"></a>87硫酸亚铁铵的制备</h1><h1 id="88乙酸乙酯的制备及反应条件探究"><a href="#88乙酸乙酯的制备及反应条件探究" class="headerlink" title="88乙酸乙酯的制备及反应条件探究"></a>88乙酸乙酯的制备及反应条件探究</h1><h1 id="89氢氧化铝的制"><a href="#89氢氧化铝的制" class="headerlink" title="89氢氧化铝的制"></a>89氢氧化铝的制</h1><h1 id="90几种无机离子的检验"><a href="#90几种无机离子的检验" class="headerlink" title="90几种无机离子的检验"></a>90几种无机离子的检验</h1>]]></content>
-      <categories>
-        <category>高中化学</category>
-        <category>实验视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
       </tags>
   </entry>
 </search>
