@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="整理了常用的markdown语法，推荐搭配Typora使用。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法">
+<meta property="og:url" content="http://example.com/blog/note/markdown/yufa.html">
+<meta property="og:site_name" content="两只老虎">
+<meta property="og:description" content="整理了常用的markdown语法，推荐搭配Typora使用。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://im.gurl.eu.org/file/1fa8315a5ce9bc78fac63.png">
+<meta property="og:image" content="https://im.gurl.eu.org/file/1fa8315a5ce9bc78fac63.png">
+<meta property="article:published_time" content="2024-08-11T13:12:11.000Z">
+<meta property="article:modified_time" content="2024-08-14T16:49:32.104Z">
+<meta property="article:author" content="ZhongyYuan">
+<meta property="article:tag" content="markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://im.gurl.eu.org/file/1fa8315a5ce9bc78fac63.png">
+
+
+<link rel="canonical" href="http://example.com/blog/note/markdown/yufa">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/blog/note/markdown/yufa.html","path":"/blog/note/markdown/yufa.html","title":"Markdown语法"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Markdown语法 | 两只老虎</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">两只老虎</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">2.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%A0%87%E9%A2%98%E8%AF%AD%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">一、标题语法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%AE%B5-%E8%A1%8C%E8%AF%AD%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">二、段&#x2F;行语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%8D%A2%E8%A1%8C"><span class="nav-number">4.1.</span> <span class="nav-text">1.换行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">4.2.</span> <span class="nav-text">2.分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F"><span class="nav-number">4.3.</span> <span class="nav-text">3.对齐方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%84%9A%E6%B3%A8"><span class="nav-number">4.4.</span> <span class="nav-text">4.脚注</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%AD%97%E4%BD%93%E8%AF%AD%E6%B3%95"><span class="nav-number">5.</span> <span class="nav-text">三、字体语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%B2%97%E4%BD%93"><span class="nav-number">5.1.</span> <span class="nav-text">1.粗体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%96%9C%E4%BD%93"><span class="nav-number">5.2.</span> <span class="nav-text">2.斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E7%B2%97%E4%BD%93-%E6%96%9C%E4%BD%93"><span class="nav-number">5.3.</span> <span class="nav-text">3.粗体+斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="nav-number">5.4.</span> <span class="nav-text">4.删除线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="nav-number">5.5.</span> <span class="nav-text">5.下划线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E8%83%8C%E6%99%AF%E9%AB%98%E4%BA%AE"><span class="nav-number">5.6.</span> <span class="nav-text">6.背景高亮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E4%B8%8A%E6%A0%87%E4%B8%8E%E4%B8%8B%E6%A0%87"><span class="nav-number">5.7.</span> <span class="nav-text">7.上标与下标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F"><span class="nav-number">5.8.</span> <span class="nav-text">8.字体大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E6%94%B9%E5%8F%98%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2"><span class="nav-number">5.9.</span> <span class="nav-text">9.改变字体颜色</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%88%97%E8%A1%A8%E8%AF%AD%E6%B3%95"><span class="nav-number">6.</span> <span class="nav-text">四、列表语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">6.1.</span> <span class="nav-text">1.有序列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">6.2.</span> <span class="nav-text">2.无序列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8"><span class="nav-number">6.3.</span> <span class="nav-text">3.任务列表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">7.</span> <span class="nav-text">五、数学表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%9D%97%E8%AF%AD%E6%B3%95"><span class="nav-number">8.</span> <span class="nav-text">六、块语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8"><span class="nav-number">8.1.</span> <span class="nav-text">1.区块引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%A1%A8%E6%A0%BC%E6%8F%92%E5%85%A5"><span class="nav-number">8.2.</span> <span class="nav-text">2.表格插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8"><span class="nav-number">8.3.</span> <span class="nav-text">3.图片引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">8.4.</span> <span class="nav-text">4.代码块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%8D%95%E8%A1%8C%E4%BB%A3%E7%A0%81"><span class="nav-number">8.4.1.</span> <span class="nav-text">(1).单行代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%A4%9A%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%AE%B5"><span class="nav-number">8.4.2.</span> <span class="nav-text">(2).多行代码段</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="nav-number">8.5.</span> <span class="nav-text">5.流程图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E9%93%BE%E6%8E%A5%E5%BC%95%E7%94%A8"><span class="nav-number">8.6.</span> <span class="nav-text">6.链接引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E8%A7%86%E9%A2%91%E5%BC%95%E7%94%A8"><span class="nav-number">8.7.</span> <span class="nav-text">7.视频引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E6%8A%98%E5%8F%A0%E8%AF%AD%E6%B3%95"><span class="nav-number">8.8.</span> <span class="nav-text">8.折叠语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E4%B8%8D%E5%B8%B8%E7%94%A8%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="nav-number">9.</span> <span class="nav-text">七、不常用的语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B3%A8%E9%87%8A"><span class="nav-number">9.1.</span> <span class="nav-text">1.注释</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%BE%E6%B3%A8"><span class="nav-number">10.</span> <span class="nav-text">尾注</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ZhongyYuan</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/blog/note/markdown/yufa.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ZhongyYuan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="两只老虎">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Markdown语法 | 两只老虎">
+      <meta itemprop="description" content="整理了常用的markdown语法，推荐搭配Typora使用。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Markdown语法
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-08-11 13:12:11" itemprop="dateCreated datePublished" datetime="2024-08-11T13:12:11+00:00">2024-08-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-08-14 16:49:32" itemprop="dateModified" datetime="2024-08-14T16:49:32+00:00">2024-08-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/markdown/" itemprop="url" rel="index"><span itemprop="name">markdown</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>6.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">整理了常用的markdown语法，推荐搭配Typora使用。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>在需要目录出现的地方（一般在文章一开始）放置一个标记<code>[toc]</code>，这样会自动生成一个嵌套的包含所有标题的列表。</p>
+<p>[toc]</p>
+<hr>
+<h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><p>Typora快捷键整合</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+1  一阶标题    Ctrl+B  字体加粗</span><br><span class="line">Ctrl+2  二阶标题    Ctrl+I  字体倾斜</span><br><span class="line">Ctrl+3  三阶标题    Ctrl+U  下划线</span><br><span class="line">Ctrl+4  四阶标题    Ctrl+Home   返回Typora顶部</span><br><span class="line">Ctrl+5  五阶标题    Ctrl+End    返回Typora底部</span><br><span class="line">Ctrl+6  六阶标题    Ctrl+T  创建表格</span><br><span class="line">Ctrl+L  选中某句话   Ctrl+K  创建超链接</span><br><span class="line">Ctrl+D  选中某个单词  Ctrl+F  搜索</span><br><span class="line">Ctrl+E  选中相同格式的文字   Ctrl+H  搜索并替换</span><br><span class="line"></span><br><span class="line">Alt+Shift+5 	删除线 </span><br><span class="line">Ctrl+Shift+I    插入图片</span><br><span class="line">Ctrl+Shift+M    公式块 </span><br><span class="line">Ctrl+Shift+Q    引用</span><br><span class="line"></span><br><span class="line">插入代码： Ctrl/Cmd + Shift + C</span><br><span class="line">行内代码： Ctrl/Cmd + Shift + K</span><br><span class="line">插入图片： Ctrl/Cmd + Shift + I</span><br><span class="line">无序列表： Ctrl/Cmd + Shift + L</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="一、标题语法"><a href="#一、标题语法" class="headerlink" title="一、标题语法"></a>一、标题语法</h1><p>请在单词或短语前面添加井号 (<code>#</code>) 。<code>#</code> 的数量代表了标题的级别。</p>
+<p>（注意，#号与文字中间需要输入一个空格）  </p>
+<p>不同的 Markdown 应用程序处理 <code>#</code> 和标题之间的空格方式并不一致。为了兼容考虑，请用一个空格在 <code>#</code> 和标题之间进行分隔。</p>
+<p>快捷键 <code>Ctrl + 数字键</code> 可以设置标题级别</p>
+<hr>
+<h1 id="二、段-行语法"><a href="#二、段-行语法" class="headerlink" title="二、段&#x2F;行语法"></a>二、段&#x2F;行语法</h1><h2 id="1-换行"><a href="#1-换行" class="headerlink" title="1.换行"></a>1.换行</h2><p>Typora 直接换行回车，实现换行；</p>
+<p>但是在有的地方，想要换行必须得在一行字后面输入两个空格才行。</p>
+<p>在编辑的时候有多少个空行(只有回车或者空格就算空行)，在渲染之后，只隔着一行。</p>
+<h2 id="2-分割线"><a href="#2-分割线" class="headerlink" title="2.分割线"></a>2.分割线</h2><p>请在单独一行上使用三个或多个星号 (<code>***</code>)、破折号 (<code>---</code>) 或下划线 (<code>___</code>) </p>
+<p>为了显示最好的效果，在分割线前后各空一行</p>
+<h2 id="3-对齐方式"><a href="#3-对齐方式" class="headerlink" title="3.对齐方式"></a>3.对齐方式</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;center&gt;行中心对齐&lt;/center&gt;</span><br><span class="line">&lt;p align=&quot;left&quot;&gt;行左对齐&lt;/p&gt;</span><br><span class="line">&lt;p align=&quot;right&quot;&gt;行右对齐&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">显示效果如下</span><br></pre></td></tr></table></figure>
+
+<center>行中心对齐</center>
+<p align="left">行左对齐</p>
+<p align="right">行右对齐</p>
+
+
+
+<h2 id="4-脚注"><a href="#4-脚注" class="headerlink" title="4.脚注"></a>4.脚注</h2><p>在需要插入脚注的地方，加上<code>[^1]</code>即可</p>
+<p>你可以创建一个脚注，像这样[^1].		<code>按住Crtrl + 鼠标左键点击即可实现跳转</code></p>
+<p>注意：该例子脚注标识是1，脚注标识可以为字母数字下划线，但是暂不支持中文。脚注内容可为任意字符，包括中文。</p>
+<hr>
+<h1 id="三、字体语法"><a href="#三、字体语法" class="headerlink" title="三、字体语法"></a>三、字体语法</h1><h2 id="1-粗体"><a href="#1-粗体" class="headerlink" title="1.粗体"></a>1.粗体</h2><p>请在单词或短语的前后各添加两个星号或下划线。</p>
+<p>如需加粗一个单词或短语的中间部分用以表示强调的话，请在要加粗部分的两侧各添加两个星号</p>
+<p>例如</p>
+<p>1.使用<code>**</code>号加粗			    	<strong>我是前后两个星号加粗的</strong></p>
+<p>2.使用两个<code>__</code>加粗				<strong>我是前后两个下划线加粗的</strong></p>
+<h2 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2.斜体"></a>2.斜体</h2><p>在单词或短语 <strong>前后</strong> 添加 <em><strong>1</strong></em> 个星号或下划线。(推荐使用*号)</p>
+<p>单词的中间部分，请在字母前后各添加一个星号，中间不要带空格。</p>
+<p>*号适用于文字与字母的斜体</p>
+<p>下划线_不能用于英文字母的中间显示,会失效的</p>
+<p>例如</p>
+<p>1.使用<code>*</code>号斜体		<em>这是用星号进行斜体显示dasdasasdaasdsa</em></p>
+<p>2.下划线<code>_</code>				<em>这是使用下划线斜体显示asdasdasdasdad</em></p>
+<p>3.英文字母串中间部分只能用*号进行斜体显示，下划线会失败</p>
+<p>aasd<em>asdasda</em></p>
+<p>aasd_asdasda_</p>
+<h2 id="3-粗体-斜体"><a href="#3-粗体-斜体" class="headerlink" title="3.粗体+斜体"></a>3.粗体+斜体</h2><p>请在要突出显示的部分前后各添加三个星号，中间不要带空格。</p>
+<p>例如</p>
+<p>使用<code>**</code>对字体加粗     <strong>粗体</strong></p>
+<p><em>斜体</em></p>
+<p><em><strong>这是粗体与斜体</strong></em></p>
+<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><p>在你需要操作的字符先后各加两个<code>~~</code></p>
+<p><del>例如我在这串文字前后各加两个小弯弯</del></p>
+<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><p><em><strong>在你需要操作的字符串前后加标签 	<code>&lt;u&gt; &lt;/u&gt;</code></strong></em></p>
+<p><u> 例如我在前后加<code>&lt;u&gt; &lt;/u&gt;</code>两可以添加下划线</u></p>
+<p><code>&lt;!--通过Latex公式实现下划线--&gt;</code><br>$\underline{\text{下划线}}$       $\overline{上划线}$ </p>
+<p>$\widehat{顶上的宽帽子}$    $\hat{顶上的小帽子}$ 	$\widetilde{顶上显示波浪线}$ 		 $\dot{顶上加点}$<br>$\ddot{顶上显示加两点} $</p>
+<h2 id="6-背景高亮"><a href="#6-背景高亮" class="headerlink" title="6.背景高亮"></a>6.背景高亮</h2><p>使用<code>==</code>再文本前后，即可实现高亮</p>
+<p>&#x3D;&#x3D;我是高亮文本&#x3D;&#x3D;</p>
+<h2 id="7-上标与下标"><a href="#7-上标与下标" class="headerlink" title="7.上标与下标"></a>7.上标与下标</h2><p>(1)下标</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">H&lt;sub&gt;2&lt;/sub&gt;O</span><br></pre></td></tr></table></figure>
+
+<p>H<sub>2</sub>O</p>
+<p>(2)上标</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">X&lt;sup&gt;2&lt;/sup&gt;</span><br></pre></td></tr></table></figure>
+
+<p>X<sup>2</sup></p>
+<h2 id="8-字体大小"><a href="#8-字体大小" class="headerlink" title="8.字体大小"></a>8.字体大小</h2><p>size：规定文本的尺寸大小，取值范围为1~7 ，默认值是 3。</p>
+<p>最大为7号，超过7与7是一样的效果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;font size=1&gt;字体大小size=1&lt;/font&gt;</span><br><span class="line">&lt;font size=2&gt;字体大小size=2&lt;/font&gt;</span><br><span class="line">&lt;font size=3&gt;字体大小size=3&lt;/font&gt;</span><br><span class="line">&lt;font size=4&gt;字体大小size=4&lt;/font&gt;</span><br><span class="line">&lt;font size=5&gt;字体大小size=5&lt;/font&gt;</span><br><span class="line">&lt;font size=6&gt;字体大小size=6&lt;/font&gt;</span><br><span class="line">&lt;font size=7&gt;字体大小size=7&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+
+<p><font size=1>字体大小size&#x3D;1</font><br><font size=2>字体大小size&#x3D;2</font><br><font size=3>字体大小size&#x3D;3</font><br><font size=4>字体大小size&#x3D;4</font><br><font size=5>字体大小size&#x3D;5</font><br><font size=6>字体大小size&#x3D;6</font><br><font size=7>字体大小size&#x3D;7</font></p>
+<h2 id="9-改变字体颜色"><a href="#9-改变字体颜色" class="headerlink" title="9.改变字体颜色"></a>9.改变字体颜色</h2><p>1、英文字母</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;font color=red&gt;红色&lt;/font&gt;</span><br><span class="line">&lt;font color=&quot;blue&quot;&gt;蓝色&lt;/font&gt;</span><br><span class="line">&lt;font color=Yellow&gt;黄色&lt;/font&gt;</span><br><span class="line">&lt;font color=YellowGreen&gt;黄绿色&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+
+<p><font color=red>红色</font><br><font color="blue">蓝色</font><br><font color=Yellow>黄色</font><br><font color=YellowGreen>黄绿色</font></p>
+<p>2、十六进制颜色值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;font color=#ff0000&gt;红色&lt;/font&gt;</span><br><span class="line">&lt;font color=#00ff00&gt;绿色&lt;/font&gt;</span><br><span class="line">&lt;font color=#0000ff&gt;蓝色&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#ff0000>红色</font><br><font color=#00ff00>绿色</font><br><font color=#0000ff>蓝色</font></p>
+<hr>
+<h1 id="四、列表语法"><a href="#四、列表语法" class="headerlink" title="四、列表语法"></a>四、列表语法</h1><h2 id="1-有序列表"><a href="#1-有序列表" class="headerlink" title="1.有序列表"></a>1.有序列表</h2><p>使用  <strong>数字</strong> 紧接 <strong>英文小数点</strong> 再加 <strong>空格</strong></p>
+<p>快捷键：<code>Ctrl + Shift + [</code></p>
+<p>例如	 </p>
+<ol>
+<li>第一项<ol>
+<li>按下Tab键可以实现列表嵌套</li>
+<li>子列表的第二项</li>
+</ol>
+</li>
+<li>第二项</li>
+</ol>
+<h2 id="2-无序列表"><a href="#2-无序列表" class="headerlink" title="2.无序列表"></a>2.无序列表</h2><p>列表内容前可使用 <code>*</code> 或 <code>-</code> 或 <code>+</code> + <code>空格</code>来表示无序列表</p>
+<p>快捷键：<code>Ctrl + Shift + ]</code></p>
+<ul>
+<li>这是用<code>*</code>显示的无序列表</li>
+</ul>
+<h2 id="3-任务列表"><a href="#3-任务列表" class="headerlink" title="3.任务列表"></a>3.任务列表</h2><p><code> - [ ] 不勾选     - [x] 勾选</code></p>
+<p>一个减号，空格，方括号(括号中间需要输入空格或x)，空格，任务文字</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 任务文字		代码<code>- [ ] 任务文字</code></li>
+<li><input disabled="" type="checkbox"> 任务一 未做任务 </li>
+<li><input checked="" disabled="" type="checkbox"> 任务二 已做任务</li>
+</ul>
+<hr>
+<h1 id="五、数学表达式"><a href="#五、数学表达式" class="headerlink" title="五、数学表达式"></a>五、数学表达式</h1><p>当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。根据需要加载 Mathjax 对数学公式进行渲染。</p>
+<p>LaTeX公式语法<a href="LaTex%E8%AF%AD%E6%B3%95">^2</a></p>
+<p>按下 <code>$$</code>，然后按下回车键，即可进行数学公式的编辑。<br>$$<br>\mathbf{V}_1\times\mathbf{V}_2 &#x3D; \mathbf{X}_3<br>$$</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\mathbf&#123;V&#125;_1\times\mathbf&#123;V&#125;_2 = \mathbf&#123;X&#125;_3</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h1 id="六、块语法"><a href="#六、块语法" class="headerlink" title="六、块语法"></a>六、块语法</h1><h2 id="1-区块引用"><a href="#1-区块引用" class="headerlink" title="1.区块引用"></a>1.区块引用</h2><p>使用 <code>&gt;</code> + <code>空格</code> 来表示区块引用</p>
+<p><em>当需要换行时，可以在前方不加 <code>&gt;</code></em>		<em>需要新板块可以空出一行</em></p>
+<p>例如</p>
+<blockquote>
+<ol>
+<li>第一项 这是我的引用文本</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>第二项 这是引用的第一层</li>
+</ol>
+<blockquote>
+<ol>
+<li>嵌入列表 我在引用中再输入<code>&gt; + 空格</code>可以实现多层引用</li>
+</ol>
+</blockquote>
+</blockquote>
+<h2 id="2-表格插入"><a href="#2-表格插入" class="headerlink" title="2.表格插入"></a>2.表格插入</h2><p>快捷键<code>Ctrl + T</code>即可弹出创建表格的对话框</p>
+<p>使用下面的代码也可以&#96;&#96;&#96;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3|</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">表头1 : -</th>
+<th>表头2</th>
+<th>表头3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">再</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="3-图片引用"><a href="#3-图片引用" class="headerlink" title="3.图片引用"></a>3.图片引用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">![图片说明](图片地址 <span class="string">&#x27;&#x27;</span>图片title<span class="string">&#x27;&#x27;</span>)</span><br><span class="line"></span><br><span class="line">图片说明 ：就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title ：是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line">&lt;img src=<span class="string">&quot;https://im.gurl.eu.org/file/1fa8315a5ce9bc78fac63.png&quot;</span>  style=<span class="string">&quot;zoom:50%;&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>例如</p>
+<img src="https://im.gurl.eu.org/file/1fa8315a5ce9bc78fac63.png"  style="zoom:50%;" />
+
+<p><img src="https://im.gurl.eu.org/file/1fa8315a5ce9bc78fac63.png" alt="图片说明"></p>
+<h2 id="4-代码块"><a href="#4-代码块" class="headerlink" title="4.代码块"></a>4.代码块</h2><h3 id="1-单行代码"><a href="#1-单行代码" class="headerlink" title="(1).单行代码"></a>(1).单行代码</h3><p>使用 <code>反引号</code> 再文本前后各加一个即可	例如：</p>
+<p><code>我的前后各有一个反引号（键盘上左上角 ~ 键，需在英文状态输入）    </code></p>
+<h3 id="2-多行代码段"><a href="#2-多行代码段" class="headerlink" title="(2).多行代码段"></a>(2).多行代码段</h3><p>使用 &#96;&#96;&#96;&#96; <code>三个</code> 反引号&#96; 按下回车即可激活代码块</p>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">我按下三个反引号后，按下回车即可激活</span><br><span class="line">非常人性</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="5-流程图"><a href="#5-流程图" class="headerlink" title="5.流程图"></a>5.流程图</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 闹钟响起</span><br><span class="line">op=&gt;operation: 与床板分离</span><br><span class="line">cond=&gt;condition: 分离成功?</span><br><span class="line">e=&gt;end: 快乐的一天</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="6-链接引用"><a href="#6-链接引用" class="headerlink" title="6.链接引用"></a>6.链接引用</h2><p>语法</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 <span class="string">&quot;超链接title&quot;</span>)</span><br><span class="line">title可加可不加（title是鼠标移到该链接文本时显示的名称）</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<p>超链接名：百度搜索，地址  <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>	,鼠标移到<code>百度搜索</code>这个文本上时，显示<code>百度搜索的官网</code></p>
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/" title="百度搜索的官网">百度搜索</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">我是无title的超链接</a></p>
+<h2 id="7-视频引用"><a href="#7-视频引用" class="headerlink" title="7.视频引用"></a>7.视频引用</h2><p>这里有两种方法，第一种是使用video标签，第二种是使用iframe标签。</p>
+<p>video标签语法如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;video src=&quot;xxxxxx.mp4&quot;  width=&quot;100%&quot; height=&quot;100%&quot;  poster=&quot;xxxxxx.jpg&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+<p>src是视频的地址；poster是可以设置视频的封面（可选）</p>
+<p><video src="https://cesium.com/public/SandcastleSampleData/big-buck-bunny_trailer.mp4"  width="100%" height="100%" poster="https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg" controls="controls"></video></p>
+<hr>
+<p>下面是使用iframe标签，这里一般是各大视频网站直接提供的，自己去他们的网站找到复制粘贴即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">引用Bilibili的视频代码如下</span><br><span class="line"></span><br><span class="line">官方给的嵌入代码（只需要在网页版的分享按钮里有嵌入代码）</span><br><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">修改后的代码</span><br><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>如下是一个实例：</p>
+<hr>
+<iframe src="//player.bilibili.com/player.html?aid=754099091&bvid=BV1mk4y1m7nr&cid=220770745&page=1&autoplay=0&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+
+ 
+
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">BILIBILI 地址PC端参数</span><br><span class="line">    &amp;high_quality=1   (1=最高画质 0=最低画质)</span><br><span class="line">    &amp;danmaku=0   (1=打开弹幕 0=关闭弹幕)</span><br><span class="line">iframe 参数</span><br><span class="line">    allowfullscreen=&quot;allowfullscreen&quot; #移动端全屏</span><br><span class="line">    sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot; #禁止弹出网页</span><br><span class="line">     autoplay=0     取消自动播放</span><br><span class="line">frameborder 规定是否显示框架周围的边框。好像修改了没啥用？</span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">值</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">align</td>
+<td align="center">left right top middle bottom</td>
+<td align="center">不赞成使用。请使用样式代替。规定如何根据周围的元素来对齐此框架。</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">frameborder</td>
+<td align="center">10</td>
+<td align="center">规定是否显示框架周围的边框。</td>
+</tr>
+<tr>
+<td align="center">height</td>
+<td align="center">pixels%</td>
+<td align="center">规定 iframe 的高度。</td>
+</tr>
+<tr>
+<td align="center">longdesc</td>
+<td align="center">URL</td>
+<td align="center">规定一个页面，该页面包含了有关iframe 的较长描述。</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">marginheight</td>
+<td align="center">pixels</td>
+<td align="center">定义 iframe的顶部和底部的边距。</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">marginwidth</td>
+<td align="center">pixels</td>
+<td align="center">定义 iframe的左侧和右侧的边距。</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">frame_name</td>
+<td align="center">规定 iframe 的名称。</td>
+</tr>
+<tr>
+<td align="center">sandbox</td>
+<td align="center">“”allow-formsallow-same-originallow-scriptsallow-top-navigation</td>
+<td align="center">启用一系列对 &lt;_iframe&gt; 中内容的额外限制。</td>
+</tr>
+<tr>
+<td align="center">scrolling</td>
+<td align="center">yesnoauto</td>
+<td align="center">规定是否在 iframe中显示滚动条。</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">seamless</td>
+<td align="center">seamless</td>
+<td align="center">规定 &lt;_iframe&gt; 看上去像是包含文档的一部分。</td>
+</tr>
+<tr>
+<td align="center">src</td>
+<td align="center">URL</td>
+<td align="center">规定在 iframe中显示的文档的 URL。</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">srcdoc</td>
+<td align="center">HTML_code</td>
+<td align="center">规定在 &lt;_iframe&gt; 中显示的页面的 HTML 内容。</td>
+</tr>
+<tr>
+<td align="center">width</td>
+<td align="center">pixels%</td>
+<td align="center">定义 iframe 的宽度。</td>
+</tr>
+</tbody></table>
+<h2 id="8-折叠语法"><a href="#8-折叠语法" class="headerlink" title="8.折叠语法"></a>8.折叠语法</h2><details>
+  <summary>折叠文本</summary>
+  此处可书写文本
+  嗯，是可以书写文本的
+</details>
+
+
+<details>
+  <summary>折叠代码块</summary>
+  <pre><code> 
+     System.out.println("虽然可以折叠代码块");
+     System.out.println("但是代码无法高亮");
+  </code></pre>
+</details>
+
+
+
+
+
+<details>
+  <summary>折叠代码块</summary>
+  <pre><blockcode> 
+     System.out.println("虽然可以折叠代码块");
+     System.out.println("但是代码无法高亮");
+  </blockcode></pre>
+</details>
+
+
+
+<hr>
+<h1 id="七、不常用的语法"><a href="#七、不常用的语法" class="headerlink" title="七、不常用的语法"></a>七、不常用的语法</h1><h2 id="1-注释"><a href="#1-注释" class="headerlink" title="1.注释"></a>1.注释</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--注释，不会显示--&gt;</span></span><br><span class="line">[comment]: <span class="tag">&lt;&gt;</span> (注释，不会显示)</span><br><span class="line">[//]: <span class="tag">&lt;&gt;</span> (注释，不会显示)</span><br><span class="line">[//]: # (注释，不会显示)</span><br><span class="line">*[^_^]:注释，不会显示</span><br><span class="line">*[@_@]:注释，不会显示</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;kbd&gt;tab&lt;/kbd&gt;键</span><br><span class="line">&lt;b&gt;粗体&lt;/b&gt;</span><br><span class="line">&lt;i&gt;斜体&lt;/i&gt;</span><br><span class="line">&lt;em&gt;也是斜体&lt;/em&gt;</span><br><span class="line">文本&lt;sup&gt;上标&lt;/sup&gt;</span><br><span class="line">文本&lt;sub&gt;下标&lt;/sub&gt;</span><br><span class="line">换行&lt;br&gt;下一行</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h1 id="尾注"><a href="#尾注" class="headerlink" title="尾注"></a>尾注</h1><p>[^1]: 这是上面的注释内容。				<code>用鼠标点一下（非这行）其他的地方，这里就会出现跳转按钮</code></p>
+<p>1.行内公式</p>
+<p>只需在两个 <code>$$</code>之间输入需要显示的公式即可</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ f(x) = a+b $</span><br></pre></td></tr></table></figure>
+
+<p>显示的效果：$f(x)&#x3D;a+b$</p>
+<p>2.单独一行的公式</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ f(x) = a+b $$</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://2p40zp-my.sharepoint.com/personal/zhongyuan_2p40zp_onmicrosoft_com/_layouts/52/download.aspx?share=EXPr2NsWRUFIhzLUaX85g3UBBDsHh9RWp8sTlx2XDHCXkQ" alt="ZhongyYuan 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="https://2p40zp-my.sharepoint.com/personal/zhongyuan_2p40zp_onmicrosoft_com/_layouts/52/download.aspx?share=EbyUjSW1aYhCpK8B3P9jhcUBAOV3jv67KWThFyFJOoBzkg" alt="ZhongyYuan 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/markdown/" rel="tag"># markdown</a>
+          </div>
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_telegram"></a>
+      <a class="a2a_button_wechat"></a>
+      <a class="a2a_button_qzone"></a>
+  </div>
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/note/hexo/diy.html" rel="prev" title="我的hexo博客设置以及next主题个人喜好">
+                  <i class="fa fa-angle-left"></i> 我的hexo博客设置以及next主题个人喜好
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blog/liferecord/essay/zhuifan.html" rel="next" title="观影记录66666">
+                  观影记录66666 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">ZhongyYuan</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="本站总字数">17k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="阅读本站需要总时间">16 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+<!--
+  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+-->
+
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js"></script>
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
