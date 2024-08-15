@@ -189,7 +189,10 @@
 
 
 
-<h2 id="13-修改博客文章侧边栏的圆角和边距"><a href="#13-修改博客文章侧边栏的圆角和边距" class="headerlink" title="13. 修改博客文章侧边栏的圆角和边距"></a>13. 修改博客文章侧边栏的圆角和边距</h2><p>打开    themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_variables&#x2F;Gemini.styl，</p>
+<h2 id="13-修改博客文章侧边栏的圆角和边距"><a href="#13-修改博客文章侧边栏的圆角和边距" class="headerlink" title="13. 修改博客文章侧边栏的圆角和边距"></a>13. 修改博客文章侧边栏的圆角和边距</h2><p><a href="https://cs-cshi.github.io/hexo-blog/Hexo-NexT%20%E8%AE%BE%E7%BD%AE%E5%9C%86%E8%A7%92/">https://cs-cshi.github.io/hexo-blog/Hexo-NexT%20%E8%AE%BE%E7%BD%AE%E5%9C%86%E8%A7%92/</a></p>
+<p>打开     blog_root&#x2F;source&#x2F;_data&#x2F;variables.styl ，</p>
+<p>没有这个文件夹就手动新建该文件夹  _data，并新建该文件variables.styl。</p>
+<p>打开themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_variables&#x2F;Gemini.styl，把内容复制到上面的文件中。</p>
 <p>根据启用的不同主题，选择相应的文件。这里修改的是Gemini.styl。</p>
 <p>在文件中修改代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$border-radius-inner     = 0 0 10px 10px;</span><br><span class="line">$border-radius           = 10px;</span><br></pre></td></tr></table></figure>
