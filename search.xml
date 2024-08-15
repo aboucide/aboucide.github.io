@@ -212,6 +212,43 @@
 <p>搜索 busuanzi_value_site_pv 字段，修改值为：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">本站浏览总量共计：&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次</span><br></pre></td></tr></table></figure>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<h1 id="三、可能遇到的问题"><a href="#三、可能遇到的问题" class="headerlink" title="三、可能遇到的问题"></a>三、可能遇到的问题</h1><h2 id="1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。"><a href="#1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。" class="headerlink" title="1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。"></a>1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。</h2><p>解决办法</p>
+<p>打开博客站点配置文件,修改url，并设置root字段的内容</p>
+<p>例如我博客的首页，网址为<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
+<p>那我的url就设置成这个<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
+<p>root字段没有，就手动输入<code>root: /</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## Set your site url here. </span><br><span class="line">url:  https://github.com/aboucide/aboucide.github.io.git   </span><br><span class="line">root: /</span><br></pre></td></tr></table></figure>
+
+
+
+<p>如果你的博客首页网址是  url：<a href="http://www.mfm.com/blog">http://www.mfm.com/blog</a></p>
+<p>则你的  root：&#x2F;blog</p>
+<p>再次重新部署即可。</p>
 ]]></content>
       <tags>
         <tag>hexo</tag>
