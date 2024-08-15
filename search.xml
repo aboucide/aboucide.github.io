@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>我的hexo博客设置以及next主题个人喜好</title>
-    <url>//blog/note/hexo/diy.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
+    <url>/blog//blog/note/hexo/diy.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog/assets/css/APlayer.min.css"><script src="/blog/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog/assets/js/Meting.min.js"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
 <p>hexo配置文件（博客根目录文件夹内的—config.yml）——博客配置文件</p>
 <h1 id="一、博客配置文件的修改"><a href="#一、博客配置文件的修改" class="headerlink" title="一、博客配置文件的修改"></a>一、博客配置文件的修改</h1><h2 id="1-修改站点语言为中文"><a href="#1-修改站点语言为中文" class="headerlink" title="1.修改站点语言为中文"></a>1.修改站点语言为中文</h2><p>打开配置文件，搜索 language，找到如下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">author:</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
@@ -219,8 +219,8 @@
   </entry>
   <entry>
     <title>观影记录66666</title>
-    <url>//blog/liferecord/essay/zhuifan.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><table>
+    <url>/blog//blog/liferecord/essay/zhuifan.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog/assets/css/APlayer.min.css"><script src="/blog/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog/assets/js/Meting.min.js"></script><table>
 <thead>
 <tr>
 <th>名称</th>
@@ -331,8 +331,8 @@
   </entry>
   <entry>
     <title>博客内嵌入视频-测试</title>
-    <url>//blog/hexo/video1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>这是使用html的video标签插入视频</p>
+    <url>/blog//blog/hexo/video1.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog/assets/css/APlayer.min.css"><script src="/blog/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog/assets/js/Meting.min.js"></script><p>这是使用html的video标签插入视频</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot;xxxxxx.mp4&quot;  width=&quot;100%&quot; height=&quot;100%&quot;  poster=&quot;xxxxxx.jpg&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
 <p>src是视频的地址；poster是可以设置视频的封面（可选）</p>
 <p><video src="https://cesium.com/public/SandcastleSampleData/big-buck-bunny_trailer.mp4"  width="100%" height="100%" poster="https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg" controls="controls"></video></p>
@@ -357,9 +357,9 @@
   </entry>
   <entry>
     <title>这是一篇加密文章的测试，密码6666</title>
-    <url>//blog/hexo/jiami.html</url>
+    <url>/blog//blog/hexo/jiami.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="126f053ab4a6948fdc50e977855cb153a342af7be6b4edbfc92a818c98081c6e">591ad66477dc9f8d468bd98487d7d9f9cd9b9f6ee2197f4aecb152b8361f8df989fae85024aa73cbf6d601a62a94cdb2786bc0b21df69df0903f55ad88b8513e4bf063cb617d8927952d8c8ba2a1601aa90f921ef93b49195f1e6bdec3c16faffd4087343b56bad90f52318b131d240138d2a0e16dca7a136fb492c81aa21cca30a511a7d18681e22bebabcbd90e1ee5587d4afe536a5c98ab9e4c827b0b51ff3cafb1b3679f9a96eabc6591dc8aaae55de456ee7469337a0cb1e037ccc27548428cbc6f4b9a3b5151720e8bc2de7239cf1ea9b2ee627ba07d3d674c94c71ce3cc389d7cddddfd497aa66379580c20a119bafd9cc75285a3015ac8cde48af226c5176eb882e218457c62d3cfc902edaf3b303c290fdb55fb877d84417621924eca2f124cd55a8068a3bd241bd00ce8db5d17109d8eb5d75e5818c1a838b26f817ebe99f8382d11fb0a547a9fbd9f88a2376a0b3c6f3de29a9c12c350f57e0c73c8698122c6bf50af4d8fd6823f91652c9dece7b6506024ebbdf64926ce3e711aaae89c4320e2c5015c279d5105a35ef9f47a7fd597ad29bc29778e2fee0a466874a0bf0b3cb55b73ee0f279377d501995ea9911354c6130f2ca78de00e3f190a317dd6026447d323cfb8bdecc600b4cf</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="b7cb23021c8fcfddbc2dbb8aba1d4a47a8c43dd3fb452c1ecea88d3333aa3fef">591ad66477dc9f8d468bd98487d7d9f9cd9b9f6ee2197f4aecb152b8361f8df989fae85024aa73cbf6d601a62a94cdb2786bc0b21df69df0903f55ad88b8513e4bf063cb617d8927952d8c8ba2a1601a406e95704d7cffd40898eda21387ddc664e02400d408af8e1d724ec88c1e2eaab1b60a7b9314771c3b31d1a4721eebe4975e9f9ccbe2d26037064b2dc5621e58250eff33123762789e12765e25797bd6915a8c79d8fb8c3b092b94587d90edb427fd848007561e22d4e138c35f38d0a111de49fb2b4ca152161636c837833cb39a79d2bdd958944cf5751d37a465dc3a7068ae40b33490bfc62b2fc6bbddfcbb479675b6ab4d1dc9e2841cd30260ff7b494f3edc6bb89cb454294541e60e7cf9550748ec14946b72189ea387ab7df5b3416e727647348dededb92446880823eb987ecb39230a21b712570a9669747a8673d362277750d21de34f7064cbbb13b76af457b11780887113231a6563759c1b4201729addf4e880b88b1ffbe1bd377b28c0e05b29ef50b8120fa5d0eced9bdebac33d865112f3384ee02b3463088db16470aa9fa27eb0aeff61311bfda9437d1f839c54982d1f950669dbf08f4c4edffb7991859fce082a772ab43c6ef4d30573e801c1853e84ed428a99240822a1071e6baf9e409ec0b21c8d2f165f7e56b1</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-blink">
       <input class="hbe hbe-input-field hbe-input-field-blink" type="password" id="hbePass">
@@ -369,7 +369,7 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+<script data-pjax src="/blog/lib/hbe.js"></script><link href="/blog/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -379,8 +379,8 @@
   </entry>
   <entry>
     <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
-    <url>//blog/solution/Wifi.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
+    <url>/blog//blog/solution/Wifi.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog/assets/css/APlayer.min.css"><script src="/blog/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog/assets/js/Meting.min.js"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
 <p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
 <p>连接WiFi，提示<code>无法连接到该wifi</code></p>
 <p>问题已经描述完毕，下面是我的解决方法。</p>
@@ -409,8 +409,8 @@
   </entry>
   <entry>
     <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
-    <url>//blog/epicwebevent/szjsvsjc.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
+    <url>/blog//blog/epicwebevent/szjsvsjc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog/assets/css/APlayer.min.css"><script src="/blog/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog/assets/js/Meting.min.js"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
 <p>最终结果：交警败诉。</p>
 <p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
 <p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
@@ -426,8 +426,8 @@
   </entry>
   <entry>
     <title>Markdown语法</title>
-    <url>//blog/note/markdown/yufa.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>在需要目录出现的地方（一般在文章一开始）放置一个标记<code>[toc]</code>，这样会自动生成一个嵌套的包含所有标题的列表。</p>
+    <url>/blog//blog/note/markdown/yufa.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog/assets/css/APlayer.min.css"><script src="/blog/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog/assets/js/Meting.min.js"></script><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>在需要目录出现的地方（一般在文章一开始）放置一个标记<code>[toc]</code>，这样会自动生成一个嵌套的包含所有标题的列表。</p>
 <p>[toc]</p>
 <hr>
 <h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><p>Typora快捷键整合</p>
@@ -796,8 +796,8 @@
   </entry>
   <entry>
     <title>近三年全国各省市高考化学真题分享（学生版+教师版）</title>
-    <url>//blog/chemistry/shijuan/2021-2023.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="一、获取通道"><a href="#一、获取通道" class="headerlink" title="一、获取通道"></a>一、获取通道</h1><p>链接:<a href="https://caiyun.139.com/m/i?065Ct6gI60upp">https://caiyun.139.com/m/i?065Ct6gI60upp</a><br>提取码:PgLi<br>复制内容打开移动云盘PC客户端，操作更方便哦</p>
+    <url>/blog//blog/chemistry/shijuan/2021-2023.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog/assets/css/APlayer.min.css"><script src="/blog/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog/assets/js/Meting.min.js"></script><h1 id="一、获取通道"><a href="#一、获取通道" class="headerlink" title="一、获取通道"></a>一、获取通道</h1><p>链接:<a href="https://caiyun.139.com/m/i?065Ct6gI60upp">https://caiyun.139.com/m/i?065Ct6gI60upp</a><br>提取码:PgLi<br>复制内容打开移动云盘PC客户端，操作更方便哦</p>
 <img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVl6WldDeWhjVVJJa3FxRk5adFJVUmtCOTdNTmNLM0JyZVgwNk5JZTJDM1lqZz9lPVFKZGVYbQ.png" style="zoom:67%;" />
 
 
@@ -830,11 +830,11 @@
   </entry>
   <entry>
     <title>高中化学90个实验视频汇总</title>
-    <url>//blog/chemistry/experiment-videos/allvideos.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+    <url>/blog//blog/chemistry/experiment-videos/allvideos.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog/assets/css/APlayer.min.css"><script src="/blog/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog/assets/js/Meting.min.js"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
 <hr>
-<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":false,"video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
 
 
