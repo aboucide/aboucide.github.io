@@ -87,11 +87,26 @@
 
 <h2 id="4、浏览页面显示当前浏览进度"><a href="#4、浏览页面显示当前浏览进度" class="headerlink" title="4、浏览页面显示当前浏览进度"></a>4、浏览页面显示当前浏览进度</h2><p>打开 themes&#x2F;next&#x2F;_config.yml，搜索关键字 <code>scrollpercent</code>，把 false 改为 true。</p>
 <p>会看到左下角显示当前页面滚动的百分比。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  enable: true                            #打开返回页面顶部的按钮</span><br><span class="line">  # Back to top in sidebar.</span><br><span class="line">  sidebar: true                           #是否设置把当前阅读百分比合并到侧边栏，选择false则阅读进度单独显示小的悬浮窗。</span><br><span class="line">  # Scroll percent label in b2t button.   显示当前页面滚动百分比</span><br><span class="line">  scrollpercent: true                     </span><br></pre></td></tr></table></figure>
+
+
+
 <p>图下为更新前。</p>
 <img src=" https://im.gurl.eu.org/file/0d1b6f5d273481d77bed7.png "  style="zoom:20%;" />
 
 <p>更下为更新后。可以看到左下角多了一个浏览进度百分比。</p>
 <img src=" https://im.gurl.eu.org/file/88e563b9d42bce4680f1e.png "  style="zoom:25%;" />
+
+
+
+<p>还可以设置页面顶部的浏览进度条</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Reading progress bar     页面顶部显示阅读进度条</span><br><span class="line">reading_progress:</span><br><span class="line">  enable: true</span><br><span class="line">  # Available values: left | right</span><br><span class="line">  start_at: left</span><br><span class="line">  # Available values: top | bottom</span><br><span class="line">  position: top</span><br><span class="line">  reversed: false</span><br><span class="line">  color: &quot;#37c6c0&quot;</span><br><span class="line">  height: 3px</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
 
 
 
@@ -150,8 +165,31 @@
 
 
 
-<h2 id="11-代码块设置“复制”按钮"><a href="#11-代码块设置“复制”按钮" class="headerlink" title="11. 代码块设置“复制”按钮"></a>11. 代码块设置“复制”按钮</h2><p>打开代码块风格预览网站    <a href="https://theme-next.js.org/highlight/">https://theme-next.js.org/highlight/</a></p>
-]]></content>
+<h2 id="11-代码块风格设置-并-增加代码块“复制”按钮"><a href="#11-代码块风格设置-并-增加代码块“复制”按钮" class="headerlink" title="11. 代码块风格设置 并 增加代码块“复制”按钮"></a>11. 代码块风格设置 并 增加代码块“复制”按钮</h2><p>打开代码块风格预览网站    <a href="https://theme-next.js.org/highlight/">https://theme-next.js.org/highlight/</a></p>
+<p>我选择的Engine是hightlight；Theme是atom-one-light。</p>
+<p>在博客站点配置文件进行设置如下代码，选择highlight的enable:设置成 true</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#下面是设置博客文章中代码块的渲染引擎，</span><br><span class="line"># hightlight和prismjs只能二选一打开enable的true，另一个选择false</span><br><span class="line">highlight:</span><br><span class="line">  enable: true</span><br><span class="line">  line_number: true</span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">  wrap: true</span><br><span class="line">  hljs: false</span><br><span class="line"></span><br><span class="line">prismjs:</span><br><span class="line">  enable: false</span><br><span class="line">  preprocess: true</span><br><span class="line">  line_number: true</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>在next主题配置文件设置如下代码theme: atom-one-light</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#这里是博客里面的代码块的样式</span><br><span class="line">codeblock:</span><br><span class="line">  # Code Highlight theme</span><br><span class="line">  # All available themes: https://theme-next.js.org/highlight/</span><br><span class="line">  theme:</span><br><span class="line">    light: atom-one-light</span><br><span class="line">    dark: atom-one-light</span><br><span class="line">  prism:</span><br><span class="line">    light: prism</span><br><span class="line">    dark: prism-dark</span><br></pre></td></tr></table></figure>
+
+
+
+<p>打开代码块复制按钮</p>
+<p>在next主题配置文件,打开copy_button的enable设置成true</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Add copy button on codeblock   增加代码块复制按钮</span><br><span class="line">copy_button:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="12-设置页面加载特效"><a href="#12-设置页面加载特效" class="headerlink" title="12. 设置页面加载特效"></a>12. 设置页面加载特效</h2><p>页面有时加载缓慢，可以设置一个当前页面加载的进度条显示，避免焦虑。</p>
+<p>打开next主题的配置文件，找到<code>pace</code>片段，enable的值设置成true，可以自定义color和theme的值。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Progress bar in the top during page loading.</span><br><span class="line">#这里是设置博客加载的进度条，可以访问下面的网址，查看各个效果的例子。</span><br><span class="line"># For more information: https://github.com/CodeByZach/pace</span><br><span class="line">pace:</span><br><span class="line">  enable: true</span><br><span class="line">  # All available colors:</span><br><span class="line">  # black | blue | green | orange | pink | purple | red | silver | white | yellow</span><br><span class="line">  color: green</span><br><span class="line">  # All available themes:</span><br><span class="line">  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span><br><span class="line">  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span><br><span class="line">  theme: loading-bar</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="13-修改博客文章侧边栏的圆角和边距"><a href="#13-修改博客文章侧边栏的圆角和边距" class="headerlink" title="13. 修改博客文章侧边栏的圆角和边距"></a>13. 修改博客文章侧边栏的圆角和边距</h2>]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
