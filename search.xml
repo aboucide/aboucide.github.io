@@ -189,7 +189,12 @@
 
 
 
-<h2 id="13-修改博客文章侧边栏的圆角和边距"><a href="#13-修改博客文章侧边栏的圆角和边距" class="headerlink" title="13. 修改博客文章侧边栏的圆角和边距"></a>13. 修改博客文章侧边栏的圆角和边距</h2>]]></content>
+<h2 id="13-修改博客文章侧边栏的圆角和边距"><a href="#13-修改博客文章侧边栏的圆角和边距" class="headerlink" title="13. 修改博客文章侧边栏的圆角和边距"></a>13. 修改博客文章侧边栏的圆角和边距</h2><p>打开    themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_variables&#x2F;Gemini.styl，</p>
+<p>根据启用的不同主题，选择相应的文件。这里修改的是Gemini.styl。</p>
+<p>在文件中修改代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$border-radius-inner     = 0 0 10px 10px;</span><br><span class="line">$border-radius           = 10px;</span><br></pre></td></tr></table></figure>
+
+]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
