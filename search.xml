@@ -194,6 +194,24 @@
 <p>在文件中修改代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$border-radius-inner     = 0 0 10px 10px;</span><br><span class="line">$border-radius           = 10px;</span><br></pre></td></tr></table></figure>
 
+
+
+<p>进入next主题配置文件，并搜索 custom_file_path 字段，将variable行取消注释。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Define custom file paths.  自定义页面风格，取消默认配置</span><br><span class="line"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.njk</span><br><span class="line">  #header: source/_data/header.njk</span><br><span class="line">  #sidebar: source/_data/sidebar.njk</span><br><span class="line">  #postMeta: source/_data/post-meta.njk</span><br><span class="line">  #postBodyStart: source/_data/post-body-start.njk</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.njk</span><br><span class="line">  #footer: source/_data/footer.njk</span><br><span class="line">  #bodyEnd: source/_data/body-end.njk</span><br><span class="line">  variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  #style: source/_data/styles.styl</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="14-给博客添加人数访问统计"><a href="#14-给博客添加人数访问统计" class="headerlink" title="14. 给博客添加人数访问统计"></a>14. 给博客添加人数访问统计</h2><p>进入主题配置文件，并搜索 busuanzi_count 字段，设置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: fa fa-user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: fa fa-eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: far fa-eye</span><br></pre></td></tr></table></figure>
+
+<p>为了增加可读性，可以增加如下设置。</p>
+<p>进入 Hexo&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials 目录，打开 footer.njk 文件。</p>
+<p>搜索 busuanzi_value_site_uv字段，修改值为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">访客人数共计：&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt; 人</span><br></pre></td></tr></table></figure>
+
+<p>搜索 busuanzi_value_site_pv 字段，修改值为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">本站浏览总量共计：&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <tags>
         <tag>hexo</tag>
