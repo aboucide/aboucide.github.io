@@ -226,29 +226,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<hr>
+<h2 id="15-博客文章置顶功能"><a href="#15-博客文章置顶功能" class="headerlink" title="15.博客文章置顶功能"></a>15.博客文章置顶功能</h2><h2 id="16-博客文章摘要显示图片"><a href="#16-博客文章摘要显示图片" class="headerlink" title="16. 博客文章摘要显示图片"></a>16. 博客文章摘要显示图片</h2><hr>
 <h1 id="三、可能遇到的问题"><a href="#三、可能遇到的问题" class="headerlink" title="三、可能遇到的问题"></a>三、可能遇到的问题</h1><h2 id="1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。"><a href="#1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。" class="headerlink" title="1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。"></a>1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。</h2><p>解决办法</p>
 <p>打开博客站点配置文件,修改url，并设置root字段的内容</p>
 <p>例如我博客的首页，网址为<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>

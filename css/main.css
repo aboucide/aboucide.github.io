@@ -1195,6 +1195,35 @@ pre code {
 .use-motion .menu-item {
   visibility: hidden;
 }
+.book-mark-link {
+  border-bottom: 0;
+  position: fixed;
+  top: -10px;
+  transition: top 0.3s;
+  right: 30px;
+}
+@media (max-width: 991px) {
+  .book-mark-link {
+    right: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .book-mark-link {
+    display: none;
+  }
+}
+.book-mark-link::before {
+  color: #222;
+  font-size: 32px;
+  line-height: 1;
+  content: '\f02e';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+.book-mark-link:hover,
+.book-mark-link-fixed {
+  top: -2px;
+}
 .sidebar-inner {
   color: #999;
   padding: 18px 10px;
@@ -1627,9 +1656,9 @@ pre code {
 }
 .use-motion .post-block {
   visibility: hidden;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 60px;
-  padding: 25px;
+  padding: 15px;
   -webkit-box-shadow: 0 0 5px #cacbcb;
   -moz-box-shadow: 0 0 5px #cacbcc;
 }
@@ -2555,7 +2584,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #a4612d;
+  background: #ff6bac;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
