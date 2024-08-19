@@ -615,25 +615,93 @@
 </blockquote>
 </blockquote>
 <h2 id="2-表格插入"><a href="#2-表格插入" class="headerlink" title="2.表格插入"></a>2.表格插入</h2><p>快捷键<code>Ctrl + T</code>即可弹出创建表格的对话框</p>
-<p>使用下面的代码也可以&#96;&#96;&#96;</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3|</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>使用下面的代码也可以</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3|</span><br><span class="line">|  |  |</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
 
 <table>
 <thead>
 <tr>
-<th align="center">表头1 : -</th>
-<th>表头2</th>
-<th>表头3</th>
+<th align="center"><div style="display:inline-block;width: 80px"> 快捷键 </div></th>
+<th>作用</th>
+<th>备注</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">再</td>
+<td align="center">Enter</td>
+<td>换到下一行</td>
 <td></td>
+</tr>
+<tr>
+<td align="center">Shift + Enter</td>
+<td>表格内换行</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ctrl + Shift + Backspace</td>
+<td>删除改行</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Alt + 方向键</td>
+<td>向上&#x2F;下移动该行</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ctrl + Enter</td>
+<td>添加一行</td>
 <td></td>
 </tr>
 <tr>
 <td align="center"></td>
 <td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="2-1-如何自定义修改Typora表格宽度"><a href="#2-1-如何自定义修改Typora表格宽度" class="headerlink" title="2.1 如何自定义修改Typora表格宽度"></a>2.1 如何自定义修改Typora表格宽度</h3><ul>
+<li>预留宽度，用于打印后填写</li>
+</ul>
+<p>一个比较简单粗暴的方法自然是加一段空格符</p>
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>一个更加优雅的方法则是使用空的 <img> 标签。例如<code>&lt;img width=200/&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th><img width=200/></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>长文本需要指定列宽，控制换行</li>
+</ul>
+<p>可以使用 <code>&lt;div style=&quot;width:长度&quot;&gt;</code>单元格文本<code>&lt;/div&gt; </code>的形式，</p>
+<p>长度单位可以是 pt , px, cm等。</p>
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><div style="width:300pt">&#96;&#96;我使用了300pt的长度</div> &#96;</td>
 <td></td>
 </tr>
 </tbody></table>
