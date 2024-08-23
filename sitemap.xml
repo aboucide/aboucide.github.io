@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/hexo/diy.html</loc>
+    
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/note/teacher/zhuguanti.html</loc>
     
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/note/mind/biancheng0-1.html</loc>
+    
+    <lastmod>2024-08-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,70 +31,7 @@
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/liferecord/essay/zhuifan.html</loc>
     
-    <lastmod>2024-08-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/shijuan/2021-2023.html</loc>
-    
-    <lastmod>2024-08-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/experiment-videos/allvideos.html</loc>
-    
-    <lastmod>2024-08-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/index.html</loc>
-    
-    <lastmod>2024-08-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/tags/index.html</loc>
-    
-    <lastmod>2024-08-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/hexo/diy.html</loc>
-    
-    <lastmod>2024-08-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/hexo/video1.html</loc>
-    
-    <lastmod>2024-08-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/hexo/jiami.html</loc>
-    
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +40,7 @@
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/solution/Wifi.html</loc>
     
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,7 +49,7 @@
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/epicwebevent/szjsvsjc.html</loc>
     
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -103,7 +58,61 @@
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/markdown/yufa.html</loc>
     
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/shijuan/2021-2023.html</loc>
+    
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/experiment-videos/allvideos.html</loc>
+    
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/index.html</loc>
+    
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/tags/index.html</loc>
+    
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/hexo/video1.html</loc>
+    
+    <lastmod>2024-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/hexo/jiami.html</loc>
+    
+    <lastmod>2024-08-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -112,7 +121,7 @@
 
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -120,49 +129,56 @@
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/hexo/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/%E7%BB%BC%E5%90%88%E7%B4%A0%E8%B4%A8/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/tags/programming/</loc>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/%E8%BF%BD%E7%95%AA/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/video/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/wifi/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/markdown/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/download/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -171,84 +187,98 @@
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/%E8%AF%81%E4%B9%A6/</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/liferecord/</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/hexo/</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/%E8%AF%81%E4%B9%A6/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81/</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/solution/</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/epicwebevent/</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/liferecord/essay/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/liferecord/</loc>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/hexo/</loc>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/%E8%AF%81%E4%B9%A6/%E6%95%99%E5%B8%88%E8%B5%84%E6%A0%BC%E8%AF%81/</loc>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/solution/</loc>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/mind/</loc>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/epicwebevent/</loc>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/</loc>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/liferecord/essay/</loc>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/chemistry/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/markdown/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/chemistry/paper/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/chemistry/experiment-videos/</loc>
-    <lastmod>2024-08-22</lastmod>
+    <lastmod>2024-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
