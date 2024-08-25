@@ -263,6 +263,46 @@
       </tags>
   </entry>
   <entry>
+    <title>桌面图标间距变大，如何修改回去？解决办法</title>
+    <url>//uncategorized/%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E9%97%B4%E8%B7%9D%E5%8F%98%E5%A4%A7%EF%BC%8C%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E5%9B%9E%E5%8E%BB%EF%BC%9F%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>修改之前<br><img src=" https://s21.ax1x.com/2024/08/25/pAF7dv6.png "  style="zoom:30%;" /></p>
+<p>修改之后如下图</p>
+<img src=" https://s21.ax1x.com/2024/08/25/pAF7DbD.png "  style="zoom:50%;" />
+
+
+
+<p>一键修改桌面图标间距（推荐）。</p>
+<p>链接: <a href="https://caiyun.139.com/m/i?065CtbL96waQC">https://caiyun.139.com/m/i?065CtbL96waQC</a>    提取码:aQ4L  </p>
+<h2 id="手动修改-解决办法"><a href="#手动修改-解决办法" class="headerlink" title="手动修改-解决办法"></a>手动修改-解决办法</h2><ol>
+<li><strong>打开注册表编辑器</strong><ul>
+<li>按下<code>Win + R</code>快捷键打开“运行”对话框，输入<code>regedit</code>，然后按回车键。在弹出的用户账户控制提示中点击“是”以打开注册表编辑器。</li>
+</ul>
+</li>
+<li><strong>定位到相应键值</strong><ul>
+<li>在注册表编辑器的左侧目录树中，导航至以下路径：<br><code>HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics</code></li>
+</ul>
+</li>
+<li><strong>备份注册表</strong></li>
+<li><strong>修改图标间距</strong><ul>
+<li>在右侧找到名为<code>IconSpacing</code>和<code>IconVerticalSpacing</code>的两个键值。</li>
+<li>双击<code>IconSpacing</code>，将数值数据改为<code>-1125</code>，然后同样操作修改<code>IconVerticalSpacing</code>为<code>-1125</code>。</li>
+<li>确认更改后关闭注册表编辑器。</li>
+</ul>
+</li>
+<li><strong>注销&#x2F;重启计算机</strong><ul>
+<li>完成修改后，注销&#x2F;重启电脑让更改生效。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>常见电脑疑难的解决方案</category>
+      </categories>
+      <tags>
+        <tag>桌面图标</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>综合素质-材料分析题——刷题笔记</title>
     <url>//note/teacher/zhuguanti.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、职业理念"><a href="#一、职业理念" class="headerlink" title="一、职业理念"></a>一、职业理念</h1><h2 id="教育观"><a href="#教育观" class="headerlink" title="教育观"></a>教育观</h2><h3 id="素质教育的内涵"><a href="#素质教育的内涵" class="headerlink" title="素质教育的内涵"></a>素质教育的内涵</h3><div class="note info flat"><p>提示： “提素，个性，创，两全”</p>
@@ -359,7 +399,7 @@
       </tags>
   </entry>
   <entry>
-    <title>观影记录</title>
+    <title>观影/追番记录</title>
     <url>//blog/liferecord/essay/zhuifan.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
 <thead>
@@ -376,7 +416,7 @@
 </tr>
 <tr>
 <td>凡人修仙传⭐⭐⭐⭐⭐</td>
-<td align="left">2024年8月17日   看完第115集</td>
+<td align="left">2024年8月26日   看完第116集</td>
 <td>韩立准备和极阴祖师一起拉虚天鼎。</td>
 </tr>
 <tr>
@@ -385,9 +425,9 @@
 <td>叶凡刚进入紫山。</td>
 </tr>
 <tr>
-<td></td>
-<td align="left"></td>
-<td></td>
+<td>完美世界<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年8月21日  看完第177集</td>
+<td>石昊ko仙殿继承人。</td>
 </tr>
 <tr>
 <td></td>
