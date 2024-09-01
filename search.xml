@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML学习笔记</title>
+    <url>//blog/note/code-study/html.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>还没开始学。。。。。。</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的hexo博客设置以及next主题个人喜好</title>
     <url>//blog/note/hexo/diy.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
@@ -263,102 +276,6 @@
       </tags>
   </entry>
   <entry>
-    <title>综合素质-材料分析题——刷题笔记</title>
-    <url>//note/teacher/zhuguanti.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、职业理念"><a href="#一、职业理念" class="headerlink" title="一、职业理念"></a>一、职业理念</h1><h2 id="教育观"><a href="#教育观" class="headerlink" title="教育观"></a>教育观</h2><h3 id="素质教育的内涵"><a href="#素质教育的内涵" class="headerlink" title="素质教育的内涵"></a>素质教育的内涵</h3><div class="note info flat"><p>提示： “提素，个性，创，两全”</p>
-</div>
-
-<details class="toggle" ><summary class="toggle-button" style="">可以尝试回忆背诵一下，点我展开答案</summary><div class="toggle-content"><ul>
-<li><p>1、素质教育以提高国民素质为根本宗旨<br>国民：所有人；素质：思想道德、文化素养、健康等；包括基础、高等、社会教育</p>
-</li>
-<li><p>2、素质教育是面向全体学生的教育<br>不歧视学生，全班每一个人一视同仁</p>
-</li>
-<li><p>3、素质教育是促进学生全面发展的教育——成绩+其他<br>除了成绩还关心其他：品德、心理、实践等；不占用音体美课堂补习语数英；全面发展不等于平均发展</p>
-</li>
-<li><p>4、素质教育是促进学生个性发展的教育——特长+特点<br>关注到学生的特点，因材施教</p>
-</li>
-<li><p>5、素质教育是以培养学生的创新精神和实践能力为重点的教育</p>
-<p>尊重学生的新想法；鼓励学生创造和动手操作；带学生走出课堂</p>
-<p>创新精神：素质教育的核心、现代教育与传统教育的根本区别</p>
-</li>
-</ul>
-</div></details>
-
-<h3 id="新课程改革的教学观"><a href="#新课程改革的教学观" class="headerlink" title="新课程改革的教学观"></a>新课程改革的教学观</h3><div class="note info flat"><p>提示：“学，习，过，人”</p>
-</div>
-
-<details class="toggle" ><summary class="toggle-button" style="">可以尝试回忆背诵一下，点我展开答案</summary><div class="toggle-content"><ul>
-<li><p>1教学从“教育者为中心”转向“学习者为中心”——互动、游戏<br>调动学生积极性；鼓励学生参与；考虑学生意见</p>
-</li>
-<li><p>2教学从“教会学生知识”转向“教会学生学习”——方法<br>教给学生学习的方法</p>
-</li>
-<li><p>3教学从“重结论轻过程”转向“重结论的同时更重过程”——参与<br>鼓励学生自己分析问题和解决问题、鼓励自主探索</p>
-</li>
-<li><p>4教学从“关注学科”转向“关注人”——人格、情感<br>关注学生的情绪、情感、道德、人格、</p>
-</li>
-</ul>
-</div></details>
-
-<h3 id="材料分析题"><a href="#材料分析题" class="headerlink" title="材料分析题"></a>材料分析题</h3><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>崔老师刚工作就担任了副班主任。<br>崔老师对学生很“宽容”。有的学生偏科，他说：“没有关系，很多天才都偏科。”有的学生不喜欢体育锻炼，他也表示理解：“人有自己喜欢的事情，也一定有自己不喜欢的事情，不可能什么都喜欢。”</p>
-<p>崔老师很喜欢学习成绩好的学生，经常召集这些学生谈话，告诉他们要有远大理想，并引导他们树立正确的人生目标。对于成绩不太好的学生，他也不加干预，还说：“学习上的差异古今中外都存在，十个手指头还不一样长呢。”</p>
-<p>班主任与崔老师商量，打算分头联系家长，了解学生的基本情况，敦促家长为学校工作提供支持。他觉得没有必要，理由是：“家长平时都很忙，我们应该理解家长。教育孩子是我们老师的责任，不能给家长增加负担。”<br>很多老师对崔老师的做法不理解。</p>
-<hr>
-<details class="toggle" ><summary class="toggle-button" style="">点我查看参考答案</summary><div class="toggle-content"><p>材料中崔老师的行为是<strong>错误</strong>的，违背了素质教育的要求。<br>首先，素质教育是面向全体学生的教育。素质教育强调在教育中使每一个人都得到发展，而不是只注重一部分人。材料中，崔老师很喜欢成绩好的学生，并引导、促进他们的发展；对于成绩不好的学生不管不顾，没有做到面向全体学生。<br>其次，素质教育是促进学生全面发展的教育。实施素质教育就要通过德育、智育、体育等的有机融合，来实现学生德、智、体、美等方面的全面发展。材料中，崔老师认可学生偏科、不喜欢体育锻炼等情况，忽视了学生的全面发展。<br>最后，素质教育是促进学生个性发展的教育。老师要尊重学生的个性并做到因材施教。材料中，崔老师只看到学生之间有差异，但是并没有针对学生的特点进行有针对性的教育。<br>总之，崔老师的行为严重违背素质教育的要求，不利于学生的健康成长，我们要引以为戒。</p>
-</div></details>
-
-
-
-<hr>
-<hr>
-<h2 id="教师观"><a href="#教师观" class="headerlink" title="教师观"></a>教师观</h2><h3 id="教师角色的改变"><a href="#教师角色的改变" class="headerlink" title="教师角色的改变"></a>教师角色的改变</h3><div class="note info flat"><p>提示：“ 建、研、放、促 ”</p>
-</div>
-
-<details class="toggle" ><summary class="toggle-button" style="">点我展开答案</summary><div class="toggle-content"><p>1、从教师与学生的关系看，新课程要求教师应该是学生学习和发展的促进者。</p>
-<p>2、从教师与课程的关系看，新课程要求教师应该是课程的建设者和开发者。</p>
-<p>3、从教师与研究的关系看，新课程要求教师应该是教育教学的研究者。</p>
-<p>4、从学校与社区的关系看，新课程要求教师应该是社区型的开放教师。</p>
-</div></details>
-
-
-
-
-
-<h3 id="教师行为转变"><a href="#教师行为转变" class="headerlink" title="教师行为转变"></a>教师行为转变</h3><div class="note info flat"><p>提示：“ 建、研、放、促 ”</p>
-</div>
-
-<details class="toggle" ><summary class="toggle-button" style="">点我展开答案</summary><div class="toggle-content"><p>1、在对待师生关系上，新课程强调尊重与赞赏</p>
-<p>2、在对待教学上，新课程强调帮助与引导</p>
-<p>3、在对待自我上，新课程强调反思</p>
-<p>4、在对待与其他教育者的关系上，新课程强调合作</p>
-</div></details>
-
-
-
-<hr>
-<hr>
-<h2 id="学生观"><a href="#学生观" class="headerlink" title="学生观"></a>学生观</h2>]]></content>
-      <categories>
-        <category>证书</category>
-        <category>教师资格证</category>
-      </categories>
-      <tags>
-        <tag>综合素质</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程语言入门到精通</title>
-    <url>//note/mind/biancheng0-1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>正文开始</p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-        <category>思维</category>
-      </categories>
-      <tags>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>观影/追番记录</title>
     <url>//blog/liferecord/essay/zhuifan.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
@@ -555,7 +472,7 @@
   </entry>
   <entry>
     <title>桌面图标间距变大，如何修改回去？解决办法</title>
-    <url>//uncategorized/%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E9%97%B4%E8%B7%9D%E5%8F%98%E5%A4%A7%EF%BC%8C%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E5%9B%9E%E5%8E%BB%EF%BC%9F%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.html</url>
+    <url>//blog/solution/deskico.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>修改之前<br><img src=" https://s21.ax1x.com/2024/08/25/pAF7dv6.png "  style="zoom:30%;" /></p>
 <p>修改之后如下图</p>
 <img src=" https://s21.ax1x.com/2024/08/25/pAF7DbD.png "  style="zoom:50%;" />
@@ -1044,7 +961,7 @@
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$ f(x) = a+b $$</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>note</category>
+        <category>笔记</category>
         <category>markdown</category>
       </categories>
       <tags>
@@ -1107,6 +1024,103 @@
       </categories>
       <tags>
         <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>综合素质-材料分析题——刷题笔记</title>
+    <url>//note/teacher/zhuguanti.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、职业理念"><a href="#一、职业理念" class="headerlink" title="一、职业理念"></a>一、职业理念</h1><h2 id="教育观"><a href="#教育观" class="headerlink" title="教育观"></a>教育观</h2><h3 id="素质教育的内涵"><a href="#素质教育的内涵" class="headerlink" title="素质教育的内涵"></a>素质教育的内涵</h3><div class="note info flat"><p>提示： “提素，个性，创，两全”</p>
+</div>
+
+<details class="toggle" ><summary class="toggle-button" style="">可以尝试回忆背诵一下，点我展开答案</summary><div class="toggle-content"><ul>
+<li><p>1、素质教育以提高国民素质为根本宗旨<br>国民：所有人；素质：思想道德、文化素养、健康等；包括基础、高等、社会教育</p>
+</li>
+<li><p>2、素质教育是面向全体学生的教育<br>不歧视学生，全班每一个人一视同仁</p>
+</li>
+<li><p>3、素质教育是促进学生全面发展的教育——成绩+其他<br>除了成绩还关心其他：品德、心理、实践等；不占用音体美课堂补习语数英；全面发展不等于平均发展</p>
+</li>
+<li><p>4、素质教育是促进学生个性发展的教育——特长+特点<br>关注到学生的特点，因材施教</p>
+</li>
+<li><p>5、素质教育是以培养学生的创新精神和实践能力为重点的教育</p>
+<p>尊重学生的新想法；鼓励学生创造和动手操作；带学生走出课堂</p>
+<p>创新精神：素质教育的核心、现代教育与传统教育的根本区别</p>
+</li>
+</ul>
+</div></details>
+
+<h3 id="新课程改革的教学观"><a href="#新课程改革的教学观" class="headerlink" title="新课程改革的教学观"></a>新课程改革的教学观</h3><div class="note info flat"><p>提示：“学，习，过，人”</p>
+</div>
+
+<details class="toggle" ><summary class="toggle-button" style="">可以尝试回忆背诵一下，点我展开答案</summary><div class="toggle-content"><ul>
+<li><p>1教学从“教育者为中心”转向“学习者为中心”——互动、游戏<br>调动学生积极性；鼓励学生参与；考虑学生意见</p>
+</li>
+<li><p>2教学从“教会学生知识”转向“教会学生学习”——方法<br>教给学生学习的方法</p>
+</li>
+<li><p>3教学从“重结论轻过程”转向“重结论的同时更重过程”——参与<br>鼓励学生自己分析问题和解决问题、鼓励自主探索</p>
+</li>
+<li><p>4教学从“关注学科”转向“关注人”——人格、情感<br>关注学生的情绪、情感、道德、人格、</p>
+</li>
+</ul>
+</div></details>
+
+<h3 id="材料分析题"><a href="#材料分析题" class="headerlink" title="材料分析题"></a>材料分析题</h3><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>崔老师刚工作就担任了副班主任。<br>崔老师对学生很“宽容”。有的学生偏科，他说：“没有关系，很多天才都偏科。”有的学生不喜欢体育锻炼，他也表示理解：“人有自己喜欢的事情，也一定有自己不喜欢的事情，不可能什么都喜欢。”</p>
+<p>崔老师很喜欢学习成绩好的学生，经常召集这些学生谈话，告诉他们要有远大理想，并引导他们树立正确的人生目标。对于成绩不太好的学生，他也不加干预，还说：“学习上的差异古今中外都存在，十个手指头还不一样长呢。”</p>
+<p>班主任与崔老师商量，打算分头联系家长，了解学生的基本情况，敦促家长为学校工作提供支持。他觉得没有必要，理由是：“家长平时都很忙，我们应该理解家长。教育孩子是我们老师的责任，不能给家长增加负担。”<br>很多老师对崔老师的做法不理解。</p>
+<hr>
+<details class="toggle" ><summary class="toggle-button" style="">点我查看参考答案</summary><div class="toggle-content"><p>材料中崔老师的行为是<strong>错误</strong>的，违背了素质教育的要求。<br>首先，素质教育是面向全体学生的教育。素质教育强调在教育中使每一个人都得到发展，而不是只注重一部分人。材料中，崔老师很喜欢成绩好的学生，并引导、促进他们的发展；对于成绩不好的学生不管不顾，没有做到面向全体学生。<br>其次，素质教育是促进学生全面发展的教育。实施素质教育就要通过德育、智育、体育等的有机融合，来实现学生德、智、体、美等方面的全面发展。材料中，崔老师认可学生偏科、不喜欢体育锻炼等情况，忽视了学生的全面发展。<br>最后，素质教育是促进学生个性发展的教育。老师要尊重学生的个性并做到因材施教。材料中，崔老师只看到学生之间有差异，但是并没有针对学生的特点进行有针对性的教育。<br>总之，崔老师的行为严重违背素质教育的要求，不利于学生的健康成长，我们要引以为戒。</p>
+</div></details>
+
+
+
+<hr>
+<hr>
+<h2 id="教师观"><a href="#教师观" class="headerlink" title="教师观"></a>教师观</h2><h3 id="教师角色的改变"><a href="#教师角色的改变" class="headerlink" title="教师角色的改变"></a>教师角色的改变</h3><div class="note info flat"><p>提示：“ 建、研、放、促 ”</p>
+</div>
+
+<details class="toggle" ><summary class="toggle-button" style="">点我展开答案</summary><div class="toggle-content"><p>1、从教师与学生的关系看，新课程要求教师应该是学生学习和发展的促进者。</p>
+<p>2、从教师与课程的关系看，新课程要求教师应该是课程的建设者和开发者。</p>
+<p>3、从教师与研究的关系看，新课程要求教师应该是教育教学的研究者。</p>
+<p>4、从学校与社区的关系看，新课程要求教师应该是社区型的开放教师。</p>
+</div></details>
+
+
+
+
+
+<h3 id="教师行为转变"><a href="#教师行为转变" class="headerlink" title="教师行为转变"></a>教师行为转变</h3><div class="note info flat"><p>提示：“ 建、研、放、促 ”</p>
+</div>
+
+<details class="toggle" ><summary class="toggle-button" style="">点我展开答案</summary><div class="toggle-content"><p>1、在对待师生关系上，新课程强调尊重与赞赏</p>
+<p>2、在对待教学上，新课程强调帮助与引导</p>
+<p>3、在对待自我上，新课程强调反思</p>
+<p>4、在对待与其他教育者的关系上，新课程强调合作</p>
+</div></details>
+
+
+
+<hr>
+<hr>
+<h2 id="学生观"><a href="#学生观" class="headerlink" title="学生观"></a>学生观</h2>]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>教资考试</category>
+      </categories>
+      <tags>
+        <tag>综合素质</tag>
+        <tag>教资</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编程语言入门到精通</title>
+    <url>//note/mind/biancheng0-1.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>正文开始</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>思维</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
       </tags>
   </entry>
 </search>
