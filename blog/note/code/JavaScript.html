@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>JavaScript  学习笔记 | 源的自留地</title><meta name="author" content="ZhongyYuan"><meta name="copyright" content="ZhongyYuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="学习JavaScript的笔记记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript  学习笔记">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript.html">
+<meta property="og:site_name" content="源的自留地">
+<meta property="og:description" content="学习JavaScript的笔记记录。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://emaillistvalidation.com/blog/content/images/2023/09/JavaScript-Symbol.png">
+<meta property="article:published_time" content="2024-09-08T23:15:08.000Z">
+<meta property="article:modified_time" content="2024-09-08T18:49:05.164Z">
+<meta property="article:author" content="ZhongyYuan">
+<meta property="article:tag" content="JavaScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://emaillistvalidation.com/blog/content/images/2023/09/JavaScript-Symbol.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'JavaScript  学习笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-08 18:49:05'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://pic.dmjnb.com/pic/f8f0115eee49d25ce12f9d6e8c923d9e" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: 【可选】文章顶部图片"><nav id="nav"><span id="blog-info"><a href="/" title="源的自留地"><span class="site-name">源的自留地</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">JavaScript  学习笔记<a class="post-edit-link" href="null_posts/JavaScript学习笔记.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-08T23:15:08.000Z" title="发表于 2024-09-08 23:15:08">2024-09-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-08T18:49:05.164Z" title="更新于 2024-09-08 18:49:05">2024-09-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/note/">笔记</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/note/%E7%BC%96%E7%A8%8B/">编程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="JavaScript  学习笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="JS基础内容"><a href="#JS基础内容" class="headerlink" title="JS基础内容"></a>JS基础内容</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/variables">变量</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/types">数据类型</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/alert-prompt-confirm">交互：alert、prompt 和 confirm</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/type-conversions">类型转换</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/operators">基础运算符，数学运算</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/comparison">值的比较</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/ifelse">条件分支：if 和 ‘?’</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/logical-operators">逻辑运算符</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/nullish-coalescing-operator">空值合并运算符 ‘??’</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/while-for">循环：while 和 for</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/switch">“switch” 语句</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/function-basics">函数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/function-expressions">函数表达式</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/arrow-functions-basics">箭头函数，基础知识</a></li>
+<li><a target="_blank" rel="noopener" href="https://zh.javascript.info/javascript-specials">JavaScript 特性</a></li>
+</ul>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="文本串"><a href="#文本串" class="headerlink" title="文本串"></a>文本串</h2><h3 id="引号-（quotes）"><a href="#引号-（quotes）" class="headerlink" title="引号 （quotes）"></a>引号 （quotes）</h3><p>​	在js中的文本串，可以被<code>单引号</code>、<code>双引号</code>、<code>反引号</code>进行插入使用。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&#x27;你好，世界&#x27;</span> ;	<span class="comment">//单引号插入文本</span></span><br><span class="line"><span class="keyword">let</span> wenben1 = <span class="string">&quot;你好啊，世界&quot;</span> ; <span class="comment">// 双引号插入文本</span></span><br><span class="line"><span class="keyword">let</span> wenben2 = <span class="string">`你好，世界啊`</span> ; <span class="comment">// 反引号插入文本</span></span><br></pre></td></tr></table></figure>
+
+<p>其中，单引号和双引号的作用一模一样。<strong>反引号</strong>可以把语法类似这种的<code>$&#123; 代码 &#125;</code> 代码插入文本串中进行运行。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">`我的名字是 <span class="subst">$&#123; <span class="number">660</span> +<span class="number">6</span> &#125;</span>`</span>);  <span class="comment">//会输出 我的名字是 666</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>反引号</strong>还能允许文本串自带<strong>换行</strong>。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">`</span></span><br><span class="line"><span class="string">你好，</span></span><br><span class="line"><span class="string">世界。</span></span><br><span class="line"><span class="string">学习使我快乐。</span></span><br><span class="line"><span class="string">`</span>);	</span><br><span class="line"><span class="comment">//输出的文字照样带换行的效果</span></span><br></pre></td></tr></table></figure>
+
+<p>单引号和双引号来自语言创建的古老时代，当时没有考虑到多行字符串的需要。反引号出现较晚，因此更通用。</p>
+<h3 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符  \"></a>特殊字符  \</h3><p>所有的特殊字符都以反斜杠字符 <code>\</code> 开始。它也被称为“转义字符”。</p>
+<p>反斜杠 <code>\</code> 在 JavaScript 中用于正确读取字符串，然后消失。内存中的字符串没有 <code>\</code>。</p>
+<table>
+<thead>
+<tr>
+<th align="left">字符</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>\n</code></td>
+<td align="left">换行</td>
+</tr>
+<tr>
+<td align="left"><code>\&#39;</code>, <code>\&quot;</code></td>
+<td align="left">引号</td>
+</tr>
+<tr>
+<td align="left"><code>\\</code></td>
+<td align="left">反斜线</td>
+</tr>
+<tr>
+<td align="left"><code>\t</code></td>
+<td align="left">制表符</td>
+</tr>
+<tr>
+<td align="left"><code>\xXX</code></td>
+<td align="left">具有给定十六进制 Unicode <code>XX</code> 的 Unicode 字符，例如：<code>&#39;\x7A&#39;</code> 和 <code>&#39;z&#39;</code> 相同。</td>
+</tr>
+<tr>
+<td align="left"><code>\uXXXX</code></td>
+<td align="left">以 UTF-16 编码的十六进制代码 <code>XXXX</code> 的 Unicode 字符，例如 <code>\u00A9</code> —— 是版权符号 <code>©</code> 的 Unicode。它必须正好是 4 个十六进制数字。</td>
+</tr>
+<tr>
+<td align="left"><code>\u&#123;X…XXXXXX&#125;</code>（1 到 6 个十六进制字符）</td>
+<td align="left">具有给定 UTF-32 编码的 Unicode 符号。一些罕见的字符用两个 Unicode 符号编码，占用 4 个字节。这样我们就可以插入长代码了。</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\nWorld&quot;</span>); <span class="comment">// Hello 和 World中间的 \n 相当于换行</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\&quot;World&quot;</span>); <span class="comment">// Hello 和 World中间的 \&quot; 相当于引号&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\&#x27;World&quot;</span>); <span class="comment">// Hello 和 World中间的 \&#x27; 相当于引号&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\\World&quot;</span>); <span class="comment">// Hello 和 World中间的 \\ 相当于反斜线\</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\tWorld&quot;</span>);   <span class="comment">// Hello 和 World中间的 \t 相当于制表符,相当于按下了一次tab键</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\x7A&#x27;</span>); <span class="comment">// 十六进制 Unicode 字符，输出 z</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\u00A9&#x27;</span>);  <span class="comment">// UTF-16 编码的十六进制 Unicode 字符，输出 ©</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\u&#123;1F60D&#125;&#x27;</span>); <span class="comment">// UTF-32 编码的十六进制 Unicode 字符，输出 😍</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="字符串长度-length"><a href="#字符串长度-length" class="headerlink" title="字符串长度 length"></a>字符串长度 length</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;abcde&quot;</span> ;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(wenben.<span class="property">length</span>);  <span class="comment">//输出 5</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;你好世界&quot;</span>.<span class="property">length</span>) <span class="comment">//输出 4</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;你好\n世界&quot;</span>.<span class="property">length</span>)  ; <span class="comment">// 输出 5， 因为换行符(\n)占一个字符</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="访问字符"><a href="#访问字符" class="headerlink" title="访问字符"></a>访问字符</h3><p>代码格式<code>string[i]</code>，代表访问字符串string的第<code>i+1</code>个字符。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好世界&quot;</span> ;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[<span class="number">0</span>]); <span class="comment">//输出 &quot;你&quot;    0代表第一个文本，1代表第二个文本，以此类推</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[<span class="number">3</span>]);  <span class="comment">//输出 &quot;界&quot;    3代表第四位的文本</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>遍历文本 <code>对字符串中的每一个字符进行逐个访问的过程</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好世界&quot;</span> ;</span><br><span class="line"><span class="comment">//下面使用两种方法进行一次输出 变量【wenben】中的字符</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//方法1</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; wenben.<span class="property">length</span>; i++) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;接下来换另一种方法进行&quot;</span>);</span><br><span class="line"><span class="comment">//方法2</span></span><br><span class="line"><span class="keyword">for</span>( <span class="keyword">let</span> text <span class="keyword">of</span> wenben )</span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="property">log</span> (text);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>会发现方法2更简洁。是的，在JavaScript中常用<code>for ... of </code>循环来遍历字符串、数组等。</p>
+<h3 id="字母大小写转换"><a href="#字母大小写转换" class="headerlink" title="字母大小写转换"></a>字母大小写转换</h3><p><code>[toLowerCase()</code>] 和<code> [toUpperCase()]</code>方法可以改变字符串中英文字母的大小写。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好,世jie&quot;</span> ;</span><br><span class="line"><span class="keyword">let</span> wenben1 = <span class="string">&quot;NiHao,shiJie&quot;</span> ;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;你好,世jie&#x27;</span>.<span class="title function_">toUpperCase</span>() ); <span class="comment">// 你好,世JIE</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;NiHao,shiJie&#x27;</span>.<span class="title function_">toLowerCase</span>() ); <span class="comment">// nihao,shijie</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( wenben.<span class="title function_">toUpperCase</span>() ); <span class="comment">// 你好,世JIE</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( wenben1.<span class="title function_">toLowerCase</span>() ); <span class="comment">// nihao,shijie</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="在字符串查找是否包含另一个字符串"><a href="#在字符串查找是否包含另一个字符串" class="headerlink" title="在字符串查找是否包含另一个字符串"></a>在字符串查找是否包含另一个字符串</h3><p>此功能又称为”在字符串中查找子字符串“。</p>
+<p>在JavaScript中，有很多方法能实现这个功能。</p>
+<ul>
+<li>老旧方法    str.indexOf(substring,pos)</li>
+</ul>
+<p>它从给定位置 <code>pos</code> 开始(默认从左向右)，在 <code>str</code> 中查找 <code>substr</code>，如果没有找到，则返回 <code>-1</code>，否则返回匹配成功的位置。</p>
+<p>第二个参数pos是可选的，不加pos，默认从头开始匹配，返回第一次匹配成功的位置。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;这是一个测试字符串，测试一下，看看是否能找到所有的测试。&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> substring = <span class="string">&quot;测试&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> index = str.<span class="title function_">indexOf</span>(substring);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(index); <span class="comment">// 输出第一次找到“测试”的位置   4</span></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;这是一个测试字符串，测试一下，看看是否能找到所有的测试。&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> substring = <span class="string">&quot;测试&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> index = str.<span class="title function_">indexOf</span>(substring);</span><br><span class="line"><span class="keyword">let</span> indices = [];</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (index !== -<span class="number">1</span>) </span><br><span class="line">&#123;</span><br><span class="line">  indices.<span class="title function_">push</span>(index);</span><br><span class="line">  index = str.<span class="title function_">indexOf</span>(substring, index + <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(indices); <span class="comment">// 输出所有找到的子字符串的位置   输出 (3) [4, 10, 25]</span></span><br></pre></td></tr></table></figure>
+
+<p>还有一个类似的方法 <code>str.lastIndexOf(substr, position)</code>，它从字符串的末尾开始搜索到开头。</p>
+<p>它会以相反的顺序列出这些事件。</p>
+<ul>
+<li>现代方法 <code>includes，startsWith，endsWith</code></li>
+</ul>
+<p>现代的方法 <code>str.includes(substr, pos)</code>根据 <code>str</code> 中是否包含 <code>substr</code> 来返回 <code>true/false</code>。<code>pos</code>为可选参数</p>
+<p>如果我们<strong>需要检测匹配，但不需要它的位置</strong>，那么这是正确的选择：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Widget with id&quot;</span>.<span class="title function_">includes</span>(<span class="string">&quot;Widget&quot;</span>) );    <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Hello&quot;</span>.<span class="title function_">includes</span>(<span class="string">&quot;Bye&quot;</span>) );      <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<p><code>string.startWith(substr)</code>检测文本串<code>string</code>的字符，是否以子文本串<code>substr</code>开头 。</p>
+<p><code>string.endWith(substr)</code>检测文本串<code>string</code>的字符，是否以子文本串<code>substr</code>结尾 。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Widget&quot;</span>.<span class="title function_">startsWith</span>(<span class="string">&quot;Wid&quot;</span>) ); <span class="comment">// true，&quot;Widget&quot; 以 &quot;Wid&quot; 开始</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Widget&quot;</span>.<span class="title function_">endsWith</span>(<span class="string">&quot;get&quot;</span>) ); <span class="comment">// true，&quot;Widget&quot; 以 &quot;get&quot; 结束</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="JS对象-object"><a href="#JS对象-object" class="headerlink" title="JS对象 object"></a>JS对象 object</h1><h1 id="函数进阶"><a href="#函数进阶" class="headerlink" title="函数进阶"></a>函数进阶</h1><h1 id="原型-继承"><a href="#原型-继承" class="headerlink" title="原型 继承"></a>原型 继承</h1><h1 id="类"><a href="#类" class="headerlink" title="类"></a>类</h1><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://github.com/aboucide/aboucide.github.io.git">ZhongyYuan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript.html">https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://github.com/aboucide/aboucide.github.io.git" target="_blank">源的自留地</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/blog/note/code/html.html" title="HTML学习笔记"><img class="cover" src="https://s3-alpha.figma.com/hub/file/4278211142/d7ec2989-66f7-4ebe-89c9-b68ca16a5391-cover.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HTML学习笔记</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://pic.dmjnb.com/pic/f8f0115eee49d25ce12f9d6e8c923d9e" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ZhongyYuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><a id="card-info-btn" href="mailto:ahoucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JS%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9"><span class="toc-number">1.</span> <span class="toc-text">JS基础内容</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E4%B8%B2"><span class="toc-number">2.1.</span> <span class="toc-text">文本串</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E5%8F%B7-%EF%BC%88quotes%EF%BC%89"><span class="toc-number">2.1.1.</span> <span class="toc-text">引号 （quotes）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6"><span class="toc-number">2.1.2.</span> <span class="toc-text">特殊字符  \</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6-length"><span class="toc-number">2.1.3.</span> <span class="toc-text">字符串长度 length</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BF%E9%97%AE%E5%AD%97%E7%AC%A6"><span class="toc-number">2.1.4.</span> <span class="toc-text">访问字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E6%AF%8D%E5%A4%A7%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2"><span class="toc-number">2.1.5.</span> <span class="toc-text">字母大小写转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9F%A5%E6%89%BE%E6%98%AF%E5%90%A6%E5%8C%85%E5%90%AB%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">2.1.6.</span> <span class="toc-text">在字符串查找是否包含另一个字符串</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JS%E5%AF%B9%E8%B1%A1-object"><span class="toc-number">3.</span> <span class="toc-text">JS对象 object</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E8%BF%9B%E9%98%B6"><span class="toc-number">4.</span> <span class="toc-text">函数进阶</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B-%E7%BB%A7%E6%89%BF"><span class="toc-number">5.</span> <span class="toc-text">原型 继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B1%BB"><span class="toc-number">6.</span> <span class="toc-text">类</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">7.</span> <span class="toc-text">其他</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/JavaScript.html" title="JavaScript  学习笔记"><img src="https://emaillistvalidation.com/blog/content/images/2023/09/JavaScript-Symbol.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript  学习笔记"/></a><div class="content"><a class="title" href="/blog/note/code/JavaScript.html" title="JavaScript  学习笔记">JavaScript  学习笔记</a><time datetime="2024-09-08T23:15:08.000Z" title="发表于 2024-09-08 23:15:08">2024-09-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/html.html" title="HTML学习笔记"><img src="https://s3-alpha.figma.com/hub/file/4278211142/d7ec2989-66f7-4ebe-89c9-b68ca16a5391-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML学习笔记"/></a><div class="content"><a class="title" href="/blog/note/code/html.html" title="HTML学习笔记">HTML学习笔记</a><time datetime="2024-09-01T21:17:31.000Z" title="发表于 2024-09-01 21:17:31">2024-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/solution/deskico.html" title="桌面图标间距变大，如何修改回去？解决办法"><img src="https://s21.ax1x.com/2024/08/25/pAF7dv6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="桌面图标间距变大，如何修改回去？解决办法"/></a><div class="content"><a class="title" href="/blog/solution/deskico.html" title="桌面图标间距变大，如何修改回去？解决办法">桌面图标间距变大，如何修改回去？解决办法</a><time datetime="2024-08-25T13:38:11.000Z" title="发表于 2024-08-25 13:38:11">2024-08-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/note/mind/biancheng0-1.html" title="编程语言入门到精通"><img src="http://image.soxsok.com/image/20201230/20201230111453_3670.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="编程语言入门到精通"/></a><div class="content"><a class="title" href="/note/mind/biancheng0-1.html" title="编程语言入门到精通">编程语言入门到精通</a><time datetime="2024-08-23T20:55:25.000Z" title="发表于 2024-08-23 20:55:25">2024-08-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/note/teacher/zhuguanti.html" title="综合素质-材料分析题——刷题笔记">综合素质-材料分析题——刷题笔记</a><time datetime="2024-08-19T22:39:22.000Z" title="发表于 2024-08-19 22:39:22">2024-08-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By ZhongyYuan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
