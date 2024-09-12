@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2024高考化学易错题整理</title>
+    <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
+<p><strong>避免火焰</strong>：在碳化过程中，应避免海带直接接触火焰，以免引起燃烧。通常使用间接加热，如在火焰上方一定距离加热。</p>
+<p><strong>观察变化</strong>：在加热过程中，要密切观察海带的颜色和状态变化，直到它完全变黑并碳化。</p>
+<p><strong>打开坩埚盖</strong>：通过灼烧去除水分并碳化海带，通常不需要盖上盖子。这样做可以让水分和挥发性物质（如盐分）容易蒸发，同时便于观察海带的碳化过程。</p>
+<h3 id="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明这是强碱制弱碱。"><a href="#2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明这是强碱制弱碱。" class="headerlink" title="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明这是强碱制弱碱。"></a>2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明这是强碱制弱碱。</h3><p>氯化镁溶液中滴入氢氧化钠溶液，会发生复分解反应，生成氢氧化镁沉淀，与氢氧化钠、氢氧化镁的碱性强弱无关，不能由此得出氢氧化钠的碱性比氢氧化镁强。</p>
+<p>学习过沉淀溶解平衡的知识，让我们知道了沉淀可以由Ksp大的向Ksp小的进行转化。</p>
+<p>也就是说氯化镁与氢氧化钠反应涉及到真正反应动力可以用下面的原理来解释，</p>
+<p>[1]复分解原理；反应总是朝着溶液中离子浓度减小的方向进行。</p>
+<p>[2]沉淀溶解平衡的转化；氢氧化镁为难溶物，Ksp较小。</p>
+<p>[3]</p>
+<p>在我们所学的知识中，无法去区分这两者的能力大小，因此无法确定此反应发生的主要动力是谁。</p>
+<p>借用这个例子，可以去思考一下硫化氢与硫酸铜反应的例子。</p>
+]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>易错题</category>
+      </categories>
+      <tags>
+        <tag>化学真题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML学习笔记</title>
     <url>//blog/note/code/html.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>还没开始学。。。。。。</p>
