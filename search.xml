@@ -819,7 +819,7 @@
 </blockquote>
 <blockquote>
 <ol start="2">
-<li>第二项 这是引用的第一层</li>
+<li>第二项 xxxxx</li>
 </ol>
 <blockquote>
 <ol>
@@ -827,6 +827,51 @@
 </ol>
 </blockquote>
 </blockquote>
+<blockquote>
+<p>[!Warning]</p>
+<p>Test</p>
+</blockquote>
+<blockquote>
+<p>[Warning]</p>
+<p>这里也是警告，但是没有用感叹号。</p>
+</blockquote>
+<h2 id="彩色提示块"><a href="#彩色提示块" class="headerlink" title="彩色提示块"></a>彩色提示块</h2><blockquote>
+<p>[!NOTE]<br>这是注意区块</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; [!NOTE]</span><br><span class="line">&gt; 这是注意区块</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>[!TIP]<br>这是提示区块</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; [!TIP]</span><br><span class="line">&gt;这是提示区块</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>[!IMPORTANT]<br>这是强调区块</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; [!IMPORTANT]</span><br><span class="line">&gt; 这是强调区块</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>[!WARNING]<br>这是警告区块</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; [!WARNING]</span><br><span class="line">&gt; 这是警告区块</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>[!CAUTION]<br>这是小心区块</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; [!CAUTION]</span><br><span class="line">&gt; 这是小心区块</span><br></pre></td></tr></table></figure>
+
+
+
+
+
 <h2 id="2-表格插入"><a href="#2-表格插入" class="headerlink" title="2.表格插入"></a>2.表格插入</h2><p>快捷键<code>Ctrl + T</code>即可弹出创建表格的对话框</p>
 <p>使用下面的代码也可以</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3|</span><br><span class="line">|  |  |</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -1093,8 +1138,6 @@
 
 
 
-
-
 <details>
   <summary>折叠代码块</summary>
   <pre><blockcode> 
@@ -1102,6 +1145,8 @@
      System.out.println("但是代码无法高亮");
   </blockcode></pre>
 </details>
+
+
 
 
 
@@ -1268,7 +1313,7 @@
 <hr>
 <h2 id="学生观"><a href="#学生观" class="headerlink" title="学生观"></a>学生观</h2><p>下面是md语法支持的彩色语法块和折叠文字</p>
 <blockquote>
-<p>[!NOTE]<br>这是注意区块</p>
+<p>[!注意]<br>这是注意区块</p>
 </blockquote>
 <details>
 <summary>点击查看详细内容</summary>
