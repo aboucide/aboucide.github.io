@@ -35,11 +35,583 @@
   <entry>
     <title>HTML学习笔记</title>
     <url>//blog/note/code/html.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="HTML-5"><a href="#HTML-5" class="headerlink" title="HTML 5"></a>HTML 5</h1><h1 id="d"><a href="#d" class="headerlink" title="d"></a>d</h1><details>
-<summary>点击查看详细内容</summary>
-展开的内容
-</details>
-]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="HTML-5-学习笔记"><a href="#HTML-5-学习笔记" class="headerlink" title="HTML 5 学习笔记"></a>HTML 5 学习笔记</h1><h1 id="HTML-入门"><a href="#HTML-入门" class="headerlink" title="HTML 入门"></a>HTML 入门</h1><h2 id="HTML-是什么？"><a href="#HTML-是什么？" class="headerlink" title="HTML 是什么？"></a>HTML 是什么？</h2><p>HTML的全称是<code>Hyper Text Mark Language</code>，译为 “超文本标记语言”。</p>
+<p>与普通文本相比，HTML除了有文字，还可以拥有图片、音乐、视频、表格等各种内容。</p>
+<p>在HTML中插入内容都需要使用 “标记” 来插入，因此针对文字、图片、视频等等不同的内容拥有不同的 “标记”，专业用语称为 “标签”，也可以称为 “元素”。</p>
+<h2 id="初识HTML-标签"><a href="#初识HTML-标签" class="headerlink" title="初识HTML 标签"></a>初识HTML 标签</h2><p>标签又称为“元素”，是HTML组成的基本单位。</p>
+<p>例如，</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">marquee</span>&gt;</span> 认真学习，能够忘我 <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这就是一句html代码，其中使用了<code>marquee</code>的标签，使得其包含的文字有一定的特性。</p>
+<ul>
+<li><code>&lt;marquee&gt;</code>称为这个元素的起始标签，<code>&lt;/marquee&gt;</code>称为这个元素的结束标签。</li>
+<li>标签有单标签、双标签之分，像上面那种标签就属于双标签；单标签，例如<code>&lt;input&gt;</code>。</li>
+<li>标签的字母不区分大小写，但推荐使用<strong>小写</strong>。</li>
+</ul>
+<p><strong>标签的属性</strong></p>
+<p>例如，给上述示例中的标签增加一些属性，为标签提供一些附加信息</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">loop</span>=<span class="string">&quot;3&quot;</span> <span class="attr">bgcolor</span>=<span class="string">&quot;green&quot;</span>  &gt;</span> 认真学习，能够忘我 <span class="tag">&lt;/<span class="name">marquee</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>从上述代码中，可以看出如何给标签增加属性了，</p>
+<p>其中<code>bgcolor</code>为属性名称，<code>green</code>为属性值，意为 背景颜色 &#x3D; 绿色 。</p>
+<p>标签的属性写在标签的起始标签中，或者是单标签。</p>
+<p><strong>至于有多少标签，每种标签有哪些属性可以使用HTML5 标准手册进行查询。</strong></p>
+<blockquote>
+<p>这里分享常用的在线权威——参考手册</p>
+<p>[1]   [MDN在线手册]（<a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML%EF%BC%89">https://developer.mozilla.org/zh-CN/docs/Learn/HTML）</a></p>
+</blockquote>
+<p><strong>注意</strong></p>
+<blockquote>
+<ol>
+<li>不同的标签，有不同的属性；也有一些通用属性（在任何标签内都能写，后面会详细</li>
+</ol>
+<p>总结）。</p>
+<ol start="2">
+<li>属性名、属性值不能乱写，都是W3C规定好的。</li>
+<li>属性名、属性值，都不区分大小写，但推荐小写。</li>
+<li>双引号，也可以写成单引号，甚至不写都行，但还是推荐写双引号。</li>
+<li>标签中不要出现同名属性，否则后写的会失效，例如：</li>
+</ol>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="HTML的基本组成结构"><a href="#HTML的基本组成结构" class="headerlink" title="HTML的基本组成结构"></a>HTML的基本组成结构</h2><p>下面是一串标准的HTML代码</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span> 网站名称 <span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">            锄禾日当午</span><br><span class="line">            汗滴禾下土</span><br><span class="line">            谁知盘中餐</span><br><span class="line">            粒粒皆辛苦</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<ol>
+<li>想要呈现在网页中的内容写在 body 标签中。</li>
+<li>head 标签中的内容不会出现在网页中。</li>
+<li>head 标签中的 title 标签可以指定网页的标题。</li>
+<li><code>&lt;!DOCTYPE html&gt;</code>是HTML5的文档声明，意在告诉浏览器，我是使用HTML5的语法。文档声明必须要在文档的第一行，且在<code>&lt;html&gt;</code>标签的外面。</li>
+</ol>
+</blockquote>
+<h2 id="网页开发的基本工具——VScode"><a href="#网页开发的基本工具——VScode" class="headerlink" title="网页开发的基本工具——VScode"></a>网页开发的基本工具——VScode</h2><p>1、安装好VScode</p>
+<p>2、安装插件</p>
+<ul>
+<li>中文插件——让软件界面语言设置成中文。搜索“简体中文”即可安装。</li>
+<li>图标插件——让VScode打开的文件夹内文件图标更优美。vscode-icons</li>
+<li>html及时预览插件——LivePreview</li>
+</ul>
+<p><strong>LivePreview的使用与设置</strong></p>
+<p>安装后，在vscode编辑html文件的窗口中，右键，会看到<code>显示预览</code>，点击即可及时看见渲染后的网页。</p>
+<p>进入插件的设置页面，将LivePreview的刷新频率设置成<code>on changes to save files</code>。</p>
+<p>因为插件默认的设置是：只要文件一修改，立马刷新页面显示刚刚的修改效果，这种有点耗费资源。</p>
+<p>当修改成<code>on changes to save files</code>后，只有修改文件并保存之后，插件才会开始刷新页面。有利于节约电脑的性能资源。</p>
+<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><ul>
+<li><p><code>ctrl + Enter</code>   直接增加下一空行。（即使鼠标光标在上一行的文字中间也没事）</p>
+</li>
+<li><p><code>ctrl + shift + k</code>  删除鼠标光标所在的一行（即使鼠标没有选中这一行的任何内容）</p>
+</li>
+<li><p><code>shift + Alt + ↓  </code>向下复制光标所在行的内容。</p>
+</li>
+<li><p><code>tab</code>键可用于鼠标选中内容后，按下<code>tab</code>向右缩进；<code>shift + tab </code>键可以向左缩进。</p>
+</li>
+</ul>
+<p>在html文件中，输入英文感叹号<code>!</code>，再按下回车键，即可快速在vscode中生成HTML的标准结构。</p>
+<p>当然也可以输入<code>html:5</code>再按下回车，也能生成HTML标准结构。</p>
+<h2 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h2><ol>
+<li>特点</li>
+</ol>
+<p>注释的内容会被浏览器自动忽略，但源代码中依然可见。</p>
+<ol start="2">
+<li>作用</li>
+</ol>
+<p>给代码进行必要的解释说明，防止时间久了，自己忘了。下次再看代码的时候能快速掌握整个逻辑思路。</p>
+<ol start="3">
+<li><p>代码格式</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 下面的文字只能滚动3次 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">loop</span>=<span class="string">&quot;3&quot;</span>&gt;</span>认真学习，可以忘我<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 注释里面的文字是可以换行的，</span></span><br><span class="line"><span class="comment">本段文字就是全部被注释了 --&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>注意——注释是不能嵌套的，下面是<strong>错误</strong>的例子。</p>
+</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">我是一段注释</span></span><br><span class="line"><span class="comment">&lt;!-- 我是一段注释 --&gt;</span></span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h2><ol>
+<li>计算机操作数据<ul>
+<li>存储数据的时候，要对数据进行“<strong>编码</strong>”</li>
+<li>读取数据的时候，要对数据进行“<strong>解码</strong>”</li>
+</ul>
+</li>
+<li>在进行编码、解码时要使用同一套规则，称之为<strong>字符集</strong>。</li>
+<li>常见的字符集有</li>
+</ol>
+<blockquote>
+<ol>
+<li>ASCII：大小写字母、数字、一些符号，共计128个。</li>
+<li>ISO 8859-1 ：在ASCII基础上，扩充了一些希腊字符，共计256个。</li>
+<li>GB2312：在上述基础上继续扩充，收录了6763个常用汉字、682个字符。</li>
+<li>GBK：收录了汉字和符号达到2000+，支持繁体中文。</li>
+<li>UTF-8：万国码，包含世界上所有语言的文字与符号。<strong>常用！</strong></li>
+</ol>
+</blockquote>
+<ol start="4">
+<li>使用的规则</li>
+</ol>
+<blockquote>
+<p><strong>存储</strong></p>
+<p>你在保存数据的时候，你选择的字符集一定要包含支持你这些数据的文字和符号。</p>
+<p>否则：<strong>无法储存，数据丢失！</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>读取</strong></p>
+<p>你保存数据用什么方式，读取的时候就用什么方式。</p>
+<p>否则：<strong>数据错乱，俗称“乱码”</strong>。</p>
+<p>此时，你只需要重新修改对应的解码方式，仍然能看到正确的内容。</p>
+</blockquote>
+<ol start="5">
+<li>总结<blockquote>
+<ul>
+<li>为保证所有的输入，都能正常存储和读取，现在几乎全都采用： UFT-8 编码。</li>
+<li>为了让浏览器能渲染html文件时，能正确显示字符，可以使用<code>meta</code>标签的<code>charset</code>属性，指定浏览器使用特定的字符集。</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>meta</code>属于一种标签，他有两种写法</p>
+<ul>
+<li>自闭和写法，即在一个标签内完成起始与结束。<code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code></li>
+<li>单标签写法。<code>&lt;meta charset=&quot;UTF-8&quot; &gt;</code></li>
+</ul>
+<p>在HTML5中，自闭合的使用是推荐的做法，因为它有助于保持代码的一致性和简洁性、有助于避免某些历史浏览器的解析错误。</p>
+<p>虽然加不加斜杠在现代浏览器中通常不会有太大区别，但为了遵循HTML5标准和最佳实践，建议使用 <code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code></p>
+<h2 id="HTML设置网站的语言"><a href="#HTML设置网站的语言" class="headerlink" title="HTML设置网站的语言"></a>HTML设置网站的语言</h2><ol>
+<li>主要作用</li>
+</ol>
+<ul>
+<li>让浏览器能显示对应的翻译提示。</li>
+<li>有利于搜索引擎优化。</li>
+</ul>
+<ol start="2">
+<li><p>代码写法</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span> &gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>lang属性的编写规则<br><code>语言—国家/地区</code></p>
+</li>
+</ol>
+<ul>
+<li>zh-CN  中文-中国大陆（简体中文）</li>
+<li>zh-TW 中文-台湾（繁体中文）</li>
+<li>zh       中文</li>
+<li>en-US  英语-美国</li>
+<li>en-GB  英语-英国</li>
+</ul>
+<p>其他国家的语言简写，可以网络搜索&#x2F;询问AI。</p>
+<hr>
+<h1 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h1><h2 id="排版标签"><a href="#排版标签" class="headerlink" title="排版标签"></a>排版标签</h2><table>
+<thead>
+<tr>
+<th align="center">标签名</th>
+<th align="center">标签含义</th>
+<th align="center">单&#x2F;双标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">h1~h6</td>
+<td align="center">标题、大纲文本</td>
+<td align="center">双</td>
+</tr>
+<tr>
+<td align="center">p</td>
+<td align="center">段落</td>
+<td align="center">双</td>
+</tr>
+<tr>
+<td align="center">div</td>
+<td align="center">无含义，可以包含一系列标签，可以认为div用于标签的分组，将来可用于批量修改样式以及布局。</td>
+<td align="center">双</td>
+</tr>
+</tbody></table>
+<ol>
+<li>h1最好只写一个，h2~h6可以正常使用。</li>
+<li>h1~h6不能嵌套使用。例如h1中不能嵌套h2。</li>
+<li>p标签里面不能嵌套h标签、p标签、div标签。</li>
+</ol>
+<h2 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h2><ul>
+<li><p>定义：用特定的标签表示特定的含义。</p>
+</li>
+<li><p>原则：标签的默认效果不重要（后期可以使用CSS随意修改效果），<strong>语义最重要</strong>。</p>
+</li>
+</ul>
+<p>举例，h1表示文章的标题，是本片网页的重点。而其带来的效果（字体变大、粗并不重要，因为后期可以使用CSS自定义修改）。</p>
+<ul>
+<li>为什么要强调标签的语义化<ul>
+<li>代码结构清晰，可读性强</li>
+<li>有利于SEO优化（有利于搜索引擎爬虫，别人很容易搜索到你的网站）</li>
+<li>方便设备解析（例如屏幕阅读器、盲人阅读器）。</li>
+</ul>
+</li>
+</ul>
+<h2 id="块级元素与行内元素"><a href="#块级元素与行内元素" class="headerlink" title="块级元素与行内元素"></a>块级元素与行内元素</h2><ol>
+<li>块级元素：独占一行（排版标签都是块级元素）。</li>
+<li>行内元素：不独占一行（例如<code>input</code>，后期还会学习更多）。</li>
+<li>使用规则</li>
+</ol>
+<blockquote>
+<p>[1] 块级元素什么都能写。</p>
+<p>[2] 行内元素可以写行内元素，但不能写块级元素。</p>
+<p>[3]一些特殊规则</p>
+<ul>
+<li>h1~h6不能相互嵌套。</li>
+<li>p中不要写块级元素。</li>
+</ul>
+</blockquote>
+<h2 id="文本标签"><a href="#文本标签" class="headerlink" title="文本标签"></a>文本标签</h2><h3 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h3><ol>
+<li>用于包裹：词汇、短语等。</li>
+<li>通常写在排版标签内。</li>
+<li>文本标签都是行内元素。</li>
+<li>排版标签更宏观（常用于大段的文字），文本标签更微观（词汇、短语）。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>标签语义</th>
+<th>单&#x2F;双标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>em</td>
+<td>着重阅读的内容</td>
+<td>双</td>
+</tr>
+<tr>
+<td>strong</td>
+<td>十分重要的内容</td>
+<td>双</td>
+</tr>
+<tr>
+<td>span</td>
+<td>没有语义，用于包裹短语的通用容器。</td>
+<td>双</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>div与span的区别：</p>
+<p>div常用于大段文字包裹；span用于行内词语包括。</p>
+</blockquote>
+<hr>
+<h3 id="不常用"><a href="#不常用" class="headerlink" title="不常用"></a>不常用</h3><blockquote>
+<ol>
+<li>这些不常用的文本标签，编码时不用过于纠结（酌情而定，不用也没毛病）。</li>
+<li><code>blockquote</code> 与 <code>address</code> 是块级元素，其他的文本标签，都是行内元素。</li>
+<li>有些语义感不强的标签，我们很少使用，例如：<br><code>small</code> 、<code> b</code> 、 <code>u</code> 、 <code>q</code> 、 <code>blockquote</code></li>
+<li>HTML标签太多了！记住那些：重要的、语义感强的标签即可；截止目前，有这些：<br><code>h1~h6</code> 、<code> p</code> 、 <code>div</code> 、<code> em</code> 、 <code>strong</code> 、 <code>span</code></li>
+</ol>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>标签语义</th>
+<th>单&#x2F;双标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>cite</code></td>
+<td>作品标题（书籍、电影、歌曲等）</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>dfn</code></td>
+<td>特殊术语、专属词汇</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>del</code>与<code>ins</code></td>
+<td>分别表示：删除的文本、插入的文本</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>sub</code>与<code>sup</code></td>
+<td>下标文字、上标文字</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>code</code></td>
+<td>一段代码</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>samp</code></td>
+<td>从正常的上下文中，将某些内容提取出来，例如：标识设备输出</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>kbd</code></td>
+<td>键盘文本，表示文本是通过键盘输入的，经常用在与计算机相关的手册中</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>abbr</code></td>
+<td>缩写，最好配合上 title 属性</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>bdo</code></td>
+<td>更改文本方向，要配合 <code>dir</code> 属性，可选值: <code>ltr</code> （默认值）、<code>rtl</code></td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>var</code></td>
+<td>标记变量，可以与 <code>code</code> 标签一起使用</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td>附属细则，例如：包括版权、法律文本。—— 很少使用</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td>摘要中的关键字、评论中的产品名称。—— 很少使用</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td>本意是：人物的思想活动、所说的话等等。现在多用于：呈现字体图标（后面要讲的内容）。</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td>与正常内容有反差文本，例如：错的单词、不合适的描述等。——很少使用</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td>短引用 —— 很少使用</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>blockquote</code></td>
+<td>长引用 —— 很少使用</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>地址信息</td>
+<td>双</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h2><h3 id="1-基本使用"><a href="#1-基本使用" class="headerlink" title="1. 基本使用"></a>1. 基本使用</h3><p>代码格式</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;300&quot;</span> <span class="attr">src</span>=<span class="string">&quot;xxx.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;这里是描述图片内容&quot;</span> &gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>width</code>：图片的宽度，单位是像素<code>px</code>，例如：<code>200px</code>或<code>200</code></p>
+<p><code>heght</code>：图片高度。</p>
+<p><code>src</code>：图片路径（也称：图片的地址）</p>
+<p><code>alt</code>：图片描述</p>
+<p><strong>注意事项</strong></p>
+<blockquote>
+<p>1、<code>width</code>和<code>height</code>是可选属性，如果不添加该属性，则默认显示图片的原始大小。</p>
+<p>如果只修改图片的宽或者是只修改高，则默认是按比例放大或缩小。</p>
+<p>尽量不同时修改图片的宽和高，可能会造成比例失调。</p>
+<p>2、<code>img</code>是行内元素。</p>
+<p>3、<code>alt</code>属性的作用</p>
+<ul>
+<li>搜索引擎通过<code>alt</code>属性的值，可以知道图片的内容。——最主要的作用</li>
+<li>当图片无法展示的时候，浏览器就会展示<code>alt</code>的值。</li>
+<li>盲人阅读器会朗读<code>alt</code>属性的值。</li>
+</ul>
+</blockquote>
+<h3 id="2-路径的分类"><a href="#2-路径的分类" class="headerlink" title="2. 路径的分类"></a>2. 路径的分类</h3><ul>
+<li>相对路径</li>
+</ul>
+<p><code>以当前路径为参考点，去建立图片的路径</code></p>
+<p>①引用与<code>html文件</code>在同一文件夹下的<code>图片</code>：怪兽.jpg</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;怪兽.jpg&quot;</span> &gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 上述代码还可以写成下面这样 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./怪兽.jpg&quot;</span> &gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>②引用<code>html文件</code>所在文件夹的子文件夹<code>picture</code>中的<code>图片</code>：怪兽.jpg</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./picture/怪兽.jpg&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>③引用<code>html文件</code>所在文件夹的上一个文件夹中的子文件夹<code>picture</code>里面的<code>图片</code>：怪兽.jpg</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;../picture/怪兽.jpg&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>总结</strong></p>
+<p><code>./</code>  同一个文件夹。（这个也可以不写，例如第一个例子。）</p>
+<p><code>/</code>下一个文件夹</p>
+<p><code>../</code> 上一个文件夹，可以使用多次表示连续返回上一层级。</p>
+<ul>
+<li><p>绝对路径</p>
+<ul>
+<li><p>本地绝对路径（很少使用）</p>
+<p><code> E:/a/b/c/奥特曼.jpg</code></p>
+</li>
+<li><p>网络绝对路径</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><code>http://www.atguigu.com/images/index_new/logo.png</code></p>
+<h3 id="3-常见图片的格式"><a href="#3-常见图片的格式" class="headerlink" title="3. 常见图片的格式"></a>3. 常见图片的格式</h3><table>
+<thead>
+<tr>
+<th>图片格式</th>
+<th>扩展名</th>
+<th>概述</th>
+<th>优点</th>
+<th>缺点</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>jpg</td>
+<td>扩展名为 <code>.jpg</code> 或 <code>.jpeg</code></td>
+<td>是一种有损的压缩格式（把肉眼不容易观察出来的细节丢弃了）</td>
+<td><strong>支持的颜色丰富、占用空间较小</strong></td>
+<td>不支持透明背景、不支持动态图</td>
+<td>对图片细节<strong>没有极高要求</strong>的场景，例如：网站的产品宣传图等 。—— 该格式网页中很常见。</td>
+</tr>
+<tr>
+<td>png</td>
+<td><code> .png</code></td>
+<td>无损的压缩格式，能够更高质量的保存图片</td>
+<td><strong>支持的颜色丰富</strong>、<strong>支持透明背景</strong></td>
+<td>占用空间略大、不支持动态图</td>
+<td>①想让图片有透明背景；②想更高质量的呈现图片；例如 ：公司logo图、重要配图等。</td>
+</tr>
+<tr>
+<td>bmp</td>
+<td><code>.bmp</code></td>
+<td>不进行压缩的一种格式，在最大程度上保留图片更多的细节</td>
+<td><strong>支持的颜色丰富、保留的细节更多</strong></td>
+<td>占用空间极大、不支持透明背景、不支持动态图</td>
+<td>对图片细节<strong>要求极高</strong>的场景，例如：一些大型游戏中的图片 。（网页中很少使用）</td>
+</tr>
+<tr>
+<td>gif</td>
+<td><code>.gif</code></td>
+<td>仅支持256种颜色，色彩呈现不是很完整</td>
+<td><strong>支持<strong><strong>简单</strong></strong>透明背景、支持动态图</strong></td>
+<td>支持的颜色较少</td>
+<td>网页中的动态图片</td>
+</tr>
+<tr>
+<td>webp</td>
+<td><code>.webp </code></td>
+<td>谷歌推出的一种格式，专门用来在网页中呈现图片.</td>
+<td>具备上述几种格式的优点</td>
+<td>但兼容性不太好，一旦使用务必要解决兼容性问题。</td>
+<td>网页中的各种图片。<code>【未来网页中图片的主流趋势】</code></td>
+</tr>
+<tr>
+<td>base64</td>
+<td>一串特殊的文本</td>
+<td>使用一些工具或者在线网站，把图片进行 <code>base64</code> 编码，形成一串文本。</td>
+<td>把base64直接作为 img 标签的 src 属性的值即可。</td>
+<td>不受文件位置的影响，可以与网站同时显示，没有请求与接受的延迟。</td>
+<td>一些较小的图片，或者需要和网页一起加载的图片。</td>
+</tr>
+</tbody></table>
+<p><strong>图片的格式非常多，上面这些，只是一些常见的、我们前端人员常接触到的。</strong></p>
+<hr>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p>主要作用：从当前页面进行跳转，可以实现：</p>
+<ul>
+<li>跳转到指定页面</li>
+<li>跳转到指定文件（也可以触发下载）</li>
+<li>跳转到页面锚点位置</li>
+<li>唤起指定应用</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>语义</th>
+<th>常用属性</th>
+<th>单&#x2F;双标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a</td>
+<td>超链接</td>
+<td><code>href</code>：要跳转的目标<br /><code>target</code>：控制跳转时如何打开页面，常用值如下：<br />        _self ：本窗口打开<br />       _blank：新窗口打开<br /><code>id</code>：元素的唯一标识，可用于设置锚点。<br /></td>
+<td>双</td>
+</tr>
+</tbody></table>
+<h3 id="1、跳转到指定页面"><a href="#1、跳转到指定页面" class="headerlink" title="1、跳转到指定页面"></a>1、跳转到指定页面</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 跳转到其他网页 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;www.baidu.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> &gt;</span>百度官网<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 跳转到本地网页 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;./测试.html&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> &gt;</span>去看测试网页<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意</p>
+<p>1、代码中的<strong>多个空格、多个回车</strong>，都会被浏览器解析成一个空格。</p>
+<p>2、虽然<code>a</code>是行内元素，但是<code>a</code>元素可以包含除它自身外的任何元素！</p>
+</blockquote>
+<h3 id="2、跳转到文件"><a href="#2、跳转到文件" class="headerlink" title="2、跳转到文件"></a>2、跳转到文件</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 浏览器能直接打开的文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;./resource/自拍.jpg&quot;</span>&gt;</span>看自拍<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;./resource/小电影.mp4&quot;</span>&gt;</span>看小电影<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;./resource/小姐姐.gif&quot;</span>&gt;</span>看小姐姐<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;./resource/如何一夜暴富.pdf&quot;</span>&gt;</span>点我一夜暴富<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 浏览器不能打开的文件，会自动触发下载 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;./resource/内部资源.zip&quot;</span>&gt;</span>内部资源<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 强制触发下载 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;./resource/小电影.mp4&quot;</span> <span class="attr">download</span>=<span class="string">&quot;电影片段.mp4&quot;</span>&gt;</span>下载电影<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意1：若浏览器无法打开文件，则会引导用户下载。</p>
+<p>注意2：若想强制触发下载，请使用 download 属性，属性值即为下载文件的名称。</p>
+</blockquote>
+<h3 id="3、跳转到页面的锚定位置"><a href="#3、跳转到页面的锚定位置" class="headerlink" title="3、跳转到页面的锚定位置"></a>3、跳转到页面的锚定位置</h3><p>什么是锚点？—— 网页中的一个标记点。</p>
+<p>具体的使用方式</p>
+<ul>
+<li>第一步：设置锚点</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 第一种方式：a标签配合name属性 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">&quot;test1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 第二种方式：其他标签配合id属性 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">id</span>=<span class="string">&quot;test2&quot;</span>&gt;</span>我是一个位置<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ol>
+<li>具有 href 属性的 a 标签是<strong>超链接</strong>，具有 name 属性的 a 标签是<strong>锚点</strong>。</li>
+<li>name 和 id 都是区分大小写的，且 id 最好别是数字开头。</li>
+</ol>
+<p>推荐使用<code>id</code>进行锚定。</p>
+</blockquote>
+<ul>
+<li>第二步：跳转锚点</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 跳转到test1锚点--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#test1&quot;</span>&gt;</span>去test1锚点<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 跳到本页面顶部 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>回到顶部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 跳转到其他页面锚点 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;demo.html#test1&quot;</span>&gt;</span>去demo.html页面的test1锚点<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 刷新本页面 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&quot;</span>&gt;</span>刷新本页面<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 执行一段js,如果还不知道执行什么，可以留空，javascript:; --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:alert(1);&quot;</span>&gt;</span>点我弹窗<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="4、打开指定应用"><a href="#4、打开指定应用" class="headerlink" title="4、打开指定应用"></a>4、打开指定应用</h3><p>通过<code>a</code>标签可以唤起设备上的应用程序。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 唤起设备拨号 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;tel:10010&quot;</span>&gt;</span>电话联系<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 唤起设备发送邮件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;mailto:10010@qq.com&quot;</span>&gt;</span>邮件联系<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 唤起设备发送短信 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;sms:10086&quot;</span>&gt;</span>短信联系<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="有序列表-ol"><a href="#有序列表-ol" class="headerlink" title="有序列表 ol"></a>有序列表 <code>ol</code></h3><p>有序列表 “ordered list” ，因此在html中使用<code>ol</code>来定义有序列表。</p>
+<p>有序列表：有顺序或者侧重顺序的列表。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>要把大象放冰箱总共分几步<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>把冰箱门打开<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>把大象放进去<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>把冰箱门关上<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="无序列表-ul"><a href="#无序列表-ul" class="headerlink" title="无序列表 ul"></a>无序列表 <code>ul</code></h3><p>无序列表 “unordered list”，因此在html中使用<code>ul</code>来定义无序列表。</p>
+<p>无序列表：无顺序或者不侧重顺序的列表。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>我想去的几个城市<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>成都<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>西安<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>武汉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>注意</p>
+<p>无论是有序列表还是无序列表，每一个项目都要使用<code>li</code>标签来进行标记。</p>
+<p><code>li</code>标签最好是写在<code>ol</code>、<code>ul</code>中，不要单独使用。</p>
+</blockquote>
+<h3 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h3><p>所谓自定义列表，就是一个包含<strong>术语名称</strong>以及<strong>术语描述</strong>的列表。</p>
+<p>一个<code> dl</code> 就是一个自定义列表，一个 <code>dt</code> 就是一个术语名称，一个 <code>dd</code> 就是术语描述（可以有多个）。</p>
+<p>自定义列表 “denifition list”    <code>dl</code></p>
+<p>术语名称    “denifition title”   <code>dt</code></p>
+<p>属于描述    “denifition description”    <code>dd</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h2&gt;如何高效的学习？&lt;/h2&gt;</span><br><span class="line">&lt;dl&gt;</span><br><span class="line">&lt;dt&gt;做好笔记&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;笔记是我们以后复习的一个抓手&lt;/dd&gt;</span><br><span class="line">&lt;dd&gt;笔记可以是电子版，也可以是纸质版&lt;/dd&gt;</span><br><span class="line">&lt;dt&gt;多加练习&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;只有敲出来的代码，才是自己的&lt;/dd&gt;</span><br><span class="line">&lt;dt&gt;别怕出错&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;错很正常，改正后并记住，就是经验&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3>]]></content>
       <categories>
         <category>笔记</category>
         <category>编程</category>
@@ -454,13 +1026,13 @@
 </thead>
 <tbody><tr>
 <td>仙逆⭐⭐⭐⭐⭐</td>
-<td align="left">2024年9月14日   看完第53集</td>
-<td>王林化凡入世准备进入化神期</td>
+<td align="left">2024年9月18日   看完第54集</td>
+<td>王林雕刻木雕。</td>
 </tr>
 <tr>
 <td>凡人修仙传⭐⭐⭐⭐⭐</td>
-<td align="left">2024年9月7日   看完第118集</td>
-<td>元婴大佬们发现上当了。</td>
+<td align="left">2024年9月18日   看完第119集</td>
+<td>韩立在一个开启了防护阵的岛屿。逆星盟攻打星宫在即。</td>
 </tr>
 <tr>
 <td>遮天<br />⭐⭐⭐⭐⭐<br /></td>
@@ -987,7 +1559,7 @@
 
 
 
-<h2 id="6-链接引用"><a href="#6-链接引用" class="headerlink" title="6.链接引用"></a>6.链接引用</h2><p>语法</p>
+<h2 id="6-链接引用-超链接"><a href="#6-链接引用-超链接" class="headerlink" title="6.链接引用  超链接"></a>6.链接引用  超链接</h2><p>语法</p>
 <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">[超链接名](超链接地址 <span class="string">&quot;超链接title&quot;</span>)</span><br><span class="line">title可加可不加（title是鼠标移到该链接文本时显示的名称）</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>例如：</p>
