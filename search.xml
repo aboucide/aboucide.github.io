@@ -66,24 +66,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Freeplane思维导图软件的使用教程</title>
-    <url>//blog/note/software-use/Freeplane-how-to-use.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Freeplane使用教程"><a href="#Freeplane使用教程" class="headerlink" title="Freeplane使用教程"></a>Freeplane使用教程</h1><p><a href="https://sourceforge.net/projects/freeplane/">下载地址</a></p>
-<p><strong>Freeplane的核心功能</strong></p>
-<img src=" https://pic2.zhimg.com/80/v2-6a04ac285e66cd2fbe4f5d821b205905_1440w.webp " alt="Freeplane的核心功能" style="zoom:50%;" />
-
-
-
-]]></content>
-      <categories>
-        <category>笔记</category>
-        <category>软件使用教程</category>
-      </categories>
-      <tags>
-        <tag>思维导图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML学习笔记</title>
     <url>//blog/note/code/html.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="HTML-5-学习笔记"><a href="#HTML-5-学习笔记" class="headerlink" title="HTML 5 学习笔记"></a>HTML 5 学习笔记</h1><h1 id="HTML-入门"><a href="#HTML-入门" class="headerlink" title="HTML 入门"></a>HTML 入门</h1><h2 id="HTML-是什么？"><a href="#HTML-是什么？" class="headerlink" title="HTML 是什么？"></a>HTML 是什么？</h2><p>HTML的全称是<code>Hyper Text Mark Language</code>，译为 “超文本标记语言”。</p>
@@ -653,7 +635,7 @@
 <p>无论是有序列表还是无序列表，每一个项目都要使用<code>li</code>标签来进行标记。</p>
 <p><code>li</code>标签最好是写在<code>ol</code>、<code>ul</code>中，不要单独使用。</p>
 </blockquote>
-<h3 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h3><p>所谓自定义列表，就是一个包含<strong>术语名称</strong>以及<strong>术语描述</strong>的列表。</p>
+<h3 id="自定义列表-dl"><a href="#自定义列表-dl" class="headerlink" title="自定义列表 dl"></a>自定义列表 <code>dl</code></h3><p>所谓自定义列表，就是一个包含<strong>术语名称</strong>以及<strong>术语描述</strong>的列表。</p>
 <p>一个<code> dl</code> 就是一个自定义列表，一个 <code>dt</code> 就是一个术语名称，一个 <code>dd</code> 就是术语描述（可以有多个）。</p>
 <p>自定义列表 “denifition list”    <code>dl</code></p>
 <p>术语名称    “denifition title”   <code>dt</code></p>
@@ -662,13 +644,63 @@
 
 
 
-<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3>]]></content>
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><p>列表中的某一项内容，又包含了一个列表。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>我喜欢吃的食物<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>粉条<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>水果<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>菠萝<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>葡萄<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>芒果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>西瓜<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>汤类<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>西红柿蛋汤<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>紫菜蛋花汤<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>茶树菇排骨汤<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>炒菜<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<hr>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><ol>
+<li>基本结构</li>
+</ol>
+<p>一个完整的表格由：<strong>表格标题</strong>、<strong>表格头部</strong>、<strong>表格主体</strong>、<strong>表格脚注</strong>，四部分组成。</p>
+<img src=" https://imgsrc.baidu.com/forum/pic/item/8cb1cb1349540923be77ae5cd458d109b3de49f2.jpg "  style="zoom:50%;" />
+
+
+
+<ol start="2">
+<li>表格涉及到的标签</li>
+</ol>
+<p><code>table</code>：表格</p>
+<p><code>caption</code>：表格标题</p>
+<p><code>thead</code>：表格头部</p>
+<p><code>tbody</code>：表格主体</p>
+<p><code>tfoot</code>：表格脚注</p>
+<p><code>tr</code>：每一行。     t代表table，r代表row（行）。</p>
+<p><code>th</code>：表格头部中的每一个单元格。 t代表table，h代表head。</p>
+<p><code>td</code>：表格主体、脚注中的单元格。t代表table，d代表data。</p>
+<ol start="3">
+<li>示例代码</li>
+</ol>
+]]></content>
       <categories>
         <category>笔记</category>
         <category>编程</category>
       </categories>
       <tags>
         <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Freeplane思维导图软件的使用教程</title>
+    <url>//blog/note/software-use/Freeplane-how-to-use.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Freeplane使用教程"><a href="#Freeplane使用教程" class="headerlink" title="Freeplane使用教程"></a>Freeplane使用教程</h1><p><a href="https://sourceforge.net/projects/freeplane/">下载地址</a></p>
+<p><strong>Freeplane的核心功能</strong></p>
+<img src=" https://pic2.zhimg.com/80/v2-6a04ac285e66cd2fbe4f5d821b205905_1440w.webp " alt="Freeplane的核心功能" style="zoom:50%;" />
+
+
+
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>软件使用教程</category>
+      </categories>
+      <tags>
+        <tag>思维导图</tag>
       </tags>
   </entry>
   <entry>
@@ -1102,8 +1134,8 @@
 </tr>
 <tr>
 <td>剑来   <br />⭐⭐⭐<br /></td>
-<td align="left">2024年9月9日   看完第6集</td>
-<td>陈平安</td>
+<td align="left">2024年9月20日   看完第8集</td>
+<td>陈平安的小镇要崩溃了。</td>
 </tr>
 <tr>
 <td></td>
@@ -1230,36 +1262,6 @@
       </tags>
   </entry>
   <entry>
-    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
-    <url>//blog/solution/Wifi.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
-<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
-<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
-<p>问题已经描述完毕，下面是我的解决方法。</p>
-<hr>
-<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
-
-<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
-
-<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
-
-<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
-
-
-
-<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
-<hr>
-<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
-<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
-]]></content>
-      <categories>
-        <category>常见电脑疑难的解决方案</category>
-      </categories>
-      <tags>
-        <tag>wifi</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>桌面图标间距变大，如何修改回去？解决办法</title>
     <url>//blog/solution/deskico.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>修改之前<br><img src=" https://s21.ax1x.com/2024/08/25/pAF7dv6.png "  style="zoom:30%;" /></p>
@@ -1300,6 +1302,36 @@
       </categories>
       <tags>
         <tag>桌面图标</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
+    <url>//blog/solution/Wifi.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
+<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
+<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
+<p>问题已经描述完毕，下面是我的解决方法。</p>
+<hr>
+<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
+
+<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
+
+<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
+
+<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
+
+
+
+<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
+<hr>
+<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
+<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
+]]></content>
+      <categories>
+        <category>常见电脑疑难的解决方案</category>
+      </categories>
+      <tags>
+        <tag>wifi</tag>
       </tags>
   </entry>
   <entry>
