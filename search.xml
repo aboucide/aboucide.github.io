@@ -1272,6 +1272,28 @@
       </tags>
   </entry>
   <entry>
+    <title>这是一篇加密文章的测试，密码6666</title>
+    <url>//blog/hexo/jiami.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="844a2b6db8e718bd3f5938101a7071258b83b13fd06f30995920f81a958635e9">591ad66477dc9f8d468bd98487d7d9f9cd9b9f6ee2197f4aecb152b8361f8df989fae85024aa73cbf6d601a62a94cdb2786bc0b21df69df0903f55ad88b8513e4bf063cb617d8927952d8c8ba2a1601aa90f921ef93b49195f1e6bdec3c16faffd4087343b56bad90f52318b131d240138d2a0e16dca7a136fb492c81aa21cca30a511a7d18681e22bebabcbd90e1ee5587d4afe536a5c98ab9e4c827b0b51ff3cafb1b3679f9a96eabc6591dc8aaae55de456ee7469337a0cb1e037ccc27548428cbc6f4b9a3b5151720e8bc2de7239ac63dff284624ac4961fbf4e4bf1e611c95a32bf5ce7f443d866034410670fbee5563fb23e69007f35188c8adace031ec4eb3370f8b9ca2c2f9d268621749b6bc669a4fe2e2c05943b87e4b15bdb2680bc9aa5703d881c6cfefbc86ce67c79aeeb36c1e81320605744d2a512325a0be655b9d9cf5fbeb577085a869a9f1cea6695f371b775f2d24e7a1bb5d6a11e0f490aa56aefbb589825377f7d3fd947b2d3440e04b6de125724a8b60e3db0b5da41</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-blink">
+      <input class="hbe hbe-input-field hbe-input-field-blink" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-blink" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-blink" data-content="您好，这里需要密码。">您好，这里需要密码。</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客内嵌入视频-测试</title>
     <url>//blog/hexo/video1.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是使用html的video标签插入视频</p>
@@ -1295,28 +1317,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>这是一篇加密文章的测试，密码6666</title>
-    <url>//blog/hexo/jiami.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="844a2b6db8e718bd3f5938101a7071258b83b13fd06f30995920f81a958635e9">591ad66477dc9f8d468bd98487d7d9f9cd9b9f6ee2197f4aecb152b8361f8df989fae85024aa73cbf6d601a62a94cdb2786bc0b21df69df0903f55ad88b8513e4bf063cb617d8927952d8c8ba2a1601aa90f921ef93b49195f1e6bdec3c16faffd4087343b56bad90f52318b131d240138d2a0e16dca7a136fb492c81aa21cca30a511a7d18681e22bebabcbd90e1ee5587d4afe536a5c98ab9e4c827b0b51ff3cafb1b3679f9a96eabc6591dc8aaae55de456ee7469337a0cb1e037ccc27548428cbc6f4b9a3b5151720e8bc2de7239ac63dff284624ac4961fbf4e4bf1e611c95a32bf5ce7f443d866034410670fbee5563fb23e69007f35188c8adace031ec4eb3370f8b9ca2c2f9d268621749b6bc669a4fe2e2c05943b87e4b15bdb2680bc9aa5703d881c6cfefbc86ce67c79aeeb36c1e81320605744d2a512325a0be655b9d9cf5fbeb577085a869a9f1cea6695f371b775f2d24e7a1bb5d6a11e0f490aa56aefbb589825377f7d3fd947b2d3440e04b6de125724a8b60e3db0b5da41</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-blink">
-      <input class="hbe hbe-input-field hbe-input-field-blink" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-blink" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-blink" data-content="您好，这里需要密码。">您好，这里需要密码。</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
