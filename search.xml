@@ -752,7 +752,151 @@
 <p>3、给某个<code>th</code>或者<code>td</code>设置了宽度之后，他们所在的那一列宽度就确定了。</p>
 <p>4、给出某个<code>th</code>或者<code>td</code>设置了高度之后，他们所在的那一行的高度就确定了。</p>
 </blockquote>
-]]></content>
+<hr>
+<h2 id="表格的跨行与跨列"><a href="#表格的跨行与跨列" class="headerlink" title="表格的跨行与跨列"></a>表格的跨行与跨列</h2><p>跨行与跨列针对的是表格中<strong>单元格</strong>的属性。</p>
+<p>让我们再一起复习一遍表格的组成：</p>
+<p>表格<code>table</code>由四大部分组成：标题<code>caption</code>、表格头部<code>thead</code>、表格主体<code>tbody</code>、表格脚注<code>tfoot</code>。</p>
+<p>表格中的每一行<code>tr</code></p>
+<p>表格中的单元格有两类：标题中的格子<code>th</code>、主体和脚注中的格子<code>td</code>。</p>
+<p>表格的列数就是由这一行<code>tr</code>中存在多少个单元格（<code>th</code>或<code>td</code>）决定的。</p>
+<p>因此<strong>表格的跨行与跨列</strong>操作的就是<code>th</code>或<code>td</code>的属性。</p>
+<p><code>rowspan</code>：指定要跨的行数。			row意为“行”，span有跨度的含义。</p>
+<p><code>colspan</code>：指定要跨的列数。			column意为”列”，这里取“col”做前缀，span意思同上。</p>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8htxqdc2rzgj30m40dpjsx.jpg "  style="zoom:50%;" />
+
+<p>编写一个如图所示的课程表，代码如下</p>
+<p>代码示例</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>表格的跨行与跨列<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span> <span class="attr">cellspacing</span>=<span class="string">&quot;0&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">caption</span>&gt;</span>课程表<span class="tag">&lt;/<span class="name">caption</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>项目<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">&quot;5&quot;</span>&gt;</span>上课<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>活动与休息<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>星期<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>星期一<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>星期二<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>星期三<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>星期四<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>星期五<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>星期六<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>星期日<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">&quot;4&quot;</span>&gt;</span>上午<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-5<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-6<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>3-7<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">&quot;4&quot;</span>&gt;</span>休息<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>4-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>4-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>4-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>4-4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>4-5<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>4-6<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>5-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>5-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>5-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>5-4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>5-5<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>5-6<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>6-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>6-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>6-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>6-4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>6-5<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>6-6<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">&quot;8&quot;</span> <span class="attr">align</span>=<span class="string">&quot;center&quot;</span>&gt;</span>午 休<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>下午<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>7-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>7-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>7-4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>7-5<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>7-6<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>7-7<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>休息<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>8-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>8-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>8-3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>8-4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>8-5<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">td</span>&gt;</span>8-6<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="常用标签补充"><a href="#常用标签补充" class="headerlink" title="常用标签补充"></a>常用标签补充</h2><table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>含义</th>
+<th>单&#x2F;双标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>br</code></td>
+<td>换行</td>
+<td>单</td>
+</tr>
+<tr>
+<td><code>hr</code></td>
+<td>分割线</td>
+<td>单</td>
+</tr>
+<tr>
+<td><code>per</code></td>
+<td>按原文输出（在源码中所见即所得，不会自动修改文字间的缩进）</td>
+<td>双</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>注意</p>
+<p>1、不要使用<code>br</code>标签来增大段落之间的空行，应当使用<code>p</code>标签，或者使用<code>CSS</code>来修改段间距<code>margin</code>。</p>
+<p>2、<code>&lt;hr&gt;</code>的属性是分割文本，如果只是想画一条水平线，可以使用<code>CSS</code>完成。</p>
+</blockquote>
+<hr>
+<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>语义</th>
+<th>常用属性</th>
+<th>单&#x2F;双标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>form</code></td>
+<td>表单</td>
+<td><code>action</code>：用于指定表单的提交地址。<br /><code>target</code>：用于控制表单提交后，如何打开页面。<code>_self</code>：本窗口打开。<code>_blank</code>：新窗口打开。<br /><code>method</code>：用于控制表单的提交方式，常用的方式有两种，<code>post</code>或<code>get</code>。<br /></td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>input</code></td>
+<td>输入框</td>
+<td><code>type</code>：设置输入框的类型，常用的值是<code>text</code>，表示普通文本。<br /><code>name</code>：用于指定提交数据的名字。<br /></td>
+<td>单</td>
+</tr>
+<tr>
+<td><code>botton</code></td>
+<td>按钮</td>
+<td>表单中的按钮，<code>type</code>的默认值是提交表单<code>submit</code>。当然也有其他的属性，后面会学。</td>
+<td>双</td>
+</tr>
+</tbody></table>
+<p>例子如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;https://www.baidu.com/s&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;wd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>去百度搜索<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>上述代码中，跳转的网址是百度规定的，method也是百度规定的，name的值还是百度规定的，因为咱们用的是它的服务器，向它发送请求，想得到他的数据，只能按照他规定来。</p>
+<h3 id="常用的表单控件"><a href="#常用的表单控件" class="headerlink" title="常用的表单控件"></a>常用的表单控件</h3><h4 id="①文本输入框"><a href="#①文本输入框" class="headerlink" title="①文本输入框"></a>①文本输入框</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>常用属性如下：</p>
+<p><code>name</code>属性：用于提交表单时，表示数据的名称。</p>
+<p><code>value</code>属性：输入框的默认显示值。</p>
+<p><code>maxlength</code>属性：用于规定输入框最大可输入长度。</p>
+</blockquote>
+<h4 id="②密码输入框"><a href="#②密码输入框" class="headerlink" title="②密码输入框"></a>②密码输入框</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>与本文输入框在外观上最明显的区别是用户输入的值不是明文显示，而是用一个小黑点代替。</p>
+<p>常用属性如下：</p>
+<p><code>name</code>属性：数据的名称。</p>
+<p><code>maxlength</code>属性：输入框的最大可输入长度。</p>
+</blockquote>
+<p>③单选框</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span>女</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span>男</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>常用属性如下：</p>
+<p><code>name</code>属性：数据的名称，如果想做到单选的效果，必须把一组选项（多个<code>radio</code>）的<code>name</code>属性值保持一致，这样子浏览器才能之别他们是同一组单选框。</p>
+<p><code>value</code>属性：提交的数据值。</p>
+<p><code>checked</code>属性：让该单选按钮默认被选中。</p>
+</blockquote>
+<p>④复选框</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;math&quot;</span>&gt;</span>数学</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;chemistry&quot;</span>&gt;</span>化学</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;biology&quot;</span>&gt;</span>生物</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;physics&quot;</span>&gt;</span>物理</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>常用属性如下：</p>
+<p><code>name</code>属性：数据的名称。</p>
+<p><code>value</code>属性：提交的数据值。</p>
+<p><code>checked</code>属性：让该复选框默认被选中。</p>
+</blockquote>
+<p>⑤隐藏域</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;hidden&quot;</span> <span class="attr">name</span>=<span class="string">&quot;tag&quot;</span> <span class="attr">value</span>=<span class="string">&quot;666&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>用户不可见的一个输入区域，作用是： 提交表单的时候，携带一些固定的数据。</p>
+<p><code>name </code>属性：指定数据的名称。</p>
+<p><code>value</code> 属性：指定的是真正提交的数据。</p>
+</blockquote>
+<p>⑥提交按钮</p>
+<p>这里有两种写法：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>第二种写法与下面这种写法是一样的，</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">botton</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">botton</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+<h3 id="表单总结"><a href="#表单总结" class="headerlink" title="表单总结"></a>表单总结</h3>]]></content>
       <categories>
         <category>笔记</category>
         <category>编程</category>
@@ -1187,8 +1331,8 @@
 </tr>
 <tr>
 <td>永生第四季 海噬仙灵<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年9月6日   看完第6集（第46集）</td>
-<td>方寒  VS  绝命岛主</td>
+<td align="left">2024年9月24日   看完第9集（第49集）</td>
+<td>方寒  ko  绝命岛主</td>
 </tr>
 <tr>
 <td>剑来   <br />⭐⭐⭐<br /></td>
