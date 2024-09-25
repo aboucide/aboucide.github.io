@@ -16,13 +16,16 @@
 <li><p><strong>热力学和动力学因素</strong>：反应的热力学可行性（如自由能变化）和反应的动力学（反应速率）也是决定反应是否进行的重要因素。</p>
 </li>
 </ul>
-<p>也可以说上面的反应就是反应进行的原理。</p>
+<p>也可以这三点就是反应进行的原理，是具有普适性的。</p>
 <p>氯化镁溶液中滴入氢氧化钠溶液，会发生复分解反应，生成氢氧化镁沉淀，与氢氧化钠、氢氧化镁的碱性强弱无关，不能由此得出氢氧化钠的碱性比氢氧化镁强。</p>
 <p>学习过沉淀溶解平衡的知识，让我们知道了沉淀可以由Ksp大的向Ksp小的进行转化。</p>
 <p>也就是说氯化镁与氢氧化钠反应涉及到真正反应动力可以用下面的原理来解释，</p>
 <p>[1]复分解原理；反应总是朝着溶液中离子浓度减小的方向进行，因为这样能降低体系的自由度，▲G&lt;0。</p>
 <p>[2]沉淀溶解平衡的转化；氢氧化镁为难溶物，Ksp较小。</p>
-<p>借用这个例子，可以去思考一下硫化氢与硫酸铜反应的例子。</p>
+<p><strong>如何去理解”强酸制弱酸、强碱制弱碱“？</strong></p>
+<p><strong>当稀溶液中的酸碱反应体系仅存在酸碱平衡时，“强酸制弱酸”的规律是成立的，不存在其他平衡例如氧化还原平衡、配位平衡、沉淀溶解平衡、气液平衡等。</strong></p>
+<p>即只有体系中只存在酸性强弱的差距，不涉及到其他平衡的干扰才能认为是强酸制弱酸，这就导致”强酸制弱酸“这个所谓的”理论“使用的条件非常严格，不能随便套用。</p>
+<p>最后，可以尝试去思考一下硫化氢与硫酸铜反应的例子。</p>
 <hr>
 <h2 id="2024浙江卷"><a href="#2024浙江卷" class="headerlink" title="2024浙江卷"></a>2024浙江卷</h2><h3 id="1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3"><a href="#1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3" class="headerlink" title="1、铁离子与氰酸根不能共存，会生成Fe(CN)6  3-"></a>1、铁离子与氰酸根不能共存，会生成Fe(CN)<sub>6</sub> <sup> 3-</sup></h3><h3 id="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"><a href="#2、碘单质和碱性物质反应，产物是碘离子和碘酸根。" class="headerlink" title="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"></a>2、碘单质和碱性物质反应，产物是碘离子和碘酸根。</h3><p>例如，碘单质（I₂）与氢氧化钠（NaOH）的反应通常生成碘化钠（NaI）、碘酸钠（NaIO₃）和水（H₂O）</p>
 <p>与氯气和氢氧化钠的反应不同，氯气在不同条件下可以生成不同的产物（如NaCl、NaClO、NaClO₃），这是因为次氯酸盐（ClO⁻）和氯酸盐（ClO₃⁻）相对稳定，而次碘酸盐（IO⁻）则非常不稳定，容易进一步氧化为碘酸钠（NaIO₃）。因此，碘单质与氢氧化钠的反应不会产生像氯气那样的多种产物，而是倾向于生成碘化钠和碘酸钠。这种差异主要是由于不同卤素的化学性质和它们形成的化合物的稳定性所决定的。</p>
@@ -849,8 +852,7 @@
 <p><code>name</code>属性：数据的名称。</p>
 <p><code>maxlength</code>属性：输入框的最大可输入长度。</p>
 </blockquote>
-<p>③单选框</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span>女</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span>男</span><br></pre></td></tr></table></figure>
+<h4 id="③单选框"><a href="#③单选框" class="headerlink" title="③单选框"></a><strong>③单选框</strong></h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span>女</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span>男</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>常用属性如下：</p>
@@ -858,8 +860,7 @@
 <p><code>value</code>属性：提交的数据值。</p>
 <p><code>checked</code>属性：让该单选按钮默认被选中。</p>
 </blockquote>
-<p>④复选框</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;math&quot;</span>&gt;</span>数学</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;chemistry&quot;</span>&gt;</span>化学</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;biology&quot;</span>&gt;</span>生物</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;physics&quot;</span>&gt;</span>物理</span><br></pre></td></tr></table></figure>
+<h4 id="④复选框"><a href="#④复选框" class="headerlink" title="④复选框"></a><strong>④复选框</strong></h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;math&quot;</span>&gt;</span>数学</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;chemistry&quot;</span>&gt;</span>化学</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;biology&quot;</span>&gt;</span>生物</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;physics&quot;</span>&gt;</span>物理</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>常用属性如下：</p>
@@ -867,36 +868,348 @@
 <p><code>value</code>属性：提交的数据值。</p>
 <p><code>checked</code>属性：让该复选框默认被选中。</p>
 </blockquote>
-<p>⑤隐藏域</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;hidden&quot;</span> <span class="attr">name</span>=<span class="string">&quot;tag&quot;</span> <span class="attr">value</span>=<span class="string">&quot;666&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="⑤隐藏域"><a href="#⑤隐藏域" class="headerlink" title="⑤隐藏域**"></a><strong>⑤隐藏域</strong>**</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;hidden&quot;</span> <span class="attr">name</span>=<span class="string">&quot;tag&quot;</span> <span class="attr">value</span>=<span class="string">&quot;666&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>用户不可见的一个输入区域，作用是： 提交表单的时候，携带一些固定的数据。</p>
 <p><code>name </code>属性：指定数据的名称。</p>
 <p><code>value</code> 属性：指定的是真正提交的数据。</p>
 </blockquote>
-<p>⑥提交按钮</p>
-<p>这里有两种写法：</p>
+<h4 id="⑥提交按钮"><a href="#⑥提交按钮" class="headerlink" title="⑥提交按钮**"></a><strong>⑥提交按钮</strong>**</h4><p>这里有两种写法：一种是<code>input1</code>标签， 另一种是使用<code>button</code>标签。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
 
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>第二种写法与下面这种写法是一样的，</p>
+<p>第二种写法与下面这种写法是一样的，因为在表单<code>form</code>中，<code>button</code>默认属性就是提交<code>submit</code>。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">botton</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">botton</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：<br><code>button</code>标签在表单中，其<code>type</code>属性默认就是<code>submit</code>。<br><code>button</code>不要指定<code>name</code>属性。<br><code>input</code>标签编写的按钮，使用<code>value</code>属性指定按钮文字。</p>
+</blockquote>
+<h4 id="⑦重置按钮"><a href="#⑦重置按钮" class="headerlink" title="⑦重置按钮"></a><strong>⑦重置按钮</strong></h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;reset&quot;</span> <span class="attr">value</span>=<span class="string">&quot;点我重置&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 下面给出另一种写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;reset&quot;</span>&gt;</span>点我重置<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：<br><code>button</code>不要指定<code>name</code>属性。<br><code>input</code>标签编写的按钮，使用<code>value</code>属性指定按钮文字。</p>
+</blockquote>
+<h4 id="⑧普通按钮"><a href="#⑧普通按钮" class="headerlink" title="⑧普通按钮"></a><strong>⑧普通按钮</strong></h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;botton&quot;</span> <span class="attr">value</span>=<span class="string">&quot;普通按钮&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;botton&quot;</span>&gt;</span>普通按钮<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>想在表单中插入普通按钮，其<code>type</code>属性值必须为<code>button</code>，若不写<code>type</code>属性，其默认值就是<code>submit</code>，那么这个按钮就会成为提交按钮，而不是普通按钮了。</p>
+</blockquote>
+<h4 id="⑨文本域"><a href="#⑨文本域" class="headerlink" title="⑨文本域"></a>⑨文本域</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;msg&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;22&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;3&quot;</span>&gt;</span>我是文本域<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>常用属性如下：</p>
+<p>1、<code>rows</code>属性：指定文本域默认显示的行数，会影响文本域的高度。</p>
+<p>2、<code>cols</code>属性：指定默认显示的列数，会影响文本域的宽度。</p>
+<p>3、不能编写<code>type</code>属性，其他的属性与普通文本输入框一致。</p>
+</blockquote>
+<h4 id="⑩下拉框"><a href="#⑩下拉框" class="headerlink" title="⑩下拉框"></a>⑩下拉框</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;homeland&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;黑&quot;</span>&gt;</span>黑龙江<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;赣&quot;</span> <span class="attr">selected</span>&gt;</span>江西<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;粤&quot;</span>&gt;</span>广东<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;皖&quot;</span>&gt;</span>安徽<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>常用属性及注意事项：</p>
+<p>1、<code>name</code>属性：指定数据的名称。</p>
+<p>2、<code>option</code>标签如果设置了<code>value</code>属性，则提交表单时上传的就是<code>value</code>的值；如果没有<code>value</code>属性，则提交时默认上传的就是<code>option</code>中间的文字。</p>
+<p>（建议设置<code>value</code>属性，因为<code>option</code>中间的文字是展示给用户看的，有时候会比较长，我们手动设置<code>value</code>属性，这样子最后提交时可以只提交简短的自定义<code>value</code>值，有利于传输速度。）</p>
+<p>3、<code>option</code>标签中设置了<code>selected</code>属性，则表示默认选中该选项。</p>
+</blockquote>
+<h4 id="禁用表单控件"><a href="#禁用表单控件" class="headerlink" title="禁用表单控件"></a>禁用表单控件</h4><p>给表单的标签设置<code>disable</code>，即可禁用改表单控件。在用户视角，此控件呈灰色不可操作状态。</p>
+<blockquote>
+<p><code>input</code>、<code>textarea</code>、<code>button</code>、<code>selcet</code>、<code>option</code>都可以设置<code>disable</code>属性。</p>
+</blockquote>
+<h4 id="label标签"><a href="#label标签" class="headerlink" title="label标签"></a>label标签</h4><p><code>label</code>标签可以使 “文本” 与另一个控件关联起来，例如使 “文字”与一个输入框关联起来，点击该文字后，激活关联控件的输入框（激活也称为获取焦点）。</p>
+<p>两种与<code>label</code>关联的方式：</p>
+<ul>
+<li>近距离</li>
+</ul>
+<p>把需要被关联的表单控件嵌套在<code>label</code>标签的里面。</p>
+<ul>
+<li>远距离</li>
+</ul>
+<p>让<code>label</code>标签的<code>for</code>属性的值等于与之关联的表单控件的<code>id</code>。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 分组框线标签-fieldset与legend（了解）</span><br><span class="line"></span><br><span class="line">`fieldset`标签为表单控件分组。</span><br><span class="line"></span><br><span class="line">`legend`标签在`fieldset`标签内部，是分组的标题。</span><br><span class="line"></span><br><span class="line">```html</span><br><span class="line">        <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">legend</span>&gt;</span>账户登录<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 下面是第一种文字与控件关联的方法 嵌套 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span>&gt;</span>账户：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;count&quot;</span> &gt;</span> <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!--  下面是第二种文字与控件关联的方法 id  --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;mima&quot;</span>&gt;</span>密码：<span class="tag">&lt;/<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;mima&quot;</span> <span class="attr">name</span>=<span class="string">&quot;psw&quot;</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">legend</span>&gt;</span>个人信息<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 单选框，使用radio；用同一个name保证只能选一个 --&gt;</span></span><br><span class="line">            性别：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;male&quot;</span>&gt;</span>男 </span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;female&quot;</span>&gt;</span>女</span><br><span class="line">            <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 复选框/多选框 --&gt;</span></span><br><span class="line">            任科：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;math&quot;</span>&gt;</span>数学</span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;chemistry&quot;</span>&gt;</span>化学</span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">value</span>=<span class="string">&quot;biology&quot;</span>&gt;</span>生物</span><br><span class="line">            <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">            爱好：<span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;22&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;3&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">            籍贯：</span><br><span class="line">        <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;homeland&quot;</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;粤&quot;</span>&gt;</span>广东<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;赣&quot;</span>&gt;</span>江西<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;皖&quot;</span>&gt;</span>安徽<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;辽&quot;</span>&gt;</span>辽宁<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
 
+<hr>
+<h3 id="表单总结"><a href="#表单总结" class="headerlink" title="表单总结"></a>表单总结</h3><table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>语义</th>
+<th>常用属性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>form</code></td>
+<td>表单</td>
+<td><code>action</code>属性：表单数据要提交的目标地址。<br /><code>target</code>属性：跳转到新地址时，打开窗口的方式，值：<code>_self</code>、<code>_blank</code><br /><code>method</code>属性：请求的方式，值：<code>get</code>、<code>post</code><br /></td>
+</tr>
+<tr>
+<td><code>input</code></td>
+<td>多种形式的表单控件</td>
+<td><code>type</code>属性：指定表单控件的类型。<br />值：<code>text</code>、<code>password</code>、<code>radio</code>、<code>checkbox</code>、<code>hidden</code>、<code>submit</code>、<code>reset</code>、<code>button</code>等。<br /><code>name</code>属性：为这个数据起一个名称。<br /><code>value</code>属性：<br />对于输入框：可以指定输入框默认存在的值。<br />对于单选框和复选框：是对应选项实际提交的值。<br />对于按钮：是按钮上显示的文字。<br /><code>disable</code>属性：设置表单控件不可用。<br /><code>maxlength</code>属性：用于输入框，设置最大可输入长度。<br /><code>checked</code>属性：用于单选框和复选框，在哪个选项中加入checked的属性，表示默认选中。<br /></td>
+</tr>
+<tr>
+<td><code>textarea</code></td>
+<td>文本域</td>
+<td><code>name</code>属性：指定数据的名称。<br /><code>rows</code>属性：设置默认显示的行数，影响文本域的高度。<br /><code>cols</code>属性：设置默认显示的列数，影响文本域的宽度。<br /><code>disable</code>属性：设置表单属性不可用。<br /></td>
+</tr>
+<tr>
+<td><code>select</code></td>
+<td>下拉框</td>
+<td><code>name</code>属性：指定数据的名称。<br /><code>disable</code>属性：设置整个下拉框不可用。<br /></td>
+</tr>
+<tr>
+<td><code>option</code></td>
+<td>下拉框的选项</td>
+<td><code>disable</code>属性：设置该下拉选项不可用。<br /><code>value</code>属性：该选项对应的实际提交的数据（若不设置value，则默认提交选项中的内容）<br /><code>selected</code>属性：默认选中。<br /></td>
+</tr>
+<tr>
+<td><code>button</code></td>
+<td>按钮</td>
+<td><code>disable</code>属性：设置按钮不可用。<br /><code>type</code>属性：设置按钮的类型，值：submit（默认）、reset、button<br /></td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>控件关联</td>
+<td><code>for</code>属性：值&#x3D;与要关联的表单控件的id值相同。</td>
+</tr>
+<tr>
+<td><code>fieldset</code></td>
+<td>控件分组</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="HTML实体"><a href="#HTML实体" class="headerlink" title="HTML实体"></a>HTML实体</h2><p>在<code>HTML</code> 中我们可以用一种<strong>特殊的形式</strong>的内容，来表示某个<strong>符号</strong>，这种特殊形式的内容，就是<code> HTML 实体</code>。比如小于号<code> &lt;</code> 用于定义 HTML 标签的开始。如果我们希望浏览器正确地显示这些字符，我们必须在 HTML 源码中插入字符实体。</p>
+<blockquote>
+<p>字符实体语法有两种：</p>
+<ul>
+<li>由连字号（<code>&amp;</code>）与<code>实体名称</code>构成，最后再加上分号（<code>;</code>）结尾。      </li>
+<li>由井号（<code>#</code>）与<code>实体编号</code>构成，最后加上分号（<code>;</code>）结尾。</li>
+</ul>
+<p>推荐第一种写法。</p>
+</blockquote>
+<p><strong><code>实体</code>的常见用途</strong></p>
+<p>1、用于显示保留字符（这些字符会被解析为 HTML 代码）和不可见的字符（如“不换行空格”）。</p>
+<p>2、用 HTML 字符实体来代替其他难以用标准键盘键入的字符。</p>
+<p><a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references">所有的字符实体在线参考</a></p>
+<p>常见实体</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>描述</th>
+<th>实体名称</th>
+<th>实体编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>空格</td>
+<td>空格</td>
+<td><code>&amp;bnsp;</code></td>
+<td><code>&amp;#160;</code></td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于号</td>
+<td><code>&amp;lt;</code></td>
+<td><code>&amp;#60;</code></td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于号</td>
+<td><code>&amp;gt;</code></td>
+<td><code>&amp;#62;</code></td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>连接符</td>
+<td><code>&amp;amp;</code></td>
+<td><code>&amp;#38;</code></td>
+</tr>
+<tr>
+<td>“</td>
+<td>引号</td>
+<td><code>&amp;quot;</code></td>
+<td><code>&amp;#34;</code></td>
+</tr>
+<tr>
+<td>&#96;</td>
+<td>反引号</td>
+<td><code>&amp;acute;</code></td>
+<td><code>&amp;#180;</code></td>
+</tr>
+<tr>
+<td>￠</td>
+<td>分（cent）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>£</td>
+<td>镑（pound）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>¥</strong></td>
+<td>元（yen）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>€</td>
+<td>欧元（euro）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>©</strong></td>
+<td>版权（copyright）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>®</td>
+<td>注册商标</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>™</td>
+<td>商标</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>×</strong></td>
+<td>乘号</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>÷</strong></td>
+<td>除号</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="HTML全局属性"><a href="#HTML全局属性" class="headerlink" title="HTML全局属性"></a>HTML全局属性</h2><p><strong>全局属性</strong>是所有 HTML 元素共有的属性，它们可以用于所有元素。</p>
+<p>下面列举一些常见的全局属性</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>id</code></td>
+<td>给标签指定唯一标识，注意： <code>id</code> 是不能重复的。   作用：可以让&#96;&#96; label<code> 标签与表单控件相关联；也可以与</code> CSS<code> 、</code> JavaScript &#96;配合使用。</td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>给标签指定类名，随后就可以通过<code>CSS</code>可以给同一类的标签批量修改样式。</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td>给标签设置<code>CSS</code>样式。</td>
+</tr>
+<tr>
+<td><code>dir</code></td>
+<td>内容在网页上输出的方向。值：<code>ltr</code>、<code>rtl</code></td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>给标签设置一个文字提示，鼠标移动到该文字上，就会自动展现小字提示。一般超链接和图片用的比较多。</td>
+</tr>
+<tr>
+<td><code>lang</code></td>
+<td>给标签指定语言。（用的较少）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="meta信息"><a href="#meta信息" class="headerlink" title="meta信息"></a>meta信息</h2><ol>
+<li>配制字符编码</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
 
+<ol start="2">
+<li>针对<code>IE</code>浏览器的兼容性配置。</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
 
+<ol start="3">
+<li>针对移动端的配置</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=divice-width&quot;</span>, <span class="attr">initial-scale</span>=<span class="string">1.0</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="表单总结"><a href="#表单总结" class="headerlink" title="表单总结"></a>表单总结</h3>]]></content>
+
+<ol start="4">
+<li>配置网页关键字</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;网络购物,商城,电商&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>关键字一般设置8~12个，用英文逗号<code>，</code>隔开。</p>
+<ol start="5">
+<li>配置网页描述性息</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;80字以内的一段话，与网站内容有关&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="6">
+<li>针对搜索引擎爬虫配置</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;robots&quot;</span> <span class="attr">content</span>=<span class="string">&quot;此处可选值见下表&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>index</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>noindex</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>follow</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
       <categories>
         <category>笔记</category>
         <category>编程</category>
@@ -2037,29 +2350,6 @@
       </tags>
   </entry>
   <entry>
-    <title>高中化学90个实验视频汇总</title>
-    <url>//blog/chemistry/experiment-videos/allvideos.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-<hr>
-<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-
-
-
-
-
-
-<h1 id="03配置100毫升1mo1L氯化钠溶液"><a href="#03配置100毫升1mo1L氯化钠溶液" class="headerlink" title="03配置100毫升1mo1L氯化钠溶液"></a>03配置100毫升1mo1L氯化钠溶液</h1><h1 id="04氢氧化铁胶体制备、丁达尔效应"><a href="#04氢氧化铁胶体制备、丁达尔效应" class="headerlink" title="04氢氧化铁胶体制备、丁达尔效应"></a>04氢氧化铁胶体制备、丁达尔效应</h1><h1 id="05离子反应"><a href="#05离子反应" class="headerlink" title="05离子反应"></a>05离子反应</h1><h1 id="06钠的性质"><a href="#06钠的性质" class="headerlink" title="06钠的性质"></a>06钠的性质</h1><h1 id="07铁与水蒸气反应"><a href="#07铁与水蒸气反应" class="headerlink" title="07铁与水蒸气反应"></a>07铁与水蒸气反应</h1><h1 id="08铝与酸、碱溶液的反应"><a href="#08铝与酸、碱溶液的反应" class="headerlink" title="08铝与酸、碱溶液的反应"></a>08铝与酸、碱溶液的反应</h1><h1 id="09过氧化钠的性质"><a href="#09过氧化钠的性质" class="headerlink" title="09过氧化钠的性质"></a>09过氧化钠的性质</h1><h1 id="10碳酸钠和碳酸氢钠的性质"><a href="#10碳酸钠和碳酸氢钠的性质" class="headerlink" title="10碳酸钠和碳酸氢钠的性质"></a>10碳酸钠和碳酸氢钠的性质</h1><h1 id="11焰色反应"><a href="#11焰色反应" class="headerlink" title="11焰色反应"></a>11焰色反应</h1><h1 id="12铁的氢氧化物的制备"><a href="#12铁的氢氧化物的制备" class="headerlink" title="12铁的氢氧化物的制备"></a>12铁的氢氧化物的制备</h1><h1 id="13三价铁离子的检验"><a href="#13三价铁离子的检验" class="headerlink" title="13三价铁离子的检验"></a>13三价铁离子的检验</h1><h1 id="14铁盐和亚铁盐的一些性质"><a href="#14铁盐和亚铁盐的一些性质" class="headerlink" title="14铁盐和亚铁盐的一些性质"></a>14铁盐和亚铁盐的一些性质</h1><h1 id="15硅酸的制备、硅酸钠的性质"><a href="#15硅酸的制备、硅酸钠的性质" class="headerlink" title="15硅酸的制备、硅酸钠的性质"></a>15硅酸的制备、硅酸钠的性质</h1><h1 id="16氢气在氯气中燃烧"><a href="#16氢气在氯气中燃烧" class="headerlink" title="16氢气在氯气中燃烧"></a>16氢气在氯气中燃烧</h1><h1 id="17氯水、氯气的漂白作用"><a href="#17氯水、氯气的漂白作用" class="headerlink" title="17氯水、氯气的漂白作用"></a>17氯水、氯气的漂白作用</h1><h1 id="18氯离子的检验"><a href="#18氯离子的检验" class="headerlink" title="18氯离子的检验"></a>18氯离子的检验</h1><h1 id="19二氧化硫的制备与性质"><a href="#19二氧化硫的制备与性质" class="headerlink" title="19二氧化硫的制备与性质"></a>19二氧化硫的制备与性质</h1><h1 id="20氨溶于水的喷泉实验"><a href="#20氨溶于水的喷泉实验" class="headerlink" title="20氨溶于水的喷泉实验"></a>20氨溶于水的喷泉实验</h1><h1 id="21氨的实验室制法"><a href="#21氨的实验室制法" class="headerlink" title="21氨的实验室制法"></a>21氨的实验室制法</h1><h1 id="22铜与浓硫酸的反应"><a href="#22铜与浓硫酸的反应" class="headerlink" title="22铜与浓硫酸的反应"></a>22铜与浓硫酸的反应</h1><h1 id="23钾在空气中燃烧"><a href="#23钾在空气中燃烧" class="headerlink" title="23钾在空气中燃烧"></a>23钾在空气中燃烧</h1><h1 id="24钾与水的反应"><a href="#24钾与水的反应" class="headerlink" title="24钾与水的反应"></a>24钾与水的反应</h1><h1 id="25新制饱和氯水与溴化钠溶液的反应"><a href="#25新制饱和氯水与溴化钠溶液的反应" class="headerlink" title="25新制饱和氯水与溴化钠溶液的反应"></a>25新制饱和氯水与溴化钠溶液的反应</h1><h1 id="26新制饱和氯水与碘化钾溶液的反应"><a href="#26新制饱和氯水与碘化钾溶液的反应" class="headerlink" title="26新制饱和氯水与碘化钾溶液的反应"></a>26新制饱和氯水与碘化钾溶液的反应</h1><h1 id="27溴水与碘化钾溶液的反应"><a href="#27溴水与碘化钾溶液的反应" class="headerlink" title="27溴水与碘化钾溶液的反应"></a>27溴水与碘化钾溶液的反应</h1><h1 id="28镁与沸水的反应"><a href="#28镁与沸水的反应" class="headerlink" title="28镁与沸水的反应"></a>28镁与沸水的反应</h1><h1 id="29镁铝与盐酸反应的对比实验"><a href="#29镁铝与盐酸反应的对比实验" class="headerlink" title="29镁铝与盐酸反应的对比实验"></a>29镁铝与盐酸反应的对比实验</h1><h1 id="30钠与氯气反应"><a href="#30钠与氯气反应" class="headerlink" title="30钠与氯气反应"></a>30钠与氯气反应</h1><h1 id="31测定铝与盐酸反应的热效应"><a href="#31测定铝与盐酸反应的热效应" class="headerlink" title="31测定铝与盐酸反应的热效应"></a>31测定铝与盐酸反应的热效应</h1><h1 id="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"><a href="#32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应" class="headerlink" title="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"></a>32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应</h1><h1 id="33测定酸碱中和反应的热效应"><a href="#33测定酸碱中和反应的热效应" class="headerlink" title="33测定酸碱中和反应的热效应"></a>33测定酸碱中和反应的热效应</h1><h1 id="34乙醇与钠的反应"><a href="#34乙醇与钠的反应" class="headerlink" title="34乙醇与钠的反应"></a>34乙醇与钠的反应</h1><h1 id="35锌铜原电池"><a href="#35锌铜原电池" class="headerlink" title="35锌铜原电池"></a>35锌铜原电池</h1><h1 id="36水果电池"><a href="#36水果电池" class="headerlink" title="36水果电池"></a>36水果电池</h1><h1 id="37温度对化学反应速率的影响"><a href="#37温度对化学反应速率的影响" class="headerlink" title="37温度对化学反应速率的影响"></a>37温度对化学反应速率的影响</h1><h1 id="38催化剂对化学反应速率的影响"><a href="#38催化剂对化学反应速率的影响" class="headerlink" title="38催化剂对化学反应速率的影响"></a>38催化剂对化学反应速率的影响</h1><h1 id="39甲烷和氯气反应所需条件的对比实验"><a href="#39甲烷和氯气反应所需条件的对比实验" class="headerlink" title="39甲烷和氯气反应所需条件的对比实验"></a>39甲烷和氯气反应所需条件的对比实验</h1><h1 id="40石蜡油分解实验及其分解产物的性质实验"><a href="#40石蜡油分解实验及其分解产物的性质实验" class="headerlink" title="40石蜡油分解实验及其分解产物的性质实验"></a>40石蜡油分解实验及其分解产物的性质实验</h1><h1 id="41葡萄糖跟新制氢氧化铜悬浊液反应"><a href="#41葡萄糖跟新制氢氧化铜悬浊液反应" class="headerlink" title="41葡萄糖跟新制氢氧化铜悬浊液反应"></a>41葡萄糖跟新制氢氧化铜悬浊液反应</h1><h1 id="42碘酒与淀粉作用"><a href="#42碘酒与淀粉作用" class="headerlink" title="42碘酒与淀粉作用"></a>42碘酒与淀粉作用</h1><h1 id="43蛋白质的颜色反应"><a href="#43蛋白质的颜色反应" class="headerlink" title="43蛋白质的颜色反应"></a>43蛋白质的颜色反应</h1><h1 id="44蔗糖的水解及其产物的验证"><a href="#44蔗糖的水解及其产物的验证" class="headerlink" title="44蔗糖的水解及其产物的验证"></a>44蔗糖的水解及其产物的验证</h1><h1 id="45铝热反应"><a href="#45铝热反应" class="headerlink" title="45铝热反应"></a>45铝热反应</h1><h1 id="46葡萄糖的银镜反应"><a href="#46葡萄糖的银镜反应" class="headerlink" title="46葡萄糖的银镜反应"></a>46葡萄糖的银镜反应</h1><h1 id="47淀粉的水解"><a href="#47淀粉的水解" class="headerlink" title="47淀粉的水解"></a>47淀粉的水解</h1><h1 id="48蛋白质的性质"><a href="#48蛋白质的性质" class="headerlink" title="48蛋白质的性质"></a>48蛋白质的性质</h1><h1 id="49维生素C的还原性"><a href="#49维生素C的还原性" class="headerlink" title="49维生素C的还原性"></a>49维生素C的还原性</h1><h1 id="50不同条件下铁钉的锈蚀"><a href="#50不同条件下铁钉的锈蚀" class="headerlink" title="50不同条件下铁钉的锈蚀"></a>50不同条件下铁钉的锈蚀</h1><h1 id="51合成氨"><a href="#51合成氨" class="headerlink" title="51合成氨"></a>51合成氨</h1><h1 id="52硫酸铜跟氨水的反应"><a href="#52硫酸铜跟氨水的反应" class="headerlink" title="52硫酸铜跟氨水的反应"></a>52硫酸铜跟氨水的反应</h1><h1 id="53氯化铁溶液跟硫氰化钾溶液反应"><a href="#53氯化铁溶液跟硫氰化钾溶液反应" class="headerlink" title="53氯化铁溶液跟硫氰化钾溶液反应"></a>53氯化铁溶液跟硫氰化钾溶液反应</h1><h1 id="54碘单质在不同溶剂中的溶解性"><a href="#54碘单质在不同溶剂中的溶解性" class="headerlink" title="54碘单质在不同溶剂中的溶解性"></a>54碘单质在不同溶剂中的溶解性</h1><h1 id="55碘单质的升华"><a href="#55碘单质的升华" class="headerlink" title="55碘单质的升华"></a>55碘单质的升华</h1><h1 id="56镁条在二氧化碳中燃烧"><a href="#56镁条在二氧化碳中燃烧" class="headerlink" title="56镁条在二氧化碳中燃烧"></a>56镁条在二氧化碳中燃烧</h1><h1 id="57测量锌与硫酸反应速率"><a href="#57测量锌与硫酸反应速率" class="headerlink" title="57测量锌与硫酸反应速率"></a>57测量锌与硫酸反应速率</h1><h1 id="58高锰酸钾溶液与草酸溶液的反应"><a href="#58高锰酸钾溶液与草酸溶液的反应" class="headerlink" title="58高锰酸钾溶液与草酸溶液的反应"></a>58高锰酸钾溶液与草酸溶液的反应</h1><h1 id="59硫代硫酸钠溶液跟稀硫酸的反应"><a href="#59硫代硫酸钠溶液跟稀硫酸的反应" class="headerlink" title="59硫代硫酸钠溶液跟稀硫酸的反应"></a>59硫代硫酸钠溶液跟稀硫酸的反应</h1><h1 id="60温度与碘化钾被氧化的关系"><a href="#60温度与碘化钾被氧化的关系" class="headerlink" title="60温度与碘化钾被氧化的关系"></a>60温度与碘化钾被氧化的关系</h1><h1 id="61过氧化氢与二氧化锰作用"><a href="#61过氧化氢与二氧化锰作用" class="headerlink" title="61过氧化氢与二氧化锰作用"></a>61过氧化氢与二氧化锰作用</h1><h1 id="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"><a href="#62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用" class="headerlink" title="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"></a>62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用</h1><h1 id="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"><a href="#63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用" class="headerlink" title="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"></a>63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用</h1><h1 id="64淀粉溶液跟唾液、稀硫酸作用"><a href="#64淀粉溶液跟唾液、稀硫酸作用" class="headerlink" title="64淀粉溶液跟唾液、稀硫酸作用"></a>64淀粉溶液跟唾液、稀硫酸作用</h1><h1 id="65重硌酸钾溶液在不同酸度时的颜色"><a href="#65重硌酸钾溶液在不同酸度时的颜色" class="headerlink" title="65重硌酸钾溶液在不同酸度时的颜色"></a>65重硌酸钾溶液在不同酸度时的颜色</h1><h1 id="66三氯化铁跟不同浓度的硫氰化钾溶液反应"><a href="#66三氯化铁跟不同浓度的硫氰化钾溶液反应" class="headerlink" title="66三氯化铁跟不同浓度的硫氰化钾溶液反应"></a>66三氯化铁跟不同浓度的硫氰化钾溶液反应</h1><h1 id="67二氧化氮和四氧化二氮的相互转化"><a href="#67二氧化氮和四氧化二氮的相互转化" class="headerlink" title="67二氧化氮和四氧化二氮的相互转化"></a>67二氧化氮和四氧化二氮的相互转化</h1><h1 id="68相同条件下，镁条跟盐酸和醋酸的反应"><a href="#68相同条件下，镁条跟盐酸和醋酸的反应" class="headerlink" title="68相同条件下，镁条跟盐酸和醋酸的反应"></a>68相同条件下，镁条跟盐酸和醋酸的反应</h1><h1 id="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"><a href="#69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应" class="headerlink" title="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"></a>69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应</h1><h1 id="70用PH计测量溶液的PH"><a href="#70用PH计测量溶液的PH" class="headerlink" title="70用PH计测量溶液的PH"></a>70用PH计测量溶液的PH</h1><h1 id="71实验测定酸碱反应曲线"><a href="#71实验测定酸碱反应曲线" class="headerlink" title="71实验测定酸碱反应曲线"></a>71实验测定酸碱反应曲线</h1><h1 id="72相同条件下，测定不同盐溶液的PH"><a href="#72相同条件下，测定不同盐溶液的PH" class="headerlink" title="72相同条件下，测定不同盐溶液的PH"></a>72相同条件下，测定不同盐溶液的PH</h1><h1 id="73三氧化铁溶液的配制"><a href="#73三氧化铁溶液的配制" class="headerlink" title="73三氧化铁溶液的配制"></a>73三氧化铁溶液的配制</h1><h1 id="74沉淀的溶解"><a href="#74沉淀的溶解" class="headerlink" title="74沉淀的溶解"></a>74沉淀的溶解</h1><h1 id="75沉淀的转化"><a href="#75沉淀的转化" class="headerlink" title="75沉淀的转化"></a>75沉淀的转化</h1><h1 id="76铜锌硫酸原电池"><a href="#76铜锌硫酸原电池" class="headerlink" title="76铜锌硫酸原电池"></a>76铜锌硫酸原电池</h1><h1 id="77氯化钠溶液的电解"><a href="#77氯化钠溶液的电解" class="headerlink" title="77氯化钠溶液的电解"></a>77氯化钠溶液的电解</h1><h1 id="78氯化铜溶液的电解"><a href="#78氯化铜溶液的电解" class="headerlink" title="78氯化铜溶液的电解"></a>78氯化铜溶液的电解</h1><h1 id="79电镀"><a href="#79电镀" class="headerlink" title="79电镀"></a>79电镀</h1><h1 id="80铁的吸氧腐蚀"><a href="#80铁的吸氧腐蚀" class="headerlink" title="80铁的吸氧腐蚀"></a>80铁的吸氧腐蚀</h1><h1 id="81验证牺牲阳极的阴极保护法"><a href="#81验证牺牲阳极的阴极保护法" class="headerlink" title="81验证牺牲阳极的阴极保护法"></a>81验证牺牲阳极的阴极保护法</h1><h1 id="82水的电解与氢氧混合气爆鸣的微型实验"><a href="#82水的电解与氢氧混合气爆鸣的微型实验" class="headerlink" title="82水的电解与氢氧混合气爆鸣的微型实验"></a>82水的电解与氢氧混合气爆鸣的微型实验</h1><h1 id="83氯气的生成及其性质的微型实验"><a href="#83氯气的生成及其性质的微型实验" class="headerlink" title="83氯气的生成及其性质的微型实验"></a>83氯气的生成及其性质的微型实验</h1><h1 id="84污水处理"><a href="#84污水处理" class="headerlink" title="84污水处理"></a>84污水处理</h1><h1 id="85蒸馏"><a href="#85蒸馏" class="headerlink" title="85蒸馏"></a>85蒸馏</h1><h1 id="86从海带中提取碘"><a href="#86从海带中提取碘" class="headerlink" title="86从海带中提取碘"></a>86从海带中提取碘</h1><h1 id="87硫酸亚铁铵的制备"><a href="#87硫酸亚铁铵的制备" class="headerlink" title="87硫酸亚铁铵的制备"></a>87硫酸亚铁铵的制备</h1><h1 id="88乙酸乙酯的制备及反应条件探究"><a href="#88乙酸乙酯的制备及反应条件探究" class="headerlink" title="88乙酸乙酯的制备及反应条件探究"></a>88乙酸乙酯的制备及反应条件探究</h1><h1 id="89氢氧化铝的制"><a href="#89氢氧化铝的制" class="headerlink" title="89氢氧化铝的制"></a>89氢氧化铝的制</h1><h1 id="90几种无机离子的检验"><a href="#90几种无机离子的检验" class="headerlink" title="90几种无机离子的检验"></a>90几种无机离子的检验</h1>]]></content>
-      <categories>
-        <category>高中化学</category>
-        <category>实验视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>近三年全国各省市高考化学真题分享（学生版+教师版）</title>
     <url>//blog/chemistry/shijuan/2021-2023.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、获取通道"><a href="#一、获取通道" class="headerlink" title="一、获取通道"></a>一、获取通道</h1><p>链接:<a href="https://caiyun.139.com/m/i?065Ct6gI60upp">https://caiyun.139.com/m/i?065Ct6gI60upp</a><br>提取码:PgLi<br>复制内容打开移动云盘PC客户端，操作更方便哦</p>
@@ -2092,6 +2382,29 @@
       </categories>
       <tags>
         <tag>download</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高中化学90个实验视频汇总</title>
+    <url>//blog/chemistry/experiment-videos/allvideos.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+<hr>
+<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+
+
+
+
+
+<h1 id="03配置100毫升1mo1L氯化钠溶液"><a href="#03配置100毫升1mo1L氯化钠溶液" class="headerlink" title="03配置100毫升1mo1L氯化钠溶液"></a>03配置100毫升1mo1L氯化钠溶液</h1><h1 id="04氢氧化铁胶体制备、丁达尔效应"><a href="#04氢氧化铁胶体制备、丁达尔效应" class="headerlink" title="04氢氧化铁胶体制备、丁达尔效应"></a>04氢氧化铁胶体制备、丁达尔效应</h1><h1 id="05离子反应"><a href="#05离子反应" class="headerlink" title="05离子反应"></a>05离子反应</h1><h1 id="06钠的性质"><a href="#06钠的性质" class="headerlink" title="06钠的性质"></a>06钠的性质</h1><h1 id="07铁与水蒸气反应"><a href="#07铁与水蒸气反应" class="headerlink" title="07铁与水蒸气反应"></a>07铁与水蒸气反应</h1><h1 id="08铝与酸、碱溶液的反应"><a href="#08铝与酸、碱溶液的反应" class="headerlink" title="08铝与酸、碱溶液的反应"></a>08铝与酸、碱溶液的反应</h1><h1 id="09过氧化钠的性质"><a href="#09过氧化钠的性质" class="headerlink" title="09过氧化钠的性质"></a>09过氧化钠的性质</h1><h1 id="10碳酸钠和碳酸氢钠的性质"><a href="#10碳酸钠和碳酸氢钠的性质" class="headerlink" title="10碳酸钠和碳酸氢钠的性质"></a>10碳酸钠和碳酸氢钠的性质</h1><h1 id="11焰色反应"><a href="#11焰色反应" class="headerlink" title="11焰色反应"></a>11焰色反应</h1><h1 id="12铁的氢氧化物的制备"><a href="#12铁的氢氧化物的制备" class="headerlink" title="12铁的氢氧化物的制备"></a>12铁的氢氧化物的制备</h1><h1 id="13三价铁离子的检验"><a href="#13三价铁离子的检验" class="headerlink" title="13三价铁离子的检验"></a>13三价铁离子的检验</h1><h1 id="14铁盐和亚铁盐的一些性质"><a href="#14铁盐和亚铁盐的一些性质" class="headerlink" title="14铁盐和亚铁盐的一些性质"></a>14铁盐和亚铁盐的一些性质</h1><h1 id="15硅酸的制备、硅酸钠的性质"><a href="#15硅酸的制备、硅酸钠的性质" class="headerlink" title="15硅酸的制备、硅酸钠的性质"></a>15硅酸的制备、硅酸钠的性质</h1><h1 id="16氢气在氯气中燃烧"><a href="#16氢气在氯气中燃烧" class="headerlink" title="16氢气在氯气中燃烧"></a>16氢气在氯气中燃烧</h1><h1 id="17氯水、氯气的漂白作用"><a href="#17氯水、氯气的漂白作用" class="headerlink" title="17氯水、氯气的漂白作用"></a>17氯水、氯气的漂白作用</h1><h1 id="18氯离子的检验"><a href="#18氯离子的检验" class="headerlink" title="18氯离子的检验"></a>18氯离子的检验</h1><h1 id="19二氧化硫的制备与性质"><a href="#19二氧化硫的制备与性质" class="headerlink" title="19二氧化硫的制备与性质"></a>19二氧化硫的制备与性质</h1><h1 id="20氨溶于水的喷泉实验"><a href="#20氨溶于水的喷泉实验" class="headerlink" title="20氨溶于水的喷泉实验"></a>20氨溶于水的喷泉实验</h1><h1 id="21氨的实验室制法"><a href="#21氨的实验室制法" class="headerlink" title="21氨的实验室制法"></a>21氨的实验室制法</h1><h1 id="22铜与浓硫酸的反应"><a href="#22铜与浓硫酸的反应" class="headerlink" title="22铜与浓硫酸的反应"></a>22铜与浓硫酸的反应</h1><h1 id="23钾在空气中燃烧"><a href="#23钾在空气中燃烧" class="headerlink" title="23钾在空气中燃烧"></a>23钾在空气中燃烧</h1><h1 id="24钾与水的反应"><a href="#24钾与水的反应" class="headerlink" title="24钾与水的反应"></a>24钾与水的反应</h1><h1 id="25新制饱和氯水与溴化钠溶液的反应"><a href="#25新制饱和氯水与溴化钠溶液的反应" class="headerlink" title="25新制饱和氯水与溴化钠溶液的反应"></a>25新制饱和氯水与溴化钠溶液的反应</h1><h1 id="26新制饱和氯水与碘化钾溶液的反应"><a href="#26新制饱和氯水与碘化钾溶液的反应" class="headerlink" title="26新制饱和氯水与碘化钾溶液的反应"></a>26新制饱和氯水与碘化钾溶液的反应</h1><h1 id="27溴水与碘化钾溶液的反应"><a href="#27溴水与碘化钾溶液的反应" class="headerlink" title="27溴水与碘化钾溶液的反应"></a>27溴水与碘化钾溶液的反应</h1><h1 id="28镁与沸水的反应"><a href="#28镁与沸水的反应" class="headerlink" title="28镁与沸水的反应"></a>28镁与沸水的反应</h1><h1 id="29镁铝与盐酸反应的对比实验"><a href="#29镁铝与盐酸反应的对比实验" class="headerlink" title="29镁铝与盐酸反应的对比实验"></a>29镁铝与盐酸反应的对比实验</h1><h1 id="30钠与氯气反应"><a href="#30钠与氯气反应" class="headerlink" title="30钠与氯气反应"></a>30钠与氯气反应</h1><h1 id="31测定铝与盐酸反应的热效应"><a href="#31测定铝与盐酸反应的热效应" class="headerlink" title="31测定铝与盐酸反应的热效应"></a>31测定铝与盐酸反应的热效应</h1><h1 id="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"><a href="#32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应" class="headerlink" title="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"></a>32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应</h1><h1 id="33测定酸碱中和反应的热效应"><a href="#33测定酸碱中和反应的热效应" class="headerlink" title="33测定酸碱中和反应的热效应"></a>33测定酸碱中和反应的热效应</h1><h1 id="34乙醇与钠的反应"><a href="#34乙醇与钠的反应" class="headerlink" title="34乙醇与钠的反应"></a>34乙醇与钠的反应</h1><h1 id="35锌铜原电池"><a href="#35锌铜原电池" class="headerlink" title="35锌铜原电池"></a>35锌铜原电池</h1><h1 id="36水果电池"><a href="#36水果电池" class="headerlink" title="36水果电池"></a>36水果电池</h1><h1 id="37温度对化学反应速率的影响"><a href="#37温度对化学反应速率的影响" class="headerlink" title="37温度对化学反应速率的影响"></a>37温度对化学反应速率的影响</h1><h1 id="38催化剂对化学反应速率的影响"><a href="#38催化剂对化学反应速率的影响" class="headerlink" title="38催化剂对化学反应速率的影响"></a>38催化剂对化学反应速率的影响</h1><h1 id="39甲烷和氯气反应所需条件的对比实验"><a href="#39甲烷和氯气反应所需条件的对比实验" class="headerlink" title="39甲烷和氯气反应所需条件的对比实验"></a>39甲烷和氯气反应所需条件的对比实验</h1><h1 id="40石蜡油分解实验及其分解产物的性质实验"><a href="#40石蜡油分解实验及其分解产物的性质实验" class="headerlink" title="40石蜡油分解实验及其分解产物的性质实验"></a>40石蜡油分解实验及其分解产物的性质实验</h1><h1 id="41葡萄糖跟新制氢氧化铜悬浊液反应"><a href="#41葡萄糖跟新制氢氧化铜悬浊液反应" class="headerlink" title="41葡萄糖跟新制氢氧化铜悬浊液反应"></a>41葡萄糖跟新制氢氧化铜悬浊液反应</h1><h1 id="42碘酒与淀粉作用"><a href="#42碘酒与淀粉作用" class="headerlink" title="42碘酒与淀粉作用"></a>42碘酒与淀粉作用</h1><h1 id="43蛋白质的颜色反应"><a href="#43蛋白质的颜色反应" class="headerlink" title="43蛋白质的颜色反应"></a>43蛋白质的颜色反应</h1><h1 id="44蔗糖的水解及其产物的验证"><a href="#44蔗糖的水解及其产物的验证" class="headerlink" title="44蔗糖的水解及其产物的验证"></a>44蔗糖的水解及其产物的验证</h1><h1 id="45铝热反应"><a href="#45铝热反应" class="headerlink" title="45铝热反应"></a>45铝热反应</h1><h1 id="46葡萄糖的银镜反应"><a href="#46葡萄糖的银镜反应" class="headerlink" title="46葡萄糖的银镜反应"></a>46葡萄糖的银镜反应</h1><h1 id="47淀粉的水解"><a href="#47淀粉的水解" class="headerlink" title="47淀粉的水解"></a>47淀粉的水解</h1><h1 id="48蛋白质的性质"><a href="#48蛋白质的性质" class="headerlink" title="48蛋白质的性质"></a>48蛋白质的性质</h1><h1 id="49维生素C的还原性"><a href="#49维生素C的还原性" class="headerlink" title="49维生素C的还原性"></a>49维生素C的还原性</h1><h1 id="50不同条件下铁钉的锈蚀"><a href="#50不同条件下铁钉的锈蚀" class="headerlink" title="50不同条件下铁钉的锈蚀"></a>50不同条件下铁钉的锈蚀</h1><h1 id="51合成氨"><a href="#51合成氨" class="headerlink" title="51合成氨"></a>51合成氨</h1><h1 id="52硫酸铜跟氨水的反应"><a href="#52硫酸铜跟氨水的反应" class="headerlink" title="52硫酸铜跟氨水的反应"></a>52硫酸铜跟氨水的反应</h1><h1 id="53氯化铁溶液跟硫氰化钾溶液反应"><a href="#53氯化铁溶液跟硫氰化钾溶液反应" class="headerlink" title="53氯化铁溶液跟硫氰化钾溶液反应"></a>53氯化铁溶液跟硫氰化钾溶液反应</h1><h1 id="54碘单质在不同溶剂中的溶解性"><a href="#54碘单质在不同溶剂中的溶解性" class="headerlink" title="54碘单质在不同溶剂中的溶解性"></a>54碘单质在不同溶剂中的溶解性</h1><h1 id="55碘单质的升华"><a href="#55碘单质的升华" class="headerlink" title="55碘单质的升华"></a>55碘单质的升华</h1><h1 id="56镁条在二氧化碳中燃烧"><a href="#56镁条在二氧化碳中燃烧" class="headerlink" title="56镁条在二氧化碳中燃烧"></a>56镁条在二氧化碳中燃烧</h1><h1 id="57测量锌与硫酸反应速率"><a href="#57测量锌与硫酸反应速率" class="headerlink" title="57测量锌与硫酸反应速率"></a>57测量锌与硫酸反应速率</h1><h1 id="58高锰酸钾溶液与草酸溶液的反应"><a href="#58高锰酸钾溶液与草酸溶液的反应" class="headerlink" title="58高锰酸钾溶液与草酸溶液的反应"></a>58高锰酸钾溶液与草酸溶液的反应</h1><h1 id="59硫代硫酸钠溶液跟稀硫酸的反应"><a href="#59硫代硫酸钠溶液跟稀硫酸的反应" class="headerlink" title="59硫代硫酸钠溶液跟稀硫酸的反应"></a>59硫代硫酸钠溶液跟稀硫酸的反应</h1><h1 id="60温度与碘化钾被氧化的关系"><a href="#60温度与碘化钾被氧化的关系" class="headerlink" title="60温度与碘化钾被氧化的关系"></a>60温度与碘化钾被氧化的关系</h1><h1 id="61过氧化氢与二氧化锰作用"><a href="#61过氧化氢与二氧化锰作用" class="headerlink" title="61过氧化氢与二氧化锰作用"></a>61过氧化氢与二氧化锰作用</h1><h1 id="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"><a href="#62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用" class="headerlink" title="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"></a>62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用</h1><h1 id="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"><a href="#63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用" class="headerlink" title="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"></a>63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用</h1><h1 id="64淀粉溶液跟唾液、稀硫酸作用"><a href="#64淀粉溶液跟唾液、稀硫酸作用" class="headerlink" title="64淀粉溶液跟唾液、稀硫酸作用"></a>64淀粉溶液跟唾液、稀硫酸作用</h1><h1 id="65重硌酸钾溶液在不同酸度时的颜色"><a href="#65重硌酸钾溶液在不同酸度时的颜色" class="headerlink" title="65重硌酸钾溶液在不同酸度时的颜色"></a>65重硌酸钾溶液在不同酸度时的颜色</h1><h1 id="66三氯化铁跟不同浓度的硫氰化钾溶液反应"><a href="#66三氯化铁跟不同浓度的硫氰化钾溶液反应" class="headerlink" title="66三氯化铁跟不同浓度的硫氰化钾溶液反应"></a>66三氯化铁跟不同浓度的硫氰化钾溶液反应</h1><h1 id="67二氧化氮和四氧化二氮的相互转化"><a href="#67二氧化氮和四氧化二氮的相互转化" class="headerlink" title="67二氧化氮和四氧化二氮的相互转化"></a>67二氧化氮和四氧化二氮的相互转化</h1><h1 id="68相同条件下，镁条跟盐酸和醋酸的反应"><a href="#68相同条件下，镁条跟盐酸和醋酸的反应" class="headerlink" title="68相同条件下，镁条跟盐酸和醋酸的反应"></a>68相同条件下，镁条跟盐酸和醋酸的反应</h1><h1 id="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"><a href="#69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应" class="headerlink" title="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"></a>69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应</h1><h1 id="70用PH计测量溶液的PH"><a href="#70用PH计测量溶液的PH" class="headerlink" title="70用PH计测量溶液的PH"></a>70用PH计测量溶液的PH</h1><h1 id="71实验测定酸碱反应曲线"><a href="#71实验测定酸碱反应曲线" class="headerlink" title="71实验测定酸碱反应曲线"></a>71实验测定酸碱反应曲线</h1><h1 id="72相同条件下，测定不同盐溶液的PH"><a href="#72相同条件下，测定不同盐溶液的PH" class="headerlink" title="72相同条件下，测定不同盐溶液的PH"></a>72相同条件下，测定不同盐溶液的PH</h1><h1 id="73三氧化铁溶液的配制"><a href="#73三氧化铁溶液的配制" class="headerlink" title="73三氧化铁溶液的配制"></a>73三氧化铁溶液的配制</h1><h1 id="74沉淀的溶解"><a href="#74沉淀的溶解" class="headerlink" title="74沉淀的溶解"></a>74沉淀的溶解</h1><h1 id="75沉淀的转化"><a href="#75沉淀的转化" class="headerlink" title="75沉淀的转化"></a>75沉淀的转化</h1><h1 id="76铜锌硫酸原电池"><a href="#76铜锌硫酸原电池" class="headerlink" title="76铜锌硫酸原电池"></a>76铜锌硫酸原电池</h1><h1 id="77氯化钠溶液的电解"><a href="#77氯化钠溶液的电解" class="headerlink" title="77氯化钠溶液的电解"></a>77氯化钠溶液的电解</h1><h1 id="78氯化铜溶液的电解"><a href="#78氯化铜溶液的电解" class="headerlink" title="78氯化铜溶液的电解"></a>78氯化铜溶液的电解</h1><h1 id="79电镀"><a href="#79电镀" class="headerlink" title="79电镀"></a>79电镀</h1><h1 id="80铁的吸氧腐蚀"><a href="#80铁的吸氧腐蚀" class="headerlink" title="80铁的吸氧腐蚀"></a>80铁的吸氧腐蚀</h1><h1 id="81验证牺牲阳极的阴极保护法"><a href="#81验证牺牲阳极的阴极保护法" class="headerlink" title="81验证牺牲阳极的阴极保护法"></a>81验证牺牲阳极的阴极保护法</h1><h1 id="82水的电解与氢氧混合气爆鸣的微型实验"><a href="#82水的电解与氢氧混合气爆鸣的微型实验" class="headerlink" title="82水的电解与氢氧混合气爆鸣的微型实验"></a>82水的电解与氢氧混合气爆鸣的微型实验</h1><h1 id="83氯气的生成及其性质的微型实验"><a href="#83氯气的生成及其性质的微型实验" class="headerlink" title="83氯气的生成及其性质的微型实验"></a>83氯气的生成及其性质的微型实验</h1><h1 id="84污水处理"><a href="#84污水处理" class="headerlink" title="84污水处理"></a>84污水处理</h1><h1 id="85蒸馏"><a href="#85蒸馏" class="headerlink" title="85蒸馏"></a>85蒸馏</h1><h1 id="86从海带中提取碘"><a href="#86从海带中提取碘" class="headerlink" title="86从海带中提取碘"></a>86从海带中提取碘</h1><h1 id="87硫酸亚铁铵的制备"><a href="#87硫酸亚铁铵的制备" class="headerlink" title="87硫酸亚铁铵的制备"></a>87硫酸亚铁铵的制备</h1><h1 id="88乙酸乙酯的制备及反应条件探究"><a href="#88乙酸乙酯的制备及反应条件探究" class="headerlink" title="88乙酸乙酯的制备及反应条件探究"></a>88乙酸乙酯的制备及反应条件探究</h1><h1 id="89氢氧化铝的制"><a href="#89氢氧化铝的制" class="headerlink" title="89氢氧化铝的制"></a>89氢氧化铝的制</h1><h1 id="90几种无机离子的检验"><a href="#90几种无机离子的检验" class="headerlink" title="90几种无机离子的检验"></a>90几种无机离子的检验</h1>]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>实验视频</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
