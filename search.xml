@@ -69,6 +69,19 @@
       </tags>
   </entry>
   <entry>
+    <title>CSS学习笔记</title>
+    <url>//blog/note/code/CSS.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<h1 id="CSS学习笔记"><a href="#CSS学习笔记" class="headerlink" title="CSS学习笔记"></a>CSS学习笔记</h1>]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Freeplane思维导图软件的使用教程</title>
     <url>//blog/note/software-use/Freeplane-how-to-use.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Freeplane使用教程"><a href="#Freeplane使用教程" class="headerlink" title="Freeplane使用教程"></a>Freeplane使用教程</h1><p><a href="https://sourceforge.net/projects/freeplane/">下载地址</a></p>
@@ -1238,6 +1251,15 @@
 <li><a href="https://zh.javascript.info/arrow-functions-basics">箭头函数，基础知识</a></li>
 <li><a href="https://zh.javascript.info/javascript-specials">JavaScript 特性</a></li>
 </ul>
+<hr>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>在JS中，所有可以由我们自主命名的内容，都可以认为是一个标识符，像 变量名 函数名 类名…<br>                使用标识符需要遵循如下的命名规范：<br>                    1. 标识符只能含有字母、数字、下划线、$，且不能以数字开头<br>                                        2. 标识符不能是JS中的关键字和保留字，也不建议使用内置的函数或类名作为变量名<br>                                        3. 命名规范：<br>                        - 通常会使用驼峰命名法<br>                            - 首字母小写，每个单词开头大写<br>                            - maxlength –&gt; maxLength<br>                            - borderleftwidth –&gt; borderLeftWidth</p>
+<pre><code>                    - 类名会使用大驼峰命名法
+                        - 首字母大写，每个单词开头大写
+                        - maxlength --&gt; MaxLength
+
+                    - 常量的字母会全部大写
+                        - MAX_LENGTH
+</code></pre>
 <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="文本串"><a href="#文本串" class="headerlink" title="文本串"></a>文本串</h2><h3 id="引号-（quotes）"><a href="#引号-（quotes）" class="headerlink" title="引号 （quotes）"></a>引号 （quotes）</h3><p>​	在js中的文本串，可以被<code>单引号</code>、<code>双引号</code>、<code>反引号</code>进行插入使用。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&#x27;你好，世界&#x27;</span> ;	<span class="comment">//单引号插入文本</span></span><br><span class="line"><span class="keyword">let</span> wenben1 = <span class="string">&quot;你好啊，世界&quot;</span> ; <span class="comment">// 双引号插入文本</span></span><br><span class="line"><span class="keyword">let</span> wenben2 = <span class="string">`你好，世界啊`</span> ; <span class="comment">// 反引号插入文本</span></span><br></pre></td></tr></table></figure>
 
@@ -1850,23 +1872,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
-    <url>//blog/epicwebevent/szjsvsjc.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
-<p>最终结果：交警败诉。</p>
-<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
-<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
-<p>下面是使用html标签插入的视频</p>
-<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
-]]></content>
-      <categories>
-        <category>时事分享</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法</title>
     <url>//blog/note/markdown/yufa.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>在需要目录出现的地方（一般在文章一开始）放置一个标记<code>[toc]</code>，这样会自动生成一个嵌套的包含所有标题的列表。</p>
@@ -2347,6 +2352,23 @@
       </categories>
       <tags>
         <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
+    <url>//blog/epicwebevent/szjsvsjc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
+<p>最终结果：交警败诉。</p>
+<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
+<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
+<p>下面是使用html标签插入的视频</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+]]></content>
+      <categories>
+        <category>时事分享</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
