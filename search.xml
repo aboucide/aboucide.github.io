@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CSS学习笔记</title>
+    <url>//blog/note/code/CSS.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<h1 id="CSS学习笔记"><a href="#CSS学习笔记" class="headerlink" title="CSS学习笔记"></a>CSS学习笔记</h1>]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2024高考化学易错题整理</title>
     <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
@@ -69,16 +82,84 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS学习笔记</title>
-    <url>//blog/note/code/CSS.html</url>
+    <title>DFX工作台脚本-使用步骤</title>
+    <url>//blog/note/software-use/DFX-GZT.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<h1 id="CSS学习笔记"><a href="#CSS学习笔记" class="headerlink" title="CSS学习笔记"></a>CSS学习笔记</h1>]]></content>
+<h1 id="这脚本用来干什么的"><a href="#这脚本用来干什么的" class="headerlink" title="这脚本用来干什么的"></a>这脚本用来干什么的</h1><p>自动完成发放课后作业（1张试卷），给当前【开课中】及【未开课】的学生。</p>
+<p>共计发送<code>5次</code>。</p>
+<p>预计此脚本，每天能为您节省<code>420秒</code>。</p>
+<hr>
+<h1 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h1><h2 id="安装浏览器插件——油猴（共6步）"><a href="#安装浏览器插件——油猴（共6步）" class="headerlink" title="安装浏览器插件——油猴（共6步）"></a>安装浏览器插件——油猴（共6步）</h2><p>这里以<code>Windows</code>系统自带的<code>Edge</code>浏览器为例。谷歌浏览器的安装步骤类似。</p>
+<p>1、下载浏览器——油猴插件</p>
+<p><a href="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWMtd3pfdmxZTnBNdHQ0djVUX3FILVVCTDBaZnRuS0lBV1puWmY0U2tHUm41dz9lPXZvYkd0Sw.crx">点我下载</a></p>
+<p>2、安装油猴插件</p>
+<ul>
+<li>①点击<code>Edge</code>浏览器右上角的<code>设置</code>（即图中所示：三个小圆点）</li>
+</ul>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gk1f7x4j31e70u0aji.jpg "  style="zoom:50%;" />
+
+<ul>
+<li>②点击<code>扩展</code></li>
+</ul>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hu2gm10tdcj30ki11i77m.jpg "  style="zoom:30%;" />
+
+<ul>
+<li>③点击<code>管理扩展</code></li>
+</ul>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gmqrzxvj30wz0ie0va.jpg "  style="zoom:40%;" />
+
+<ul>
+<li>④打开<code>开发者人员模式</code>的开关</li>
+</ul>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gnbq01wj31mq0u07ag.jpg "  style="zoom:50%;" />
+
+<ul>
+<li>⑤打开刚下载的插件所在的文件夹，将刚刚下载的这个插件按住鼠标不松，拖放到浏览器这个界面，浏览器会有提示，再松开鼠标，插件就可以安装了。</li>
+</ul>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hu2go7q0vjj31lc0u0795.jpg "  style="zoom:50%;" />
+
+<ul>
+<li>⑥在弹出的新窗口中，点击<code>添加扩展</code></li>
+</ul>
+<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8hu2gqxp8l9j315l0u0794.jpg "  style="zoom:40%;" />
+
+<p>至此第一步<strong>油猴插件</strong>就安装完毕。</p>
+<hr>
+<h2 id="安装脚本（共2步）"><a href="#安装脚本（共2步）" class="headerlink" title="安装脚本（共2步）"></a>安装脚本（共2步）</h2><p><a href="https://greasyfork.org/zh-CN/scripts/510404-dfx%E5%B7%A5%E4%BD%9C%E5%8F%B0%E5%8A%A9%E6%89%8B">点我去脚本网址</a></p>
+<ul>
+<li>①打开上面的脚本网址，界面如下图所示，点击<code>安装此脚本</code></li>
+</ul>
+<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8hu2gt7i0i4j31oj0u0tg0.jpg "  style="zoom:50%;" />
+
+<ul>
+<li>②在新窗口中，点击<code>安装</code></li>
+</ul>
+<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8hu2grnvbtrj31u90u046m.jpg "  style="zoom:50%;" />
+
+<p>至此脚本安装也结束了。</p>
+<hr>
+<h2 id="启动-使用脚本"><a href="#启动-使用脚本" class="headerlink" title="启动&#x2F;使用脚本"></a>启动&#x2F;使用脚本</h2><ul>
+<li><a href="https://we.xdf.cn/main/home">打开高中工作台 </a></li>
+</ul>
+<p>如下图所示，安装脚本后，网页中会出现一个<code>绿色的小太阳</code>，可以随意拖放，双击<code>绿色小太阳</code>即可启动脚本。</p>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gx7gzcqj30gz0mljsm.jpg "  style="zoom:30%;" />
+
+<ul>
+<li>使用的注意事项</li>
+</ul>
+<blockquote>
+<p>1、脚本启动前，网页必须在“高中工作台”的<a href="https://we.xdf.cn/main/home">首页</a>，然后再双击启动脚本。</p>
+<p>因为脚本的第一步是去点击“试卷库”，脚本找不到试卷库，脚本会自动停止。</p>
+<p>2、脚本运行中，鼠标只要不要去点击浏览器，随便你去什么事情都可以。</p>
+<p>3、如果想运行到中途，终止脚本，刷新网页即可，或者直接关闭网页重新打开都可以。</p>
+</blockquote>
+]]></content>
       <categories>
-        <category>笔记</category>
-        <category>编程</category>
+        <category>note</category>
+        <category>software-use</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
+        <tag>脚本</tag>
       </tags>
   </entry>
   <entry>
@@ -1872,6 +1953,23 @@
       </tags>
   </entry>
   <entry>
+    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
+    <url>//blog/epicwebevent/szjsvsjc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
+<p>最终结果：交警败诉。</p>
+<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
+<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
+<p>下面是使用html标签插入的视频</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+]]></content>
+      <categories>
+        <category>时事分享</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法</title>
     <url>//blog/note/markdown/yufa.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>在需要目录出现的地方（一般在文章一开始）放置一个标记<code>[toc]</code>，这样会自动生成一个嵌套的包含所有标题的列表。</p>
@@ -2352,23 +2450,6 @@
       </categories>
       <tags>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
-    <url>//blog/epicwebevent/szjsvsjc.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
-<p>最终结果：交警败诉。</p>
-<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
-<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
-<p>下面是使用html标签插入的视频</p>
-<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
-]]></content>
-      <categories>
-        <category>时事分享</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
