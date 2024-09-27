@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CSS学习笔记</title>
-    <url>//blog/note/code/CSS.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<h1 id="CSS学习笔记"><a href="#CSS学习笔记" class="headerlink" title="CSS学习笔记"></a>CSS学习笔记</h1>]]></content>
-      <categories>
-        <category>笔记</category>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2024高考化学易错题整理</title>
     <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
@@ -79,6 +66,19 @@
       </categories>
       <tags>
         <tag>化学真题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS学习笔记</title>
+    <url>//blog/note/code/CSS.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<h1 id="CSS学习笔记"><a href="#CSS学习笔记" class="headerlink" title="CSS学习笔记"></a>CSS学习笔记</h1>]]></content>
+      <categories>
+        <category>note</category>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -173,7 +173,7 @@
 
 ]]></content>
       <categories>
-        <category>笔记</category>
+        <category>note</category>
         <category>软件使用教程</category>
       </categories>
       <tags>
@@ -1305,7 +1305,7 @@
 </tbody></table>
 ]]></content>
       <categories>
-        <category>笔记</category>
+        <category>note</category>
         <category>编程</category>
       </categories>
       <tags>
@@ -1445,7 +1445,7 @@
 
 <h1 id="JS对象-object"><a href="#JS对象-object" class="headerlink" title="JS对象 object"></a>JS对象 object</h1><h1 id="函数进阶"><a href="#函数进阶" class="headerlink" title="函数进阶"></a>函数进阶</h1><h1 id="原型-继承"><a href="#原型-继承" class="headerlink" title="原型 继承"></a>原型 继承</h1><h1 id="类"><a href="#类" class="headerlink" title="类"></a>类</h1><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1>]]></content>
       <categories>
-        <category>笔记</category>
+        <category>note</category>
         <category>编程</category>
       </categories>
       <tags>
@@ -1710,6 +1710,10 @@
 <p>则你的  root：&#x2F;blog</p>
 <p>再次重新部署即可。</p>
 ]]></content>
+      <categories>
+        <category>note</category>
+        <category>hexo</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
       </tags>
@@ -2445,11 +2449,26 @@
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">$$ f(x) = a+b $$</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>笔记</category>
+        <category>note</category>
         <category>markdown</category>
       </categories>
       <tags>
         <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编程语言入门到精通</title>
+    <url>//note/mind/biancheng0-1.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>入门了，，，，，</p>
+<p>算不上精通。。。。。。</p>
+<p>等将来再说吧。。。。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+        <category>思维</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -2594,25 +2613,12 @@
 </details>
 ]]></content>
       <categories>
-        <category>笔记</category>
+        <category>note</category>
         <category>教资考试</category>
       </categories>
       <tags>
         <tag>综合素质</tag>
         <tag>教资</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编程语言入门到精通</title>
-    <url>//note/mind/biancheng0-1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>正文开始</p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-        <category>思维</category>
-      </categories>
-      <tags>
-        <tag>编程</tag>
       </tags>
   </entry>
 </search>
