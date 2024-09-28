@@ -1272,38 +1272,133 @@
 </thead>
 <tbody><tr>
 <td><code>index</code></td>
-<td></td>
+<td>允许搜索引擎爬虫索引此页面。</td>
 </tr>
 <tr>
 <td><code>noindex</code></td>
-<td></td>
+<td>不允许搜索引擎爬虫索引此页面。</td>
 </tr>
 <tr>
 <td><code>follow</code></td>
-<td></td>
+<td>允许搜索爬虫跟随此页面上的链接。</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td><code>nofllow</code></td>
+<td>要求搜索爬虫不跟随此页面上的链接。</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td><code>all</code></td>
+<td>等于同时允许<code>fllow</code>+<code>index</code></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td><code>none</code></td>
+<td>等于同时拒绝<code>fllow</code>+<code>index</code></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td><code>noarchive</code></td>
+<td>要求搜索引擎不缓存页面内容。</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td><code>nocache</code></td>
+<td>&#x3D;<code>noarchive</code>，即要求搜索引擎不缓存页面内容。</td>
 </tr>
 </tbody></table>
-]]></content>
+<ol start="7">
+<li>配置网页作者</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;ZhongYuan&quot;</span> <span class="attr">content</span>=<span class="string">&quot;tony&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="8">
+<li>配置网页生成工具</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;genrator&quot;</span> <span class="attr">content</span>=<span class="string">&quot;Visual Studio Code&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="9">
+<li>配置网页版权信息</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;copyright&quot;</span> <span class="attr">content</span>=<span class="string">&quot;2022-22029©版权所有&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="10">
+<li>配置网页自动刷新</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;refresh&quot;</span> <span class="attr">content</span>=<span class="string">&quot;10;url=http://www.baidu.com&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>完整网页元信息，参考：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta">元信息|MDN</a></p>
+<hr>
+<h1 id="HTML5新特性"><a href="#HTML5新特性" class="headerlink" title="HTML5新特性"></a>HTML5新特性</h1><h2 id="什么是HTML5"><a href="#什么是HTML5" class="headerlink" title="什么是HTML5"></a>什么是HTML5</h2><ul>
+<li><code>HTML5</code>是新一代<code>HTML</code>标准，2014年10月由万维网联盟（<code>W3C</code>）完成标准制定。</li>
+<li><code>HTML5</code>狭义上指的是最新标准，广义上是指：整个前端。</li>
+</ul>
+<h2 id="HTML5的优势"><a href="#HTML5的优势" class="headerlink" title="HTML5的优势"></a>HTML5的优势</h2><ol>
+<li>针对<code>JavaScript</code>，新增了很多可操作的接口。</li>
+<li>新增了一些语义化标签，全局属性。</li>
+<li>新增了多媒体标签，可以很好的取缔<code>flash</code>。</li>
+<li>更加侧重语义化，对<code>SEO</code>更加友好。</li>
+<li>可以移植性好，可以大量应用在移动设备上。</li>
+</ol>
+<h2 id="HTML5的兼容性"><a href="#HTML5的兼容性" class="headerlink" title="HTML5的兼容性"></a>HTML5的兼容性</h2><ul>
+<li>支持主流浏览器：<code>Chrome</code>、<code>Sfari</code>、<code>Opera</code>、<code>Firefox</code>等。</li>
+</ul>
+<blockquote>
+<p>IE 浏览器必须是 9 及以上版本才支持 HTML5 ，且 IE9 仅支持部分 HTML5 新特性。</p>
+</blockquote>
+<h2 id="新增语义化标签"><a href="#新增语义化标签" class="headerlink" title="新增语义化标签"></a>新增语义化标签</h2><h3 id="新增布局标签"><a href="#新增布局标签" class="headerlink" title="新增布局标签"></a>新增布局标签</h3><table>
+<thead>
+<tr>
+<th>标签名</th>
+<th>语义</th>
+<th>单&#x2F;双标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>header</code></td>
+<td>整个页面或部分区域的头部。</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>footer</code></td>
+<td>整个页面或部分区域的底部。</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>nav</code></td>
+<td>导航</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>article</code></td>
+<td>文章、帖子、杂志、新闻、博客、评论等。</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>section</code></td>
+<td>页面中的某段文字或文章中的某段文字。</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>aside</code></td>
+<td>侧边栏</td>
+<td>双</td>
+</tr>
+<tr>
+<td><code>main</code></td>
+<td>文档的主要内容，这标签基本不用。</td>
+<td>双</td>
+</tr>
+</tbody></table>
+<p>关于<code>article</code>和<code>section</code>：</p>
+<blockquote>
+<ol>
+<li><code>article</code>里面可以有多个<code>section</code>。</li>
+<li><code>section</code>强调的是分段或分块，如果你想把一段内容分成几段的时候，可以使用<code>section</code>元素。</li>
+<li><code>article</code>比<code>section</code>更强调独立性，一块内容如果比较独立、完整，应该使用<code>article</code>元素。</li>
+</ol>
+</blockquote>
+<h3 id="新增状态标签"><a href="#新增状态标签" class="headerlink" title="新增状态标签"></a>新增状态标签</h3><h3 id="新增列表标签"><a href="#新增列表标签" class="headerlink" title="新增列表标签"></a>新增列表标签</h3><h3 id="新增文本标签"><a href="#新增文本标签" class="headerlink" title="新增文本标签"></a>新增文本标签</h3><h2 id="新增表单功能"><a href="#新增表单功能" class="headerlink" title="新增表单功能"></a>新增表单功能</h2><h3 id="表单控件新增属性"><a href="#表单控件新增属性" class="headerlink" title="表单控件新增属性"></a>表单控件新增属性</h3><h3 id="input新增属性值"><a href="#input新增属性值" class="headerlink" title="input新增属性值"></a>input新增属性值</h3><h3 id="form新增属性"><a href="#form新增属性" class="headerlink" title="form新增属性"></a>form新增属性</h3><h2 id="新增多媒体标签"><a href="#新增多媒体标签" class="headerlink" title="新增多媒体标签"></a>新增多媒体标签</h2><h3 id="视频标签"><a href="#视频标签" class="headerlink" title="视频标签"></a>视频标签</h3><h3 id="音频标签"><a href="#音频标签" class="headerlink" title="音频标签"></a>音频标签</h3>]]></content>
       <categories>
         <category>note</category>
         <category>编程</category>
@@ -1719,6 +1814,25 @@
       </tags>
   </entry>
   <entry>
+    <title>敢问路在何方（伴奏视频分享）</title>
+    <url>//blog/liferecord/Dare-to-ask-where-the-road-is.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://www.bilibili.com/video/BV1oJ411M7fL">原视频</a></p>
+<p>首先感谢原作者制作了精彩的作品，但是添加了一些片头噪音影响体验。</p>
+<p>下面是剪辑去掉了片头，并且把<strong>无损背景音乐</strong>提取出来。</p>
+<p>视频中的音乐软件叫做《flstudio》，以后有时间的话真想去学一学。</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVk5SWIwQ2RXX05CcERCa0NNemdYV0lCc1UtdUo1QTBfUk1kbC1ZaTExdDNIdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9U3VPdVcz.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+<p><a href="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVhLWDhLMm4yaGxOaV9JaXZpRE1zVkFCOXIxNUc5aFdiQm50VG9oNE96YXVyZz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cXRjaE0x.flac">点我下载无损背景音乐</a></p>
+]]></content>
+      <categories>
+        <category>生活记录</category>
+        <category>未来计划</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+        <tag>音乐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>观影/追番记录</title>
     <url>//blog/liferecord/essay/zhuifan.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
@@ -1751,8 +1865,8 @@
 </tr>
 <tr>
 <td>永生第四季 海噬仙灵<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年9月24日   看完第9集（第49集）</td>
-<td>方寒  ko  绝命岛主，去海市领取悬赏。</td>
+<td align="left">2024年9月28日   看完第10集（第50集）</td>
+<td>到达海市，领取七大水母。联姻</td>
 </tr>
 <tr>
 <td>剑来   <br />⭐⭐⭐<br /></td>
