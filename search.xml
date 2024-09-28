@@ -72,7 +72,8 @@
     <title>CSS学习笔记</title>
     <url>//blog/note/code/CSS.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<h1 id="CSS学习笔记"><a href="#CSS学习笔记" class="headerlink" title="CSS学习笔记"></a>CSS学习笔记</h1>]]></content>
+<h1 id="CSS学习笔记"><a href="#CSS学习笔记" class="headerlink" title="CSS学习笔记"></a>CSS学习笔记</h1><p>学习中（2024年9月28日）</p>
+]]></content>
       <categories>
         <category>note</category>
         <category>编程</category>
@@ -2071,23 +2072,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
-    <url>//blog/epicwebevent/szjsvsjc.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
-<p>最终结果：交警败诉。</p>
-<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
-<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
-<p>下面是使用html标签插入的视频</p>
-<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
-]]></content>
-      <categories>
-        <category>时事分享</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法</title>
     <url>//blog/note/markdown/yufa.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>在需要目录出现的地方（一般在文章一开始）放置一个标记<code>[toc]</code>，这样会自动生成一个嵌套的包含所有标题的列表。</p>
@@ -2568,6 +2552,23 @@
       </categories>
       <tags>
         <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
+    <url>//blog/epicwebevent/szjsvsjc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
+<p>最终结果：交警败诉。</p>
+<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
+<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
+<p>下面是使用html标签插入的视频</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+]]></content>
+      <categories>
+        <category>时事分享</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
