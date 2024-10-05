@@ -1,71 +1,922 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2024高考化学易错题整理</title>
-    <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
-<p><strong>避免火焰</strong>：在碳化过程中，应避免海带直接接触火焰，以免引起燃烧。通常使用间接加热，如在火焰上方一定距离加热。</p>
-<p><strong>观察变化</strong>：在加热过程中，要密切观察海带的颜色和状态变化，直到它完全变黑并碳化。</p>
-<p><strong>打开坩埚盖</strong>：通过灼烧去除水分并碳化海带，通常不需要盖上盖子。这样做可以让水分和挥发性物质（如盐分）容易蒸发，同时便于观察海带的碳化过程。</p>
-<h3 id="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。"><a href="#2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。" class="headerlink" title="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。"></a>2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。</h3><p>反应的发生可以由多种因素决定，包括：</p>
-<ul>
-<li><p><strong>反应朝着离子浓度减小的方向进行</strong>，例如生成沉淀、气体、弱电解质（例如水）。</p>
-</li>
-<li><p><strong>化学平衡的移动</strong>：反应是否进行还取决于反应物和生成物的浓度，以及温度等条件，这些都会影响化学平衡的位置。</p>
-</li>
-<li><p><strong>热力学和动力学因素</strong>：反应的热力学可行性（如自由能变化）和反应的动力学（反应速率）也是决定反应是否进行的重要因素。</p>
-</li>
-</ul>
-<p>也可以这三点就是反应进行的原理，是具有普适性的。</p>
-<p>氯化镁溶液中滴入氢氧化钠溶液，会发生复分解反应，生成氢氧化镁沉淀，与氢氧化钠、氢氧化镁的碱性强弱无关，不能由此得出氢氧化钠的碱性比氢氧化镁强。</p>
-<p>学习过沉淀溶解平衡的知识，让我们知道了沉淀可以由Ksp大的向Ksp小的进行转化。</p>
-<p>也就是说氯化镁与氢氧化钠反应涉及到真正反应动力可以用下面的原理来解释，</p>
-<p>[1]复分解原理；反应总是朝着溶液中离子浓度减小的方向进行，因为这样能降低体系的自由度，▲G&lt;0。</p>
-<p>[2]沉淀溶解平衡的转化；氢氧化镁为难溶物，Ksp较小。</p>
-<p><strong>如何去理解”强酸制弱酸、强碱制弱碱“？</strong></p>
-<p><strong>当稀溶液中的酸碱反应体系仅存在酸碱平衡时，“强酸制弱酸”的规律是成立的，不存在其他平衡例如氧化还原平衡、配位平衡、沉淀溶解平衡、气液平衡等。</strong></p>
-<p>即只有体系中只存在酸性强弱的差距，不涉及到其他平衡的干扰才能认为是强酸制弱酸，这就导致”强酸制弱酸“这个所谓的”理论“使用的条件非常严格，不能随便套用。</p>
-<p>最后，可以尝试去思考一下硫化氢与硫酸铜反应的例子。</p>
+    <title>观影/追番记录</title>
+    <url>//blog/liferecord/essay/zhuifan.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
+<thead>
+<tr>
+<th>名称</th>
+<th align="left">日期  +  进度</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仙逆⭐⭐⭐⭐⭐</td>
+<td align="left">2024年9月18日   看完第56集</td>
+<td>王林感悟意境，准备化神。</td>
+</tr>
+<tr>
+<td>凡人修仙传⭐⭐⭐⭐⭐</td>
+<td align="left">2024年9月22日   看完第120集</td>
+<td>韩立获得星宫外门执事认可，进入天星城。逆星盟攻打星宫在即。</td>
+</tr>
+<tr>
+<td>遮天<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年8月28日  看完第75集</td>
+<td>叶凡去打离火教。</td>
+</tr>
+<tr>
+<td>完美世界<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年8月21日  看完第177集</td>
+<td>石昊ko仙殿继承人。</td>
+</tr>
+<tr>
+<td>永生第四季 海噬仙灵<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年10月4日   看完第11集（第51集）</td>
+<td>到达海市</td>
+</tr>
+<tr>
+<td>剑来   <br />⭐⭐⭐<br /></td>
+<td align="left">2024年9月20日   看完第8集</td>
+<td>陈平安的小镇要崩溃了。</td>
+</tr>
+<tr>
+<td>师兄啊师兄⭐⭐⭐⭐</td>
+<td align="left">2024年10月4日 看完第57集</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+</tbody></table>
 <hr>
-<h2 id="2024浙江卷"><a href="#2024浙江卷" class="headerlink" title="2024浙江卷"></a>2024浙江卷</h2><h3 id="1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3"><a href="#1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3" class="headerlink" title="1、铁离子与氰酸根不能共存，会生成Fe(CN)6  3-"></a>1、铁离子与氰酸根不能共存，会生成Fe(CN)<sub>6</sub> <sup> 3-</sup></h3><h3 id="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"><a href="#2、碘单质和碱性物质反应，产物是碘离子和碘酸根。" class="headerlink" title="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"></a>2、碘单质和碱性物质反应，产物是碘离子和碘酸根。</h3><p>例如，碘单质（I₂）与氢氧化钠（NaOH）的反应通常生成碘化钠（NaI）、碘酸钠（NaIO₃）和水（H₂O）</p>
-<p>与氯气和氢氧化钠的反应不同，氯气在不同条件下可以生成不同的产物（如NaCl、NaClO、NaClO₃），这是因为次氯酸盐（ClO⁻）和氯酸盐（ClO₃⁻）相对稳定，而次碘酸盐（IO⁻）则非常不稳定，容易进一步氧化为碘酸钠（NaIO₃）。因此，碘单质与氢氧化钠的反应不会产生像氯气那样的多种产物，而是倾向于生成碘化钠和碘酸钠。这种差异主要是由于不同卤素的化学性质和它们形成的化合物的稳定性所决定的。</p>
-<h3 id="3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？"><a href="#3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？" class="headerlink" title="3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？"></a>3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？</h3><p>答案是：不能。</p>
-<p>在晶体硅中，使用碳原子代替硅原子通常不会直接增强导电性。硅是一种半导体材料，其导电性可以通过掺杂来控制。在半导体材料中，掺杂是指在晶体中故意引入少量的杂质原子，这些杂质原子可以是施主（提供额外电子）或受主（接受电子），从而改变材料的电子结构和导电性。</p>
-<p>在硅中，通常通过掺入如硼（B）这样的受主杂质来形成p型半导体，或者通过掺入如磷（P）这样的施主杂质来形成n型半导体。这些掺杂原子会改变硅的电子结构，从而增强其导电性。例如，掺入磷的硅会因为额外的电子而增加导电性，因为这些电子可以参与导电过程。</p>
-<p>然而，碳原子与硅原子在晶体硅中的置换并不会直接导致导电性的增强。碳和硅都是第IV族元素，它们在周期表中的化学性质相似，但碳的原子半径小于硅，这可能导致晶体结构的畸变。此外，碳的掺杂不一定能像磷或硼那样有效地提供额外的电子或空穴来增加导电性。实际上，碳在硅中的掺杂可能会引入结构缺陷，影响硅的半导体性质。</p>
-<p>在某些情况下，如在锂离子电池的硅基负极材料中，通过引入碳形成硅&#x2F;碳复合材料，可以提高材料的结构稳定性和导电性。这是因为碳材料可以提供额外的电子传输路径，并且有助于缓冲硅在充放电过程中的体积膨胀。但这种增强是通过复合材料的结构设计实现的，而不是简单地通过碳原子替代硅原子来实现的。</p>
-<p>总的来说，晶体硅中使用碳原子代替硅原子并不是一种有效的增强导电性的方法。相反，通过特定的掺杂技术或者设计硅&#x2F;碳复合材料结构，可以更有效地改善硅的导电性能。</p>
-<h3 id="4、关于亚硫酸钡沉淀"><a href="#4、关于亚硫酸钡沉淀" class="headerlink" title="4、关于亚硫酸钡沉淀"></a>4、关于亚硫酸钡沉淀</h3><ul>
-<li><p><strong>将二氧化硫通入氯化钡溶液，一般看不到白色沉淀</strong>。原因是产物氯化氢与亚硫酸钡不能共存，反应无法进行。</p>
-<p>除非此时有氧化性物质在溶液体系中，例如氧气、氯气、可以将亚硫酸根氧化成硫酸根而沉淀。</p>
-<p>当然，如果溶液中有碱性物质，能够除去反应生成的氯化氢，那么也能够看到白色沉淀。</p>
-</li>
-<li><p>将亚硫酸溶液加入到氯化钡溶液，理论上可以生成亚硫酸钡（BaSO₃）沉淀。然而，亚硫酸钡在水中的溶解度虽然很低，但它仍然可以溶解在盐酸（HCl）中。因此，即使在实验中观察到了白色沉淀，这些沉淀也可能因为反应体系中存在的盐酸而被溶解，导致最终看不到沉淀。在实际操作中，如果实验系统中含有氧气，二氧化硫（SO₂）可能会被氧化成硫酸（H₂SO₄），进而与氯化钡反应生成硫酸钡（BaSO₄）沉淀，这是一种不溶于水和酸的白色沉淀。</p>
-</li>
-</ul>
-<p>​	因此，这个实验中是否能看到沉淀，取决于实验条件，如反应体系中是否存在氧气，以及盐酸的浓度等因素。在无氧条件下，亚硫酸与氯化钡混合可能会看到白色沉淀接着又会溶解；但在有氧条件下，由于亚硫酸被氧化，可能看到较为稳定的白色沉淀。</p>
-<h3 id="5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2-。试问："><a href="#5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2-。试问：" class="headerlink" title="5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2+ 。试问："></a>5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO<sub>2</sub><sup>+</sup> 。试问：</h3><ul>
-<li>比较氧化性强弱：NO<sub>2</sub><sup>+</sup>         HNO<sub>3</sub></li>
-</ul>
-<p>NO<sub>2</sub><sup>+</sup>的氧化性大于硝酸。可以将NO<sub>2</sub><sup>+</sup>看作是硝酸脱去了一个氢氧根所得到的产物，硝酸脱去氢氧根这个阴离子后，得电子能力更强了。</p>
-<p>这种结论有点类似：“氨气的还原性强于铵根”、“铁离子的氧化性强于亚铁离子”。</p>
-<ul>
-<li>写出A中阴离子的结构式</li>
-</ul>
-<p>A中阴离子为HS<sub>2</sub> O<sub>7</sub>  <sup>—</sup>，其结构式为</p>
-<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8htt3se11poj303x01la9u.jpg "  style="zoom:90%;" />
-
-
-
-<h3 id="6、钠和二氧化碳加热的反应方程式"><a href="#6、钠和二氧化碳加热的反应方程式" class="headerlink" title="6、钠和二氧化碳加热的反应方程式"></a>6、钠和二氧化碳加热的反应方程式</h3><p>①二氧化碳少量，产物为氧化钠 + 一氧化碳</p>
-<p>②二氧化碳过量，产物为碳酸钠  + 一氧化碳</p>
 ]]></content>
       <categories>
-        <category>高中化学</category>
-        <category>易错题</category>
+        <category>生活记录</category>
+        <category>随笔</category>
       </categories>
       <tags>
-        <tag>化学真题</tag>
+        <tag>追番</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的hexo博客设置以及next主题个人喜好</title>
+    <url>//blog/note/hexo/blog-next-diy.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
+<p>hexo配置文件（博客根目录文件夹内的—config.yml）——博客配置文件</p>
+<h1 id="一、博客配置文件的修改"><a href="#一、博客配置文件的修改" class="headerlink" title="一、博客配置文件的修改"></a>一、博客配置文件的修改</h1><h2 id="1-修改站点语言为中文"><a href="#1-修改站点语言为中文" class="headerlink" title="1.修改站点语言为中文"></a>1.修改站点语言为中文</h2><p>打开配置文件，搜索 language，找到如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">author:</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
+
+<p>在 language 后面输入 <strong>zh-CN。</strong></p>
+<h2 id="2、博客文章生成永久链接"><a href="#2、博客文章生成永久链接" class="headerlink" title="2、博客文章生成永久链接"></a>2、博客文章生成永久链接</h2><p>这里有两种方法，一种使用hexo自带的，另一种需要安装插件。</p>
+<p>方法一 hexo自带生成永久链接</p>
+<p>例如我博客的首页，网址为<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
+<p>那我的url就设置成这个<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
+<p>root字段没有，就手动输入<code>root: /</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 博客生成永久地址  URL</span><br><span class="line">url:  https://github.com/aboucide/aboucide.github.io.git   </span><br><span class="line">root: /</span><br><span class="line">permalink: :urldiy	# 预设永久链接格式  </span><br><span class="line">permalink_defaults:      # 默认永久链接</span><br><span class="line">pretty_urls:             # 美化永久链接</span><br><span class="line">  trailing_index: true   </span><br><span class="line">  trailing_html: true    </span><br></pre></td></tr></table></figure>
+
+<p>如果你的博客首页网址是  url：<a href="http://www.mfm.com/blog">http://www.mfm.com/blog</a></p>
+<p>则你的  root：&#x2F;blog</p>
+<p>后续在每个文章的文件头那里输入字段</p>
+<p><code>urldiy: /文件夹名称/分类名称/文章自定义名称.html</code></p>
+<p>文件夹名称是 hexo将md文件转换成网页文件后上传到GitHub中的文件夹名称，可以随意取，程序会自动新建该文件夹，然后把html文件放进去。</p>
+<p>分类名称 是自己在Category &amp; Tag 中设置的中文对应的名称</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Category &amp; Tag    </span><br><span class="line">#把分类和标签与地址栏对应的英文在这进行分别设置，否则地址栏现实的是中文，分享出去的网址会是一大串转义字符。</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">  笔记: note</span><br><span class="line">  高中化学: chemistry</span><br><span class="line">  实验视频: experiment-videos</span><br><span class="line">  资源分享: source</span><br><span class="line">  生活记录: liferecord</span><br><span class="line">  随笔: essay</span><br><span class="line">  常见电脑疑难的解决方案: solution</span><br><span class="line">  时事分享: epicwebevent            #记录互联网精彩的事情           </span><br><span class="line">  未分类: uncategorized</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tag_map:</span><br><span class="line">  视频: video</span><br></pre></td></tr></table></figure>
+
+
+
+<p>例如本篇文章的urldiy设置如下</p>
+<p><code>urldiy: /blog/note/hexo/diy.html</code></p>
+<p>即本文网址：aboucide.github.io&#x2F;blog&#x2F;note&#x2F;hexo&#x2F;diy.html</p>
+<p>方法二 安装插件</p>
+<p>【我没有使用这种方法，因此在这不做介绍】</p>
+<h2 id="3、修改博客默认模板"><a href="#3、修改博客默认模板" class="headerlink" title="3、修改博客默认模板"></a>3、修改博客默认模板</h2><p>hexo博客的默认模板储存在：<code>博客根目录/scaffolds/</code></p>
+<p>什么情况下会使用到默认模板？</p>
+<p>博客的文章储存在<code>\source\_posts</code>，因此我们写作的方法是</p>
+<p>① 写好一份md文档，放进该文件夹中，再进行更新博客即可。</p>
+<p>但是这种直接手动新建的md文件不能自带 ”文件头“ （front matter），这样子上传的md文件hexo博客是默认不识别的。必须要手动输入文件头，在md文件的开头输入<code>---</code>回车，再手动输入文章的各个信息才行。但是很明显每次写博客都手动输入文章信息就太麻烦了。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">urlname: &#123;&#123;title&#125;&#125;</span><br><span class="line">categories: 未分类</span><br><span class="line">tags:</span><br><span class="line">- 无标签</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br></pre></td></tr></table></figure>
+
+<p>②使用官方自带的hexo命令，使用默认模板新建一个md文件。</p>
+<p>这样新建的md文件就能自带文件头（front matter）。</p>
+<p>使用方法 <code>hexo new 模板名称 文件名称</code><br>例如，我想使用默认模板，新建一个<code>这是我的新博客.md</code>文件，命令如下<br><code>hexo new post 这是我的新博客</code>              其中<code>new</code>可以缩写成<code>n</code><br>等效于 <code>hexo n post 这是我的新博客</code></p>
+<p>如果你输入的命令中不包含<code>模板名称</code>，则使用默认模板<code>post</code>。<br>也就是说如果你想使用默认模板新建博客，可以使用如下命令：<br><code>hexo n 这是我的新博客</code></p>
+<p>官方自带的默认模板是<code>post</code>,代码如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>很显然使用hexo命令使用默认模板新建的md文件虽然有文件头，但包含的文件头信息还是太少了。<br>下面是我使用的模板，比自带的模板多包含了”分类“、”描述“。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">categories: 未分类</span><br><span class="line">tags:</span><br><span class="line">- 无标签</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br></pre></td></tr></table></figure>
+
+<p>我们可以①修改官方自带的post模板；②也可以自己新建一个模板文件放在<code>/scaffolds/</code>的文件夹内。  我这里采用的是方法②。</p>
+<p>例如，我创建了一个名为 <code>blog.md</code>的模板，设置这个md的文件头的代码如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">categories: 未分类</span><br><span class="line">tags:</span><br><span class="line">- 无标签</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br></pre></td></tr></table></figure>
+
+<p>后续如何使用这个模板呢？</p>
+<p>在博客的根目录文件夹内，打开cmd，使用<code>hexo new blog 这是我的新文档</code>，就会在<code>\source\_posts</code>新建一个<code>这是我的新文档.md</code>的文件</p>
+<h2 id="4、博客页面插入视频"><a href="#4、博客页面插入视频" class="headerlink" title="4、博客页面插入视频"></a>4、博客页面插入视频</h2><p>使用插件hexo-tag-dplayer</p>
+<p><a href="https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/">https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/</a></p>
+<h2 id="5、博客页面分类"><a href="#5、博客页面分类" class="headerlink" title="5、博客页面分类"></a>5、博客页面分类</h2><p>1、先去next主题配置文件，打开对应的功能。#号相当于注释。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  #about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags                  #标签</span><br><span class="line">  categories: /categories/ || fa fa-th        #分类</span><br><span class="line">  archives: /archives/     || fa fa-archive       #归档</span><br><span class="line">  #schedule: /schedule/     || fa fa-calendar      #日程表</span><br><span class="line">  sitemap: /sitemap.xml    || fa fa-sitemap      #站点地图</span><br><span class="line"> # commonweal: /404/ || fa fa-heartbeat       #公益404</span><br></pre></td></tr></table></figure>
+
+<p>2、可以自定义分类名称对应的网址</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Category &amp; Tag    </span><br><span class="line">#把分类和标签与地址栏对应的英文在这进行分别设置，否则地址栏现实的是中文，分享出去的网址会是一大串转义字符。</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">  笔记: note</span><br><span class="line">  高中化学: chemistry</span><br><span class="line">  实验视频: experiment-videos</span><br><span class="line">  资源分享: source</span><br><span class="line">  生活记录: liferecord</span><br><span class="line">  随笔: essay</span><br><span class="line">  常见电脑疑难的解决方案: solution</span><br><span class="line">  未分类: uncategorized</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tag_map:</span><br><span class="line">  视频: video</span><br></pre></td></tr></table></figure>
+
+<p>3、每次写的博客如何设置分类名称</p>
+<p>多级分类</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">categories: </span><br><span class="line">- 博客自定义</span><br><span class="line">- 主题修改</span><br><span class="line">tags:</span><br><span class="line">- DIY</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>这里创建了<code>博客自定义</code>分类，并且创建了下面的一个子分类<code>主题修改</code>，并且添加了一个子标签<code>DIY</code></p>
+<p>一篇文章属于多个分类</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">categories: </span><br><span class="line">- [博客自定义,主题修改]</span><br><span class="line">tags:</span><br><span class="line">- DIY</span><br><span class="line">- blog</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>这里创建的分类是<code>博客自定义</code>和<code>主题修改</code>，相当于这篇文章属于两个分类，同时这个文章加了两个标签。</p>
+<hr>
+<h1 id="二、主题配置文件的修改"><a href="#二、主题配置文件的修改" class="headerlink" title="二、主题配置文件的修改"></a>二、主题配置文件的修改</h1><h2 id="1、博客主页显示分类、标签等"><a href="#1、博客主页显示分类、标签等" class="headerlink" title="1、博客主页显示分类、标签等"></a>1、博客主页显示分类、标签等</h2><p>打开主题配置文件，修改menu对应的配置，“#”是注释的标志，删除代码前对应的#号即可激活。</p>
+<img src=" https://im.gurl.eu.org/file/682d06efd3f4ff44679cd.png "  style="zoom:50%;" />
+
+
+
+<h2 id="2、切换next显示的样式（默认提供4种选择）"><a href="#2、切换next显示的样式（默认提供4种选择）" class="headerlink" title="2、切换next显示的样式（默认提供4种选择）"></a>2、切换next显示的样式（默认提供4种选择）</h2><p>找到Schemes板块，选择喜欢的主题，去掉＃即可激活对应模式。</p>
+<p>Dark mode是黑夜模式，把ture改成false就是白天模式。</p>
+<img src=" https://im.gurl.eu.org/file/cf84358115ffcba437def.png "  style="zoom:50%;" />
+
+
+
+<h2 id="3、隐藏网页底部-powered-By-Hexo-强力驱动"><a href="#3、隐藏网页底部-powered-By-Hexo-强力驱动" class="headerlink" title="3、隐藏网页底部 powered By Hexo &#x2F; 强力驱动"></a>3、隐藏网页底部 powered By Hexo &#x2F; 强力驱动</h2><p>（推荐）方法一：打开next主题配置文件，设置下面字段为false</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Powered by Hexo &amp; NexT</span><br><span class="line">powered: false</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>方法二：打开 themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;footer.swig</p>
+<p>像我这样把这段代码的前后分别加上<code>&lt;!--</code>和<code>--&gt;</code>，即可实现去除底部推广。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">&#123;%- if theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">    &#123;%- set next_site = &#x27;https://theme-next.js.org&#x27; if theme.scheme === &#x27;Gemini&#x27; else &#x27;https://theme-next.js.org/&#x27; + theme.scheme | lower + &#x27;/&#x27; %&#125;</span><br><span class="line">    &#123;&#123;- __(&#x27;footer.powered&#x27;, next_url(&#x27;https://hexo.io&#x27;, &#x27;Hexo&#x27;) + &#x27; &amp; &#x27; + next_url(next_site, &#x27;NexT.&#x27; + theme.scheme)) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;&#123;- next_inject(&#x27;footer&#x27;) &#125;&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、文章添加阴影"><a href="#3、文章添加阴影" class="headerlink" title="3、文章添加阴影"></a>3、文章添加阴影</h2><p>打开    themes\next\source\css_common\components\post\index.styl</p>
+<p>替换成如下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.rtl &#123;</span><br><span class="line">  &amp;.post-body &#123;</span><br><span class="line">    p, a, h1, h2, h3, h4, h5, h6, li, ul, ol &#123;</span><br><span class="line">      direction: rtl;</span><br><span class="line">      font-family: UKIJ Ekran;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;.post-title &#123;</span><br><span class="line">    font-family: UKIJ Ekran;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.post-button &#123;</span><br><span class="line">  margin-top: 40px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.use-motion &#123;</span><br><span class="line">  if (hexo-config(&#x27;motion.transition.post_block&#x27;)) &#123;</span><br><span class="line">    .post-block&#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">      margin-top: 60px;</span><br><span class="line">      margin-bottom: 60px;</span><br><span class="line">      padding: 25px;</span><br><span class="line">      -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, 1);</span><br><span class="line">      -moz-box-shadow: 0 0 5px rgba(202, 203, 204, 1);  </span><br><span class="line">    &#125;</span><br><span class="line">    .pagination, .comments &#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (hexo-config(&#x27;motion.transition.post_header&#x27;)) &#123;</span><br><span class="line">    .post-header &#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (hexo-config(&#x27;motion.transition.post_body&#x27;)) &#123;</span><br><span class="line">    .post-body &#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (hexo-config(&#x27;motion.transition.coll_header&#x27;)) &#123;</span><br><span class="line">    .collection-header &#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@import &#x27;post-collapse&#x27;;</span><br><span class="line">@import &#x27;post-body&#x27;;</span><br><span class="line">@import &#x27;post-gallery&#x27;;</span><br><span class="line">@import &#x27;post-header&#x27;;</span><br><span class="line">@import &#x27;post-nav&#x27;;</span><br><span class="line">@import &#x27;post-footer&#x27;;</span><br><span class="line">@import &#x27;post-widgets&#x27;;</span><br><span class="line">@import &#x27;post-reward&#x27;;</span><br><span class="line">@import &#x27;post-followme&#x27;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>依次执行hexo cl &amp;&amp; hexo g &amp;&amp; hexo d       ，即可看到效果。</p>
+<p>添加阴影前，可以看到这里3篇文章，分割线基本没有，看起来感官不佳。</p>
+<img src=" https://im.gurl.eu.org/file/c52e2863f2b224b8bbd0c.png "  style="zoom:25%;" />
+
+<p>这里是修改后的，添加了文章阴影，好看了一些。</p>
+<img src=" https://im.gurl.eu.org/file/1ae0518330caae0c2faf6.png "  style="zoom:30%;" />
+
+
+
+<h2 id="4、浏览页面显示当前浏览进度"><a href="#4、浏览页面显示当前浏览进度" class="headerlink" title="4、浏览页面显示当前浏览进度"></a>4、浏览页面显示当前浏览进度</h2><p>打开 themes&#x2F;next&#x2F;_config.yml，搜索关键字 <code>scrollpercent</code>，把 false 改为 true。</p>
+<p>会看到左下角显示当前页面滚动的百分比。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  enable: true                            #打开返回页面顶部的按钮</span><br><span class="line">  # Back to top in sidebar.</span><br><span class="line">  sidebar: true                           #是否设置把当前阅读百分比合并到侧边栏，选择false则阅读进度单独显示小的悬浮窗。</span><br><span class="line">  # Scroll percent label in b2t button.   显示当前页面滚动百分比</span><br><span class="line">  scrollpercent: true                     </span><br></pre></td></tr></table></figure>
+
+
+
+<p>图下为更新前。</p>
+<img src=" https://im.gurl.eu.org/file/0d1b6f5d273481d77bed7.png "  style="zoom:20%;" />
+
+<p>更下为更新后。可以看到左下角多了一个浏览进度百分比。</p>
+<img src=" https://im.gurl.eu.org/file/88e563b9d42bce4680f1e.png "  style="zoom:25%;" />
+
+
+
+<p>还可以设置页面顶部的浏览进度条</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Reading progress bar     页面顶部显示阅读进度条</span><br><span class="line">reading_progress:</span><br><span class="line">  enable: true</span><br><span class="line">  # Available values: left | right</span><br><span class="line">  start_at: left</span><br><span class="line">  # Available values: top | bottom</span><br><span class="line">  position: top</span><br><span class="line">  reversed: false</span><br><span class="line">  color: &quot;#37c6c0&quot;</span><br><span class="line">  height: 3px</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<h2 id="5、Local-Search本地搜索"><a href="#5、Local-Search本地搜索" class="headerlink" title="5、Local Search本地搜索"></a>5、Local Search本地搜索</h2><p>5.1 安装插件hexo-generator-searchdb,执行以下命令:</p>
+<p><code>npm install hexo-generator-searchdb --save</code></p>
+<p>5.2 修改博客的配置文件，新增以下内容到任意位置：</p>
+<p>search:<br>path: search.xml<br>field: post<br>format: html<br>limit: 10000			#最多显示搜索结果的数量为10000个</p>
+<p>5.3 编辑 主题配置文件，启用本地搜索功能：</p>
+<p>打开主题的配置文件，把# local search的enable改成true。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">enable: true</span><br></pre></td></tr></table></figure>
+
+
+
+<p>修改后，如下图多了搜索功能。</p>
+<img src=" https://im.gurl.eu.org/file/d5b66cafdc27a65a8153d.png "  style="zoom:30%;" />
+
+
+
+<h2 id="6、修改博客的相关图标"><a href="#6、修改博客的相关图标" class="headerlink" title="6、修改博客的相关图标"></a>6、修改博客的相关图标</h2><p>博客的默认图标在对应主题的文件夹内<code>/themes/next/source/images</code></p>
+<p>只需要把你想要的图片修改成一模一样的名字并替换原文件即可。</p>
+<h2 id="7、打开博客分享按钮"><a href="#7、打开博客分享按钮" class="headerlink" title="7、打开博客分享按钮"></a>7、打开博客分享按钮</h2><p>打开主题配置文件，修改成如下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#打开网站分享的按钮，会显示在文章的底部</span><br><span class="line"># AddToAny Share. See: https://www.addtoany.com</span><br><span class="line">addtoany:</span><br><span class="line">  enable: true</span><br><span class="line">  buttons:</span><br><span class="line">    - facebook</span><br><span class="line">    - twitter</span><br><span class="line">    - telegram</span><br><span class="line">    - wechat</span><br><span class="line">    - qzone</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="8、文章加密访问"><a href="#8、文章加密访问" class="headerlink" title="8、文章加密访问"></a>8、文章加密访问</h2><p>这里提供两种方法，一种是next自带的加密；另一种需要安装加密插件。</p>
+<p>我本人使用的加密是第二种方法。</p>
+<p>8.1 next主题自带的加密</p>
+<p>8.2 使用加密插件hexo-blog-encrypt</p>
+<p>github有使用说明，很简单。</p>
+<h2 id="9、文章字数统计，阅读时间推荐"><a href="#9、文章字数统计，阅读时间推荐" class="headerlink" title="9、文章字数统计，阅读时间推荐"></a>9、文章字数统计，阅读时间推荐</h2><p>打开主题配置文件，修改post_wordcount对应如下代码即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_wordcount:</span><br><span class="line"></span><br><span class="line"> item_text: true</span><br><span class="line"></span><br><span class="line"> wordcount: true     # 单篇 字数统计</span><br><span class="line"></span><br><span class="line"> min2read: true      # 单篇 阅读时长</span><br><span class="line"></span><br><span class="line"> totalcount: false    # 网站 字数统计</span><br><span class="line"></span><br><span class="line"> separated_meta: true</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="10、如何让首页的文章部分显示"><a href="#10、如何让首页的文章部分显示" class="headerlink" title="10、如何让首页的文章部分显示"></a>10、如何让首页的文章部分显示</h2><p>这里提供两种方法。</p>
+<p>首先确保主题配置文件中的<code>excerpt_description</code>是true（next主题安装后默认是true）。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Use `description` in front-matter to specify post excerpt.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
+
+
+
+<p>10.1 方法一：写博客的概述</p>
+<p>在文章的开头处，添加一个description，这样首页只会显示描述的内容，不会显示正文。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 让首页显示部分内容</span><br><span class="line">date: 2020-02-23 22:55:10</span><br><span class="line">description: 这是显示在首页的概述，正文内容均会被隐藏。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>如果description的后面没有文字，则又会默认全部显示正文内容。</p>
+<p>10.2 方法二：文章截断</p>
+<p>在需要截断的地方加入以下代码，</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样主页看到的那篇文章就只显示到这串代码之前的内容。（推荐使用方法二）</p>
+<p>10.3 不常用的方法：使用加密插件hexo-blog-encrypt</p>
+<p>但是必须得加密码，不加密码，无法实现部分内容显示。</p>
+<p>修改前，打开首页，文章就是默认全部展开的，非常不美观。</p>
+<img src=" https://im.gurl.eu.org/file/55642fece5998d68bcd99.png "  style="zoom:35%;" />
+
+
+
+<h2 id="11-代码块风格设置-并-增加代码块“复制”按钮"><a href="#11-代码块风格设置-并-增加代码块“复制”按钮" class="headerlink" title="11. 代码块风格设置 并 增加代码块“复制”按钮"></a>11. 代码块风格设置 并 增加代码块“复制”按钮</h2><p>打开代码块风格预览网站    <a href="https://theme-next.js.org/highlight/">https://theme-next.js.org/highlight/</a></p>
+<p>我选择的Engine是hightlight；Theme是atom-one-light。</p>
+<p>在博客站点配置文件进行设置如下代码，选择highlight的enable:设置成 true</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#下面是设置博客文章中代码块的渲染引擎，</span><br><span class="line"># hightlight和prismjs只能二选一打开enable的true，另一个选择false</span><br><span class="line">highlight:</span><br><span class="line">  enable: true</span><br><span class="line">  line_number: true</span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">  wrap: true</span><br><span class="line">  hljs: false</span><br><span class="line"></span><br><span class="line">prismjs:</span><br><span class="line">  enable: false</span><br><span class="line">  preprocess: true</span><br><span class="line">  line_number: true</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>在next主题配置文件设置如下代码theme: atom-one-light</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#这里是博客里面的代码块的样式</span><br><span class="line">codeblock:</span><br><span class="line">  # Code Highlight theme</span><br><span class="line">  # All available themes: https://theme-next.js.org/highlight/</span><br><span class="line">  theme:</span><br><span class="line">    light: atom-one-light</span><br><span class="line">    dark: atom-one-light</span><br><span class="line">  prism:</span><br><span class="line">    light: prism</span><br><span class="line">    dark: prism-dark</span><br></pre></td></tr></table></figure>
+
+
+
+<p>打开代码块复制按钮</p>
+<p>在next主题配置文件,打开copy_button的enable设置成true</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Add copy button on codeblock   增加代码块复制按钮</span><br><span class="line">copy_button:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="12-设置页面加载特效"><a href="#12-设置页面加载特效" class="headerlink" title="12. 设置页面加载特效"></a>12. 设置页面加载特效</h2><p>页面有时加载缓慢，可以设置一个当前页面加载的进度条显示，避免焦虑。</p>
+<p>打开next主题的配置文件，找到<code>pace</code>片段，enable的值设置成true，可以自定义color和theme的值。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Progress bar in the top during page loading.</span><br><span class="line">#这里是设置博客加载的进度条，可以访问下面的网址，查看各个效果的例子。</span><br><span class="line"># For more information: https://github.com/CodeByZach/pace</span><br><span class="line">pace:</span><br><span class="line">  enable: true</span><br><span class="line">  # All available colors:</span><br><span class="line">  # black | blue | green | orange | pink | purple | red | silver | white | yellow</span><br><span class="line">  color: green</span><br><span class="line">  # All available themes:</span><br><span class="line">  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span><br><span class="line">  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span><br><span class="line">  theme: loading-bar</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="13-修改博客文章侧边栏的圆角和边距"><a href="#13-修改博客文章侧边栏的圆角和边距" class="headerlink" title="13. 修改博客文章侧边栏的圆角和边距"></a>13. 修改博客文章侧边栏的圆角和边距</h2><p><a href="https://cs-cshi.github.io/hexo-blog/Hexo-NexT%20%E8%AE%BE%E7%BD%AE%E5%9C%86%E8%A7%92/">https://cs-cshi.github.io/hexo-blog/Hexo-NexT%20%E8%AE%BE%E7%BD%AE%E5%9C%86%E8%A7%92/</a></p>
+<p>打开     blog_root&#x2F;source&#x2F;_data&#x2F;variables.styl ，</p>
+<p>没有这个文件夹就手动新建该文件夹  _data，并新建该文件variables.styl。</p>
+<p>打开themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_variables&#x2F;Gemini.styl，把内容复制到上面的文件中。</p>
+<p>似乎_date文件夹需要自建，用于自定义？</p>
+<p>根据启用的不同主题，选择相应的文件。这里修改的是Gemini.styl。</p>
+<p>在文件中修改代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$border-radius-inner     = 0 0 10px 10px;</span><br><span class="line">$border-radius           = 10px;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>进入next主题配置文件，并搜索 custom_file_path 字段，将variable行取消注释。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Define custom file paths.  自定义页面风格，取消默认配置</span><br><span class="line"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.njk</span><br><span class="line">  #header: source/_data/header.njk</span><br><span class="line">  #sidebar: source/_data/sidebar.njk</span><br><span class="line">  #postMeta: source/_data/post-meta.njk</span><br><span class="line">  #postBodyStart: source/_data/post-body-start.njk</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.njk</span><br><span class="line">  #footer: source/_data/footer.njk</span><br><span class="line">  #bodyEnd: source/_data/body-end.njk</span><br><span class="line">  variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  #style: source/_data/styles.styl</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="14-给博客添加人数访问统计"><a href="#14-给博客添加人数访问统计" class="headerlink" title="14. 给博客添加人数访问统计"></a>14. 给博客添加人数访问统计</h2><p>进入主题配置文件，并搜索 busuanzi_count 字段，设置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: fa fa-user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: fa fa-eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: far fa-eye</span><br></pre></td></tr></table></figure>
+
+<p>为了增加可读性，可以增加如下设置。</p>
+<p>进入 Hexo&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials 目录，打开 footer.njk 文件。</p>
+<p>搜索 busuanzi_value_site_uv字段，修改值为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">访客人数共计：&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt; 人</span><br></pre></td></tr></table></figure>
+
+<p>搜索 busuanzi_value_site_pv 字段，修改值为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">本站浏览总量共计：&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="15-博客文章置顶功能"><a href="#15-博客文章置顶功能" class="headerlink" title="15.博客文章置顶功能"></a>15.博客文章置顶功能</h2><h2 id="16-博客文章摘要显示图片"><a href="#16-博客文章摘要显示图片" class="headerlink" title="16. 博客文章摘要显示图片"></a>16. 博客文章摘要显示图片</h2><hr>
+<h1 id="三、可能遇到的问题"><a href="#三、可能遇到的问题" class="headerlink" title="三、可能遇到的问题"></a>三、可能遇到的问题</h1><h2 id="1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。"><a href="#1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。" class="headerlink" title="1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。"></a>1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。</h2><p>解决办法</p>
+<p>打开博客站点配置文件,修改url，并设置root字段的内容</p>
+<p>例如我博客的首页，网址为<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
+<p>那我的url就设置成这个<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
+<p>root字段没有，就手动输入<code>root: /</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## Set your site url here. </span><br><span class="line">url:  https://github.com/aboucide/aboucide.github.io.git   </span><br><span class="line">root: /</span><br></pre></td></tr></table></figure>
+
+
+
+<p>如果你的博客首页网址是  url：<a href="http://www.mfm.com/blog">http://www.mfm.com/blog</a></p>
+<p>则你的  root：&#x2F;blog</p>
+<p>再次重新部署即可。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何使用Hexo和Github搭建个人博客</title>
+    <url>//blog/note/hexo/blog-create.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="使用Hexo和Github搭建个人博客"><a href="#使用Hexo和Github搭建个人博客" class="headerlink" title="使用Hexo和Github搭建个人博客"></a>使用Hexo和Github搭建个人博客</h1><h1 id="【目录】"><a href="#【目录】" class="headerlink" title="【目录】"></a>【目录】</h1><p>[toc]</p>
+<hr>
+<h1 id="一、如何实现的？"><a href="#一、如何实现的？" class="headerlink" title="一、如何实现的？"></a>一、如何实现的？</h1><p>使用 GitHub Pages 服务搭建博客的好处有：</p>
+<ol>
+<li>全是静态文件，访问速度快；</li>
+<li>免费方便，不用花钱就可以搭建个人博客，不需要服务器不需要后台；</li>
+<li>可以随意绑定自己的域名；</li>
+<li>数据绝对安全，基于 GitHub 的版本管理，想恢复到哪个历史版本都行；</li>
+<li>博客内容可以轻松打包、转移、发布到其它平台；</li>
+<li>自己可以随性所欲的设计，美观大气上档次；</li>
+</ol>
+<hr>
+<h1 id="二、搭建步骤"><a href="#二、搭建步骤" class="headerlink" title="二、搭建步骤"></a>二、搭建步骤</h1><h2 id="2-1-原料准备及配置环境"><a href="#2-1-原料准备及配置环境" class="headerlink" title="2.1 原料准备及配置环境"></a>2.1 原料准备及配置环境</h2><h3 id="1-提前注册好Github账号"><a href="#1-提前注册好Github账号" class="headerlink" title="1.提前注册好Github账号"></a>1.提前注册好Github账号</h3><p>注册账号这个过程不难，需要注意的事项有</p>
+<ul>
+<li><p>账号的用户名将来会用作网址的构成，因此要注意想清楚。</p>
+</li>
+<li><p>如果无法访问github或者访问过程中比较卡顿，可以下载这个GitHub加速器：<a href="https://steampp.net/">https://steampp.net/</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="2-安装Git"><a href="#2-安装Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h3><p>[Git - Downloads (git-scm.com)]          官网：(<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>)</p>
+<img src="../../../images/blog-create/git的下载.png" alt="git的下载" title="git的下载" style="zoom:50%;" />
+
+<p>文件大小约几十Mb，下载完成后，双击安装包开始安装，一路点击 <code>Next</code> 即可。<br>安装完毕后可以使用以下命令测试是否安装成功</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<img src="../../../images/blog-create/git版本验证.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
+
+<p>后续Hexo框架的更新可以使用如下代码</p>
+<p><code>git clone https://github.com/git/git</code></p>
+<hr>
+<h3 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3.安装node.js"></a>3.安装node.js</h3><p>[Node.js — 在任何地方运行 JavaScript (nodejs.org)]   官网： (<a href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a>)</p>
+<p>文件大小约几十Mb，下载完毕后，开始安装，勾选所有组件，并勾选 Add to Path 将其添加到系统环境变量。</p>
+<p>安装 Node.js 会包含环境变量以及 npm 的安装，安装后，可以在命令行输入如下命令检测 Node.js 是否安装成功：</p>
+<p>第一个命令，这个命令，在 nodejs 安装成功的情况下会显示 nodejs 的版本号。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
+<img src="../../../images/blog-create/node -v.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
+
+<p>第二个命令：这个命令，在 nodejs 安装成功的情况下会显示 npm 的版本号。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<img src="../../../images/blog-create/npm -v.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
+
+
+
+
+
+<h3 id="4-安装hexo"><a href="#4-安装hexo" class="headerlink" title="4.安装hexo"></a>4.安装hexo</h3><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。Hexo 官网：<a href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="2-2-建立博客"><a href="#2-2-建立博客" class="headerlink" title="2.2 建立博客"></a>2.2 建立博客</h2><h4 id="2-2-1-hexo博客初始化"><a href="#2-2-1-hexo博客初始化" class="headerlink" title="2.2.1 hexo博客初始化"></a>2.2.1 hexo博客初始化</h4><p>下面这个命令会在 “cmd”命令窗口所在的工作目录中， 生成一个名称为 “hexo-blog” 博客文件夹，并自动从下载博客所必须的文件放入其中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br></pre></td></tr></table></figure>
+
+<p>假设我使用这个默认名称 “hexo-blog”，那么这个“hexo-blog”文件夹就是我们博客的默认文件夹了。</p>
+<p>当然上面这行代码等效于：</p>
+<p>你手动建立了一个<code>hexo-blog</code>的文件夹，并且在该文件夹内运行cmd，输入hexo init 命令，自动下载hexo框架文件，进行初始化。</p>
+<h4 id="2-2-2-在hexo博客文件夹中安装npm"><a href="#2-2-2-在hexo博客文件夹中安装npm" class="headerlink" title="2.2.2 在hexo博客文件夹中安装npm"></a>2.2.2 在hexo博客文件夹中安装npm</h4><p>在博客根文件夹（hexo-blog）中，启动cmd命令行窗口。</p>
+<p>运行下面的命令，在hexo文件夹中安装npm。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>至此，本地的博客已经搭建完毕，等确认本地博客没有问题后，就可以上传到GitHub上，这样网友们就能访问你的博客了。</p>
+<p>下面是博客文件夹中各个文件对应的用途。</p>
+<img src="../../../images/blog-create/博客文件用途.png" alt="git的下载" title="git的下载" style="zoom:50%;" />
+
+<hr>
+<h2 id="2-3-本地化预览-新建博客文章"><a href="#2-3-本地化预览-新建博客文章" class="headerlink" title="2.3 本地化预览 + 新建博客文章"></a>2.3 本地化预览 + 新建博客文章</h2><p>下面4个命令是 hexo 博客框架常用的命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p><code>hexo cl</code>全称是<code>hexo clean</code>    清除缓存文件 db.json 和已生成的静态文件 public。网站显示异常时可以执行这条命令试试。</p>
+<p><code>hexo g</code> 全称是<code>hexo generate</code>  作用是把你写的markdown文件转换成html网页文件。</p>
+<p><code>hexo s </code>全称是hexo server&#96;   启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/">http://localhost:4000/</a></p>
+<p><code>hexo d</code> 是 <code>hexo deploy</code> 的缩写。   把本地的博客部署（上传）到GitHub上面去</p>
+<h4 id="2-3-1-本地化预览博客"><a href="#2-3-1-本地化预览博客" class="headerlink" title="2.3.1 本地化预览博客"></a>2.3.1 本地化预览博客</h4><p>由于步骤2.2 建立好了一个本地的博客，因此我们在博客根目录运行cmd，依次运行</p>
+<p>hexo cl</p>
+<img src="../../../images/blog-create/hexocl.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
+
+<p>hexo g</p>
+<img src="../../../images/blog-create/hexog.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>hexo s</p>
+<img src="../../../images/blog-create/hexos.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>复制<code>http://localhost:4000</code> 到浏览器，进行预览。</p>
+<img src="../../../images/blog-create/博客预览.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
+
+<p>回到cmd窗口，按下 ctrl + c  ，可以终止预览。</p>
+<p>至此，可以确认本地化的博客已经建立完毕了。</p>
+<h4 id="2-3-2-新建博客文章"><a href="#2-3-2-新建博客文章" class="headerlink" title="2.3.2 新建博客文章"></a>2.3.2 新建博客文章</h4><p>使用<code>hexo n 我的周报</code>，注意它们之间有空格。即可新建一个名称为“我的周报.md”的文件，储存在<code>\hexo-blog\source\_posts</code>。</p>
+<p>当然，你也可以手动去<code>\hexo-blog\source\_posts</code>文件夹中新建md文件，效果也是一样滴。</p>
+<p>我们先打开这个文件夹，看到里面只有官方自带的一篇hello-world.md文件。</p>
+<img src="../../../images/blog-create/文章截图1.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>接下来，我们使用下面的命令，会在这个文件夹中生成一个  搭建博客教程.md   文件</p>
+<p><code>hexo n 搭建博客教程</code></p>
+<img src="../../../images/blog-create/hexon.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>可以看到确实生成了。</p>
+<img src="../../../images/blog-create/文章截图2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>手动新建一个md文件，可以来比较一下使用<code>hexo n</code>建立的md文件和手动新建的md文件  区别。</p>
+<img src="../../../images/blog-create/文章截图3.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="2-4-博客上传到Github"><a href="#2-4-博客上传到Github" class="headerlink" title="2.4 博客上传到Github"></a>2.4 博客上传到Github</h2><h4 id="1-使用你的github账号新建一个仓库"><a href="#1-使用你的github账号新建一个仓库" class="headerlink" title="1. 使用你的github账号新建一个仓库"></a>1. 使用你的github账号新建一个仓库</h4><p>登录github，点击<code>Your repositories</code>，进入仓库页面。</p>
+<img src="../../../images/blog-create/搭建仓库1.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+<p>点击<code>New</code>按钮，进入仓库创建页面。</p>
+<img src="../../../images/blog-create/搭建仓库2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+<p>填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>，然后点击<code>Create repository</code>。</p>
+<p>例如，图片里的用户名<code>yaorongke</code>，则他建立的博客仓库名称必须为<code>yaorongke.github.io</code></p>
+<p>将来，图片中的博客的网址就是：<a href="https://yaorongke.github.io/">https://yaorongke.github.io/</a></p>
+<img src="../../../images/blog-create/搭建仓库3.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<h4 id="2-设置SSH——公钥和私钥"><a href="#2-设置SSH——公钥和私钥" class="headerlink" title="2. 设置SSH——公钥和私钥"></a>2. 设置SSH——公钥和私钥</h4><p>这一步是让你的电脑有资格与你的GitHub账号仓库建立联系。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
+
+<p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#x72;&#x6b;&#101;&#x73;&#105;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;">&#x65;&#x72;&#x6b;&#101;&#x73;&#105;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;</a></p>
+<p>然后依次输入三次回车即可。</p>
+<img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>我在第二个回车之后，那里输入了一个Y，是因为我这台电脑之前就生成过，必须覆盖（overwrite）那个旧文件我就输入了Y。</p>
+<p>新手第一次运行的，直接依次按下3次回车即可。</p>
+<p>成功后，接着去把ssh口令输入到GitHub。</p>
+<p>用记事本打开如图所示刚刚生成的<code>id_rsa.pub</code>文件。     <code>12153</code>是我当前电脑的用户名。</p>
+<p>（id_rsa是私钥，不能泄露；id_rsa.pub是公钥，无所谓）</p>
+<img src="../../../images/blog-create/找到ssh文件.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>复制这个文件内所有文本</p>
+<img src="../../../images/blog-create/rsatxt.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>打开网址   <a href="https://github.com/settings/ssh/new">https://github.com/settings/ssh/new</a></p>
+<p><code>Title</code> 为标题，任意填即可 。      把刚刚粘贴的密钥复制进去，点击<code>Add SSH key</code></p>
+<img src="../../../images/blog-create/添加ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>使用下面的命令，验证是否成功建立本地和GitHub的联系。</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>我第一次测试失败了是因为我开了加速器。我关闭之后再试了一次就成功了。</p>
+<img src="../../../images/blog-create/测试连接github.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+
+
+<h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
+<p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
+<p><code>git config --global user.name</code> “lancou” </p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#107;&#101;&#115;&#105;&#x40;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;">&#x65;&#x72;&#107;&#101;&#115;&#105;&#x40;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;</a>  成你的github邮箱。</p>
+<p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
+<p>运行结果如下图，不会给任何提示，没事的。</p>
+<img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<h4 id="4-把本地博客上传到github"><a href="#4-把本地博客上传到github" class="headerlink" title="4. 把本地博客上传到github"></a>4. 把本地博客上传到github</h4><h5 id="4-1-修改配置站点配置文件"><a href="#4-1-修改配置站点配置文件" class="headerlink" title="4.1 修改配置站点配置文件"></a>4.1 修改配置站点配置文件</h5><p><code>hexo</code> 有 2 种 <code>_config.yml</code> 文件，</p>
+<p>一个是根目录下的全局的 <code>_config.yml</code>。               一般称为博客站点配置文件。</p>
+<p>一个是各个主题 <code>theme</code> 文件夹下的 <code>_config.yml</code>。   称为主题配置文件。</p>
+<p>打开根目录下博客站点配置文件 <code>_config.yml</code>，配置有关 <code>deploy</code> 的部分：</p>
+<img src="../../../images/blog-create/博客站点配置文件的位置.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>打开博客站点配置文件，找到<code>deploy</code>字段</p>
+<img src="../../../images/blog-create/找到deploy.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>修改成下面这段代码。       </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;">&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;</a>:昵称&#x2F;仓库名称</p>
+<p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
+<p>repo: <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>记得照葫芦画瓢进行修改。</p>
+<h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
+<p><code>npm install hexo-deployer-git --save </code></p>
+<img src="../../../images/blog-create/安装部署工具.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>依次运行下面的代码。</p>
+<p>hexo cl</p>
+<img src="../../../images/blog-create/hexocl2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>hexo g</p>
+<img src="../../../images/blog-create/hexog2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>hexo d</p>
+<img src="../../../images/blog-create/hexod2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+<p>可以看到我的上传过程中出现了  <code>waring:LF will be replaced by CRLF</code></p>
+<p>只需要运行这个命令即可解决   <code>git config --global core.safecrlf false</code></p>
+<p>我运行完这个命令后，又重新依次执行了hexo d （上传命令），现在上传就不会出现  waring 警告了。</p>
+<img src="../../../images/blog-create/第一次完整上传.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>至此，你已经上传本地的博客到你的GitHub仓库。  </p>
+<hr>
+<h5 id="4-3-访问你的博客"><a href="#4-3-访问你的博客" class="headerlink" title="4.3 访问你的博客"></a>4.3 访问你的博客</h5><p>我（昵称为lancou）的博客的网址为：lancou.github.io</p>
+<p>同理，你的博客网址也应该是        <code>用户名.github.io</code></p>
+<p>结果我高高兴兴的打开我的博客,额。。。。。。。</p>
+<img src="../../../images/blog-create/第一次上传后显示404.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+<p>下面是官方给的解释。意思是，如果你的网站是第一次发布或者是修改了昵称的话，官方需要花几分钟的时间帮你申请一个证书。</p>
+<img src="../../../images/blog-create/404解释.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>几分钟之后，我的博客网页就可以正常访问啦！   <a href="https://lancou.github.io/">https://lancou.github.io/</a></p>
+<img src="../../../images/blog-create/myblog.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+
+
+
+
+<hr>
+<h1 id="三、（可选）使用Github提供的Action自动化部署更新博客"><a href="#三、（可选）使用Github提供的Action自动化部署更新博客" class="headerlink" title="三、（可选）使用Github提供的Action自动化部署更新博客"></a>三、（可选）使用Github提供的Action自动化部署更新博客</h1><p><strong>这里使用博客的GitHub账号，新建一个私有仓库，存储网站的必要文件，当这些博客文件被修改时，GitHub自动同步更新博客</strong></p>
+<h2 id="1-获取github的token"><a href="#1-获取github的token" class="headerlink" title="1.获取github的token"></a>1.获取github的token</h2><p>为了确保交由<code>Github Action</code>来持续部署时，<code>Github Action</code> 具备足够的权限来进行 <code>hexo deploy</code> 操作,需要先获取 <code>Token</code>。</p>
+<p>访问 Github -&gt;头像（右上角）-&gt;  Settings  -&gt;  Developer Settings  -&gt;  Personal access tokens  -&gt;  generate new token</p>
+<img src="../../../images/blog-create/创建action的token.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>创建的 Token 名称随意，但必须勾选 repo 项 和 workflows 项。</p>
+<img src="../../../images/blog-create/生成token的配置.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+
+
+<p>token 只会显示这一次，之后将无法查看，所以务必保证你已经记录下了 Token。之后如果忘记了就只能重新生成重新配置了。</p>
+<img src="../../../images/blog-create/token.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<h2 id="2-创建存放源码的私有仓库"><a href="#2-创建存放源码的私有仓库" class="headerlink" title="2.创建存放源码的私有仓库"></a>2.创建存放源码的私有仓库</h2><p>我们需要创建一个用来存放 <code>Hexo</code> 博客源码的私有仓库</p>
+<img src="../../../images/blog-create/新建仓库.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
+
+<img src="../../../images/blog-create/私有仓库成立.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
+
+<p>这里之所以是私有仓库，是因为在接下来的配置中会用到 <code>Token</code>，如果 <code>Token</code> 被盗用，别人可以肆意操作你的 github 仓库内容，为了避免这一风险，才选择的博客源码闭源。</p>
+<img src="../../../images/blog-create/保存私有仓库的SSH地址.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
+
+
+
+<h2 id="3-配置-Github-Action"><a href="#3-配置-Github-Action" class="headerlink" title="3.配置 Github Action"></a>3.配置 Github Action</h2><ul>
+<li><p>在<code>[博客的文件夹根目录]</code>新建<code>.github</code>文件夹，注意开头是有个小数点<code>.</code>的。（如果这个文件夹已经存在了就跳过这一步）</p>
+</li>
+<li><p>然后在<code>.github</code> 内新建 <code>workflows</code> 文件夹，再在 <code>workflows</code> 文件夹内新建 <code>autodeploy.yml</code>,在<code>autodeploy.yml</code> 里面输入</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name: 自动部署</span><br><span class="line"># 当有改动推送到master分支时，启动Action。</span><br><span class="line">on:</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - main</span><br><span class="line">      #2020年10月后github新建仓库默认分支改为main，注意更改。</span><br><span class="line">  release:</span><br><span class="line">    types:</span><br><span class="line">      - published</span><br><span class="line"></span><br><span class="line">jobs:</span><br><span class="line">  deploy:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">      - name: 检查分支</span><br><span class="line">        uses: actions/checkout@v2</span><br><span class="line">        with:</span><br><span class="line">        #这里也要修改分支对应。</span><br><span class="line">          ref: main</span><br><span class="line"></span><br><span class="line">      - name: 安装 Node</span><br><span class="line">        uses: actions/setup-node@v1</span><br><span class="line">        with:</span><br><span class="line">          #这里修改为你的node版本，大版本一致即可,不修改也没啥事。</span><br><span class="line">          node-version: &quot;20.x&quot;</span><br><span class="line"></span><br><span class="line">      - name: 安装 Hexo</span><br><span class="line">        run: |</span><br><span class="line">          export TZ=&#x27;Asia/Shanghai&#x27;</span><br><span class="line">          npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">      - name: 缓存 Hexo</span><br><span class="line">        id: cache-npm</span><br><span class="line">        uses: actions/cache@v3</span><br><span class="line">        env:</span><br><span class="line">          cache-name: cache-node-modules</span><br><span class="line">        with:</span><br><span class="line">          path: node_modules</span><br><span class="line">          key: $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-$&#123;&#123; hashFiles(&#x27;**/package-lock.json&#x27;) &#125;&#125;</span><br><span class="line">          restore-keys: |</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-build-</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-</span><br><span class="line"></span><br><span class="line">      - name: 安装依赖</span><br><span class="line">        if: $&#123;&#123; steps.cache-npm.outputs.cache-hit != &#x27;true&#x27; &#125;&#125;</span><br><span class="line">        run: |</span><br><span class="line">          npm install --save</span><br><span class="line"></span><br><span class="line">      - name: 生成静态文件</span><br><span class="line">        run: |</span><br><span class="line">          hexo clean</span><br><span class="line">          hexo generate</span><br><span class="line">          </span><br><span class="line"></span><br><span class="line">      - name: 部署到Github</span><br><span class="line">        uses: JamesIves/github-pages-deploy-action@v4</span><br><span class="line">        with:</span><br><span class="line">          #刚刚得到的Github Token</span><br><span class="line">          token: ghp_qsdfsdjhdhdfgreytedfbffbsdfaefefsfaf</span><br><span class="line">          #下面这行代码是要替换成你自己的仓库名,注意这里要填写博客网站的仓库名称。</span><br><span class="line">          repository-name: lancou/lancou.github.io</span><br><span class="line">          #注意分支名称</span><br><span class="line">          branch: main</span><br><span class="line">          folder: public</span><br><span class="line">          commit-message: &quot;$&#123;&#123; github.event.head_commit.message &#125;&#125; Updated By Github Actions&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-重新设置远程仓库和分支"><a href="#4-重新设置远程仓库和分支" class="headerlink" title="4.重新设置远程仓库和分支"></a>4.重新设置远程仓库和分支</h2><ol>
+<li><p>修改<code>.gitignore</code>,输入以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">.deploy_git*/</span><br><span class="line">.idea</span><br><span class="line">themes/next/.git</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>如果不是 next 主题，记得替换最后一行内容为你自己当前使用的主题。</p>
+<p>（如果使用的是默认的主题，可以不用最后一行，但是默认主题有点丑啊，应该没有人用默认主题吧）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">可能遇到的 bug</span><br><span class="line">因为 next 主题文件夹下的.git 文件夹的存在，那么主题文件夹会被识别子项目。从而无法被上传到源码仓库。若是遇到添加屏蔽项，但是还是无法正常上传主题文件夹的情况。请先将本地源码中的 themes 文件夹移动到别的目录下。然后 commit 一次。接着将 themes 文件夹移动回来，再 commit 一次。</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li>开始重新设置远程仓库和分支</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote rm origin    # 删除原有仓库链接</span><br><span class="line"></span><br><span class="line">git remote add origin git@github.com:[GithubUsername]/[SourceRepo].git    #[SourceRepo]为新的存放源码的github私有仓库</span><br><span class="line">例如，我的是  git remote add origin git@github.com:lancou/hexosource.git</span><br><span class="line"></span><br><span class="line">git checkout -b main                           # 切换到main分支，</span><br><span class="line"></span><br><span class="line">#2020年10月后github新建仓库默认分支改为main</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;尝试第一次自动部署&quot;</span><br><span class="line">git push origin main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>以后只需要使用这三行代码，在博客内容修改后，更新即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;尝试第一次自动部署&quot;</span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+
+<p>git commit -m “这里的文本用来提示作用，可以随意修改”</p>
+<h2 id="5-异地修改博客"><a href="#5-异地修改博客" class="headerlink" title="5. 异地修改博客"></a>5. 异地修改博客</h2><p>这里提供两种修改方法</p>
+<h3 id="方法一-不常用设备更新博客"><a href="#方法一-不常用设备更新博客" class="headerlink" title="方法一    不常用设备更新博客"></a>方法一    不常用设备更新博客</h3><p>这个远程设备我不常用，例如手机、别人的电脑、网吧等等，我又想更新我的博客该怎么办呢？</p>
+<p>可以直接在网页上登录你的Github账号，在<code>博客私有仓库</code>（也就是我们教程中创建的用于保存博客源码的那个）中，</p>
+<p>打开  source&#x2F;_post，我们的博客源文件就在这里面。</p>
+<img src="../../../images/blog-create/异地修改.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<img src="../../../images/blog-create/异地修改2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>切记：在网页中手动更新后，你的本地文件还是旧的，相当于本地版本与远程仓库版本不一样了，</p>
+<p>在本地要使用一次  <code>git pull origin main</code>，把远程更改的文件同步到本地之后，本地才能继续把本地新修改的推送到远程。</p>
+<p>参考文档：<a href="https://blog.csdn.net/yingmohuanzhou/article/details/138455235">https://blog.csdn.net/yingmohuanzhou/article/details/138455235</a></p>
+<p><code>下班最后一件事push代码，上班第一件事pull代码</code></p>
+<p>假设你在朋友的电脑上登录你的GitHub账号，使用这种方法修改完成之后，回到家，你想使用自己的电脑再更新一份博客文件进行上传时，你依然遵循依次使用这三行代码进行更新，就会报错failed to push some refs to</p>
+<img src="../../../images/blog-create/远程更新本地报错.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>原因： 	</p>
+<p>当你尝试向你的 Git 仓库推送时遇到的错误消息表明，远程仓库中有你本地没有的更改。这种冲突阻止了 Git 推送你的更改，因为这可能会覆盖其他人所做的更改。</p>
+<p>解决办法</p>
+<ul>
+<li>在你推送你的更改之前，你需要将你的本地仓库与远程仓库同步。这可以通过从远程拉取更改来完成</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
+
+<p>这个命令从名为 origin 的远程的 main 分支获取更新并将它们合并到你当前的分支。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
+
+<p>至此，问题完美解决，实现了本地和远程同步啦。</p>
+<p><strong>总结</strong></p>
+<p>只要本地仓库（本地的文件夹）内容和远程仓库内容不一致的时候，即本地的内容比仓库旧，</p>
+<p>需要先进行 <code>git pull origin main</code>就能实现本地和远程仓库同步。</p>
+<p>而修改了本地的博客文件后，就会实现本地的内容比远程仓库版本更新一些，push操作就不会报错。</p>
+<p>（当本地的文件比博客文件旧，没有先进行pull，修改了本地文件之后，再进行pull时，git会自动保留最新的文件版本，本地新增的文件不会丢失，所以报错的时候直接<code>git pull origin main</code>即可实现同步，再进行push不会失败）</p>
+<h3 id="方法二-常用设备更新博客"><a href="#方法二-常用设备更新博客" class="headerlink" title="方法二       常用设备更新博客"></a>方法二       常用设备更新博客</h3><p>你想在常用的两台电脑上更新你的博客，例如家里一台电脑、公司一台电脑。</p>
+<p>需要让两台电脑都连上储存着博客源码的<code>私有仓库</code>。</p>
+<p>这里先假设你是在家里的电脑上搭建的博客，但是想去公司更新博客，因此我们这里来讲一下如何使用公司的电脑进行博客的更新。</p>
+<p>由于公司的电脑的环境没有进行配置，因此这里需要进行环境配置，参考本教程的</p>
+<p>【1.1 安装Git】【2.4.2 设置SSH】、【2.4.3 在本地绑定与github的用户名和邮箱】</p>
+<p>然后在公司电脑上建立一个文件夹用于储存博客文件，使用下面的代码将github仓库的博客原文件拉取到这个文件夹内。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:lancou/hexosource.github.io.</span><br></pre></td></tr></table></figure>
+
+<p>由于这个是私有仓库，新设备第一次拉取时会需要验证账号密码。</p>
+<p>后面再想同步公司电脑（旧）与云端仓库（新）时，也可以使用<code>git pull origin main</code>来实现了。</p>
+<p>当在公司修改了博客源文件之后，想把公司电脑上的本地仓库（新）同步到云端仓库（旧）</p>
+<p>依次执行以下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
+
+<p>至此，你应该实现了在公司的电脑更新了你的博客。</p>
+<hr>
+<p>注意，在公司的电脑更新了博客之后，公司电脑的版本&#x3D;云端仓库的版本。</p>
+<p>但此时云端仓库的版本（新），  家里电脑的仓库版本（旧），回到家里面又想更新博客时</p>
+<p>要先拉取云端仓库文件到本地  ，运行命令 <code>git pull origin main</code>   </p>
+<p>把你家里的电脑上的仓库（旧）更新成云端的版本（新），实现   家里电脑的仓库版本&#x3D;云端仓库的版本</p>
+<p>当此时在家里电脑上修改了博客源文件之后，想把家里电脑上的本地仓库（新）同步到云端仓库（旧）</p>
+<p>依次执行以下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
+
+<p>至此，你应该实现了在家里的电脑更新了你的博客。</p>
+<hr>
+<p>如此往复。。。。。。。。。</p>
+<p><code>设备上改博客，最后一件事push代码； 换设备更新博客，第一件事pull代码</code></p>
+<h1 id="四、可能遇到的问题"><a href="#四、可能遇到的问题" class="headerlink" title="四、可能遇到的问题"></a>四、可能遇到的问题</h1><h2 id="1-themes对应主题下的-git文件夹被上传导致的错误"><a href="#1-themes对应主题下的-git文件夹被上传导致的错误" class="headerlink" title="1. themes对应主题下的.git文件夹被上传导致的错误"></a>1. themes对应主题下的.git文件夹被上传导致的错误</h2><p>因为 next 主题文件夹下的.git 文件夹的存在，那么主题文件夹会被识别子项目。从而无法被上传到源码仓库。若是遇到添加屏蔽项，但是还是无法正常上传主题文件夹的情况。</p>
+<p>1.剪切 themes&#x2F;next&#x2F;.git文件夹到其它处</p>
+<p>2.从暂存区删除该文件夹 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git rm --cache themes/next</span><br></pre></td></tr></table></figure>
+
+<p>3.使用git status查看状态</p>
+<img src=" https://img2018.cnblogs.com/blog/812260/201907/812260-20190710151913411-1393275619.png "  style="zoom:50%;" />
+
+<p>4.提交修改</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
+
+
+
+<p>至此问题就解决了。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客内嵌入视频-测试</title>
+    <url>//blog/hexo/video1.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是使用html的video标签插入视频</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot;xxxxxx.mp4&quot;  width=&quot;100%&quot; height=&quot;100%&quot;  poster=&quot;xxxxxx.jpg&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+<p>src是视频的地址；poster是可以设置视频的封面（可选）</p>
+<p><video src="https://cesium.com/public/SandcastleSampleData/big-buck-bunny_trailer.mp4"  width="100%" height="100%" poster="https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg" controls="controls"></video></p>
+<p>下面是B站引用的视频。autoplay&#x3D;0          (1自动播放，0点击播放)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;autoplay=0&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+
+<iframe src="//player.bilibili.com/player.html?aid=754099091&bvid=BV1mk4y1m7nr&cid=220770745&page=1&autoplay=0&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>这是一篇加密文章的测试，密码6666</title>
+    <url>//blog/hexo/jiami.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="844a2b6db8e718bd3f5938101a7071258b83b13fd06f30995920f81a958635e9">591ad66477dc9f8d468bd98487d7d9f9cd9b9f6ee2197f4aecb152b8361f8df989fae85024aa73cbf6d601a62a94cdb2786bc0b21df69df0903f55ad88b8513e4bf063cb617d8927952d8c8ba2a1601aa90f921ef93b49195f1e6bdec3c16faffd4087343b56bad90f52318b131d240138d2a0e16dca7a136fb492c81aa21cca30a511a7d18681e22bebabcbd90e1ee5587d4afe536a5c98ab9e4c827b0b51ff3cafb1b3679f9a96eabc6591dc8aaae55de456ee7469337a0cb1e037ccc27548428cbc6f4b9a3b5151720e8bc2de7239ac63dff284624ac4961fbf4e4bf1e611c95a32bf5ce7f443d866034410670fbee5563fb23e69007f35188c8adace031ec4eb3370f8b9ca2c2f9d268621749b6bc669a4fe2e2c05943b87e4b15bdb2680bc9aa5703d881c6cfefbc86ce67c79aeeb36c1e81320605744d2a512325a0be655b9d9cf5fbeb577085a869a9f1cea6695f371b775f2d24e7a1bb5d6a11e0f490aa56aefbb589825377f7d3fd947b2d3440e04b6de125724a8b60e3db0b5da41</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-blink">
+      <input class="hbe hbe-input-field hbe-input-field-blink" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-blink" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-blink" data-content="您好，这里需要密码。">您好，这里需要密码。</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
+    <url>//blog/solution/Wifi.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
+<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
+<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
+<p>问题已经描述完毕，下面是我的解决方法。</p>
+<hr>
+<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
+
+<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
+
+<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
+
+<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
+
+
+
+<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
+<hr>
+<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
+<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
+]]></content>
+      <categories>
+        <category>常见电脑疑难的解决方案</category>
+      </categories>
+      <tags>
+        <tag>wifi</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>桌面图标间距变大，如何修改回去？解决办法</title>
+    <url>//blog/solution/deskico.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>修改之前<br><img src=" https://s21.ax1x.com/2024/08/25/pAF7dv6.png "  style="zoom:30%;" /></p>
+<p>修改之后如下图</p>
+<img src=" https://s21.ax1x.com/2024/08/25/pAF7DbD.png "  style="zoom:50%;" />
+
+
+
+<p>一键修改桌面图标间距（推荐）。</p>
+<p>链接: <a href="https://caiyun.139.com/m/i?065CtbL96waQC">https://caiyun.139.com/m/i?065CtbL96waQC</a>    提取码:aQ4L  </p>
+<p>下载文件后，打开运行</p>
+<p>脚本先会自动帮你备份，然后再次回车确认开始修改，最后手动重启电脑即可查看效果。</p>
+<hr>
+<h2 id="手动修改-解决办法"><a href="#手动修改-解决办法" class="headerlink" title="手动修改-解决办法"></a>手动修改-解决办法</h2><ol>
+<li><strong>打开注册表编辑器</strong><ul>
+<li>按下<code>Win + R</code>快捷键打开“运行”对话框，输入<code>regedit</code>，然后按回车键。在弹出的用户账户控制提示中点击“是”以打开注册表编辑器。</li>
+</ul>
+</li>
+<li><strong>定位到相应键值</strong><ul>
+<li>在注册表编辑器的左侧目录树中，导航至以下路径：<br><code>HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics</code></li>
+</ul>
+</li>
+<li><strong>备份注册表</strong></li>
+<li><strong>修改图标间距</strong><ul>
+<li>在右侧找到名为<code>IconSpacing</code>和<code>IconVerticalSpacing</code>的两个键值。</li>
+<li>双击<code>IconSpacing</code>，将数值数据改为<code>-1125</code>，然后同样操作修改<code>IconVerticalSpacing</code>为<code>-1125</code>。</li>
+<li>确认更改后关闭注册表编辑器。</li>
+</ul>
+</li>
+<li><strong>注销&#x2F;重启计算机</strong><ul>
+<li>完成修改后，注销&#x2F;重启电脑让更改生效。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>常见电脑疑难的解决方案</category>
+      </categories>
+      <tags>
+        <tag>桌面图标</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
+    <url>//blog/epicwebevent/szjsvsjc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
+<p>最终结果：交警败诉。</p>
+<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
+<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
+<p>下面是使用html标签插入的视频</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+]]></content>
+      <categories>
+        <category>时事分享</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>敢问路在何方（伴奏视频分享）</title>
+    <url>//blog/liferecord/Dare-to-ask-where-the-road-is.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://www.bilibili.com/video/BV1oJ411M7fL">原视频</a></p>
+<p>首先感谢原作者制作了精彩的作品，但是添加了一些片头噪音影响体验。</p>
+<p>下面是剪辑去掉了片头，并且把<strong>无损背景音乐</strong>提取出来。</p>
+<p>视频中的音乐软件叫做《flstudio》，以后有时间的话真想去学一学。</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVk5SWIwQ2RXX05CcERCa0NNemdYV0lCc1UtdUo1QTBfUk1kbC1ZaTExdDNIdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9U3VPdVcz.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+<p><a href="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVhLWDhLMm4yaGxOaV9JaXZpRE1zVkFCOXIxNUc5aFdiQm50VG9oNE96YXVyZz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cXRjaE0x.flac">点我下载无损背景音乐</a></p>
+]]></content>
+      <categories>
+        <category>生活记录</category>
+        <category>未来计划</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+        <tag>音乐</tag>
       </tags>
   </entry>
   <entry>
@@ -2756,618 +3607,6 @@
       </tags>
   </entry>
   <entry>
-    <title>word如何设置打印部分文字不显示</title>
-    <url>//blog/uncategorized/word%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E6%89%93%E5%8D%B0%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E4%B8%8D%E6%98%BE%E7%A4%BA.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>分类</p>
-<p>博客默认放入 blog文件夹</p>
-<table>
-<thead>
-<tr>
-<th>笔记 note</th>
-<th>高中化学  chemistry</th>
-<th>资源分享 source</th>
-<th>生活记录 liferecord</th>
-<th>时事分享 epicwebevent</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>思维 mind</td>
-<td>试卷 paper</td>
-<td>视频 video</td>
-<td>随笔 essay</td>
-<td></td>
-</tr>
-<tr>
-<td>编程 code</td>
-<td>练习题 exercise</td>
-<td>音乐 music</td>
-<td>未来计划 future-plan</td>
-<td></td>
-</tr>
-<tr>
-<td>电脑疑难杂症<br />solution<br /></td>
-<td></td>
-<td>图片 picture</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>软件使用教程 software-use</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>文件头还有更多参数（见下表），需要请自行复制粘贴进文件头。</p>
-<p>点击下面表格内部，1秒后，右上角会出现删除此表格的按钮。</p>
-<table>
-<thead>
-<tr>
-<th>highlight_shrink: true  配置代码框是否不展开(true&#x2F;false&#x2F;none）    <br />aside: ture   显示侧边栏 (默认就是true，你不想显示侧边栏再设置false)<br />toc: true<br/>toc_number: 100<br/>toc_style_simple: 【可选】显示 toc 简洁模式<br />abcjs: 	加载 abcjs (默认 false )<br />mathjax:<br/>katex:<br/>comments:<br />aplayer:<br />copyright:                                     显示文章版权模块<br/>copyright_author:                      文章版权模块的文章作者<br/>copyright_author_href:            文章版权模块的文章作者链接<br/>copyright_url:                            【可选】文章版权模块的文章连结链接<br/>copyright_info:                          【可选】文章版权模块的版权声明文字<br /></th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>无标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的hexo博客设置以及next主题个人喜好</title>
-    <url>//blog/note/hexo/blog-next-diy.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
-<p>hexo配置文件（博客根目录文件夹内的—config.yml）——博客配置文件</p>
-<h1 id="一、博客配置文件的修改"><a href="#一、博客配置文件的修改" class="headerlink" title="一、博客配置文件的修改"></a>一、博客配置文件的修改</h1><h2 id="1-修改站点语言为中文"><a href="#1-修改站点语言为中文" class="headerlink" title="1.修改站点语言为中文"></a>1.修改站点语言为中文</h2><p>打开配置文件，搜索 language，找到如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">author:</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
-
-<p>在 language 后面输入 <strong>zh-CN。</strong></p>
-<h2 id="2、博客文章生成永久链接"><a href="#2、博客文章生成永久链接" class="headerlink" title="2、博客文章生成永久链接"></a>2、博客文章生成永久链接</h2><p>这里有两种方法，一种使用hexo自带的，另一种需要安装插件。</p>
-<p>方法一 hexo自带生成永久链接</p>
-<p>例如我博客的首页，网址为<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
-<p>那我的url就设置成这个<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
-<p>root字段没有，就手动输入<code>root: /</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 博客生成永久地址  URL</span><br><span class="line">url:  https://github.com/aboucide/aboucide.github.io.git   </span><br><span class="line">root: /</span><br><span class="line">permalink: :urldiy	# 预设永久链接格式  </span><br><span class="line">permalink_defaults:      # 默认永久链接</span><br><span class="line">pretty_urls:             # 美化永久链接</span><br><span class="line">  trailing_index: true   </span><br><span class="line">  trailing_html: true    </span><br></pre></td></tr></table></figure>
-
-<p>如果你的博客首页网址是  url：<a href="http://www.mfm.com/blog">http://www.mfm.com/blog</a></p>
-<p>则你的  root：&#x2F;blog</p>
-<p>后续在每个文章的文件头那里输入字段</p>
-<p><code>urldiy: /文件夹名称/分类名称/文章自定义名称.html</code></p>
-<p>文件夹名称是 hexo将md文件转换成网页文件后上传到GitHub中的文件夹名称，可以随意取，程序会自动新建该文件夹，然后把html文件放进去。</p>
-<p>分类名称 是自己在Category &amp; Tag 中设置的中文对应的名称</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Category &amp; Tag    </span><br><span class="line">#把分类和标签与地址栏对应的英文在这进行分别设置，否则地址栏现实的是中文，分享出去的网址会是一大串转义字符。</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">  笔记: note</span><br><span class="line">  高中化学: chemistry</span><br><span class="line">  实验视频: experiment-videos</span><br><span class="line">  资源分享: source</span><br><span class="line">  生活记录: liferecord</span><br><span class="line">  随笔: essay</span><br><span class="line">  常见电脑疑难的解决方案: solution</span><br><span class="line">  时事分享: epicwebevent            #记录互联网精彩的事情           </span><br><span class="line">  未分类: uncategorized</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tag_map:</span><br><span class="line">  视频: video</span><br></pre></td></tr></table></figure>
-
-
-
-<p>例如本篇文章的urldiy设置如下</p>
-<p><code>urldiy: /blog/note/hexo/diy.html</code></p>
-<p>即本文网址：aboucide.github.io&#x2F;blog&#x2F;note&#x2F;hexo&#x2F;diy.html</p>
-<p>方法二 安装插件</p>
-<p>【我没有使用这种方法，因此在这不做介绍】</p>
-<h2 id="3、修改博客默认模板"><a href="#3、修改博客默认模板" class="headerlink" title="3、修改博客默认模板"></a>3、修改博客默认模板</h2><p>hexo博客的默认模板储存在：<code>博客根目录/scaffolds/</code></p>
-<p>什么情况下会使用到默认模板？</p>
-<p>博客的文章储存在<code>\source\_posts</code>，因此我们写作的方法是</p>
-<p>① 写好一份md文档，放进该文件夹中，再进行更新博客即可。</p>
-<p>但是这种直接手动新建的md文件不能自带 ”文件头“ （front matter），这样子上传的md文件hexo博客是默认不识别的。必须要手动输入文件头，在md文件的开头输入<code>---</code>回车，再手动输入文章的各个信息才行。但是很明显每次写博客都手动输入文章信息就太麻烦了。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">urlname: &#123;&#123;title&#125;&#125;</span><br><span class="line">categories: 未分类</span><br><span class="line">tags:</span><br><span class="line">- 无标签</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br></pre></td></tr></table></figure>
-
-<p>②使用官方自带的hexo命令，使用默认模板新建一个md文件。</p>
-<p>这样新建的md文件就能自带文件头（front matter）。</p>
-<p>使用方法 <code>hexo new 模板名称 文件名称</code><br>例如，我想使用默认模板，新建一个<code>这是我的新博客.md</code>文件，命令如下<br><code>hexo new post 这是我的新博客</code>              其中<code>new</code>可以缩写成<code>n</code><br>等效于 <code>hexo n post 这是我的新博客</code></p>
-<p>如果你输入的命令中不包含<code>模板名称</code>，则使用默认模板<code>post</code>。<br>也就是说如果你想使用默认模板新建博客，可以使用如下命令：<br><code>hexo n 这是我的新博客</code></p>
-<p>官方自带的默认模板是<code>post</code>,代码如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>很显然使用hexo命令使用默认模板新建的md文件虽然有文件头，但包含的文件头信息还是太少了。<br>下面是我使用的模板，比自带的模板多包含了”分类“、”描述“。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">categories: 未分类</span><br><span class="line">tags:</span><br><span class="line">- 无标签</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br></pre></td></tr></table></figure>
-
-<p>我们可以①修改官方自带的post模板；②也可以自己新建一个模板文件放在<code>/scaffolds/</code>的文件夹内。  我这里采用的是方法②。</p>
-<p>例如，我创建了一个名为 <code>blog.md</code>的模板，设置这个md的文件头的代码如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">categories: 未分类</span><br><span class="line">tags:</span><br><span class="line">- 无标签</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br></pre></td></tr></table></figure>
-
-<p>后续如何使用这个模板呢？</p>
-<p>在博客的根目录文件夹内，打开cmd，使用<code>hexo new blog 这是我的新文档</code>，就会在<code>\source\_posts</code>新建一个<code>这是我的新文档.md</code>的文件</p>
-<h2 id="4、博客页面插入视频"><a href="#4、博客页面插入视频" class="headerlink" title="4、博客页面插入视频"></a>4、博客页面插入视频</h2><p>使用插件hexo-tag-dplayer</p>
-<p><a href="https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/">https://easyhexo.com/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/</a></p>
-<h2 id="5、博客页面分类"><a href="#5、博客页面分类" class="headerlink" title="5、博客页面分类"></a>5、博客页面分类</h2><p>1、先去next主题配置文件，打开对应的功能。#号相当于注释。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  #about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags                  #标签</span><br><span class="line">  categories: /categories/ || fa fa-th        #分类</span><br><span class="line">  archives: /archives/     || fa fa-archive       #归档</span><br><span class="line">  #schedule: /schedule/     || fa fa-calendar      #日程表</span><br><span class="line">  sitemap: /sitemap.xml    || fa fa-sitemap      #站点地图</span><br><span class="line"> # commonweal: /404/ || fa fa-heartbeat       #公益404</span><br></pre></td></tr></table></figure>
-
-<p>2、可以自定义分类名称对应的网址</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Category &amp; Tag    </span><br><span class="line">#把分类和标签与地址栏对应的英文在这进行分别设置，否则地址栏现实的是中文，分享出去的网址会是一大串转义字符。</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">  笔记: note</span><br><span class="line">  高中化学: chemistry</span><br><span class="line">  实验视频: experiment-videos</span><br><span class="line">  资源分享: source</span><br><span class="line">  生活记录: liferecord</span><br><span class="line">  随笔: essay</span><br><span class="line">  常见电脑疑难的解决方案: solution</span><br><span class="line">  未分类: uncategorized</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tag_map:</span><br><span class="line">  视频: video</span><br></pre></td></tr></table></figure>
-
-<p>3、每次写的博客如何设置分类名称</p>
-<p>多级分类</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">categories: </span><br><span class="line">- 博客自定义</span><br><span class="line">- 主题修改</span><br><span class="line">tags:</span><br><span class="line">- DIY</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>这里创建了<code>博客自定义</code>分类，并且创建了下面的一个子分类<code>主题修改</code>，并且添加了一个子标签<code>DIY</code></p>
-<p>一篇文章属于多个分类</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123;title&#125;&#125;</span><br><span class="line">date: &#123;&#123;date&#125;&#125;</span><br><span class="line">author: ZhongYuan</span><br><span class="line">categories: </span><br><span class="line">- [博客自定义,主题修改]</span><br><span class="line">tags:</span><br><span class="line">- DIY</span><br><span class="line">- blog</span><br><span class="line">description: 这里是显示在主页的文章描述。注意冒号后面有一个英文空格。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>这里创建的分类是<code>博客自定义</code>和<code>主题修改</code>，相当于这篇文章属于两个分类，同时这个文章加了两个标签。</p>
-<hr>
-<h1 id="二、主题配置文件的修改"><a href="#二、主题配置文件的修改" class="headerlink" title="二、主题配置文件的修改"></a>二、主题配置文件的修改</h1><h2 id="1、博客主页显示分类、标签等"><a href="#1、博客主页显示分类、标签等" class="headerlink" title="1、博客主页显示分类、标签等"></a>1、博客主页显示分类、标签等</h2><p>打开主题配置文件，修改menu对应的配置，“#”是注释的标志，删除代码前对应的#号即可激活。</p>
-<img src=" https://im.gurl.eu.org/file/682d06efd3f4ff44679cd.png "  style="zoom:50%;" />
-
-
-
-<h2 id="2、切换next显示的样式（默认提供4种选择）"><a href="#2、切换next显示的样式（默认提供4种选择）" class="headerlink" title="2、切换next显示的样式（默认提供4种选择）"></a>2、切换next显示的样式（默认提供4种选择）</h2><p>找到Schemes板块，选择喜欢的主题，去掉＃即可激活对应模式。</p>
-<p>Dark mode是黑夜模式，把ture改成false就是白天模式。</p>
-<img src=" https://im.gurl.eu.org/file/cf84358115ffcba437def.png "  style="zoom:50%;" />
-
-
-
-<h2 id="3、隐藏网页底部-powered-By-Hexo-强力驱动"><a href="#3、隐藏网页底部-powered-By-Hexo-强力驱动" class="headerlink" title="3、隐藏网页底部 powered By Hexo &#x2F; 强力驱动"></a>3、隐藏网页底部 powered By Hexo &#x2F; 强力驱动</h2><p>（推荐）方法一：打开next主题配置文件，设置下面字段为false</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Powered by Hexo &amp; NexT</span><br><span class="line">powered: false</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>方法二：打开 themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;footer.swig</p>
-<p>像我这样把这段代码的前后分别加上<code>&lt;!--</code>和<code>--&gt;</code>，即可实现去除底部推广。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">&#123;%- if theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">    &#123;%- set next_site = &#x27;https://theme-next.js.org&#x27; if theme.scheme === &#x27;Gemini&#x27; else &#x27;https://theme-next.js.org/&#x27; + theme.scheme | lower + &#x27;/&#x27; %&#125;</span><br><span class="line">    &#123;&#123;- __(&#x27;footer.powered&#x27;, next_url(&#x27;https://hexo.io&#x27;, &#x27;Hexo&#x27;) + &#x27; &amp; &#x27; + next_url(next_site, &#x27;NexT.&#x27; + theme.scheme)) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;&#123;- next_inject(&#x27;footer&#x27;) &#125;&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3、文章添加阴影"><a href="#3、文章添加阴影" class="headerlink" title="3、文章添加阴影"></a>3、文章添加阴影</h2><p>打开    themes\next\source\css_common\components\post\index.styl</p>
-<p>替换成如下代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.rtl &#123;</span><br><span class="line">  &amp;.post-body &#123;</span><br><span class="line">    p, a, h1, h2, h3, h4, h5, h6, li, ul, ol &#123;</span><br><span class="line">      direction: rtl;</span><br><span class="line">      font-family: UKIJ Ekran;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &amp;.post-title &#123;</span><br><span class="line">    font-family: UKIJ Ekran;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.post-button &#123;</span><br><span class="line">  margin-top: 40px;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.use-motion &#123;</span><br><span class="line">  if (hexo-config(&#x27;motion.transition.post_block&#x27;)) &#123;</span><br><span class="line">    .post-block&#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">      margin-top: 60px;</span><br><span class="line">      margin-bottom: 60px;</span><br><span class="line">      padding: 25px;</span><br><span class="line">      -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, 1);</span><br><span class="line">      -moz-box-shadow: 0 0 5px rgba(202, 203, 204, 1);  </span><br><span class="line">    &#125;</span><br><span class="line">    .pagination, .comments &#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (hexo-config(&#x27;motion.transition.post_header&#x27;)) &#123;</span><br><span class="line">    .post-header &#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (hexo-config(&#x27;motion.transition.post_body&#x27;)) &#123;</span><br><span class="line">    .post-body &#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (hexo-config(&#x27;motion.transition.coll_header&#x27;)) &#123;</span><br><span class="line">    .collection-header &#123;</span><br><span class="line">      visibility: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@import &#x27;post-collapse&#x27;;</span><br><span class="line">@import &#x27;post-body&#x27;;</span><br><span class="line">@import &#x27;post-gallery&#x27;;</span><br><span class="line">@import &#x27;post-header&#x27;;</span><br><span class="line">@import &#x27;post-nav&#x27;;</span><br><span class="line">@import &#x27;post-footer&#x27;;</span><br><span class="line">@import &#x27;post-widgets&#x27;;</span><br><span class="line">@import &#x27;post-reward&#x27;;</span><br><span class="line">@import &#x27;post-followme&#x27;;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>依次执行hexo cl &amp;&amp; hexo g &amp;&amp; hexo d       ，即可看到效果。</p>
-<p>添加阴影前，可以看到这里3篇文章，分割线基本没有，看起来感官不佳。</p>
-<img src=" https://im.gurl.eu.org/file/c52e2863f2b224b8bbd0c.png "  style="zoom:25%;" />
-
-<p>这里是修改后的，添加了文章阴影，好看了一些。</p>
-<img src=" https://im.gurl.eu.org/file/1ae0518330caae0c2faf6.png "  style="zoom:30%;" />
-
-
-
-<h2 id="4、浏览页面显示当前浏览进度"><a href="#4、浏览页面显示当前浏览进度" class="headerlink" title="4、浏览页面显示当前浏览进度"></a>4、浏览页面显示当前浏览进度</h2><p>打开 themes&#x2F;next&#x2F;_config.yml，搜索关键字 <code>scrollpercent</code>，把 false 改为 true。</p>
-<p>会看到左下角显示当前页面滚动的百分比。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  enable: true                            #打开返回页面顶部的按钮</span><br><span class="line">  # Back to top in sidebar.</span><br><span class="line">  sidebar: true                           #是否设置把当前阅读百分比合并到侧边栏，选择false则阅读进度单独显示小的悬浮窗。</span><br><span class="line">  # Scroll percent label in b2t button.   显示当前页面滚动百分比</span><br><span class="line">  scrollpercent: true                     </span><br></pre></td></tr></table></figure>
-
-
-
-<p>图下为更新前。</p>
-<img src=" https://im.gurl.eu.org/file/0d1b6f5d273481d77bed7.png "  style="zoom:20%;" />
-
-<p>更下为更新后。可以看到左下角多了一个浏览进度百分比。</p>
-<img src=" https://im.gurl.eu.org/file/88e563b9d42bce4680f1e.png "  style="zoom:25%;" />
-
-
-
-<p>还可以设置页面顶部的浏览进度条</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Reading progress bar     页面顶部显示阅读进度条</span><br><span class="line">reading_progress:</span><br><span class="line">  enable: true</span><br><span class="line">  # Available values: left | right</span><br><span class="line">  start_at: left</span><br><span class="line">  # Available values: top | bottom</span><br><span class="line">  position: top</span><br><span class="line">  reversed: false</span><br><span class="line">  color: &quot;#37c6c0&quot;</span><br><span class="line">  height: 3px</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-<h2 id="5、Local-Search本地搜索"><a href="#5、Local-Search本地搜索" class="headerlink" title="5、Local Search本地搜索"></a>5、Local Search本地搜索</h2><p>5.1 安装插件hexo-generator-searchdb,执行以下命令:</p>
-<p><code>npm install hexo-generator-searchdb --save</code></p>
-<p>5.2 修改博客的配置文件，新增以下内容到任意位置：</p>
-<p>search:<br>path: search.xml<br>field: post<br>format: html<br>limit: 10000			#最多显示搜索结果的数量为10000个</p>
-<p>5.3 编辑 主题配置文件，启用本地搜索功能：</p>
-<p>打开主题的配置文件，把# local search的enable改成true。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">enable: true</span><br></pre></td></tr></table></figure>
-
-
-
-<p>修改后，如下图多了搜索功能。</p>
-<img src=" https://im.gurl.eu.org/file/d5b66cafdc27a65a8153d.png "  style="zoom:30%;" />
-
-
-
-<h2 id="6、修改博客的相关图标"><a href="#6、修改博客的相关图标" class="headerlink" title="6、修改博客的相关图标"></a>6、修改博客的相关图标</h2><p>博客的默认图标在对应主题的文件夹内<code>/themes/next/source/images</code></p>
-<p>只需要把你想要的图片修改成一模一样的名字并替换原文件即可。</p>
-<h2 id="7、打开博客分享按钮"><a href="#7、打开博客分享按钮" class="headerlink" title="7、打开博客分享按钮"></a>7、打开博客分享按钮</h2><p>打开主题配置文件，修改成如下代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#打开网站分享的按钮，会显示在文章的底部</span><br><span class="line"># AddToAny Share. See: https://www.addtoany.com</span><br><span class="line">addtoany:</span><br><span class="line">  enable: true</span><br><span class="line">  buttons:</span><br><span class="line">    - facebook</span><br><span class="line">    - twitter</span><br><span class="line">    - telegram</span><br><span class="line">    - wechat</span><br><span class="line">    - qzone</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="8、文章加密访问"><a href="#8、文章加密访问" class="headerlink" title="8、文章加密访问"></a>8、文章加密访问</h2><p>这里提供两种方法，一种是next自带的加密；另一种需要安装加密插件。</p>
-<p>我本人使用的加密是第二种方法。</p>
-<p>8.1 next主题自带的加密</p>
-<p>8.2 使用加密插件hexo-blog-encrypt</p>
-<p>github有使用说明，很简单。</p>
-<h2 id="9、文章字数统计，阅读时间推荐"><a href="#9、文章字数统计，阅读时间推荐" class="headerlink" title="9、文章字数统计，阅读时间推荐"></a>9、文章字数统计，阅读时间推荐</h2><p>打开主题配置文件，修改post_wordcount对应如下代码即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_wordcount:</span><br><span class="line"></span><br><span class="line"> item_text: true</span><br><span class="line"></span><br><span class="line"> wordcount: true     # 单篇 字数统计</span><br><span class="line"></span><br><span class="line"> min2read: true      # 单篇 阅读时长</span><br><span class="line"></span><br><span class="line"> totalcount: false    # 网站 字数统计</span><br><span class="line"></span><br><span class="line"> separated_meta: true</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="10、如何让首页的文章部分显示"><a href="#10、如何让首页的文章部分显示" class="headerlink" title="10、如何让首页的文章部分显示"></a>10、如何让首页的文章部分显示</h2><p>这里提供两种方法。</p>
-<p>首先确保主题配置文件中的<code>excerpt_description</code>是true（next主题安装后默认是true）。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Use `description` in front-matter to specify post excerpt.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
-
-
-
-<p>10.1 方法一：写博客的概述</p>
-<p>在文章的开头处，添加一个description，这样首页只会显示描述的内容，不会显示正文。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 让首页显示部分内容</span><br><span class="line">date: 2020-02-23 22:55:10</span><br><span class="line">description: 这是显示在首页的概述，正文内容均会被隐藏。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>如果description的后面没有文字，则又会默认全部显示正文内容。</p>
-<p>10.2 方法二：文章截断</p>
-<p>在需要截断的地方加入以下代码，</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-
-<p>这样主页看到的那篇文章就只显示到这串代码之前的内容。（推荐使用方法二）</p>
-<p>10.3 不常用的方法：使用加密插件hexo-blog-encrypt</p>
-<p>但是必须得加密码，不加密码，无法实现部分内容显示。</p>
-<p>修改前，打开首页，文章就是默认全部展开的，非常不美观。</p>
-<img src=" https://im.gurl.eu.org/file/55642fece5998d68bcd99.png "  style="zoom:35%;" />
-
-
-
-<h2 id="11-代码块风格设置-并-增加代码块“复制”按钮"><a href="#11-代码块风格设置-并-增加代码块“复制”按钮" class="headerlink" title="11. 代码块风格设置 并 增加代码块“复制”按钮"></a>11. 代码块风格设置 并 增加代码块“复制”按钮</h2><p>打开代码块风格预览网站    <a href="https://theme-next.js.org/highlight/">https://theme-next.js.org/highlight/</a></p>
-<p>我选择的Engine是hightlight；Theme是atom-one-light。</p>
-<p>在博客站点配置文件进行设置如下代码，选择highlight的enable:设置成 true</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#下面是设置博客文章中代码块的渲染引擎，</span><br><span class="line"># hightlight和prismjs只能二选一打开enable的true，另一个选择false</span><br><span class="line">highlight:</span><br><span class="line">  enable: true</span><br><span class="line">  line_number: true</span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br><span class="line">  wrap: true</span><br><span class="line">  hljs: false</span><br><span class="line"></span><br><span class="line">prismjs:</span><br><span class="line">  enable: false</span><br><span class="line">  preprocess: true</span><br><span class="line">  line_number: true</span><br><span class="line">  tab_replace: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
-
-<p>在next主题配置文件设置如下代码theme: atom-one-light</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#这里是博客里面的代码块的样式</span><br><span class="line">codeblock:</span><br><span class="line">  # Code Highlight theme</span><br><span class="line">  # All available themes: https://theme-next.js.org/highlight/</span><br><span class="line">  theme:</span><br><span class="line">    light: atom-one-light</span><br><span class="line">    dark: atom-one-light</span><br><span class="line">  prism:</span><br><span class="line">    light: prism</span><br><span class="line">    dark: prism-dark</span><br></pre></td></tr></table></figure>
-
-
-
-<p>打开代码块复制按钮</p>
-<p>在next主题配置文件,打开copy_button的enable设置成true</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Add copy button on codeblock   增加代码块复制按钮</span><br><span class="line">copy_button:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h2 id="12-设置页面加载特效"><a href="#12-设置页面加载特效" class="headerlink" title="12. 设置页面加载特效"></a>12. 设置页面加载特效</h2><p>页面有时加载缓慢，可以设置一个当前页面加载的进度条显示，避免焦虑。</p>
-<p>打开next主题的配置文件，找到<code>pace</code>片段，enable的值设置成true，可以自定义color和theme的值。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Progress bar in the top during page loading.</span><br><span class="line">#这里是设置博客加载的进度条，可以访问下面的网址，查看各个效果的例子。</span><br><span class="line"># For more information: https://github.com/CodeByZach/pace</span><br><span class="line">pace:</span><br><span class="line">  enable: true</span><br><span class="line">  # All available colors:</span><br><span class="line">  # black | blue | green | orange | pink | purple | red | silver | white | yellow</span><br><span class="line">  color: green</span><br><span class="line">  # All available themes:</span><br><span class="line">  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span><br><span class="line">  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span><br><span class="line">  theme: loading-bar</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="13-修改博客文章侧边栏的圆角和边距"><a href="#13-修改博客文章侧边栏的圆角和边距" class="headerlink" title="13. 修改博客文章侧边栏的圆角和边距"></a>13. 修改博客文章侧边栏的圆角和边距</h2><p><a href="https://cs-cshi.github.io/hexo-blog/Hexo-NexT%20%E8%AE%BE%E7%BD%AE%E5%9C%86%E8%A7%92/">https://cs-cshi.github.io/hexo-blog/Hexo-NexT%20%E8%AE%BE%E7%BD%AE%E5%9C%86%E8%A7%92/</a></p>
-<p>打开     blog_root&#x2F;source&#x2F;_data&#x2F;variables.styl ，</p>
-<p>没有这个文件夹就手动新建该文件夹  _data，并新建该文件variables.styl。</p>
-<p>打开themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_variables&#x2F;Gemini.styl，把内容复制到上面的文件中。</p>
-<p>似乎_date文件夹需要自建，用于自定义？</p>
-<p>根据启用的不同主题，选择相应的文件。这里修改的是Gemini.styl。</p>
-<p>在文件中修改代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$border-radius-inner     = 0 0 10px 10px;</span><br><span class="line">$border-radius           = 10px;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>进入next主题配置文件，并搜索 custom_file_path 字段，将variable行取消注释。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Define custom file paths.  自定义页面风格，取消默认配置</span><br><span class="line"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.njk</span><br><span class="line">  #header: source/_data/header.njk</span><br><span class="line">  #sidebar: source/_data/sidebar.njk</span><br><span class="line">  #postMeta: source/_data/post-meta.njk</span><br><span class="line">  #postBodyStart: source/_data/post-body-start.njk</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.njk</span><br><span class="line">  #footer: source/_data/footer.njk</span><br><span class="line">  #bodyEnd: source/_data/body-end.njk</span><br><span class="line">  variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  #style: source/_data/styles.styl</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="14-给博客添加人数访问统计"><a href="#14-给博客添加人数访问统计" class="headerlink" title="14. 给博客添加人数访问统计"></a>14. 给博客添加人数访问统计</h2><p>进入主题配置文件，并搜索 busuanzi_count 字段，设置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: fa fa-user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: fa fa-eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: far fa-eye</span><br></pre></td></tr></table></figure>
-
-<p>为了增加可读性，可以增加如下设置。</p>
-<p>进入 Hexo&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials 目录，打开 footer.njk 文件。</p>
-<p>搜索 busuanzi_value_site_uv字段，修改值为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">访客人数共计：&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt; 人</span><br></pre></td></tr></table></figure>
-
-<p>搜索 busuanzi_value_site_pv 字段，修改值为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">本站浏览总量共计：&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="15-博客文章置顶功能"><a href="#15-博客文章置顶功能" class="headerlink" title="15.博客文章置顶功能"></a>15.博客文章置顶功能</h2><h2 id="16-博客文章摘要显示图片"><a href="#16-博客文章摘要显示图片" class="headerlink" title="16. 博客文章摘要显示图片"></a>16. 博客文章摘要显示图片</h2><hr>
-<h1 id="三、可能遇到的问题"><a href="#三、可能遇到的问题" class="headerlink" title="三、可能遇到的问题"></a>三、可能遇到的问题</h1><h2 id="1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。"><a href="#1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。" class="headerlink" title="1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。"></a>1、修改主题相关的内容后，自动部署不加载css，导致网页只有文字，没有风格了。</h2><p>解决办法</p>
-<p>打开博客站点配置文件,修改url，并设置root字段的内容</p>
-<p>例如我博客的首页，网址为<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
-<p>那我的url就设置成这个<a href="https://github.com/aboucide/aboucide.github.io.git">https://github.com/aboucide/aboucide.github.io.git</a></p>
-<p>root字段没有，就手动输入<code>root: /</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">## Set your site url here. </span><br><span class="line">url:  https://github.com/aboucide/aboucide.github.io.git   </span><br><span class="line">root: /</span><br></pre></td></tr></table></figure>
-
-
-
-<p>如果你的博客首页网址是  url：<a href="http://www.mfm.com/blog">http://www.mfm.com/blog</a></p>
-<p>则你的  root：&#x2F;blog</p>
-<p>再次重新部署即可。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>观影/追番记录</title>
-    <url>//blog/liferecord/essay/zhuifan.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
-<thead>
-<tr>
-<th>名称</th>
-<th align="left">日期  +  进度</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仙逆⭐⭐⭐⭐⭐</td>
-<td align="left">2024年9月18日   看完第56集</td>
-<td>王林感悟意境，准备化神。</td>
-</tr>
-<tr>
-<td>凡人修仙传⭐⭐⭐⭐⭐</td>
-<td align="left">2024年9月22日   看完第120集</td>
-<td>韩立获得星宫外门执事认可，进入天星城。逆星盟攻打星宫在即。</td>
-</tr>
-<tr>
-<td>遮天<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年8月28日  看完第75集</td>
-<td>叶凡去打离火教。</td>
-</tr>
-<tr>
-<td>完美世界<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年8月21日  看完第177集</td>
-<td>石昊ko仙殿继承人。</td>
-</tr>
-<tr>
-<td>永生第四季 海噬仙灵<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年10月4日   看完第11集（第51集）</td>
-<td>到达海市</td>
-</tr>
-<tr>
-<td>剑来   <br />⭐⭐⭐<br /></td>
-<td align="left">2024年9月20日   看完第8集</td>
-<td>陈平安的小镇要崩溃了。</td>
-</tr>
-<tr>
-<td>师兄啊师兄⭐⭐⭐⭐</td>
-<td align="left">2024年10月4日 看完第57集</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-</tbody></table>
-<hr>
-]]></content>
-      <categories>
-        <category>生活记录</category>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>追番</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客内嵌入视频-测试</title>
-    <url>//blog/hexo/video1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是使用html的video标签插入视频</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot;xxxxxx.mp4&quot;  width=&quot;100%&quot; height=&quot;100%&quot;  poster=&quot;xxxxxx.jpg&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
-<p>src是视频的地址；poster是可以设置视频的封面（可选）</p>
-<p><video src="https://cesium.com/public/SandcastleSampleData/big-buck-bunny_trailer.mp4"  width="100%" height="100%" poster="https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg" controls="controls"></video></p>
-<p>下面是B站引用的视频。autoplay&#x3D;0          (1自动播放，0点击播放)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;autoplay=0&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
-
-
-<iframe src="//player.bilibili.com/player.html?aid=754099091&bvid=BV1mk4y1m7nr&cid=220770745&page=1&autoplay=0&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>敢问路在何方（伴奏视频分享）</title>
-    <url>//blog/liferecord/Dare-to-ask-where-the-road-is.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://www.bilibili.com/video/BV1oJ411M7fL">原视频</a></p>
-<p>首先感谢原作者制作了精彩的作品，但是添加了一些片头噪音影响体验。</p>
-<p>下面是剪辑去掉了片头，并且把<strong>无损背景音乐</strong>提取出来。</p>
-<p>视频中的音乐软件叫做《flstudio》，以后有时间的话真想去学一学。</p>
-<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVk5SWIwQ2RXX05CcERCa0NNemdYV0lCc1UtdUo1QTBfUk1kbC1ZaTExdDNIdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9U3VPdVcz.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
-<p><a href="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVhLWDhLMm4yaGxOaV9JaXZpRE1zVkFCOXIxNUc5aFdiQm50VG9oNE96YXVyZz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cXRjaE0x.flac">点我下载无损背景音乐</a></p>
-]]></content>
-      <categories>
-        <category>生活记录</category>
-        <category>未来计划</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-        <tag>音乐</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>这是一篇加密文章的测试，密码6666</title>
-    <url>//blog/hexo/jiami.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
-  <script id="hbeData" type="hbeData" data-hmacdigest="844a2b6db8e718bd3f5938101a7071258b83b13fd06f30995920f81a958635e9">591ad66477dc9f8d468bd98487d7d9f9cd9b9f6ee2197f4aecb152b8361f8df989fae85024aa73cbf6d601a62a94cdb2786bc0b21df69df0903f55ad88b8513e4bf063cb617d8927952d8c8ba2a1601aa90f921ef93b49195f1e6bdec3c16faffd4087343b56bad90f52318b131d240138d2a0e16dca7a136fb492c81aa21cca30a511a7d18681e22bebabcbd90e1ee5587d4afe536a5c98ab9e4c827b0b51ff3cafb1b3679f9a96eabc6591dc8aaae55de456ee7469337a0cb1e037ccc27548428cbc6f4b9a3b5151720e8bc2de7239ac63dff284624ac4961fbf4e4bf1e611c95a32bf5ce7f443d866034410670fbee5563fb23e69007f35188c8adace031ec4eb3370f8b9ca2c2f9d268621749b6bc669a4fe2e2c05943b87e4b15bdb2680bc9aa5703d881c6cfefbc86ce67c79aeeb36c1e81320605744d2a512325a0be655b9d9cf5fbeb577085a869a9f1cea6695f371b775f2d24e7a1bb5d6a11e0f490aa56aefbb589825377f7d3fd947b2d3440e04b6de125724a8b60e3db0b5da41</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-blink">
-      <input class="hbe hbe-input-field hbe-input-field-blink" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-blink" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-blink" data-content="您好，这里需要密码。">您好，这里需要密码。</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
-    <url>//blog/solution/Wifi.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
-<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
-<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
-<p>问题已经描述完毕，下面是我的解决方法。</p>
-<hr>
-<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
-
-<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
-
-<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
-
-<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
-
-
-
-<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
-<hr>
-<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
-<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
-]]></content>
-      <categories>
-        <category>常见电脑疑难的解决方案</category>
-      </categories>
-      <tags>
-        <tag>wifi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>桌面图标间距变大，如何修改回去？解决办法</title>
-    <url>//blog/solution/deskico.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>修改之前<br><img src=" https://s21.ax1x.com/2024/08/25/pAF7dv6.png "  style="zoom:30%;" /></p>
-<p>修改之后如下图</p>
-<img src=" https://s21.ax1x.com/2024/08/25/pAF7DbD.png "  style="zoom:50%;" />
-
-
-
-<p>一键修改桌面图标间距（推荐）。</p>
-<p>链接: <a href="https://caiyun.139.com/m/i?065CtbL96waQC">https://caiyun.139.com/m/i?065CtbL96waQC</a>    提取码:aQ4L  </p>
-<p>下载文件后，打开运行</p>
-<p>脚本先会自动帮你备份，然后再次回车确认开始修改，最后手动重启电脑即可查看效果。</p>
-<hr>
-<h2 id="手动修改-解决办法"><a href="#手动修改-解决办法" class="headerlink" title="手动修改-解决办法"></a>手动修改-解决办法</h2><ol>
-<li><strong>打开注册表编辑器</strong><ul>
-<li>按下<code>Win + R</code>快捷键打开“运行”对话框，输入<code>regedit</code>，然后按回车键。在弹出的用户账户控制提示中点击“是”以打开注册表编辑器。</li>
-</ul>
-</li>
-<li><strong>定位到相应键值</strong><ul>
-<li>在注册表编辑器的左侧目录树中，导航至以下路径：<br><code>HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics</code></li>
-</ul>
-</li>
-<li><strong>备份注册表</strong></li>
-<li><strong>修改图标间距</strong><ul>
-<li>在右侧找到名为<code>IconSpacing</code>和<code>IconVerticalSpacing</code>的两个键值。</li>
-<li>双击<code>IconSpacing</code>，将数值数据改为<code>-1125</code>，然后同样操作修改<code>IconVerticalSpacing</code>为<code>-1125</code>。</li>
-<li>确认更改后关闭注册表编辑器。</li>
-</ul>
-</li>
-<li><strong>注销&#x2F;重启计算机</strong><ul>
-<li>完成修改后，注销&#x2F;重启电脑让更改生效。</li>
-</ul>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>常见电脑疑难的解决方案</category>
-      </categories>
-      <tags>
-        <tag>桌面图标</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
-    <url>//blog/epicwebevent/szjsvsjc.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
-<p>最终结果：交警败诉。</p>
-<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
-<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
-<p>下面是使用html标签插入的视频</p>
-<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
-]]></content>
-      <categories>
-        <category>时事分享</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法</title>
     <url>//blog/note/markdown/yufa.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>在需要目录出现的地方（一般在文章一开始）放置一个标记<code>[toc]</code>，这样会自动生成一个嵌套的包含所有标题的列表。</p>
@@ -3861,382 +4100,74 @@
       </tags>
   </entry>
   <entry>
-    <title>如何使用Hexo和Github搭建个人博客</title>
-    <url>//blog/note/hexo/blog-create.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="使用Hexo和Github搭建个人博客"><a href="#使用Hexo和Github搭建个人博客" class="headerlink" title="使用Hexo和Github搭建个人博客"></a>使用Hexo和Github搭建个人博客</h1><h1 id="【目录】"><a href="#【目录】" class="headerlink" title="【目录】"></a>【目录】</h1><p>[toc]</p>
-<hr>
-<h1 id="一、如何实现的？"><a href="#一、如何实现的？" class="headerlink" title="一、如何实现的？"></a>一、如何实现的？</h1><p>使用 GitHub Pages 服务搭建博客的好处有：</p>
-<ol>
-<li>全是静态文件，访问速度快；</li>
-<li>免费方便，不用花钱就可以搭建个人博客，不需要服务器不需要后台；</li>
-<li>可以随意绑定自己的域名；</li>
-<li>数据绝对安全，基于 GitHub 的版本管理，想恢复到哪个历史版本都行；</li>
-<li>博客内容可以轻松打包、转移、发布到其它平台；</li>
-<li>自己可以随性所欲的设计，美观大气上档次；</li>
-</ol>
-<hr>
-<h1 id="二、搭建步骤"><a href="#二、搭建步骤" class="headerlink" title="二、搭建步骤"></a>二、搭建步骤</h1><h2 id="2-1-原料准备及配置环境"><a href="#2-1-原料准备及配置环境" class="headerlink" title="2.1 原料准备及配置环境"></a>2.1 原料准备及配置环境</h2><h3 id="1-提前注册好Github账号"><a href="#1-提前注册好Github账号" class="headerlink" title="1.提前注册好Github账号"></a>1.提前注册好Github账号</h3><p>注册账号这个过程不难，需要注意的事项有</p>
-<ul>
-<li><p>账号的用户名将来会用作网址的构成，因此要注意想清楚。</p>
-</li>
-<li><p>如果无法访问github或者访问过程中比较卡顿，可以下载这个GitHub加速器：<a href="https://steampp.net/">https://steampp.net/</a></p>
-</li>
-</ul>
-<hr>
-<h3 id="2-安装Git"><a href="#2-安装Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h3><p>[Git - Downloads (git-scm.com)]          官网：(<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>)</p>
-<img src="../../images/pictures/git的下载.png" alt="git的下载" title="git的下载" style="zoom:50%;" />
-
-<p>文件大小约几十Mb，下载完成后，双击安装包开始安装，一路点击 <code>Next</code> 即可。<br>安装完毕后可以使用以下命令测试是否安装成功</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
-
-<img src="../../images/pictures/git版本验证.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
-
-<p>后续Hexo框架的更新可以使用如下代码</p>
-<p><code>git clone https://github.com/git/git</code></p>
-<hr>
-<h3 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3.安装node.js"></a>3.安装node.js</h3><p>[Node.js — 在任何地方运行 JavaScript (nodejs.org)]   官网： (<a href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a>)</p>
-<p>文件大小约几十Mb，下载完毕后，开始安装，勾选所有组件，并勾选 Add to Path 将其添加到系统环境变量。</p>
-<p>安装 Node.js 会包含环境变量以及 npm 的安装，安装后，可以在命令行输入如下命令检测 Node.js 是否安装成功：</p>
-<p>第一个命令，这个命令，在 nodejs 安装成功的情况下会显示 nodejs 的版本号。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-
-<img src="../../images/pictures/node -v.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
-
-<p>第二个命令：这个命令，在 nodejs 安装成功的情况下会显示 npm 的版本号。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<img src="../../images/pictures/npm -v.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
-
-
-
-
-
-<h3 id="4-安装hexo"><a href="#4-安装hexo" class="headerlink" title="4.安装hexo"></a>4.安装hexo</h3><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。Hexo 官网：<a href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="2-2-建立博客"><a href="#2-2-建立博客" class="headerlink" title="2.2 建立博客"></a>2.2 建立博客</h2><h4 id="2-2-1-hexo博客初始化"><a href="#2-2-1-hexo博客初始化" class="headerlink" title="2.2.1 hexo博客初始化"></a>2.2.1 hexo博客初始化</h4><p>下面这个命令会在 “cmd”命令窗口所在的工作目录中， 生成一个名称为 “hexo-blog” 博客文件夹，并自动从下载博客所必须的文件放入其中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br></pre></td></tr></table></figure>
-
-<p>假设我使用这个默认名称 “hexo-blog”，那么这个“hexo-blog”文件夹就是我们博客的默认文件夹了。</p>
-<p>当然上面这行代码等效于：</p>
-<p>你手动建立了一个<code>hexo-blog</code>的文件夹，并且在该文件夹内运行cmd，输入hexo init 命令，自动下载hexo框架文件，进行初始化。</p>
-<h4 id="2-2-2-在hexo博客文件夹中安装npm"><a href="#2-2-2-在hexo博客文件夹中安装npm" class="headerlink" title="2.2.2 在hexo博客文件夹中安装npm"></a>2.2.2 在hexo博客文件夹中安装npm</h4><p>在博客根文件夹（hexo-blog）中，启动cmd命令行窗口。</p>
-<p>运行下面的命令，在hexo文件夹中安装npm。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>至此，本地的博客已经搭建完毕，等确认本地博客没有问题后，就可以上传到GitHub上，这样网友们就能访问你的博客了。</p>
-<p>下面是博客文件夹中各个文件对应的用途。</p>
-<img src="../../images/pictures/博客文件用途.png" alt="git的下载" title="git的下载" style="zoom:50%;" />
-
-<hr>
-<h2 id="2-3-本地化预览-新建博客文章"><a href="#2-3-本地化预览-新建博客文章" class="headerlink" title="2.3 本地化预览 + 新建博客文章"></a>2.3 本地化预览 + 新建博客文章</h2><p>下面4个命令是 hexo 博客框架常用的命令。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p><code>hexo cl</code>全称是<code>hexo clean</code>    清除缓存文件 db.json 和已生成的静态文件 public。网站显示异常时可以执行这条命令试试。</p>
-<p><code>hexo g</code> 全称是<code>hexo generate</code>  作用是把你写的markdown文件转换成html网页文件。</p>
-<p><code>hexo s </code>全称是hexo server&#96;   启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/">http://localhost:4000/</a></p>
-<p><code>hexo d</code> 是 <code>hexo deploy</code> 的缩写。   把本地的博客部署（上传）到GitHub上面去</p>
-<h4 id="2-3-1-本地化预览博客"><a href="#2-3-1-本地化预览博客" class="headerlink" title="2.3.1 本地化预览博客"></a>2.3.1 本地化预览博客</h4><p>由于步骤2.2 建立好了一个本地的博客，因此我们在博客根目录运行cmd，依次运行</p>
-<p>hexo cl</p>
-<img src="../../images/pictures/hexocl.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
-
-<p>hexo g</p>
-<img src="../../images/pictures/hexog.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>hexo s</p>
-<img src="../../images/pictures/hexos.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>复制<code>http://localhost:4000</code> 到浏览器，进行预览。</p>
-<img src="../../images/pictures/博客预览.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
-
-<p>回到cmd窗口，按下 ctrl + c  ，可以终止预览。</p>
-<p>至此，可以确认本地化的博客已经建立完毕了。</p>
-<h4 id="2-3-2-新建博客文章"><a href="#2-3-2-新建博客文章" class="headerlink" title="2.3.2 新建博客文章"></a>2.3.2 新建博客文章</h4><p>使用<code>hexo n 我的周报</code>，注意它们之间有空格。即可新建一个名称为“我的周报.md”的文件，储存在<code>\hexo-blog\source\_posts</code>。</p>
-<p>当然，你也可以手动去<code>\hexo-blog\source\_posts</code>文件夹中新建md文件，效果也是一样滴。</p>
-<p>我们先打开这个文件夹，看到里面只有官方自带的一篇hello-world.md文件。</p>
-<img src="../../images/pictures/文章截图1.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>接下来，我们使用下面的命令，会在这个文件夹中生成一个  搭建博客教程.md   文件</p>
-<p><code>hexo n 搭建博客教程</code></p>
-<img src="../../images/pictures/hexon.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>可以看到确实生成了。</p>
-<img src="../../images/pictures/文章截图2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>手动新建一个md文件，可以来比较一下使用<code>hexo n</code>建立的md文件和手动新建的md文件  区别。</p>
-<img src="../../images/pictures/文章截图3.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-
-
-
-
-
-
-
-
-<h2 id="2-4-博客上传到Github"><a href="#2-4-博客上传到Github" class="headerlink" title="2.4 博客上传到Github"></a>2.4 博客上传到Github</h2><h4 id="1-使用你的github账号新建一个仓库"><a href="#1-使用你的github账号新建一个仓库" class="headerlink" title="1. 使用你的github账号新建一个仓库"></a>1. 使用你的github账号新建一个仓库</h4><p>登录github，点击<code>Your repositories</code>，进入仓库页面。</p>
-<img src="../../images/pictures/搭建仓库1.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-<p>点击<code>New</code>按钮，进入仓库创建页面。</p>
-<img src="../../images/pictures/搭建仓库2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-<p>填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>，然后点击<code>Create repository</code>。</p>
-<p>例如，图片里的用户名<code>yaorongke</code>，则他建立的博客仓库名称必须为<code>yaorongke.github.io</code></p>
-<p>将来，图片中的博客的网址就是：<a href="https://yaorongke.github.io/">https://yaorongke.github.io/</a></p>
-<img src="../../images/pictures/搭建仓库3.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<h4 id="2-设置SSH——公钥和私钥"><a href="#2-设置SSH——公钥和私钥" class="headerlink" title="2. 设置SSH——公钥和私钥"></a>2. 设置SSH——公钥和私钥</h4><p>这一步是让你的电脑有资格与你的GitHub账号仓库建立联系。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
-
-<p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#x72;&#107;&#101;&#115;&#x69;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;">&#101;&#x72;&#107;&#101;&#115;&#x69;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p>
-<p>然后依次输入三次回车即可。</p>
-<img src="../../images/pictures/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>我在第二个回车之后，那里输入了一个Y，是因为我这台电脑之前就生成过，必须覆盖（overwrite）那个旧文件我就输入了Y。</p>
-<p>新手第一次运行的，直接依次按下3次回车即可。</p>
-<p>成功后，接着去把ssh口令输入到GitHub。</p>
-<p>用记事本打开如图所示刚刚生成的<code>id_rsa.pub</code>文件。     <code>12153</code>是我当前电脑的用户名。</p>
-<p>（id_rsa是私钥，不能泄露；id_rsa.pub是公钥，无所谓）</p>
-<img src="../../images/pictures/找到ssh文件.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>复制这个文件内所有文本</p>
-<img src="../../images/pictures/rsatxt.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>打开网址   <a href="https://github.com/settings/ssh/new">https://github.com/settings/ssh/new</a></p>
-<p><code>Title</code> 为标题，任意填即可 。      把刚刚粘贴的密钥复制进去，点击<code>Add SSH key</code></p>
-<img src="../../images/pictures/添加ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>使用下面的命令，验证是否成功建立本地和GitHub的联系。</p>
-<p><code>ssh -T git@github.com</code></p>
-<p>我第一次测试失败了是因为我开了加速器。我关闭之后再试了一次就成功了。</p>
-<img src="../../images/pictures/测试连接github.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-
-
-<h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
-<p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
-<p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#x6b;&#101;&#x73;&#105;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#x65;&#x72;&#x6b;&#101;&#x73;&#105;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
-<p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
-<p>运行结果如下图，不会给任何提示，没事的。</p>
-<img src="../../images/pictures/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<h4 id="4-把本地博客上传到github"><a href="#4-把本地博客上传到github" class="headerlink" title="4. 把本地博客上传到github"></a>4. 把本地博客上传到github</h4><h5 id="4-1-修改配置站点配置文件"><a href="#4-1-修改配置站点配置文件" class="headerlink" title="4.1 修改配置站点配置文件"></a>4.1 修改配置站点配置文件</h5><p><code>hexo</code> 有 2 种 <code>_config.yml</code> 文件，</p>
-<p>一个是根目录下的全局的 <code>_config.yml</code>。               一般称为博客站点配置文件。</p>
-<p>一个是各个主题 <code>theme</code> 文件夹下的 <code>_config.yml</code>。   称为主题配置文件。</p>
-<p>打开根目录下博客站点配置文件 <code>_config.yml</code>，配置有关 <code>deploy</code> 的部分：</p>
-<img src="../../images/pictures/博客站点配置文件的位置.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>打开博客站点配置文件，找到<code>deploy</code>字段</p>
-<img src="../../images/pictures/找到deploy.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>修改成下面这段代码。       </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
-
-<p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#109;</a>:昵称&#x2F;仓库名称</p>
-<p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
-<p>记得照葫芦画瓢进行修改。</p>
-<h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
-<p><code>npm install hexo-deployer-git --save </code></p>
-<img src="../../images/pictures/安装部署工具.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>依次运行下面的代码。</p>
-<p>hexo cl</p>
-<img src="../../images/pictures/hexocl2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>hexo g</p>
-<img src="../../images/pictures/hexog2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>hexo d</p>
-<img src="../../images/pictures/hexod2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-<p>可以看到我的上传过程中出现了  <code>waring:LF will be replaced by CRLF</code></p>
-<p>只需要运行这个命令即可解决   <code>git config --global core.safecrlf false</code></p>
-<p>我运行完这个命令后，又重新依次执行了hexo d （上传命令），现在上传就不会出现  waring 警告了。</p>
-<img src="../../images/pictures/第一次完整上传.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>至此，你已经上传本地的博客到你的GitHub仓库。  </p>
-<hr>
-<h5 id="4-3-访问你的博客"><a href="#4-3-访问你的博客" class="headerlink" title="4.3 访问你的博客"></a>4.3 访问你的博客</h5><p>我（昵称为lancou）的博客的网址为：lancou.github.io</p>
-<p>同理，你的博客网址也应该是        <code>用户名.github.io</code></p>
-<p>结果我高高兴兴的打开我的博客,额。。。。。。。</p>
-<img src="../../images/pictures/第一次上传后显示404.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-<p>下面是官方给的解释。意思是，如果你的网站是第一次发布或者是修改了昵称的话，官方需要花几分钟的时间帮你申请一个证书。</p>
-<img src="../../images/pictures/404解释.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>几分钟之后，我的博客网页就可以正常访问啦！   <a href="https://lancou.github.io/">https://lancou.github.io/</a></p>
-<img src="../../images/pictures/myblog.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-
-
-
-
-<hr>
-<h1 id="三、（可选）使用Github提供的Action自动化部署更新博客"><a href="#三、（可选）使用Github提供的Action自动化部署更新博客" class="headerlink" title="三、（可选）使用Github提供的Action自动化部署更新博客"></a>三、（可选）使用Github提供的Action自动化部署更新博客</h1><p><strong>这里使用博客的GitHub账号，新建一个私有仓库，存储网站的必要文件，当这些博客文件被修改时，GitHub自动同步更新博客</strong></p>
-<h2 id="1-获取github的token"><a href="#1-获取github的token" class="headerlink" title="1.获取github的token"></a>1.获取github的token</h2><p>为了确保交由<code>Github Action</code>来持续部署时，<code>Github Action</code> 具备足够的权限来进行 <code>hexo deploy</code> 操作,需要先获取 <code>Token</code>。</p>
-<p>访问 Github -&gt;头像（右上角）-&gt;  Settings  -&gt;  Developer Settings  -&gt;  Personal access tokens  -&gt;  generate new token</p>
-<img src="../../images/pictures/创建action的token.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>创建的 Token 名称随意，但必须勾选 repo 项 和 workflows 项。</p>
-<img src="../../images/pictures/生成token的配置.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-
-
-<p>token 只会显示这一次，之后将无法查看，所以务必保证你已经记录下了 Token。之后如果忘记了就只能重新生成重新配置了。</p>
-<img src="../../images/pictures/token.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<h2 id="2-创建存放源码的私有仓库"><a href="#2-创建存放源码的私有仓库" class="headerlink" title="2.创建存放源码的私有仓库"></a>2.创建存放源码的私有仓库</h2><p>我们需要创建一个用来存放 <code>Hexo</code> 博客源码的私有仓库</p>
-<img src="../../images/pictures/新建仓库.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
-
-<img src="../../images/pictures/私有仓库成立.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
-
-<p>这里之所以是私有仓库，是因为在接下来的配置中会用到 <code>Token</code>，如果 <code>Token</code> 被盗用，别人可以肆意操作你的 github 仓库内容，为了避免这一风险，才选择的博客源码闭源。</p>
-<img src="../../images/pictures/保存私有仓库的SSH地址.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
-
-
-
-<h2 id="3-配置-Github-Action"><a href="#3-配置-Github-Action" class="headerlink" title="3.配置 Github Action"></a>3.配置 Github Action</h2><ul>
-<li><p>在<code>[博客的文件夹根目录]</code>新建<code>.github</code>文件夹，注意开头是有个小数点<code>.</code>的。（如果这个文件夹已经存在了就跳过这一步）</p>
-</li>
-<li><p>然后在<code>.github</code> 内新建 <code>workflows</code> 文件夹，再在 <code>workflows</code> 文件夹内新建 <code>autodeploy.yml</code>,在<code>autodeploy.yml</code> 里面输入</p>
-</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name: 自动部署</span><br><span class="line"># 当有改动推送到master分支时，启动Action。</span><br><span class="line">on:</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - main</span><br><span class="line">      #2020年10月后github新建仓库默认分支改为main，注意更改。</span><br><span class="line">  release:</span><br><span class="line">    types:</span><br><span class="line">      - published</span><br><span class="line"></span><br><span class="line">jobs:</span><br><span class="line">  deploy:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">      - name: 检查分支</span><br><span class="line">        uses: actions/checkout@v2</span><br><span class="line">        with:</span><br><span class="line">        #这里也要修改分支对应。</span><br><span class="line">          ref: main</span><br><span class="line"></span><br><span class="line">      - name: 安装 Node</span><br><span class="line">        uses: actions/setup-node@v1</span><br><span class="line">        with:</span><br><span class="line">          #这里修改为你的node版本，大版本一致即可,不修改也没啥事。</span><br><span class="line">          node-version: &quot;20.x&quot;</span><br><span class="line"></span><br><span class="line">      - name: 安装 Hexo</span><br><span class="line">        run: |</span><br><span class="line">          export TZ=&#x27;Asia/Shanghai&#x27;</span><br><span class="line">          npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">      - name: 缓存 Hexo</span><br><span class="line">        id: cache-npm</span><br><span class="line">        uses: actions/cache@v3</span><br><span class="line">        env:</span><br><span class="line">          cache-name: cache-node-modules</span><br><span class="line">        with:</span><br><span class="line">          path: node_modules</span><br><span class="line">          key: $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-$&#123;&#123; hashFiles(&#x27;**/package-lock.json&#x27;) &#125;&#125;</span><br><span class="line">          restore-keys: |</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-build-</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-</span><br><span class="line"></span><br><span class="line">      - name: 安装依赖</span><br><span class="line">        if: $&#123;&#123; steps.cache-npm.outputs.cache-hit != &#x27;true&#x27; &#125;&#125;</span><br><span class="line">        run: |</span><br><span class="line">          npm install --save</span><br><span class="line"></span><br><span class="line">      - name: 生成静态文件</span><br><span class="line">        run: |</span><br><span class="line">          hexo clean</span><br><span class="line">          hexo generate</span><br><span class="line">          </span><br><span class="line"></span><br><span class="line">      - name: 部署到Github</span><br><span class="line">        uses: JamesIves/github-pages-deploy-action@v4</span><br><span class="line">        with:</span><br><span class="line">          #刚刚得到的Github Token</span><br><span class="line">          token: ghp_qsdfsdjhdhdfgreytedfbffbsdfaefefsfaf</span><br><span class="line">          #下面这行代码是要替换成你自己的仓库名,注意这里要填写博客网站的仓库名称。</span><br><span class="line">          repository-name: lancou/lancou.github.io</span><br><span class="line">          #注意分支名称</span><br><span class="line">          branch: main</span><br><span class="line">          folder: public</span><br><span class="line">          commit-message: &quot;$&#123;&#123; github.event.head_commit.message &#125;&#125; Updated By Github Actions&quot;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="4-重新设置远程仓库和分支"><a href="#4-重新设置远程仓库和分支" class="headerlink" title="4.重新设置远程仓库和分支"></a>4.重新设置远程仓库和分支</h2><ol>
-<li><p>修改<code>.gitignore</code>,输入以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">.deploy_git*/</span><br><span class="line">.idea</span><br><span class="line">themes/next/.git</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>如果不是 next 主题，记得替换最后一行内容为你自己当前使用的主题。</p>
-<p>（如果使用的是默认的主题，可以不用最后一行，但是默认主题有点丑啊，应该没有人用默认主题吧）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">可能遇到的 bug</span><br><span class="line">因为 next 主题文件夹下的.git 文件夹的存在，那么主题文件夹会被识别子项目。从而无法被上传到源码仓库。若是遇到添加屏蔽项，但是还是无法正常上传主题文件夹的情况。请先将本地源码中的 themes 文件夹移动到别的目录下。然后 commit 一次。接着将 themes 文件夹移动回来，再 commit 一次。</span><br></pre></td></tr></table></figure>
-
-
-
-<ol start="2">
-<li>开始重新设置远程仓库和分支</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote rm origin    # 删除原有仓库链接</span><br><span class="line"></span><br><span class="line">git remote add origin git@github.com:[GithubUsername]/[SourceRepo].git    #[SourceRepo]为新的存放源码的github私有仓库</span><br><span class="line">例如，我的是  git remote add origin git@github.com:lancou/hexosource.git</span><br><span class="line"></span><br><span class="line">git checkout -b main                           # 切换到main分支，</span><br><span class="line"></span><br><span class="line">#2020年10月后github新建仓库默认分支改为main</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;尝试第一次自动部署&quot;</span><br><span class="line">git push origin main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<p>以后只需要使用这三行代码，在博客内容修改后，更新即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;尝试第一次自动部署&quot;</span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
-
-<p>git commit -m “这里的文本用来提示作用，可以随意修改”</p>
-<h2 id="5-异地修改博客"><a href="#5-异地修改博客" class="headerlink" title="5. 异地修改博客"></a>5. 异地修改博客</h2><p>这里提供两种修改方法</p>
-<h3 id="方法一-不常用设备更新博客"><a href="#方法一-不常用设备更新博客" class="headerlink" title="方法一    不常用设备更新博客"></a>方法一    不常用设备更新博客</h3><p>这个远程设备我不常用，例如手机、别人的电脑、网吧等等，我又想更新我的博客该怎么办呢？</p>
-<p>可以直接在网页上登录你的Github账号，在<code>博客私有仓库</code>（也就是我们教程中创建的用于保存博客源码的那个）中，</p>
-<p>打开  source&#x2F;_post，我们的博客源文件就在这里面。</p>
-<img src="../../images/pictures/异地修改.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<img src="../../images/pictures/异地修改2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>切记：在网页中手动更新后，你的本地文件还是旧的，相当于本地版本与远程仓库版本不一样了，</p>
-<p>在本地要使用一次  <code>git pull origin main</code>，把远程更改的文件同步到本地之后，本地才能继续把本地新修改的推送到远程。</p>
-<p>参考文档：<a href="https://blog.csdn.net/yingmohuanzhou/article/details/138455235">https://blog.csdn.net/yingmohuanzhou/article/details/138455235</a></p>
-<p><code>下班最后一件事push代码，上班第一件事pull代码</code></p>
-<p>假设你在朋友的电脑上登录你的GitHub账号，使用这种方法修改完成之后，回到家，你想使用自己的电脑再更新一份博客文件进行上传时，你依然遵循依次使用这三行代码进行更新，就会报错failed to push some refs to</p>
-<img src="../../images/pictures/远程更新本地报错.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>原因： 	</p>
-<p>当你尝试向你的 Git 仓库推送时遇到的错误消息表明，远程仓库中有你本地没有的更改。这种冲突阻止了 Git 推送你的更改，因为这可能会覆盖其他人所做的更改。</p>
-<p>解决办法</p>
-<ul>
-<li>在你推送你的更改之前，你需要将你的本地仓库与远程仓库同步。这可以通过从远程拉取更改来完成</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
-
-<p>这个命令从名为 origin 的远程的 main 分支获取更新并将它们合并到你当前的分支。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
-
-<p>至此，问题完美解决，实现了本地和远程同步啦。</p>
-<p><strong>总结</strong></p>
-<p>只要本地仓库（本地的文件夹）内容和远程仓库内容不一致的时候，即本地的内容比仓库旧，</p>
-<p>需要先进行 <code>git pull origin main</code>就能实现本地和远程仓库同步。</p>
-<p>而修改了本地的博客文件后，就会实现本地的内容比远程仓库版本更新一些，push操作就不会报错。</p>
-<p>（当本地的文件比博客文件旧，没有先进行pull，修改了本地文件之后，再进行pull时，git会自动保留最新的文件版本，本地新增的文件不会丢失，所以报错的时候直接<code>git pull origin main</code>即可实现同步，再进行push不会失败）</p>
-<h3 id="方法二-常用设备更新博客"><a href="#方法二-常用设备更新博客" class="headerlink" title="方法二       常用设备更新博客"></a>方法二       常用设备更新博客</h3><p>你想在常用的两台电脑上更新你的博客，例如家里一台电脑、公司一台电脑。</p>
-<p>需要让两台电脑都连上储存着博客源码的<code>私有仓库</code>。</p>
-<p>这里先假设你是在家里的电脑上搭建的博客，但是想去公司更新博客，因此我们这里来讲一下如何使用公司的电脑进行博客的更新。</p>
-<p>由于公司的电脑的环境没有进行配置，因此这里需要进行环境配置，参考本教程的</p>
-<p>【1.1 安装Git】【2.4.2 设置SSH】、【2.4.3 在本地绑定与github的用户名和邮箱】</p>
-<p>然后在公司电脑上建立一个文件夹用于储存博客文件，使用下面的代码将github仓库的博客原文件拉取到这个文件夹内。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:lancou/hexosource.github.io.</span><br></pre></td></tr></table></figure>
-
-<p>由于这个是私有仓库，新设备第一次拉取时会需要验证账号密码。</p>
-<p>后面再想同步公司电脑（旧）与云端仓库（新）时，也可以使用<code>git pull origin main</code>来实现了。</p>
-<p>当在公司修改了博客源文件之后，想把公司电脑上的本地仓库（新）同步到云端仓库（旧）</p>
-<p>依次执行以下代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
-
-<p>至此，你应该实现了在公司的电脑更新了你的博客。</p>
-<hr>
-<p>注意，在公司的电脑更新了博客之后，公司电脑的版本&#x3D;云端仓库的版本。</p>
-<p>但此时云端仓库的版本（新），  家里电脑的仓库版本（旧），回到家里面又想更新博客时</p>
-<p>要先拉取云端仓库文件到本地  ，运行命令 <code>git pull origin main</code>   </p>
-<p>把你家里的电脑上的仓库（旧）更新成云端的版本（新），实现   家里电脑的仓库版本&#x3D;云端仓库的版本</p>
-<p>当此时在家里电脑上修改了博客源文件之后，想把家里电脑上的本地仓库（新）同步到云端仓库（旧）</p>
-<p>依次执行以下代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
-
-<p>至此，你应该实现了在家里的电脑更新了你的博客。</p>
-<hr>
-<p>如此往复。。。。。。。。。</p>
-<p><code>设备上改博客，最后一件事push代码； 换设备更新博客，第一件事pull代码</code></p>
-<h1 id="四、可能遇到的问题"><a href="#四、可能遇到的问题" class="headerlink" title="四、可能遇到的问题"></a>四、可能遇到的问题</h1><h2 id="1-themes对应主题下的-git文件夹被上传导致的错误"><a href="#1-themes对应主题下的-git文件夹被上传导致的错误" class="headerlink" title="1. themes对应主题下的.git文件夹被上传导致的错误"></a>1. themes对应主题下的.git文件夹被上传导致的错误</h2><p>因为 next 主题文件夹下的.git 文件夹的存在，那么主题文件夹会被识别子项目。从而无法被上传到源码仓库。若是遇到添加屏蔽项，但是还是无法正常上传主题文件夹的情况。</p>
-<p>1.剪切 themes&#x2F;next&#x2F;.git文件夹到其它处</p>
-<p>2.从暂存区删除该文件夹 </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git rm --cache themes/next</span><br></pre></td></tr></table></figure>
-
-<p>3.使用git status查看状态</p>
-<img src=" https://img2018.cnblogs.com/blog/812260/201907/812260-20190710151913411-1393275619.png "  style="zoom:50%;" />
-
-<p>4.提交修改</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
-
-
-
-<p>至此问题就解决了。</p>
+    <title>word如何设置打印部分文字不显示</title>
+    <url>//blog/uncategorized/word%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E6%89%93%E5%8D%B0%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E4%B8%8D%E6%98%BE%E7%A4%BA.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>分类</p>
+<p>博客默认放入 blog文件夹</p>
+<table>
+<thead>
+<tr>
+<th>笔记 note</th>
+<th>高中化学  chemistry</th>
+<th>资源分享 source</th>
+<th>生活记录 liferecord</th>
+<th>时事分享 epicwebevent</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>思维 mind</td>
+<td>试卷 paper</td>
+<td>视频 video</td>
+<td>随笔 essay</td>
+<td></td>
+</tr>
+<tr>
+<td>编程 code</td>
+<td>练习题 exercise</td>
+<td>音乐 music</td>
+<td>未来计划 future-plan</td>
+<td></td>
+</tr>
+<tr>
+<td>电脑疑难杂症<br />solution<br /></td>
+<td></td>
+<td>图片 picture</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>软件使用教程 software-use</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>文件头还有更多参数（见下表），需要请自行复制粘贴进文件头。</p>
+<p>点击下面表格内部，1秒后，右上角会出现删除此表格的按钮。</p>
+<table>
+<thead>
+<tr>
+<th>highlight_shrink: true  配置代码框是否不展开(true&#x2F;false&#x2F;none）    <br />aside: ture   显示侧边栏 (默认就是true，你不想显示侧边栏再设置false)<br />toc: true<br/>toc_number: 100<br/>toc_style_simple: 【可选】显示 toc 简洁模式<br />abcjs: 	加载 abcjs (默认 false )<br />mathjax:<br/>katex:<br/>comments:<br />aplayer:<br />copyright:                                     显示文章版权模块<br/>copyright_author:                      文章版权模块的文章作者<br/>copyright_author_href:            文章版权模块的文章作者链接<br/>copyright_url:                            【可选】文章版权模块的文章连结链接<br/>copyright_info:                          【可选】文章版权模块的版权声明文字<br /></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
-        <category>note</category>
-        <category>hexo</category>
+        <category>未分类</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
+        <tag>无标签</tag>
       </tags>
   </entry>
   <entry>
@@ -4252,6 +4183,74 @@
       </categories>
       <tags>
         <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2024高考化学易错题整理</title>
+    <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
+<p><strong>避免火焰</strong>：在碳化过程中，应避免海带直接接触火焰，以免引起燃烧。通常使用间接加热，如在火焰上方一定距离加热。</p>
+<p><strong>观察变化</strong>：在加热过程中，要密切观察海带的颜色和状态变化，直到它完全变黑并碳化。</p>
+<p><strong>打开坩埚盖</strong>：通过灼烧去除水分并碳化海带，通常不需要盖上盖子。这样做可以让水分和挥发性物质（如盐分）容易蒸发，同时便于观察海带的碳化过程。</p>
+<h3 id="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。"><a href="#2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。" class="headerlink" title="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。"></a>2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。</h3><p>反应的发生可以由多种因素决定，包括：</p>
+<ul>
+<li><p><strong>反应朝着离子浓度减小的方向进行</strong>，例如生成沉淀、气体、弱电解质（例如水）。</p>
+</li>
+<li><p><strong>化学平衡的移动</strong>：反应是否进行还取决于反应物和生成物的浓度，以及温度等条件，这些都会影响化学平衡的位置。</p>
+</li>
+<li><p><strong>热力学和动力学因素</strong>：反应的热力学可行性（如自由能变化）和反应的动力学（反应速率）也是决定反应是否进行的重要因素。</p>
+</li>
+</ul>
+<p>也可以这三点就是反应进行的原理，是具有普适性的。</p>
+<p>氯化镁溶液中滴入氢氧化钠溶液，会发生复分解反应，生成氢氧化镁沉淀，与氢氧化钠、氢氧化镁的碱性强弱无关，不能由此得出氢氧化钠的碱性比氢氧化镁强。</p>
+<p>学习过沉淀溶解平衡的知识，让我们知道了沉淀可以由Ksp大的向Ksp小的进行转化。</p>
+<p>也就是说氯化镁与氢氧化钠反应涉及到真正反应动力可以用下面的原理来解释，</p>
+<p>[1]复分解原理；反应总是朝着溶液中离子浓度减小的方向进行，因为这样能降低体系的自由度，▲G&lt;0。</p>
+<p>[2]沉淀溶解平衡的转化；氢氧化镁为难溶物，Ksp较小。</p>
+<p><strong>如何去理解”强酸制弱酸、强碱制弱碱“？</strong></p>
+<p><strong>当稀溶液中的酸碱反应体系仅存在酸碱平衡时，“强酸制弱酸”的规律是成立的，不存在其他平衡例如氧化还原平衡、配位平衡、沉淀溶解平衡、气液平衡等。</strong></p>
+<p>即只有体系中只存在酸性强弱的差距，不涉及到其他平衡的干扰才能认为是强酸制弱酸，这就导致”强酸制弱酸“这个所谓的”理论“使用的条件非常严格，不能随便套用。</p>
+<p>最后，可以尝试去思考一下硫化氢与硫酸铜反应的例子。</p>
+<hr>
+<h2 id="2024浙江卷"><a href="#2024浙江卷" class="headerlink" title="2024浙江卷"></a>2024浙江卷</h2><h3 id="1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3"><a href="#1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3" class="headerlink" title="1、铁离子与氰酸根不能共存，会生成Fe(CN)6  3-"></a>1、铁离子与氰酸根不能共存，会生成Fe(CN)<sub>6</sub> <sup> 3-</sup></h3><h3 id="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"><a href="#2、碘单质和碱性物质反应，产物是碘离子和碘酸根。" class="headerlink" title="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"></a>2、碘单质和碱性物质反应，产物是碘离子和碘酸根。</h3><p>例如，碘单质（I₂）与氢氧化钠（NaOH）的反应通常生成碘化钠（NaI）、碘酸钠（NaIO₃）和水（H₂O）</p>
+<p>与氯气和氢氧化钠的反应不同，氯气在不同条件下可以生成不同的产物（如NaCl、NaClO、NaClO₃），这是因为次氯酸盐（ClO⁻）和氯酸盐（ClO₃⁻）相对稳定，而次碘酸盐（IO⁻）则非常不稳定，容易进一步氧化为碘酸钠（NaIO₃）。因此，碘单质与氢氧化钠的反应不会产生像氯气那样的多种产物，而是倾向于生成碘化钠和碘酸钠。这种差异主要是由于不同卤素的化学性质和它们形成的化合物的稳定性所决定的。</p>
+<h3 id="3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？"><a href="#3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？" class="headerlink" title="3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？"></a>3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？</h3><p>答案是：不能。</p>
+<p>在晶体硅中，使用碳原子代替硅原子通常不会直接增强导电性。硅是一种半导体材料，其导电性可以通过掺杂来控制。在半导体材料中，掺杂是指在晶体中故意引入少量的杂质原子，这些杂质原子可以是施主（提供额外电子）或受主（接受电子），从而改变材料的电子结构和导电性。</p>
+<p>在硅中，通常通过掺入如硼（B）这样的受主杂质来形成p型半导体，或者通过掺入如磷（P）这样的施主杂质来形成n型半导体。这些掺杂原子会改变硅的电子结构，从而增强其导电性。例如，掺入磷的硅会因为额外的电子而增加导电性，因为这些电子可以参与导电过程。</p>
+<p>然而，碳原子与硅原子在晶体硅中的置换并不会直接导致导电性的增强。碳和硅都是第IV族元素，它们在周期表中的化学性质相似，但碳的原子半径小于硅，这可能导致晶体结构的畸变。此外，碳的掺杂不一定能像磷或硼那样有效地提供额外的电子或空穴来增加导电性。实际上，碳在硅中的掺杂可能会引入结构缺陷，影响硅的半导体性质。</p>
+<p>在某些情况下，如在锂离子电池的硅基负极材料中，通过引入碳形成硅&#x2F;碳复合材料，可以提高材料的结构稳定性和导电性。这是因为碳材料可以提供额外的电子传输路径，并且有助于缓冲硅在充放电过程中的体积膨胀。但这种增强是通过复合材料的结构设计实现的，而不是简单地通过碳原子替代硅原子来实现的。</p>
+<p>总的来说，晶体硅中使用碳原子代替硅原子并不是一种有效的增强导电性的方法。相反，通过特定的掺杂技术或者设计硅&#x2F;碳复合材料结构，可以更有效地改善硅的导电性能。</p>
+<h3 id="4、关于亚硫酸钡沉淀"><a href="#4、关于亚硫酸钡沉淀" class="headerlink" title="4、关于亚硫酸钡沉淀"></a>4、关于亚硫酸钡沉淀</h3><ul>
+<li><p><strong>将二氧化硫通入氯化钡溶液，一般看不到白色沉淀</strong>。原因是产物氯化氢与亚硫酸钡不能共存，反应无法进行。</p>
+<p>除非此时有氧化性物质在溶液体系中，例如氧气、氯气、可以将亚硫酸根氧化成硫酸根而沉淀。</p>
+<p>当然，如果溶液中有碱性物质，能够除去反应生成的氯化氢，那么也能够看到白色沉淀。</p>
+</li>
+<li><p>将亚硫酸溶液加入到氯化钡溶液，理论上可以生成亚硫酸钡（BaSO₃）沉淀。然而，亚硫酸钡在水中的溶解度虽然很低，但它仍然可以溶解在盐酸（HCl）中。因此，即使在实验中观察到了白色沉淀，这些沉淀也可能因为反应体系中存在的盐酸而被溶解，导致最终看不到沉淀。在实际操作中，如果实验系统中含有氧气，二氧化硫（SO₂）可能会被氧化成硫酸（H₂SO₄），进而与氯化钡反应生成硫酸钡（BaSO₄）沉淀，这是一种不溶于水和酸的白色沉淀。</p>
+</li>
+</ul>
+<p>​	因此，这个实验中是否能看到沉淀，取决于实验条件，如反应体系中是否存在氧气，以及盐酸的浓度等因素。在无氧条件下，亚硫酸与氯化钡混合可能会看到白色沉淀接着又会溶解；但在有氧条件下，由于亚硫酸被氧化，可能看到较为稳定的白色沉淀。</p>
+<h3 id="5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2-。试问："><a href="#5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2-。试问：" class="headerlink" title="5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2+ 。试问："></a>5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO<sub>2</sub><sup>+</sup> 。试问：</h3><ul>
+<li>比较氧化性强弱：NO<sub>2</sub><sup>+</sup>         HNO<sub>3</sub></li>
+</ul>
+<p>NO<sub>2</sub><sup>+</sup>的氧化性大于硝酸。可以将NO<sub>2</sub><sup>+</sup>看作是硝酸脱去了一个氢氧根所得到的产物，硝酸脱去氢氧根这个阴离子后，得电子能力更强了。</p>
+<p>这种结论有点类似：“氨气的还原性强于铵根”、“铁离子的氧化性强于亚铁离子”。</p>
+<ul>
+<li>写出A中阴离子的结构式</li>
+</ul>
+<p>A中阴离子为HS<sub>2</sub> O<sub>7</sub>  <sup>—</sup>，其结构式为</p>
+<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8htt3se11poj303x01la9u.jpg "  style="zoom:90%;" />
+
+
+
+<h3 id="6、钠和二氧化碳加热的反应方程式"><a href="#6、钠和二氧化碳加热的反应方程式" class="headerlink" title="6、钠和二氧化碳加热的反应方程式"></a>6、钠和二氧化碳加热的反应方程式</h3><p>①二氧化碳少量，产物为氧化钠 + 一氧化碳</p>
+<p>②二氧化碳过量，产物为碳酸钠  + 一氧化碳</p>
+]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>易错题</category>
+      </categories>
+      <tags>
+        <tag>化学真题</tag>
       </tags>
   </entry>
   <entry>
