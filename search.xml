@@ -1,123 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>观影/追番记录</title>
-    <url>//blog/liferecord/essay/zhuifan.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
-<thead>
-<tr>
-<th>名称</th>
-<th align="left">日期  +  进度</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仙逆⭐⭐⭐⭐⭐</td>
-<td align="left">2024年9月18日   看完第56集</td>
-<td>王林感悟意境，准备化神。</td>
-</tr>
-<tr>
-<td>凡人修仙传⭐⭐⭐⭐⭐</td>
-<td align="left">2024年9月22日   看完第120集</td>
-<td>韩立获得星宫外门执事认可，进入天星城。逆星盟攻打星宫在即。</td>
-</tr>
-<tr>
-<td>遮天<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年8月28日  看完第75集</td>
-<td>叶凡去打离火教。</td>
-</tr>
-<tr>
-<td>完美世界<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年8月21日  看完第177集</td>
-<td>石昊ko仙殿继承人。</td>
-</tr>
-<tr>
-<td>永生第四季 海噬仙灵<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年10月4日   看完第11集（第51集）</td>
-<td>到达海市</td>
-</tr>
-<tr>
-<td>剑来   <br />⭐⭐⭐<br /></td>
-<td align="left">2024年9月20日   看完第8集</td>
-<td>陈平安的小镇要崩溃了。</td>
-</tr>
-<tr>
-<td>师兄啊师兄⭐⭐⭐⭐</td>
-<td align="left">2024年10月4日 看完第57集</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-</tbody></table>
-<hr>
-]]></content>
-      <categories>
-        <category>生活记录</category>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>追番</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我的hexo博客设置以及next主题个人喜好</title>
     <url>//blog/note/hexo/blog-next-diy.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
@@ -521,7 +404,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#x72;&#x6b;&#101;&#x73;&#105;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;">&#x65;&#x72;&#x6b;&#101;&#x73;&#105;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#x72;&#107;&#101;&#x73;&#105;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#x6d;">&#x65;&#x72;&#107;&#101;&#x73;&#105;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#x6d;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -553,7 +436,7 @@
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#107;&#101;&#115;&#105;&#x40;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;">&#x65;&#x72;&#107;&#101;&#115;&#105;&#x40;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#114;&#107;&#x65;&#115;&#x69;&#64;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#101;&#114;&#107;&#x65;&#115;&#x69;&#64;&#x71;&#113;&#46;&#x63;&#111;&#109;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -573,9 +456,9 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;">&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
@@ -841,6 +724,123 @@
       </tags>
   </entry>
   <entry>
+    <title>观影/追番记录</title>
+    <url>//blog/liferecord/essay/zhuifan.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
+<thead>
+<tr>
+<th>名称</th>
+<th align="left">日期  +  进度</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仙逆⭐⭐⭐⭐⭐</td>
+<td align="left">2024年9月18日   看完第56集</td>
+<td>王林感悟意境，准备化神。</td>
+</tr>
+<tr>
+<td>凡人修仙传⭐⭐⭐⭐⭐</td>
+<td align="left">2024年9月22日   看完第120集</td>
+<td>韩立获得星宫外门执事认可，进入天星城。逆星盟攻打星宫在即。</td>
+</tr>
+<tr>
+<td>遮天<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年8月28日  看完第75集</td>
+<td>叶凡去打离火教。</td>
+</tr>
+<tr>
+<td>完美世界<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年8月21日  看完第177集</td>
+<td>石昊ko仙殿继承人。</td>
+</tr>
+<tr>
+<td>永生第四季 海噬仙灵<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年10月4日   看完第11集（第51集）</td>
+<td>到达海市</td>
+</tr>
+<tr>
+<td>剑来   <br />⭐⭐⭐<br /></td>
+<td align="left">2024年9月20日   看完第8集</td>
+<td>陈平安的小镇要崩溃了。</td>
+</tr>
+<tr>
+<td>师兄啊师兄⭐⭐⭐⭐</td>
+<td align="left">2024年10月4日 看完第57集</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+]]></content>
+      <categories>
+        <category>生活记录</category>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>追番</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>桌面图标间距变大，如何修改回去？解决办法</title>
     <url>//blog/solution/deskico.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>修改之前<br><img src=" https://s21.ax1x.com/2024/08/25/pAF7dv6.png "  style="zoom:30%;" /></p>
@@ -881,42 +881,6 @@
       </categories>
       <tags>
         <tag>桌面图标</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
-    <url>//blog/epicwebevent/szjsvsjc.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
-<p>最终结果：交警败诉。</p>
-<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
-<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
-<p>下面是使用html标签插入的视频</p>
-<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
-]]></content>
-      <categories>
-        <category>时事分享</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>敢问路在何方（伴奏视频分享）</title>
-    <url>//blog/liferecord/Dare-to-ask-where-the-road-is.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://www.bilibili.com/video/BV1oJ411M7fL">原视频</a></p>
-<p>首先感谢原作者制作了精彩的作品，但是添加了一些片头噪音影响体验。</p>
-<p>下面是剪辑去掉了片头，并且把<strong>无损背景音乐</strong>提取出来。</p>
-<p>视频中的音乐软件叫做《flstudio》，以后有时间的话真想去学一学。</p>
-<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVk5SWIwQ2RXX05CcERCa0NNemdYV0lCc1UtdUo1QTBfUk1kbC1ZaTExdDNIdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9U3VPdVcz.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
-<p><a href="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVhLWDhLMm4yaGxOaV9JaXZpRE1zVkFCOXIxNUc5aFdiQm50VG9oNE96YXVyZz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cXRjaE0x.flac">点我下载无损背景音乐</a></p>
-]]></content>
-      <categories>
-        <category>生活记录</category>
-        <category>未来计划</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-        <tag>音乐</tag>
       </tags>
   </entry>
   <entry>
@@ -3597,6 +3561,140 @@
 <li>输入 <code>2</code>，第二个 <code>console.log</code> 弹出。</li>
 <li>但是输入 <code>3</code>，因为 <code>prompt</code> 的结果是字符串类型的 <code>&quot;3&quot;</code>，不严格相等 <code>===</code> 于数字类型的 <code>3</code>，所以 <code>case 3</code> 不会执行！因此 <code>case 3</code> 部分是一段无效代码。所以会执行 <code>default</code> 分支。</li>
 </ol>
+<hr>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>我们经常需要在脚本的许多地方执行很相似的操作。</p>
+<p>例如，当访问者登录、注销或者在其他地方时，我们需要显示一条好看的信息。</p>
+<p>函数是程序的主要“构建模块”。函数使该段代码可以被调用很多次，而不需要写重复的代码。</p>
+<p>我们已经看到了内建函数的示例，如 <code>alert(message)</code>、<code>prompt(message, default)</code> 和 <code>confirm(question)</code>。但我们也可以创建自己的函数。</p>
+<h2 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h2><p>使用 <strong>函数声明</strong> 创建函数。</p>
+<p>看起来就像这样：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;Hello everyone!&#x27;</span> );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>function</code> 关键字首先出现，然后是 函数名，然后是括号之间的 参数 列表（用逗号分隔，在上述示例中为空，我们将在接下来的示例中看到），最后是花括号之间的代码（即“函数体”）。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">name</span>(<span class="params">parameter1, parameter2, ... parameterN</span>) &#123;</span><br><span class="line">  ...body...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们的新函数可以通过名称调用：<code>showMessage()</code>。</p>
+<p>例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;Hello everyone!&#x27;</span> );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>();</span><br><span class="line"><span class="title function_">showMessage</span>();</span><br></pre></td></tr></table></figure>
+<p>调用 <code>showMessage()</code> 执行函数的代码。这里我们会看到显示两次消息。</p>
+<p>这个例子清楚地演示了函数的主要目的之一：<strong>避免代码重复</strong>。</p>
+<p>如果我们需要更改消息或其显示方式，只需在一个地方修改代码：输出它的函数。</p>
+<h2 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h2><p>在函数中声明的变量只在该函数内部可见。</p>
+<p>例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> message = <span class="string">&quot;Hello, I&#x27;m JavaScript!&quot;</span>; <span class="comment">// 局部变量</span></span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( message );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(); <span class="comment">// Hello, I&#x27;m JavaScript!</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( message ); <span class="comment">// &lt;-- 错误！变量是函数的局部变量</span></span><br></pre></td></tr></table></figure>
+<h2 id="外部变量"><a href="#外部变量" class="headerlink" title="外部变量"></a>外部变量</h2><p>函数也可以访问外部变量，例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> userName = <span class="string">&#x27;John&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> message = <span class="string">&#x27;Hello, &#x27;</span> + userName;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(message);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(); <span class="comment">// Hello, John</span></span><br></pre></td></tr></table></figure>
+<p>函数对外部变量拥有全部的访问权限。函数也可以修改外部变量。</p>
+<p>例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> userName = <span class="string">&#x27;John&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  userName = <span class="string">&quot;Bob&quot;</span>; <span class="comment">// (1) 改变外部变量</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> message = <span class="string">&#x27;Hello, &#x27;</span> + userName;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(message);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( userName ); <span class="comment">// John 在函数调用之前</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>();</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( userName ); <span class="comment">// Bob，值被函数修改了</span></span><br></pre></td></tr></table></figure>
+<p>只有在没有局部变量的情况下才会使用外部变量。</p>
+<p>如果在函数内部声明了同名变量，那么函数会 遮蔽 外部变量。例如，在下面的代码中，函数使用局部的 userName，而外部变量被忽略：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> userName = <span class="string">&#x27;John&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> userName = <span class="string">&quot;Bob&quot;</span>; <span class="comment">// 声明一个局部变量</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> message = <span class="string">&#x27;Hello, &#x27;</span> + userName; <span class="comment">// Bob</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(message);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数会创建并使用它自己的 userName</span></span><br><span class="line"><span class="title function_">showMessage</span>();</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( userName ); <span class="comment">// John，未被更改，函数没有访问外部变量。</span></span><br></pre></td></tr></table></figure>
+<h2 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h2><p>任何函数之外声明的变量，例如上述代码中的外部变量 <code>userName</code>，都被称为 <strong>全局</strong> 变量。</p>
+<p>全局变量在任意函数中都是可见的（除非被局部变量遮蔽）。</p>
+<p><em>减少全局变量</em>的使用是一种很好的做法。现代的代码有很少甚至没有全局变量。大多数变量存在于它们的函数中。但是有时候，全局变量能够用于存储项目级别的数据。</p>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p>我们可以通过参数将任意数据传递给函数。</p>
+<p>在如下示例中，函数有两个参数：from 和 text。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text</span>) &#123; <span class="comment">// 参数：from 和 text</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">from</span> + <span class="string">&#x27;: &#x27;</span> + text);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(<span class="string">&#x27;阿祖&#x27;</span>, <span class="string">&#x27;你好!&#x27;</span>); <span class="comment">// 阿祖: 你好! (*)</span></span><br><span class="line"><span class="title function_">showMessage</span>(<span class="string">&#x27;阿祖&#x27;</span>, <span class="string">&quot;吃饭了没?&quot;</span>); <span class="comment">// 阿祖: 吃饭了没? (**)</span></span><br></pre></td></tr></table></figure>
+<p>当函数在 (*) 和 (**) 行中被调用时，给定值被复制到了局部变量 <code>from</code> 和 <code>text</code>。然后函数使用它们进行计算。</p>
+<p>这里还有一个例子：我们有一个变量 <code>from</code>，并将它传递给函数。请注意：函数会修改 <code>from</code>，但在函数外部看不到更改，因为函数修改的是复制的变量值副本：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text</span>) &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">from</span> = <span class="string">&#x27;*&#x27;</span> + <span class="keyword">from</span> + <span class="string">&#x27;*&#x27;</span>; <span class="comment">// 让 &quot;from&quot; 看起来更优雅</span></span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="keyword">from</span> + <span class="string">&#x27;: &#x27;</span> + text );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="keyword">from</span> = <span class="string">&quot;阿祖&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(<span class="keyword">from</span>, <span class="string">&quot;你好&quot;</span>); <span class="comment">// *阿祖*: 你好</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// &quot;from&quot; 值相同，函数修改了一个局部的副本。</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="keyword">from</span> ); <span class="comment">// 阿祖</span></span><br></pre></td></tr></table></figure>
+<p>当一个值被作为函数参数 <code>（parameter）</code> 传递时，它也被称为 参数 <code>（argument）</code>。</p>
+<p>换一种方式，我们把这些术语搞清楚：</p>
+<p>函数参数（parameter）是函数声明中括号内列出的变量（它是函数声明时的术语）。<br>参数（argument）是调用函数时传递给函数的值（它是函数调用时的术语）。<br>我们声明函数时列出它们的函数参数<code>（parameters）</code>，然后调用它们传递参数<code>（arguments）</code>。</p>
+<p>在上面的例子中，我们可以说：“函数 <code>showMessage</code> 被声明，并且带有两个参数<code>（parameters）</code>，随后它被调用，两个参数<code>（arguments）</code>分别为<code>from</code> 和 “Hello””。</p>
+<h2 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h2><p>如果一个函数被调用，但有参数<code>（argument）</code>未被提供，那么相应的值就会变成 <code>undefined</code>。</p>
+<p>例如，之前提到的函数 <code>showMessage(from, text)</code> 可以只使用一个参数<code>（argument）</code>调用：</p>
+<p><code>showMessage(&quot;Ann&quot;);</code><br>那不是错误，这样调用将输出 “<em>Ann</em>: undefined”。因为参数 <code>text</code> 的值未被传递，所以变成了 <code>undefined</code>。</p>
+<p>我们可以使用 <code>=</code> 为函数声明中的参数指定所谓的“默认”（如果对应参数的值未被传递则使用）值：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text = <span class="string">&quot;这里是默认的第二项值&quot;</span></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="keyword">from</span> + <span class="string">&quot;: &quot;</span> + text );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(<span class="string">&quot;阿祖&quot;</span>); <span class="comment">// 阿祖: 这里是默认的第二项值</span></span><br></pre></td></tr></table></figure>
+<p>现在因为<code> text</code> 参数未被传递，它将会得到默认值 “这里是默认的第二项值”。</p>
+<p>这里 “这里是默认的第二项值” 是一个字符串，但它可以是更复杂的表达式，并且只会在缺少参数时才会被计算和分配。所以，这也是可能的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text = anotherFunction()</span>) &#123;</span><br><span class="line">  <span class="comment">// anotherFunction() 仅在没有给定 text 时执行</span></span><br><span class="line">  <span class="comment">// 其运行结果将成为 text 的值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="默认参数的计算"><a href="#默认参数的计算" class="headerlink" title="默认参数的计算"></a>默认参数的计算</h2><p>在 JavaScript 中，每次函数在没带个别参数的情况下被调用，默认参数会被计算出来。</p>
+<p>在上面的例子中，如果传递了参数 text，那么 anotherFunction() 就不会被调用。</p>
+<p>如果没传递参数 text，那么 anotherFunction() 就会被调用。</p>
+<p>在 JavaScript 老代码中的默认参数<br>几年前，JavaScript 不支持默认参数的语法。所以人们使用其他方式来设置默认参数。</p>
+<p>如今，我们会在旧代码中看到它们。</p>
+<p>例如，显式地检查 undefined：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (text === <span class="literal">undefined</span>) &#123;</span><br><span class="line">    text = <span class="string">&#x27;未给第二项默认值&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="keyword">from</span> + <span class="string">&quot;: &quot;</span> + text );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>……或者使用 || 运算符：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text</span>) &#123;</span><br><span class="line">  <span class="comment">// 如果 text 的值为假值，则分配默认值</span></span><br><span class="line">  <span class="comment">// 这样赋值 text == &quot;&quot; 与 text 无值相同</span></span><br><span class="line">  text = text || <span class="string">&#x27;未给第二项默认值&#x27;</span>;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>后备的默认参数<br>有些时候，将参数默认值的设置放在函数执行（相较更后期）而不是函数声明时，也行得通。</p>
+<p>我们可以通过将参数与 undefined 进行比较，来检查该参数是否在函数执行期间被传递进来：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params">text</span>) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (text === <span class="literal">undefined</span>) &#123; <span class="comment">// 如果参数未被传递进来</span></span><br><span class="line">    text = <span class="string">&#x27;是个空值&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(text);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(); <span class="comment">// 是个空值</span></span><br></pre></td></tr></table></figure>
+<p>……或者我们可以使用 || 运算符：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params">text</span>) &#123;</span><br><span class="line">  <span class="comment">// 如果 text 为 undefined 或者为假值，那么将其赋值为 &#x27;empty&#x27;</span></span><br><span class="line">  text = text || <span class="string">&#x27;empty&#x27;</span>;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现代 JavaScript 引擎支持 空值合并运算符 ??，它在大多数假值（例如 0）应该被视为“正常值”时更具优势：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showCount</span>(<span class="params">count</span>) &#123;</span><br><span class="line">  <span class="comment">// 如果 count 为 undefined 或 null，则提示 &quot;unknown&quot;</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(count ?? <span class="string">&quot;unknown&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showCount</span>(<span class="number">0</span>); <span class="comment">// 0</span></span><br><span class="line"><span class="title function_">showCount</span>(<span class="literal">null</span>); <span class="comment">// unknown</span></span><br><span class="line"><span class="title function_">showCount</span>(); <span class="comment">// unknown</span></span><br></pre></td></tr></table></figure>
+<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><p>函数可以将一个值返回到调用代码中作为结果。</p>
+<p>最简单的例子是将两个值相加的函数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">sum</span>(<span class="params">a, b</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result = <span class="title function_">sum</span>(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( result ); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+<p>指令 <code>return</code> 可以在函数的任意位置。当执行到达时，函数停止，并将值返回给调用代码（分配给上述代码中的 <code>result</code>）。</p>
+<p>在一个函数中可能会出现很多次 <code>return</code>。例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">checkAge</span>(<span class="params">age</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (age &gt;= <span class="number">18</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">confirm</span>(<span class="string">&#x27;Got a permission from the parents?&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> age = <span class="title function_">prompt</span>(<span class="string">&#x27;How old are you?&#x27;</span>, <span class="number">18</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ( <span class="title function_">checkAge</span>(age) ) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;Access granted&#x27;</span> );</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;Access denied&#x27;</span> );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>只使用 <code>return</code> 但没有返回值也是可行的。但这会导致函数立即退出。</p>
+<p>例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMovie</span>(<span class="params">age</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> ( !<span class="title function_">checkAge</span>(age) ) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Showing you the movie&quot;</span> ); <span class="comment">// (*)</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在上述代码中，如果 <code>checkAge(age)</code> 返回<code> false</code>，那么 <code>showMovie</code> 将不会运行到 <code>console.log</code>。</p>
+<p>空值的 <code>return</code> 或没有 <code>return</code> 的函数返回值为 <code>undefined</code><br>如果函数无返回值，它就会像返回 undefined 一样：</p>
+<p>function doNothing() { &#x2F;* 没有代码 *&#x2F; }</p>
+<p>console.log( doNothing() &#x3D;&#x3D;&#x3D; undefined ); &#x2F;&#x2F; true<br>空值的 return 和 return undefined 等效：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">doNothing</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="title function_">doNothing</span>() === <span class="literal">undefined</span> ); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<p>不要在 <code>return</code> 与返回值之间添加新行<br>对于 <code>return</code> 的长表达式，可能你会很想将其放在单独一行，如下所示：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span></span><br><span class="line"> (some + long + expression + or + whatever * <span class="title function_">f</span>(a) + <span class="title function_">f</span>(b))</span><br></pre></td></tr></table></figure>
+<p>但这不行，因为 JavaScript 默认会在<code> return</code> 之后加上分号。上面这段代码和下面这段代码运行流程相同：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span>;</span><br><span class="line"> (some + long + expression + or + whatever * <span class="title function_">f</span>(a) + <span class="title function_">f</span>(b))</span><br></pre></td></tr></table></figure>
+<p>因此，实际上它的返回值变成了空值。</p>
+<p>如果我们想要将返回的表达式写成跨多行的形式，那么应该在<code> return</code> 的同一行开始写此表达式。或者至少按照如下的方式放上左括号：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span> (</span><br><span class="line">  some + long + expression</span><br><span class="line">  + or +</span><br><span class="line">    whatever * <span class="title function_">f</span>(a) + <span class="title function_">f</span>(b)</span><br><span class="line">    )</span><br></pre></td></tr></table></figure>
+<p>然后它就能像我们预想的那样正常运行了。</p>
+<h2 id="函数命名"><a href="#函数命名" class="headerlink" title="函数命名"></a>函数命名</h2><p>函数就是行为<code>（action）</code>。所以它们的名字通常是动词。它应该简短且尽可能准确地描述函数的作用。这样读代码的人就能清楚地知道这个函数的功能。</p>
+<p>一种普遍的做法是用动词前缀来开始一个函数，这个前缀模糊地描述了这个行为。团队内部必须就前缀的含义达成一致。</p>
+<p>例如，以<code>&quot;show&quot;</code> 开头的函数通常会显示某些内容。</p>
+<p>函数以 XX 开始……</p>
+<p><code>&quot;get…&quot;</code> —— 返回一个值，<br><code>&quot;calc…&quot;</code> —— 计算某些内容，<br><code>&quot;create…&quot;</code> —— 创建某些内容，<br><code>&quot;check…&quot;</code> —— 检查某些内容并返回 <code>boolean</code> 值，等。<br>这类名字的示例：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title function_">showMessage</span>(..)     <span class="comment">// 显示信息</span></span><br><span class="line"><span class="title function_">getAge</span>(..)          <span class="comment">// 返回 age（gets it somehow）</span></span><br><span class="line"><span class="title function_">calcSum</span>(..)         <span class="comment">// 计算求和并返回结果</span></span><br><span class="line"><span class="title function_">createForm</span>(..)      <span class="comment">// 创建表单（通常会返回它）</span></span><br><span class="line"><span class="title function_">checkPermission</span>(..) <span class="comment">// 检查权限并返回 true/false</span></span><br></pre></td></tr></table></figure>
+<p>有了前缀，只需瞥一眼函数名，就可以了解它的功能是什么，返回什么样的值。</p>
+<p>一个函数 —— 一个行为<br>一个函数应该只包含函数名所指定的功能，而不是做更多与函数名无关的功能。</p>
+<p>两个独立的行为通常需要两个函数，即使它们通常被一起调用（在这种情况下，我们可以创建第三个函数来调用这两个函数）。</p>
+<p>有几个违反这一规则的例子：</p>
+<p><code>getAge</code> —— 如果它通过 <code>console.log</code> 将 <code>age</code> 显示出来，那就有问题了（只应该是获取）。<br><code>createForm</code> —— 如果它包含修改文档的操作，例如向文档添加一个表单，那就有问题了（只应该创建表单并返回）。<br><code>checkPermission</code> —— 如果它显示 <code>access granted/denied</code> 消息，那就有问题了（只应执行检查并返回结果）。<br>这些例子假设函数名前缀具有通用的含义。你和你的团队可以自定义这些函数名前缀的含义，但是通常都没有太大的不同。无论怎样，你都应该对函数名前缀的含义、带特定前缀的函数可以做什么以及不可以做什么有深刻的了解。所有相同前缀的函数都应该遵守相同的规则。并且，团队成员应该形成共识。</p>
+<p>非常短的函数命名<br>常用的函数有时会有非常短的名字。</p>
+<p>例如，<code>jQuery</code> 框架用 $ 定义一个函数。<code>LoDash</code> 库的核心函数用 _ 命名。</p>
+<p>这些都是例外，一般而言，函数名应简明扼要且具有描述性。</p>
+<h2 id="函数-注释"><a href="#函数-注释" class="headerlink" title="函数 &#x3D;&#x3D; 注释"></a>函数 &#x3D;&#x3D; 注释</h2><p>函数应该简短且只有一个功能。如果这个函数功能复杂，那么把该函数拆分成几个小的函数是值得的。有时候遵循这个规则并不是那么容易，但这绝对是件好事。</p>
+<p>一个单独的函数不仅更容易测试和调试 —— 它的存在本身就是一个很好的注释！</p>
+<p>例如，比较如下两个函数 <code>showPrimes(n)</code>。它们的功能都是输出到 <code>n</code> 的 素数。</p>
+<p>第一个变体使用了一个标签：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showPrimes</span>(<span class="params">n</span>) &#123;</span><br><span class="line">  <span class="attr">nextPrime</span>: <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">2</span>; j &lt; i; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (i % j == <span class="number">0</span>) <span class="keyword">continue</span> nextPrime;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>( i ); <span class="comment">// 一个素数</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第二个变体使用附加函数 isPrime(n) 来检验素数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showPrimes</span>(<span class="params">n</span>) &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="title function_">isPrime</span>(i)) <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(i);  <span class="comment">// 一个素数</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">isPrime</span>(<span class="params">n</span>) &#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> ( n % i == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第二个变体更容易理解，不是吗？我们通过函数名<code>（isPrime）</code>就可以看出函数的行为，而不需要通过代码。人们通常把这样的代码称为 <strong>自描述</strong>。</p>
+<p>因此，即使我们不打算重用它们，也可以创建函数。函数可以让代码结构更清晰，可读性更强。</p>
+<h2 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h2><p>函数声明方式如下所示：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">name</span>(<span class="params">parameters, delimited, by, comma</span>) &#123;</span><br><span class="line">  <span class="comment">/* code */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>作为参数传递给函数的值，会被复制到函数的局部变量。</p>
+</li>
+<li><p>函数可以访问外部变量。但它只能从内到外起作用。函数外部的代码看不到函数内的局部变量。</p>
+</li>
+<li><p>函数可以返回值。如果没有返回值，则其返回的结果是 undefined。</p>
+</li>
+<li><p>为了使代码简洁易懂，建议在函数中主要使用局部变量和参数，而不是外部变量。</p>
+</li>
+<li><p>与不获取参数但将修改外部变量作为副作用的函数相比，获取参数、使用参数并返回结果的函数更容易理解。</p>
+</li>
+<li><p>函数命名：</p>
+</li>
+<li><p>函数名应该清楚地描述函数的功能。当我们在代码中看到一个函数调用时，一个好的函数名能够让我们马上知道这个函数的功能是什么，会返回什么。</p>
+</li>
+<li><p>一个函数是一个行为，所以函数名通常是动词。</p>
+</li>
+<li><p>目前有许多优秀的函数名前缀，如 create…、show…、get…、check… 等等。使用它们来提示函数的作用吧。</p>
+</li>
+</ul>
+<p>函数是脚本的主要构建块。现在我们已经介绍了基本知识，现在我们就可以开始创建和使用函数了。但这只是学习和使用函数的开始。我们将继续学习更多函数的相关知识，更深入地研究它们的先进特征。</p>
+<hr>
+<p><a href="https://zh.javascript.info/function-expressions">https://zh.javascript.info/function-expressions</a></p>
 ]]></content>
       <categories>
         <category>笔记</category>
@@ -4186,6 +4284,25 @@
       </tags>
   </entry>
   <entry>
+    <title>敢问路在何方（伴奏视频分享）</title>
+    <url>//blog/liferecord/Dare-to-ask-where-the-road-is.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://www.bilibili.com/video/BV1oJ411M7fL">原视频</a></p>
+<p>首先感谢原作者制作了精彩的作品，但是添加了一些片头噪音影响体验。</p>
+<p>下面是剪辑去掉了片头，并且把<strong>无损背景音乐</strong>提取出来。</p>
+<p>视频中的音乐软件叫做《flstudio》，以后有时间的话真想去学一学。</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVk5SWIwQ2RXX05CcERCa0NNemdYV0lCc1UtdUo1QTBfUk1kbC1ZaTExdDNIdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9U3VPdVcz.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+<p><a href="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVhLWDhLMm4yaGxOaV9JaXZpRE1zVkFCOXIxNUc5aFdiQm50VG9oNE96YXVyZz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cXRjaE0x.flac">点我下载无损背景音乐</a></p>
+]]></content>
+      <categories>
+        <category>生活记录</category>
+        <category>未来计划</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+        <tag>音乐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2024高考化学易错题整理</title>
     <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
@@ -4401,6 +4518,23 @@
       <tags>
         <tag>综合素质</tag>
         <tag>教资</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深圳某老师与交警精彩的庭审现场视频（2020）</title>
+    <url>//blog/epicwebevent/szjsvsjc.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>案号 ：（2020）粤0308行初2761号<br>案由：道路行政强制及行政复议<br>原告 ：王勇 （深圳某学院老师）<br>被告：深圳市公安局交通警察支队龙岗大队、深圳市公安局交通警察局<br>开庭时间：2021年03月30日 09:30<br>法院：深圳市盐田区人民法院<br>庭审地点：行政审判中心第十七法庭（817）</p>
+<p>最终结果：交警败诉。</p>
+<p><a href="https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ">https://mp.weixin.qq.com/s/rr_dHPJtehqf6UACjPNvNQ</a></p>
+<p>（这个视频刚开始几秒是没有声音的，所以注意音量别调太大）</p>
+<p>下面是使用html标签插入的视频</p>
+<p><video src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWNmTkxFQmpvV3hFb0JMWTJ0SXQyMWtCX1VaNmdBRjhBb3BmYWpuYWN6aDBkdz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cVowTVdV.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>
+]]></content>
+      <categories>
+        <category>时事分享</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
       </tags>
   </entry>
 </search>
