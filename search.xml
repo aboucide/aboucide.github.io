@@ -521,7 +521,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#107;&#101;&#115;&#105;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#109;">&#101;&#114;&#107;&#101;&#115;&#105;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#109;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#x6b;&#101;&#115;&#x69;&#64;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;">&#101;&#114;&#x6b;&#101;&#115;&#x69;&#64;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -553,7 +553,7 @@
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#107;&#x65;&#x73;&#105;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;">&#x65;&#x72;&#107;&#x65;&#x73;&#105;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#109;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#107;&#101;&#115;&#x69;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;">&#x65;&#x72;&#107;&#101;&#115;&#x69;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -573,9 +573,9 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;">&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#105;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#x40;&#103;&#105;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#111;&#109;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#x67;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;">&#x67;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
@@ -2264,7 +2264,7 @@
     <title>JavaScript  学习笔记</title>
     <url>//blog/note/code/JavaScript.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>参考学习链接：<a href="https://zh.javascript.info/">https://zh.javascript.info/</a></p>
-<h1 id="JS基础内容"><a href="#JS基础内容" class="headerlink" title="JS基础内容"></a>JS基础内容</h1><ul>
+<h1 id="JS-基础内容"><a href="#JS-基础内容" class="headerlink" title="JS 基础内容"></a>JS 基础内容</h1><ul>
 <li><a href="https://zh.javascript.info/variables">变量</a></li>
 <li><a href="https://zh.javascript.info/types">数据类型</a></li>
 <li><a href="https://zh.javascript.info/alert-prompt-confirm">交互：console.log、prompt 和 confirm</a></li>
@@ -2282,7 +2282,7 @@
 <li><a href="https://zh.javascript.info/javascript-specials">JavaScript 特性</a></li>
 </ul>
 <hr>
-<h1 id="关于JavaScript的一些基本常识"><a href="#关于JavaScript的一些基本常识" class="headerlink" title="关于JavaScript的一些基本常识"></a>关于JavaScript的一些基本常识</h1><h2 id="如何把代码运行的结果显示出来？"><a href="#如何把代码运行的结果显示出来？" class="headerlink" title="如何把代码运行的结果显示出来？"></a>如何把代码运行的结果显示出来？</h2><ul>
+<h1 id="关于-JavaScript-的一些基本常识"><a href="#关于-JavaScript-的一些基本常识" class="headerlink" title="关于 JavaScript 的一些基本常识"></a>关于 JavaScript 的一些基本常识</h1><h2 id="如何把代码运行的结果显示出来？"><a href="#如何把代码运行的结果显示出来？" class="headerlink" title="如何把代码运行的结果显示出来？"></a>如何把代码运行的结果显示出来？</h2><ul>
 <li>方法一  浏览器弹窗 alert、prompt 和 confirm</li>
 </ul>
 <p><code>alert</code> 它会显示一条信息，并等待用户按下 “OK”。</p>
@@ -2303,7 +2303,7 @@
 </li>
 </ul>
 <p>访问者可以在提示输入栏中输入一些内容，然后按“确定”键。然后我们在 <code>result</code> 中获取该文本。或者他们可以按取消键或按 Esc 键取消输入，然后我们得到 <code>null</code> 作为 <code>result</code>。</p>
-<p><code>prompt</code> 将返回用户在 <code>input</code> 框内输入的文本，如果用户取消了输入，则返回空值<code>null</code>。</p>
+<p><code>prompt</code> 将返回用户在 <code>input</code> 框内输入的文本，如果用户取消了输入，则返回空值 <code>null</code>。</p>
 <p>语法：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">result = <span class="title function_">confirm</span>(question);</span><br></pre></td></tr></table></figure>
 
@@ -2316,7 +2316,7 @@
 <li>方法二  控制台日志 console.log</li>
 </ul>
 <p>推荐使用方法二。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span>+<span class="number">2</span>); <span class="comment">//输出3</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;你好&quot;</span>); <span class="comment">//输出 你好</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span>+<span class="number">2</span>); <span class="comment">//输出 3</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;你好&quot;</span>); <span class="comment">//输出 你好</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -2333,7 +2333,7 @@
 <li>备注</li>
 </ul>
 <p>现代 JavaScript 支持 “class” 和 “module” —— 高级语言结构（本教程后续章节会讲到），它们会自动启用 <code>use strict</code>。因此，如果我们使用它们，则无需添加 <code>&quot;use strict&quot;</code> 指令。</p>
-<h2 id="三种特殊值"><a href="#三种特殊值" class="headerlink" title="三种特殊值"></a>三种特殊值</h2><p>在JavaScript中，<code>null</code>、<code>undefined</code>和<code>NaN</code>都是表示“无”或“不是值”的特殊值，但它们各自有不同的用途和含义：</p>
+<h2 id="三种特殊值"><a href="#三种特殊值" class="headerlink" title="三种特殊值"></a>三种特殊值</h2><p>在 JavaScript 中，<code>null</code>、<code>undefined</code> 和 <code>NaN</code> 都是表示“无”或“不是值”的特殊值，但它们各自有不同的用途和含义：</p>
 <ol>
 <li><p>**<code>null</code>**：</p>
 <ul>
@@ -2398,23 +2398,23 @@
 </ul>
 <p>在编程时，应该根据具体场景选择合适的值来表示“无”或“未定义”的状态。</p>
 <hr>
-<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>在JS中，所有可以由我们自主命名的内容，都可以认为是一个<strong>标识符</strong>，像 <code>变量名</code> <code>函数名</code> <code>类名</code>…</p>
-<p>使用<code>变量名</code>需要遵循如下的命名规范：</p>
-<p><code>变量名</code>只能含有<strong>字母</strong>、<strong>数字</strong>、<strong>下划线</strong>、**$**，且不能以数字开头。</p>
-<p>例如，定义一个变量，名字为<code>QQ</code>，它的值为<code>123456</code>。</p>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>在 JS 中，所有可以由我们自主命名的内容，都可以认为是一个 <strong>标识符</strong>，像 <code>变量名</code> <code>函数名</code> <code>类名</code>…</p>
+<p>使用 <code>变量名</code> 需要遵循如下的命名规范：</p>
+<p><code>变量名</code> 只能含有 <strong>字母</strong>、<strong>数字</strong>、<strong>下划线</strong>、**$**，且不能以数字开头。</p>
+<p>例如，定义一个变量，名字为 <code>QQ</code>，它的值为 <code>123456</code>。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable constant_">QQ</span> = <span class="string">&quot;123456&quot;</span>;</span><br></pre></td></tr></table></figure>
 
 
 
 <ul>
-<li>一般使用<strong>驼峰命名法</strong>为变量命名</li>
+<li>一般使用 <strong>驼峰命名法</strong> 为变量命名</li>
 </ul>
-<p>第一个单词小写，后面每个单词开头大写，例如<code>myName</code>、<code>myVeryLongName</code>。</p>
+<p>第一个单词小写，后面每个单词开头大写，例如 <code>myName</code>、<code>myVeryLongName</code>。</p>
 <ul>
 <li>在 <code>JavaScript</code> 中，严格区分大小写。</li>
 <li>常量命名时，字母一般全部大写。</li>
 </ul>
-<p>例如，众所周知，圆周率 <code>PI</code> 约等于<code>3.14</code>，</p>
+<p>例如，众所周知，圆周率 <code>PI</code> 约等于 <code>3.14</code>，</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">PI</span> = <span class="string">&quot;3.14&quot;</span> ;</span><br></pre></td></tr></table></figure>
 
 <p>例如定义某人的生日，</p>
@@ -2423,19 +2423,19 @@
 
 
 <p>有一些英文单词被 <code>JavaScript</code> 官方已经使用，你不能再使用，这种被称作 <code>保留字</code> 。<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#%E4%BF%9D%E7%95%99%E5%AD%97">保留字 | MDN</a></p>
-<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p><code>JavaScript</code> 中共计<code>8</code>种数据类型，其中<code>7</code>种是原始数据类型，最后<code>1</code>种是数据结构（也称作<code>对象object</code>）。</p>
-<h2 id="文本串类型"><a href="#文本串类型" class="headerlink" title="文本串类型"></a>文本串类型</h2><h3 id="引号-（quotes）"><a href="#引号-（quotes）" class="headerlink" title="引号 （quotes）"></a>引号 （quotes）</h3><p>​	在js中的文本串，可以被<code>单引号</code>、<code>双引号</code>、<code>反引号</code>进行插入使用。</p>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p><code>JavaScript</code> 中共计 <code>8</code> 种数据类型，其中 <code>7</code> 种是原始数据类型，最后 <code>1</code> 种是数据结构（也称作 <code>对象object</code>）。</p>
+<h2 id="文本串类型"><a href="#文本串类型" class="headerlink" title="文本串类型"></a>文本串类型</h2><h3 id="引号-（quotes）"><a href="#引号-（quotes）" class="headerlink" title="引号 （quotes）"></a>引号 （quotes）</h3><p>​	在 js 中的文本串，可以被 <code>单引号</code>、<code>双引号</code>、<code>反引号</code> 进行插入使用。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&#x27;你好，世界&#x27;</span> ;	<span class="comment">//单引号插入文本</span></span><br><span class="line"><span class="keyword">let</span> wenben1 = <span class="string">&quot;你好啊，世界&quot;</span> ; <span class="comment">// 双引号插入文本</span></span><br><span class="line"><span class="keyword">let</span> wenben2 = <span class="string">`你好，世界啊`</span> ; <span class="comment">// 反引号插入文本</span></span><br></pre></td></tr></table></figure>
 
-<p>其中，单引号和双引号的作用一模一样。<strong>反引号</strong>可以把语法类似这种的<code>$&#123; 代码 &#125;</code> 代码插入文本串中进行运行。</p>
+<p>其中，单引号和双引号的作用一模一样。<strong>反引号</strong> 可以把语法类似这种的 <code>$&#123; 代码 &#125;</code> 代码插入文本串中进行运行。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">`我的名字是 <span class="subst">$&#123; <span class="number">660</span> +<span class="number">6</span> &#125;</span>`</span>);  <span class="comment">//输出 我的名字是 666</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>反引号</strong>还能允许文本串自带<strong>换行</strong>。</p>
+<p><strong>反引号</strong> 还能允许文本串自带 <strong>换行</strong>。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">`</span></span><br><span class="line"><span class="string">你好，</span></span><br><span class="line"><span class="string">世界。</span></span><br><span class="line"><span class="string">学习使我快乐。</span></span><br><span class="line"><span class="string">`</span>);	</span><br><span class="line"><span class="comment">//输出的文字照样带换行的效果</span></span><br></pre></td></tr></table></figure>
 
 <p>单引号和双引号来自语言创建的古老时代，当时没有考虑到多行字符串的需要。反引号出现较晚，因此更通用。</p>
 <h3 id="特殊字符-转义字符"><a href="#特殊字符-转义字符" class="headerlink" title="特殊字符  &#x2F; 转义字符"></a>特殊字符  &#x2F; 转义字符</h3><p>所有的特殊字符都以反斜杠字符 <code>\</code> 开始。它也被称为“转义字符”。</p>
-<p>反斜杠 <code>\</code> 在 JavaScript 中用于正确读取<strong>字符串</strong>，然后消失。内存中的字符串没有 <code>\</code>。</p>
+<p>反斜杠 <code>\</code> 在 JavaScript 中用于正确读取 <strong>字符串</strong>，然后消失。内存中的字符串没有 <code>\</code>。</p>
 <p>所以要想显示转义字符的效果，记得使用引号将转义字符括住。</p>
 <table>
 <thead>
@@ -2473,7 +2473,7 @@
 <td align="left">具有给定 UTF-32 编码的 Unicode 符号。一些罕见的字符用两个 Unicode 符号编码，占用 4 个字节。这样我们就可以插入长代码了。</td>
 </tr>
 </tbody></table>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\nWorld&quot;</span>); <span class="comment">// Hello 和 World中间的 \n 相当于换行</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Hello&#x27;</span> + <span class="string">&#x27;\n&#x27;</span> + <span class="string">&#x27;World&#x27;</span>);<span class="comment">// Hello和World中间的 \n 相当于换行。加号用于连接字符串</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\&quot;World&quot;</span>); <span class="comment">// Hello 和 World中间的 \&quot; 相当于引号&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\&#x27;World&quot;</span>); <span class="comment">// Hello 和 World中间的 \&#x27; 相当于引号&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\\World&quot;</span>); <span class="comment">// Hello 和 World中间的 \\ 相当于反斜线\</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\tWorld&quot;</span>);   <span class="comment">// Hello 和 World中间的 \t 相当于制表符,相当于按下了一次tab键</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\x7A&#x27;</span>); <span class="comment">// 十六进制 Unicode 字符，输出 z</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\u00A9&#x27;</span>);  <span class="comment">// UTF-16 编码的十六进制 Unicode 字符，输出 ©</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\u&#123;1F60D&#125;&#x27;</span>); <span class="comment">// UTF-32 编码的十六进制 Unicode 字符，输出 😍</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\nWorld&quot;</span>); <span class="comment">// Hello 和 World 中间的 \n 相当于换行</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Hello&#x27;</span> + <span class="string">&#x27;\n&#x27;</span> + <span class="string">&#x27;World&#x27;</span>);<span class="comment">// Hello 和 World 中间的 \n 相当于换行。加号用于连接字符串</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\&quot;World&quot;</span>); <span class="comment">// Hello 和 World中间的 \&quot; 相当于引号&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\&#x27;World&quot;</span>); <span class="comment">// Hello 和 World中间的 \&#x27; 相当于引号&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\\World&quot;</span>); <span class="comment">// Hello 和 World中间的 \\ 相当于反斜线\</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello\tWorld&quot;</span>);   <span class="comment">// Hello 和 World中间的 \t 相当于制表符,相当于按下了一次tab键</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\x7A&#x27;</span>); <span class="comment">// 十六进制 Unicode 字符，输出 z</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\u00A9&#x27;</span>);  <span class="comment">// UTF-16 编码的十六进制 Unicode 字符，输出 ©</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\u&#123;1F60D&#125;&#x27;</span>); <span class="comment">// UTF-32 编码的十六进制 Unicode 字符，输出 😍</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -2481,29 +2481,29 @@
 
 
 
-<h3 id="访问字符"><a href="#访问字符" class="headerlink" title="访问字符"></a>访问字符</h3><p>代码格式<code>string[i]</code>，代表访问字符串string的第<code>i+1</code>个字符。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好世界&quot;</span> ;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[<span class="number">0</span>]); <span class="comment">//输出 &quot;你&quot;    0代表第一个文本，1代表第二个文本，以此类推</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[<span class="number">3</span>]);  <span class="comment">//输出 &quot;界&quot;    3代表第四位的文本</span></span><br></pre></td></tr></table></figure>
+<h3 id="访问字符"><a href="#访问字符" class="headerlink" title="访问字符"></a>访问字符</h3><p>代码格式 <code>string[i]</code>，代表访问字符串 string 的第 <code>i+1</code> 个字符。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好世界&quot;</span> ;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[<span class="number">0</span>]); <span class="comment">//输出 &quot;你&quot;    0 代表第一个文本，1 代表第二个文本，以此类推</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[<span class="number">3</span>]);  <span class="comment">//输出 &quot;界&quot;    3 代表第四位的文本</span></span><br></pre></td></tr></table></figure>
 
 
 
 <p>遍历文本 <code>对字符串中的每一个字符进行逐个访问的过程</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好世界&quot;</span> ;</span><br><span class="line"><span class="comment">//下面使用两种方法进行依次输出 变量【wenben】中的字符</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//方法1</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; wenben.<span class="property">length</span>; i++) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;接下来换另一种方法进行&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//方法2</span></span><br><span class="line"><span class="keyword">for</span>( <span class="keyword">let</span> text <span class="keyword">of</span> wenben )</span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="property">log</span> (text);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好世界&quot;</span> ;</span><br><span class="line"><span class="comment">//下面使用两种方法进行依次输出 变量【wenben】中的字符</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//方法 1</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; wenben.<span class="property">length</span>; i++) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(wenben[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;接下来换另一种方法进行&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//方法 2</span></span><br><span class="line"><span class="keyword">for</span>( <span class="keyword">let</span> text <span class="keyword">of</span> wenben )</span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="property">log</span> (text);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>会发现方法2更简洁。是的，在JavaScript中常用<code>for ... of </code>循环来遍历字符串、数组等。</p>
-<h3 id="字母大小写转换"><a href="#字母大小写转换" class="headerlink" title="字母大小写转换"></a>字母大小写转换</h3><p><code>[toLowerCase()</code>] 和<code> [toUpperCase()]</code>方法可以改变字符串中英文字母的大小写。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好,世jie&quot;</span> ;</span><br><span class="line"><span class="keyword">let</span> wenben1 = <span class="string">&quot;NiHao,shiJie&quot;</span> ;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;你好,世jie&#x27;</span>.<span class="title function_">toUpperCase</span>() ); <span class="comment">// 你好,世JIE</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;NiHao,shiJie&#x27;</span>.<span class="title function_">toLowerCase</span>() ); <span class="comment">// nihao,shijie</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( wenben.<span class="title function_">toUpperCase</span>() ); <span class="comment">// 你好,世JIE</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( wenben1.<span class="title function_">toLowerCase</span>() ); <span class="comment">// nihao,shijie</span></span><br></pre></td></tr></table></figure>
-
-
+<p>会发现方法 2 更简洁。是的，在 JavaScript 中常用 <code>for ... of </code> 循环来遍历字符串、数组等。</p>
+<h3 id="字母大小写转换"><a href="#字母大小写转换" class="headerlink" title="字母大小写转换"></a>字母大小写转换</h3><p><code>[toLowerCase()</code>] 和 <code> [toUpperCase()]</code> 方法可以改变字符串中英文字母的大小写。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> wenben = <span class="string">&quot;你好,世jie&quot;</span> ;</span><br><span class="line"><span class="keyword">let</span> wenben1 = <span class="string">&quot;NiHao,shiJie&quot;</span> ;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;你好,世jie&#x27;</span>.<span class="title function_">toUpperCase</span>() ); <span class="comment">// 你好, 世 JIE</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;NiHao,shiJie&#x27;</span>.<span class="title function_">toLowerCase</span>() ); <span class="comment">// nihao, shijie</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( wenben.<span class="title function_">toUpperCase</span>() ); <span class="comment">// 你好, 世 JIE</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( wenben1.<span class="title function_">toLowerCase</span>() ); <span class="comment">// nihao, shijie</span></span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="在字符串查找是否包含另一个字符串"><a href="#在字符串查找是否包含另一个字符串" class="headerlink" title="在字符串查找是否包含另一个字符串"></a>在字符串查找是否包含另一个字符串</h3><p>此功能又称为<strong>”在字符串中查找子字符串“</strong>。</p>
-<p>在JavaScript中，有很多方法能实现这个功能。</p>
+
+
+<h3 id="在字符串查找是否包含另一个字符串"><a href="#在字符串查找是否包含另一个字符串" class="headerlink" title="在字符串查找是否包含另一个字符串"></a>在字符串查找是否包含另一个字符串</h3><p>此功能又称为 <strong>”在字符串中查找子字符串“</strong>。</p>
+<p>在 JavaScript 中，有很多方法能实现这个功能。</p>
 <ul>
-<li>老旧方法    str.indexOf(substring,pos)</li>
+<li>老旧方法    str.indexOf(substring, pos)</li>
 </ul>
 <p>它从给定位置 <code>pos</code> 开始(默认从左向右)，在 <code>str</code> 中查找 <code>substr</code>，如果没有找到，则返回 <code>-1</code>，否则返回匹配成功的位置。</p>
-<p>第二个参数pos是可选的，不加pos，默认从头开始匹配，返回第一次匹配成功的位置。</p>
+<p>第二个参数 pos 是可选的，不加 pos，默认从头开始匹配，返回第一次匹配成功的位置。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;这是一个测试字符串，测试一下，看看是否能找到所有的测试。&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> substring = <span class="string">&quot;测试&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> index = str.<span class="title function_">indexOf</span>(substring);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(index); <span class="comment">// 输出第一次找到“测试”的位置   4</span></span><br></pre></td></tr></table></figure>
 
 
@@ -2515,24 +2515,24 @@
 <ul>
 <li><strong>现代方法</strong> <code>includes，startsWith，endsWith</code></li>
 </ul>
-<p>现代的方法 <code>str.includes(substr, pos)</code>根据 <code>str</code> 中是否包含 <code>substr</code> 来返回 <code>true/false</code>。<code>pos</code>为可选参数</p>
-<p>如果我们<strong>需要检测匹配，但不需要它的位置</strong>，那么这是正确的选择：</p>
+<p>现代的方法 <code>str.includes(substr, pos)</code> 根据 <code>str</code> 中是否包含 <code>substr</code> 来返回 <code>true/false</code>。<code>pos</code> 为可选参数</p>
+<p>如果我们 <strong>需要检测匹配，但不需要它的位置</strong>，那么这是正确的选择：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Widget with id&quot;</span>.<span class="title function_">includes</span>(<span class="string">&quot;Widget&quot;</span>) );    <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Hello&quot;</span>.<span class="title function_">includes</span>(<span class="string">&quot;Bye&quot;</span>) );      <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
 
-<p><code>string.startWith(substr)</code>检测文本串<code>string</code>的字符，是否以子文本串<code>substr</code>开头 。</p>
-<p><code>string.endWith(substr)</code>检测文本串<code>string</code>的字符，是否以子文本串<code>substr</code>结尾 。</p>
+<p><code>string.startWith(substr)</code> 检测文本串 <code>string</code> 的字符，是否以子文本串 <code>substr</code> 开头 。</p>
+<p><code>string.endWith(substr)</code> 检测文本串 <code>string</code> 的字符，是否以子文本串 <code>substr</code> 结尾 。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Widget&quot;</span>.<span class="title function_">startsWith</span>(<span class="string">&quot;Wid&quot;</span>) ); <span class="comment">// true，&quot;Widget&quot; 以 &quot;Wid&quot; 开始</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Widget&quot;</span>.<span class="title function_">endsWith</span>(<span class="string">&quot;get&quot;</span>) ); <span class="comment">// true，&quot;Widget&quot; 以 &quot;get&quot; 结束</span></span><br></pre></td></tr></table></figure>
 
 
 
 <hr>
-<h2 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h2><h3 id="科学计数法"><a href="#科学计数法" class="headerlink" title="科学计数法"></a>科学计数法</h3><p><code>12345</code> 可以表示为 <code>1.2345e4</code> ，这里的 <code>e4</code> 相当于<strong>10的4次方</strong>。</p>
+<h2 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h2><h3 id="科学计数法"><a href="#科学计数法" class="headerlink" title="科学计数法"></a>科学计数法</h3><p><code>12345</code> 可以表示为 <code>1.2345e4</code> ，这里的 <code>e4</code> 相当于 <strong>10 的 4 次方</strong>。</p>
 <p><code>0.008314</code> 可以表示为 <code>8.314e-3</code> 。</p>
-<h3 id="数字进制转换"><a href="#数字进制转换" class="headerlink" title="数字进制转换"></a>数字进制转换</h3><p>常见的进制有：2进制，10进制，16进制，32进制。</p>
+<h3 id="数字进制转换"><a href="#数字进制转换" class="headerlink" title="数字进制转换"></a>数字进制转换</h3><p>常见的进制有：2 进制，10 进制，16 进制，32 进制。</p>
 <p>进制的范围：<code>2</code> 到 <code>36</code> 。默认 <code>10</code>，毕竟大家都是人类，学的都是十进制 。</p>
-<p>为什么进制最大是36进制呢？</p>
-<p>因为0~9在加上26个英文字母一共36，在进制中，大小写是等效的。</p>
-<p>给定一个数字 <code>num</code> ，想把它转成另一个进制<code>base</code> ，需要使用方法 <code>toString</code> 。</p>
+<p>为什么进制最大是 36 进制呢？</p>
+<p>因为 0~9 在加上 26 个英文字母一共 36，在进制中，大小写是等效的。</p>
+<p>给定一个数字 <code>num</code> ，想把它转成另一个进制 <code>base</code> ，需要使用方法 <code>toString</code> 。</p>
 <p><code>num.toString(base)</code></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> number = <span class="number">123456789</span>;</span><br><span class="line"><span class="keyword">let</span> number2 = number.<span class="title function_">toString</span>(<span class="number">36</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="property">log</span> (number2);              <span class="comment">//输出  21i3v9</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//当然下面这句也能实现目的</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;------这里是分割线--------&quot;</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">123456789.</span>.<span class="title function_">toString</span>(<span class="number">36</span>));  <span class="comment">//输出  21i3v9</span></span><br></pre></td></tr></table></figure>
 
@@ -2543,7 +2543,7 @@
 </blockquote>
 <h3 id="舍入"><a href="#舍入" class="headerlink" title="舍入"></a>舍入</h3><p>函数 <a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">toFixed(n)</a> 将数字精确到到小数点后 <code>n</code> 位进行四舍五入，并以字符串形式返回结果。</p>
 <p>我们可以使用一元加号或 <code>Number()</code> 调用，将其转换为数字，例如 <code>+ num.toFixed(5)</code>。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这是一个具有5位小数的数字。</span></span><br><span class="line"><span class="keyword">let</span> number = <span class="number">3.14159</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//保留小数点后9位，若位数不足自动添0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>(<span class="number">9</span>));     <span class="comment">//输出3.141590000</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>(<span class="number">2</span>));     <span class="comment">//输出3.14</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//括号中什么都不写，则默认括号里面是0，即四舍五入保留整数部分。</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>());      <span class="comment">//输出3</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>(<span class="number">3</span>));     <span class="comment">//输出3.142</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>(<span class="number">0</span>));     <span class="comment">//输出3</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这是一个具有 5 位小数的数字。</span></span><br><span class="line"><span class="keyword">let</span> number = <span class="number">3.14159</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//保留小数点后 9 位，若位数不足自动添 0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>(<span class="number">9</span>));     <span class="comment">//输出 3.141590000</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>(<span class="number">2</span>));     <span class="comment">//输出 3.14</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//括号中什么都不写，则默认括号里面是 0，即四舍五入保留整数部分。</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>());      <span class="comment">//输出 3</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>(<span class="number">3</span>));     <span class="comment">//输出 3.142</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(number.<span class="title function_">toFixed</span>(<span class="number">0</span>));     <span class="comment">//输出 3</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
@@ -2555,7 +2555,7 @@
 <li>如果参数是 NaN，或者在将参数转换为数值时无法转换（例如字符串），则返回 <code>true</code>。</li>
 <li><code>isNaN</code> 会先尝试将传入的参数转换为数字，如果转换失败，才判断为 NaN。</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">a = <span class="number">123</span>;</span><br><span class="line">b = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">c = <span class="string">&quot;123ww&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(<span class="title class_">NaN</span>)); <span class="comment">//true   </span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(a));   <span class="comment">//false  因为字符串不能转换为数字</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(b));   <span class="comment">//false  因为字符串不能转换为数字</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(c));   <span class="comment">//true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//NaN与任何值比较都是返回NaN</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">NaN</span>===<span class="title class_">NaN</span>);  <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">a = <span class="number">123</span>;</span><br><span class="line">b = <span class="string">&quot;123&quot;</span>;</span><br><span class="line">c = <span class="string">&quot;123ww&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(<span class="title class_">NaN</span>)); <span class="comment">//true   </span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(a));   <span class="comment">//false  因为字符串不能转换为数字</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(b));   <span class="comment">//false  因为字符串不能转换为数字</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(c));   <span class="comment">//true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//NaN 与任何值比较都是返回 NaN</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">NaN</span>===<span class="title class_">NaN</span>);  <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -2565,7 +2565,7 @@
 <li>如果参数是有限数值，即不是无穷大（Infinity 或 -Infinity），也不是 NaN，则返回 <code>true</code>。</li>
 <li><code>isFinite</code> 不会尝试将参数转换为数字，它只检查参数本身的值。</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">isFinite</span>(<span class="title class_">Infinity</span>); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">isFinite</span>(-<span class="title class_">Infinity</span>); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">isFinite</span>(<span class="title class_">NaN</span>); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">isFinite</span>(<span class="number">0</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">isFinite</span>(<span class="string">&quot;Hello&quot;</span>); <span class="comment">// false，因为是非数值</span></span><br><span class="line"><span class="built_in">isFinite</span>(<span class="string">&quot;123&quot;</span>); <span class="comment">// false，因为是非数值</span></span><br><span class="line"><span class="comment">//想看输出值，记得加console.log</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">isFinite</span>(<span class="title class_">Infinity</span>); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">isFinite</span>(-<span class="title class_">Infinity</span>); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">isFinite</span>(<span class="title class_">NaN</span>); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">isFinite</span>(<span class="number">0</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">isFinite</span>(<span class="string">&quot;Hello&quot;</span>); <span class="comment">// false，因为是非数值</span></span><br><span class="line"><span class="built_in">isFinite</span>(<span class="string">&quot;123&quot;</span>); <span class="comment">// false，因为是非数值</span></span><br><span class="line"><span class="comment">//想看输出值，记得加 console.log</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><ul>
 <li><strong>检查范围</strong>：<ul>
@@ -2738,7 +2738,7 @@
 <ul>
 <li><p><strong>运算元</strong> —— 运算符应用的对象。比如说乘法运算 <code>5 * 2</code>，有两个运算元：左运算元 <code>5</code> 和右运算元 <code>2</code>。有时候人们也称其为“参数”而不是“运算元”。</p>
 </li>
-<li><p>如果一个运算符对应的只有一个运算元，那么它是 <strong>一元运算符</strong>。比如说一元负号运算符<code>-</code>，它的作用是对数字进行正负转换：</p>
+<li><p>如果一个运算符对应的只有一个运算元，那么它是 <strong>一元运算符</strong>。比如说一元负号运算符 <code>-</code>，它的作用是对数字进行正负转换：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">x = -x;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( x ); <span class="comment">// -1，一元负号运算符生效</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>如果一个运算符拥有两个运算元，那么它是 <strong>二元运算符</strong>。<br>例如，减号还存在二元运算符形式：</p>
@@ -2760,12 +2760,12 @@
 <h3 id="取余"><a href="#取余" class="headerlink" title="取余 %"></a>取余 %</h3><p>取余运算符是 <code>%</code>，尽管它看起来很像百分数，但实际并无关联。</p>
 <p><code>a % b</code> 的结果是 <code>a</code> 整除 <code>b</code> 的 余数。</p>
 <p>例如：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">13</span> % <span class="number">2</span> ); <span class="comment">// 输出1，   13 除以 2 的余数</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">20</span> % <span class="number">3</span> ); <span class="comment">// 输出2，   20 除以 3 的余数</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">13</span> % <span class="number">2</span> ); <span class="comment">// 输出 1，   13 除以 2 的余数</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">20</span> % <span class="number">3</span> ); <span class="comment">// 输出 2，   20 除以 3 的余数</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="求幂"><a href="#求幂" class="headerlink" title="求幂 **"></a>求幂 **</h3><p>求幂运算 <code>a ** b</code> ，将 <code>a</code> 提升至 <code>a</code> 的 <code>b</code> 次幂。</p>
-<p>在数学运算中我们将其表示为 a<sup>b</sup>。</p>
+<p>在数学运算中我们将其表示为 a <sup> b </sup>。</p>
 <p>例如：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> ** <span class="number">2</span> ); <span class="comment">// 2² = 4</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> ** <span class="number">3</span> ); <span class="comment">// 2³ = 8</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> ** <span class="number">4</span> ); <span class="comment">// 2⁴ = 16</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> ** <span class="number">2</span> ); <span class="comment">// 2 ² = 4</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> ** <span class="number">3</span> ); <span class="comment">// 2 ³ = 8</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> ** <span class="number">4</span> ); <span class="comment">// 2 ⁴ = 16</span></span><br></pre></td></tr></table></figure>
 
 <p>就像在数学运算中一样，幂运算也适用于非整数。</p>
 <p>例如，平方根是指数为 ½ 的幂运算：</p>
@@ -2777,7 +2777,7 @@
 
 <p>注意：只要任意一个运算元是字符串，那么另一个运算元也将被转化为字符串。</p>
 <p>举个例子：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;1&#x27;</span> + <span class="number">2</span> ); <span class="comment">// &quot;12&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> + <span class="string">&#x27;1&#x27;</span> ); <span class="comment">// &quot;21&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> + <span class="string">&#x27;天&#x27;</span> ); <span class="comment">// &quot;2天&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&#x27;1&#x27;</span> + <span class="number">2</span> ); <span class="comment">// &quot;12&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> + <span class="string">&#x27;1&#x27;</span> ); <span class="comment">// &quot;21&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="number">2</span> + <span class="string">&#x27;天&#x27;</span> ); <span class="comment">// &quot;2 天&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>你看，第一个运算元和第二个运算元，哪个是字符串并不重要，只要其中任意一个是字符串，那么由 <code>+</code> 连接的两个运算元都会默认转换成字符串拼接起来。</p>
 <p>下面是一个更复杂的例子：</p>
@@ -2993,7 +2993,7 @@
 <li>检查两个值的相等：<code>a == b</code>，请注意双等号 <code>==</code> 表示相等性检查，而单等号 <code>a = b</code> 表示赋值。</li>
 <li>检查两个值不相等：不相等在数学中的符号是 <code>≠</code>，但在 JavaScript 中写成 <code>a != b</code>。</li>
 </ul>
-<h2 id="比较的结果是Boolean-类型"><a href="#比较的结果是Boolean-类型" class="headerlink" title="比较的结果是Boolean 类型"></a>比较的结果是Boolean 类型</h2><p>所有比较运算符均返回布尔值：</p>
+<h2 id="比较的结果是-Boolean-类型"><a href="#比较的结果是-Boolean-类型" class="headerlink" title="比较的结果是 Boolean 类型"></a>比较的结果是 Boolean 类型</h2><p>所有比较运算符均返回布尔值：</p>
 <ul>
 <li><code>true</code> —— 表示“yes（是）”，“correct（正确）”或“the truth（真）”。</li>
 <li><code>false</code> —— 表示“no（否）”，“wrong（错误）”或“not the truth（非真）”。</li>
@@ -3354,7 +3354,7 @@
 <li>所以，<code>||</code> 运算的结果为第二个参数，<code>100</code>。</li>
 </ul>
 </li>
-<li><p><code>height ?? 100</code>  首先会检查<code>height</code>  是否为 <code>null/undefined</code>  ，发现它不是。</p>
+<li><p><code>height ?? 100</code>  首先会检查 <code>height</code>  是否为 <code>null/undefined</code>  ，发现它不是。</p>
 <ul>
 <li>所以，结果为 <code>height</code> 的原始值，<code>0</code>。</li>
 </ul>
@@ -3485,7 +3485,7 @@
 <p>实际上我们可以删除所有内容，从而创建一个无限循环：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (;;) &#123;</span><br><span class="line">  <span class="comment">// 无限循环</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>请注意 <code>for</code> 的两个 <code>;</code> 必须存在，否则会出现语法错误。<br>可以结合无限循环来等待setTimeout的异步执行，等到异步执行完成后，返回一个条件，让无限循环结束（即跳出循环）。</p>
+<p>请注意 <code>for</code> 的两个 <code>;</code> 必须存在，否则会出现语法错误。<br>可以结合无限循环来等待 setTimeout 的异步执行，等到异步执行完成后，返回一个条件，让无限循环结束（即跳出循环）。</p>
 <h2 id="跳出循环"><a href="#跳出循环" class="headerlink" title="跳出循环"></a>跳出循环</h2><p>通常条件为假时，循环会终止。</p>
 <p>但我们随时都可以使用 <code>break</code> 指令强制退出。</p>
 <p>例如，下面这个循环要求用户输入一系列数字，在输入的内容不是数字时“终止”循环。</p>
@@ -3626,7 +3626,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> userName = <span class="string">&#x27;John&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> userName = <span class="string">&quot;Bob&quot;</span>; <span class="comment">// 声明一个局部变量</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> message = <span class="string">&#x27;Hello, &#x27;</span> + userName; <span class="comment">// Bob</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(message);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数会创建并使用它自己的 userName</span></span><br><span class="line"><span class="title function_">showMessage</span>();</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( userName ); <span class="comment">// John，未被更改，函数没有访问外部变量。</span></span><br></pre></td></tr></table></figure>
 <h2 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h2><p>任何函数之外声明的变量，例如上述代码中的外部变量 <code>userName</code>，都被称为 <strong>全局</strong> 变量。</p>
 <p>全局变量在任意函数中都是可见的（除非被局部变量遮蔽）。</p>
-<p><em>减少全局变量</em>的使用是一种很好的做法。现代的代码有很少甚至没有全局变量。大多数变量存在于它们的函数中。但是有时候，全局变量能够用于存储项目级别的数据。</p>
+<p><em>减少全局变量</em> 的使用是一种很好的做法。现代的代码有很少甚至没有全局变量。大多数变量存在于它们的函数中。但是有时候，全局变量能够用于存储项目级别的数据。</p>
 <h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p>我们可以通过参数将任意数据传递给函数。</p>
 <p>在如下示例中，函数有两个参数：from 和 text。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text</span>) &#123; <span class="comment">// 参数：from 和 text</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="keyword">from</span> + <span class="string">&#x27;: &#x27;</span> + text);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(<span class="string">&#x27;阿祖&#x27;</span>, <span class="string">&#x27;你好!&#x27;</span>); <span class="comment">// 阿祖: 你好! (*)</span></span><br><span class="line"><span class="title function_">showMessage</span>(<span class="string">&#x27;阿祖&#x27;</span>, <span class="string">&quot;吃饭了没?&quot;</span>); <span class="comment">// 阿祖: 吃饭了没? (**)</span></span><br></pre></td></tr></table></figure>
@@ -3635,14 +3635,14 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text</span>) &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">from</span> = <span class="string">&#x27;*&#x27;</span> + <span class="keyword">from</span> + <span class="string">&#x27;*&#x27;</span>; <span class="comment">// 让 &quot;from&quot; 看起来更优雅</span></span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="keyword">from</span> + <span class="string">&#x27;: &#x27;</span> + text );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="keyword">from</span> = <span class="string">&quot;阿祖&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(<span class="keyword">from</span>, <span class="string">&quot;你好&quot;</span>); <span class="comment">// *阿祖*: 你好</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// &quot;from&quot; 值相同，函数修改了一个局部的副本。</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="keyword">from</span> ); <span class="comment">// 阿祖</span></span><br></pre></td></tr></table></figure>
 <p>当一个值被作为函数参数 <code>（parameter）</code> 传递时，它也被称为 参数 <code>（argument）</code>。</p>
 <p>换一种方式，我们把这些术语搞清楚：</p>
-<p>函数参数（parameter）是函数声明中括号内列出的变量（它是函数声明时的术语）。<br>参数（argument）是调用函数时传递给函数的值（它是函数调用时的术语）。<br>我们声明函数时列出它们的函数参数<code>（parameters）</code>，然后调用它们传递参数<code>（arguments）</code>。</p>
-<p>在上面的例子中，我们可以说：“函数 <code>showMessage</code> 被声明，并且带有两个参数<code>（parameters）</code>，随后它被调用，两个参数<code>（arguments）</code>分别为<code>from</code> 和 “Hello””。</p>
-<h2 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h2><p>如果一个函数被调用，但有参数<code>（argument）</code>未被提供，那么相应的值就会变成 <code>undefined</code>。</p>
-<p>例如，之前提到的函数 <code>showMessage(from, text)</code> 可以只使用一个参数<code>（argument）</code>调用：</p>
+<p>函数参数（parameter）是函数声明中括号内列出的变量（它是函数声明时的术语）。<br>参数（argument）是调用函数时传递给函数的值（它是函数调用时的术语）。<br>我们声明函数时列出它们的函数参数 <code>（parameters）</code>，然后调用它们传递参数 <code>（arguments）</code>。</p>
+<p>在上面的例子中，我们可以说：“函数 <code>showMessage</code> 被声明，并且带有两个参数 <code>（parameters）</code>，随后它被调用，两个参数 <code>（arguments）</code> 分别为 <code>from</code> 和 “Hello””。</p>
+<h2 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h2><p>如果一个函数被调用，但有参数 <code>（argument）</code> 未被提供，那么相应的值就会变成 <code>undefined</code>。</p>
+<p>例如，之前提到的函数 <code>showMessage(from, text)</code> 可以只使用一个参数 <code>（argument）</code> 调用：</p>
 <p><code>showMessage(&quot;Ann&quot;);</code><br>那不是错误，这样调用将输出 “<em>Ann</em>: undefined”。因为参数 <code>text</code> 的值未被传递，所以变成了 <code>undefined</code>。</p>
 <p>我们可以使用 <code>=</code> 为函数声明中的参数指定所谓的“默认”（如果对应参数的值未被传递则使用）值：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text = <span class="string">&quot;这里是默认的第二项值&quot;</span></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="keyword">from</span> + <span class="string">&quot;: &quot;</span> + text );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">showMessage</span>(<span class="string">&quot;阿祖&quot;</span>); <span class="comment">// 阿祖: 这里是默认的第二项值</span></span><br></pre></td></tr></table></figure>
-<p>现在因为<code> text</code> 参数未被传递，它将会得到默认值 “这里是默认的第二项值”。</p>
+<p>现在因为 <code> text</code> 参数未被传递，它将会得到默认值 “这里是默认的第二项值”。</p>
 <p>这里 “这里是默认的第二项值” 是一个字符串，但它可以是更复杂的表达式，并且只会在缺少参数时才会被计算和分配。所以，这也是可能的：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMessage</span>(<span class="params"><span class="keyword">from</span>, text = anotherFunction()</span>) &#123;</span><br><span class="line">  <span class="comment">// anotherFunction() 仅在没有给定 text 时执行</span></span><br><span class="line">  <span class="comment">// 其运行结果将成为 text 的值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="默认参数的计算"><a href="#默认参数的计算" class="headerlink" title="默认参数的计算"></a>默认参数的计算</h2><p>在 <code>JavaScript</code> 中，每次函数在没带个别参数的情况下被调用，默认参数会被计算出来。</p>
@@ -3670,22 +3670,22 @@
 <p>只使用 <code>return</code> 但没有返回值也是可行的。但这会导致函数立即退出。</p>
 <p>例如：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showMovie</span>(<span class="params">age</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> ( !<span class="title function_">checkAge</span>(age) ) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Showing you the movie&quot;</span> ); <span class="comment">// (*)</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在上述代码中，如果 <code>checkAge(age)</code> 返回<code> false</code>，那么 <code>showMovie</code> 将不会运行到 <code>console.log</code>。</p>
+<p>在上述代码中，如果 <code>checkAge(age)</code> 返回 <code> false</code>，那么 <code>showMovie</code> 将不会运行到 <code>console.log</code>。</p>
 <p>空值的 <code>return</code> 或没有 <code>return</code> 的函数返回值为 <code>undefined</code><br>如果函数无返回值，它就会像返回 <code>undefined</code> 一样：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">doNothing</span>(<span class="params"></span>) &#123; <span class="comment">/* 没有代码 */</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="title function_">doNothing</span>() === <span class="literal">undefined</span> ); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
 <p>空值的 <code>return</code> 和 <code>return undefined</code> 等效：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">doNothing</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="title function_">doNothing</span>() === <span class="literal">undefined</span> ); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
 <p>不要在 <code>return</code> 与返回值之间添加新行<br>对于 <code>return</code> 的长表达式，可能你会很想将其放在单独一行，如下所示：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span></span><br><span class="line"> (some + long + expression + or + whatever * <span class="title function_">f</span>(a) + <span class="title function_">f</span>(b))</span><br></pre></td></tr></table></figure>
-<p>但这不行，因为 <code>JavaScript</code> 默认会在<code> return</code> 之后加上分号。上面这段代码和下面这段代码运行流程相同：</p>
+<p>但这不行，因为 <code>JavaScript</code> 默认会在 <code> return</code> 之后加上分号。上面这段代码和下面这段代码运行流程相同：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span>;</span><br><span class="line"> (some + long + expression + or + whatever * <span class="title function_">f</span>(a) + <span class="title function_">f</span>(b))</span><br></pre></td></tr></table></figure>
 <p>因此，实际上它的返回值变成了空值。</p>
-<p>如果我们想要将返回的表达式写成跨多行的形式，那么应该在<code> return</code> 的同一行开始写此表达式。或者至少按照如下的方式放上左括号：</p>
+<p>如果我们想要将返回的表达式写成跨多行的形式，那么应该在 <code> return</code> 的同一行开始写此表达式。或者至少按照如下的方式放上左括号：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span> (</span><br><span class="line">  some + long + expression</span><br><span class="line">  + or +</span><br><span class="line">    whatever * <span class="title function_">f</span>(a) + <span class="title function_">f</span>(b)</span><br><span class="line">    )</span><br></pre></td></tr></table></figure>
 <p>然后它就能像我们预想的那样正常运行了。</p>
-<h2 id="函数命名"><a href="#函数命名" class="headerlink" title="函数命名"></a>函数命名</h2><p>函数就是行为<code>（action）</code>。所以它们的名字通常是动词。它应该简短且尽可能准确地描述函数的作用。这样读代码的人就能清楚地知道这个函数的功能。</p>
+<h2 id="函数命名"><a href="#函数命名" class="headerlink" title="函数命名"></a>函数命名</h2><p>函数就是行为 <code>（action）</code>。所以它们的名字通常是动词。它应该简短且尽可能准确地描述函数的作用。这样读代码的人就能清楚地知道这个函数的功能。</p>
 <p>一种普遍的做法是用动词前缀来开始一个函数，这个前缀模糊地描述了这个行为。团队内部必须就前缀的含义达成一致。</p>
-<p>例如，以<code>&quot;show&quot;</code> 开头的函数通常会显示某些内容。</p>
+<p>例如，以 <code>&quot;show&quot;</code> 开头的函数通常会显示某些内容。</p>
 <p>函数以 XX 开始……</p>
 <p><code>&quot;get…&quot;</code> —— 返回一个值，<br><code>&quot;calc…&quot;</code> —— 计算某些内容，<br><code>&quot;create…&quot;</code> —— 创建某些内容，<br><code>&quot;check…&quot;</code> —— 检查某些内容并返回 <code>boolean</code> 值，等。<br>这类名字的示例：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title function_">showMessage</span>(..)     <span class="comment">// 显示信息</span></span><br><span class="line"><span class="title function_">getAge</span>(..)          <span class="comment">// 返回 age（gets it somehow）</span></span><br><span class="line"><span class="title function_">calcSum</span>(..)         <span class="comment">// 计算求和并返回结果</span></span><br><span class="line"><span class="title function_">createForm</span>(..)      <span class="comment">// 创建表单（通常会返回它）</span></span><br><span class="line"><span class="title function_">checkPermission</span>(..) <span class="comment">// 检查权限并返回 true/false</span></span><br></pre></td></tr></table></figure>
@@ -3704,7 +3704,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showPrimes</span>(<span class="params">n</span>) &#123;</span><br><span class="line">  <span class="attr">nextPrime</span>: <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">2</span>; j &lt; i; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (i % j == <span class="number">0</span>) <span class="keyword">continue</span> nextPrime;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>( i ); <span class="comment">// 一个素数</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>第二个变体使用附加函数 <code>isPrime(n)</code> 来检验素数：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">showPrimes</span>(<span class="params">n</span>) &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="title function_">isPrime</span>(i)) <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(i);  <span class="comment">// 一个素数</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">isPrime</span>(<span class="params">n</span>) &#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> ( n % i == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>第二个变体更容易理解，不是吗？我们通过函数名<code>（isPrime）</code>就可以看出函数的行为，而不需要通过代码。人们通常把这样的代码称为 <strong>自描述</strong>。</p>
+<p>第二个变体更容易理解，不是吗？我们通过函数名 <code>（isPrime）</code> 就可以看出函数的行为，而不需要通过代码。人们通常把这样的代码称为 <strong>自描述</strong>。</p>
 <p>因此，即使我们不打算重用它们，也可以创建函数。函数可以让代码结构更清晰，可读性更强。</p>
 <h2 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h2><p>函数声明方式如下所示：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">name</span>(<span class="params">parameters, delimited, by, comma</span>) &#123;</span><br><span class="line">  <span class="comment">/* code */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -3739,7 +3739,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> sayHi = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="string">&quot;Hello&quot;</span> );</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>在这里我们可以看到变量 <code>sayHi</code> 得到了一个值，新函数 <code>function() &#123; console.log(&quot;Hello&quot;)</code>; }。</p>
 <p>由于函数创建发生在赋值表达式的上下文中（在 &#x3D; 的右侧），因此这是一个 <strong>函数表达式</strong>。</p>
-<p>请注意，在上述代码中<code>function</code> 关键字后面没有函数名。函数表达式允许省略函数名。</p>
+<p>请注意，在上述代码中 <code>function</code> 关键字后面没有函数名。函数表达式允许省略函数名。</p>
 <p>这里我们立即将它赋值给变量，所以上面的两个代码示例的含义是一样的：<br>“创建一个函数并将其放入变量 <code>sayHi</code> 中”。</p>
 <p>在更多更高阶的情况下，稍后我们会遇到，可以创建一个函数并立即调用，或者安排稍后执行，而不是存储在任何地方，因此保持匿名。</p>
 <p><strong>函数是一个值</strong><br>重申一次：无论函数是如何创建的，函数都是一个值。上面的两个示例都在 <code>sayHi</code> 变量中存储了一个函数。</p>
@@ -3836,34 +3836,62 @@
 </ul>
 <hr>
 <h1 id="箭头函数，基础知识"><a href="#箭头函数，基础知识" class="headerlink" title="箭头函数，基础知识"></a>箭头函数，基础知识</h1><p>创建函数还有另外一种非常简单的语法，并且这种方法通常比函数表达式更好。</p>
-<p>它被称为<strong>“箭头函数”</strong>，因为它看起来像这样：</p>
+<p>它被称为 <strong>“箭头函数”</strong>，因为它看起来像这样：</p>
 <p><code>let func = (arg1, arg2, ..., argN) =&gt; expression;</code><br>这里创建了一个函数 <code>func</code>，它接受参数 <code>arg1..argN</code>，然后使用参数对右侧的 <code>expression</code> 求值并返回其结果。</p>
 <p>换句话说，它是下面这段代码的更短的版本：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> func = <span class="keyword">function</span>(<span class="params">arg1, arg2, ..., argN</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> expression;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>让我们来看一个具体的例子：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="title function_">sum</span> = (<span class="params">a, b</span>) =&gt; a + b;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 这个箭头函数是下面这个函数的更短的版本：</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">let sum = function(a, b) &#123;</span></span><br><span class="line"><span class="comment">  return a + b;</span></span><br><span class="line"><span class="comment">&#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="title function_">sum</span>(<span class="number">1</span>, <span class="number">2</span>) ); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
-<p>可以看到 (a, b) &#x3D;&gt; a + b 表示一个函数接受两个名为 a 和 b 的参数。在执行时，它将对表达式 a + b 求值，并返回计算结果。</p>
+<p>可以看到 <code>(a, b) =&gt; a + b</code> 表示一个函数接受两个名为 <code>a</code> 和 <code>b</code> 的参数。在执行时，它将对表达式 <code>a + b</code> 求值，并返回计算结果。</p>
 <p>如果我们只有一个参数，还可以省略掉参数外的圆括号，使代码更短。</p>
 <p>例如：</p>
-<p>let double &#x3D; n &#x3D;&gt; n * 2;<br>&#x2F;&#x2F; 差不多等同于：let double &#x3D; function(n) { return n * 2 }</p>
-<p>console.log( double(3) ); &#x2F;&#x2F; 6<br>如果没有参数，括号则是空的（但括号必须保留）：</p>
-<p>let sayHi &#x3D; () &#x3D;&gt; console.log(“Hello!”);</p>
-<p>sayHi();<br>箭头函数可以像函数表达式一样使用。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="title function_">double</span> = n =&gt; n * <span class="number">2</span>;</span><br><span class="line"><span class="comment">// 差不多等同于：let double = function(n) &#123; return n * 2 &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="title function_">double</span>(<span class="number">3</span>) ); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
+<p>如果没有参数，括号则是空的（但括号必须保留）：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="title function_">sayHi</span> = (<span class="params"></span>) =&gt; <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">sayHi</span>();</span><br></pre></td></tr></table></figure>
+<p>箭头函数可以像函数表达式一样使用。</p>
 <p>例如，动态创建一个函数：</p>
-<p>let age &#x3D; prompt(“What is your age?”, 18);</p>
-<p>let welcome &#x3D; (age &lt; 18) ?<br>  () &#x3D;&gt; console.log(‘Hello!’) :<br>  () &#x3D;&gt; console.log(“Greetings!”);</p>
-<p>welcome();<br>一开始，箭头函数可能看起来并不熟悉，也不容易读懂，但一旦我们看习惯了之后，这种情况很快就会改变。</p>
-<p>箭头函数对于简单的单行行为（action）来说非常方便，尤其是当我们懒得打太多字的时候。</p>
-<p>多行的箭头函数<br>到目前为止，我们看到的箭头函数非常简单。它们从 &#x3D;&gt; 的左侧获取参数，计算并返回右侧表达式的计算结果。</p>
-<p>有时我们需要更复杂一点的函数，比如带有多行的表达式或语句。在这种情况下，我们可以使用花括号将它们括起来。主要区别在于，用花括号括起来之后，需要包含 return 才能返回值（就像常规函数一样）。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> age = <span class="title function_">prompt</span>(<span class="string">&quot;What is your age?&quot;</span>, <span class="number">18</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> welcome = (age &lt; <span class="number">18</span>) ?</span><br><span class="line">  <span class="function">() =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Hello!&#x27;</span>) :</span><br><span class="line">  <span class="function">() =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Greetings!&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">welcome</span>();</span><br></pre></td></tr></table></figure>
+<p>一开始，箭头函数可能看起来并不熟悉，也不容易读懂，但一旦我们看习惯了之后，这种情况很快就会改变。</p>
+<p>箭头函数对于简单的单行行为 <code>（action）</code> 来说非常方便，尤其是当我们懒得打太多字的时候。</p>
+<h2 id="多行的箭头函数"><a href="#多行的箭头函数" class="headerlink" title="多行的箭头函数"></a>多行的箭头函数</h2><p>到目前为止，我们看到的箭头函数非常简单。它们从 <code>=&gt;</code> 的左侧获取参数，计算并返回右侧表达式的计算结果。</p>
+<p>有时我们需要更复杂一点的函数，比如带有多行的表达式或语句。在这种情况下，我们可以使用花括号将它们括起来。主要区别在于，用花括号括起来之后，需要包含 <code>return</code> 才能返回值（就像常规函数一样）。</p>
 <p>就像这样：</p>
-<p>let sum &#x3D; (a, b) &#x3D;&gt; {  &#x2F;&#x2F; 花括号表示开始一个多行函数<br>  let result &#x3D; a + b;<br>  return result; &#x2F;&#x2F; 如果我们使用了花括号，那么我们需要一个显式的 “return”<br>};</p>
-<p>console.log( sum(1, 2) ); &#x2F;&#x2F; 3<br>更多内容<br>在这里，我们赞扬了箭头函数的简洁性。但还不止这些！</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="title function_">sum</span> = (<span class="params">a, b</span>) =&gt; &#123;  <span class="comment">// 花括号表示开始一个多行函数</span></span><br><span class="line">  <span class="keyword">let</span> result = a + b;</span><br><span class="line">  <span class="keyword">return</span> result; <span class="comment">// 如果我们使用了花括号，那么我们需要一个显式的 “return”</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( <span class="title function_">sum</span>(<span class="number">1</span>, <span class="number">2</span>) ); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+<h2 id="更多内容"><a href="#更多内容" class="headerlink" title="更多内容"></a>更多内容</h2><p>在这里，我们赞扬了箭头函数的简洁性。但还不止这些！</p>
 <p>箭头函数还有其他有趣的特性。</p>
-<p>为了更深入地学习它们，我们首先需要了解一些 JavaScript 其他方面的知识，因此我们将在后面的 深入理解箭头函数 一章中再继续研究箭头函数。</p>
+<p>为了更深入地学习它们，我们首先需要了解一些 <code>JavaScript</code> 其他方面的知识，因此我们将在后面的 深入理解箭头函数 一章中再继续研究箭头函数。</p>
 <p>现在，我们已经可以用箭头函数进行单行行为和回调了。</p>
-<p>总结<br>箭头函数对于简单的操作很方便，特别是对于单行的函数。它具体有两种形式：</p>
-<p>不带花括号：(…args) &#x3D;&gt; expression —— 右侧是一个表达式：函数计算表达式并返回其结果。如果只有一个参数，则可以省略括号，例如 n &#x3D;&gt; n*2。<br>带花括号：(…args) &#x3D;&gt; { body } —— 花括号允许我们在函数中编写多个语句，但是我们需要显式地 return 来返回一些内容。</p>
+<h2 id="总结-6"><a href="#总结-6" class="headerlink" title="总结"></a>总结</h2><p>箭头函数对于简单的操作很方便，特别是对于单行的函数。它具体有两种形式：</p>
+<ul>
+<li><p>不带花括号：<code>(...args) =&gt; expression</code> —— 右侧是一个表达式：函数计算表达式并返回其结果。如果只有一个参数，则可以省略括号，例如 <code>n =&gt; n*2</code>。</p>
+</li>
+<li><p>带花括号：<code>(...args) =&gt; &#123; body &#125;</code> —— 花括号允许我们在函数中编写多个语句，但是我们需要显式地 <code>return</code> 来返回一些内容。</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mindmap</span><br><span class="line">	root(&quot;JavaScript学习笔记&quot;)</span><br><span class="line">		(&quot;JS 基础内容&quot;)</span><br><span class="line">		(&quot;关于 JavaScript 的一些基本常识&quot;)</span><br><span class="line">			(&quot;如何把代码运行的结果显示出来？&quot;)</span><br><span class="line">			(&quot;注释&quot;)</span><br><span class="line">			(&quot;现代模式/严格模式 &quot;)</span><br><span class="line">			(&quot;三种特殊值&quot;)</span><br><span class="line">		(&quot;变量&quot;)</span><br><span class="line">		(&quot;数据类型&quot;)</span><br><span class="line">			(&quot;文本串类型&quot;)</span><br><span class="line">				(&quot;引号 （quotes）&quot;)</span><br><span class="line">				(&quot;特殊字符  / 转义字符&quot;)</span><br><span class="line">				(&quot;字符串长度 length&quot;)</span><br><span class="line">				(&quot;访问字符&quot;)</span><br><span class="line">				(&quot;字母大小写转换&quot;)</span><br><span class="line">				(&quot;在字符串查找是否包含另一个字符串&quot;)</span><br><span class="line">			(&quot;数字类型&quot;)</span><br><span class="line">				(&quot;科学计数法&quot;)</span><br><span class="line">				(&quot;数字进制转换&quot;)</span><br><span class="line">				(&quot;舍入&quot;)</span><br><span class="line">				(&quot;检测变量是不是数字      &quot;)</span><br><span class="line">				(&quot;区别&quot;)</span><br><span class="line">				(&quot;注意事项&quot;)</span><br><span class="line">				(&quot;提取文本串中开头的数字&quot;)</span><br><span class="line">				(&quot;注意事项&quot;)</span><br><span class="line">				(&quot;数字函数&quot;)</span><br><span class="line">				(&quot;变量的数据类型转换&quot;)</span><br><span class="line">					(&quot;**转换成字符串**&quot;)</span><br><span class="line">					(&quot;**转换成数字**&quot;)</span><br><span class="line">					(&quot;**转换成布尔（boolean）类型**&quot;)</span><br><span class="line">					(&quot;总结&quot;)</span><br><span class="line">		(&quot;数学运算&quot;)</span><br><span class="line">			(&quot;术语：“一元运算符”，“二元运算符”，“运算元”&quot;)</span><br><span class="line">			(&quot;数学运算&quot;)</span><br><span class="line">				(&quot;取余 %&quot;)</span><br><span class="line">				(&quot;求幂 **&quot;)</span><br><span class="line">			(&quot;用二元运算符 +         连接字符串&quot;)</span><br><span class="line">			(&quot;数字转化，一元运算符 +&quot;)</span><br><span class="line">			(&quot;运算符优先级&quot;)</span><br><span class="line">			(&quot;赋值运算符&quot;)</span><br><span class="line">				(&quot;赋值 = 返回一个值&quot;)</span><br><span class="line">				(&quot;链式赋值（Chaining assignments）&quot;)</span><br><span class="line">			(&quot;原地修改&quot;)</span><br><span class="line">			(&quot;自增/自减&quot;)</span><br><span class="line">			(&quot;位运算符&quot;)</span><br><span class="line">			(&quot;逗号运算符&quot;)</span><br><span class="line">		(&quot;值的比较&quot;)</span><br><span class="line">			(&quot;比较的结果是 Boolean 类型&quot;)</span><br><span class="line">			(&quot;字符串比较&quot;)</span><br><span class="line">			(&quot;不同类型间的比较&quot;)</span><br><span class="line">			(&quot;严格相等&quot;)</span><br><span class="line">			(&quot;对 null 和 undefined 进行比较&quot;)</span><br><span class="line">				(&quot;奇怪的结果：null vs 0&quot;)</span><br><span class="line">				(&quot;特立独行的 undefined&quot;)</span><br><span class="line">				(&quot;避免问题&quot;)</span><br><span class="line">			(&quot;总结&quot;)</span><br><span class="line">		(&quot;条件分支：if 和 &#x27;?&#x27;&quot;)</span><br><span class="line">			(&quot;“if” 语句&quot;)</span><br><span class="line">			(&quot;布尔转换&quot;)</span><br><span class="line">			(&quot;“else” 语句&quot;)</span><br><span class="line">			(&quot;多个条件：“else if”&quot;)</span><br><span class="line">			(&quot;条件运算符 ‘?’&quot;)</span><br><span class="line">			(&quot;多个 ‘?’&quot;)</span><br><span class="line">			(&quot;‘?’ 的非常规使用&quot;)</span><br><span class="line">		(&quot;逻辑运算符&quot;)</span><br><span class="line">			(&quot;||（或）&quot;)</span><br><span class="line">			(&quot;或运算寻找第一个真值&quot;)</span><br><span class="line">			(&quot;&amp;&amp;（与）&quot;)</span><br><span class="line">			(&quot;与运算寻找第一个假值&quot;)</span><br><span class="line">			(&quot;!（非）&quot;)</span><br><span class="line">		(&quot;空值合并运算符 &#x27; ?? &#x27;&quot;)</span><br><span class="line">			(&quot;与 || 比较&quot;)</span><br><span class="line">			(&quot;优先级&quot;)</span><br><span class="line">				(&quot;?? 与 &amp;&amp; 或 || 一起使用&quot;)</span><br><span class="line">			(&quot;总结&quot;)</span><br><span class="line">		(&quot;循环：while 和 for&quot;)</span><br><span class="line">			(&quot;“while” 循环&quot;)</span><br><span class="line">			(&quot;“do…while” 循环&quot;)</span><br><span class="line">			(&quot;“for” 循环&quot;)</span><br><span class="line">				(&quot;省略语句段&quot;)</span><br><span class="line">			(&quot;跳出循环&quot;)</span><br><span class="line">			(&quot;继续下一次迭代&quot;)</span><br><span class="line">			(&quot;break/continue 标签&quot;)</span><br><span class="line">			(&quot;总结&quot;)</span><br><span class="line">		(&quot;switch 语句&quot;)</span><br><span class="line">			(&quot;语法&quot;)</span><br><span class="line">			(&quot;举个例子&quot;)</span><br><span class="line">			(&quot;“case” 分组&quot;)</span><br><span class="line">			(&quot;[类型很关键](https://zh.javascript.info/switch#lei-xing-hen-guan-jian)&quot;)</span><br><span class="line">		(&quot;函数&quot;)</span><br><span class="line">			(&quot;函数声明&quot;)</span><br><span class="line">			(&quot;局部变量&quot;)</span><br><span class="line">			(&quot;外部变量&quot;)</span><br><span class="line">			(&quot;全局变量&quot;)</span><br><span class="line">			(&quot;参数&quot;)</span><br><span class="line">			(&quot;默认值&quot;)</span><br><span class="line">			(&quot;默认参数的计算&quot;)</span><br><span class="line">			(&quot;返回值&quot;)</span><br><span class="line">			(&quot;函数命名&quot;)</span><br><span class="line">			(&quot;函数 == 注释&quot;)</span><br><span class="line">			(&quot;总结&quot;)</span><br><span class="line">		(&quot;函数表达式&quot;)</span><br><span class="line">			(&quot;回调函数&quot;)</span><br><span class="line">			(&quot;函数表达式 vs 函数声明&quot;)</span><br><span class="line">			(&quot;总结&quot;)</span><br><span class="line">		(&quot;箭头函数，基础知识&quot;)</span><br><span class="line">			(&quot;多行的箭头函数&quot;)</span><br><span class="line">			(&quot;更多内容&quot;)</span><br><span class="line">			(&quot;总结&quot;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]]></content>
       <categories>
         <category>笔记</category>
