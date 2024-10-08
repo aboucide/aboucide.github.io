@@ -118,6 +118,79 @@
       </tags>
   </entry>
   <entry>
+    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
+    <url>//blog/solution/Wifi.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
+<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
+<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
+<p>问题已经描述完毕，下面是我的解决方法。</p>
+<hr>
+<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
+
+<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
+
+<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
+
+<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
+
+
+
+<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
+<hr>
+<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
+<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
+]]></content>
+      <categories>
+        <category>常见电脑疑难的解决方案</category>
+      </categories>
+      <tags>
+        <tag>wifi</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>桌面图标间距变大，如何修改回去？解决办法</title>
+    <url>//blog/solution/deskico.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>修改之前<br><img src=" https://s21.ax1x.com/2024/08/25/pAF7dv6.png "  style="zoom:30%;" /></p>
+<p>修改之后如下图</p>
+<img src=" https://s21.ax1x.com/2024/08/25/pAF7DbD.png "  style="zoom:50%;" />
+
+
+
+<p>一键修改桌面图标间距（推荐）。</p>
+<p>链接: <a href="https://caiyun.139.com/m/i?065CtbL96waQC">https://caiyun.139.com/m/i?065CtbL96waQC</a>    提取码:aQ4L  </p>
+<p>下载文件后，打开运行</p>
+<p>脚本先会自动帮你备份，然后再次回车确认开始修改，最后手动重启电脑即可查看效果。</p>
+<hr>
+<h2 id="手动修改-解决办法"><a href="#手动修改-解决办法" class="headerlink" title="手动修改-解决办法"></a>手动修改-解决办法</h2><ol>
+<li><strong>打开注册表编辑器</strong><ul>
+<li>按下<code>Win + R</code>快捷键打开“运行”对话框，输入<code>regedit</code>，然后按回车键。在弹出的用户账户控制提示中点击“是”以打开注册表编辑器。</li>
+</ul>
+</li>
+<li><strong>定位到相应键值</strong><ul>
+<li>在注册表编辑器的左侧目录树中，导航至以下路径：<br><code>HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics</code></li>
+</ul>
+</li>
+<li><strong>备份注册表</strong></li>
+<li><strong>修改图标间距</strong><ul>
+<li>在右侧找到名为<code>IconSpacing</code>和<code>IconVerticalSpacing</code>的两个键值。</li>
+<li>双击<code>IconSpacing</code>，将数值数据改为<code>-1125</code>，然后同样操作修改<code>IconVerticalSpacing</code>为<code>-1125</code>。</li>
+<li>确认更改后关闭注册表编辑器。</li>
+</ul>
+</li>
+<li><strong>注销&#x2F;重启计算机</strong><ul>
+<li>完成修改后，注销&#x2F;重启电脑让更改生效。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>常见电脑疑难的解决方案</category>
+      </categories>
+      <tags>
+        <tag>桌面图标</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的hexo博客设置以及next主题个人喜好</title>
     <url>//blog/note/hexo/blog-next-diy.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
@@ -521,7 +594,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#107;&#101;&#115;&#x69;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#101;&#114;&#107;&#101;&#115;&#x69;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#x6b;&#x65;&#x73;&#x69;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#109;">&#101;&#114;&#x6b;&#x65;&#x73;&#x69;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#109;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -553,7 +626,7 @@
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#x72;&#x6b;&#x65;&#115;&#x69;&#x40;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;">&#101;&#x72;&#x6b;&#x65;&#115;&#x69;&#x40;&#x71;&#113;&#x2e;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#x6b;&#x65;&#x73;&#105;&#64;&#113;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#x65;&#x72;&#x6b;&#x65;&#x73;&#105;&#64;&#113;&#x71;&#x2e;&#x63;&#111;&#x6d;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -573,9 +646,9 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#109;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#109;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
@@ -808,79 +881,6 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
-    <url>//blog/solution/Wifi.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
-<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
-<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
-<p>问题已经描述完毕，下面是我的解决方法。</p>
-<hr>
-<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
-
-<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
-
-<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
-
-<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
-
-
-
-<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
-<hr>
-<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
-<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
-]]></content>
-      <categories>
-        <category>常见电脑疑难的解决方案</category>
-      </categories>
-      <tags>
-        <tag>wifi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>桌面图标间距变大，如何修改回去？解决办法</title>
-    <url>//blog/solution/deskico.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>修改之前<br><img src=" https://s21.ax1x.com/2024/08/25/pAF7dv6.png "  style="zoom:30%;" /></p>
-<p>修改之后如下图</p>
-<img src=" https://s21.ax1x.com/2024/08/25/pAF7DbD.png "  style="zoom:50%;" />
-
-
-
-<p>一键修改桌面图标间距（推荐）。</p>
-<p>链接: <a href="https://caiyun.139.com/m/i?065CtbL96waQC">https://caiyun.139.com/m/i?065CtbL96waQC</a>    提取码:aQ4L  </p>
-<p>下载文件后，打开运行</p>
-<p>脚本先会自动帮你备份，然后再次回车确认开始修改，最后手动重启电脑即可查看效果。</p>
-<hr>
-<h2 id="手动修改-解决办法"><a href="#手动修改-解决办法" class="headerlink" title="手动修改-解决办法"></a>手动修改-解决办法</h2><ol>
-<li><strong>打开注册表编辑器</strong><ul>
-<li>按下<code>Win + R</code>快捷键打开“运行”对话框，输入<code>regedit</code>，然后按回车键。在弹出的用户账户控制提示中点击“是”以打开注册表编辑器。</li>
-</ul>
-</li>
-<li><strong>定位到相应键值</strong><ul>
-<li>在注册表编辑器的左侧目录树中，导航至以下路径：<br><code>HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics</code></li>
-</ul>
-</li>
-<li><strong>备份注册表</strong></li>
-<li><strong>修改图标间距</strong><ul>
-<li>在右侧找到名为<code>IconSpacing</code>和<code>IconVerticalSpacing</code>的两个键值。</li>
-<li>双击<code>IconSpacing</code>，将数值数据改为<code>-1125</code>，然后同样操作修改<code>IconVerticalSpacing</code>为<code>-1125</code>。</li>
-<li>确认更改后关闭注册表编辑器。</li>
-</ul>
-</li>
-<li><strong>注销&#x2F;重启计算机</strong><ul>
-<li>完成修改后，注销&#x2F;重启电脑让更改生效。</li>
-</ul>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>常见电脑疑难的解决方案</category>
-      </categories>
-      <tags>
-        <tag>桌面图标</tag>
       </tags>
   </entry>
   <entry>
