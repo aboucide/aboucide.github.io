@@ -56,6 +56,15 @@
   </url>
   
   <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript1.html</loc>
+    
+    <lastmod>2024-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript2.html</loc>
     
     <lastmod>2024-10-21</lastmod>
@@ -273,15 +282,6 @@
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/html.html</loc>
-    
-    <lastmod>2024-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript1.html</loc>
     
     <lastmod>2024-10-21</lastmod>
     
