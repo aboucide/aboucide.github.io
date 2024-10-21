@@ -922,7 +922,50 @@ sh.exit();
   <entry>
     <title>试卷分析器使用教程</title>
     <url>//blog/note/software-use/test-paper-analyzer.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="试卷分析器使用教程与注意事项"><a href="#试卷分析器使用教程与注意事项" class="headerlink" title="试卷分析器使用教程与注意事项"></a>试卷分析器使用教程与注意事项</h1><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h1><h2 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h2><h2 id="参数设置"><a href="#参数设置" class="headerlink" title="参数设置"></a>参数设置</h2><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><h1 id="未来计划"><a href="#未来计划" class="headerlink" title="未来计划"></a>未来计划</h1>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="试卷分析器使用教程与注意事项"><a href="#试卷分析器使用教程与注意事项" class="headerlink" title="试卷分析器使用教程与注意事项"></a>试卷分析器使用教程与注意事项</h1><p>一次设置，长期有效。</p>
+<p>一键全自动生成试卷分析，为了安全起见，我设置了两份试卷分析的时间间隔最小为45秒。</p>
+<h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h1><h2 id="获取登录的Cookie"><a href="#获取登录的Cookie" class="headerlink" title="获取登录的Cookie"></a>获取登录的Cookie</h2><h3 id="进入工作台的【试卷分析】页面"><a href="#进入工作台的【试卷分析】页面" class="headerlink" title="进入工作台的【试卷分析】页面"></a>进入工作台的【试卷分析】页面</h3><img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8huu9g2u93aj30f80zjq5i.jpg "  style="zoom:30%;" />
+
+<h3 id="按下键盘上的F12"><a href="#按下键盘上的F12" class="headerlink" title="按下键盘上的F12"></a>按下键盘上的F12</h3><p>按下键盘F12的案件，可以打开浏览器的开发工具。</p>
+<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8huu9iqkqo4j30d80hkmyh.jpg"  style="zoom:30%" />
+
+<p>2、选择”Network”选项。</p>
+<p>对应的中文就是”网络”。</p>
+<p>3、点击 “Fech&#x2F;XHR”选项，开启筛选。</p>
+<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8huubbgeufxj30x50u0dk5.jpg "  style="zoom:50%;" />
+
+<hr>
+<p>4、点击新建【试卷分析】，随便上传一张图片，进入【选择错题】的页面，例如下图。</p>
+<p>可以看到 “开发者工具” 抓到了很多访问信息，</p>
+<p>①找到 “add” 名称的那一栏 。</p>
+<p>②找到 “Request Header” 的下面有一行对应的 “Cookie”。</p>
+<p>③复制Cookie对应的值，就像我图片里面打码的那样。</p>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8huub5ysjw1j31mo0u0jxn.jpg "  style="zoom:50%;" />
+
+<hr>
+<p>Cookie这一行内容有点多，复制，粘贴到软件的对应编辑框中。</p>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8huub8evppfj312w0pun12.jpg "  style="zoom:50%;" />
+
+
+
+
+
+
+
+<h2 id="参数设置"><a href="#参数设置" class="headerlink" title="参数设置"></a>参数设置</h2><img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8huubkwrznij30hi09rdgy.jpg "  style="zoom:50%;" />
+
+<p>【用户名称】</p>
+<p>你的真实名字，不需要名字后面的数字。</p>
+<p>【Cookie】</p>
+<p>按照教程从网页中复制粘贴进来即可。软件会自动保存，只要你不手动改密码，似乎保质期还挺长的。</p>
+<p>如果你不小心泄露了你的Cookie，请尽快修改密码。</p>
+<p>【自定义选项】</p>
+<p>有效参数：生成试卷分析的次数、每次试卷分析的间隔。</p>
+<p>是的，除此之外，页面中其他参数我都没做处理（无效参数），懒得弄了，未来再说。。。</p>
+<h1 id="未来计划"><a href="#未来计划" class="headerlink" title="未来计划"></a>未来计划</h1><p>支持更多科目、</p>
+<p>能自定义选择学生类型、</p>
+<p>能随机选择试卷图片等等。</p>
+]]></content>
       <categories>
         <category>笔记</category>
         <category>软件使用教程</category>
@@ -1335,7 +1378,7 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#x6b;&#101;&#x73;&#x69;&#64;&#113;&#113;&#46;&#99;&#111;&#109;">&#101;&#114;&#x6b;&#101;&#x73;&#x69;&#64;&#113;&#113;&#46;&#99;&#111;&#109;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#x6b;&#101;&#115;&#105;&#x40;&#113;&#113;&#46;&#x63;&#111;&#109;">&#101;&#114;&#x6b;&#101;&#115;&#105;&#x40;&#113;&#113;&#46;&#x63;&#111;&#109;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -1367,7 +1410,7 @@ sh.exit();
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#x72;&#107;&#x65;&#115;&#105;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#101;&#x72;&#107;&#x65;&#115;&#105;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#114;&#x6b;&#101;&#x73;&#x69;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;">&#101;&#114;&#x6b;&#101;&#x73;&#x69;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -1387,9 +1430,9 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;">&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#x6f;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#x69;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#x69;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
