@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>源的自留地 | 源的自留地</title><meta name="author" content="脚滑的小子"><meta name="copyright" content="脚滑的小子"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Media 稳定性: 稳定  media模块提供多媒体编程的支持。目前仅支持音乐播放和媒体文件扫描。后续会结合UI加入视频播放等功能。 需要注意是，使用该模块播放音乐时是在后台异步播放的，在脚本结束后会自动结束播放，因此可能需要插入诸如sleep()的语句来使脚本保持运行。例如： &#x2F;&#x2F;播放音乐 media.playMusic(&quot;&#x2F;sdcard&#x2F;1.mp3&quot;); &#x2F;&#x2F;让音乐播放完">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>源的自留地 | 源的自留地</title><meta name="author" content="脚滑的小子"><meta name="copyright" content="脚滑的小子"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="shell 即 Unix Shell，在类 Unix 系统提供与操作系统交互的一系列命令。 很多程序可以用来执行 shell 命令，例如终端模拟器。 在 Auto.js 大致等同于用 adb 执行命令 “adb shell”。 其实现包括两种方式：  通过java.lang.Runtime.exec执行(shell, Tap, Home等函数) 通过内嵌终端模拟器执行(RootAutomator,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="源的自留地">
 <meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/undefined">
 <meta property="og:site_name" content="源的自留地">
-<meta property="og:description" content="Media 稳定性: 稳定  media模块提供多媒体编程的支持。目前仅支持音乐播放和媒体文件扫描。后续会结合UI加入视频播放等功能。 需要注意是，使用该模块播放音乐时是在后台异步播放的，在脚本结束后会自动结束播放，因此可能需要插入诸如sleep()的语句来使脚本保持运行。例如： &#x2F;&#x2F;播放音乐 media.playMusic(&quot;&#x2F;sdcard&#x2F;1.mp3&quot;); &#x2F;&#x2F;让音乐播放完">
+<meta property="og:description" content="shell 即 Unix Shell，在类 Unix 系统提供与操作系统交互的一系列命令。 很多程序可以用来执行 shell 命令，例如终端模拟器。 在 Auto.js 大致等同于用 adb 执行命令 “adb shell”。 其实现包括两种方式：  通过java.lang.Runtime.exec执行(shell, Tap, Home等函数) 通过内嵌终端模拟器执行(RootAutomator,">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg">
-<meta property="article:published_time" content="2024-10-28T13:19:12.745Z">
-<meta property="article:modified_time" content="2024-10-28T13:19:12.749Z">
+<meta property="article:published_time" content="2024-10-30T13:04:27.200Z">
+<meta property="article:modified_time" content="2024-10-30T13:04:27.200Z">
 <meta property="article:author" content="脚滑的小子">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/undefined"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>(function(c,l,a,r,i,t,y){
@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-10-28 13:19:12'
+  postUpdate: '2024-10-30 13:04:27'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -156,78 +156,329 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.netbian.com/uploads/allimg/240219/225433-1708354473d5e0.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="源的自留地"><span class="site-name">源的自留地</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/AutoX.js使用说明/多媒体Media.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2024-10-28T13:19:12.745Z" title="发表日期 2024-10-28 13:19:12">2024-10-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2024-10-28T13:19:12.749Z" title="最近更新日期 2024-10-28 13:19:12">2024-10-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Media"><a href="#Media" class="headerlink" title="Media"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/media?id=media">Media</a></h1><blockquote>
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">22</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.netbian.com/uploads/allimg/240219/225433-1708354473d5e0.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="源的自留地"><span class="site-name">源的自留地</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/AutoX.js使用说明/执行shell命令.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2024-10-30T13:04:27.200Z" title="发表日期 2024-10-30 13:04:27">2024-10-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2024-10-30T13:04:27.200Z" title="最近更新日期 2024-10-30 13:04:27">2024-10-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>shell 即 Unix Shell，在类 Unix 系统提供与操作系统交互的一系列命令。</p>
+<p>很多程序可以用来执行 shell 命令，例如终端模拟器。</p>
+<p>在 Auto.js 大致等同于用 adb 执行命令 “adb shell”。</p>
+<p>其实现包括两种方式：</p>
+<ul>
+<li>通过<code>java.lang.Runtime.exec</code>执行(shell, Tap, Home等函数)</li>
+<li>通过内嵌终端模拟器执行(RootAutomator, Shell等对象)</li>
+</ul>
+<h2 id="shell函数"><a href="#shell函数" class="headerlink" title="shell函数"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shell%e5%87%bd%e6%95%b0">shell函数</a></h2><blockquote>
 <p>稳定性: 稳定</p>
 </blockquote>
-<p>media模块提供多媒体编程的支持。目前仅支持音乐播放和媒体文件扫描。后续会结合UI加入视频播放等功能。</p>
-<p>需要注意是，使用该模块播放音乐时是在后台异步播放的，在脚本结束后会自动结束播放，因此可能需要插入诸如<code>sleep()</code>的语句来使脚本保持运行。例如：</p>
-<pre><code>//播放音乐
-media.playMusic(&quot;/sdcard/1.mp3&quot;);
-//让音乐播放完
-sleep(media.getMusicDuration());
+<h2 id="shell-cmd-root"><a href="#shell-cmd-root" class="headerlink" title="shell(cmd[, root])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shellcmd-root">shell(cmd[, root])</a></h2><ul>
+<li>cmd {string} 要执行的命令</li>
+<li>root {Boolean} 是否以root权限运行，默认为false。</li>
+</ul>
+<p>一次性执行命令cmd, 并返回命令的执行结果。返回对象的其属性如下:</p>
+<ul>
+<li>code {number} 返回码。执行成功时为0，失败时为非0的数字。</li>
+<li>result {string} 运行结果(stdout输出结果)</li>
+<li>error {string} 运行的错误信息(stderr输出结果)。例如执行需要root权限的命令但没有授予root权限会返回错误信息”Permission denied”。</li>
+</ul>
+<p>示例（强制停止微信）：</p>
+<pre><code>var result = shell(&quot;am force-stop com.tencent.mm&quot;, true);
+log(result);
+
+console.show();
+
+if(result.code == 0)&#123;
+  toast(&quot;执行成功&quot;);
+&#125;else&#123;
+  toast(&quot;执行失败！请到控制台查看错误信息&quot;);
+&#125;
 </code></pre>
-<ul>
-<li><code>path</code> {string} 媒体文件路径</li>
+<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shell">Shell</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>shell函数通过用来一次性执行单条命令并获取结果。如果有多条命令需要执行，用Shell对象的效率更高。这是因为，每次运行shell函数都会打开一个单独的shell进程并在运行结束后关闭他，这个过程需要一定的时间；而Shell对象自始至终使用同一个shell进程。</p>
+<h2 id="new-Shell-root"><a href="#new-Shell-root" class="headerlink" title="new Shell(root)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=new-shellroot">new Shell(root)</a></h2><ul>
+<li>root {Boolean} 是否以root权限运行一个shell进程，默认为false。这将会影响其后使用该Shell对象执行的命令的权限</li>
 </ul>
-<p>扫描路径path的媒体文件，将它加入媒体库中；或者如果该文件以及被删除，则通知媒体库移除该文件。</p>
-<p>媒体库包括相册、音乐库等，因此该函数可以用于把某个图片文件加入相册。</p>
-<pre><code>//请求截图
-requestScreenCapture(false);
-//截图
-var im = captureScreen();
-var path = &quot;/sdcard/screenshot.png&quot;;
-//保存图片
-im.saveTo(path);
-//把图片加入相册
-media.scanFile(path);
+<p>Shell对象的”构造函数”。</p>
+<pre><code>var sh = new Shell(true);
+//强制停止微信
+sh.exec(&quot;am force-stop com.tencent.mm&quot;);
+sh.exit();
 </code></pre>
-<ul>
-<li><code>path</code> {string} 音乐文件路径</li>
-<li><code>volume</code> {number} 播放音量，为0~1的浮点数，默认为1</li>
-<li><code>looping</code> {boolean} 是否循环播放，如果looping为<code>true</code>则循环播放，默认为<code>false</code></li>
+<h2 id="Shell-exec-cmd"><a href="#Shell-exec-cmd" class="headerlink" title="Shell.exec(cmd)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shellexeccmd">Shell.exec(cmd)</a></h2><ul>
+<li><code>cmd</code> {string} 要执行的命令</li>
 </ul>
-<p>播放音乐文件path。该函数不会显示任何音乐播放界面。如果文件不存在或者文件不是受支持的音乐格式，则抛出<code>UncheckedIOException</code>异常。</p>
-<pre><code>//播放音乐
-media.playMusic(&quot;/sdcard/1.mp3&quot;);
-//让音乐播放完
-sleep(media.getMusicDuration());
+<p>执行命令cmd。该函数不会返回任何值。</p>
+<p>注意，命令执行是”异步”的、非阻塞的。也就是不会等待命令完成后才继续向下执行。</p>
+<p>尽管这样的设计使用起来有很多不便之处，但受限于终端模拟器，暂时没有解决方式；如果后续能找到解决方案，则将提供<code>Shell.execAndWaitFor</code>函数。</p>
+<h2 id="Shell-exit"><a href="#Shell-exit" class="headerlink" title="Shell.exit()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shellexit">Shell.exit()</a></h2><p>直接退出shell。正在执行的命令会被强制退出。</p>
+<h2 id="Shell-exitAndWaitFor"><a href="#Shell-exitAndWaitFor" class="headerlink" title="Shell.exitAndWaitFor()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shellexitandwaitfor">Shell.exitAndWaitFor()</a></h2><p>执行”exit”命令并等待执行命令执行完成、退出shell。</p>
+<p>此函数会执行exit命令来正常退出shell。</p>
+<h2 id="Shell-setCallback-callback"><a href="#Shell-setCallback-callback" class="headerlink" title="Shell.setCallback(callback)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shellsetcallbackcallback">Shell.setCallback(callback)</a></h2><ul>
+<li>callback {Object} 回调函数</li>
+</ul>
+<p>设置该Shell的回调函数，以便监听Shell的输出。可以包括以下属性：</p>
+<ul>
+<li>onOutput {Function} 每当shell有新的输出时便会调用该函数。其参数是一个字符串。</li>
+<li>onNewLine {Function} 每当shell有新的一行输出时便会调用该函数。其参数是一个字符串(不包括最后的换行符)。</li>
+</ul>
+<p>例如:</p>
+<pre><code>var sh = new Shell();
+sh.setCallback(&#123;
+    onNewLine: function(line)&#123;
+        //有新的一行输出时打印到控制台
+        log(line);
+    &#125;
+&#125;)
+while(true)&#123;
+    //循环输入命令
+    var cmd = dialogs.rawInput(&quot;请输入要执行的命令，输入exit退出&quot;);
+    if(cmd == &quot;exit&quot;)&#123;
+        break;
+    &#125;
+    //执行命令
+    sh.exec(cmd);
+&#125;
+sh.exit();
 </code></pre>
-<p>如果要循环播放音乐，则使用looping参数：</p>
-<pre><code>```js
-//传递第三个参数为true以循环播放音乐
-media.playMusic(&quot;/sdcard/1.mp3&quot;, 1, true);
-//等待三次播放的时间
-sleep(media.getMusicDuration() * 3);
+<h2 id="附录-shell命令简介"><a href="#附录-shell命令简介" class="headerlink" title="附录: shell命令简介"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=%e9%99%84%e5%bd%95-shell%e5%91%bd%e4%bb%a4%e7%ae%80%e4%bb%8b">附录: shell命令简介</a></h2><p>以下关于shell命令的资料来自<a target="_blank" rel="noopener" href="https://developer.android.com/studio/command-line/adb.html#shellcommands">AndroidStudio用户指南：Shell命令</a>。</p>
+<h2 id="am命令"><a href="#am命令" class="headerlink" title="am命令"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=am%e5%91%bd%e4%bb%a4">am命令</a></h2><p>am命令即Activity Manager命令，用于管理应用程序活动、服务等。</p>
+<p><strong>以下命令均以”am “开头，例如<code>shell(&#39;am start -p com.tencent.mm&#39;);</code>(启动微信)</strong></p>
+<h3 id="start-options-intent"><a href="#start-options-intent" class="headerlink" title="start [options] intent"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=start-options-intent">start [options] intent</a></h3><p>启动 intent 指定的 Activity(应用程序活动)。<br>请参阅 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shell_intent">intent 参数的规范</a>。</p>
+<p>选项包括：</p>
+<ul>
+<li>-D：启用调试。</li>
+<li>-W：等待启动完成。</li>
+<li>--start-profiler file：启动分析器并将结果发送到 file。</li>
+<li>-P file：类似于 –start-profiler，但当应用进入空闲状态时分析停止。</li>
+<li>-R count：重复 Activity 启动 count 次数。在每次重复前，将完成顶部 Activity。</li>
+<li>-S：启动 Activity 前强行停止目标应用。</li>
+<li>--opengl-trace：启用 OpenGL 函数的跟踪。</li>
+<li>--user user_id | current：指定要作为哪个用户运行；如果未指定，则作为当前用户运行。</li>
+</ul>
+<h3 id="startservice-options-intent"><a href="#startservice-options-intent" class="headerlink" title="startservice [options] intent"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=startservice-options-intent">startservice [options] intent</a></h3><p>启动 intent 指定的 Service(服务)。<br>请参阅 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shell_intent">intent 参数的规范</a>。<br>选项包括：</p>
+<ul>
+<li>--user user_id | current：指定要作为哪个用户运行；如果未指定，则作为当前用户运行。</li>
+</ul>
+<h3 id="force-stop-package"><a href="#force-stop-package" class="headerlink" title="force-stop package"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=force-stop-package">force-stop package</a></h3><p>强行停止与 package（<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=%e5%ba%94%e7%94%a8%e5%8c%85%e5%90%8d">应用包名</a>）关联的所有应用。</p>
+<h3 id="kill-options-package"><a href="#kill-options-package" class="headerlink" title="kill [options] package"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=kill-options-package">kill [options] package</a></h3><p>终止与 package（<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=%e5%ba%94%e7%94%a8%e5%8c%85%e5%90%8d">应用包名</a>）关联的所有进程。此命令仅终止可安全终止且不会影响用户体验的进程。<br>选项包括：</p>
+<ul>
+<li>--user user_id | all | current：指定将终止其进程的用户；如果未指定，则终止所有用户的进程。</li>
+</ul>
+<h3 id="kill-all"><a href="#kill-all" class="headerlink" title="kill-all"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=kill-all">kill-all</a></h3><p>终止所有后台进程。</p>
+<h3 id="broadcast-options-intent"><a href="#broadcast-options-intent" class="headerlink" title="broadcast [options] intent"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=broadcast-options-intent">broadcast [options] intent</a></h3><p>发出广播 intent。 请参阅 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shell_intent">intent 参数的规范</a>。</p>
+<p>选项包括：</p>
+<ul>
+<li>[–user user_id | all | current]：指定要发送到的用户；如果未指定，则发送到所有用户。</li>
+</ul>
+<h3 id="instrument-options-component"><a href="#instrument-options-component" class="headerlink" title="instrument [options] component"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=instrument-options-component">instrument [options] component</a></h3><p>使用 Instrumentation 实例启动监控。通常，目标 component 是表单 test_package&#x2F;runner_class。<br>选项包括：</p>
+<ul>
+<li>-r：输出原始结果（否则对 report_key_streamresult 进行解码）。与 [-e perf true] 结合使用以生成性能测量的原始输出。</li>
+<li>-e name value：将参数 name 设为 value。对于测试运行器，通用表单为 -e testrunner_flag value[,value…]。</li>
+<li>-p file：将分析数据写入 file。</li>
+<li>-w：先等待仪器完成，然后再返回。测试运行器需要使用此选项。</li>
+<li>--no-window-animation：运行时关闭窗口动画。</li>
+<li>--user user_id | current：指定仪器在哪个用户中运行；如果未指定，则在当前用户中运行。</li>
+<li>profile start process file 启动 process 的分析器，将结果写入 file。</li>
+<li>profile stop process 停止 process 的分析器。</li>
+</ul>
+<h3 id="dumpheap-options-process-file"><a href="#dumpheap-options-process-file" class="headerlink" title="dumpheap [options] process file"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=dumpheap-options-process-file">dumpheap [options] process file</a></h3><p>转储 process 的堆，写入 file。</p>
+<p>选项包括：</p>
+<ul>
+<li>--user [user_id|current]：提供进程名称时，指定要转储的进程用户；如果未指定，则使用当前用户。</li>
+<li>-n：转储原生堆，而非托管堆。</li>
+<li>set-debug-app [options] package 将应用 package 设为调试。</li>
+</ul>
+<p>选项包括：</p>
+<ul>
+<li>-w：应用启动时等待调试程序。</li>
+<li>--persistent：保留此值。</li>
+<li>clear-debug-app 使用 set-debug-app 清除以前针对调试用途设置的软件包。</li>
+</ul>
+<h3 id="monitor-options-启动对崩溃或-ANR-的监控。"><a href="#monitor-options-启动对崩溃或-ANR-的监控。" class="headerlink" title="monitor [options] 启动对崩溃或 ANR 的监控。"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=monitor-options-%e5%90%af%e5%8a%a8%e5%af%b9%e5%b4%a9%e6%ba%83%e6%88%96-anr-%e7%9a%84%e7%9b%91%e6%8e%a7%e3%80%82">monitor [options] 启动对崩溃或 ANR 的监控。</a></h3><p>选项包括：</p>
+<ul>
+<li><p>--gdb：在崩溃&#x2F;ANR 时在给定端口上启动 gdbserv。</p>
+<h3 id="screen-compat-on-off-package"><a href="#screen-compat-on-off-package" class="headerlink" title="screen-compat {on|off} package"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=screen-compat-onoff-package">screen-compat {on|off} package</a></h3><p>控制 package 的屏幕兼容性模式。</p>
+</li>
+</ul>
+<h3 id="display-size-reset-widthxheight"><a href="#display-size-reset-widthxheight" class="headerlink" title="display-size [reset|widthxheight]"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=display-size-resetwidthxheight">display-size [reset|widthxheight]</a></h3><p>替换模拟器&#x2F;设备显示尺寸。此命令对于在不同尺寸的屏幕上测试您的应用非常有用，它支持使用大屏设备模仿小屏幕分辨率（反之亦然）。<br>示例：</p>
+<pre><code>shell(&quot;am display-size 1280x800&quot;, true);
 </code></pre>
-<p>如果要使用音乐播放器播放音乐，调用<code>app.viewFile(path)</code>函数。</p>
-<ul>
-<li><code>msec</code> {number} 毫秒数，表示音乐进度</li>
-</ul>
-<p>把当前播放进度调整到时间msec的位置。如果当前没有在播放音乐，则调用函数没有任何效果。</p>
-<p>例如，要把音乐调到1分钟的位置，为<code>media.musicSeekTo(60 * 1000)</code>。</p>
-<pre><code>//播放音乐
-media.playMusic(&quot;/sdcard/1.mp3&quot;);
-//调整到30秒的位置
-media.musicSeekTo(30 * 1000);
-//等待音乐播放完成
-sleep(media.getMusicDuration() - 30 * 1000);
+<h3 id="display-density-dpi"><a href="#display-density-dpi" class="headerlink" title="display-density dpi"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=display-density-dpi">display-density dpi</a></h3><p>替换模拟器&#x2F;设备显示密度。此命令对于在不同密度的屏幕上测试您的应用非常有用，它支持使用低密度屏幕在高密度环境环境上进行测试（反之亦然）。<br>示例：</p>
+<pre><code>shell(&quot;am display-density 480&quot;, true);
 </code></pre>
-<p>暂停音乐播放。如果当前没有在播放音乐，则调用函数没有任何效果。</p>
-<p>继续音乐播放。如果当前没有播放过音乐，则调用该函数没有任何效果。</p>
-<p>停止音乐播放。如果当前没有在播放音乐，则调用函数没有任何效果。</p>
+<h3 id="to-uri-intent"><a href="#to-uri-intent" class="headerlink" title="to-uri intent"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=to-uri-intent">to-uri intent</a></h3><p>将给定的 intent 规范以 URI 的形式输出。 请参阅 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=shell_intent">intent 参数的规范</a>。</p>
+<h3 id="to-intent-uri-intent"><a href="#to-intent-uri-intent" class="headerlink" title="to-intent-uri intent"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=to-intent-uri-intent">to-intent-uri intent</a></h3><p>将给定的 intent 规范以 intent:URI 的形式输出。 请参阅 intent 参数的规范。</p>
+<h3 id="intent参数的规范"><a href="#intent参数的规范" class="headerlink" title="intent参数的规范"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=intent%e5%8f%82%e6%95%b0%e7%9a%84%e8%a7%84%e8%8c%83">intent参数的规范</a></h3><p>对于采用 intent 参数的 am 命令，您可以使用以下选项指定 intent：</p>
 <ul>
-<li>返回 {boolean}</li>
+<li><p>-a action<br>指定 intent 操作，如“android.intent.action.VIEW”。此指定只能声明一次。</p>
+</li>
+<li><p>-d data_uri<br>指定 intent 数据 URI，如“content:&#x2F;&#x2F;contacts&#x2F;people&#x2F;1”。此指定只能声明一次。</p>
+</li>
+<li><p>-t mime_type<br>指定 intent MIME 类型，如“image&#x2F;png”。此指定只能声明一次。</p>
+</li>
+<li><p>-c category<br>指定 intent 类别，如“android.intent.category.APP_CONTACTS”。</p>
+</li>
+<li><p>-n component<br>指定带有软件包名称前缀的组件名称以创建显式 intent，如“com.example.app&#x2F;.ExampleActivity”。</p>
+</li>
+<li><p>-f flags<br>将标志添加到 setFlags() 支持的 intent。</p>
+</li>
+<li><p>--esn extra_key<br>添加一个 null extra。URI intent 不支持此选项。</p>
+</li>
+<li><p>-e|–es extra_key extra_string_value<br>添加字符串数据作为键值对。</p>
+</li>
+<li><p>--ez extra_key extra_boolean_value<br>添加布尔型数据作为键值对。</p>
+</li>
+<li><p>--ei extra_key extra_int_value<br>添加整数型数据作为键值对。</p>
+</li>
+<li><p>--el extra_key extra_long_value<br>添加长整型数据作为键值对。</p>
+</li>
+<li><p>--ef extra_key extra_float_value<br>添加浮点型数据作为键值对。</p>
+</li>
+<li><p>--eu extra_key extra_uri_value<br>添加 URI 数据作为键值对。</p>
+</li>
+<li><p>--ecn extra_key extra_component_name_value<br>添加组件名称，将其作为 ComponentName 对象进行转换和传递。</p>
+</li>
+<li><p>--eia extra_key extra_int_value[,extra_int_value…]<br>添加整数数组。</p>
+</li>
+<li><p>--ela extra_key extra_long_value[,extra_long_value…]<br>添加长整型数组。</p>
+</li>
+<li><p>--efa extra_key extra_float_value[,extra_float_value…]<br>添加浮点型数组。</p>
+</li>
+<li><p>--grant-read-uri-permission<br>包含标志 FLAG_GRANT_READ_URI_PERMISSION。</p>
+</li>
+<li><p>--grant-write-uri-permission<br>包含标志 FLAG_GRANT_WRITE_URI_PERMISSION。</p>
+</li>
+<li><p>--debug-log-resolution<br>包含标志 FLAG_DEBUG_LOG_RESOLUTION。</p>
+</li>
+<li><p>--exclude-stopped-packages<br>包含标志 FLAG_EXCLUDE_STOPPED_PACKAGES。</p>
+</li>
+<li><p>--include-stopped-packages<br>包含标志 FLAG_INCLUDE_STOPPED_PACKAGES。</p>
+</li>
+<li><p>--activity-brought-to-front<br>包含标志 FLAG_ACTIVITY_BROUGHT_TO_FRONT。</p>
+</li>
+<li><p>--activity-clear-top<br>包含标志 FLAG_ACTIVITY_CLEAR_TOP。</p>
+</li>
+<li><p>--activity-clear-when-task-reset<br>包含标志 FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET。</p>
+</li>
+<li><p>--activity-exclude-from-recents<br>包含标志 FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS。</p>
+</li>
+<li><p>--activity-launched-from-history<br>包含标志 FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY。</p>
+</li>
+<li><p>--activity-multiple-task<br>包含标志 FLAG_ACTIVITY_MULTIPLE_TASK。</p>
+</li>
+<li><p>--activity-no-animation<br>包含标志 FLAG_ACTIVITY_NO_ANIMATION。</p>
+</li>
+<li><p>--activity-no-history<br>包含标志 FLAG_ACTIVITY_NO_HISTORY。</p>
+</li>
+<li><p>--activity-no-user-action<br>包含标志 FLAG_ACTIVITY_NO_USER_ACTION。</p>
+</li>
+<li><p>--activity-previous-is-top<br>包含标志 FLAG_ACTIVITY_PREVIOUS_IS_TOP。</p>
+</li>
+<li><p>--activity-reorder-to-front<br>包含标志 FLAG_ACTIVITY_REORDER_TO_FRONT。</p>
+</li>
+<li><p>--activity-reset-task-if-needed<br>包含标志 FLAG_ACTIVITY_RESET_TASK_IF_NEEDED。</p>
+</li>
+<li><p>--activity-single-top<br>包含标志 FLAG_ACTIVITY_SINGLE_TOP。</p>
+</li>
+<li><p>--activity-clear-task<br>包含标志 FLAG_ACTIVITY_CLEAR_TASK。</p>
+</li>
+<li><p>--activity-task-on-home<br>包含标志 FLAG_ACTIVITY_TASK_ON_HOME。</p>
+</li>
+<li><p>--receiver-registered-only<br>包含标志 FLAG_RECEIVER_REGISTERED_ONLY。</p>
+</li>
+<li><p>--receiver-replace-pending<br>包含标志 FLAG_RECEIVER_REPLACE_PENDING。</p>
+</li>
+<li><p>--selector<br>需要使用 -d 和 -t 选项以设置 intent 数据和类型。</p>
+<h4 id="URI-component-package"><a href="#URI-component-package" class="headerlink" title="URI component package"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=uri-component-package">URI component package</a></h4><p>如果不受上述某一选项的限制，您可以直接指定 URI、软件包名称和组件名称。当参数不受限制时，如果参数包含一个“:”（冒号），则此工具假定参数是一个 URI；如果参数包含一个“&#x2F;”（正斜杠），则此工具假定参数是一个组件名称；否则，此工具假定参数是一个软件包名称。</p>
+</li>
 </ul>
-<p>返回当前是否正在播放音乐。</p>
+<h2 id="应用包名"><a href="#应用包名" class="headerlink" title="应用包名"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=%e5%ba%94%e7%94%a8%e5%8c%85%e5%90%8d">应用包名</a></h2><p>所谓应用包名，是唯一确定应用的标识。例如微信的包名是”com.tencent.mm”, QQ的包名是”com.tencent.mobileqq”。<br>要获取一个应用的包名，可以通过函数<code>getPackageName(appName)</code>获取。参见帮助-&gt;其他一般函数。</p>
+<h2 id="pm命令"><a href="#pm命令" class="headerlink" title="pm命令"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=pm%e5%91%bd%e4%bb%a4">pm命令</a></h2><p>pm命令用于管理应用程序，例如卸载应用、冻结应用等。<br><strong>以下命令均以”pm “开头，例如”shell(“pm disable com.tencent.mm”);”(冻结微信)</strong></p>
+<h3 id="list-packages-options-filter"><a href="#list-packages-options-filter" class="headerlink" title="list packages [options] filter"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=list-packages-options-filter">list packages [options] filter</a></h3><p>输出所有软件包，或者，仅输出包名称包含 filter 中的文本的软件包。<br>选项：</p>
 <ul>
-<li>返回 {number}</li>
+<li>-f：查看它们的关联文件。</li>
+<li>-d：进行过滤以仅显示已停用的软件包。</li>
+<li>-e：进行过滤以仅显示已启用的软件包。</li>
+<li>-s：进行过滤以仅显示系统软件包。</li>
+<li>-3：进行过滤以仅显示第三方软件包。</li>
+<li>-i：查看软件包的安装程序。</li>
+<li>-u：也包括卸载的软件包。</li>
+<li>--user user_id：要查询的用户空间。</li>
 </ul>
-<p>返回当前音乐的时长。单位毫秒。</p>
+<h3 id="list-permission-groups"><a href="#list-permission-groups" class="headerlink" title="list permission-groups"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=list-permission-groups">list permission-groups</a></h3><p>输出所有已知的权限组。</p>
+<h3 id="list-permissions-options-group"><a href="#list-permissions-options-group" class="headerlink" title="list permissions [options] group"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=list-permissions-options-group">list permissions [options] group</a></h3><p>输出所有已知权限，或者，仅输出 group 中的权限。<br>选项：</p>
 <ul>
-<li>返回 {number}</li>
+<li>-g：按组加以组织。</li>
+<li>-f：输出所有信息。</li>
+<li>-s：简短摘要。</li>
+<li>-d：仅列出危险权限。</li>
+<li>-u：仅列出用户将看到的权限。</li>
 </ul>
-<p>返回当前音乐的播放进度(已经播放的时间)，单位毫秒。</p>
-</article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/undefined" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/blog/note/software-use/test-paper-analyzer.html" title="试卷分析器使用教程"><img class="cover" src="https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8huu8ztatojj307g02ka9y.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">试卷分析器使用教程</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">脚滑的小子</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><a id="card-info-btn" href="mailto:ahoucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Media"><span class="toc-number">1.</span> <span class="toc-text">Media</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2024-10-28T13:19:12.749Z" title="发表日期 2024-10-28 13:19:12">2024-10-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2024-10-28T13:19:12.749Z" title="发表日期 2024-10-28 13:19:12">2024-10-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2024-10-28T13:19:12.745Z" title="发表日期 2024-10-28 13:19:12">2024-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/software-use/test-paper-analyzer.html" title="试卷分析器使用教程"><img src="https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8huu8ztatojj307g02ka9y.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="试卷分析器使用教程"/></a><div class="content"><a class="title" href="/blog/note/software-use/test-paper-analyzer.html" title="试卷分析器使用教程">试卷分析器使用教程</a><time datetime="2024-10-21T19:19:28.000Z" title="发表日期 2024-10-21 19:19:28">2024-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/JavaScript3.html" title="JavaScript学习笔记（3）数据类型-进阶"><img src="https://emaillistvalidation.com/blog/content/images/2023/09/JavaScript-Symbol.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript学习笔记（3）数据类型-进阶"/></a><div class="content"><a class="title" href="/blog/note/code/JavaScript3.html" title="JavaScript学习笔记（3）数据类型-进阶">JavaScript学习笔记（3）数据类型-进阶</a><time datetime="2024-10-14T16:22:47.000Z" title="发表日期 2024-10-14 16:22:47">2024-10-14</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 脚滑的小子</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+<h3 id="list-instrumentation-options"><a href="#list-instrumentation-options" class="headerlink" title="list instrumentation [options]"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=list-instrumentation-options">list instrumentation [options]</a></h3><p>列出所有测试软件包。<br>选项：</p>
+<ul>
+<li>-f：列出用于测试软件包的 APK 文件。</li>
+<li>target_package：列出仅用于此应用的测试软件包。</li>
+</ul>
+<h3 id="list-features"><a href="#list-features" class="headerlink" title="list features"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=list-features">list features</a></h3><p>输出系统的所有功能。</p>
+<h3 id="list-libraries"><a href="#list-libraries" class="headerlink" title="list libraries"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=list-libraries">list libraries</a></h3><p>输出当前设备支持的所有库。</p>
+<h3 id="list-users"><a href="#list-users" class="headerlink" title="list users"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=list-users">list users</a></h3><p>输出系统上的所有用户。</p>
+<h3 id="path-package"><a href="#path-package" class="headerlink" title="path package"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=path-package">path package</a></h3><p>输出给定 package 的 APK 的路径。</p>
+<h3 id="install-options-path"><a href="#install-options-path" class="headerlink" title="install [options] path"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=install-options-path">install [options] path</a></h3><p>将软件包（通过 path 指定）安装到系统。<br>选项：</p>
+<ul>
+<li>-l：安装具有转发锁定功能的软件包。</li>
+<li>-r：重新安装现有应用，保留其数据。</li>
+<li>-t：允许安装测试 APK。</li>
+<li>-i installer_package_name：指定安装程序软件包名称。</li>
+<li>-s：在共享的大容量存储（如 sdcard）上安装软件包。</li>
+<li>-f：在内部系统内存上安装软件包。</li>
+<li>-d：允许版本代码降级。</li>
+<li>-g：授予应用清单文件中列出的所有权限。</li>
+</ul>
+<h3 id="uninstall-options-package"><a href="#uninstall-options-package" class="headerlink" title="uninstall [options] package"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=uninstall-options-package">uninstall [options] package</a></h3><p>从系统中卸载软件包。<br>选项：</p>
+<ul>
+<li><p>-k：移除软件包后保留数据和缓存目录。</p>
+<h3 id="clear-package"><a href="#clear-package" class="headerlink" title="clear package"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=clear-package">clear package</a></h3><p>删除与软件包关联的所有数据。</p>
+</li>
+</ul>
+<h3 id="enable-package-or-component"><a href="#enable-package-or-component" class="headerlink" title="enable package_or_component"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=enable-package_or_component">enable package_or_component</a></h3><p>启用给定软件包或组件（作为“package&#x2F;class”写入）。</p>
+<h3 id="disable-package-or-component"><a href="#disable-package-or-component" class="headerlink" title="disable package_or_component"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=disable-package_or_component">disable package_or_component</a></h3><p>停用给定软件包或组件（作为“package&#x2F;class”写入）。</p>
+<h3 id="disable-user-options-package-or-component"><a href="#disable-user-options-package-or-component" class="headerlink" title="disable-user [options] package_or_component"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=disable-user-options-package_or_component">disable-user [options] package_or_component</a></h3><p>选项：</p>
+<ul>
+<li><p>--user user_id：要停用的用户。</p>
+<h3 id="grant-package-name-permission"><a href="#grant-package-name-permission" class="headerlink" title="grant package_name permission"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=grant-package_name-permission">grant package_name permission</a></h3><p>向应用授予权限。在运行 Android 6.0（API 级别 23）及更高版本的设备上，可以是应用清单中声明的任何权限。在运行 Android 5.1（API 级别 22）和更低版本的设备上，必须是应用定义的可选权限。</p>
+</li>
+</ul>
+<h3 id="revoke-package-name-permission"><a href="#revoke-package-name-permission" class="headerlink" title="revoke package_name permission"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=revoke-package_name-permission">revoke package_name permission</a></h3><p>从应用中撤销权限。在运行 Android 6.0（API 级别 23）及更高版本的设备上，可以是应用清单中声明的任何权限。在运行 Android 5.1（API 级别 22）和更低版本的设备上，必须是应用定义的可选权限。</p>
+<h3 id="set-install-location-location"><a href="#set-install-location-location" class="headerlink" title="set-install-location location"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=set-install-location-location">set-install-location location</a></h3><p>更改默认安装位置。位置值：</p>
+<ul>
+<li>0：自动—让系统决定最佳位置。</li>
+<li>1：内部—安装在内部设备存储上。</li>
+<li>2：外部—安装在外部介质上。</li>
+</ul>
+<blockquote>
+<p>注：此命令仅用于调试目的；使用此命令会导致应用中断和其他意外行为。</p>
+</blockquote>
+<h3 id="get-install-location"><a href="#get-install-location" class="headerlink" title="get-install-location"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=get-install-location">get-install-location</a></h3><p>返回当前安装位置。返回值：</p>
+<ul>
+<li>0 [auto]：让系统决定最佳位置。</li>
+<li>1 [internal]：安装在内部设备存储上</li>
+<li>2 [external]：安装在外部介质上</li>
+</ul>
+<h3 id="set-permission-enforced-permission-true-false"><a href="#set-permission-enforced-permission-true-false" class="headerlink" title="set-permission-enforced permission [true|false]"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=set-permission-enforced-permission-truefalse">set-permission-enforced permission [true|false]</a></h3><p>指定是否应强制执行给定的权限。</p>
+<h3 id="trim-caches-desired-free-space"><a href="#trim-caches-desired-free-space" class="headerlink" title="trim-caches desired_free_space"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=trim-caches-desired_free_space">trim-caches desired_free_space</a></h3><p>减少缓存文件以达到给定的可用空间。</p>
+<h3 id="create-user-user-name"><a href="#create-user-user-name" class="headerlink" title="create-user user_name"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=create-user-user_name">create-user user_name</a></h3><p>使用给定的 user_name 创建新用户，输出新用户的标识符。</p>
+<h3 id="remove-user-user-id"><a href="#remove-user-user-id" class="headerlink" title="remove-user user_id"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=remove-user-user_id">remove-user user_id</a></h3><p>移除具有给定的 user_id 的用户，删除与该用户关联的所有数据。</p>
+<h3 id="get-max-users"><a href="#get-max-users" class="headerlink" title="get-max-users"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=get-max-users">get-max-users</a></h3><p>输出设备支持的最大用户数。</p>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=%e5%85%b6%e4%bb%96%e5%91%bd%e4%bb%a4">其他命令</a></h2><h3 id="进行屏幕截图"><a href="#进行屏幕截图" class="headerlink" title="进行屏幕截图"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=%e8%bf%9b%e8%a1%8c%e5%b1%8f%e5%b9%95%e6%88%aa%e5%9b%be">进行屏幕截图</a></h3><p>screencap 命令是一个用于对设备显示屏进行屏幕截图的 shell 实用程序。在 shell 中，此语法为：</p>
+<pre><code>screencap filename
+</code></pre>
+<p>例如：</p>
+<pre><code>shell(&quot;screencap /sdcard/screen.png&quot;);
+</code></pre>
+<h3 id="列表文件"><a href="#列表文件" class="headerlink" title="列表文件"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/shell?id=%e5%88%97%e8%a1%a8%e6%96%87%e4%bb%b6">列表文件</a></h3><pre><code>ls filepath
+</code></pre>
+<p>例如:</p>
+<pre><code>log(shell(&quot;ls /system/bin&quot;).result);
+</code></pre>
+</article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/undefined" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/blog/note/software-use/test-paper-analyzer.html" title="试卷分析器使用教程"><img class="cover" src="https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8huu8ztatojj307g02ka9y.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">试卷分析器使用教程</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">脚滑的小子</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">22</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><a id="card-info-btn" href="mailto:ahoucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text">shell函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell-cmd-root"><span class="toc-number">2.</span> <span class="toc-text">shell(cmd[, root])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shell"><span class="toc-number">3.</span> <span class="toc-text">Shell</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-Shell-root"><span class="toc-number">4.</span> <span class="toc-text">new Shell(root)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shell-exec-cmd"><span class="toc-number">5.</span> <span class="toc-text">Shell.exec(cmd)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shell-exit"><span class="toc-number">6.</span> <span class="toc-text">Shell.exit()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shell-exitAndWaitFor"><span class="toc-number">7.</span> <span class="toc-text">Shell.exitAndWaitFor()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shell-setCallback-callback"><span class="toc-number">8.</span> <span class="toc-text">Shell.setCallback(callback)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%BD%95-shell%E5%91%BD%E4%BB%A4%E7%AE%80%E4%BB%8B"><span class="toc-number">9.</span> <span class="toc-text">附录: shell命令简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#am%E5%91%BD%E4%BB%A4"><span class="toc-number">10.</span> <span class="toc-text">am命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#start-options-intent"><span class="toc-number">10.1.</span> <span class="toc-text">start [options] intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#startservice-options-intent"><span class="toc-number">10.2.</span> <span class="toc-text">startservice [options] intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#force-stop-package"><span class="toc-number">10.3.</span> <span class="toc-text">force-stop package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kill-options-package"><span class="toc-number">10.4.</span> <span class="toc-text">kill [options] package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kill-all"><span class="toc-number">10.5.</span> <span class="toc-text">kill-all</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#broadcast-options-intent"><span class="toc-number">10.6.</span> <span class="toc-text">broadcast [options] intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#instrument-options-component"><span class="toc-number">10.7.</span> <span class="toc-text">instrument [options] component</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dumpheap-options-process-file"><span class="toc-number">10.8.</span> <span class="toc-text">dumpheap [options] process file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#monitor-options-%E5%90%AF%E5%8A%A8%E5%AF%B9%E5%B4%A9%E6%BA%83%E6%88%96-ANR-%E7%9A%84%E7%9B%91%E6%8E%A7%E3%80%82"><span class="toc-number">10.9.</span> <span class="toc-text">monitor [options] 启动对崩溃或 ANR 的监控。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#screen-compat-on-off-package"><span class="toc-number">10.10.</span> <span class="toc-text">screen-compat {on|off} package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-size-reset-widthxheight"><span class="toc-number">10.11.</span> <span class="toc-text">display-size [reset|widthxheight]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-density-dpi"><span class="toc-number">10.12.</span> <span class="toc-text">display-density dpi</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#to-uri-intent"><span class="toc-number">10.13.</span> <span class="toc-text">to-uri intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#to-intent-uri-intent"><span class="toc-number">10.14.</span> <span class="toc-text">to-intent-uri intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#intent%E5%8F%82%E6%95%B0%E7%9A%84%E8%A7%84%E8%8C%83"><span class="toc-number">10.15.</span> <span class="toc-text">intent参数的规范</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#URI-component-package"><span class="toc-number">10.15.1.</span> <span class="toc-text">URI component package</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E5%8C%85%E5%90%8D"><span class="toc-number">11.</span> <span class="toc-text">应用包名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pm%E5%91%BD%E4%BB%A4"><span class="toc-number">12.</span> <span class="toc-text">pm命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#list-packages-options-filter"><span class="toc-number">12.1.</span> <span class="toc-text">list packages [options] filter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-permission-groups"><span class="toc-number">12.2.</span> <span class="toc-text">list permission-groups</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-permissions-options-group"><span class="toc-number">12.3.</span> <span class="toc-text">list permissions [options] group</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-instrumentation-options"><span class="toc-number">12.4.</span> <span class="toc-text">list instrumentation [options]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-features"><span class="toc-number">12.5.</span> <span class="toc-text">list features</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-libraries"><span class="toc-number">12.6.</span> <span class="toc-text">list libraries</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-users"><span class="toc-number">12.7.</span> <span class="toc-text">list users</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#path-package"><span class="toc-number">12.8.</span> <span class="toc-text">path package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#install-options-path"><span class="toc-number">12.9.</span> <span class="toc-text">install [options] path</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#uninstall-options-package"><span class="toc-number">12.10.</span> <span class="toc-text">uninstall [options] package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear-package"><span class="toc-number">12.11.</span> <span class="toc-text">clear package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#enable-package-or-component"><span class="toc-number">12.12.</span> <span class="toc-text">enable package_or_component</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#disable-package-or-component"><span class="toc-number">12.13.</span> <span class="toc-text">disable package_or_component</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#disable-user-options-package-or-component"><span class="toc-number">12.14.</span> <span class="toc-text">disable-user [options] package_or_component</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grant-package-name-permission"><span class="toc-number">12.15.</span> <span class="toc-text">grant package_name permission</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#revoke-package-name-permission"><span class="toc-number">12.16.</span> <span class="toc-text">revoke package_name permission</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set-install-location-location"><span class="toc-number">12.17.</span> <span class="toc-text">set-install-location location</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get-install-location"><span class="toc-number">12.18.</span> <span class="toc-text">get-install-location</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set-permission-enforced-permission-true-false"><span class="toc-number">12.19.</span> <span class="toc-text">set-permission-enforced permission [true|false]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim-caches-desired-free-space"><span class="toc-number">12.20.</span> <span class="toc-text">trim-caches desired_free_space</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#create-user-user-name"><span class="toc-number">12.21.</span> <span class="toc-text">create-user user_name</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#remove-user-user-id"><span class="toc-number">12.22.</span> <span class="toc-text">remove-user user_id</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get-max-users"><span class="toc-number">12.23.</span> <span class="toc-text">get-max-users</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4"><span class="toc-number">13.</span> <span class="toc-text">其他命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E8%A1%8C%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE"><span class="toc-number">13.1.</span> <span class="toc-text">进行屏幕截图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E6%96%87%E4%BB%B6"><span class="toc-number">13.2.</span> <span class="toc-text">列表文件</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/HTTP-axios.html" title="HTTP请求笔记"><img src="https://newsxday.com/wp-content/uploads/2021/03/HTTP-vs-HTTPS-Hypertext-Transfer-Protocol-Full-Form-1-1536x730.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTTP请求笔记"/></a><div class="content"><a class="title" href="/blog/note/code/HTTP-axios.html" title="HTTP请求笔记">HTTP请求笔记</a><time datetime="2024-10-30T20:00:59.000Z" title="发表日期 2024-10-30 20:00:59">2024-10-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2024-10-30T13:04:27.204Z" title="发表日期 2024-10-30 13:04:27">2024-10-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2024-10-30T13:04:27.200Z" title="发表日期 2024-10-30 13:04:27">2024-10-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2024-10-30T13:04:27.200Z" title="发表日期 2024-10-30 13:04:27">2024-10-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/software-use/test-paper-analyzer.html" title="试卷分析器使用教程"><img src="https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8huu8ztatojj307g02ka9y.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="试卷分析器使用教程"/></a><div class="content"><a class="title" href="/blog/note/software-use/test-paper-analyzer.html" title="试卷分析器使用教程">试卷分析器使用教程</a><time datetime="2024-10-21T19:19:28.000Z" title="发表日期 2024-10-21 19:19:28">2024-10-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 脚滑的小子</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
