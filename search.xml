@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HTTP请求笔记</title>
-    <url>//blog/note/code/HTTP-axios.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="axios的post默认用法（异步）"><a href="#axios的post默认用法（异步）" class="headerlink" title="axios的post默认用法（异步）"></a>axios的post默认用法（异步）</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">&#x27;axios&#x27;</span>); <span class="comment">//引入 &quot;axios&quot; 模块 ，终端中执行： npm install axios</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//设置请求头</span></span><br><span class="line"><span class="keyword">let</span> headers = &#123;</span><br><span class="line">      <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;gw-xeasy.xsdsd.cn&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;sec-ch-ua&#x27;</span>: <span class="string">&#x27;&quot;Not)A;Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;127&quot;, &quot;Chromium&quot;;v=&quot;127&quot;&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;application/json, text/plain, */*&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;sec-ch-ua-platform&#x27;</span>: <span class="string">&#x27;&quot;Windows&quot;&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;sec-ch-ua-mobile&#x27;</span>: <span class="string">&#x27;?0&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;access_id&#x27;</span>: <span class="string">&#x27;B20001&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Origin&#x27;</span>: <span class="string">&#x27;https://we.xasd.cn&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Sec-Fetch-Site&#x27;</span>: <span class="string">&#x27;same-site&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Sec-Fetch-Mode&#x27;</span>: <span class="string">&#x27;cors&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Sec-Fetch-Dest&#x27;</span>: <span class="string">&#x27;empty&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Referer&#x27;</span>: <span class="string">&#x27;https://we.xasdasd.cn&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Accept-Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate, br, zstd&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Cookie&#x27;</span>: <span class="title class_">User</span>.<span class="property">Cookie</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置网址 url 和请求的数据 data</span></span><br><span class="line"><span class="keyword">const</span> url = <span class="string">&#x27;https://gw-xeasy.com/page&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> data = &#123; <span class="string">&quot;businessType&quot;</span>: <span class="number">3</span>, <span class="string">&quot;pageSize&quot;</span>: <span class="number">10</span>, <span class="string">&quot;pageNum&quot;</span>: <span class="number">1</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> 发送请求()</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//开始发送请求post</span></span><br><span class="line">axios.<span class="title function_">post</span>(url, data, &#123; <span class="attr">headers</span>: headers &#125;)</span><br><span class="line">    .<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;查询的结果：&#x27;</span>, response.<span class="property">data</span>); <span class="comment">//直接展示结果</span></span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;查询的结果：&#x27;</span>, <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(response.<span class="property">data</span>, <span class="literal">null</span>, <span class="number">2</span>));<span class="comment">//将结果转化为 JSON 数据</span></span><br><span class="line">      <span class="keyword">return</span> response.<span class="property">data</span>; <span class="comment">//请注意！return 的数据不会传递到外部，因为 axios.post 是异步操作。</span></span><br><span class="line">    <span class="comment">//要想得到返回值，可以使用 Promise 或 async/await</span></span><br><span class="line">    &#125;)</span><br><span class="line">    .<span class="title function_">catch</span>(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;发生错误:&#x27;</span>, error.<span class="property">response</span> ? error.<span class="property">response</span>.<span class="property">data</span> : error.<span class="property">message</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<hr>
-<h1 id="axios的post同步请求"><a href="#axios的post同步请求" class="headerlink" title="axios的post同步请求"></a>axios的post同步请求</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">&#x27;axios&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span>   headers = &#123;</span><br><span class="line">      <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;gw-xeasy.xasdasd.cn&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;sec-ch-ua&#x27;</span>: <span class="string">&#x27;&quot;Not)A;Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;127&quot;, &quot;Chromium&quot;;v=&quot;127&quot;&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;application/json, text/plain, */*&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;sec-ch-ua-platform&#x27;</span>: <span class="string">&#x27;&quot;Windows&quot;&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;sec-ch-ua-mobile&#x27;</span>: <span class="string">&#x27;?0&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;access_id&#x27;</span>: <span class="string">&#x27;B20001&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Origin&#x27;</span>: <span class="string">&#x27;https://we.xasdas.cn&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Sec-Fetch-Site&#x27;</span>: <span class="string">&#x27;same-site&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Sec-Fetch-Mode&#x27;</span>: <span class="string">&#x27;cors&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Sec-Fetch-Dest&#x27;</span>: <span class="string">&#x27;empty&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Referer&#x27;</span>: <span class="string">&#x27;https://we.xasdasd.cn&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Accept-Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate, br, zstd&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Cookie&#x27;</span>: <span class="title class_">User</span>.<span class="property">Cookie</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> idList = <span class="keyword">await</span> <span class="title function_">getPaperAnalyze</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;idList:&#x27;</span>, idList);</span><br><span class="line"><span class="comment">//getPaperAnalyze 使用 async/await 来返回数据。</span></span><br><span class="line"><span class="comment">//将 getPaperAnalyze 修改为 async 函数并使用 await 获取结果，从而能直接在主流程中得到 idList：</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">getPaperAnalyze</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> url = <span class="string">&#x27;https://gw-xeasy.asdasd.cn/analyze/task/query/page&#x27;</span>;</span><br><span class="line">  <span class="keyword">const</span> data = &#123; <span class="string">&quot;businessType&quot;</span>: <span class="number">3</span>, <span class="string">&quot;pageSize&quot;</span>: <span class="number">10</span>, <span class="string">&quot;pageNum&quot;</span>: <span class="number">1</span>,&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> response = <span class="keyword">await</span> axios.<span class="title function_">post</span>(url, data, &#123; <span class="attr">headers</span>: headers &#125;);<span class="comment">//开始发送post请求</span></span><br><span class="line">    <span class="keyword">return</span> response.<span class="property">data</span>.<span class="property">data</span>.<span class="property">resultList</span>; <span class="comment">// 返回 ID 列表</span></span><br><span class="line">  &#125; </span><br><span class="line">  <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;发生错误:&#x27;</span>, error.<span class="property">response</span> ? error.<span class="property">response</span>.<span class="property">data</span> : error.<span class="property">message</span>);</span><br><span class="line">    <span class="keyword">throw</span> error; <span class="comment">// 重新抛出错误，方便调用处捕获</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<hr>
-]]></content>
-      <categories>
-        <category>笔记</category>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>无标签</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaScript学习笔记（3）数据类型-进阶</title>
     <url>//blog/note/code/JavaScript3.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><p>对象允许存储键值集合，这很好。</p>
@@ -288,6 +262,99 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>国际化学-学习指北</title>
+    <url>//blog/chemistry/international-chemistry/international-chemistry-study-guide.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="考试类型介绍"><a href="#考试类型介绍" class="headerlink" title="考试类型介绍"></a>考试类型介绍</h1><h2 id="IG与ALevel"><a href="#IG与ALevel" class="headerlink" title="IG与ALevel"></a>IG与ALevel</h2><p>IG（International General Certificate of Secondary Education，国际普通中等教育证书）和ALevel（Advanced Level，高级水平证书）是两种不同的<strong>英国教育</strong>体系中的资格证书，它们在教育阶段、课程内容、考试结构和目的上有所不同。以下是它们的主要区别：</p>
+<ol>
+<li><p><strong>教育阶段</strong>：</p>
+<ul>
+<li><strong>IGCSE</strong>：相当于中国的<strong>初中</strong>阶段，通常是学生在完成小学教育后，进入高中教育之前的一个过渡阶段。它是一个为期两年的课程，面向14至16岁的学生。</li>
+<li><strong>ALevel</strong>：相当于中国的<strong>高中</strong>阶段，是一个为期两年的课程，面向16至18岁的学生，是英国大学入学的主要资格之一。</li>
+</ul>
+</li>
+<li><p><strong>课程内容</strong>：</p>
+<ul>
+<li><strong>IGCSE</strong>：课程内容较为广泛，旨在为学生提供广泛的知识基础，涵盖多个学科领域。学生通常需要学习5到14门科目，包括核心科目（如数学、英语）和选修科目。</li>
+<li><strong>ALevel</strong>：课程内容更加专业化和深入，学生可以选择3到4门科目进行深入学习，这些科目通常与他们未来大学专业或职业规划相关。</li>
+</ul>
+</li>
+<li><p><strong>考试结构</strong>：</p>
+<ul>
+<li><strong>IGCSE</strong>：考试通常包括笔试、口试、课程作业和实践评估等多种评估方式。</li>
+<li><strong>ALevel</strong>：考试主要侧重于笔试，但也包括一些科目的实践评估和课程作业。</li>
+</ul>
+</li>
+<li><p><strong>目的</strong>：</p>
+<ul>
+<li><strong>IGCSE</strong>：目的是为学生提供广泛的教育，帮助他们发展必要的学习技能，为进一步的学习做好准备。</li>
+<li><strong>ALevel</strong>：目的是为学生提供深入的专业知识，帮助他们为大学学习或特定职业领域做准备。</li>
+</ul>
+</li>
+<li><p><strong>国际认可度</strong>：</p>
+<ul>
+<li><strong>IGCSE</strong> 和 <strong>ALevel</strong>：两者都是国际认可的资格证书，被全球许多大学和雇主接受。</li>
+</ul>
+</li>
+<li><p><strong>灵活性</strong>：</p>
+<ul>
+<li><strong>IGCSE</strong>：学生可以选择的科目范围更广，灵活性较高。</li>
+<li><strong>ALevel</strong>：学生需要在较少的科目中选择，但可以在这些科目上进行更深入的学习。</li>
+</ul>
+</li>
+</ol>
+<p>总的来说，IGCSE是一个更为基础和广泛的课程，而ALevel则是一个更专业和深入的课程，两者都是英国教育体系中的重要组成部分。</p>
+<h2 id="AP"><a href="#AP" class="headerlink" title="AP"></a>AP</h2><p><strong>AP</strong>：Advanced Placement，美国大学预修课程，与IGCSE和ALevel类似，提供高中学生提前学习大学课程的机会。</p>
+<p>本篇内容主要以IG与ALevel为主。</p>
+<h1 id="学习资源下载"><a href="#学习资源下载" class="headerlink" title="学习资源下载"></a>学习资源下载</h1><h1 id="学习教材的选取与使用"><a href="#学习教材的选取与使用" class="headerlink" title="学习教材的选取与使用"></a>学习教材的选取与使用</h1><h2 id="IG"><a href="#IG" class="headerlink" title="IG"></a>IG</h2><p>这些文件名表明它们是与Cambridge IGCSE Chemistry（剑桥国际普通中等教育证书化学课程）相关的教材和工作簿。以下是每个文件可能的用途：</p>
+<ol>
+<li><p>《cambridge igcse chemistry by bryan earl and doug wilford》**：一本全面的IGCSE化学教科书，由Bryan Earl和Doug Wilford编写，涵盖了课程的所有主题和概念。</p>
+</li>
+<li><p>《cambridge igcse chemistry coursebook(fourth edition)》：这是IGCSE化学的课程书，包含了最新的课程内容和教学大纲，适合学生和教师使用。</p>
+</li>
+<li><p>《cambridge igcse chemistry practical workbook》：IGCSE化学的实验和实践活动，提供了实验指导和相关练习，帮助学生掌握实验技能。</p>
+</li>
+<li><p>《cambridge igcse chemistry workbook》：包含各种练习题、复习题和例题，用于帮助学生巩固和练习课堂上学到的知识。</p>
+</li>
+<li><p>《complete chemistry for cambridge igcse》：一个全面的复习指南，涵盖了IGCSE化学的所有主题，适合学生进行全面复习和准备考试。</p>
+</li>
+<li><p>《igcse chemistry maths skills workbook-sample》：IGCSE化学中的数学技能，如化学计算和数据分析，提供了相关的练习和示例。</p>
+</li>
+<li><p>《igcse chemistry work book by richard harwood》：这是另一本IGCSE化学工作簿，由Richard Harwood编写，可能包含了一系列的练习题和复习材料，帮助学生准备考试。</p>
+</li>
+</ol>
+<p>选择合适的教材和工作簿可以帮助学生更有效地学习和复习。</p>
+<p>在IGCSE化学教学过程中，不同的教材和工作簿有各自的用途和建议：</p>
+<ol>
+<li><p><strong>教科书</strong>：如《Cambridge IGCSE Chemistry》系列，是学生学习的主要资源，内容详实且符合教学大纲要求。教师应确保学生能够充分理解和掌握教科书中的概念和原理。</p>
+</li>
+<li><p><strong>课程书</strong>：如《cambridge igcse chemistry coursebook(fourth edition)》提供了课程的详细内容和教学活动，是教师规划课程和学生自学的重要工具。</p>
+</li>
+<li><p><strong>实践工作簿</strong>：如《cambridge igcse chemistry practical workbook》专注于实验技能的培养，教师应重视实验教学，确保学生有机会进行实践活动，以加深对化学知识的理解。</p>
+</li>
+<li><p><strong>工作簿</strong>：如《cambridge igcse chemistry workbook》和《igcse chemistry work book by richard harwood》包含练习题和复习材料，用于巩固知识。教师应鼓励学生定期完成工作簿中的练习，以提高解题技能。</p>
+</li>
+<li><p><strong>复习指南</strong>：如《complete chemistry for cambridge igcse》提供了全面的复习材料，适合学生在考试前进行全面复习。教师可以利用这些资源帮助学生识别和强化薄弱环节。</p>
+</li>
+<li><p><strong>数学技能工作簿</strong>：如《igcse chemistry maths skills workbook-sample》专注于化学中的数学技能，教师应确保学生能够运用数学技能解决化学问题。</p>
+</li>
+</ol>
+<p>教学建议包括：</p>
+<ul>
+<li><strong>实验技能的重要性</strong>：实验不仅是理论知识的延伸，也是科学探究的一部分。教师应强调实验安全、数据记录与分析以及团队合作精神。</li>
+<li><strong>学习资源与参考书目</strong>：推荐使用权威出版社出版的教科书和在线学习平台，如Khan Academy、Coursera等，以及模拟试卷与练习册。</li>
+<li><strong>备考建议</strong>：制定合理的复习计划，结合课堂学习、教科书阅读、做题训练和实验实践，全方位提升化学水平。</li>
+</ul>
+<p>通过这些资源和建议，教师可以更有效地指导学生，帮助他们在IGCSE化学课程中取得成功。</p>
+]]></content>
+      <categories>
+        <category>化学</category>
+        <category>国际化学</category>
+      </categories>
+      <tags>
+        <tag>国际化学</tag>
       </tags>
   </entry>
   <entry>
@@ -746,6 +813,139 @@ sh.exit();
 ]]></content>
   </entry>
   <entry>
+    <title>HTTP请求笔记</title>
+    <url>//blog/note/code/HTTP-axios.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://www.axios-http.cn/docs/intro">axios的官网</a></p>
+<h1 id="axios的post默认用法（异步）"><a href="#axios的post默认用法（异步）" class="headerlink" title="axios的post默认用法（异步）"></a>axios的post默认用法（异步）</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">&#x27;axios&#x27;</span>); <span class="comment">//引入 &quot;axios&quot; 模块 ，终端中执行： npm install axios</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//设置请求头</span></span><br><span class="line"><span class="keyword">let</span> headers = &#123;</span><br><span class="line">      <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;gw-xeasy.xsdsd.cn&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;sec-ch-ua&#x27;</span>: <span class="string">&#x27;&quot;Not)A;Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;127&quot;, &quot;Chromium&quot;;v=&quot;127&quot;&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;application/json, text/plain, */*&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Cookie&#x27;</span>: <span class="title class_">User</span>.<span class="property">Cookie</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置网址 url 和请求的数据 data</span></span><br><span class="line"><span class="keyword">const</span> url = <span class="string">&#x27;https://gw-xeasy.com/page&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> data = &#123; <span class="string">&quot;businessType&quot;</span>: <span class="number">3</span>, <span class="string">&quot;pageSize&quot;</span>: <span class="number">10</span>, <span class="string">&quot;pageNum&quot;</span>: <span class="number">1</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> 发送请求()</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//开始发送请求post</span></span><br><span class="line">axios.<span class="title function_">post</span>(url, data, &#123; <span class="attr">headers</span>: headers &#125;)</span><br><span class="line">    .<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;查询的结果：&#x27;</span>, response.<span class="property">data</span>); <span class="comment">//直接展示结果</span></span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;查询的结果：&#x27;</span>, <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(response.<span class="property">data</span>, <span class="literal">null</span>, <span class="number">2</span>));<span class="comment">//将结果转化为 JSON 数据</span></span><br><span class="line">      <span class="keyword">return</span> response.<span class="property">data</span>; <span class="comment">//请注意！return 的数据不会传递到外部，因为 axios.post 是异步操作。</span></span><br><span class="line">    <span class="comment">//要想得到返回值，可以使用 Promise 或 async/await</span></span><br><span class="line">    &#125;)</span><br><span class="line">    .<span class="title function_">catch</span>(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;发生错误:&#x27;</span>, error.<span class="property">response</span> ? error.<span class="property">response</span>.<span class="property">data</span> : error.<span class="property">message</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<h1 id="axios的post-“同步”请求"><a href="#axios的post-“同步”请求" class="headerlink" title="axios的post “同步”请求"></a>axios的post “同步”请求</h1><h2 id="方法一-使用async与await-【推荐使用】"><a href="#方法一-使用async与await-【推荐使用】" class="headerlink" title="方法一 使用async与await 【推荐使用】"></a>方法一 使用async与await 【推荐使用】</h2><p>关于 <code>async</code> 的详细使用方法，见后面的章节《异步函数 async》。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">&#x27;axios&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span>   headers = &#123;</span><br><span class="line">      <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;gw-xeasy.xasdasd.cn&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> idList = <span class="keyword">await</span> <span class="title function_">getPaperAnalyze</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;idList:&#x27;</span>, idList);</span><br><span class="line"><span class="comment">//getPaperAnalyze 使用 async/await 来返回数据。</span></span><br><span class="line"><span class="comment">//将 getPaperAnalyze 修改为 async 函数并使用 await 获取结果，从而能直接在主流程中得到 idList：</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">getPaperAnalyze</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> url = <span class="string">&#x27;https://gw-xeasy.asdasd.cn/analyze/task/query/page&#x27;</span>;</span><br><span class="line">  <span class="keyword">const</span> data = &#123; <span class="string">&quot;businessType&quot;</span>: <span class="number">3</span>, <span class="string">&quot;pageSize&quot;</span>: <span class="number">10</span>, <span class="string">&quot;pageNum&quot;</span>: <span class="number">1</span>,&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> response = <span class="keyword">await</span> axios.<span class="title function_">post</span>(url, data, &#123; <span class="attr">headers</span>: headers &#125;);<span class="comment">//开始发送post请求</span></span><br><span class="line">    <span class="keyword">return</span> response.<span class="property">data</span>.<span class="property">data</span>.<span class="property">resultList</span>; <span class="comment">// 返回 ID 列表</span></span><br><span class="line">  &#125; </span><br><span class="line">  <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;发生错误:&#x27;</span>, error.<span class="property">response</span> ? error.<span class="property">response</span>.<span class="property">data</span> : error.<span class="property">message</span>);</span><br><span class="line">    <span class="keyword">throw</span> error; <span class="comment">// 重新抛出错误，方便调用处捕获</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="方法二-使用promise与-then"><a href="#方法二-使用promise与-then" class="headerlink" title="方法二 使用promise与.then"></a>方法二 使用promise与.then</h2><p><code>axios.post</code> 方法返回一个 <code>Promise</code> 对象。这意味着 <code>axios.post</code> 调用是异步执行的，它立即返回一个 <code>Promise</code>，而不是等待HTTP请求完成。</p>
+<p>可以使用 <code>.then()</code> 方法来添加一个处理函数，这个函数会在 <code>Promise</code> 被成功解决（即HTTP请求成功返回）时被调用。如果请求失败，则会调用 <code>.catch()</code> 方法中定义的错误处理函数。</p>
+<p>下面这个例子中，<code>queryPaper</code>函数会返回一个<code>paperList</code>的数组对象回来。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用 queryPaper 函数并处理返回的 Promise</span></span><br><span class="line"><span class="title function_">queryPaper</span>().<span class="title function_">then</span>(<span class="function"><span class="params">paperList</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;查询到&#x27;</span> + paperList.<span class="property">length</span> + <span class="string">&#x27;份试卷，请选择要分发的试卷：&#x27;</span>);</span><br><span class="line">  <span class="comment">// 这里可以继续处理 paperList</span></span><br><span class="line">    </span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//这里是试卷查询，最后会返回一个数组对象，每个对象中有试卷的id与title</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">queryPaper</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;正在查询试卷，请稍等...&#x27;</span>);</span><br><span class="line">  <span class="comment">// 定义请求体</span></span><br><span class="line">  <span class="keyword">let</span> data = &#123;<span class="string">&quot;year&quot;</span>: <span class="string">&quot;2024&quot;</span>,  <span class="string">&quot;grade&quot;</span>: <span class="string">&quot;166&quot;</span>,  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 发送 POST 请求</span></span><br><span class="line">  <span class="keyword">return</span> axios.<span class="title function_">post</span>(<span class="string">&#x27;https://gw-xeasy.xsdsd.cn/xeasy-srv-item/paper/search&#x27;</span>, data, &#123; <span class="attr">headers</span>: headers &#125;)</span><br><span class="line">    .<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> paperList = response.<span class="property">data</span>.<span class="property">data</span>.<span class="property">records</span>;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(paperList, [<span class="string">&#x27;title&#x27;</span>, <span class="string">&#x27;paperId&#x27;</span>], <span class="number">4</span>));</span><br><span class="line">      <span class="keyword">return</span> paperList;</span><br><span class="line">    &#125;)</span><br><span class="line">    .<span class="title function_">catch</span>(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;Error:&#x27;</span>, error.<span class="property">response</span> ? error.<span class="property">response</span>.<span class="property">data</span> : error.<span class="property">message</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h1 id="请求头的注意事项"><a href="#请求头的注意事项" class="headerlink" title="请求头的注意事项"></a>请求头的注意事项</h1><h2 id="数据长度-Content-Length"><a href="#数据长度-Content-Length" class="headerlink" title="数据长度 Content-Length"></a>数据长度 Content-Length</h2><p>有时候数据长度不对会导致请求失败。可以使用下面的语句在<code>data</code>数据准备完成之后，进行动态计算。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">headers[<span class="string">&#x27;Content-Length&#x27;</span>] = <span class="title class_">Buffer</span>.<span class="title function_">byteLength</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(data)); <span class="comment">// 动态计算</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<hr>
+<h1 id="响应结果"><a href="#响应结果" class="headerlink" title="响应结果"></a>响应结果</h1><h2 id="将响应结果进行JSON格式化输出"><a href="#将响应结果进行JSON格式化输出" class="headerlink" title="将响应结果进行JSON格式化输出"></a>将响应结果进行JSON格式化输出</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title class_">JSON</span>.<span class="title function_">stringify</span>(response.<span class="property">data</span>, 过滤方法, 缩进的空格数)); <span class="comment">//response.data 是响应的结果</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">JSON</span>.<span class="title function_">stringify</span>(response.<span class="property">data</span>, <span class="literal">null</span>, <span class="number">4</span>)); <span class="comment">//格式化 response.data ，不用过滤方法，使用4个空格进行缩进。</span></span><br></pre></td></tr></table></figure>
+
+<p>过滤方法——使用举例</p>
+<p>这个过滤方法，可以是一个函数，也可以是一个数组。</p>
+<p>下面给出使用数组作为过滤方法，提取对象中的某些属性。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = [</span><br><span class="line">    &#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;王多鱼&quot;</span>,<span class="string">&quot;sex&quot;</span>:<span class="string">&quot;male&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,</span><br><span class="line">    &#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;蔡徐坤&quot;</span>,<span class="string">&quot;sex&quot;</span>:<span class="string">&quot;male&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">28</span>&#125;,</span><br><span class="line">    &#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;马保国&quot;</span>,<span class="string">&quot;sex&quot;</span>:<span class="string">&quot;male&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">58</span>&#125;,</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义过滤方法，过滤出的结果只包含“name”、“age”</span></span><br><span class="line"><span class="keyword">let</span> replace =[<span class="string">&quot;name&quot;</span>,<span class="string">&quot;age&quot;</span>];  </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(a,replace,<span class="number">4</span>));</span><br></pre></td></tr></table></figure>
+
+<p>输出结果</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;王多鱼&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;age&quot;</span><span class="punctuation">:</span> <span class="number">18</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;蔡徐坤&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;age&quot;</span><span class="punctuation">:</span> <span class="number">28</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;马保国&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;age&quot;</span><span class="punctuation">:</span> <span class="number">58</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<h1 id="JS-异步编程和事件循环"><a href="#JS-异步编程和事件循环" class="headerlink" title="JS 异步编程和事件循环"></a>JS 异步编程和事件循环</h1><p>JavaScript是一种单线程语言，它使用事件循环来处理异步操作。这意味着JavaScript可以在不阻塞主线程的情况下执行异步任务，例如网络请求、定时器等。</p>
+<h3 id="异步操作的两种主要方式"><a href="#异步操作的两种主要方式" class="headerlink" title="异步操作的两种主要方式"></a>异步操作的两种主要方式</h3><ol>
+<li><p><strong>Promise 和 <code>.then()</code>&#x2F;<code>.catch()</code></strong></p>
+<ul>
+<li><code>Promise</code> 是一种用于异步编程的对象，它代表了一个未来将要完成或失败的操作。</li>
+<li>使用 <code>.then()</code> 和 <code>.catch()</code> 方法来处理 <code>Promise</code> 的成功和失败状态。</li>
+</ul>
+</li>
+<li><p><strong><code>async</code>&#x2F;<code>await</code></strong></p>
+<ul>
+<li><code>async</code> 关键字用于声明一个函数是异步的，这意味着该函数会返回一个 <code>Promise</code>。</li>
+<li><code>await</code> 关键字用于等待一个 <code>Promise</code> 解决，它只能在 <code>async</code> 函数内部使用。</li>
+</ul>
+</li>
+</ol>
+<h2 id="async-await-与异步行为"><a href="#async-await-与异步行为" class="headerlink" title="async&#x2F;await 与异步行为"></a><code>async</code>&#x2F;<code>await</code> 与异步行为</h2><p>尽管 <code>async</code>&#x2F;<code>await</code> 使得异步代码看起来像同步代码，但它实际上是异步执行的。以下是一些关键点来帮助理解这一点：</p>
+<ol>
+<li><p><strong>非阻塞执行：</strong></p>
+<ul>
+<li>当你在 <code>async</code> 函数中使用 <code>await</code> 时，JavaScript会挂起该函数的执行，直到等待的 <code>Promise</code> 解决。在这个过程中，JavaScript运行时会继续执行其他任务，如事件处理、其他异步操作等。</li>
+</ul>
+</li>
+<li><p><strong>事件循环：</strong></p>
+<ul>
+<li><code>await</code> 并不会阻塞JavaScript的事件循环。相反，它允许事件循环在等待期间继续运行其他任务。</li>
+</ul>
+</li>
+<li><p><strong>同步的写法，异步的执行：</strong></p>
+<ul>
+<li><code>async</code>&#x2F;<code>await</code> 提供了一种写异步代码的方式，使其看起来像同步代码。然而，这些代码仍然是异步执行的，因为它们不会阻塞主线程。</li>
+</ul>
+</li>
+</ol>
+<h3 id="示例：理解-async-await-的异步行为"><a href="#示例：理解-async-await-的异步行为" class="headerlink" title="示例：理解 async&#x2F;await 的异步行为"></a>示例：理解 <code>async</code>&#x2F;<code>await</code> 的异步行为</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">asyncExample</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;开始执行异步函数&#x27;</span>);</span><br><span class="line">  <span class="keyword">await</span> <span class="title function_">sleep</span>(<span class="number">3000</span>); <span class="comment">// 假设这是一个返回 Promise 的异步 sleep 函数</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;异步函数执行完毕&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">sleep</span>(<span class="params">ms</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> <span class="built_in">setTimeout</span>(resolve, ms));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">asyncExample</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 即使 asyncExample 函数中的 await 暂停了函数的执行，控制台仍然会立即打印以下内容</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;异步函数执行后立即打印&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">开始执行异步函数</span><br><span class="line">异步函数执行后立即打印</span><br><span class="line">异步函数执行完毕</span><br></pre></td></tr></table></figure>
+
+<p>在这个例子中，<code>asyncExample</code> 函数中的 <code>await sleep(3000)</code> 暂停了函数的执行，但并没有阻塞主线程。</p>
+<p>因此，控制台会立即打印 <code>&quot;异步函数执行后立即打印&quot;</code>，然后才打印 <code>&quot;异步函数执行完毕&quot;</code>。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>使用 <code>async</code>&#x2F;<code>await</code> 的代码仍然是异步执行的，因为它们不会阻塞JavaScript的事件循环。</p>
+<p><code>async</code>&#x2F;<code>await</code> 提供了一种写异步代码的方式，使其看起来像同步代码，但它们实际上仍然是异步执行的。</p>
+<p>这种方式使得异步代码更易于编写、阅读和维护。</p>
+<hr>
+<h1 id="异步函数-async"><a href="#异步函数-async" class="headerlink" title="异步函数 async"></a>异步函数 async</h1><p><code>async</code> 是一个关键字，用来声明一个函数是异步的。当你在一个函数前面加上 <code>async</code>，这个函数就会成为一个异步函数。异步函数可以运行 <code>await</code> 表达式，<code>await</code> 可以用来等待一个 <code>Promise</code> 解决（resolve）。</p>
+<h2 id="声明异步函数"><a href="#声明异步函数" class="headerlink" title="声明异步函数"></a>声明异步函数</h2><p>当你在函数前加上 <code>async</code> 关键字时，这个函数会返回一个 <code>Promise</code> 对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">myAsyncFunction</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-await"><a href="#使用-await" class="headerlink" title="使用 await"></a>使用 <code>await</code></h2><p>在异步函数内部，你可以使用 <code>await</code> 关键字来等待一个 <code>Promise</code>。<br><code>await</code> 会暂停函数的执行，直到等待的 <code>Promise</code> 被解决（resolve）或拒绝（reject）。<br>如果 <code>Promise</code> 被解决，<code>await</code> 表达式的值就是 <code>Promise</code> 的值；如果 <code>Promise</code> 被拒绝，会抛出一个错误。</p>
+   <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">myAsyncFunction</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> result = <span class="keyword">await</span> <span class="title function_">somePromise</span>(); <span class="comment">// 等待 somePromise 解决</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(result); <span class="comment">// somePromise 解决后的值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="**错误处理"></a>**错误处理</h2><p>如果 <code>await</code> 的 <code>Promise</code> 被拒绝，会抛出一个错误。<br>你可以使用 <code>try...catch</code> 语句来捕获这个错误。</p>
+   <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">myAsyncFunction</span>(<span class="params"></span>) </span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">try</span> </span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="keyword">await</span> <span class="title function_">somePromise</span>(); <span class="comment">// 等待 somePromise 解决</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(result);</span><br><span class="line">  &#125; </span><br><span class="line">  <span class="keyword">catch</span> (error) </span><br><span class="line">  &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;发生错误:&#x27;</span>, error);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><p><code>async</code> 函数总是返回一个 <code>Promise</code>。<br>如果函数正常结束，<code>Promise</code> 会以函数的返回值解决；如果函数抛出错误，<code>Promise</code> 会以这个错误拒绝。</p>
+   <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">myAsyncFunction</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;Hello, World!&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">myAsyncFunction</span>().<span class="title function_">then</span>(<span class="function"><span class="params">greeting</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(greeting); <span class="comment">// 输出：Hello, World!</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="链式-Promise"><a href="#链式-Promise" class="headerlink" title="链式 Promise"></a>链式 <code>Promise</code></h2><p>由于 <code>async</code> 函数返回 <code>Promise</code>，你可以链式调用多个 <code>async</code> 函数。</p>
+   <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">myAsyncFunction1</span>(<span class="params"></span>) </span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;Hello&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">myAsyncFunction2</span>(<span class="params">greeting</span>) </span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;greeting&#125;</span>, World!`</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">myAsyncFunction1</span>().<span class="title function_">then</span>(<span class="function"><span class="params">greeting</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">myAsyncFunction2</span>(greeting);</span><br><span class="line">&#125;).<span class="title function_">then</span>(<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(result); <span class="comment">// 输出：Hello, World!</span></span><br><span class="line">&#125;); <span class="comment">//很明显这种“then等待promise”解决的代码看起来很累</span></span><br></pre></td></tr></table></figure>
+
+<p>   使用 <code>async</code>&#x2F;<code>await</code>，上述链式调用可以更简洁地写成：</p>
+   <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">chainAsyncFunctions</span>(<span class="params"></span>) </span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">let</span> greeting = <span class="keyword">await</span> <span class="title function_">myAsyncFunction1</span>();</span><br><span class="line">  <span class="keyword">let</span> result = <span class="keyword">await</span> <span class="title function_">myAsyncFunction2</span>(greeting);</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(result); <span class="comment">// 输出：Hello, World!</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>async</code>&#x2F;<code>await</code> 的好处是它让异步代码的写法更接近同步代码，使得代码更易于阅读和维护。</p>
+<h2 id="建立-sleep-函数"><a href="#建立-sleep-函数" class="headerlink" title="建立 sleep 函数"></a>建立 <code>sleep</code> 函数</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 异步 sleep 函数，等待指定的毫秒数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number</span>&#125; <span class="variable">ms</span> - 要等待的毫秒数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span> &#123;<span class="type">Promise</span>&#125; - 解决后的Promise</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">sleep</span>(<span class="params">ms</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> <span class="built_in">setTimeout</span>(resolve, ms));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 sleep 函数</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">doSomething</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;开始等待&#x27;</span>);</span><br><span class="line">  <span class="keyword">await</span> <span class="title function_">sleep</span>(<span class="number">3000</span>); <span class="comment">// 等待3秒</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;等待结束&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用 doSomething 函数</span></span><br><span class="line"><span class="title function_">doSomething</span>();</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>无标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Trpora的使用说明</title>
     <url>//blog/note/software-use/Trpora.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h1><p>网络上教的自定义<code>Typora</code>的主题，都是新建CSS文件，方法没错，但是请注意了：</p>
@@ -780,8 +980,8 @@ sh.exit();
 </thead>
 <tbody><tr>
 <td>仙逆⭐⭐⭐⭐⭐</td>
-<td align="left">2024年10月28 日   看完第 60 集</td>
-<td>王林感悟意境，准备化神。</td>
+<td align="left">2024年11月 3 日   看完第 61 集</td>
+<td>王林准备返回家乡。</td>
 </tr>
 <tr>
 <td>凡人修仙传⭐⭐⭐⭐⭐</td>
@@ -1353,7 +1553,7 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#x72;&#107;&#101;&#x73;&#105;&#64;&#x71;&#113;&#46;&#x63;&#111;&#x6d;">&#101;&#x72;&#107;&#101;&#x73;&#105;&#64;&#x71;&#113;&#46;&#x63;&#111;&#x6d;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#x72;&#x6b;&#x65;&#x73;&#105;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#101;&#x72;&#x6b;&#x65;&#x73;&#105;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -1385,7 +1585,7 @@ sh.exit();
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#114;&#107;&#101;&#x73;&#105;&#x40;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#109;">&#x65;&#114;&#107;&#101;&#x73;&#105;&#x40;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#109;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#x6b;&#101;&#x73;&#x69;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;">&#x65;&#x72;&#x6b;&#101;&#x73;&#x69;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -1405,9 +1605,9 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
@@ -1640,6 +1840,132 @@ sh.exit();
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2024高考化学易错题整理</title>
+    <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
+<p><strong>避免火焰</strong>：在碳化过程中，应避免海带直接接触火焰，以免引起燃烧。通常使用间接加热，如在火焰上方一定距离加热。</p>
+<p><strong>观察变化</strong>：在加热过程中，要密切观察海带的颜色和状态变化，直到它完全变黑并碳化。</p>
+<p><strong>打开坩埚盖</strong>：通过灼烧去除水分并碳化海带，通常不需要盖上盖子。这样做可以让水分和挥发性物质（如盐分）容易蒸发，同时便于观察海带的碳化过程。</p>
+<h3 id="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。"><a href="#2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。" class="headerlink" title="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。"></a>2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。</h3><p>反应的发生可以由多种因素决定，包括：</p>
+<ul>
+<li><p><strong>反应朝着离子浓度减小的方向进行</strong>，例如生成沉淀、气体、弱电解质（例如水）。</p>
+</li>
+<li><p><strong>化学平衡的移动</strong>：反应是否进行还取决于反应物和生成物的浓度，以及温度等条件，这些都会影响化学平衡的位置。</p>
+</li>
+<li><p><strong>热力学和动力学因素</strong>：反应的热力学可行性（如自由能变化）和反应的动力学（反应速率）也是决定反应是否进行的重要因素。</p>
+</li>
+</ul>
+<p>也可以这三点就是反应进行的原理，是具有普适性的。</p>
+<p>氯化镁溶液中滴入氢氧化钠溶液，会发生复分解反应，生成氢氧化镁沉淀，与氢氧化钠、氢氧化镁的碱性强弱无关，不能由此得出氢氧化钠的碱性比氢氧化镁强。</p>
+<p>学习过沉淀溶解平衡的知识，让我们知道了沉淀可以由Ksp大的向Ksp小的进行转化。</p>
+<p>也就是说氯化镁与氢氧化钠反应涉及到真正反应动力可以用下面的原理来解释，</p>
+<p>[1]复分解原理；反应总是朝着溶液中离子浓度减小的方向进行，因为这样能降低体系的自由度，▲G&lt;0。</p>
+<p>[2]沉淀溶解平衡的转化；氢氧化镁为难溶物，Ksp较小。</p>
+<p><strong>如何去理解”强酸制弱酸、强碱制弱碱“？</strong></p>
+<p><strong>当稀溶液中的酸碱反应体系仅存在酸碱平衡时，“强酸制弱酸”的规律是成立的，不存在其他平衡例如氧化还原平衡、配位平衡、沉淀溶解平衡、气液平衡等。</strong></p>
+<p>即只有体系中只存在酸性强弱的差距，不涉及到其他平衡的干扰才能认为是强酸制弱酸，这就导致”强酸制弱酸“这个所谓的”理论“使用的条件非常严格，不能随便套用。</p>
+<p>最后，可以尝试去思考一下硫化氢与硫酸铜反应的例子。</p>
+<hr>
+<h2 id="2024浙江卷"><a href="#2024浙江卷" class="headerlink" title="2024浙江卷"></a>2024浙江卷</h2><h3 id="1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3"><a href="#1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3" class="headerlink" title="1、铁离子与氰酸根不能共存，会生成Fe(CN)6  3-"></a>1、铁离子与氰酸根不能共存，会生成Fe(CN)<sub>6</sub> <sup> 3-</sup></h3><h3 id="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"><a href="#2、碘单质和碱性物质反应，产物是碘离子和碘酸根。" class="headerlink" title="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"></a>2、碘单质和碱性物质反应，产物是碘离子和碘酸根。</h3><p>例如，碘单质（I₂）与氢氧化钠（NaOH）的反应通常生成碘化钠（NaI）、碘酸钠（NaIO₃）和水（H₂O）</p>
+<p>与氯气和氢氧化钠的反应不同，氯气在不同条件下可以生成不同的产物（如NaCl、NaClO、NaClO₃），这是因为次氯酸盐（ClO⁻）和氯酸盐（ClO₃⁻）相对稳定，而次碘酸盐（IO⁻）则非常不稳定，容易进一步氧化为碘酸钠（NaIO₃）。因此，碘单质与氢氧化钠的反应不会产生像氯气那样的多种产物，而是倾向于生成碘化钠和碘酸钠。这种差异主要是由于不同卤素的化学性质和它们形成的化合物的稳定性所决定的。</p>
+<h3 id="3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？"><a href="#3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？" class="headerlink" title="3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？"></a>3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？</h3><p>答案是：不能。</p>
+<p>在晶体硅中，使用碳原子代替硅原子通常不会直接增强导电性。硅是一种半导体材料，其导电性可以通过掺杂来控制。在半导体材料中，掺杂是指在晶体中故意引入少量的杂质原子，这些杂质原子可以是施主（提供额外电子）或受主（接受电子），从而改变材料的电子结构和导电性。</p>
+<p>在硅中，通常通过掺入如硼（B）这样的受主杂质来形成p型半导体，或者通过掺入如磷（P）这样的施主杂质来形成n型半导体。这些掺杂原子会改变硅的电子结构，从而增强其导电性。例如，掺入磷的硅会因为额外的电子而增加导电性，因为这些电子可以参与导电过程。</p>
+<p>然而，碳原子与硅原子在晶体硅中的置换并不会直接导致导电性的增强。碳和硅都是第IV族元素，它们在周期表中的化学性质相似，但碳的原子半径小于硅，这可能导致晶体结构的畸变。此外，碳的掺杂不一定能像磷或硼那样有效地提供额外的电子或空穴来增加导电性。实际上，碳在硅中的掺杂可能会引入结构缺陷，影响硅的半导体性质。</p>
+<p>在某些情况下，如在锂离子电池的硅基负极材料中，通过引入碳形成硅&#x2F;碳复合材料，可以提高材料的结构稳定性和导电性。这是因为碳材料可以提供额外的电子传输路径，并且有助于缓冲硅在充放电过程中的体积膨胀。但这种增强是通过复合材料的结构设计实现的，而不是简单地通过碳原子替代硅原子来实现的。</p>
+<p>总的来说，晶体硅中使用碳原子代替硅原子并不是一种有效的增强导电性的方法。相反，通过特定的掺杂技术或者设计硅&#x2F;碳复合材料结构，可以更有效地改善硅的导电性能。</p>
+<h3 id="4、关于亚硫酸钡沉淀"><a href="#4、关于亚硫酸钡沉淀" class="headerlink" title="4、关于亚硫酸钡沉淀"></a>4、关于亚硫酸钡沉淀</h3><ul>
+<li><p><strong>将二氧化硫通入氯化钡溶液，一般看不到白色沉淀</strong>。原因是产物氯化氢与亚硫酸钡不能共存，反应无法进行。</p>
+<p>除非此时有氧化性物质在溶液体系中，例如氧气、氯气、可以将亚硫酸根氧化成硫酸根而沉淀。</p>
+<p>当然，如果溶液中有碱性物质，能够除去反应生成的氯化氢，那么也能够看到白色沉淀。</p>
+</li>
+<li><p>将亚硫酸溶液加入到氯化钡溶液，理论上可以生成亚硫酸钡（BaSO₃）沉淀。然而，亚硫酸钡在水中的溶解度虽然很低，但它仍然可以溶解在盐酸（HCl）中。因此，即使在实验中观察到了白色沉淀，这些沉淀也可能因为反应体系中存在的盐酸而被溶解，导致最终看不到沉淀。在实际操作中，如果实验系统中含有氧气，二氧化硫（SO₂）可能会被氧化成硫酸（H₂SO₄），进而与氯化钡反应生成硫酸钡（BaSO₄）沉淀，这是一种不溶于水和酸的白色沉淀。</p>
+</li>
+</ul>
+<p>​	因此，这个实验中是否能看到沉淀，取决于实验条件，如反应体系中是否存在氧气，以及盐酸的浓度等因素。在无氧条件下，亚硫酸与氯化钡混合可能会看到白色沉淀接着又会溶解；但在有氧条件下，由于亚硫酸被氧化，可能看到较为稳定的白色沉淀。</p>
+<h3 id="5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2-。试问："><a href="#5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2-。试问：" class="headerlink" title="5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2+ 。试问："></a>5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO<sub>2</sub><sup>+</sup> 。试问：</h3><ul>
+<li>比较氧化性强弱：NO<sub>2</sub><sup>+</sup>         HNO<sub>3</sub></li>
+</ul>
+<p>NO<sub>2</sub><sup>+</sup>的氧化性大于硝酸。可以将NO<sub>2</sub><sup>+</sup>看作是硝酸脱去了一个氢氧根所得到的产物，硝酸脱去氢氧根这个阴离子后，得电子能力更强了。</p>
+<p>这种结论有点类似：“氨气的还原性强于铵根”、“铁离子的氧化性强于亚铁离子”。</p>
+<ul>
+<li>写出A中阴离子的结构式</li>
+</ul>
+<p>A中阴离子为HS<sub>2</sub> O<sub>7</sub>  <sup>—</sup>，其结构式为</p>
+<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8htt3se11poj303x01la9u.jpg "  style="zoom:90%;" />
+
+
+
+<h3 id="6、钠和二氧化碳加热的反应方程式"><a href="#6、钠和二氧化碳加热的反应方程式" class="headerlink" title="6、钠和二氧化碳加热的反应方程式"></a>6、钠和二氧化碳加热的反应方程式</h3><p>①二氧化碳少量，产物为氧化钠 + 一氧化碳</p>
+<p>②二氧化碳过量，产物为碳酸钠  + 一氧化碳</p>
+]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>易错题</category>
+      </categories>
+      <tags>
+        <tag>化学真题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>近三年全国各省市高考化学真题分享（学生版+教师版）</title>
+    <url>//blog/chemistry/shijuan/2021-2023.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、获取通道"><a href="#一、获取通道" class="headerlink" title="一、获取通道"></a>一、获取通道</h1><p>链接:<a href="https://caiyun.139.com/m/i?065Ct6gI60upp">https://caiyun.139.com/m/i?065Ct6gI60upp</a><br>提取码:PgLi<br>复制内容打开移动云盘PC客户端，操作更方便哦</p>
+<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVl6WldDeWhjVVJJa3FxRk5adFJVUmtCOTdNTmNLM0JyZVgwNk5JZTJDM1lqZz9lPVFKZGVYbQ.png" style="zoom:67%;" />
+
+
+
+
+
+
+
+<h1 id="二、学生版实例"><a href="#二、学生版实例" class="headerlink" title="二、学生版实例"></a>二、学生版实例</h1><p><code>习题实例，习题+答案，但是每道习题后无答案。试卷的最后面是详细的答案与解析</code></p>
+<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVZyeUMwUGVmUnhLaUUyTURXVFN4TUVCS0tHeVJhYjM1ZjRlclZKN0E2OWo1Zz9lPXRyNkhvag.png" style="zoom:67%;" />
+
+
+
+
+
+
+
+<p><code>答案与解析</code></p>
+<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVpUY3B1OEl4WjlEdW1rSlFKTGotbFVCazQtYWcwdWxwZE9rRGp1Y1F6enNhZz9lPXIzSEJLcQ.png" style="zoom:67%;" />
+
+<h1 id="三、教师版"><a href="#三、教师版" class="headerlink" title="三、教师版"></a>三、教师版</h1><p><code>习题实例，习题+答案，但是每道习题后跟着答案与解析。</code></p>
+<p>注意：教师版前半部分和学生版一样，后半部分才是<code>每道习题后跟着答案</code></p>
+<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVpWbEk0MFhxbEpCbWxEa0wwdFZ4d0lCbmVyeTFDZy1yeVhzUGRJbkM2ckZxdz9lPWNmeFFsTA.png" style="zoom:67%;" />]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>试卷</category>
+      </categories>
+      <tags>
+        <tag>download</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高中化学90个实验视频汇总</title>
+    <url>//blog/chemistry/experiment-videos/allvideos.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+<hr>
+<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+
+
+
+
+
+<h1 id="03配置100毫升1mo1L氯化钠溶液"><a href="#03配置100毫升1mo1L氯化钠溶液" class="headerlink" title="03配置100毫升1mo1L氯化钠溶液"></a>03配置100毫升1mo1L氯化钠溶液</h1><h1 id="04氢氧化铁胶体制备、丁达尔效应"><a href="#04氢氧化铁胶体制备、丁达尔效应" class="headerlink" title="04氢氧化铁胶体制备、丁达尔效应"></a>04氢氧化铁胶体制备、丁达尔效应</h1><h1 id="05离子反应"><a href="#05离子反应" class="headerlink" title="05离子反应"></a>05离子反应</h1><h1 id="06钠的性质"><a href="#06钠的性质" class="headerlink" title="06钠的性质"></a>06钠的性质</h1><h1 id="07铁与水蒸气反应"><a href="#07铁与水蒸气反应" class="headerlink" title="07铁与水蒸气反应"></a>07铁与水蒸气反应</h1><h1 id="08铝与酸、碱溶液的反应"><a href="#08铝与酸、碱溶液的反应" class="headerlink" title="08铝与酸、碱溶液的反应"></a>08铝与酸、碱溶液的反应</h1><h1 id="09过氧化钠的性质"><a href="#09过氧化钠的性质" class="headerlink" title="09过氧化钠的性质"></a>09过氧化钠的性质</h1><h1 id="10碳酸钠和碳酸氢钠的性质"><a href="#10碳酸钠和碳酸氢钠的性质" class="headerlink" title="10碳酸钠和碳酸氢钠的性质"></a>10碳酸钠和碳酸氢钠的性质</h1><h1 id="11焰色反应"><a href="#11焰色反应" class="headerlink" title="11焰色反应"></a>11焰色反应</h1><h1 id="12铁的氢氧化物的制备"><a href="#12铁的氢氧化物的制备" class="headerlink" title="12铁的氢氧化物的制备"></a>12铁的氢氧化物的制备</h1><h1 id="13三价铁离子的检验"><a href="#13三价铁离子的检验" class="headerlink" title="13三价铁离子的检验"></a>13三价铁离子的检验</h1><h1 id="14铁盐和亚铁盐的一些性质"><a href="#14铁盐和亚铁盐的一些性质" class="headerlink" title="14铁盐和亚铁盐的一些性质"></a>14铁盐和亚铁盐的一些性质</h1><h1 id="15硅酸的制备、硅酸钠的性质"><a href="#15硅酸的制备、硅酸钠的性质" class="headerlink" title="15硅酸的制备、硅酸钠的性质"></a>15硅酸的制备、硅酸钠的性质</h1><h1 id="16氢气在氯气中燃烧"><a href="#16氢气在氯气中燃烧" class="headerlink" title="16氢气在氯气中燃烧"></a>16氢气在氯气中燃烧</h1><h1 id="17氯水、氯气的漂白作用"><a href="#17氯水、氯气的漂白作用" class="headerlink" title="17氯水、氯气的漂白作用"></a>17氯水、氯气的漂白作用</h1><h1 id="18氯离子的检验"><a href="#18氯离子的检验" class="headerlink" title="18氯离子的检验"></a>18氯离子的检验</h1><h1 id="19二氧化硫的制备与性质"><a href="#19二氧化硫的制备与性质" class="headerlink" title="19二氧化硫的制备与性质"></a>19二氧化硫的制备与性质</h1><h1 id="20氨溶于水的喷泉实验"><a href="#20氨溶于水的喷泉实验" class="headerlink" title="20氨溶于水的喷泉实验"></a>20氨溶于水的喷泉实验</h1><h1 id="21氨的实验室制法"><a href="#21氨的实验室制法" class="headerlink" title="21氨的实验室制法"></a>21氨的实验室制法</h1><h1 id="22铜与浓硫酸的反应"><a href="#22铜与浓硫酸的反应" class="headerlink" title="22铜与浓硫酸的反应"></a>22铜与浓硫酸的反应</h1><h1 id="23钾在空气中燃烧"><a href="#23钾在空气中燃烧" class="headerlink" title="23钾在空气中燃烧"></a>23钾在空气中燃烧</h1><h1 id="24钾与水的反应"><a href="#24钾与水的反应" class="headerlink" title="24钾与水的反应"></a>24钾与水的反应</h1><h1 id="25新制饱和氯水与溴化钠溶液的反应"><a href="#25新制饱和氯水与溴化钠溶液的反应" class="headerlink" title="25新制饱和氯水与溴化钠溶液的反应"></a>25新制饱和氯水与溴化钠溶液的反应</h1><h1 id="26新制饱和氯水与碘化钾溶液的反应"><a href="#26新制饱和氯水与碘化钾溶液的反应" class="headerlink" title="26新制饱和氯水与碘化钾溶液的反应"></a>26新制饱和氯水与碘化钾溶液的反应</h1><h1 id="27溴水与碘化钾溶液的反应"><a href="#27溴水与碘化钾溶液的反应" class="headerlink" title="27溴水与碘化钾溶液的反应"></a>27溴水与碘化钾溶液的反应</h1><h1 id="28镁与沸水的反应"><a href="#28镁与沸水的反应" class="headerlink" title="28镁与沸水的反应"></a>28镁与沸水的反应</h1><h1 id="29镁铝与盐酸反应的对比实验"><a href="#29镁铝与盐酸反应的对比实验" class="headerlink" title="29镁铝与盐酸反应的对比实验"></a>29镁铝与盐酸反应的对比实验</h1><h1 id="30钠与氯气反应"><a href="#30钠与氯气反应" class="headerlink" title="30钠与氯气反应"></a>30钠与氯气反应</h1><h1 id="31测定铝与盐酸反应的热效应"><a href="#31测定铝与盐酸反应的热效应" class="headerlink" title="31测定铝与盐酸反应的热效应"></a>31测定铝与盐酸反应的热效应</h1><h1 id="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"><a href="#32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应" class="headerlink" title="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"></a>32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应</h1><h1 id="33测定酸碱中和反应的热效应"><a href="#33测定酸碱中和反应的热效应" class="headerlink" title="33测定酸碱中和反应的热效应"></a>33测定酸碱中和反应的热效应</h1><h1 id="34乙醇与钠的反应"><a href="#34乙醇与钠的反应" class="headerlink" title="34乙醇与钠的反应"></a>34乙醇与钠的反应</h1><h1 id="35锌铜原电池"><a href="#35锌铜原电池" class="headerlink" title="35锌铜原电池"></a>35锌铜原电池</h1><h1 id="36水果电池"><a href="#36水果电池" class="headerlink" title="36水果电池"></a>36水果电池</h1><h1 id="37温度对化学反应速率的影响"><a href="#37温度对化学反应速率的影响" class="headerlink" title="37温度对化学反应速率的影响"></a>37温度对化学反应速率的影响</h1><h1 id="38催化剂对化学反应速率的影响"><a href="#38催化剂对化学反应速率的影响" class="headerlink" title="38催化剂对化学反应速率的影响"></a>38催化剂对化学反应速率的影响</h1><h1 id="39甲烷和氯气反应所需条件的对比实验"><a href="#39甲烷和氯气反应所需条件的对比实验" class="headerlink" title="39甲烷和氯气反应所需条件的对比实验"></a>39甲烷和氯气反应所需条件的对比实验</h1><h1 id="40石蜡油分解实验及其分解产物的性质实验"><a href="#40石蜡油分解实验及其分解产物的性质实验" class="headerlink" title="40石蜡油分解实验及其分解产物的性质实验"></a>40石蜡油分解实验及其分解产物的性质实验</h1><h1 id="41葡萄糖跟新制氢氧化铜悬浊液反应"><a href="#41葡萄糖跟新制氢氧化铜悬浊液反应" class="headerlink" title="41葡萄糖跟新制氢氧化铜悬浊液反应"></a>41葡萄糖跟新制氢氧化铜悬浊液反应</h1><h1 id="42碘酒与淀粉作用"><a href="#42碘酒与淀粉作用" class="headerlink" title="42碘酒与淀粉作用"></a>42碘酒与淀粉作用</h1><h1 id="43蛋白质的颜色反应"><a href="#43蛋白质的颜色反应" class="headerlink" title="43蛋白质的颜色反应"></a>43蛋白质的颜色反应</h1><h1 id="44蔗糖的水解及其产物的验证"><a href="#44蔗糖的水解及其产物的验证" class="headerlink" title="44蔗糖的水解及其产物的验证"></a>44蔗糖的水解及其产物的验证</h1><h1 id="45铝热反应"><a href="#45铝热反应" class="headerlink" title="45铝热反应"></a>45铝热反应</h1><h1 id="46葡萄糖的银镜反应"><a href="#46葡萄糖的银镜反应" class="headerlink" title="46葡萄糖的银镜反应"></a>46葡萄糖的银镜反应</h1><h1 id="47淀粉的水解"><a href="#47淀粉的水解" class="headerlink" title="47淀粉的水解"></a>47淀粉的水解</h1><h1 id="48蛋白质的性质"><a href="#48蛋白质的性质" class="headerlink" title="48蛋白质的性质"></a>48蛋白质的性质</h1><h1 id="49维生素C的还原性"><a href="#49维生素C的还原性" class="headerlink" title="49维生素C的还原性"></a>49维生素C的还原性</h1><h1 id="50不同条件下铁钉的锈蚀"><a href="#50不同条件下铁钉的锈蚀" class="headerlink" title="50不同条件下铁钉的锈蚀"></a>50不同条件下铁钉的锈蚀</h1><h1 id="51合成氨"><a href="#51合成氨" class="headerlink" title="51合成氨"></a>51合成氨</h1><h1 id="52硫酸铜跟氨水的反应"><a href="#52硫酸铜跟氨水的反应" class="headerlink" title="52硫酸铜跟氨水的反应"></a>52硫酸铜跟氨水的反应</h1><h1 id="53氯化铁溶液跟硫氰化钾溶液反应"><a href="#53氯化铁溶液跟硫氰化钾溶液反应" class="headerlink" title="53氯化铁溶液跟硫氰化钾溶液反应"></a>53氯化铁溶液跟硫氰化钾溶液反应</h1><h1 id="54碘单质在不同溶剂中的溶解性"><a href="#54碘单质在不同溶剂中的溶解性" class="headerlink" title="54碘单质在不同溶剂中的溶解性"></a>54碘单质在不同溶剂中的溶解性</h1><h1 id="55碘单质的升华"><a href="#55碘单质的升华" class="headerlink" title="55碘单质的升华"></a>55碘单质的升华</h1><h1 id="56镁条在二氧化碳中燃烧"><a href="#56镁条在二氧化碳中燃烧" class="headerlink" title="56镁条在二氧化碳中燃烧"></a>56镁条在二氧化碳中燃烧</h1><h1 id="57测量锌与硫酸反应速率"><a href="#57测量锌与硫酸反应速率" class="headerlink" title="57测量锌与硫酸反应速率"></a>57测量锌与硫酸反应速率</h1><h1 id="58高锰酸钾溶液与草酸溶液的反应"><a href="#58高锰酸钾溶液与草酸溶液的反应" class="headerlink" title="58高锰酸钾溶液与草酸溶液的反应"></a>58高锰酸钾溶液与草酸溶液的反应</h1><h1 id="59硫代硫酸钠溶液跟稀硫酸的反应"><a href="#59硫代硫酸钠溶液跟稀硫酸的反应" class="headerlink" title="59硫代硫酸钠溶液跟稀硫酸的反应"></a>59硫代硫酸钠溶液跟稀硫酸的反应</h1><h1 id="60温度与碘化钾被氧化的关系"><a href="#60温度与碘化钾被氧化的关系" class="headerlink" title="60温度与碘化钾被氧化的关系"></a>60温度与碘化钾被氧化的关系</h1><h1 id="61过氧化氢与二氧化锰作用"><a href="#61过氧化氢与二氧化锰作用" class="headerlink" title="61过氧化氢与二氧化锰作用"></a>61过氧化氢与二氧化锰作用</h1><h1 id="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"><a href="#62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用" class="headerlink" title="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"></a>62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用</h1><h1 id="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"><a href="#63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用" class="headerlink" title="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"></a>63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用</h1><h1 id="64淀粉溶液跟唾液、稀硫酸作用"><a href="#64淀粉溶液跟唾液、稀硫酸作用" class="headerlink" title="64淀粉溶液跟唾液、稀硫酸作用"></a>64淀粉溶液跟唾液、稀硫酸作用</h1><h1 id="65重硌酸钾溶液在不同酸度时的颜色"><a href="#65重硌酸钾溶液在不同酸度时的颜色" class="headerlink" title="65重硌酸钾溶液在不同酸度时的颜色"></a>65重硌酸钾溶液在不同酸度时的颜色</h1><h1 id="66三氯化铁跟不同浓度的硫氰化钾溶液反应"><a href="#66三氯化铁跟不同浓度的硫氰化钾溶液反应" class="headerlink" title="66三氯化铁跟不同浓度的硫氰化钾溶液反应"></a>66三氯化铁跟不同浓度的硫氰化钾溶液反应</h1><h1 id="67二氧化氮和四氧化二氮的相互转化"><a href="#67二氧化氮和四氧化二氮的相互转化" class="headerlink" title="67二氧化氮和四氧化二氮的相互转化"></a>67二氧化氮和四氧化二氮的相互转化</h1><h1 id="68相同条件下，镁条跟盐酸和醋酸的反应"><a href="#68相同条件下，镁条跟盐酸和醋酸的反应" class="headerlink" title="68相同条件下，镁条跟盐酸和醋酸的反应"></a>68相同条件下，镁条跟盐酸和醋酸的反应</h1><h1 id="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"><a href="#69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应" class="headerlink" title="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"></a>69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应</h1><h1 id="70用PH计测量溶液的PH"><a href="#70用PH计测量溶液的PH" class="headerlink" title="70用PH计测量溶液的PH"></a>70用PH计测量溶液的PH</h1><h1 id="71实验测定酸碱反应曲线"><a href="#71实验测定酸碱反应曲线" class="headerlink" title="71实验测定酸碱反应曲线"></a>71实验测定酸碱反应曲线</h1><h1 id="72相同条件下，测定不同盐溶液的PH"><a href="#72相同条件下，测定不同盐溶液的PH" class="headerlink" title="72相同条件下，测定不同盐溶液的PH"></a>72相同条件下，测定不同盐溶液的PH</h1><h1 id="73三氧化铁溶液的配制"><a href="#73三氧化铁溶液的配制" class="headerlink" title="73三氧化铁溶液的配制"></a>73三氧化铁溶液的配制</h1><h1 id="74沉淀的溶解"><a href="#74沉淀的溶解" class="headerlink" title="74沉淀的溶解"></a>74沉淀的溶解</h1><h1 id="75沉淀的转化"><a href="#75沉淀的转化" class="headerlink" title="75沉淀的转化"></a>75沉淀的转化</h1><h1 id="76铜锌硫酸原电池"><a href="#76铜锌硫酸原电池" class="headerlink" title="76铜锌硫酸原电池"></a>76铜锌硫酸原电池</h1><h1 id="77氯化钠溶液的电解"><a href="#77氯化钠溶液的电解" class="headerlink" title="77氯化钠溶液的电解"></a>77氯化钠溶液的电解</h1><h1 id="78氯化铜溶液的电解"><a href="#78氯化铜溶液的电解" class="headerlink" title="78氯化铜溶液的电解"></a>78氯化铜溶液的电解</h1><h1 id="79电镀"><a href="#79电镀" class="headerlink" title="79电镀"></a>79电镀</h1><h1 id="80铁的吸氧腐蚀"><a href="#80铁的吸氧腐蚀" class="headerlink" title="80铁的吸氧腐蚀"></a>80铁的吸氧腐蚀</h1><h1 id="81验证牺牲阳极的阴极保护法"><a href="#81验证牺牲阳极的阴极保护法" class="headerlink" title="81验证牺牲阳极的阴极保护法"></a>81验证牺牲阳极的阴极保护法</h1><h1 id="82水的电解与氢氧混合气爆鸣的微型实验"><a href="#82水的电解与氢氧混合气爆鸣的微型实验" class="headerlink" title="82水的电解与氢氧混合气爆鸣的微型实验"></a>82水的电解与氢氧混合气爆鸣的微型实验</h1><h1 id="83氯气的生成及其性质的微型实验"><a href="#83氯气的生成及其性质的微型实验" class="headerlink" title="83氯气的生成及其性质的微型实验"></a>83氯气的生成及其性质的微型实验</h1><h1 id="84污水处理"><a href="#84污水处理" class="headerlink" title="84污水处理"></a>84污水处理</h1><h1 id="85蒸馏"><a href="#85蒸馏" class="headerlink" title="85蒸馏"></a>85蒸馏</h1><h1 id="86从海带中提取碘"><a href="#86从海带中提取碘" class="headerlink" title="86从海带中提取碘"></a>86从海带中提取碘</h1><h1 id="87硫酸亚铁铵的制备"><a href="#87硫酸亚铁铵的制备" class="headerlink" title="87硫酸亚铁铵的制备"></a>87硫酸亚铁铵的制备</h1><h1 id="88乙酸乙酯的制备及反应条件探究"><a href="#88乙酸乙酯的制备及反应条件探究" class="headerlink" title="88乙酸乙酯的制备及反应条件探究"></a>88乙酸乙酯的制备及反应条件探究</h1><h1 id="89氢氧化铝的制"><a href="#89氢氧化铝的制" class="headerlink" title="89氢氧化铝的制"></a>89氢氧化铝的制</h1><h1 id="90几种无机离子的检验"><a href="#90几种无机离子的检验" class="headerlink" title="90几种无机离子的检验"></a>90几种无机离子的检验</h1>]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>实验视频</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
@@ -6090,132 +6416,6 @@ sh.exit();
       </categories>
       <tags>
         <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2024高考化学易错题整理</title>
-    <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
-<p><strong>避免火焰</strong>：在碳化过程中，应避免海带直接接触火焰，以免引起燃烧。通常使用间接加热，如在火焰上方一定距离加热。</p>
-<p><strong>观察变化</strong>：在加热过程中，要密切观察海带的颜色和状态变化，直到它完全变黑并碳化。</p>
-<p><strong>打开坩埚盖</strong>：通过灼烧去除水分并碳化海带，通常不需要盖上盖子。这样做可以让水分和挥发性物质（如盐分）容易蒸发，同时便于观察海带的碳化过程。</p>
-<h3 id="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。"><a href="#2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。" class="headerlink" title="2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。"></a>2、向氯化镁溶液中滴加氢氧化钠，看到白色沉淀，能否证明氢氧化钠碱性比氢氧化镁强。</h3><p>反应的发生可以由多种因素决定，包括：</p>
-<ul>
-<li><p><strong>反应朝着离子浓度减小的方向进行</strong>，例如生成沉淀、气体、弱电解质（例如水）。</p>
-</li>
-<li><p><strong>化学平衡的移动</strong>：反应是否进行还取决于反应物和生成物的浓度，以及温度等条件，这些都会影响化学平衡的位置。</p>
-</li>
-<li><p><strong>热力学和动力学因素</strong>：反应的热力学可行性（如自由能变化）和反应的动力学（反应速率）也是决定反应是否进行的重要因素。</p>
-</li>
-</ul>
-<p>也可以这三点就是反应进行的原理，是具有普适性的。</p>
-<p>氯化镁溶液中滴入氢氧化钠溶液，会发生复分解反应，生成氢氧化镁沉淀，与氢氧化钠、氢氧化镁的碱性强弱无关，不能由此得出氢氧化钠的碱性比氢氧化镁强。</p>
-<p>学习过沉淀溶解平衡的知识，让我们知道了沉淀可以由Ksp大的向Ksp小的进行转化。</p>
-<p>也就是说氯化镁与氢氧化钠反应涉及到真正反应动力可以用下面的原理来解释，</p>
-<p>[1]复分解原理；反应总是朝着溶液中离子浓度减小的方向进行，因为这样能降低体系的自由度，▲G&lt;0。</p>
-<p>[2]沉淀溶解平衡的转化；氢氧化镁为难溶物，Ksp较小。</p>
-<p><strong>如何去理解”强酸制弱酸、强碱制弱碱“？</strong></p>
-<p><strong>当稀溶液中的酸碱反应体系仅存在酸碱平衡时，“强酸制弱酸”的规律是成立的，不存在其他平衡例如氧化还原平衡、配位平衡、沉淀溶解平衡、气液平衡等。</strong></p>
-<p>即只有体系中只存在酸性强弱的差距，不涉及到其他平衡的干扰才能认为是强酸制弱酸，这就导致”强酸制弱酸“这个所谓的”理论“使用的条件非常严格，不能随便套用。</p>
-<p>最后，可以尝试去思考一下硫化氢与硫酸铜反应的例子。</p>
-<hr>
-<h2 id="2024浙江卷"><a href="#2024浙江卷" class="headerlink" title="2024浙江卷"></a>2024浙江卷</h2><h3 id="1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3"><a href="#1、铁离子与氰酸根不能共存，会生成Fe-CN-6-3" class="headerlink" title="1、铁离子与氰酸根不能共存，会生成Fe(CN)6  3-"></a>1、铁离子与氰酸根不能共存，会生成Fe(CN)<sub>6</sub> <sup> 3-</sup></h3><h3 id="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"><a href="#2、碘单质和碱性物质反应，产物是碘离子和碘酸根。" class="headerlink" title="2、碘单质和碱性物质反应，产物是碘离子和碘酸根。"></a>2、碘单质和碱性物质反应，产物是碘离子和碘酸根。</h3><p>例如，碘单质（I₂）与氢氧化钠（NaOH）的反应通常生成碘化钠（NaI）、碘酸钠（NaIO₃）和水（H₂O）</p>
-<p>与氯气和氢氧化钠的反应不同，氯气在不同条件下可以生成不同的产物（如NaCl、NaClO、NaClO₃），这是因为次氯酸盐（ClO⁻）和氯酸盐（ClO₃⁻）相对稳定，而次碘酸盐（IO⁻）则非常不稳定，容易进一步氧化为碘酸钠（NaIO₃）。因此，碘单质与氢氧化钠的反应不会产生像氯气那样的多种产物，而是倾向于生成碘化钠和碘酸钠。这种差异主要是由于不同卤素的化学性质和它们形成的化合物的稳定性所决定的。</p>
-<h3 id="3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？"><a href="#3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？" class="headerlink" title="3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？"></a>3、晶体硅中，用碳原子取代部分硅原子，能使其导电性增强吗？</h3><p>答案是：不能。</p>
-<p>在晶体硅中，使用碳原子代替硅原子通常不会直接增强导电性。硅是一种半导体材料，其导电性可以通过掺杂来控制。在半导体材料中，掺杂是指在晶体中故意引入少量的杂质原子，这些杂质原子可以是施主（提供额外电子）或受主（接受电子），从而改变材料的电子结构和导电性。</p>
-<p>在硅中，通常通过掺入如硼（B）这样的受主杂质来形成p型半导体，或者通过掺入如磷（P）这样的施主杂质来形成n型半导体。这些掺杂原子会改变硅的电子结构，从而增强其导电性。例如，掺入磷的硅会因为额外的电子而增加导电性，因为这些电子可以参与导电过程。</p>
-<p>然而，碳原子与硅原子在晶体硅中的置换并不会直接导致导电性的增强。碳和硅都是第IV族元素，它们在周期表中的化学性质相似，但碳的原子半径小于硅，这可能导致晶体结构的畸变。此外，碳的掺杂不一定能像磷或硼那样有效地提供额外的电子或空穴来增加导电性。实际上，碳在硅中的掺杂可能会引入结构缺陷，影响硅的半导体性质。</p>
-<p>在某些情况下，如在锂离子电池的硅基负极材料中，通过引入碳形成硅&#x2F;碳复合材料，可以提高材料的结构稳定性和导电性。这是因为碳材料可以提供额外的电子传输路径，并且有助于缓冲硅在充放电过程中的体积膨胀。但这种增强是通过复合材料的结构设计实现的，而不是简单地通过碳原子替代硅原子来实现的。</p>
-<p>总的来说，晶体硅中使用碳原子代替硅原子并不是一种有效的增强导电性的方法。相反，通过特定的掺杂技术或者设计硅&#x2F;碳复合材料结构，可以更有效地改善硅的导电性能。</p>
-<h3 id="4、关于亚硫酸钡沉淀"><a href="#4、关于亚硫酸钡沉淀" class="headerlink" title="4、关于亚硫酸钡沉淀"></a>4、关于亚硫酸钡沉淀</h3><ul>
-<li><p><strong>将二氧化硫通入氯化钡溶液，一般看不到白色沉淀</strong>。原因是产物氯化氢与亚硫酸钡不能共存，反应无法进行。</p>
-<p>除非此时有氧化性物质在溶液体系中，例如氧气、氯气、可以将亚硫酸根氧化成硫酸根而沉淀。</p>
-<p>当然，如果溶液中有碱性物质，能够除去反应生成的氯化氢，那么也能够看到白色沉淀。</p>
-</li>
-<li><p>将亚硫酸溶液加入到氯化钡溶液，理论上可以生成亚硫酸钡（BaSO₃）沉淀。然而，亚硫酸钡在水中的溶解度虽然很低，但它仍然可以溶解在盐酸（HCl）中。因此，即使在实验中观察到了白色沉淀，这些沉淀也可能因为反应体系中存在的盐酸而被溶解，导致最终看不到沉淀。在实际操作中，如果实验系统中含有氧气，二氧化硫（SO₂）可能会被氧化成硫酸（H₂SO₄），进而与氯化钡反应生成硫酸钡（BaSO₄）沉淀，这是一种不溶于水和酸的白色沉淀。</p>
-</li>
-</ul>
-<p>​	因此，这个实验中是否能看到沉淀，取决于实验条件，如反应体系中是否存在氧气，以及盐酸的浓度等因素。在无氧条件下，亚硫酸与氯化钡混合可能会看到白色沉淀接着又会溶解；但在有氧条件下，由于亚硫酸被氧化，可能看到较为稳定的白色沉淀。</p>
-<h3 id="5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2-。试问："><a href="#5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2-。试问：" class="headerlink" title="5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO2+ 。试问："></a>5、将硝酸与三氧化硫按照1：2发生化合反应生成A，测得A由两种物质构成，其中之一是NO<sub>2</sub><sup>+</sup> 。试问：</h3><ul>
-<li>比较氧化性强弱：NO<sub>2</sub><sup>+</sup>         HNO<sub>3</sub></li>
-</ul>
-<p>NO<sub>2</sub><sup>+</sup>的氧化性大于硝酸。可以将NO<sub>2</sub><sup>+</sup>看作是硝酸脱去了一个氢氧根所得到的产物，硝酸脱去氢氧根这个阴离子后，得电子能力更强了。</p>
-<p>这种结论有点类似：“氨气的还原性强于铵根”、“铁离子的氧化性强于亚铁离子”。</p>
-<ul>
-<li>写出A中阴离子的结构式</li>
-</ul>
-<p>A中阴离子为HS<sub>2</sub> O<sub>7</sub>  <sup>—</sup>，其结构式为</p>
-<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8htt3se11poj303x01la9u.jpg "  style="zoom:90%;" />
-
-
-
-<h3 id="6、钠和二氧化碳加热的反应方程式"><a href="#6、钠和二氧化碳加热的反应方程式" class="headerlink" title="6、钠和二氧化碳加热的反应方程式"></a>6、钠和二氧化碳加热的反应方程式</h3><p>①二氧化碳少量，产物为氧化钠 + 一氧化碳</p>
-<p>②二氧化碳过量，产物为碳酸钠  + 一氧化碳</p>
-]]></content>
-      <categories>
-        <category>高中化学</category>
-        <category>易错题</category>
-      </categories>
-      <tags>
-        <tag>化学真题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>近三年全国各省市高考化学真题分享（学生版+教师版）</title>
-    <url>//blog/chemistry/shijuan/2021-2023.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、获取通道"><a href="#一、获取通道" class="headerlink" title="一、获取通道"></a>一、获取通道</h1><p>链接:<a href="https://caiyun.139.com/m/i?065Ct6gI60upp">https://caiyun.139.com/m/i?065Ct6gI60upp</a><br>提取码:PgLi<br>复制内容打开移动云盘PC客户端，操作更方便哦</p>
-<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVl6WldDeWhjVVJJa3FxRk5adFJVUmtCOTdNTmNLM0JyZVgwNk5JZTJDM1lqZz9lPVFKZGVYbQ.png" style="zoom:67%;" />
-
-
-
-
-
-
-
-<h1 id="二、学生版实例"><a href="#二、学生版实例" class="headerlink" title="二、学生版实例"></a>二、学生版实例</h1><p><code>习题实例，习题+答案，但是每道习题后无答案。试卷的最后面是详细的答案与解析</code></p>
-<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVZyeUMwUGVmUnhLaUUyTURXVFN4TUVCS0tHeVJhYjM1ZjRlclZKN0E2OWo1Zz9lPXRyNkhvag.png" style="zoom:67%;" />
-
-
-
-
-
-
-
-<p><code>答案与解析</code></p>
-<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVpUY3B1OEl4WjlEdW1rSlFKTGotbFVCazQtYWcwdWxwZE9rRGp1Y1F6enNhZz9lPXIzSEJLcQ.png" style="zoom:67%;" />
-
-<h1 id="三、教师版"><a href="#三、教师版" class="headerlink" title="三、教师版"></a>三、教师版</h1><p><code>习题实例，习题+答案，但是每道习题后跟着答案与解析。</code></p>
-<p>注意：教师版前半部分和学生版一样，后半部分才是<code>每道习题后跟着答案</code></p>
-<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVpWbEk0MFhxbEpCbWxEa0wwdFZ4d0lCbmVyeTFDZy1yeVhzUGRJbkM2ckZxdz9lPWNmeFFsTA.png" style="zoom:67%;" />]]></content>
-      <categories>
-        <category>高中化学</category>
-        <category>试卷</category>
-      </categories>
-      <tags>
-        <tag>download</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高中化学90个实验视频汇总</title>
-    <url>//blog/chemistry/experiment-videos/allvideos.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-<hr>
-<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-
-
-
-
-
-
-<h1 id="03配置100毫升1mo1L氯化钠溶液"><a href="#03配置100毫升1mo1L氯化钠溶液" class="headerlink" title="03配置100毫升1mo1L氯化钠溶液"></a>03配置100毫升1mo1L氯化钠溶液</h1><h1 id="04氢氧化铁胶体制备、丁达尔效应"><a href="#04氢氧化铁胶体制备、丁达尔效应" class="headerlink" title="04氢氧化铁胶体制备、丁达尔效应"></a>04氢氧化铁胶体制备、丁达尔效应</h1><h1 id="05离子反应"><a href="#05离子反应" class="headerlink" title="05离子反应"></a>05离子反应</h1><h1 id="06钠的性质"><a href="#06钠的性质" class="headerlink" title="06钠的性质"></a>06钠的性质</h1><h1 id="07铁与水蒸气反应"><a href="#07铁与水蒸气反应" class="headerlink" title="07铁与水蒸气反应"></a>07铁与水蒸气反应</h1><h1 id="08铝与酸、碱溶液的反应"><a href="#08铝与酸、碱溶液的反应" class="headerlink" title="08铝与酸、碱溶液的反应"></a>08铝与酸、碱溶液的反应</h1><h1 id="09过氧化钠的性质"><a href="#09过氧化钠的性质" class="headerlink" title="09过氧化钠的性质"></a>09过氧化钠的性质</h1><h1 id="10碳酸钠和碳酸氢钠的性质"><a href="#10碳酸钠和碳酸氢钠的性质" class="headerlink" title="10碳酸钠和碳酸氢钠的性质"></a>10碳酸钠和碳酸氢钠的性质</h1><h1 id="11焰色反应"><a href="#11焰色反应" class="headerlink" title="11焰色反应"></a>11焰色反应</h1><h1 id="12铁的氢氧化物的制备"><a href="#12铁的氢氧化物的制备" class="headerlink" title="12铁的氢氧化物的制备"></a>12铁的氢氧化物的制备</h1><h1 id="13三价铁离子的检验"><a href="#13三价铁离子的检验" class="headerlink" title="13三价铁离子的检验"></a>13三价铁离子的检验</h1><h1 id="14铁盐和亚铁盐的一些性质"><a href="#14铁盐和亚铁盐的一些性质" class="headerlink" title="14铁盐和亚铁盐的一些性质"></a>14铁盐和亚铁盐的一些性质</h1><h1 id="15硅酸的制备、硅酸钠的性质"><a href="#15硅酸的制备、硅酸钠的性质" class="headerlink" title="15硅酸的制备、硅酸钠的性质"></a>15硅酸的制备、硅酸钠的性质</h1><h1 id="16氢气在氯气中燃烧"><a href="#16氢气在氯气中燃烧" class="headerlink" title="16氢气在氯气中燃烧"></a>16氢气在氯气中燃烧</h1><h1 id="17氯水、氯气的漂白作用"><a href="#17氯水、氯气的漂白作用" class="headerlink" title="17氯水、氯气的漂白作用"></a>17氯水、氯气的漂白作用</h1><h1 id="18氯离子的检验"><a href="#18氯离子的检验" class="headerlink" title="18氯离子的检验"></a>18氯离子的检验</h1><h1 id="19二氧化硫的制备与性质"><a href="#19二氧化硫的制备与性质" class="headerlink" title="19二氧化硫的制备与性质"></a>19二氧化硫的制备与性质</h1><h1 id="20氨溶于水的喷泉实验"><a href="#20氨溶于水的喷泉实验" class="headerlink" title="20氨溶于水的喷泉实验"></a>20氨溶于水的喷泉实验</h1><h1 id="21氨的实验室制法"><a href="#21氨的实验室制法" class="headerlink" title="21氨的实验室制法"></a>21氨的实验室制法</h1><h1 id="22铜与浓硫酸的反应"><a href="#22铜与浓硫酸的反应" class="headerlink" title="22铜与浓硫酸的反应"></a>22铜与浓硫酸的反应</h1><h1 id="23钾在空气中燃烧"><a href="#23钾在空气中燃烧" class="headerlink" title="23钾在空气中燃烧"></a>23钾在空气中燃烧</h1><h1 id="24钾与水的反应"><a href="#24钾与水的反应" class="headerlink" title="24钾与水的反应"></a>24钾与水的反应</h1><h1 id="25新制饱和氯水与溴化钠溶液的反应"><a href="#25新制饱和氯水与溴化钠溶液的反应" class="headerlink" title="25新制饱和氯水与溴化钠溶液的反应"></a>25新制饱和氯水与溴化钠溶液的反应</h1><h1 id="26新制饱和氯水与碘化钾溶液的反应"><a href="#26新制饱和氯水与碘化钾溶液的反应" class="headerlink" title="26新制饱和氯水与碘化钾溶液的反应"></a>26新制饱和氯水与碘化钾溶液的反应</h1><h1 id="27溴水与碘化钾溶液的反应"><a href="#27溴水与碘化钾溶液的反应" class="headerlink" title="27溴水与碘化钾溶液的反应"></a>27溴水与碘化钾溶液的反应</h1><h1 id="28镁与沸水的反应"><a href="#28镁与沸水的反应" class="headerlink" title="28镁与沸水的反应"></a>28镁与沸水的反应</h1><h1 id="29镁铝与盐酸反应的对比实验"><a href="#29镁铝与盐酸反应的对比实验" class="headerlink" title="29镁铝与盐酸反应的对比实验"></a>29镁铝与盐酸反应的对比实验</h1><h1 id="30钠与氯气反应"><a href="#30钠与氯气反应" class="headerlink" title="30钠与氯气反应"></a>30钠与氯气反应</h1><h1 id="31测定铝与盐酸反应的热效应"><a href="#31测定铝与盐酸反应的热效应" class="headerlink" title="31测定铝与盐酸反应的热效应"></a>31测定铝与盐酸反应的热效应</h1><h1 id="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"><a href="#32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应" class="headerlink" title="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"></a>32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应</h1><h1 id="33测定酸碱中和反应的热效应"><a href="#33测定酸碱中和反应的热效应" class="headerlink" title="33测定酸碱中和反应的热效应"></a>33测定酸碱中和反应的热效应</h1><h1 id="34乙醇与钠的反应"><a href="#34乙醇与钠的反应" class="headerlink" title="34乙醇与钠的反应"></a>34乙醇与钠的反应</h1><h1 id="35锌铜原电池"><a href="#35锌铜原电池" class="headerlink" title="35锌铜原电池"></a>35锌铜原电池</h1><h1 id="36水果电池"><a href="#36水果电池" class="headerlink" title="36水果电池"></a>36水果电池</h1><h1 id="37温度对化学反应速率的影响"><a href="#37温度对化学反应速率的影响" class="headerlink" title="37温度对化学反应速率的影响"></a>37温度对化学反应速率的影响</h1><h1 id="38催化剂对化学反应速率的影响"><a href="#38催化剂对化学反应速率的影响" class="headerlink" title="38催化剂对化学反应速率的影响"></a>38催化剂对化学反应速率的影响</h1><h1 id="39甲烷和氯气反应所需条件的对比实验"><a href="#39甲烷和氯气反应所需条件的对比实验" class="headerlink" title="39甲烷和氯气反应所需条件的对比实验"></a>39甲烷和氯气反应所需条件的对比实验</h1><h1 id="40石蜡油分解实验及其分解产物的性质实验"><a href="#40石蜡油分解实验及其分解产物的性质实验" class="headerlink" title="40石蜡油分解实验及其分解产物的性质实验"></a>40石蜡油分解实验及其分解产物的性质实验</h1><h1 id="41葡萄糖跟新制氢氧化铜悬浊液反应"><a href="#41葡萄糖跟新制氢氧化铜悬浊液反应" class="headerlink" title="41葡萄糖跟新制氢氧化铜悬浊液反应"></a>41葡萄糖跟新制氢氧化铜悬浊液反应</h1><h1 id="42碘酒与淀粉作用"><a href="#42碘酒与淀粉作用" class="headerlink" title="42碘酒与淀粉作用"></a>42碘酒与淀粉作用</h1><h1 id="43蛋白质的颜色反应"><a href="#43蛋白质的颜色反应" class="headerlink" title="43蛋白质的颜色反应"></a>43蛋白质的颜色反应</h1><h1 id="44蔗糖的水解及其产物的验证"><a href="#44蔗糖的水解及其产物的验证" class="headerlink" title="44蔗糖的水解及其产物的验证"></a>44蔗糖的水解及其产物的验证</h1><h1 id="45铝热反应"><a href="#45铝热反应" class="headerlink" title="45铝热反应"></a>45铝热反应</h1><h1 id="46葡萄糖的银镜反应"><a href="#46葡萄糖的银镜反应" class="headerlink" title="46葡萄糖的银镜反应"></a>46葡萄糖的银镜反应</h1><h1 id="47淀粉的水解"><a href="#47淀粉的水解" class="headerlink" title="47淀粉的水解"></a>47淀粉的水解</h1><h1 id="48蛋白质的性质"><a href="#48蛋白质的性质" class="headerlink" title="48蛋白质的性质"></a>48蛋白质的性质</h1><h1 id="49维生素C的还原性"><a href="#49维生素C的还原性" class="headerlink" title="49维生素C的还原性"></a>49维生素C的还原性</h1><h1 id="50不同条件下铁钉的锈蚀"><a href="#50不同条件下铁钉的锈蚀" class="headerlink" title="50不同条件下铁钉的锈蚀"></a>50不同条件下铁钉的锈蚀</h1><h1 id="51合成氨"><a href="#51合成氨" class="headerlink" title="51合成氨"></a>51合成氨</h1><h1 id="52硫酸铜跟氨水的反应"><a href="#52硫酸铜跟氨水的反应" class="headerlink" title="52硫酸铜跟氨水的反应"></a>52硫酸铜跟氨水的反应</h1><h1 id="53氯化铁溶液跟硫氰化钾溶液反应"><a href="#53氯化铁溶液跟硫氰化钾溶液反应" class="headerlink" title="53氯化铁溶液跟硫氰化钾溶液反应"></a>53氯化铁溶液跟硫氰化钾溶液反应</h1><h1 id="54碘单质在不同溶剂中的溶解性"><a href="#54碘单质在不同溶剂中的溶解性" class="headerlink" title="54碘单质在不同溶剂中的溶解性"></a>54碘单质在不同溶剂中的溶解性</h1><h1 id="55碘单质的升华"><a href="#55碘单质的升华" class="headerlink" title="55碘单质的升华"></a>55碘单质的升华</h1><h1 id="56镁条在二氧化碳中燃烧"><a href="#56镁条在二氧化碳中燃烧" class="headerlink" title="56镁条在二氧化碳中燃烧"></a>56镁条在二氧化碳中燃烧</h1><h1 id="57测量锌与硫酸反应速率"><a href="#57测量锌与硫酸反应速率" class="headerlink" title="57测量锌与硫酸反应速率"></a>57测量锌与硫酸反应速率</h1><h1 id="58高锰酸钾溶液与草酸溶液的反应"><a href="#58高锰酸钾溶液与草酸溶液的反应" class="headerlink" title="58高锰酸钾溶液与草酸溶液的反应"></a>58高锰酸钾溶液与草酸溶液的反应</h1><h1 id="59硫代硫酸钠溶液跟稀硫酸的反应"><a href="#59硫代硫酸钠溶液跟稀硫酸的反应" class="headerlink" title="59硫代硫酸钠溶液跟稀硫酸的反应"></a>59硫代硫酸钠溶液跟稀硫酸的反应</h1><h1 id="60温度与碘化钾被氧化的关系"><a href="#60温度与碘化钾被氧化的关系" class="headerlink" title="60温度与碘化钾被氧化的关系"></a>60温度与碘化钾被氧化的关系</h1><h1 id="61过氧化氢与二氧化锰作用"><a href="#61过氧化氢与二氧化锰作用" class="headerlink" title="61过氧化氢与二氧化锰作用"></a>61过氧化氢与二氧化锰作用</h1><h1 id="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"><a href="#62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用" class="headerlink" title="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"></a>62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用</h1><h1 id="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"><a href="#63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用" class="headerlink" title="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"></a>63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用</h1><h1 id="64淀粉溶液跟唾液、稀硫酸作用"><a href="#64淀粉溶液跟唾液、稀硫酸作用" class="headerlink" title="64淀粉溶液跟唾液、稀硫酸作用"></a>64淀粉溶液跟唾液、稀硫酸作用</h1><h1 id="65重硌酸钾溶液在不同酸度时的颜色"><a href="#65重硌酸钾溶液在不同酸度时的颜色" class="headerlink" title="65重硌酸钾溶液在不同酸度时的颜色"></a>65重硌酸钾溶液在不同酸度时的颜色</h1><h1 id="66三氯化铁跟不同浓度的硫氰化钾溶液反应"><a href="#66三氯化铁跟不同浓度的硫氰化钾溶液反应" class="headerlink" title="66三氯化铁跟不同浓度的硫氰化钾溶液反应"></a>66三氯化铁跟不同浓度的硫氰化钾溶液反应</h1><h1 id="67二氧化氮和四氧化二氮的相互转化"><a href="#67二氧化氮和四氧化二氮的相互转化" class="headerlink" title="67二氧化氮和四氧化二氮的相互转化"></a>67二氧化氮和四氧化二氮的相互转化</h1><h1 id="68相同条件下，镁条跟盐酸和醋酸的反应"><a href="#68相同条件下，镁条跟盐酸和醋酸的反应" class="headerlink" title="68相同条件下，镁条跟盐酸和醋酸的反应"></a>68相同条件下，镁条跟盐酸和醋酸的反应</h1><h1 id="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"><a href="#69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应" class="headerlink" title="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"></a>69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应</h1><h1 id="70用PH计测量溶液的PH"><a href="#70用PH计测量溶液的PH" class="headerlink" title="70用PH计测量溶液的PH"></a>70用PH计测量溶液的PH</h1><h1 id="71实验测定酸碱反应曲线"><a href="#71实验测定酸碱反应曲线" class="headerlink" title="71实验测定酸碱反应曲线"></a>71实验测定酸碱反应曲线</h1><h1 id="72相同条件下，测定不同盐溶液的PH"><a href="#72相同条件下，测定不同盐溶液的PH" class="headerlink" title="72相同条件下，测定不同盐溶液的PH"></a>72相同条件下，测定不同盐溶液的PH</h1><h1 id="73三氧化铁溶液的配制"><a href="#73三氧化铁溶液的配制" class="headerlink" title="73三氧化铁溶液的配制"></a>73三氧化铁溶液的配制</h1><h1 id="74沉淀的溶解"><a href="#74沉淀的溶解" class="headerlink" title="74沉淀的溶解"></a>74沉淀的溶解</h1><h1 id="75沉淀的转化"><a href="#75沉淀的转化" class="headerlink" title="75沉淀的转化"></a>75沉淀的转化</h1><h1 id="76铜锌硫酸原电池"><a href="#76铜锌硫酸原电池" class="headerlink" title="76铜锌硫酸原电池"></a>76铜锌硫酸原电池</h1><h1 id="77氯化钠溶液的电解"><a href="#77氯化钠溶液的电解" class="headerlink" title="77氯化钠溶液的电解"></a>77氯化钠溶液的电解</h1><h1 id="78氯化铜溶液的电解"><a href="#78氯化铜溶液的电解" class="headerlink" title="78氯化铜溶液的电解"></a>78氯化铜溶液的电解</h1><h1 id="79电镀"><a href="#79电镀" class="headerlink" title="79电镀"></a>79电镀</h1><h1 id="80铁的吸氧腐蚀"><a href="#80铁的吸氧腐蚀" class="headerlink" title="80铁的吸氧腐蚀"></a>80铁的吸氧腐蚀</h1><h1 id="81验证牺牲阳极的阴极保护法"><a href="#81验证牺牲阳极的阴极保护法" class="headerlink" title="81验证牺牲阳极的阴极保护法"></a>81验证牺牲阳极的阴极保护法</h1><h1 id="82水的电解与氢氧混合气爆鸣的微型实验"><a href="#82水的电解与氢氧混合气爆鸣的微型实验" class="headerlink" title="82水的电解与氢氧混合气爆鸣的微型实验"></a>82水的电解与氢氧混合气爆鸣的微型实验</h1><h1 id="83氯气的生成及其性质的微型实验"><a href="#83氯气的生成及其性质的微型实验" class="headerlink" title="83氯气的生成及其性质的微型实验"></a>83氯气的生成及其性质的微型实验</h1><h1 id="84污水处理"><a href="#84污水处理" class="headerlink" title="84污水处理"></a>84污水处理</h1><h1 id="85蒸馏"><a href="#85蒸馏" class="headerlink" title="85蒸馏"></a>85蒸馏</h1><h1 id="86从海带中提取碘"><a href="#86从海带中提取碘" class="headerlink" title="86从海带中提取碘"></a>86从海带中提取碘</h1><h1 id="87硫酸亚铁铵的制备"><a href="#87硫酸亚铁铵的制备" class="headerlink" title="87硫酸亚铁铵的制备"></a>87硫酸亚铁铵的制备</h1><h1 id="88乙酸乙酯的制备及反应条件探究"><a href="#88乙酸乙酯的制备及反应条件探究" class="headerlink" title="88乙酸乙酯的制备及反应条件探究"></a>88乙酸乙酯的制备及反应条件探究</h1><h1 id="89氢氧化铝的制"><a href="#89氢氧化铝的制" class="headerlink" title="89氢氧化铝的制"></a>89氢氧化铝的制</h1><h1 id="90几种无机离子的检验"><a href="#90几种无机离子的检验" class="headerlink" title="90几种无机离子的检验"></a>90几种无机离子的检验</h1>]]></content>
-      <categories>
-        <category>高中化学</category>
-        <category>实验视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
