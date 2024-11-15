@@ -1463,18 +1463,24 @@ sh.exit();
     <title>高中工作台助手</title>
     <url>//blog/note/software-use/test-paper-analyzer.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="【高中工作台助手】"><a href="#【高中工作台助手】" class="headerlink" title="【高中工作台助手】"></a>【高中工作台助手】</h1><p>一次设置，长期有效。</p>
-<p><code>一键全自动：[试卷分析]、[布置课后作业]、[删除试卷分析]</code></p>
-<p><a href="https://chinese.lanzout.com/b030os2pyd">点我去下载地址</a>        2.1版本上传了两个文件，【压缩文件rar &#x2F; 安装包exe】任选一个下载都可以运行。</p>
-<p>密码:sjfx</p>
-<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8hvez95svjvj31el0kfmz1.jpg "  style="zoom:50%;" />
+<p>支持所有学科！</p>
+<p><code>一键全自动：[试卷分析]、[布置课后作业]、[删除试卷分析]、[查看数据排行榜]</code></p>
+<p><a href="https://chinese.lanzout.com/b030os2pyd">点我去下载地址</a>       </p>
+<p><code>密码:sjfx</code></p>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hvn4lzn60bj30o60l8gpm.jpg "  style="zoom:50%;" />
 
-
-
-
-
-<h1 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h1><p>【由于作者<code>只有化学账号</code>，无法测试其他科目，目前<code>仅支持化学</code>。愿意尝试的朋友，可以联系我，开拓其他学科】</p>
-<p>使用过程中遇到异常，请【截图+描述】反馈。</p>
-<h2 id="2024年11月8日"><a href="#2024年11月8日" class="headerlink" title="2024年11月8日"></a>2024年11月8日</h2><p>2.1版本 </p>
+<h1 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h1><p>使用过程中遇到异常，请【截图+描述】反馈。</p>
+<h2 id="2024年11月15日"><a href="#2024年11月15日" class="headerlink" title="2024年11月15日"></a>2024年11月15日</h2><p>2.5版本新增功能</p>
+<ul>
+<li>支持<code>扫码登录</code></li>
+<li>支持<code>所有学科</code></li>
+<li>支持<code>查看数据排行榜</code></li>
+<li>主页显示个人头像、数据</li>
+<li>支持退出登录</li>
+</ul>
+<hr>
+<h2 id="2024年11月8日"><a href="#2024年11月8日" class="headerlink" title="2024年11月8日"></a>2024年11月8日</h2><p>【由于作者<code>只有化学账号</code>，无法测试其他科目，目前<code>仅支持化学</code>。愿意尝试的朋友，可以联系我，开拓其他学科】</p>
+<p>2.3版本 </p>
 <ul>
 <li><p>新增【批量删除试卷分析】。</p>
 </li>
@@ -1487,44 +1493,54 @@ sh.exit();
 <h2 id="2024年10月21日"><a href="#2024年10月21日" class="headerlink" title="2024年10月21日"></a>2024年10月21日</h2><p>1.0版本</p>
 <p>全自动发布【化学】试卷分析。</p>
 <hr>
-<h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h1><p>只要手动输入 “<a href="#%E8%8E%B7%E5%8F%96%E7%99%BB%E5%BD%95%E7%9A%84Cookie">Cookie</a>“，验证Cookie后，即可开始运行。</p>
-<h2 id="参数设置"><a href="#参数设置" class="headerlink" title="参数设置"></a>参数设置</h2><p>设置参数前，软件界面如下图所示</p>
-<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hvf31guwn9j30s907mq3x.jpg "  style="zoom:50%;" />
+<h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h1><p>启动软件后，扫码登录即可开始运行。扫码登录信息30天有效，</p>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hvn4lzn60bj30o60l8gpm.jpg "  style="zoom:50%;" />
 
-<hr>
-<p>登录成功后，界面如下图所示</p>
-<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hvexkdorpsj30o00l6wi7.jpg "  style="zoom:50%;" />
 
-<p>【Cookie】</p>
-<p>按照<a href="#%E8%8E%B7%E5%8F%96%E7%99%BB%E5%BD%95%E7%9A%84Cookie">教程</a>从网页中复制粘贴进来即可。软件会自动保存，只要你不手动改密码，似乎保质期还挺长的。</p>
-<p>如果你不小心泄露了你的Cookie，请尽快修改密码。</p>
-<p>【自定义选项】</p>
+
+<h2 id="参数设置"><a href="#参数设置" class="headerlink" title="参数设置"></a>参数设置</h2><p>&#x3D;&#x3D;【选项参数说明】&#x3D;&#x3D;</p>
+<p><code>试卷图片</code>：这里是用于选择用于试卷分析的图片。<code>默认随机</code>是自带的化学试卷，如果<strong>您不是化学</strong>科目，请使用&#x3D;&#x3D;自定义&#x3D;&#x3D;。</p>
+<p>关于&#x3D;&#x3D;自定义&#x3D;&#x3D;的链接设置，请参考下一节“如何自定义试卷分析图片”。</p>
 <p><code>试卷分析的次数</code>：你想生成几份试卷分析，这个参数就设置成几。</p>
-<p><code>试卷分析的间隔</code>：理论上这个软件是可以做到一分钟几百份，上千份？除非你不怕数据异常把你号封了，因此每份试卷分析生成的时间间隔弄长一些比较稳妥。</p>
+<p><code>试卷分析的间隔</code>：顾名思义，生成两份试卷分析之间停顿的时间。</p>
 <p><code>布置作业次数</code>：用于每周<code>服务打卡</code>。仅需<code>2秒</code>即可完成一次作业布置！</p>
-<p>除此之外，软件页面中其他参数我都没做处理（无效参数），等后续再进行更新。。。</p>
 <hr>
-<h2 id="获取登录的Cookie"><a href="#获取登录的Cookie" class="headerlink" title="获取登录的Cookie"></a>获取登录的Cookie</h2><h3 id="进入工作台的【试卷分析】页面"><a href="#进入工作台的【试卷分析】页面" class="headerlink" title="进入工作台的【试卷分析】页面"></a>进入工作台的【试卷分析】页面</h3><h3 id="按下键盘上的F12"><a href="#按下键盘上的F12" class="headerlink" title="按下键盘上的F12"></a>按下键盘上的F12</h3><p>按下键盘F12的按键，可以打开浏览器的开发工具。</p>
-<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8huu9iqkqo4j30d80hkmyh.jpg"  style="zoom:30%" />
+<h2 id="如何自定义试卷分析图片"><a href="#如何自定义试卷分析图片" class="headerlink" title="如何自定义试卷分析图片"></a>如何自定义试卷分析图片</h2><h3 id="【1】获取工作台已经上传的图片地址"><a href="#【1】获取工作台已经上传的图片地址" class="headerlink" title="【1】获取工作台已经上传的图片地址"></a>【1】获取工作台已经上传的图片地址</h3><p>你可以随便上传一份你学科的试卷，然后进入到<code>选择题目</code>的这个页面，例如下图。</p>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hvn52l2gvjj30xb0u0q67.jpg "  style="zoom:30%;" />
 
-<p>2、选择”Network”选项。（中文  “网络”）</p>
-<p>3、点击 “Fech&#x2F;XHR”选项。</p>
-<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8huucbez7bjj30x50u0djy.jpg "  style="zoom:50%;" />
-
+<h3 id="【2】获取生成的试卷图片网址"><a href="#【2】获取生成的试卷图片网址" class="headerlink" title="【2】获取生成的试卷图片网址"></a>【2】获取生成的试卷图片网址</h3><p>像下图所示的操作那样，依次复制每张图片的网址（复制图片地址）。</p>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hvn55s0muej30xr0u0424.jpg "  style="zoom:30%;" />
 
 
 
+<h3 id="【3】将你复制的图片网址保存到“自定义链接”"><a href="#【3】将你复制的图片网址保存到“自定义链接”" class="headerlink" title="【3】将你复制的图片网址保存到“自定义链接”"></a>【3】将你复制的图片网址保存到“自定义链接”</h3><p>下面这个链接是一个“在线文本数据库”，可以帮你在网络上保存一段文本。</p>
+<p><a href="https://www.textdb.online/">https://www.textdb.online/</a></p>
+<p>打开该网站后，可以先点击<code>随机生成</code>，帮助你获得一个<code>自定义链接</code>。</p>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hvn5af0xc3j31jv0u077u.jpg "  style="zoom:20%;" />
 
-<hr>
-<p>4、在【高中工作台】的首页刷新一下，即可看到例如下图的页面。</p>
-<p>我们需要的Cookie在<code>请求标头</code>中。详情见下图</p>
-<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8hvexykmqzwj31jv0u0qds.jpg "  style="zoom:50%;" />
+<p>然后你就可以往里面保存<code>刚刚复制的试卷图片网址</code>，每保存一份链接，输入一次回车（换行）。参考下图所示。</p>
+<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8hvn5e2wkwwj31jv0u0gqk.jpg "  style="zoom:30%;" />
 
+<p>&#x3D;&#x3D;至少储存10张图片的链接&#x3D;&#x3D;，点击<code>更新数据</code>，此时已将刚刚保存的文本上传到云端。</p>
+<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8hvn5pinz9ej31jv0u0497.jpg "  style="zoom:30%;" />
 
+<p>点击<code>复制链接</code>所得到的网址，就是你在软件中所<code>自定义图片</code>的网址了。</p>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hvn5ra5dg1j31jv0u07ex.jpg "  style="zoom:30%;" />
 
-<p>Cookie这一行内容<code>有点多</code>，手动复制，粘贴到软件的对应编辑框中。</p>
-<p>例如<code>我的Cookie</code>如下所示:（额，自己的Cookie自己去获取哈，别复制我的Cookie）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x3g22=Jwasdxrxwasd; XDFUUID=wasdd-3casd-46awsd-cwasd0-aawdswasdw8; gr_user_id=eawsdw2-6ceasde-45wa2b-64ed2-wasdw4; 821123321239c3_gr_last_sent_cs1=; Hm_lvt_e0wasdwasdwasdwasdwasdaw=112312321312313; xeasy_st=wasdwasdwasdwasdwasdwasdwasdwasdwadsw; xeasy_e2e=wasdwasdwasdwasdwasdwasdwasdwa; xeasy_x3mf=1231231231232131231232131235; xeasy_user_email=; xeasy_user_name=; 863788c8cb539c69_gr_cs1=</span><br></pre></td></tr></table></figure>
+<p>本篇教程中，点击<code>复制链接</code>后获得到的网址为</p>
+<p><a href="https://textdb.online/WgD2nBeONJldwIMNKEs9IiBT">https://textdb.online/WgD2nBeONJldwIMNKEs9IiBT</a></p>
+<h3 id="【4】将这个网址复制到软件的自定义编辑框中。"><a href="#【4】将这个网址复制到软件的自定义编辑框中。" class="headerlink" title="【4】将这个网址复制到软件的自定义编辑框中。"></a>【4】将这个网址复制到软件的<code>自定义</code>编辑框中。</h3><img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hvn5vujmzej30nw0lftcs.jpg "  style="zoom:50%;" />
+
+<h3 id="【5】后续如何更新自己的自定义图片库呢？"><a href="#【5】后续如何更新自己的自定义图片库呢？" class="headerlink" title="【5】后续如何更新自己的自定义图片库呢？"></a>【5】后续如何更新自己的<code>自定义</code>图片库呢？</h3><p>细心的朋友应该已经观察到了，刚刚<code>随机生成</code>的一串<code>WgD2nBeONJldwIMNKEs9IiBT</code>其实就是你的这段文本的<code>密码</code>。</p>
+<p>因此务必要保存好这串文本。</p>
+<p>每次打开 <code>https://www.textdb.online/</code> 你会发现它的首页下图所示。</p>
+<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8hvn60bkx5bj31cy0u0wi2.jpg "  style="zoom:30%;" />
+
+<p>此时我们把保存的密码（本篇示例的密码为：<code>WgD2nBeONJldwIMNKEs9IiBT</code> ）粘贴进去，再点击<code>读取数据</code>。</p>
+<p>然后就可以重复上面的【1~4】步，扩充你的试卷分析图片库。</p>
+<p>&#x3D;&#x3D;每次记得先读取数据，然后再修改数据，再进行更新数据&#x3D;&#x3D;。</p>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hvn64117u8j31jv0u0423.jpg "  style="zoom:30%;" />
+
 
 
 
@@ -1541,12 +1557,6 @@ sh.exit();
 <hr>
 <h2 id="自动删除试卷分析"><a href="#自动删除试卷分析" class="headerlink" title="自动删除试卷分析"></a>自动删除试卷分析</h2><p>根据设置的数量，删除对应份数的试卷分析。</p>
 <p>默认优先删除<code>时间距离现在近</code>的试卷分析。</p>
-<h1 id="未来计划"><a href="#未来计划" class="headerlink" title="未来计划"></a>未来计划</h1><ul>
-<li><p>支持更多科目、</p>
-</li>
-<li><p>能随机选择试卷图片等等。</p>
-</li>
-</ul>
 ]]></content>
       <categories>
         <category>笔记</category>
@@ -1960,7 +1970,7 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#107;&#101;&#x73;&#x69;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#101;&#114;&#107;&#101;&#x73;&#x69;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#114;&#x6b;&#x65;&#x73;&#x69;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#x65;&#114;&#x6b;&#x65;&#x73;&#x69;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -1992,7 +2002,7 @@ sh.exit();
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#114;&#107;&#101;&#115;&#x69;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#x6d;">&#x65;&#114;&#107;&#101;&#115;&#x69;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#x72;&#107;&#x65;&#x73;&#x69;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#101;&#x72;&#107;&#x65;&#x73;&#x69;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -2012,9 +2022,9 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#109;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#109;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#109;">&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
