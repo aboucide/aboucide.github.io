@@ -718,6 +718,36 @@
       </tags>
   </entry>
   <entry>
+    <title>微软双拼-键盘示意</title>
+    <url>//blog/note/software-use/wei-ruan-shuang-pin.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://api.ihint.me/shuang/">https://api.ihint.me/shuang/</a></p>
+<p>【空白键盘】</p>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hvstqowjhtj31v50my77u.jpg "  style="zoom:50%;" />
+
+
+
+<p>【微软双拼1】</p>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hvsskvap6sj31690f1acl.jpg "  style="zoom:60%;" />
+
+
+
+<p>【微软双拼2】</p>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hvstqasum9j31sa0s3q6p.jpg "  style="zoom:50%;" />
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>软件使用教程</category>
+      </categories>
+      <tags>
+        <tag>双拼</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>提问的智慧</title>
     <url>//blog/note/mind/How-To-Ask-Questions-The-Smart-Way.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>你所提出问题而获得解答的好坏, 很大程度上取决于你提问的方式与此问题的难度。</p>
@@ -2331,7 +2361,7 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#107;&#101;&#x73;&#105;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;">&#101;&#114;&#107;&#101;&#x73;&#105;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#x72;&#x6b;&#x65;&#115;&#105;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;">&#101;&#x72;&#x6b;&#x65;&#115;&#105;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -2363,7 +2393,7 @@ sh.exit();
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#107;&#x65;&#x73;&#x69;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#x65;&#x72;&#107;&#x65;&#x73;&#x69;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#114;&#107;&#x65;&#115;&#105;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;">&#x65;&#114;&#107;&#x65;&#115;&#105;&#64;&#113;&#x71;&#46;&#x63;&#111;&#x6d;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -2383,9 +2413,9 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#111;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#109;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
@@ -3013,7 +3043,127 @@ sh.exit();
 <blockquote>
 <p>项目上线时，我们会通过工具将【展开风格】的代码，变成【紧凑风格】，这样可以减小文件体积，节约网络流量，同时也能让用户打开网页时速度更快。</p>
 </blockquote>
-<h1 id="CSS-选择器"><a href="#CSS-选择器" class="headerlink" title="CSS 选择器"></a>CSS 选择器</h1><h2 id="CSS-复合选择器"><a href="#CSS-复合选择器" class="headerlink" title="CSS 复合选择器"></a>CSS 复合选择器</h2><h1 id="CSS-三大特性"><a href="#CSS-三大特性" class="headerlink" title="CSS 三大特性"></a>CSS 三大特性</h1><h1 id="CSS-常用属性"><a href="#CSS-常用属性" class="headerlink" title="CSS 常用属性"></a>CSS 常用属性</h1><h1 id="CSS-盒子模型"><a href="#CSS-盒子模型" class="headerlink" title="CSS 盒子模型"></a>CSS 盒子模型</h1><h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><h1 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h1><h1 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h1>]]></content>
+<h1 id="CSS-选择器"><a href="#CSS-选择器" class="headerlink" title="CSS 选择器"></a>CSS 选择器</h1><h2 id="CSS-基本选择器"><a href="#CSS-基本选择器" class="headerlink" title="CSS 基本选择器"></a>CSS 基本选择器</h2><ul>
+<li>通配选择器</li>
+<li>元素选择器</li>
+<li>类选择器</li>
+<li>ID选择器</li>
+</ul>
+<h3 id="通配选择器"><a href="#通配选择器" class="headerlink" title="通配选择器"></a>通配选择器</h3><ul>
+<li><p>作用：选中所有的 <code>HTML</code> 元素。</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">    属性名：属性值；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>举例</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 选择所有的元素，设置颜色与字体大小 */</span></span><br><span class="line">*&#123;</span><br><span class="line">    <span class="attribute">color</span>: orange;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">40px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>通配选择器一般用的不多。但是在后续清除样式时可以有很大帮助。</p>
+</blockquote>
+<h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><ul>
+<li><p>作用：为页面中 <strong>某种元素</strong> 统一设置样式。</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">标签名&#123;</span><br><span class="line">    属性名：属性值；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>举例</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 为所有 h1 元素设置颜色与字体大小*/</span></span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:green;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">40px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 为所有的 p 元素设置颜色与字体大小 */</span></span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">60px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>元素选择器无法实现同一种元素的差异化设置，例如上述代码中，所有 <code>p</code> 元素的效果都是一样的。</p>
+</blockquote>
+<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><ul>
+<li>作用：根据元素的 <code>class</code> 值，来选中某些元素。</li>
+</ul>
+<p>这里的<code>class</code>就是元素的类名。</p>
+<ul>
+<li><p>语法：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">.类名 &#123;</span><br><span class="line">    属性名：属性值；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>举例</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 选择所有class值为speak的元素 */</span></span><br><span class="line"><span class="selector-class">.speak</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 选择class值为answer的元素 */</span></span><br><span class="line"><span class="selector-class">.answer</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<ol>
+<li><p>CSS的类选择器选择元素的<code>class</code>属性时要在<code>class</code>的值前带一个<code>.</code>。</p>
+</li>
+<li><p><code>class</code>值，是自己创建元素时自己定义的。按照标准：不要使用纯数字、不要使用中文、尽量使用英文与数字的组合，若由多个单词组成，使用 - 做连接，例如： left-menu ，且命名要有意义，做到 “见名知意”。</p>
+</li>
+<li><p>一个元素中不能写多个<code>class</code>属性，下面是错误示例:</p>
+</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&gt;&lt;!-- 该写法错误，元素的属性不能重复，后写的会失效 --&gt;</span><br><span class="line">&gt;&lt;<span class="selector-tag">h1</span> class=&quot;<span class="attribute">speak</span>&quot; class=&quot;big&quot;&gt;你好啊&lt;/<span class="selector-tag">h1</span>&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="4">
+<li>一个元素的<code>class</code>属性可以有多个值，要使用空格隔开，例如：</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&gt;&lt;!-- 该写法正确，class属性，能写多个值 --&gt;</span><br><span class="line">&gt;&lt;<span class="selector-tag">h1</span> class=&quot;<span class="attribute">speak</span> big&quot;&gt;你好啊&lt;/<span class="selector-tag">h1</span>&gt;</span><br></pre></td></tr></table></figure>
+
+
+</blockquote>
+<h3 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h3><ul>
+<li><p>作用：根据元素的<code>id</code>属性值来精准的选择某一个元素。</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#id</span>值 &#123;</span><br><span class="line">    属性名：属性值；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>举例：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 选中 id 值为 earthy 的那个元素 */</span></span><br><span class="line"><span class="selector-id">#earthy</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">40px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<ul>
+<li><code>id</code>属性值：尽量由<strong>字母、数字、下划线、短横线</strong>组成，最好以字母开头，不要包含空格、区分大小写。</li>
+<li>一个元素只能有一个<code>id</code>属性，并且<code>id</code>的值要唯一。<code>id</code>的值就类似人的身份证号，具有一 一对应。</li>
+<li>一个元素可以同时拥有<code>id</code>、<code>class</code>属性。</li>
+</ul>
+</blockquote>
+<h3 id="基本选择器总结"><a href="#基本选择器总结" class="headerlink" title="基本选择器总结"></a>基本选择器总结</h3><table>
+<thead>
+<tr>
+<th>基本选择器</th>
+<th>特点</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>通配选择器</td>
+<td>选中所有元素，一般用于清除样式。</td>
+<td><code>*&#123;color:red&#125;</code></td>
+</tr>
+<tr>
+<td>元素选择器</td>
+<td>选中所有同种标签，但是不能差异化选择。</td>
+<td><code>h1 &#123;color:red&#125;</code></td>
+</tr>
+<tr>
+<td>类选择器</td>
+<td>选择所有特定类名（<code>class</code>值）的元素——&#x3D;&#x3D;使用频率很高&#x3D;&#x3D;。</td>
+<td><code>.say&#123;color:red&#125;</code></td>
+</tr>
+<tr>
+<td>ID 选择器</td>
+<td>选中特定 id 值的那个元素。</td>
+<td><code>#earthy&#123;color:red&#125;</code></td>
+</tr>
+</tbody></table>
+<h2 id="CSS-复合选择器"><a href="#CSS-复合选择器" class="headerlink" title="CSS 复合选择器"></a>CSS 复合选择器</h2><blockquote>
+<ol>
+<li>复合选择器建立在基本选择器之上，由多个基础选择器通过不同方式组合而成。</li>
+<li>符合选择器可以在复杂结构中快速而准确的选中元素。</li>
+</ol>
+</blockquote>
+<h1 id="CSS-三大特性"><a href="#CSS-三大特性" class="headerlink" title="CSS 三大特性"></a>CSS 三大特性</h1><h1 id="CSS-常用属性"><a href="#CSS-常用属性" class="headerlink" title="CSS 常用属性"></a>CSS 常用属性</h1><h1 id="CSS-盒子模型"><a href="#CSS-盒子模型" class="headerlink" title="CSS 盒子模型"></a>CSS 盒子模型</h1><h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><h1 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h1><h1 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h1>]]></content>
       <categories>
         <category>笔记</category>
         <category>编程</category>
