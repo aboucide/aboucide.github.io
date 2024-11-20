@@ -11,7 +11,7 @@
 <p>创建一个空数组有两种语法：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = <span class="keyword">new</span> <span class="title class_">Array</span>();</span><br><span class="line"><span class="keyword">let</span> arr = [];</span><br></pre></td></tr></table></figure>
 
-<p>绝大多数情况下使用的都是第二种语法。我们可以在方括号中添加初始元素：</p>
+<p>绝大多数情况下使用的都是<strong>第二种语法</strong>。我们可以在方括号中添加初始元素：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;Plum&quot;</span>];</span><br></pre></td></tr></table></figure>
 
 <p>数组元素从 0 开始编号。</p>
@@ -19,18 +19,18 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;Plum&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits[<span class="number">0</span>] ); <span class="comment">// Apple</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits[<span class="number">1</span>] ); <span class="comment">// Orange</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits[<span class="number">2</span>] ); <span class="comment">// Plum</span></span><br></pre></td></tr></table></figure>
 
 <p>可以替换元素：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fruits[<span class="number">2</span>] = <span class="string">&#x27;Pear&#x27;</span>; <span class="comment">// 现在变成了 [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Pear&quot;]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fruits[<span class="number">2</span>] = <span class="string">&#x27;Pear&#x27;</span>; <span class="comment">// 现在数组变成了 [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Pear&quot;]</span></span><br></pre></td></tr></table></figure>
 
 <p>……或者向数组新加一个元素：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fruits[<span class="number">3</span>] = <span class="string">&#x27;Lemon&#x27;</span>; <span class="comment">// 现在变成 [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Pear&quot;, &quot;Lemon&quot;]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">fruits[<span class="number">3</span>] = <span class="string">&#x27;Lemon&#x27;</span>; <span class="comment">// 现在数组变成 [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Pear&quot;, &quot;Lemon&quot;]</span></span><br></pre></td></tr></table></figure>
 
-<p><code>length</code> 属性的值是数组中元素的总个数：</p>
+<p><code>length</code> <strong>属性</strong>的值是数组中元素的总个数：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;Plum&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits.<span class="property">length</span> ); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
 
 <p>也可以用 <code>console.log</code> 来显示整个数组。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;Plum&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits ); <span class="comment">// Apple,Orange,Plum</span></span><br></pre></td></tr></table></figure>
 
-<p>数组可以存储任何类型的元素。</p>
+<p>&#x3D;&#x3D;数组可以存储任何类型的元素。&#x3D;&#x3D;</p>
 <p>例如:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 混合值</span></span><br><span class="line"><span class="keyword">let</span> arr = [ <span class="string">&#x27;Apple&#x27;</span>, &#123; <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span> &#125;, <span class="literal">true</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123; <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>); &#125; ];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取索引为 1 的对象然后显示它的 name</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( arr[<span class="number">1</span>].<span class="property">name</span> ); <span class="comment">// John</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取索引为 3 的函数并执行</span></span><br><span class="line">arr[<span class="number">3</span>](); <span class="comment">// hello</span></span><br></pre></td></tr></table></figure>
 
@@ -40,7 +40,7 @@
 
 <p>因为每一行都是相似的，所以这种以“逗号结尾”的方式使得插入&#x2F;移除项变得更加简单。</p>
 <h2 id="使用-“at”-获取最后一个元素"><a href="#使用-“at”-获取最后一个元素" class="headerlink" title="使用 “at” 获取最后一个元素"></a>使用 “at” 获取最后一个元素</h2><p>最近新增的特性</p>
-<p>这是一个最近添加到 JavaScript 的特性。 旧式浏览器可能需要 polyfills.</p>
+<p>这是一个最近添加到 JavaScript 的特性。</p>
 <p>假设我们想要数组的最后一个元素。</p>
 <p>一些编程语言允许我们使用负数索引来实现这一点，例如 <code>fruits[-1]</code>。</p>
 <p>但在 JavaScript 中这行不通。结果将是 <code>undefined</code>，因为方括号中的索引是被按照其字面意思处理的。</p>
@@ -71,14 +71,13 @@
 <li><code>pop</code> 从末端取出一个元素.</li>
 </ul>
 <p>所以新元素的添加和取出都是从“末端”开始的。</p>
-<p>栈通常被被形容成一叠卡片：要么在最上面添加卡片，要么从最上面拿走卡片：</p>
+<p>栈通常被被形容成一叠卡片：要么在最上面添加卡片，要么从最上面拿走卡片。</p>
 <p><img src="https://zh.javascript.info/article/array/stack.svg"></p>
 <p>对于栈来说，最后放进去的内容是最先接收的，也叫做 <strong>LIFO（Last-In-First-Out）</strong>，即<strong>后进先出</strong>法则。</p>
 <p>而与队列相对应的叫做 <strong>FIFO（First-In-First-Out）</strong>，即<strong>先进先出</strong>。</p>
 <p>JavaScript 中的数组既可以用作队列，也可以用作栈。它们允许你从首端&#x2F;末端来添加&#x2F;删除元素。</p>
 <p>这在计算机科学中，允许这样的操作的数据结构被称为 双端队列（deque）</p>
-<p><strong>作用于数组末端的方法：</strong></p>
-<p><code>pop</code></p>
+<h3 id="作用于数组末端的方法："><a href="#作用于数组末端的方法：" class="headerlink" title="作用于数组末端的方法："></a><strong>作用于数组末端的方法：</strong></h3><p><code>pop</code></p>
 <p>取出并返回数组的最后一个元素：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;Pear&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits.<span class="title function_">pop</span>() ); <span class="comment">// 移除 &quot;Pear&quot; 然后 console.log 显示出来</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits ); <span class="comment">// Apple, Orange</span></span><br></pre></td></tr></table></figure>
 
@@ -88,8 +87,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>];</span><br><span class="line"></span><br><span class="line">fruits.<span class="title function_">push</span>(<span class="string">&quot;Pear&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits ); <span class="comment">// Apple, Orange, Pear</span></span><br></pre></td></tr></table></figure>
 
 <p>调用 <code>fruits.push(...)</code> 与 <code>fruits[fruits.length] = ...</code> 是一样的。</p>
-<p><strong>作用于数组首端的方法：</strong></p>
-<p><code>shift</code></p>
+<h3 id="作用于数组首端的方法："><a href="#作用于数组首端的方法：" class="headerlink" title="作用于数组首端的方法："></a><strong>作用于数组首端的方法：</strong></h3><p><code>shift</code></p>
 <p>移除数组的第一个元素并返回它：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;Pear&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits.<span class="title function_">shift</span>() ); <span class="comment">// 移除 Apple 然后 console.log 显示出来</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits ); <span class="comment">// Orange, Pear</span></span><br></pre></td></tr></table></figure>
 
@@ -165,7 +163,7 @@
 </li>
 </ol>
 <p>通常来说，我们不应该用 <code>for..in</code> 来处理数组。</p>
-<h2 id="关于-“length”"><a href="#关于-“length”" class="headerlink" title="关于 “length”"></a>关于 “length”</h2><p>当我们修改数组的时候，<code>length</code> 属性会自动更新。<br>准确来说，<strong>数组长度实际上不是数组里元素的个数，而是最大的数字索引值加一</strong>。</p>
+<h2 id="关于-“length”"><a href="#关于-“length”" class="headerlink" title="关于 “length”"></a>关于 “length”</h2><p>当我们修改数组的时候，<code>length</code> 属性会<strong>自动更新</strong>。<br>准确来说，<strong>数组长度实际上不是数组里元素的个数，而是最大的数字索引值加一</strong>。</p>
 <p>例如，一个数组只有一个元素，但是这个元素的索引值很大，那么这个数组的 <code>length</code> 也会很大：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [];</span><br><span class="line">fruits[<span class="number">123</span>] = <span class="string">&quot;Apple&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>( fruits.<span class="property">length</span> ); <span class="comment">// 124</span></span><br></pre></td></tr></table></figure>
 
@@ -255,6 +253,368 @@
 <p>但是，我们可以使用 <code>for..of</code> 循环来逐项比较数组。</p>
 <p>在下一章 <a href="https://zh.javascript.info/array-methods">数组方法</a> 中，我们将继续学习数组，学习更多添加、移除、提取元素和数组排序的方法。</p>
 <hr>
+<h1 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h1><p>数组提供的方法有很多。为了方便起见，在本章中，我们将按组讲解。</p>
+<h2 id="添加-移除数组元素"><a href="#添加-移除数组元素" class="headerlink" title="添加 &#x2F; 移除数组元素"></a>添加 &#x2F; 移除数组元素</h2><p>我们已经学了从数组的首端或尾端添加和删除元素的方法：</p>
+<ul>
+<li><code>arr.push(...items)</code> —— 从尾端添加元素，</li>
+<li><code>arr.pop()</code> —— 从尾端提取元素，</li>
+<li><code>arr.shift()</code> —— 从首端提取元素，</li>
+<li><code>arr.unshift(...items)</code> —— 从首端添加元素。</li>
+</ul>
+<p>这里还有其他几种方法。</p>
+<h3 id="splice"><a href="#splice" class="headerlink" title="splice"></a>splice</h3><p>如何从数组中删除元素？</p>
+<p>数组是对象，所以我们可以尝试使用 <code>delete</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;I&quot;</span>, <span class="string">&quot;go&quot;</span>, <span class="string">&quot;home&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">delete</span> arr[<span class="number">1</span>]; <span class="comment">// remove &quot;go&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr[<span class="number">1</span>] ); <span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// now arr = [&quot;I&quot;,  , &quot;home&quot;];</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="property">length</span> ); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+<p>元素被删除了，但数组仍然有 3 个元素，我们可以看到 <code>arr.length == 3</code>。</p>
+<p>这很正常，因为 <code>delete obj.key</code> 是通过 <code>key</code> 来移除对应的值。对于对象来说是可以的。但是对于数组来说，我们通常希望剩下的元素能够移动并占据被释放的位置。我们希望得到一个更短的数组。</p>
+<p>所以应该使用特殊的方法。</p>
+<p><code>arr.splice</code> 方法可以说是处理数组的瑞士军刀。它可以做所有事情：<strong>添加，删除和插入元素</strong>。</p>
+<p>语法是：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">arr.<span class="title function_">splice</span>(start[, deleteCount, elem1, ..., elemN])</span><br></pre></td></tr></table></figure>
+
+<p>它从索引 <code>start</code> 开始修改 <code>arr</code>：删除 <code>deleteCount</code> 个元素并在当前位置插入 <code>elem1, ..., elemN</code>。最后返回被删除的元素所组成的数组。</p>
+<p>通过例子我们可以很容易地掌握这个方法。</p>
+<p>让我们从删除开始：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;I&quot;</span>, <span class="string">&quot;study&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>];</span><br><span class="line"></span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">1</span>, <span class="number">1</span>); <span class="comment">// 从索引 1 开始删除 1 个元素</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ); <span class="comment">// [&quot;I&quot;, &quot;JavaScript&quot;]</span></span><br></pre></td></tr></table></figure>
+
+<p>简单，对吧？从索引 <code>1</code> 开始删除 <code>1</code> 个元素。（译注：当只填写了 <code>splice</code> 的 <code>start</code> 参数时，将删除从索引 <code>start</code> 开始的所有数组项）</p>
+<p>在下一个例子中，我们删除了 3 个元素，并用另外两个元素替换它们：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;I&quot;</span>, <span class="string">&quot;study&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>, <span class="string">&quot;right&quot;</span>, <span class="string">&quot;now&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除数组的前三项，并使用其他内容代替它们</span></span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">0</span>, <span class="number">3</span>, <span class="string">&quot;Let&#x27;s&quot;</span>, <span class="string">&quot;dance&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ) <span class="comment">// 现在 [&quot;Let&#x27;s&quot;, &quot;dance&quot;, &quot;right&quot;, &quot;now&quot;]</span></span><br></pre></td></tr></table></figure>
+
+<p>在这里我们可以看到 <code>splice</code> 返回了被删除的元素所组成的数组：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;I&quot;</span>, <span class="string">&quot;study&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>, <span class="string">&quot;right&quot;</span>, <span class="string">&quot;now&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除前两个元素</span></span><br><span class="line"><span class="keyword">let</span> removed = arr.<span class="title function_">splice</span>(<span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( removed ); <span class="comment">// &quot;I&quot;, &quot;study&quot; &lt;-- 被从数组中删除了的元素</span></span><br></pre></td></tr></table></figure>
+
+<p>我们可以将 <code>deleteCount</code> 设置为 <code>0</code>，<code>splice</code> 方法就能够插入元素而不用删除任何元素：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;I&quot;</span>, <span class="string">&quot;study&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 从索引 2 开始</span></span><br><span class="line"><span class="comment">// 删除 0 个元素</span></span><br><span class="line"><span class="comment">// 然后插入 &quot;complex&quot; 和 &quot;language&quot;</span></span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">0</span>, <span class="string">&quot;complex&quot;</span>, <span class="string">&quot;language&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ); <span class="comment">// &quot;I&quot;, &quot;study&quot;, &quot;complex&quot;, &quot;language&quot;, &quot;JavaScript&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>允许负向索引</p>
+<p>在这里和其他数组方法中，负向索引都是被允许的。它们从数组末尾计算位置，如下所示：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 从索引 -1（尾端前一位）</span></span><br><span class="line"><span class="comment">// 删除 0 个元素，</span></span><br><span class="line"><span class="comment">// 然后插入 3 和 4</span></span><br><span class="line">arr.<span class="title function_">splice</span>(-<span class="number">1</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">4</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ); <span class="comment">// 1,2,3,4,5</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="slice"><a href="#slice" class="headerlink" title="slice"></a>slice</h3><p><code>arr.slice</code> 方法比 <code>arr.splice</code> 简单得多。</p>
+<p>语法是：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">arr.<span class="title function_">slice</span>([start], [end])</span><br></pre></td></tr></table></figure>
+
+<p>它会返回一个新数组，将所有从索引 <code>start</code> 到 <code>end</code>（不包括 <code>end</code>）的数组项复制到一个新的数组。<code>start</code> 和 <code>end</code> 都可以是负数，在这种情况下，从末尾计算索引。</p>
+<p>它和字符串的 <code>str.slice</code> 方法有点像，就是把子字符串替换成子数组。</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;t&quot;</span>, <span class="string">&quot;e&quot;</span>, <span class="string">&quot;s&quot;</span>, <span class="string">&quot;t&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">slice</span>(<span class="number">1</span>, <span class="number">3</span>) ); <span class="comment">// e,s（复制从位置 1 到位置 3 的元素）</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">slice</span>(-<span class="number">2</span>) ); <span class="comment">// s,t（复制从位置 -2 到尾端的元素）</span></span><br></pre></td></tr></table></figure>
+
+<p>我们也可以不带参数地调用它：<code>arr.slice()</code> 会创建一个 <code>arr</code> 的副本。其通常用于获取副本，以进行不影响原始数组的进一步转换。</p>
+<h3 id="concat"><a href="#concat" class="headerlink" title="concat"></a>concat</h3><p><code>arr.concat</code> 创建一个新数组，其中包含来自于其他数组和其他项的值。</p>
+<p>语法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">arr.<span class="title function_">concat</span>(arg1, arg2...)</span><br></pre></td></tr></table></figure>
+
+<p>它接受任意数量的参数 —— 数组或值都可以。</p>
+<p>结果是一个包含来自于 <code>arr</code>，然后是 <code>arg1</code>，<code>arg2</code> 的元素的新数组。</p>
+<p>如果参数 <code>argN</code> 是一个数组，那么其中的所有元素都会被复制。否则，将复制参数本身。</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 从 arr 和 [3,4] 创建一个新数组</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>([<span class="number">3</span>, <span class="number">4</span>]) ); <span class="comment">// 1,2,3,4</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 从 arr、[3,4] 和 [5,6] 创建一个新数组</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>([<span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>]) ); <span class="comment">// 1,2,3,4,5,6</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 从 arr、[3,4]、5 和 6 创建一个新数组</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>([<span class="number">3</span>, <span class="number">4</span>], <span class="number">5</span>, <span class="number">6</span>) ); <span class="comment">// 1,2,3,4,5,6</span></span><br></pre></td></tr></table></figure>
+
+<p>通常，它只复制数组中的元素。其他对象，即使它们看起来像数组一样，但仍然会被作为一个整体添加：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arrayLike = &#123;</span><br><span class="line">  <span class="number">0</span>: <span class="string">&quot;something&quot;</span>,</span><br><span class="line">  <span class="attr">length</span>: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>(arrayLike) ); <span class="comment">// 1,2,[object Object]</span></span><br></pre></td></tr></table></figure>
+
+<p>……但是，如果类数组对象具有 <code>Symbol.isConcatSpreadable</code> 属性，那么它就会被 <code>concat</code> 当作一个数组来处理：此对象中的元素将被添加：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arrayLike = &#123;</span><br><span class="line">  <span class="number">0</span>: <span class="string">&quot;something&quot;</span>,</span><br><span class="line">  <span class="number">1</span>: <span class="string">&quot;else&quot;</span>,</span><br><span class="line">  [<span class="title class_">Symbol</span>.<span class="property">isConcatSpreadable</span>]: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">length</span>: <span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>(arrayLike) ); <span class="comment">// 1,2,something,else</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="遍历：forEach"><a href="#遍历：forEach" class="headerlink" title="遍历：forEach"></a>遍历：forEach</h2><p><code>arr.forEach</code> 方法允许为数组的每个元素都运行一个函数。</p>
+<p>语法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">arr.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item, index, array</span>) &#123;</span><br><span class="line">  <span class="comment">// ... do something with item</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>例如，下面这个程序显示了数组的每个元素：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 对每个元素调用 alert</span></span><br><span class="line">[<span class="string">&quot;Bilbo&quot;</span>, <span class="string">&quot;Gandalf&quot;</span>, <span class="string">&quot;Nazgul&quot;</span>].<span class="title function_">forEach</span>(alert);</span><br></pre></td></tr></table></figure>
+
+<p>而这段代码更详细地介绍了它们在目标数组中的位置：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[<span class="string">&quot;Bilbo&quot;</span>, <span class="string">&quot;Gandalf&quot;</span>, <span class="string">&quot;Nazgul&quot;</span>].<span class="title function_">forEach</span>(<span class="function">(<span class="params">item, index, array</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">`<span class="subst">$&#123;item&#125;</span> is at index <span class="subst">$&#123;index&#125;</span> in <span class="subst">$&#123;array&#125;</span>`</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>该函数的结果（如果它有返回）会被抛弃和忽略。</p>
+<h2 id="在数组中搜索"><a href="#在数组中搜索" class="headerlink" title="在数组中搜索"></a>在数组中搜索</h2><p>现在，让我们介绍在数组中进行搜索的方法。</p>
+<h3 id="indexOf-lastIndexOf-和-includes"><a href="#indexOf-lastIndexOf-和-includes" class="headerlink" title="indexOf&#x2F;lastIndexOf 和 includes"></a>indexOf&#x2F;lastIndexOf 和 includes</h3><p><code>arr.indexOf</code> 和 <code>arr.includes</code> 方法语法相似，并且作用基本上也与字符串的方法相同，只不过这里是对数组元素而不是字符进行操作：</p>
+<ul>
+<li><code>arr.indexOf(item, from)</code> —— 从索引 <code>from</code> 开始搜索 <code>item</code>，如果找到则返回索引，否则返回 <code>-1</code>。</li>
+<li><code>arr.includes(item, from)</code> —— 从索引 <code>from</code> 开始搜索 <code>item</code>，如果找到则返回 <code>true</code>（译注：如果没找到，则返回 <code>false</code>）。</li>
+</ul>
+<p>通常使用这些方法时只会传入一个参数：传入 <code>item</code> 开始搜索。默认情况下，搜索是从头开始的。</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">0</span>, <span class="literal">false</span>];</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">indexOf</span>(<span class="number">0</span>) ); <span class="comment">// 1</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">indexOf</span>(<span class="literal">false</span>) ); <span class="comment">// 2</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">indexOf</span>(<span class="literal">null</span>) ); <span class="comment">// -1</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">includes</span>(<span class="number">1</span>) ); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>请注意，<code>indexOf</code> 和 <code>includes</code> 使用严格相等 <code>===</code> 进行比较。所以，如果我们搜索 <code>false</code>，它会准确找到 <code>false</code> 而不是数字 <code>0</code>。</p>
+<p>如果我们想检查数组中是否包含元素 <code>item</code>，并且不需要知道其确切的索引，那么 <code>arr.includes</code> 是首选。</p>
+<p>方法 <code>arr.lastIndexOf</code> 与 <code>indexOf</code> 相同，但从右向左查找。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&#x27;Apple&#x27;</span>, <span class="string">&#x27;Orange&#x27;</span>, <span class="string">&#x27;Apple&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( fruits.<span class="title function_">indexOf</span>(<span class="string">&#x27;Apple&#x27;</span>) ); <span class="comment">// 0（第一个 Apple）</span></span><br><span class="line"><span class="title function_">alert</span>( fruits.<span class="title function_">lastIndexOf</span>(<span class="string">&#x27;Apple&#x27;</span>) ); <span class="comment">// 2（最后一个 Apple）</span></span><br></pre></td></tr></table></figure>
+
+<p>方法 <code>includes</code> 可以正确的处理 <code>NaN</code></p>
+<p>方法 <code>includes</code> 的一个次要但值得注意的特性是，它可以正确处理 <code>NaN</code>，这与 <code>indexOf</code> 不同：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="title class_">NaN</span>];</span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">indexOf</span>(<span class="title class_">NaN</span>) ); <span class="comment">// -1（错，应该为 0）</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">includes</span>(<span class="title class_">NaN</span>) );<span class="comment">// true（正确）</span></span><br></pre></td></tr></table></figure>
+
+<p>这是因为 <code>includes</code> 是在比较晚的时候才被添加到 JavaScript 中的，并且在内部使用了更新了的比较算法。</p>
+<h3 id="find-和-findIndex-findLastIndex"><a href="#find-和-findIndex-findLastIndex" class="headerlink" title="find 和 findIndex&#x2F;findLastIndex"></a>find 和 findIndex&#x2F;findLastIndex</h3><p>想象一下，我们有一个对象数组。我们如何找到具有特定条件的对象？</p>
+<p>这时可以用 <code>arr.find</code> 方法。</p>
+<p>语法如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> result = arr.<span class="title function_">find</span>(<span class="keyword">function</span>(<span class="params">item, index, array</span>) &#123;</span><br><span class="line">  <span class="comment">// 如果返回 true，则返回 item 并停止迭代</span></span><br><span class="line">  <span class="comment">// 对于假值（falsy）的情况，则返回 undefined</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>依次对数组中的每个元素调用该函数：</p>
+<ul>
+<li><code>item</code> 是元素。</li>
+<li><code>index</code> 是它的索引。</li>
+<li><code>array</code> 是数组本身。</li>
+</ul>
+<p>如果它返回 <code>true</code>，则搜索停止，并返回 <code>item</code>。如果没有搜索到，则返回 <code>undefined</code>。</p>
+<p>例如，我们有一个存储用户的数组，每个用户都有 <code>id</code> 和 <code>name</code> 字段。让我们找到 <code>id == 1</code> 的那个用户：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> users = [</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">1</span>, <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">2</span>, <span class="attr">name</span>: <span class="string">&quot;Pete&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">3</span>, <span class="attr">name</span>: <span class="string">&quot;Mary&quot;</span>&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> user = users.<span class="title function_">find</span>(<span class="function"><span class="params">item</span> =&gt;</span> item.<span class="property">id</span> == <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(user.<span class="property">name</span>); <span class="comment">// John</span></span><br></pre></td></tr></table></figure>
+
+<p>在现实生活中，对象数组是很常见的，所以 <code>find</code> 方法非常有用。</p>
+<p>注意在这个例子中，我们传给了 <code>find</code> 一个单参数函数 <code>item =&gt; item.id == 1</code>。这很典型，并且 <code>find</code> 方法的其他参数很少使用。</p>
+<p><code>arr.findIndex</code> 方法（与 <code>arr.find</code>）具有相同的语法，但它返回找到的元素的索引，而不是元素本身。如果没找到，则返回 <code>-1</code>。</p>
+<p><code>arr.findLastIndex</code> 方法类似于 <code>findIndex</code>，但从右向左搜索，类似于 <code>lastIndexOf</code>。</p>
+<p>这是一个例子：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> users = [</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">1</span>, <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">2</span>, <span class="attr">name</span>: <span class="string">&quot;Pete&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">3</span>, <span class="attr">name</span>: <span class="string">&quot;Mary&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">4</span>, <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 寻找第一个 John 的索引</span></span><br><span class="line"><span class="title function_">alert</span>(users.<span class="title function_">findIndex</span>(<span class="function"><span class="params">user</span> =&gt;</span> user.<span class="property">name</span> == <span class="string">&#x27;John&#x27;</span>)); <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 寻找最后一个 John 的索引</span></span><br><span class="line"><span class="title function_">alert</span>(users.<span class="title function_">findLastIndex</span>(<span class="function"><span class="params">user</span> =&gt;</span> user.<span class="property">name</span> == <span class="string">&#x27;John&#x27;</span>)); <span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="filter"><a href="#filter" class="headerlink" title="filter"></a><a href="https://zh.javascript.info/array-methods#filter">filter</a></h3><p><code>find</code> 方法搜索的是使函数返回 <code>true</code> 的第一个（单个）元素。</p>
+<p>如果需要匹配的有很多，我们可以使用 <a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">arr.filter(fn)</a>。</p>
+<p>语法与 <code>find</code> 大致相同，但是 <code>filter</code> 返回的是所有匹配元素组成的数组：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> results = arr.<span class="title function_">filter</span>(<span class="keyword">function</span>(<span class="params">item, index, array</span>) &#123;</span><br><span class="line">  <span class="comment">// 如果 true item 被 push 到 results，迭代继续</span></span><br><span class="line">  <span class="comment">// 如果什么都没找到，则返回空数组</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> users = [</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">1</span>, <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">2</span>, <span class="attr">name</span>: <span class="string">&quot;Pete&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">3</span>, <span class="attr">name</span>: <span class="string">&quot;Mary&quot;</span>&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回前两个用户的数组</span></span><br><span class="line"><span class="keyword">let</span> someUsers = users.<span class="title function_">filter</span>(<span class="function"><span class="params">item</span> =&gt;</span> item.<span class="property">id</span> &lt; <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(someUsers.<span class="property">length</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="转换数组"><a href="#转换数组" class="headerlink" title="转换数组"></a><a href="https://zh.javascript.info/array-methods#zhuan-huan-shu-zu">转换数组</a></h2><p>让我们继续学习进行数组转换和重新排序的方法。</p>
+<h3 id="map"><a href="#map" class="headerlink" title="map"></a><a href="https://zh.javascript.info/array-methods#map">map</a></h3><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/map">arr.map</a> 方法是最有用和经常使用的方法之一。</p>
+<p>它对数组的每个元素都调用函数，并返回结果数组。</p>
+<p>语法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> result = arr.<span class="title function_">map</span>(<span class="keyword">function</span>(<span class="params">item, index, array</span>) &#123;</span><br><span class="line">  <span class="comment">// 返回新值而不是当前元素</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>例如，在这里我们将每个元素转换为它的字符串长度：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> lengths = [<span class="string">&quot;Bilbo&quot;</span>, <span class="string">&quot;Gandalf&quot;</span>, <span class="string">&quot;Nazgul&quot;</span>].<span class="title function_">map</span>(<span class="function"><span class="params">item</span> =&gt;</span> item.<span class="property">length</span>);</span><br><span class="line"><span class="title function_">alert</span>(lengths); <span class="comment">// 5,7,6</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="sort-fn"><a href="#sort-fn" class="headerlink" title="sort(fn)"></a><a href="https://zh.javascript.info/array-methods#sortfn">sort(fn)</a></h3><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">arr.sort</a> 方法对数组进行 <strong>原位（in-place）</strong> 排序，更改元素的顺序。(译注：原位是指在此数组内，而非生成一个新数组。)</p>
+<p>它还返回排序后的数组，但是返回值通常会被忽略，因为修改了 <code>arr</code> 本身。</p>
+<p>语法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [ <span class="number">1</span>, <span class="number">2</span>, <span class="number">15</span> ];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 该方法重新排列 arr 的内容</span></span><br><span class="line">arr.<span class="title function_">sort</span>();</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr );  <span class="comment">// 1, 15, 2</span></span><br></pre></td></tr></table></figure>
+
+<p>你有没有注意到结果有什么奇怪的地方？</p>
+<p>顺序变成了 <code>1, 15, 2</code>。不对，但为什么呢？</p>
+<p><strong>这些元素默认情况下被按字符串进行排序。</strong></p>
+<p>从字面上看，所有元素都被转换为字符串，然后进行比较。对于字符串，按照词典顺序进行排序，实际上应该是 <code>&quot;2&quot; &gt; &quot;15&quot;</code>。</p>
+<p>要使用我们自己的排序顺序，我们需要提供一个函数作为 <code>arr.sort()</code> 的参数。</p>
+<p>该函数应该比较两个任意值并返回：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">compare</span>(<span class="params">a, b</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; b) <span class="keyword">return</span> <span class="number">1</span>; <span class="comment">// 如果第一个值比第二个值大</span></span><br><span class="line">  <span class="keyword">if</span> (a == b) <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">// 如果两个值相等</span></span><br><span class="line">  <span class="keyword">if</span> (a &lt; b) <span class="keyword">return</span> -<span class="number">1</span>; <span class="comment">// 如果第一个值比第二个值小</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例如，按数字进行排序：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">compareNumeric</span>(<span class="params">a, b</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; b) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">if</span> (a == b) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">if</span> (a &lt; b) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arr = [ <span class="number">1</span>, <span class="number">2</span>, <span class="number">15</span> ];</span><br><span class="line"></span><br><span class="line">arr.<span class="title function_">sort</span>(compareNumeric);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(arr);  <span class="comment">// 1, 2, 15</span></span><br></pre></td></tr></table></figure>
+
+<p>现在结果符合预期了。</p>
+<p>我们思考一下这儿发生了什么。<code>arr</code> 可以是由任何内容组成的数组，对吗？它可能包含数字、字符串、对象或其他任何内容。我们有一组 <strong>一些元素</strong>。要对其进行排序，我们需要一个 <strong>排序函数</strong> 来确认如何比较这些元素。默认是按字符串进行排序的。</p>
+<p><code>arr.sort(fn)</code> 方法实现了通用的排序算法。我们不需要关心它的内部工作原理（大多数情况下都是经过 <a href="https://en.wikipedia.org/wiki/Quicksort">快速排序</a> 或 <a href="https://en.wikipedia.org/wiki/Timsort">Timsort</a> 算法优化的）。它将遍历数组，使用提供的函数比较其元素并对其重新排序，我们所需要的就是提供执行比较的函数 <code>fn</code>。</p>
+<p>顺便说一句，如果我们想知道要比较哪些元素 —— 那么什么都不会阻止 alert 它们：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[<span class="number">1</span>, -<span class="number">2</span>, <span class="number">15</span>, <span class="number">2</span>, <span class="number">0</span>, <span class="number">8</span>].<span class="title function_">sort</span>(<span class="keyword">function</span>(<span class="params">a, b</span>) &#123;</span><br><span class="line">  <span class="title function_">alert</span>( a + <span class="string">&quot; &lt;&gt; &quot;</span> + b );</span><br><span class="line">  <span class="keyword">return</span> a - b;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>该算法可以在此过程中，将一个元素与多个其他元素进行比较，但是它会尝试进行尽可能少的比较。</p>
+<p>比较函数可以返回任何数字</p>
+<p>实际上，比较函数只需要返回一个正数表示“大于”，一个负数表示“小于”。</p>
+<p>通过这个原理我们可以编写更短的函数：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [ <span class="number">1</span>, <span class="number">2</span>, <span class="number">15</span> ];</span><br><span class="line"></span><br><span class="line">arr.<span class="title function_">sort</span>(<span class="keyword">function</span>(<span class="params">a, b</span>) &#123; <span class="keyword">return</span> a - b; &#125;);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(arr);  <span class="comment">// 1, 2, 15</span></span><br></pre></td></tr></table></figure>
+
+<p>箭头函数最好</p>
+<p>你还记得 <a href="https://zh.javascript.info/arrow-functions-basics">箭头函数</a> 吗？这里使用箭头函数会更加简洁：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">arr.<span class="title function_">sort</span>( <span class="function">(<span class="params">a, b</span>) =&gt;</span> a - b );</span><br></pre></td></tr></table></figure>
+
+<p>这与上面更长的版本完全相同。</p>
+<p>使用 <code>localeCompare</code> for strings</p>
+<p>你记得 <a href="https://zh.javascript.info/string#correct-comparisons">字符串比较</a> 算法吗？默认情况下，它通过字母的代码比较字母。</p>
+<p>对于许多字母，最好使用 <code>str.localeCompare</code> 方法正确地对字母进行排序，例如 <code>Ö</code>。</p>
+<p>例如，让我们用德语对几个国家&#x2F;地区进行排序：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> countries = [<span class="string">&#x27;Österreich&#x27;</span>, <span class="string">&#x27;Andorra&#x27;</span>, <span class="string">&#x27;Vietnam&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( countries.<span class="title function_">sort</span>( <span class="function">(<span class="params">a, b</span>) =&gt;</span> a &gt; b ? <span class="number">1</span> : -<span class="number">1</span>) ); <span class="comment">// Andorra, Vietnam, Österreich（错的）</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( countries.<span class="title function_">sort</span>( <span class="function">(<span class="params">a, b</span>) =&gt;</span> a.<span class="title function_">localeCompare</span>(b) ) ); <span class="comment">// Andorra,Österreich,Vietnam（对的！）</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="reverse"><a href="#reverse" class="headerlink" title="reverse"></a><a href="https://zh.javascript.info/array-methods#reverse">reverse</a></h3><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">arr.reverse</a> 方法用于颠倒 <code>arr</code> 中元素的顺序。</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line">arr.<span class="title function_">reverse</span>();</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ); <span class="comment">// 5,4,3,2,1</span></span><br></pre></td></tr></table></figure>
+
+<p>它也会返回颠倒后的数组 <code>arr</code>。</p>
+<h3 id="split-和-join"><a href="#split-和-join" class="headerlink" title="split 和 join"></a><a href="https://zh.javascript.info/array-methods#split-he-join">split 和 join</a></h3><p>举一个现实生活场景的例子。我们正在编写一个消息应用程序，并且该人员输入以逗号分隔的接收者列表：<code>John, Pete, Mary</code>。但对我们来说，名字数组比单个字符串舒适得多。怎么做才能获得这样的数组呢？</p>
+<p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/split">str.split(delim)</a> 方法可以做到。它通过给定的分隔符 <code>delim</code> 将字符串分割成一个数组。</p>
+<p>在下面的例子中，我们用“逗号后跟着一个空格”作为分隔符：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> names = <span class="string">&#x27;Bilbo, Gandalf, Nazgul&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arr = names.<span class="title function_">split</span>(<span class="string">&#x27;, &#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> name <span class="keyword">of</span> arr) &#123;</span><br><span class="line">  <span class="title function_">alert</span>( <span class="string">`A message to <span class="subst">$&#123;name&#125;</span>.`</span> ); <span class="comment">// A message to Bilbo（和其他名字）</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>split</code> 方法有一个可选的第二个数字参数 —— 对数组长度的限制。如果提供了，那么额外的元素会被忽略。但实际上它很少使用：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = <span class="string">&#x27;Bilbo, Gandalf, Nazgul, Saruman&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27;, &#x27;</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(arr); <span class="comment">// Bilbo, Gandalf</span></span><br></pre></td></tr></table></figure>
+
+<p>拆分为字母</p>
+<p>调用带有空参数 <code>s</code> 的 <code>split(s)</code>，会将字符串拆分为字母数组：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;test&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">split</span>(<span class="string">&#x27;&#x27;</span>) ); <span class="comment">// t,e,s,t</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/join">arr.join(glue)</a> 与 <code>split</code> 相反。它会在它们之间创建一串由 <code>glue</code> 粘合的 <code>arr</code> 项。</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&#x27;Bilbo&#x27;</span>, <span class="string">&#x27;Gandalf&#x27;</span>, <span class="string">&#x27;Nazgul&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str = arr.<span class="title function_">join</span>(<span class="string">&#x27;;&#x27;</span>); <span class="comment">// 使用分号 ; 将数组粘合成字符串</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( str ); <span class="comment">// Bilbo;Gandalf;Nazgul</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="reduce-reduceRight"><a href="#reduce-reduceRight" class="headerlink" title="reduce&#x2F;reduceRight"></a><a href="https://zh.javascript.info/array-methods#reducereduceright">reduce&#x2F;reduceRight</a></h3><p>当我们需要遍历一个数组时 —— 我们可以使用 <code>forEach</code>，<code>for</code> 或 <code>for..of</code>。</p>
+<p>当我们需要遍历并返回每个元素的数据时 —— 我们可以使用 <code>map</code>。</p>
+<p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">arr.reduce</a> 方法和 <a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight">arr.reduceRight</a> 方法和上面的种类差不多，但稍微复杂一点。它们用于根据数组计算单个值。</p>
+<p>语法是：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> value = arr.<span class="title function_">reduce</span>(<span class="keyword">function</span>(<span class="params">accumulator, item, index, array</span>) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;, [initial]);</span><br></pre></td></tr></table></figure>
+
+<p>该函数一个接一个地应用于所有数组元素，并将其结果“搬运（carry on）”到下一个调用。</p>
+<p>参数：</p>
+<ul>
+<li><code>accumulator</code> —— 是上一个函数调用的结果，第一次等于 <code>initial</code>（如果提供了 <code>initial</code> 的话）。</li>
+<li><code>item</code> —— 当前的数组元素。</li>
+<li><code>index</code> —— 当前索引。</li>
+<li><code>arr</code> —— 数组本身。</li>
+</ul>
+<p>应用函数时，上一个函数调用的结果将作为第一个参数传递给下一个函数。</p>
+<p>因此，第一个参数本质上是累加器，用于存储所有先前执行的组合结果。最后，它成为 <code>reduce</code> 的结果。</p>
+<p>听起来复杂吗？</p>
+<p>掌握这个知识点的最简单的方法就是通过示例。</p>
+<p>在这里，我们通过一行代码得到一个数组的总和：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result = arr.<span class="title function_">reduce</span>(<span class="function">(<span class="params">sum, current</span>) =&gt;</span> sum + current, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(result); <span class="comment">// 15</span></span><br></pre></td></tr></table></figure>
+
+<p>传递给 <code>reduce</code> 的函数仅使用了 2 个参数，通常这就足够了。</p>
+<p>让我们看看细节，到底发生了什么。</p>
+<ol>
+<li>在第一次运行时，<code>sum</code> 的值为初始值 <code>initial</code>（<code>reduce</code> 的最后一个参数），等于 0，<code>current</code> 是第一个数组元素，等于 <code>1</code>。所以函数运行的结果是 <code>1</code>。</li>
+<li>在第二次运行时，<code>sum = 1</code>，我们将第二个数组元素（<code>2</code>）与其相加并返回。</li>
+<li>在第三次运行中，<code>sum = 3</code>，我们继续把下一个元素与其相加，以此类推……</li>
+</ol>
+<p>计算流程：</p>
+<p>或者以表格的形式表示，每一行代表的是对下一个数组元素的函数调用：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>sum</code></th>
+<th><code>current</code></th>
+<th><code>result</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第 1 次调用</td>
+<td><code>0</code></td>
+<td><code>1</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td>第 2 次调用</td>
+<td><code>1</code></td>
+<td><code>2</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td>第 3 次调用</td>
+<td><code>3</code></td>
+<td><code>3</code></td>
+<td><code>6</code></td>
+</tr>
+<tr>
+<td>第 4 次调用</td>
+<td><code>6</code></td>
+<td><code>4</code></td>
+<td><code>10</code></td>
+</tr>
+<tr>
+<td>第 5 次调用</td>
+<td><code>10</code></td>
+<td><code>5</code></td>
+<td><code>15</code></td>
+</tr>
+</tbody></table>
+<p>在这里，我们可以清楚地看到上一个调用的结果如何成为下一个调用的第一个参数。</p>
+<p>我们也可以省略初始值：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除 reduce 的初始值（没有 0）</span></span><br><span class="line"><span class="keyword">let</span> result = arr.<span class="title function_">reduce</span>(<span class="function">(<span class="params">sum, current</span>) =&gt;</span> sum + current);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( result ); <span class="comment">// 15</span></span><br></pre></td></tr></table></figure>
+
+<p>结果是一样的。这是因为如果没有初始值，那么 <code>reduce</code> 会将数组的第一个元素作为初始值，并从第二个元素开始迭代。</p>
+<p>计算表与上面相同，只是去掉第一行。</p>
+<p>但是这种使用需要非常小心。如果数组为空，那么在没有初始值的情况下调用 <code>reduce</code> 会导致错误。</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [];</span><br><span class="line"></span><br><span class="line"><span class="comment">// Error: Reduce of empty array with no initial value</span></span><br><span class="line"><span class="comment">// 如果初始值存在，则 reduce 将为空 arr 返回它（即这个初始值）。</span></span><br><span class="line">arr.<span class="title function_">reduce</span>(<span class="function">(<span class="params">sum, current</span>) =&gt;</span> sum + current);</span><br></pre></td></tr></table></figure>
+
+<p>所以建议始终指定初始值。</p>
+<p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight">arr.reduceRight</a> 和 <a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">arr.reduce</a> 方法的功能一样，只是遍历为从右到左。</p>
+<h2 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray"></a><a href="https://zh.javascript.info/array-methods#arrayisarray">Array.isArray</a></h2><p>数组是基于对象的，不构成单独的语言类型。</p>
+<p>所以 <code>typeof</code> 不能帮助从数组中区分出普通对象：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">alert</span>(<span class="keyword">typeof</span> &#123;&#125;); <span class="comment">// object</span></span><br><span class="line"><span class="title function_">alert</span>(<span class="keyword">typeof</span> []); <span class="comment">// object（相同）</span></span><br></pre></td></tr></table></figure>
+
+<p>……但是数组经常被使用，因此有一种特殊的方法用于判断：<a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray">Array.isArray(value)</a>。如果 <code>value</code> 是一个数组，则返回 <code>true</code>；否则返回 <code>false</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">alert</span>(<span class="title class_">Array</span>.<span class="title function_">isArray</span>(&#123;&#125;)); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(<span class="title class_">Array</span>.<span class="title function_">isArray</span>([])); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="大多数方法都支持-“thisArg”"><a href="#大多数方法都支持-“thisArg”" class="headerlink" title="大多数方法都支持 “thisArg”"></a><a href="https://zh.javascript.info/array-methods#da-duo-shu-fang-fa-dou-zhi-chi-thisarg">大多数方法都支持 “thisArg”</a></h2><p>几乎所有调用函数的数组方法 —— 比如 <code>find</code>，<code>filter</code>，<code>map</code>，除了 <code>sort</code> 是一个特例，都接受一个可选的附加参数 <code>thisArg</code>。</p>
+<p>上面的部分中没有解释该参数，因为该参数很少使用。但是为了完整性，我们需要讲讲它。</p>
+<p>以下是这些方法的完整语法：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">arr.<span class="title function_">find</span>(func, thisArg);</span><br><span class="line">arr.<span class="title function_">filter</span>(func, thisArg);</span><br><span class="line">arr.<span class="title function_">map</span>(func, thisArg);</span><br><span class="line"><span class="comment">// ...</span></span><br><span class="line"><span class="comment">// thisArg 是可选的最后一个参数</span></span><br></pre></td></tr></table></figure>
+
+<p><code>thisArg</code> 参数的值在 <code>func</code> 中变为 <code>this</code>。</p>
+<p>例如，在这里我们使用 <code>army</code> 对象方法作为过滤器，<code>thisArg</code> 用于传递上下文（passes the context）：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> army = &#123;</span><br><span class="line">  <span class="attr">minAge</span>: <span class="number">18</span>,</span><br><span class="line">  <span class="attr">maxAge</span>: <span class="number">27</span>,</span><br><span class="line">  <span class="title function_">canJoin</span>(<span class="params">user</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> user.<span class="property">age</span> &gt;= <span class="variable language_">this</span>.<span class="property">minAge</span> &amp;&amp; user.<span class="property">age</span> &lt; <span class="variable language_">this</span>.<span class="property">maxAge</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> users = [</span><br><span class="line">  &#123;<span class="attr">age</span>: <span class="number">16</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">age</span>: <span class="number">20</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">age</span>: <span class="number">23</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">age</span>: <span class="number">30</span>&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 找到 army.canJoin 返回 true 的 user</span></span><br><span class="line"><span class="keyword">let</span> soldiers = users.<span class="title function_">filter</span>(army.<span class="property">canJoin</span>, army);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(soldiers.<span class="property">length</span>); <span class="comment">// 2</span></span><br><span class="line"><span class="title function_">alert</span>(soldiers[<span class="number">0</span>].<span class="property">age</span>); <span class="comment">// 20</span></span><br><span class="line"><span class="title function_">alert</span>(soldiers[<span class="number">1</span>].<span class="property">age</span>); <span class="comment">// 23</span></span><br></pre></td></tr></table></figure>
+
+<p>如果在上面的示例中我们使用了 <code>users.filter(army.canJoin)</code>，那么 <code>army.canJoin</code> 将被作为独立函数调用，并且这时 <code>this=undefined</code>，从而会导致即时错误。</p>
+<p>可以用 <code>users.filter(user =&gt; army.canJoin(user))</code> 替换对 <code>users.filter(army.canJoin, army)</code> 的调用。前者的使用频率更高，因为对于大多数人来说，它更容易理解。</p>
+<h2 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a><a href="https://zh.javascript.info/array-methods#zong-jie">总结</a></h2><p>数组方法备忘单：</p>
+<ul>
+<li><p>添加&#x2F;删除元素：</p>
+<ul>
+<li><code>push(...items)</code> —— 向尾端添加元素，</li>
+<li><code>pop()</code> —— 从尾端提取一个元素，</li>
+<li><code>shift()</code> —— 从首端提取一个元素，</li>
+<li><code>unshift(...items)</code> —— 向首端添加元素，</li>
+<li><code>splice(pos, deleteCount, ...items)</code> —— 从 <code>pos</code> 开始删除 <code>deleteCount</code> 个元素，并插入 <code>items</code>。</li>
+<li><code>slice(start, end)</code> —— 创建一个新数组，将从索引 <code>start</code> 到索引 <code>end</code>（但不包括 <code>end</code>）的元素复制进去。</li>
+<li><code>concat(...items)</code> —— 返回一个新数组：复制当前数组的所有元素，并向其中添加 <code>items</code>。如果 <code>items</code> 中的任意一项是一个数组，那么就取其元素。</li>
+</ul>
+</li>
+<li><p>搜索元素：</p>
+<ul>
+<li><code>indexOf/lastIndexOf(item, pos)</code> —— 从索引 <code>pos</code> 开始搜索 <code>item</code>，搜索到则返回该项的索引，否则返回 <code>-1</code>。</li>
+<li><code>includes(value)</code> —— 如果数组有 <code>value</code>，则返回 <code>true</code>，否则返回 <code>false</code>。</li>
+<li><code>find/filter(func)</code> —— 通过 <code>func</code> 过滤元素，返回使 <code>func</code> 返回 <code>true</code> 的第一个值&#x2F;所有值。</li>
+<li><code>findIndex</code> 和 <code>find</code> 类似，但返回索引而不是值。</li>
+</ul>
+</li>
+<li><p>遍历元素：</p>
+<ul>
+<li><code>forEach(func)</code> —— 对每个元素都调用 <code>func</code>，不返回任何内容。</li>
+</ul>
+</li>
+<li><p>转换数组：</p>
+<ul>
+<li><code>map(func)</code> —— 根据对每个元素调用 <code>func</code> 的结果创建一个新数组。</li>
+<li><code>sort(func)</code> —— 对数组进行原位（in-place）排序，然后返回它。</li>
+<li><code>reverse()</code> —— 原位（in-place）反转数组，然后返回它。</li>
+<li><code>split/join</code> —— 将字符串拆分为数组并返回&#x2F;将数组项组合成字符串并返回。</li>
+<li><code>reduce/reduceRight(func, initial)</code> —— 通过对每个元素调用 <code>func</code> 计算数组上的单个值，并在调用之间传递中间结果。</li>
+</ul>
+</li>
+<li><p>其他：</p>
+<ul>
+<li><code>Array.isArray(value)</code> 检查 <code>value</code> 是否是一个数组，如果是则返回 <code>true</code>，否则返回 <code>false</code>。</li>
+</ul>
+</li>
+</ul>
+<p>请注意，<code>sort</code>，<code>reverse</code> 和 <code>splice</code> 方法修改的是数组本身。</p>
+<p>这些是最常用的方法，它们覆盖 99％ 的用例。但是还有其他几个：</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/some">arr.some(fn)</a>&#x2F;<a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/every">arr.every(fn)</a> 检查数组。</p>
+<p>与 <code>map</code> 类似，对数组的每个元素调用函数 <code>fn</code>。如果任何&#x2F;所有结果为 <code>true</code>，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+<p>这两个方法的行为类似于 <code>||</code> 和 <code>&amp;&amp;</code> 运算符：如果 <code>fn</code> 返回一个真值，<code>arr.some()</code> 立即返回 <code>true</code> 并停止迭代其余数组项；如果 <code>fn</code> 返回一个假值，<code>arr.every()</code> 立即返回 <code>false</code> 并停止对其余数组项的迭代。</p>
+<p>我们可以使用 <code>every</code> 来比较数组：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">arraysEqual</span>(<span class="params">arr1, arr2</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> arr1.<span class="property">length</span> === arr2.<span class="property">length</span> &amp;&amp; arr1.<span class="title function_">every</span>(<span class="function">(<span class="params">value, index</span>) =&gt;</span> value === arr2[index]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( <span class="title function_">arraysEqual</span>([<span class="number">1</span>, <span class="number">2</span>], [<span class="number">1</span>, <span class="number">2</span>])); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/fill">arr.fill(value, start, end)</a> —— 从索引 <code>start</code> 到 <code>end</code>，用重复的 <code>value</code> 填充数组。</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin">arr.copyWithin(target, start, end)</a> —— 将从位置 <code>start</code> 到 <code>end</code> 的所有元素复制到 <strong>自身</strong> 的 <code>target</code> 位置（覆盖现有元素）。</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/flat">arr.flat(depth)</a>&#x2F;<a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap">arr.flatMap(fn)</a> 从多维数组创建一个新的扁平数组。</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/of">Array.of(element0[, element1[, …[, elementN]]])</a> 基于可变数量的参数创建一个新的 <code>Array</code> 实例，而不需要考虑参数的数量或类型。</p>
+</li>
+</ul>
+<p>有关完整列表，请参阅 <a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array">手册</a>。</p>
+<p>乍看起来，似乎有很多方法，很难记住。但实际上这比看起来要容易得多。</p>
+<p>浏览这个备忘单，以了解这些方法。然后解决本章中的习题来进行练习，以便让你有数组方法的使用经验。</p>
+<p>然后，每当你需要对数组进行某些操作，而又不知道怎么做的时候，请回到这儿，查看这个备忘单，然后找到正确的方法。示例将帮助你正确编写它。用不了多久，你就自然而然地记住这些方法了，根本不需要你死记硬背。</p>
 ]]></content>
       <categories>
         <category>笔记</category>
@@ -423,7 +783,7 @@
 <li>将对话视为一个多轮的交流过程，逐步深入问题。</li>
 </ul>
 <h2 id="使用有意义且描述明确的标题"><a href="#使用有意义且描述明确的标题" class="headerlink" title="使用有意义且描述明确的标题"></a>使用有意义且描述明确的标题</h2><p>大约 50 字以内的问题是抓住资深专家注意力的好机会。别用喋喋不休的<code>帮帮忙</code>、<code>跪求</code>、<code>急</code>（更别说<code>救命啊！！！！</code>这样让人反感的话，用这种标题会被条件反射式地忽略）来浪费这个机会。不要妄想用你的痛苦程度来打动”专家”，而应该是在这点空间中使用极简单扼要的描述方式来提出问题。</p>
-<p>一个好标题范例是<code>目标 —— 差异</code>式的描述，许多技术支持组织就是这样做的。在<code>目标</code>部分指出是哪一个或哪一组东西有问题，在<code>差异</code>部分则描述与期望的行为不一致的地方。</p>
+<p>一个好标题范例是<code>目标 —— 差异</code>式的描述。在<code>目标</code>部分指出是哪一个或哪一组东西有问题，在<code>差异</code>部分则描述与期望的行为不一致的地方。</p>
 <blockquote>
 <p>蠢问题：救命啊！我的笔记本电脑不能正常显示了！</p>
 </blockquote>
@@ -433,17 +793,18 @@
 <blockquote>
 <p>更聪明问题：X.org 6.8.1 的鼠标指针，在某牌显卡 MV1005 芯片组环境下 - 会变形。</p>
 </blockquote>
-<p>编写<code>目标 —— 差异</code> 式描述的过程有助于你组织对问题的细致思考。是什么被影响了？ 仅仅是鼠标指针或者还有其它图形？只在 X.org 的 X 版中出现？或只是出现在 6.8.1 版中？ 是针对某牌显卡芯片组？或者只是其中的 MV1005 型号？ 一个”专家”只需瞄一眼就能够立即明白你的环境<strong>和</strong>你遇到的问题。</p>
-<p>总而言之，请想像一下你正在一个只显示标题的存档讨论串（Thread）索引中查寻。让你的标题更好地反映问题，可使下一个搜索类似问题的人能够关注这个讨论串，而不用再次提问相同的问题。</p>
+<p>编写<code>目标 —— 差异</code> 式描述的过程有助于你组织对问题的细致思考。是什么被影响了？ 仅仅是鼠标指针或者还有其它图形？只在 X.org 的 X 版中出现？或只是出现在 6.8.1 版中？ 是针对某牌显卡芯片组？或者只是其中的 MV1005 型号？ </p>
+<p>一个”专家”只需瞄一眼就能够立即明白你的环境<strong>和</strong>你遇到的问题。</p>
+<p>总而言之，请想像一下你正在一个只显示标题的存档讨论索引中查寻。让你的标题更好地反映问题，可使下一个搜索类似问题的人能够关注这个讨论，而不用再次提问相同的问题。</p>
 <p>如果你想在回复中提出问题，记得要修改内容标题，以表明你是在问一个问题， 一个看起来像 <code>Re: 测试</code> 或者 <code>Re: 新 bug</code> 的标题很难引起足够重视。另外，在不影响连贯性之下，适当引用并删减前文的内容，能给新来的读者留下线索。</p>
-<p>对于讨论串，不要直接点击回复来开始一个全新的讨论串，这将限制你的观众。因为有些邮件阅读程序，比如 mutt ，允许用户按讨论串排序并通过折叠讨论串来隐藏消息，这样做的人永远看不到你发的消息。</p>
+<p>对于讨论串，不要直接点击回复来开始一个全新的讨论串，这将限制你的观众。因为有些站点允许用户按讨论串排序并通过折叠讨论串来隐藏消息，这样做的人永远看不到你发的消息。</p>
 <p>仅仅改变标题还不够。mutt 和其它一些邮件阅读程序还会检查邮件标题以外的其它信息，以便为其指定讨论串。所以宁可发一个全新的邮件。</p>
 <p>在网页论坛上，好的提问方式稍有不同，因为讨论串与特定的信息紧密结合，并且通常在讨论串外就看不到里面的内容，故通过回复提问，而非改变标题是可接受的。不是所有论坛都允许在回复中出现分离的标题，而且这样做了基本上没有人会去看。不过，通过回复提问，这本身就是暧昧的做法，因为它们只会被正在查看该标题的人读到。所以，除非你<strong>只想</strong>在该讨论串当前活跃的人群中提问，不然还是另起炉灶比较好。</p>
-<h2 id="使问题容易回复"><a href="#使问题容易回复" class="headerlink" title="使问题容易回复"></a>使问题容易回复</h2><p>以<code>请将你的回复发送到……</code>来结束你的问题多半会使你得不到回答。如果你觉得花几秒钟在邮件客户端设置一下回复地址都麻烦，”专家”也觉得花几秒钟思考你的问题更麻烦。如果你的邮件程序不支持这样做，<a href="http://linuxmafia.com/faq/Mail/muas.html">换个好点的</a>；如果是操作系统不支持这种邮件程序，也换个好点的。</p>
+<h2 id="使问题容易回复"><a href="#使问题容易回复" class="headerlink" title="使问题容易回复"></a>使问题容易回复</h2><p>以<code>请将你的回复发送到……</code>来结束你的问题多半会使你得不到回答。如果你觉得花几秒钟在邮件客户端设置一下回复地址都麻烦，”专家”也觉得花几秒钟思考你的问题更麻烦。</p>
 <p>在论坛，要求通过电子邮件回复是非常无礼的，除非你认为回复的信息可能比较敏感（有人会为了某些未知的原因，只让你而不是整个论坛知道答案）。如果你只是想在有人回复讨论串时得到电子邮件提醒，可以要求网页论坛发送给你。几乎所有论坛都支持诸如<code>追踪此讨论串</code>、<code>有回复时发送邮件提醒</code>等功能。</p>
-<h3 id="使用清晰、正确、精准且合乎语法的语句"><a href="#使用清晰、正确、精准且合乎语法的语句" class="headerlink" title="使用清晰、正确、精准且合乎语法的语句"></a><a name="使用清晰、正确、精准且合乎语法的语句">使用清晰、正确、精准且合乎语法的语句</a></h3><p>“专家”从经验中发现，粗心的提问者通常也会粗心地写程序与思考（我敢打包票）。回答粗心大意者的问题很不值得，”专家”宁愿把时间耗在别处。</p>
+<h3 id="使用清晰、正确、精准且合乎语法的语句"><a href="#使用清晰、正确、精准且合乎语法的语句" class="headerlink" title="使用清晰、正确、精准且合乎语法的语句"></a>使用清晰、正确、精准且合乎语法的语句</h3><p>“专家”从经验中发现，粗心的提问者通常也会粗心地写程序与思考（我敢打包票）。回答粗心大意者的问题很不值得，”专家”宁愿把时间耗在别处。</p>
 <p>正确的拼写、标点符号和大小写是很重要的。一般来说，如果你觉得这样做很麻烦，不想在乎这些，那”专家”也觉得麻烦，不想在乎你的提问。花点额外的精力斟酌一下字句，用不着太僵硬与正式 —— 事实上，”专家”文化很看重能准确地使用非正式、俚语和幽默的语句。但它<strong>必须很</strong>准确，而且有迹象表明你是在思考和关注问题。</p>
-<p>正确地拼写、使用标点和大小写，不要将<code>its</code>混淆为<code>it&#39;s</code>，<code>loose</code>搞成<code>lose</code>或者将<code>discrete</code>弄成<code>discreet</code>。不要<strong>全部用大写</strong>，这会被视为无礼的大声嚷嚷（全部小写也好不到哪去，因为不易阅读。<a href="http://en.wikipedia.org/wiki/Alan_Cox">Alan Cox</a> 也许可以这样做，但你不行）。</p>
+<p>正确地拼写、使用标点和大小写，不要将<code>its</code>混淆为<code>it&#39;s</code>，<code>loose</code>搞成<code>lose</code>或者将<code>discrete</code>弄成<code>discreet</code>。不要<strong>全部用大写</strong>，这会被视为无礼的大声嚷嚷（全部小写也好不到哪去，因为不易阅读）。</p>
 <p>更白话的说，如果你写得像是个半文盲[译注：<a href="http://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD">小白</a>]，那多半得不到理睬。也不要使用即时通信中的简写或<a href="http://zh.wikipedia.org/wiki/%E7%81%AB%E6%98%9F%E6%96%87">火星文</a>，如将<code>的</code>简化为<code>d</code>会使你看起来像一个为了少打几个键而省字的小白。更糟的是，如果像个小孩似地鬼画符那绝对是在找死，可以肯定没人会理你（或者最多是给你一大堆指责与挖苦）。</p>
 <p>如果在使用非母语的论坛提问，你可以犯点拼写和语法上的小错，但决不能在思考上马虎（没错，”专家”通常能弄清两者的分别）。同时，除非你知道回复者使用的语言，否则请使用英语书写。繁忙的”专家”一般会直接删除用他们看不懂的语言写的消息。在网络上英语是通用语言，用英语书写可以将你的问题在尚未被阅读就被直接删除的可能性降到最低。</p>
 <p>如果英文是你的外语（Second language），提示潜在回复者你有潜在的语言困难是很好的：<br>[译注：以下附上原文以供使用]</p>
@@ -476,10 +837,9 @@
 <h2 id="使用易于读取且标准的文件格式发送问题"><a href="#使用易于读取且标准的文件格式发送问题" class="headerlink" title="使用易于读取且标准的文件格式发送问题"></a>使用易于读取且标准的文件格式发送问题</h2><p>如果你人为地将问题搞得难以阅读，它多半会被忽略，人们更愿读易懂的问题，所以：</p>
 <ul>
 <li>使用纯文字而不是 HTML (<a href="http://archive.birdhouse.org/etc/evilmail.html">关闭 HTML</a> 并不难）。</li>
-<li>使用 MIME 附件通常是可以的，前提是真正有内容（譬如附带的源代码或 patch），而不仅仅是邮件程序生成的模板（譬如只是信件内容的拷贝）。</li>
+<li>使用 邮件附件 通常是可以的，前提是真正有内容（譬如附带的图片或其他文件），而不仅仅是邮件程序生成的模板（譬如只是信件内容的拷贝）。</li>
 <li>不要发送一段文字只是一行句子但自动换行后会变成多行的邮件（这使得回复部分内容非常困难）。设想你的读者是在 80 个字符宽的终端机上阅读邮件，最好设置你的换行分割点小于 80 字。</li>
 <li>但是，对一些特殊的文件<strong>不要</strong>设置固定宽度（譬如日志文件拷贝或会话记录）。数据应该原样包含，让回复者有信心他们看到的是和你看到的一样的东西。</li>
-<li>在英语论坛中，不要使用<code>Quoted-Printable</code> MIME 编码发送消息。这种编码对于张贴非 ASCII 语言可能是必须的，但很多邮件程序并不支持这种编码。当它们处理换行时，那些文本中四处散布的<code>=20</code>符号既难看也分散注意力，甚至有可能破坏内容的语意。</li>
 <li>绝对，<strong>永远</strong>不要指望”专家”们阅读使用封闭格式编写的文档，像微软公司的 Word 或 Excel 文件等。大多数”专家”对此的反应就像有人将还在冒热气的猪粪倒在你家门口时你的反应一样。即便他们能够处理，他们也很厌恶这么做。</li>
 <li>如果你从使用 Windows 的电脑发送电子邮件，关闭微软愚蠢的<code>智能引号</code>功能 （从[选项] &gt; [校订] &gt; [自动校正选项]，勾选掉<code>智能引号</code>单选框），以免在你的邮件中到处散布垃圾字符。</li>
 <li>在论坛，勿滥用<code>表情符号</code>和<code>HTML</code>功能（当它们提供时）。一两个表情符号通常没有问题，但花哨的彩色文本倾向于使人认为你是个无能之辈。过滥地使用表情符号、色彩和字体会使你看来像个傻笑的小姑娘。这通常不是个好主意，除非你只是对性而不是对答案感兴趣。</li>
@@ -496,7 +856,8 @@
 <p>尽量去揣测一个”专家”会怎样反问你，在你提问之前预先将”专家”们可能提出的问题回答一遍。</p>
 <p>以上几点中，当你报告的是你认为可能在代码中的问题时，给”专家”一个可以重现你的问题的环境尤其重要。当你这么做时，你得到有效的回答的机会和速度都会大大的提升。</p>
 <p><a href="http://www.chiark.greenend.org.uk/~sgtatham/">Simon Tatham</a> 写过一篇名为《<a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs-cn.html">如何有效地报告Bug</a>》的出色文章。强力推荐你也读一读。</p>
-<h2 id="话不在多而在精"><a href="#话不在多而在精" class="headerlink" title="话不在多而在精"></a>话不在多而在精</h2><p>你需要提供精确有内容的信息。这并不是要求你简单的把成堆的出错代码或者资料完全转录到你的提问中。如果你有庞大而复杂的测试样例能重现程序挂掉的情境，尽量将它剪裁得越小越好。</p>
+<h2 id="话不在多而在精"><a href="#话不在多而在精" class="headerlink" title="话不在多而在精"></a>话不在多而在精</h2><p>你需要提供精确有内容的信息。这并不是要求你简单的把成堆的截图或者资料完全复制到你的提问中。</p>
+<p>如果你有庞大而复杂的测试样例能重现问题的情境，尽量将它剪裁得越小越好。</p>
 <p>这样做的用处至少有三点。<br>第一，表现出你为简化问题付出了努力，这可以使你得到回答的机会增加；<br>第二，简化问题使你更有可能得到<strong>有用</strong>的答案；<br>第三，在精炼你的 bug 报告的过程中，你很可能就自己找到了解决方法或权宜之计。</p>
 <h2 id="别动辄声称找到-Bug"><a href="#别动辄声称找到-Bug" class="headerlink" title="别动辄声称找到 Bug"></a>别动辄声称找到 Bug</h2><p>当你在使用软件中遇到问题，除非你非常、<strong>非常</strong>的有根据，不要动辄声称找到了 Bug。提示：除非你能提供解决问题的源代码补丁，或者提供回归测试来表明前一版本中行为不正确，否则你都多半不够完全确信。这同样适用在网页和文件，如果你（声称）发现了文件的<code>Bug</code>，你应该能提供相应位置的修正或替代文件。</p>
 <p>请记得，还有其他许多用户没遇到你发现的问题，否则你在阅读文件或搜索网页时就应该发现了（你在抱怨前<a href="#%E5%9C%A8%E6%8F%90%E9%97%AE%E4%B9%8B%E5%89%8D">已经做了这些，是吧</a>？）。这也意味着很有可能是你弄错了而不是软件本身有问题。</p>
@@ -505,7 +866,8 @@
 <h2 id="低声下气不能代替你的功课"><a href="#低声下气不能代替你的功课" class="headerlink" title="低声下气不能代替你的功课"></a>低声下气不能代替你的功课</h2><p>有些人明白他们不该粗鲁或傲慢的提问并要求得到答复，但他们选择另一个极端 —— 低声下气：<code>我知道我只是个可悲的新手，一个失败者，但...</code>。这既使人困扰，也没有用，尤其是伴随着与实际问题含糊不清的描述时更令人反感。</p>
 <p>别用原始灵长类动物的把戏来浪费你我的时间。取而代之的是，尽可能清楚地描述背景条件和你的问题情况。这比低声下气更好地定位了你的位置。</p>
 <p>有时网页论坛会设有专为新手提问的版面，如果你真的认为遇到了初学者的问题，到那去就是了，但一样别那么低声下气。</p>
-<h2 id="描述问题症状而非你的猜测"><a href="#描述问题症状而非你的猜测" class="headerlink" title="描述问题症状而非你的猜测"></a>描述问题症状而非你的猜测</h2><p>告诉”专家”们你认为问题是怎样造成的并没什么帮助。（如果你的推断如此有效，还用向别人求助吗？），因此要确信你原原本本告诉了他们问题的症状，而不是你的解释和理论；让”专家”们来推测和诊断。如果你认为陈述自己的猜测很重要，清楚地说明这只是你的猜测，并描述为什么它们不起作用。</p>
+<h2 id="描述问题症状而非你的猜测"><a href="#描述问题症状而非你的猜测" class="headerlink" title="描述问题症状而非你的猜测"></a>描述问题症状而非你的猜测</h2><p>告诉”专家”们你认为问题是怎样造成的并没什么帮助。（如果你的推断如此有效，还用向别人求助吗？）</p>
+<p>因此要确信你原原本本告诉了他们问题的症状，而不是你的解释和理论；让”专家”们来推测和诊断。如果你认为陈述自己的猜测很重要，清楚地说明这只是你的猜测，并描述为什么它们不起作用。</p>
 <p><strong>蠢问题</strong></p>
 <blockquote>
 <p>我在编译内核时接连遇到 SIG11 错误，<br>我怀疑某条飞线搭在主板的走线上了，这种情况应该怎样检查最好？</p>
@@ -536,8 +898,11 @@
 <p>如果你明确表述需要回答者做什么（如提供指点、发送一段代码、检查你的补丁、或是其他等等），就最有可能得到有用的答案。因为这会定出一个时间和精力的上限，便于回答者能集中精力来帮你。这么做很棒。</p>
 <p>要理解专家们所处的世界，请把专业技能想像为充裕的资源，而回复的时间则是稀缺的资源。你要求他们奉献的时间越少，你越有可能从真正专业而且很忙的专家那里得到解答。</p>
 <p>所以，界定一下你的问题，使专家花在辨识你的问题和回答所需要付出的时间减到最少，这技巧对你获得有用的答案相当有帮助 —— 但这技巧通常和简化问题有所区别。因此，问<code>我想更好地理解 X，可否指点一下哪有好一点说明？</code>通常比问<code>你能解释一下 X 吗？</code>更好。如果你的代码不能运作，通常请别人看看哪里有问题，比要求别人替你改正要明智得多。</p>
-<h2 id="询问有关代码的问题时"><a href="#询问有关代码的问题时" class="headerlink" title="询问有关代码的问题时"></a>询问有关代码的问题时</h2><p>如果没有提示别人应该从何入手，别要求他人帮你调试有问题的代码。张贴几百行的代码，然后说一声：<code>它不能工作</code>会让你完全被忽略。只贴几十行代码，然后说一句：<code>在第七行以后，我期待它显示 &lt;x&gt;，但实际出现的是 &lt;y&gt;</code>比较有可能让你得到回应。</p>
-<p>最有效描述程序问题的方法是提供最精简的 Bug 展示测试用例（bug-demonstrating test case）。什么是最精简的测试用例？那是问题的缩影；一小个程序片段能<strong>刚好</strong>展示出程序的异常行为，而不包含其他令人分散注意力的内容。怎么制作最精简的测试用例？如果你知道哪一行或哪一段代码会造成异常的行为，复制下来并加入足够重现这个状况的代码（例如，足以让这段代码能被编译&#x2F;直译&#x2F;被应用程序处理）。如果你无法将问题缩减到一个特定区块，就复制一份代码并移除不影响产生问题行为的部分。总之，测试用例越小越好（查看<a href="#%E8%AF%9D%E4%B8%8D%E5%9C%A8%E5%A4%9A%E8%80%8C%E5%9C%A8%E7%B2%BE">话不在多而在精</a>一节）。</p>
+<h2 id="询问有关代码的问题时"><a href="#询问有关代码的问题时" class="headerlink" title="询问有关代码的问题时"></a>询问有关代码的问题时</h2><p>如果没有提示别人应该从何入手，别要求他人帮你调试有问题的代码。张贴几百行的代码，然后说一声：<code>它不能工作</code>会让你完全被忽略。</p>
+<p>只贴几十行代码，然后说一句：<code>在第七行以后，我期待它显示 &lt;x&gt;，但实际出现的是 &lt;y&gt;</code>比较有可能让你得到回应。</p>
+<p>最有效描述程序问题的方法是提供最精简的 Bug 展示测试用例（bug-demonstrating test case）。</p>
+<p>什么是最精简的测试用例？那是问题的缩影；一小个程序片段能<strong>刚好</strong>展示出程序的异常行为，而不包含其他令人分散注意力的内容。</p>
+<p>怎么制作最精简的测试用例？如果你知道哪一行或哪一段代码会造成异常的行为，复制下来并加入足够重现这个状况的代码（例如，足以让这段代码能被编译&#x2F;直译&#x2F;被应用程序处理）。如果你无法将问题缩减到一个特定区块，就复制一份代码并移除不影响产生问题行为的部分。总之，测试用例越小越好（查看<a href="#%E8%AF%9D%E4%B8%8D%E5%9C%A8%E5%A4%9A%E8%80%8C%E5%9C%A8%E7%B2%BE">话不在多而在精</a>一节）。</p>
 <p>一般而言，要得到一段相当精简的测试用例并不太容易，但永远先尝试这样做是一个好习惯。这种方式可以帮助你了解如何自行解决这个问题 —— 而且即使你的尝试不成功，”专家”们也会看到你在尝试取得答案的过程中付出了努力，这可以让他们更愿意与你合作。</p>
 <p>如果你只是想让别人帮忙审查（Review）一下代码，在信的开头就要说出来，并且一定要提到你认为哪一部分特别需要关注以及为什么。</p>
 <h2 id="别把自己家庭作业的问题贴上来"><a href="#别把自己家庭作业的问题贴上来" class="headerlink" title="别把自己家庭作业的问题贴上来"></a>别把自己家庭作业的问题贴上来</h2><p>“专家”们很擅长分辨哪些问题是家庭作业式的问题；因为”专家”中的大多数都曾自己解决这类问题。同样，这些问题得由<strong>你</strong>来搞定，你会从中学到东西。你可以要求给点提示，但别要求得到完整的解决方案。</p>
@@ -562,8 +927,7 @@
 <p>至少，这种补充有助于让每位参与协助的人因问题的解决而从中得到满足感。如果你自己不是技术专家或者”专家”，那就相信”专家”，这种感觉对于那些你向他们求助的大师或者专家而言，是非常重要的。问题悬而未决会让人灰心；”专家”们渴望看到问题被解决。好人有好报，满足他们的渴望，你会在下次提问时尝到甜头。</p>
 <p>思考一下怎样才能避免他人将来也遇到类似的问题，自问写一份文件或加个常见问题（FAQ）会不会有帮助。如果是的话就将它们发给维护者。</p>
 <p>在”专家”中，这种良好的后继行动实际上比传统的礼节更为重要，也是你如何透过善待他人而赢得声誉的方式，这是非常有价值的资产。</p>
-<h1 id="如何解读答案"><a href="#如何解读答案" class="headerlink" title="如何解读答案"></a>如何解读答案</h1><p><a id="rtfm"></a></p>
-<h2 id="RTFM-和-STFW：如何知道你已完全搞砸了"><a href="#RTFM-和-STFW：如何知道你已完全搞砸了" class="headerlink" title="RTFM 和 STFW：如何知道你已完全搞砸了"></a>RTFM 和 STFW：如何知道你已完全搞砸了</h2><p>有一个古老而神圣的传统：如果你收到<code>RTFM（Read The Fucking Manual）</code>的回应，回答者认为你<strong>应该去读他妈的手册</strong>。当然，基本上他是对的，你应该去读一读。</p>
+<h1 id="如何解读答案"><a href="#如何解读答案" class="headerlink" title="如何解读答案"></a>如何解读答案</h1><h2 id="RTFM-和-STFW：如何知道你已完全搞砸了"><a href="#RTFM-和-STFW：如何知道你已完全搞砸了" class="headerlink" title="RTFM 和 STFW：如何知道你已完全搞砸了"></a><a href="RTFM">RTFM</a> 和 STFW：如何知道你已完全搞砸了</h2><p>有一个古老而神圣的传统：如果你收到<code>RTFM（Read The Fucking Manual）</code>的回应，回答者认为你<strong>应该去读他妈的手册</strong>。当然，基本上他是对的，你应该去读一读。</p>
 <p>RTFM 有一个年轻的亲戚。如果你收到<code>STFW（Search The Fucking Web）</code>的回应，回答者认为你<strong>应该到他妈的网上搜索</strong>。那人多半也是对的，去搜索一下吧。（更温和一点的说法是 **<a href="http://lmgtfy.com/">Google 是你的朋友</a>**！）</p>
 <p>在论坛，你也可能被要求去爬爬论坛的旧文。事实上，有人甚至可能热心地为你提供以前解决此问题的讨论串。但不要依赖这种关照，提问前应该先搜索一下旧文。</p>
 <p>通常，用这两句之一回答你的人会给你一份包含你需要内容的手册或者一个网址，而且他们打这些字的时候也正在读着。这些答复意味着回答者认为：</p>
@@ -573,7 +937,9 @@
 </ul>
 <p>你不应该因此不爽；<strong>依照”专家”的标准，他已经表示了对你一定程度的关注，而没有对你的要求视而不见</strong>。你应该对他祖母般的慈祥表示感谢。</p>
 <h2 id="如果还是搞不懂"><a href="#如果还是搞不懂" class="headerlink" title="如果还是搞不懂"></a>如果还是搞不懂</h2><p>如果你看不懂回应，别立刻要求对方解释。像你以前试着自己解决问题时那样（利用手册，FAQ，网络，身边的高手），先试着去搞懂他的回应。如果你真的需要对方解释，记得表现出你已经从中学到了点什么。</p>
-<p>比方说，如果我回答你：<code>看来似乎是 zentry 卡住了；你应该先清除它。</code>，然后，这是一个<strong>很糟的</strong>后续问题回应：<code>zentry 是什么？</code> <strong>好</strong>的问法应该是这样：<code>哦~~~我看过说明了但是只有 -z 和 -p 两个参数中提到了 zentries，而且还都没有清楚的解释如何清除它。你是指这两个中的哪一个吗？还是我看漏了什么？</code></p>
+<p>比方说，如果我回答你：<code>看来似乎是 zentry 卡住了；你应该先清除它。</code></p>
+<p><strong>很糟的</strong>后续问题回应：<code>zentry 是什么？</code> </p>
+<p><strong>好</strong>的问法应该是这样：<code>哦~~~我看过说明了但是只有 -z 和 -p 两个参数中提到了 zentries，而且还都没有清楚的解释如何清除它。你是指这两个中的哪一个吗？还是我看漏了什么？</code></p>
 <h2 id="处理无礼的回应"><a href="#处理无礼的回应" class="headerlink" title="处理无礼的回应"></a>处理无礼的回应</h2><p>很多”专家”圈子中看似无礼的行为并不是存心冒犯。相反，它是直截了当，一针见血式的交流风格，这种风格更注重解决问题，而不是使人感觉舒服而却模模糊糊。</p>
 <p>如果你觉得被冒犯了，试着平静地反应。如果有人真的做了出格的事，邮件列表、新闻群组或论坛中的前辈多半会招呼他。如果这<strong>没有</strong>发生而你却发火了，那么你发火对象的言语可能在”专家”社区中看起来是正常的，而<strong>你</strong>将被视为有错的一方，这将伤害到你获取信息或帮助的机会。</p>
 <p>另一方面，你偶尔真的会碰到无礼和无聊的言行。与上述相反，对真正的冒犯者狠狠地打击，用犀利的语言将其驳得体无完肤都是可以接受的。然而，在行事之前一定要非常非常的有根据。纠正无礼的言论与开始一场毫无意义的口水战仅一线之隔，”专家”们自己莽撞地越线的情况并不鲜见。如果你是新手或外人，避开这种莽撞的机会并不高。如果你想得到的是信息而不是消磨时光，这时最好不要把手放在键盘上以免冒险。</p>
@@ -585,8 +951,9 @@
 <p>熬过去，这很正常。事实上，它是有益健康且合理的。</p>
 <p>社区的标准不会自行维持，它们是通过参与者积极而<strong>公开地</strong>执行来维持的。不要哭嚎所有的批评都应该通过私下的邮件传送，它不是这样运作的。当有人评论你的一个说法有误或者提出不同看法时，坚持声称受到个人攻击也毫无益处，这些都是失败者的态度。</p>
 <p>也有其它的”专家”论坛，受过高礼节要求的误导，禁止参与者张贴任何对别人帖子挑毛病的消息，并声称<code>如果你不想帮助用户就闭嘴。</code> 结果造成有想法的参与者纷纷离开，这么做只会使它们沦为毫无意义的唠叨与无用的技术论坛。</p>
-<p>夸张的讲法是：你要的是“友善”（以上述方式）还是有用？两个里面挑一个。</p>
-<p>记着：当”专家”说你搞砸了，并且（无论多么刺耳）告诉你别再这样做时，他正在为关心<strong>你</strong>和<strong>他的社区</strong>而行动。对他而言，不理你并将你从他的生活中滤掉更简单。如果你无法做到感谢，至少要表现得有点尊严，别大声哀嚎，也别因为自己是个有戏剧性超级敏感的灵魂和自以为有资格的新来者，就指望别人像对待脆弱的洋娃娃那样对你。</p>
+<p>夸张的讲法是：你要的是“友善”（以上述方式）还是“有用”？两个里面挑一个。</p>
+<p>记着：当”专家”说你搞砸了，并且（无论多么刺耳）告诉你别再这样做时，他正在为关心<strong>你</strong>和<strong>他的社区</strong>而行动。</p>
+<p>对他而言，不理你并将你从他的生活中滤掉更简单。如果你无法做到感谢，至少要表现得有点尊严，别大声哀嚎，也别因为自己是个有戏剧性超级敏感的灵魂和自以为有资格的新来者，就指望别人像对待脆弱的洋娃娃那样对你。</p>
 <p>有时候，即使你没有搞砸（或者只是在他的想像中你搞砸了），有些人也会无缘无故地攻击你本人。在这种情况下，抱怨倒是<strong>真的</strong>会把问题搞砸。</p>
 <p>这些来找麻烦的人要么是毫无办法但自以为是专家的不中用家伙，要么就是测试你是否真会搞砸的心理专家。其它读者要么不理睬，要么用自己的方式对付他们。这些来找麻烦的人在给他们自己找麻烦，这点你不用操心。</p>
 <p>也别让自己卷入口水战，最好不要理睬大多数的口水战 —— 当然，这是在你检验它们只是口水战，并且未指出你有搞砸的地方，同时也没有巧妙地将问题真正的答案藏于其后（这也是有可能的）。</p>
@@ -601,17 +968,14 @@
 <p>问题：<a href="#q8">我在安装 Linux（或者 X ）时有问题，你能帮我吗？</a></p>
 <p>问题：<a href="#q9">我怎么才能破解 root 帐号&#x2F;窃取 OP 特权&#x2F;读别人的邮件呢？</a></p>
 <hr>
-<p><a id="q1"></a></p>
 <blockquote>
 <p>问题：我能在哪找到 X 程序或 X 资源？</p>
 </blockquote>
 <p>回答：就在我找到它的地方啊，白痴 —— 搜索引擎的那一头。天哪！难道还有人不会用 <a href="https://www.google.com/">Google</a> 吗？</p>
-<p><a id="q2"></a></p>
 <blockquote>
 <p>问题：我怎样用 X 做 Y？</p>
 </blockquote>
 <p>回答：如果你想解决的是 Y ，提问时别给出可能并不恰当的方法。这种问题说明提问者不但对 X 完全无知，也对 Y 要解决的问题糊涂，还被特定形势禁锢了思维。最好忽略这种人，等他们把问题搞清楚了再说。</p>
-<p><a id="q3"></a></p>
 <blockquote>
 <p>问题：如何设定我的 shell 提示？？</p>
 </blockquote>
@@ -621,7 +985,6 @@
 <p>问题：我可以用 Bass-o-matic 文件转换工具将 AcmeCorp 文件转换为 TeX 格式吗？</p>
 </blockquote>
 <p>回答：试试看就知道了。如果你试过，你就知道了答案，就不用浪费我的时间了。</p>
-<p><a id="q5"></a></p>
 <blockquote>
 <p>问题：我的{程序&#x2F;设定&#x2F;SQL 语句}没有用</p>
 </blockquote>
@@ -631,24 +994,20 @@
 <li>真糟糕，希望你能搞定。</li>
 <li>这关我屁事？</li>
 </ul>
-<p><a id="q6"></a></p>
 <blockquote>
 <p>问题：我的 Windows 电脑有问题，你能帮我吗？</p>
 </blockquote>
 <p>回答：能啊，扔掉微软的垃圾，换个像 Linux 或 BSD 的开源操作系统吧。</p>
 <p>注意：如果程序有官方版 Windows 或者与 Windows 有互动（如 Samba），你<strong>可以</strong>问与 Windows 相关的问题，只是别对问题是由 Windows 操作系统而不是程序本身造成的回复感到惊讶， 因为 Windows 一般来说实在太烂，这种说法通常都是对的。</p>
-<p><a id="q7"></a></p>
 <blockquote>
 <p>问题：我的程序不会动了，我认为系统工具 X 有问题</p>
 </blockquote>
 <p>回答：你完全有可能是第一个注意到被成千上万用户反复使用的系统调用与函数库文件有明显缺陷的人，更有可能的是你完全没有根据。不同凡响的说法需要不同凡响的证据，当你这样声称时，你必须有清楚而详尽的缺陷说明文件作后盾。</p>
-<p><a id="q8"></a></p>
 <blockquote>
 <p>问题：我在安装 Linux（或者 X ）时有问题，你能帮我吗？</p>
 </blockquote>
 <p>回答：不能，我只有亲自在你的电脑上动手才能找到毛病。还是去找你当地的 Linux 使用群组者寻求实际的指导吧（你能在<a href="http://www.linux.org/groups/index.html">这儿</a>找到用户群组的清单）。</p>
 <p>注意：如果安装问题与某 Linux 的发行版有关，在它的邮件列表、论坛或本地用户群组中提问也许是恰当的。此时，应描述问题的准确细节。在此之前，先用 <code>Linux</code> 和<strong>所有</strong>被怀疑的硬件作关键词仔细搜索。</p>
-<p><a id="q9"></a></p>
 <blockquote>
 <p>问题：我怎么才能破解 root 帐号&#x2F;窃取 OP 特权&#x2F;读别人的邮件呢？</p>
 </blockquote>
@@ -1972,7 +2331,7 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#x72;&#107;&#101;&#115;&#105;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;">&#x65;&#x72;&#107;&#101;&#115;&#105;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#107;&#101;&#x73;&#105;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;">&#101;&#114;&#107;&#101;&#x73;&#105;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -2004,7 +2363,7 @@ sh.exit();
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#x6b;&#x65;&#x73;&#x69;&#64;&#113;&#x71;&#46;&#99;&#111;&#x6d;">&#x65;&#x72;&#x6b;&#x65;&#x73;&#x69;&#64;&#113;&#x71;&#46;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#107;&#x65;&#x73;&#x69;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#x65;&#x72;&#107;&#x65;&#x73;&#x69;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -2024,9 +2383,9 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#111;&#109;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;">&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#111;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
