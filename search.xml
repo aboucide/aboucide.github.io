@@ -2531,7 +2531,7 @@ sh.exit();
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#x72;&#x6b;&#x65;&#x73;&#105;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#101;&#x72;&#x6b;&#x65;&#x73;&#105;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#107;&#x65;&#115;&#x69;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#x65;&#x72;&#107;&#x65;&#115;&#x69;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -2551,9 +2551,9 @@ sh.exit();
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
