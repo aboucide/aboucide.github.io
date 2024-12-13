@@ -1,0 +1,455 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>传感器 sensors | 源的自留地</title><meta name="author" content="Yuan"><meta name="copyright" content="Yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="学习更复杂的数据类型：数组、映射、集合等。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="传感器 sensors">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/blog/note/code/AutoXjs/sensors.html">
+<meta property="og:site_name" content="源的自留地">
+<meta property="og:description" content="学习更复杂的数据类型：数组、映射、集合等。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://doc.autoxjs.com/images/logo.png">
+<meta property="article:published_time" content="2024-12-11T16:22:47.000Z">
+<meta property="article:modified_time" content="2024-12-13T13:29:05.319Z">
+<meta property="article:author" content="Yuan">
+<meta property="article:tag" content="AutoX.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://doc.autoxjs.com/images/logo.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/blog/note/code/AutoXjs/sensors.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-3082128886989266',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4901b9157b9977471169d4b6f8d60640";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4MHS6HL58"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D4MHS6HL58');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '传感器 sensors',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-12-13 13:29:05'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">23</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="源的自留地"><span class="site-name">源的自留地</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">传感器 sensors<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/AutoX.js使用说明/传感器Sensors.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2024-12-11T16:22:47.000Z" title="发表日期 2024-12-11 16:22:47">2024-12-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2024-12-13T13:29:05.319Z" title="最近更新日期 2024-12-13 13:29:05">2024-12-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/note/">笔记</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/note/%E7%BC%96%E7%A8%8B/">编程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/note/%E7%BC%96%E7%A8%8B/AutoX-js/">AutoX.js</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="传感器 sensors"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="Sensors"><a href="#Sensors" class="headerlink" title="Sensors"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensors">Sensors</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>sensors 模块提供了获取手机上的传感器的信息的支持，这些传感器包括距离传感器、光线光感器、重力传感器、方向传感器等。需要指出的是，脚本只能获取传感器的数据，<strong>不能模拟或伪造传感器的数据和事件</strong>，因此诸如模拟摇一摇的功能是无法实现的。</p>
+<p>要监听一个传感器时，需要使用<code>sensors.register()</code>注册监听器，之后才能开始监听；不需要监听时则调用<code>sensors.unregister()</code>注销监听器。在脚本结束时会自动注销所有的监听器。同时，这种监听会使脚本保持运行状态，如果不注销监听器，脚本会一直保持运行状态。</p>
+<p>例如，监听光线传感器的代码为：</p>
+<pre><code>//光线传感器监听
+sensors.register(&quot;light&quot;).on(&quot;change&quot;, (event, light)=&gt;&#123;
+    log(&quot;当前光强度为&quot;, light);
+&#125;);
+</code></pre>
+<p>要注意的是，每个传感器的数据并不相同，所以对他们调用<code>on()</code>监听事件时的回调函数参数也不是相同，例如光线传感器参数为<code>(event, light)</code>，加速度传感器参数为<code>(event, ax, ay, az)</code>。甚至在某些设备上的传感器参数有所增加，例如华为手机的距离传感器为三个参数，一般手机只有一个参数。</p>
+<p>常用的传感器及其事件参数如下表：</p>
+<ul>
+<li><p><code>accelerometer</code> 加速度传感器，参数<code>(event, ax, ay, az)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>ax</code> {number} x 轴上的加速度，单位 m&#x2F;s^2</li>
+<li><code>ay</code> {number} y 轴上的加速度，单位 m&#x2F;s^2</li>
+<li><code>az</code> {number} z 轴上的加速度，单位 m&#x2F;s^2 这里的 x 轴，y 轴，z 轴所属的坐标系统如下图(其中 z 轴垂直于设备屏幕表面):</li>
+</ul>
+<p>!<img src="http://doc.autoxjs.com/axis_device.png" alt="axis_device"></p>
+</li>
+<li><p><code>orientation</code> 方向传感器，参数<code>(event, azimuth, pitch, roll)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>azimuth</code> {number} 方位角，从地磁指北方向线起，依顺时针方向到 y 轴之间的水平夹角，单位角度，范围 0~359</li>
+<li><code>pitch</code> {number} 绕 x 轴旋转的角度，当设备水平放置时该值为 0，当设备顶部翘起时该值为正数，当设备尾部翘起时该值为负数，单位角度，范围-180~180</li>
+<li><code>roll</code> {number} 绕 y 轴顺时针旋转的角度，单位角度，范围-90~90</li>
+</ul>
+</li>
+<li><p><code>gyroscope</code> 陀螺仪传感器，参数<code>(event, wx, wy, wz)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>wx</code> {number} 绕 x 轴的角速度，单位弧度&#x2F;s</li>
+<li><code>wy</code> {number} 绕 y 轴的角速度，单位弧度&#x2F;s</li>
+<li><code>wz</code> {number} 绕 z 轴的角速度，单位弧度&#x2F;s</li>
+</ul>
+</li>
+<li><p><code>magnetic_field</code> 磁场传感器，参数<code>(event, bx, by, bz)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>bx</code> {number} x 轴上的磁场强度，单位 uT</li>
+<li><code>by</code> {number} y 轴上的磁场强度，单位 uT</li>
+<li><code>bz</code> {number} z 轴上的磁场强度，单位 uT</li>
+</ul>
+</li>
+<li><p><code>gravity</code> 重力传感器，参数<code>(event, gx, gy, gz)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>gx</code> {number} x 轴上的重力加速度，单位 m&#x2F;s^2</li>
+<li><code>gy</code> {number} y 轴上的重力加速度，单位 m&#x2F;s^2</li>
+<li><code>gz</code> {number} z 轴上的重力加速度，单位 m&#x2F;s^2</li>
+</ul>
+</li>
+<li><p><code>linear_acceleration</code> 线性加速度传感器，参数<code>(event, ax, ay, az)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>ax</code> {number} x 轴上的线性加速度，单位 m&#x2F;s^2</li>
+<li><code>ay</code> {number} y 轴上的线性加速度，单位 m&#x2F;s^2</li>
+<li><code>az</code> {number} z 轴上的线性加速度，单位 m&#x2F;s^2</li>
+</ul>
+</li>
+<li><p><code>ambient_temperature</code> 环境温度传感器，大部分设备并不支持，参数<code>(event, t)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>t</code> {number} 环境温度，单位摄氏度。</li>
+</ul>
+</li>
+<li><p><code>light</code> 光线传感器，参数<code>(event, light)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>light</code> {number} 环境光强度，单位 lux</li>
+</ul>
+</li>
+<li><p><code>pressure</code> 压力传感器，参数<code>(event, p)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>p</code> {number} 大气压，单位 hPa</li>
+</ul>
+</li>
+<li><p><code>proximity</code> 距离传感器，参数<code>(event, distance)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>distance</code> {number} 一般指设备前置摄像头旁边的距离传感器到前方障碍物的距离，并且很多设备上这个值只有两种情况：当障碍物较近时该值为 0，当障碍物较远或在范围内没有障碍物时该值为 5</li>
+</ul>
+</li>
+<li><p><code>relative_humidity</code> 湿度传感器，大部分设备并不支持，参数<code>(event, rh)</code>:</p>
+<ul>
+<li><code>event</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>rh</code> {number} 相对湿度，范围为 0~100（百分比）</li>
+</ul>
+</li>
+</ul>
+<h2 id="sensors-register-sensorName-delay"><a href="#sensors-register-sensorName-delay" class="headerlink" title="sensors.register(sensorName[, delay])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorsregistersensorname-delay">sensors.register(sensorName[, delay])</a></h2><ul>
+<li><code>sensorName</code> {string} 传感器名称，常用的传感器名称如上面所述</li>
+<li><code>delay</code> {number} 传感器数据更新频率，可选，默认为<code>sensors.delay.normal</code>。可用的值如下：<ul>
+<li><code>sensors.delay.normal</code> 正常频率</li>
+<li><code>sensors.delay.ui</code> 适合于用户界面的更新频率</li>
+<li><code>sensors.delay.game</code> 适合于游戏的更新频率</li>
+<li><code>sensors.delay.fastest</code> 最快的更新频率】</li>
+</ul>
+</li>
+<li>返回 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmiiter</a></li>
+</ul>
+<p>注册一个传感器监听并返回<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>。</p>
+<p>例如:</p>
+<pre><code>console.show();
+//注册传感器监听
+var sensor = sensors.register(&quot;gravity&quot;);
+if(sensor == null)&#123;
+    toast(&quot;不支持重力传感器&quot;);
+    exit();
+&#125;
+//监听数据
+sensor.on(&quot;change&quot;, (gx, gy, gz)=&gt;&#123;
+    log(&quot;重力加速度: %d, %d, %d&quot;, gx, gy, gz);
+&#125;);
+</code></pre>
+<p>可以通过 delay 参数来指定传感器数据的更新频率，例如：</p>
+<pre><code>var sensor = sensors.register(&quot;gravity&quot;, sensors.delay.game);
+</code></pre>
+<p>另外，如果不支持<code>sensorName</code>所指定的传感器，那么该函数将返回<code>null</code>；但如果<code>sensors.ignoresUnsupportedSensor</code>的值被设置为<code>true</code>, 则该函数会返回一个不会分发任何传感器事件的<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>。</p>
+<p>例如:</p>
+<pre><code>sensors.ignoresUnsupportedSensor = true;
+//无需null判断
+sensors.register(&quot;gravity&quot;).on(&quot;change&quot;, (gx, gy, gz)=&gt;&#123;
+    log(&quot;重力加速度: %d, %d, %d&quot;, gx, gy, gz);
+&#125;);
+</code></pre>
+<p>更多信息，参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>和<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=ignoresunsupportedsensor">sensors.ignoresUnsupportedSensor</a>。</p>
+<h2 id="sensors-unregister-emitter"><a href="#sensors-unregister-emitter" class="headerlink" title="sensors.unregister(emitter)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorsunregisteremitter">sensors.unregister(emitter)</a></h2><ul>
+<li><code>emiiter</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a></li>
+</ul>
+<p>注销该传感器监听器。被注销的监听器将不再能监听传感器数据。</p>
+<pre><code>//注册一个传感器监听器
+var sensor = sensors.register(&quot;gravity&quot;);
+if(sensor == null)&#123;
+    exit();
+&#125;
+//2秒后注销该监听器
+setTimeout(()=&gt; &#123;
+    sensors.unregister(sensor);
+&#125;, 2000);
+</code></pre>
+<h2 id="sensors-unregisterAll"><a href="#sensors-unregisterAll" class="headerlink" title="sensors.unregisterAll()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorsunregisterall">sensors.unregisterAll()</a></h2><p>注销所有传感器监听器。</p>
+<h2 id="sensors-ignoresUnsupportedSensor"><a href="#sensors-ignoresUnsupportedSensor" class="headerlink" title="sensors.ignoresUnsupportedSensor"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensorsignoresunsupportedsensor">sensors.ignoresUnsupportedSensor</a></h2><ul>
+<li>{boolean}</li>
+</ul>
+<p>表示是否忽略不支持的传感器。如果该值被设置为<code>true</code>，则函数<code>sensors.register()</code>即使对不支持的传感器也会返回一个无任何数据的虚拟传感器监听，也就是<code>sensors.register()</code>不会返回<code>null</code>从而避免非空判断，并且此时会触发<code>sensors</code>的”unsupported_sensor”事件。</p>
+<pre><code>//忽略不支持的传感器
+sensors.ignoresUnsupportedSensor = true;
+//监听有不支持的传感器时的事件
+sensors.on(&quot;unsupported_sensor&quot;, function(sensorName)&#123;
+    toastLog(&quot;不支持的传感器: &quot; + sensorName);
+&#125;);
+//随便注册一个不存在的传感器。
+log(sensors.register(&quot;aaabbb&quot;));
+</code></pre>
+<h2 id="事件-‘unsupported-sensor’"><a href="#事件-‘unsupported-sensor’" class="headerlink" title="事件: ‘unsupported_sensor’"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39unsupported_sensor39">事件: ‘unsupported_sensor’</a></h2><ul>
+<li><code>sensorName</code> {string} 不支持的传感器名称</li>
+</ul>
+<p>当<code>sensors.ignoresUnsupportedSensor</code>被设置为<code>true</code>并且有不支持的传感器被注册时触发该事件。事件参数的传感器名称。</p>
+<h2 id="SensorEventEmitter"><a href="#SensorEventEmitter" class="headerlink" title="SensorEventEmitter"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a></h2><p>注册传感器返回的对象，其本身是一个 EventEmmiter，用于监听传感器事件。</p>
+<h2 id="事件-‘change’"><a href="#事件-‘change’" class="headerlink" title="事件: ‘change’"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39change39">事件: ‘change’</a></h2><ul>
+<li><code>..args</code> {Any} 传感器参数</li>
+</ul>
+<p>当传感器数据改变时触发该事件；该事件触发的最高频繁由<code>sensors.register()</code>指定的 delay 参数决定。</p>
+<p>事件参数根据传感器类型不同而不同，具体参见本章最前面的列表。</p>
+<p>一个监听光线传感器和加速度传感器并且每 0.5 秒获取一个数据并最终写入一个 csv 表格文件的例子如下：</p>
+<pre><code>//csv文件路径
+cosnt csvPath = &quot;/sdcard/data.csv&quot;;
+//记录光线传感器的数据
+var light = 0;
+//记录加速度传感器的数据
+var ax = 0;
+var ay = 0;
+var az = 0;
+//监听光线传感器
+sensors.register(&quot;light&quot;, sensors.delay.fastest)
+    .on(&quot;change&quot;, l =&gt; &#123;
+        light = l;
+    &#125;);
+//监听加速度传感器
+sensors.register(&quot;accelerometer&quot;, sensors.delay.fastest)
+    .on(&quot;change&quot;, (ax0, ay0, az0) =&gt; &#123;
+        ax = ax0;
+        ay = ay0;
+        az = az0;
+    &#125;);
+
+var file = open(csvPath, &quot;w&quot;);
+//写csv表格头
+file.writeline(&quot;light,ax,ay,az&quot;)
+//每0.5秒获取一次数据并写入文件
+setInterval(()=&gt;&#123;
+    file.writeline(util.format(&quot;%d,%d,%d,%d&quot;, light, ax, ay, az));
+&#125;, 500);
+//10秒后退出并打开文件
+setTimeout(()=&gt;&#123;
+    file.close();
+    sensors.unregsiterAll();
+    app.viewFile(csvPath);
+&#125;, 10 * 1000);
+</code></pre>
+<h2 id="事件-‘accuracy-change’"><a href="#事件-‘accuracy-change’" class="headerlink" title="事件: ‘accuracy_change’"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39accuracy_change39">事件: ‘accuracy_change’</a></h2><ul>
+<li><code>accuracy</code> {number} 表示传感器精度。为以下值之一:<ul>
+<li>-1 传感器未连接</li>
+<li>0 传感器不可读</li>
+<li>1 低精度</li>
+<li>2 中精度</li>
+<li>3 高精度</li>
+</ul>
+</li>
+</ul>
+<p>当传感器精度改变时会触发的事件。比较少用。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AutoX-js/">AutoX.js</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/blog/note/code/AutoXjs/moudle.html" title="模块 moudle"><img class="cover" src="http://doc.autoxjs.com/images/logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">模块 moudle</div></div></a></div><div class="next-post pull-right"><a href="/blog/note/code/AutoXjs/UiSelect.html" title="多媒体 media"><img class="cover" src="http://doc.autoxjs.com/images/logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">多媒体 media</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/blog/note/code/AutoXjs/UiSelect.html" title="多媒体 media"><img class="cover" src="http://doc.autoxjs.com/images/logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2024-12-13</div><div class="title">多媒体 media</div></div></a></div><div><a href="/blog/note/code/AutoXjs/base64.html" title="Base64 编码"><img class="cover" src="http://doc.autoxjs.com/images/logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2024-12-13</div><div class="title">Base64 编码</div></div></a></div><div><a href="/blog/note/code/AutoXjs/webview-html.html" title="webview 与 HTML"><img class="cover" src="http://doc.autoxjs.com/images/logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2024-12-13</div><div class="title">webview 与 HTML</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">23</div></a></div><a id="card-info-btn" href="mailto:ahoucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Sensors"><span class="toc-number">1.</span> <span class="toc-text">Sensors</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sensors-register-sensorName-delay"><span class="toc-number">2.</span> <span class="toc-text">sensors.register(sensorName[, delay])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sensors-unregister-emitter"><span class="toc-number">3.</span> <span class="toc-text">sensors.unregister(emitter)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sensors-unregisterAll"><span class="toc-number">4.</span> <span class="toc-text">sensors.unregisterAll()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sensors-ignoresUnsupportedSensor"><span class="toc-number">5.</span> <span class="toc-text">sensors.ignoresUnsupportedSensor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98unsupported-sensor%E2%80%99"><span class="toc-number">6.</span> <span class="toc-text">事件: ‘unsupported_sensor’</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SensorEventEmitter"><span class="toc-number">7.</span> <span class="toc-text">SensorEventEmitter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98change%E2%80%99"><span class="toc-number">8.</span> <span class="toc-text">事件: ‘change’</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98accuracy-change%E2%80%99"><span class="toc-number">9.</span> <span class="toc-text">事件: ‘accuracy_change’</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2024-12-13T13:29:05.323Z" title="发表日期 2024-12-13 13:29:05">2024-12-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2024-12-13T13:29:05.319Z" title="发表日期 2024-12-13 13:29:05">2024-12-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/AutoXjs/base64.html" title="Base64 编码"><img src="http://doc.autoxjs.com/images/logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Base64 编码"/></a><div class="content"><a class="title" href="/blog/note/code/AutoXjs/base64.html" title="Base64 编码">Base64 编码</a><time datetime="2024-12-11T16:22:47.000Z" title="发表日期 2024-12-11 16:22:47">2024-12-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/AutoXjs/webview-html.html" title="webview 与 HTML"><img src="http://doc.autoxjs.com/images/logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="webview 与 HTML"/></a><div class="content"><a class="title" href="/blog/note/code/AutoXjs/webview-html.html" title="webview 与 HTML">webview 与 HTML</a><time datetime="2024-12-11T16:22:47.000Z" title="发表日期 2024-12-11 16:22:47">2024-12-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/AutoXjs/axios.html" title="axios"><img src="http://doc.autoxjs.com/images/logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="axios"/></a><div class="content"><a class="title" href="/blog/note/code/AutoXjs/axios.html" title="axios">axios</a><time datetime="2024-12-11T16:22:47.000Z" title="发表日期 2024-12-11 16:22:47">2024-12-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Yuan</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'aboucide/hexo-aboucide-comment',
+      'data-repo-id': 'R_kgDOM8yVSQ',
+      'data-category-id': 'DIC_kwDOM8yVSc4CjJFp',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
