@@ -3092,13 +3092,13 @@ sh.exit();
 </thead>
 <tbody><tr>
 <td>仙逆⭐⭐⭐⭐⭐</td>
-<td align="left">2024年12月 4 日   看完第 66 集</td>
-<td>王林准备返回家乡。</td>
+<td align="left">2025年2月21日   看完第 76 集</td>
+<td>王林准备收集物资救对象。</td>
 </tr>
 <tr>
 <td>凡人修仙传⭐⭐⭐⭐⭐</td>
-<td align="left">2024年10月21日   看完第124集</td>
-<td>年番结束了。下一次开播不知道是何日。。</td>
+<td align="left">2025年2月20日   看完第130集</td>
+<td>风雷翅炼制完毕。</td>
 </tr>
 <tr>
 <td>遮天<br />⭐⭐⭐⭐⭐<br /></td>
@@ -3131,8 +3131,8 @@ sh.exit();
 <td>秦牧刚刚破壁成功。</td>
 </tr>
 <tr>
-<td></td>
-<td align="left"></td>
+<td>大道朝天⭐⭐⭐</td>
+<td align="left">2025年1月21日 看完第1季（共16集）</td>
 <td></td>
 </tr>
 <tr>
@@ -7287,7 +7287,7 @@ device.vibrate(2000);
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#x72;&#107;&#101;&#x73;&#105;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#x65;&#x72;&#107;&#101;&#x73;&#105;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#x6b;&#x65;&#115;&#105;&#x40;&#113;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#101;&#114;&#x6b;&#x65;&#115;&#105;&#x40;&#113;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -7319,7 +7319,7 @@ device.vibrate(2000);
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#x72;&#107;&#101;&#115;&#105;&#x40;&#113;&#113;&#46;&#x63;&#x6f;&#109;">&#101;&#x72;&#107;&#101;&#115;&#105;&#x40;&#113;&#113;&#46;&#x63;&#x6f;&#109;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#x72;&#x6b;&#x65;&#x73;&#105;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#101;&#x72;&#x6b;&#x65;&#x73;&#105;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -7339,9 +7339,9 @@ device.vibrate(2000);
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#109;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#109;">&#103;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
@@ -8250,7 +8250,11 @@ device.vibrate(2000);
 </li>
 </ul>
 <h3 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h3><h2 id="选择器的优先级（权重）"><a href="#选择器的优先级（权重）" class="headerlink" title="选择器的优先级（权重）"></a>选择器的优先级（权重）</h2><hr>
-<h1 id="CSS-三大特性"><a href="#CSS-三大特性" class="headerlink" title="CSS 三大特性"></a>CSS 三大特性</h1><h1 id="CSS-常用属性"><a href="#CSS-常用属性" class="headerlink" title="CSS 常用属性"></a>CSS 常用属性</h1><h1 id="CSS-盒子模型"><a href="#CSS-盒子模型" class="headerlink" title="CSS 盒子模型"></a>CSS 盒子模型</h1><h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><h1 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h1><h1 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h1>]]></content>
+<h1 id="CSS-三大特性"><a href="#CSS-三大特性" class="headerlink" title="CSS 三大特性"></a>CSS 三大特性</h1><h2 id="层叠性"><a href="#层叠性" class="headerlink" title="层叠性"></a>层叠性</h2><p>如果发生了样式冲突，那就会根据一定的规则（选择器优先级），进行样式的层叠（覆盖）。</p>
+<blockquote>
+<p>什么是样式冲突？ ——— 元素的同一个样式名，被设置了不同的值，这就是冲突。</p>
+</blockquote>
+<h2 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h2><h2 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h2><h1 id="CSS-常用属性"><a href="#CSS-常用属性" class="headerlink" title="CSS 常用属性"></a>CSS 常用属性</h1><h1 id="CSS-盒子模型"><a href="#CSS-盒子模型" class="headerlink" title="CSS 盒子模型"></a>CSS 盒子模型</h1><h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><h1 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h1><h1 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h1>]]></content>
       <categories>
         <category>笔记</category>
         <category>编程</category>
