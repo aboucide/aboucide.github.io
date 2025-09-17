@@ -1,6 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C语言编程环境搭建</title>
+    <url>//blog/note/code/cprogramming/c01.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="C语言编程环境搭建"><a href="#C语言编程环境搭建" class="headerlink" title="C语言编程环境搭建"></a>C语言编程环境搭建</h1><p>C语言的编程环境搭建，只需要两个条件：</p>
+<ul>
+<li>代码编辑器</li>
+<li>C语言编译器</li>
+</ul>
+<p><code>代码编辑器</code>：理论上任何能编辑文本的软件都可以充当代码编辑器。但这里，我推荐使用<code>VSCode</code>作为代码编辑器。</p>
+<p><code>C语言编译器</code>：因为C语言是高级编程语言，需要相应的编译器才能将代码转换为程序。C语言的编译器有很多，这里推荐Windows系统使用<code>MinGW-w64</code>编译器。</p>
+<hr>
+<p>以下是具体步骤</p>
+<h3 id="1、下载vsCode"><a href="#1、下载vsCode" class="headerlink" title="1、下载vsCode"></a>1、下载vsCode</h3><p>打开<a href="https://code.visualstudio.com/">vsCode官网</a>，点击<code>Download</code>下载vsCode。</p>
+<p>若无法打开官网，也可点击这里进行下载。（建议去官网下载）<a href="https://www.123684.com/s/AQV0Vv-VOhiH">备用下载vsCode</a></p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2ly8i5eubn1215j30zm0u0dne.jpg"  style="zoom:50%;" />
+
+
+
+<h3 id="2、下载C语言编译器"><a href="#2、下载C语言编译器" class="headerlink" title="2、下载C语言编译器"></a>2、下载C语言编译器</h3><p>打开<a href="https://github.com/niXman/mingw-builds-binaries/releases">MinGW-w64发布页</a>，下载C语言编译器。</p>
+<p>Windows系统推荐下载<code>x86_64-15.2.0-release-posix-seh-ucrt-rt_v13-rev0.7z</code>，如下图所示。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2gy1i5gpg69pioj30w20y2h0f.jpg"  style="zoom:50%;" />
+
+<p>对各文件的命名和区别好奇的朋友们，可以截图问Ai。</p>
+<p><a href="https://chinese.lanzout.com/iKAE436e62sf">15.2.0备用下载</a>  截止2025-09-17，看到的最新版为2025年8月13日上传的15.2.0版本。</p>
+<h3 id="3、安装C语言编译器"><a href="#3、安装C语言编译器" class="headerlink" title="3、安装C语言编译器"></a>3、安装C语言编译器</h3><p>1️⃣双击打开刚刚下载的<code>x86_64-15.2.0-release-posix-seh-ucrt-rt_v13-rev0.7z 压缩包</code>，把里面的<code>mingw64</code>文件夹解压到电脑的某个位置。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2gy1i5gpfzi8g1j30yl09wjxc.jpg"  style="zoom:50%;" />
+
+<p>例如，我这里把压缩包里面的<code>mingw64</code>文件夹解压到了<code>E盘的Cprogramming文件夹</code>。</p>
+<p>（注意！！！，这个路径中<code>不能有中文</code>，否则将来无法运行代码）</p>
+<img src="https://image.baidu.com/search/down?url=https://wx2.sinaimg.cn/mw2000/007ERWx2gy1i5gpg9k7ewj311n094tay.jpg"  style="zoom:50%;" />
+
+<p>2️⃣配置环境变量</p>
+<p>1、进入<code>mingw64</code>文件夹后，你会看到一个名为<code>bin</code>的文件夹，选中它然后右键，选择复制文件地址。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2gy1i5gpgv0j6wj31110wjdoz.jpg"  style="zoom:50%;" />
+
+
+
+<p>2、按下<code>win</code>键，就是那个带有<code>Windows图标</code>的那个键，一般在<code>Alt键</code>的旁边，在弹出的搜索框中输入<code>环境变量</code>，单击搜索结果中的<code>编辑系统环境变量</code>。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx1.sinaimg.cn/mw2000/007ERWx2gy1i5gphcjqahj30qn0qxaj5.jpg"  style="zoom:50%;" />
+
+<p>3、在新弹出的窗口中，点击<code>环境变量</code>按钮。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2gy1i5gphoo85fj30gv0jh78a.jpg"  style="zoom:50%;" />
+
+<p>4、在<code>系统变量</code>一栏中，找到变量名称为<code>Path</code>一行，单击选中，再点击编辑。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx2.sinaimg.cn/mw2000/007ERWx2gy1i5gpioh16ij30ls0lpk2m.jpg"  style="zoom:50%;" />
+
+<p>5、点击<code>新建</code>，直接粘贴刚刚复制的文件地址。切记你粘贴后，记得手动删掉引号。</p>
+<p>然后一路点击<code>确定</code>，逐个关闭配置环境变量的这些窗口即可。</p>
+<p>至此，环境变量已经配置完成啦！</p>
+<img src="https://image.baidu.com/search/down?url=https://wx2.sinaimg.cn/mw2000/007ERWx2gy1i5gpja8jqqj30io0i6dmi.jpg"  style="zoom:50%;" />
+
+<p>6、验证环境变量是否搭建成功</p>
+<p>（1）按下<code>win键</code>+<code>R</code>，输入<code>cmd</code>，按下回车确认，就可以打开<code>CMD</code>。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx2.sinaimg.cn/mw2000/007ERWx2gy1i5gpjwjoqhj30mx0bg0w1.jpg"  style="zoom:50%;" />	
+
+<p>（2）输入<code>gcc -v</code>，按回车确认。若能看到一大串文本，说明你小子过关啦！</p>
+<p>如果配置失败，则你看到的应该是<code>&#39;gcc&#39; 不是内部或外部命令，也不是可运行的程序 或批处理文件</code> 。要是失败了，你就再按教程重新来过一遍。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx3.sinaimg.cn/mw2000/007ERWx2gy1i5gpkk8z9cj314y0idh10.jpg"  style="zoom:50%;" />
+
+
+
+<h3 id="4、安装并配置vsCode"><a href="#4、安装并配置vsCode" class="headerlink" title="4、安装并配置vsCode"></a>4、安装并配置vsCode</h3><p>1️⃣双击打开下载好的<code>vsCode安装包</code>，先勾选<code>我同意此协议</code>，再点击<code>下一步</code>。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx1.sinaimg.cn/mw2000/007ERWx2ly8i5evab1inpj30ge0cmjt7.jpg"  style="zoom:50%;" />
+
+<p>2️⃣勾选上<code>创建桌面快捷方式</code>，点击<code>下一步</code>。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2ly8i5eve7yll9j30gc0cngml.jpg"  style="zoom:50%;" />
+
+<p>3️⃣点击<code>安装</code></p>
+<img src="https://image.baidu.com/search/down?url=https://wx1.sinaimg.cn/mw2000/007ERWx2ly8i5evfm2gwpj30ge0cp0td.jpg"  style="zoom:50%;" />
+
+<p>4️⃣点击<code>完成</code>，此时<code>vsCode</code>已经安装好了。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx1.sinaimg.cn/mw2000/007ERWx2ly8i5evgz4pvrj30g80cnq3l.jpg"  style="zoom:50%;" />
+
+<p>5️⃣打开<code>vsCode</code>软件，界面如下。</p>
+<p>英文界面，用不习惯，接下来进行<code>汉化</code>。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx3.sinaimg.cn/mw2000/007ERWx2ly8i5evjk8f3oj31040u0dia.jpg"  style="zoom:50%;" />
+
+<p>6️⃣点击图片所示按钮（或者按下<code>ctrl+shift+x</code>键），打开<code>扩展商店</code>。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2ly8i5evnam5qsj315g0lvadb.jpg"  style="zoom:50%;" />
+
+
+
+<p>7️⃣在搜索框输入<code>简体中文</code>，点击排名第一的那个右下角的<code>Install</code>安装中文包。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx1.sinaimg.cn/mw2000/007ERWx2ly1i5ex9p8ot0j315g0lv118.jpg"  style="zoom:50%;" />
+
+
+
+<p>8️⃣点击右下角<code>Change Language and Restart</code>按钮，进行重启。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2ly1i5ew373co2j31560y74ep.jpg"  style="zoom:50%;" />
+
+
+
+<p>9️⃣在<code>vsCode</code>中安装C语言插件</p>
+<p>继续打开vsCode的扩展商店，搜索<code>C</code>，安装C语言插件。</p>
+<p>在结果中，找到<code>C/C++</code>和<code>C/C++ Extension Pack</code>,点击安装。</p>
+<p>这两个插件都安装，安装大约需要1分钟，具体时间取决于你的网速。</p>
+<p>安装好之后，重启<code>vsCode</code>。</p>
+<img src="https://image.baidu.com/search/down?url=https://wx2.sinaimg.cn/mw2000/007ERWx2gy1i5gplfqdemj30lr0oh111.jpg"  style="zoom:50%;" />
+
+<p>安装完成之后，至此，咱们的C语言环境就算搭建完成啦！</p>
+<hr>
+<h3 id="验证C语言环境搭建是否成功"><a href="#验证C语言环境搭建是否成功" class="headerlink" title="验证C语言环境搭建是否成功"></a>验证C语言环境搭建是否成功</h3><ol>
+<li>创建一个文件夹作为你的 C 语言项目目录</li>
+<li>在 VS Code 中打开该文件夹（<code>文件 &gt; 打开文件夹</code>）</li>
+<li>创建一个 <code>.c</code> 文件（如 <code>hello.c</code>）<br>注意：这个文件名称<code>不能有中文</code>，否则代码会运行出错！！！</li>
+<li>编写简单的测试代码：</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello, World!\n&quot;</span>);</span><br><span class="line">    getchar(); <span class="comment">// 等待键盘输入后再退出</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="5">
+<li><p>运行（编译&#x2F;调试）</p>
+<p>点击右上角的<code>运行</code>按钮，选择弹出的<code>gcc.exe 构建和调试活动文件</code></p>
+</li>
+</ol>
+<img src="https://image.baidu.com/search/down?url=https://wx1.sinaimg.cn/mw2000/007ERWx2gy1i5gqyox83wj31ws0e4k2g.jpg"  style="zoom:50%;" />
+
+
+
+<p>查看<code>终端</code>的输出日志，当看到<code>Hello ，World!</code>，说明你小子又过关了！</p>
+<img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw2000/007ERWx2gy1i5gqzatfp2j31ki167wxk.jpg"  style="zoom:50%;" />
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>C语言</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript学习笔记（3）数据类型-进阶</title>
     <url>//blog/note/code/JavaScript3.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><p>对象允许存储键值集合，这很好。</p>
@@ -3213,12 +3351,12 @@ sh.exit();
 </thead>
 <tbody><tr>
 <td>仙逆⭐⭐⭐⭐⭐</td>
-<td align="left">2025年3月12日   看完第 79 集</td>
+<td align="left">2025年4月23日   看完第 85 集</td>
 <td></td>
 </tr>
 <tr>
 <td>凡人修仙传⭐⭐⭐⭐⭐</td>
-<td align="left">2025年3月12日   看完第132集</td>
+<td align="left">2025年4月23日   看完第138集</td>
 <td></td>
 </tr>
 <tr>
@@ -3257,8 +3395,8 @@ sh.exit();
 <td></td>
 </tr>
 <tr>
-<td></td>
-<td align="left"></td>
+<td>斗破苍穹⭐⭐⭐⭐</td>
+<td align="left">2025年4月23日 看完第143集</td>
 <td></td>
 </tr>
 <tr>
@@ -7005,6 +7143,390 @@ device.vibrate(2000);
       </tags>
   </entry>
   <entry>
+    <title>如何使用Hexo和Github搭建个人博客</title>
+    <url>//blog/note/hexo/blog-create.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="使用Hexo和Github搭建个人博客"><a href="#使用Hexo和Github搭建个人博客" class="headerlink" title="使用Hexo和Github搭建个人博客"></a>使用Hexo和Github搭建个人博客</h1><h1 id="【目录】"><a href="#【目录】" class="headerlink" title="【目录】"></a>【目录】</h1><p>[toc]</p>
+<hr>
+<h1 id="一、如何实现的？"><a href="#一、如何实现的？" class="headerlink" title="一、如何实现的？"></a>一、如何实现的？</h1><p>使用 GitHub Pages 服务搭建博客的好处有：</p>
+<ol>
+<li>全是静态文件，访问速度快；</li>
+<li>免费方便，不用花钱就可以搭建个人博客，不需要服务器不需要后台；</li>
+<li>可以随意绑定自己的域名；</li>
+<li>数据绝对安全，基于 GitHub 的版本管理，想恢复到哪个历史版本都行；</li>
+<li>博客内容可以轻松打包、转移、发布到其它平台；</li>
+<li>自己可以随性所欲的设计，美观大气上档次；</li>
+</ol>
+<hr>
+<h1 id="二、搭建步骤"><a href="#二、搭建步骤" class="headerlink" title="二、搭建步骤"></a>二、搭建步骤</h1><h2 id="2-1-原料准备及配置环境"><a href="#2-1-原料准备及配置环境" class="headerlink" title="2.1 原料准备及配置环境"></a>2.1 原料准备及配置环境</h2><h3 id="1-提前注册好Github账号"><a href="#1-提前注册好Github账号" class="headerlink" title="1.提前注册好Github账号"></a>1.提前注册好Github账号</h3><p>注册账号这个过程不难，需要注意的事项有</p>
+<ul>
+<li><p>账号的用户名将来会用作网址的构成，因此要注意想清楚。</p>
+</li>
+<li><p>如果无法访问github或者访问过程中比较卡顿，可以下载这个GitHub加速器：<a href="https://steampp.net/">https://steampp.net/</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="2-安装Git"><a href="#2-安装Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h3><p>[Git - Downloads (git-scm.com)]          官网：(<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>)</p>
+<img src="../../../images/blog-create/git的下载.png" alt="git的下载" title="git的下载" style="zoom:50%;" />
+
+<p>文件大小约几十Mb，下载完成后，双击安装包开始安装，一路点击 <code>Next</code> 即可。<br>安装完毕后可以使用以下命令测试是否安装成功</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<img src="../../../images/blog-create/git版本验证.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
+
+<p>后续Hexo框架的更新可以使用如下代码</p>
+<p><code>git clone https://github.com/git/git</code></p>
+<hr>
+<h3 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3.安装node.js"></a>3.安装node.js</h3><p>[Node.js — 在任何地方运行 JavaScript (nodejs.org)]   官网： (<a href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a>)</p>
+<p>文件大小约几十Mb，下载完毕后，开始安装，勾选所有组件，并勾选 Add to Path 将其添加到系统环境变量。</p>
+<p>安装 Node.js 会包含环境变量以及 npm 的安装，安装后，可以在命令行输入如下命令检测 Node.js 是否安装成功：</p>
+<p>第一个命令，这个命令，在 nodejs 安装成功的情况下会显示 nodejs 的版本号。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
+<img src="../../../images/blog-create/node -v.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
+
+<p>第二个命令：这个命令，在 nodejs 安装成功的情况下会显示 npm 的版本号。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<img src="../../../images/blog-create/npm -v.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
+
+
+
+
+
+<h3 id="4-安装hexo"><a href="#4-安装hexo" class="headerlink" title="4.安装hexo"></a>4.安装hexo</h3><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。Hexo 官网：<a href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="2-2-建立博客"><a href="#2-2-建立博客" class="headerlink" title="2.2 建立博客"></a>2.2 建立博客</h2><h4 id="2-2-1-hexo博客初始化"><a href="#2-2-1-hexo博客初始化" class="headerlink" title="2.2.1 hexo博客初始化"></a>2.2.1 hexo博客初始化</h4><p>下面这个命令会在 “cmd”命令窗口所在的工作目录中， 生成一个名称为 “hexo-blog” 博客文件夹，并自动从下载博客所必须的文件放入其中。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br></pre></td></tr></table></figure>
+
+<p>假设我使用这个默认名称 “hexo-blog”，那么这个“hexo-blog”文件夹就是我们博客的默认文件夹了。</p>
+<p>当然上面这行代码等效于：</p>
+<p>你手动建立了一个<code>hexo-blog</code>的文件夹，并且在该文件夹内运行cmd，输入hexo init 命令，自动下载hexo框架文件，进行初始化。</p>
+<h4 id="2-2-2-在hexo博客文件夹中安装npm"><a href="#2-2-2-在hexo博客文件夹中安装npm" class="headerlink" title="2.2.2 在hexo博客文件夹中安装npm"></a>2.2.2 在hexo博客文件夹中安装npm</h4><p>在博客根文件夹（hexo-blog）中，启动cmd命令行窗口。</p>
+<p>运行下面的命令，在hexo文件夹中安装npm。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>至此，本地的博客已经搭建完毕，等确认本地博客没有问题后，就可以上传到GitHub上，这样网友们就能访问你的博客了。</p>
+<p>下面是博客文件夹中各个文件对应的用途。</p>
+<img src="../../../images/blog-create/博客文件用途.png" alt="git的下载" title="git的下载" style="zoom:50%;" />
+
+<hr>
+<h2 id="2-3-本地化预览-新建博客文章"><a href="#2-3-本地化预览-新建博客文章" class="headerlink" title="2.3 本地化预览 + 新建博客文章"></a>2.3 本地化预览 + 新建博客文章</h2><p>下面4个命令是 hexo 博客框架常用的命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p><code>hexo cl</code>全称是<code>hexo clean</code>    清除缓存文件 db.json 和已生成的静态文件 public。网站显示异常时可以执行这条命令试试。</p>
+<p><code>hexo g</code> 全称是<code>hexo generate</code>  作用是把你写的markdown文件转换成html网页文件。</p>
+<p><code>hexo s </code>全称是hexo server&#96;   启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/">http://localhost:4000/</a></p>
+<p><code>hexo d</code> 是 <code>hexo deploy</code> 的缩写。   把本地的博客部署（上传）到GitHub上面去</p>
+<h4 id="2-3-1-本地化预览博客"><a href="#2-3-1-本地化预览博客" class="headerlink" title="2.3.1 本地化预览博客"></a>2.3.1 本地化预览博客</h4><p>由于步骤2.2 建立好了一个本地的博客，因此我们在博客根目录运行cmd，依次运行</p>
+<p>hexo cl</p>
+<img src="../../../images/blog-create/hexocl.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
+
+<p>hexo g</p>
+<img src="../../../images/blog-create/hexog.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>hexo s</p>
+<img src="../../../images/blog-create/hexos.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>复制<code>http://localhost:4000</code> 到浏览器，进行预览。</p>
+<img src="../../../images/blog-create/博客预览.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
+
+<p>回到cmd窗口，按下 ctrl + c  ，可以终止预览。</p>
+<p>至此，可以确认本地化的博客已经建立完毕了。</p>
+<h4 id="2-3-2-新建博客文章"><a href="#2-3-2-新建博客文章" class="headerlink" title="2.3.2 新建博客文章"></a>2.3.2 新建博客文章</h4><p>使用<code>hexo n 我的周报</code>，注意它们之间有空格。即可新建一个名称为“我的周报.md”的文件，储存在<code>\hexo-blog\source\_posts</code>。</p>
+<p>当然，你也可以手动去<code>\hexo-blog\source\_posts</code>文件夹中新建md文件，效果也是一样滴。</p>
+<p>我们先打开这个文件夹，看到里面只有官方自带的一篇hello-world.md文件。</p>
+<img src="../../../images/blog-create/文章截图1.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>接下来，我们使用下面的命令，会在这个文件夹中生成一个  搭建博客教程.md   文件</p>
+<p><code>hexo n 搭建博客教程</code></p>
+<img src="../../../images/blog-create/hexon.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>可以看到确实生成了。</p>
+<img src="../../../images/blog-create/文章截图2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>手动新建一个md文件，可以来比较一下使用<code>hexo n</code>建立的md文件和手动新建的md文件  区别。</p>
+<img src="../../../images/blog-create/文章截图3.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="2-4-博客上传到Github"><a href="#2-4-博客上传到Github" class="headerlink" title="2.4 博客上传到Github"></a>2.4 博客上传到Github</h2><h4 id="1-使用你的github账号新建一个仓库"><a href="#1-使用你的github账号新建一个仓库" class="headerlink" title="1. 使用你的github账号新建一个仓库"></a>1. 使用你的github账号新建一个仓库</h4><p>登录github，点击<code>Your repositories</code>，进入仓库页面。</p>
+<img src="../../../images/blog-create/搭建仓库1.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+<p>点击<code>New</code>按钮，进入仓库创建页面。</p>
+<img src="../../../images/blog-create/搭建仓库2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+<p>填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>，然后点击<code>Create repository</code>。</p>
+<p>例如，图片里的用户名<code>yaorongke</code>，则他建立的博客仓库名称必须为<code>yaorongke.github.io</code></p>
+<p>将来，图片中的博客的网址就是：<a href="https://yaorongke.github.io/">https://yaorongke.github.io/</a></p>
+<img src="../../../images/blog-create/搭建仓库3.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<h4 id="2-设置SSH——公钥和私钥"><a href="#2-设置SSH——公钥和私钥" class="headerlink" title="2. 设置SSH——公钥和私钥"></a>2. 设置SSH——公钥和私钥</h4><p>这一步是让你的电脑有资格与你的GitHub账号仓库建立联系。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
+
+<p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#x72;&#x6b;&#101;&#x73;&#105;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#x65;&#x72;&#x6b;&#101;&#x73;&#105;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;</a></p>
+<p>然后依次输入三次回车即可。</p>
+<img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>我在第二个回车之后，那里输入了一个Y，是因为我这台电脑之前就生成过，必须覆盖（overwrite）那个旧文件我就输入了Y。</p>
+<p>新手第一次运行的，直接依次按下3次回车即可。</p>
+<p>成功后，接着去把ssh口令输入到GitHub。</p>
+<p>用记事本打开如图所示刚刚生成的<code>id_rsa.pub</code>文件。     <code>12153</code>是我当前电脑的用户名。</p>
+<p>（id_rsa是私钥，不能泄露；id_rsa.pub是公钥，无所谓）</p>
+<img src="../../../images/blog-create/找到ssh文件.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>复制这个文件内所有文本</p>
+<img src="../../../images/blog-create/rsatxt.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>打开网址   <a href="https://github.com/settings/ssh/new">https://github.com/settings/ssh/new</a></p>
+<p><code>Title</code> 为标题，任意填即可 。      把刚刚粘贴的密钥复制进去，点击<code>Add SSH key</code></p>
+<img src="../../../images/blog-create/添加ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>使用下面的命令，验证是否成功建立本地和GitHub的联系。</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>我第一次测试失败了是因为我开了加速器。我关闭之后再试了一次就成功了。</p>
+<img src="../../../images/blog-create/测试连接github.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>若你也访问<code>GitHub</code>遇到困难，这里我提供两种方法：</p>
+<ul>
+<li><p>复制这个网址里面的host文件，将里面的代码粘贴到你的系统host文件里面即可。<a href="https://gitee.com/if-the-wind/github-hosts/blob/main/hosts#">点我跳转</a></p>
+</li>
+<li><p>下载<code>Watt Toolkit</code>工具箱，里面有个’网络加速’功能，可以</p>
+</li>
+</ul>
+<h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
+<p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
+<p><code>git config --global user.name</code> “lancou” </p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#x72;&#x6b;&#x65;&#115;&#x69;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#101;&#x72;&#x6b;&#x65;&#115;&#x69;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a>  成你的github邮箱。</p>
+<p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
+<p>运行结果如下图，不会给任何提示，没事的。</p>
+<img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<h4 id="4-把本地博客上传到github"><a href="#4-把本地博客上传到github" class="headerlink" title="4. 把本地博客上传到github"></a>4. 把本地博客上传到github</h4><h5 id="4-1-修改配置站点配置文件"><a href="#4-1-修改配置站点配置文件" class="headerlink" title="4.1 修改配置站点配置文件"></a>4.1 修改配置站点配置文件</h5><p><code>hexo</code> 有 2 种 <code>_config.yml</code> 文件，</p>
+<p>一个是根目录下的全局的 <code>_config.yml</code>。               一般称为博客站点配置文件。</p>
+<p>一个是各个主题 <code>theme</code> 文件夹下的 <code>_config.yml</code>。   称为主题配置文件。</p>
+<p>打开根目录下博客站点配置文件 <code>_config.yml</code>，配置有关 <code>deploy</code> 的部分：</p>
+<img src="../../../images/blog-create/博客站点配置文件的位置.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>打开博客站点配置文件，找到<code>deploy</code>字段</p>
+<img src="../../../images/blog-create/找到deploy.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>修改成下面这段代码。       </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#109;</a>:昵称&#x2F;仓库名称</p>
+<p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
+<p>repo: <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#104;&#117;&#98;&#46;&#99;&#111;&#109;">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#104;&#117;&#98;&#46;&#99;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>记得照葫芦画瓢进行修改。</p>
+<h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
+<p><code>npm install hexo-deployer-git --save </code></p>
+<img src="../../../images/blog-create/安装部署工具.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>依次运行下面的代码。</p>
+<p>hexo cl</p>
+<img src="../../../images/blog-create/hexocl2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>hexo g</p>
+<img src="../../../images/blog-create/hexog2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<p>hexo d</p>
+<img src="../../../images/blog-create/hexod2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+<p>可以看到我的上传过程中出现了  <code>waring:LF will be replaced by CRLF</code></p>
+<p>只需要运行这个命令即可解决   <code>git config --global core.safecrlf false</code></p>
+<p>我运行完这个命令后，又重新依次执行了hexo d （上传命令），现在上传就不会出现  waring 警告了。</p>
+<img src="../../../images/blog-create/第一次完整上传.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>至此，你已经上传本地的博客到你的GitHub仓库。  </p>
+<hr>
+<h5 id="4-3-访问你的博客"><a href="#4-3-访问你的博客" class="headerlink" title="4.3 访问你的博客"></a>4.3 访问你的博客</h5><p>我（昵称为lancou）的博客的网址为：lancou.github.io</p>
+<p>同理，你的博客网址也应该是        <code>用户名.github.io</code></p>
+<p>结果我高高兴兴的打开我的博客,额。。。。。。。</p>
+<img src="../../../images/blog-create/第一次上传后显示404.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+<p>下面是官方给的解释。意思是，如果你的网站是第一次发布或者是修改了昵称的话，官方需要花几分钟的时间帮你申请一个证书。</p>
+<img src="../../../images/blog-create/404解释.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>几分钟之后，我的博客网页就可以正常访问啦！   <a href="https://lancou.github.io/">https://lancou.github.io/</a></p>
+<img src="../../../images/blog-create/myblog.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
+
+
+
+
+
+<hr>
+<h1 id="三、（可选）使用Github提供的Action自动化部署更新博客"><a href="#三、（可选）使用Github提供的Action自动化部署更新博客" class="headerlink" title="三、（可选）使用Github提供的Action自动化部署更新博客"></a>三、（可选）使用Github提供的Action自动化部署更新博客</h1><p><strong>这里使用博客的GitHub账号，新建一个私有仓库，存储网站的必要文件，当这些博客文件被修改时，GitHub自动同步更新博客</strong></p>
+<h2 id="1-获取github的token"><a href="#1-获取github的token" class="headerlink" title="1.获取github的token"></a>1.获取github的token</h2><p>为了确保交由<code>Github Action</code>来持续部署时，<code>Github Action</code> 具备足够的权限来进行 <code>hexo deploy</code> 操作,需要先获取 <code>Token</code>。</p>
+<p>访问 Github -&gt;头像（右上角）-&gt;  Settings  -&gt;  Developer Settings  -&gt;  Personal access tokens  -&gt;  generate new token</p>
+<img src="../../../images/blog-create/创建action的token.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>创建的 Token 名称随意，但必须勾选 repo 项 和 workflows 项。</p>
+<img src="../../../images/blog-create/生成token的配置.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+
+
+<p>token 只会显示这一次，之后将无法查看，所以务必保证你已经记录下了 Token。之后如果忘记了就只能重新生成重新配置了。</p>
+<img src="../../../images/blog-create/token.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+
+
+<h2 id="2-创建存放源码的私有仓库"><a href="#2-创建存放源码的私有仓库" class="headerlink" title="2.创建存放源码的私有仓库"></a>2.创建存放源码的私有仓库</h2><p>我们需要创建一个用来存放 <code>Hexo</code> 博客源码的私有仓库</p>
+<img src="../../../images/blog-create/新建仓库.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
+
+<img src="../../../images/blog-create/私有仓库成立.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
+
+<p>这里之所以是私有仓库，是因为在接下来的配置中会用到 <code>Token</code>，如果 <code>Token</code> 被盗用，别人可以肆意操作你的 github 仓库内容，为了避免这一风险，才选择的博客源码闭源。</p>
+<img src="../../../images/blog-create/保存私有仓库的SSH地址.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
+
+
+
+<h2 id="3-配置-Github-Action"><a href="#3-配置-Github-Action" class="headerlink" title="3.配置 Github Action"></a>3.配置 Github Action</h2><ul>
+<li><p>在<code>[博客的文件夹根目录]</code>新建<code>.github</code>文件夹，注意开头是有个小数点<code>.</code>的。（如果这个文件夹已经存在了就跳过这一步）</p>
+</li>
+<li><p>然后在<code>.github</code> 内新建 <code>workflows</code> 文件夹，再在 <code>workflows</code> 文件夹内新建 <code>autodeploy.yml</code>,在<code>autodeploy.yml</code> 里面输入</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name: 自动部署</span><br><span class="line"># 当有改动推送到master分支时，启动Action。</span><br><span class="line">on:</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - main</span><br><span class="line">      #2020年10月后github新建仓库默认分支改为main，注意更改。</span><br><span class="line">  release:</span><br><span class="line">    types:</span><br><span class="line">      - published</span><br><span class="line"></span><br><span class="line">jobs:</span><br><span class="line">  deploy:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">      - name: 检查分支</span><br><span class="line">        uses: actions/checkout@v2</span><br><span class="line">        with:</span><br><span class="line">        #这里也要修改分支对应。</span><br><span class="line">          ref: main</span><br><span class="line"></span><br><span class="line">      - name: 安装 Node</span><br><span class="line">        uses: actions/setup-node@v1</span><br><span class="line">        with:</span><br><span class="line">          #这里修改为你的node版本，大版本一致即可,不修改也没啥事。</span><br><span class="line">          node-version: &quot;20.x&quot;</span><br><span class="line"></span><br><span class="line">      - name: 安装 Hexo</span><br><span class="line">        run: |</span><br><span class="line">          export TZ=&#x27;Asia/Shanghai&#x27;</span><br><span class="line">          npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">      - name: 缓存 Hexo</span><br><span class="line">        id: cache-npm</span><br><span class="line">        uses: actions/cache@v3</span><br><span class="line">        env:</span><br><span class="line">          cache-name: cache-node-modules</span><br><span class="line">        with:</span><br><span class="line">          path: node_modules</span><br><span class="line">          key: $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-$&#123;&#123; hashFiles(&#x27;**/package-lock.json&#x27;) &#125;&#125;</span><br><span class="line">          restore-keys: |</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-build-</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-</span><br><span class="line"></span><br><span class="line">      - name: 安装依赖</span><br><span class="line">        if: $&#123;&#123; steps.cache-npm.outputs.cache-hit != &#x27;true&#x27; &#125;&#125;</span><br><span class="line">        run: |</span><br><span class="line">          npm install --save</span><br><span class="line"></span><br><span class="line">      - name: 生成静态文件</span><br><span class="line">        run: |</span><br><span class="line">          hexo clean</span><br><span class="line">          hexo generate</span><br><span class="line">          </span><br><span class="line"></span><br><span class="line">      - name: 部署到Github</span><br><span class="line">        uses: JamesIves/github-pages-deploy-action@v4</span><br><span class="line">        with:</span><br><span class="line">          #刚刚得到的Github Token</span><br><span class="line">          token: ghp_qsdfsdjhdhdfgreytedfbffbsdfaefefsfaf</span><br><span class="line">          #下面这行代码是要替换成你自己的仓库名,注意这里要填写博客网站的仓库名称。</span><br><span class="line">          repository-name: lancou/lancou.github.io</span><br><span class="line">          #注意分支名称</span><br><span class="line">          branch: main</span><br><span class="line">          folder: public</span><br><span class="line">          commit-message: &quot;$&#123;&#123; github.event.head_commit.message &#125;&#125; Updated By Github Actions&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-重新设置远程仓库和分支"><a href="#4-重新设置远程仓库和分支" class="headerlink" title="4.重新设置远程仓库和分支"></a>4.重新设置远程仓库和分支</h2><ol>
+<li><p>修改<code>.gitignore</code>,输入以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">.deploy_git*/</span><br><span class="line">.idea</span><br><span class="line">themes/next/.git</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>如果不是 next 主题，记得替换最后一行内容为你自己当前使用的主题。</p>
+<p>（如果使用的是默认的主题，可以不用最后一行，但是默认主题有点丑啊，应该没有人用默认主题吧）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">可能遇到的 bug</span><br><span class="line">因为 next 主题文件夹下的.git 文件夹的存在，那么主题文件夹会被识别子项目。从而无法被上传到源码仓库。若是遇到添加屏蔽项，但是还是无法正常上传主题文件夹的情况。请先将本地源码中的 themes 文件夹移动到别的目录下。然后 commit 一次。接着将 themes 文件夹移动回来，再 commit 一次。</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li>开始重新设置远程仓库和分支</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote rm origin    # 删除原有仓库链接</span><br><span class="line"></span><br><span class="line">git remote add origin git@github.com:[GithubUsername]/[SourceRepo].git    #[SourceRepo]为新的存放源码的github私有仓库</span><br><span class="line">例如，我的是  git remote add origin git@github.com:lancou/hexosource.git</span><br><span class="line"></span><br><span class="line">git checkout -b main                           # 切换到main分支，</span><br><span class="line"></span><br><span class="line">#2020年10月后github新建仓库默认分支改为main</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;尝试第一次自动部署&quot;</span><br><span class="line">git push origin main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>以后只需要使用这三行代码，在博客内容修改后，更新即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;尝试第一次自动部署&quot;</span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+
+<p>git commit -m “这里的文本用来提示作用，可以随意修改”</p>
+<h2 id="5-异地修改博客"><a href="#5-异地修改博客" class="headerlink" title="5. 异地修改博客"></a>5. 异地修改博客</h2><p>这里提供两种修改方法</p>
+<h3 id="方法一-不常用设备更新博客"><a href="#方法一-不常用设备更新博客" class="headerlink" title="方法一    不常用设备更新博客"></a>方法一    不常用设备更新博客</h3><p>这个远程设备我不常用，例如手机、别人的电脑、网吧等等，我又想更新我的博客该怎么办呢？</p>
+<p>可以直接在网页上登录你的Github账号，在<code>博客私有仓库</code>（也就是我们教程中创建的用于保存博客源码的那个）中，</p>
+<p>打开  source&#x2F;_post，我们的博客源文件就在这里面。</p>
+<img src="../../../images/blog-create/异地修改.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<img src="../../../images/blog-create/异地修改2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>切记：在网页中手动更新后，你的本地文件还是旧的，相当于本地版本与远程仓库版本不一样了，</p>
+<p>在本地要使用一次  <code>git pull origin main</code>，把远程更改的文件同步到本地之后，本地才能继续把本地新修改的推送到远程。</p>
+<p>参考文档：<a href="https://blog.csdn.net/yingmohuanzhou/article/details/138455235">https://blog.csdn.net/yingmohuanzhou/article/details/138455235</a></p>
+<p><code>下班最后一件事push代码，上班第一件事pull代码</code></p>
+<p>假设你在朋友的电脑上登录你的GitHub账号，使用这种方法修改完成之后，回到家，你想使用自己的电脑再更新一份博客文件进行上传时，你依然遵循依次使用这三行代码进行更新，就会报错failed to push some refs to</p>
+<img src="../../../images/blog-create/远程更新本地报错.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
+
+<p>原因： 	</p>
+<p>当你尝试向你的 Git 仓库推送时遇到的错误消息表明，远程仓库中有你本地没有的更改。这种冲突阻止了 Git 推送你的更改，因为这可能会覆盖其他人所做的更改。</p>
+<p>解决办法</p>
+<ul>
+<li>在你推送你的更改之前，你需要将你的本地仓库与远程仓库同步。这可以通过从远程拉取更改来完成</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
+
+<p>这个命令从名为 origin 的远程的 main 分支获取更新并将它们合并到你当前的分支。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
+
+<p>至此，问题完美解决，实现了本地和远程同步啦。</p>
+<p><strong>总结</strong></p>
+<p>只要本地仓库（本地的文件夹）内容和远程仓库内容不一致的时候，即本地的内容比仓库旧，</p>
+<p>需要先进行 <code>git pull origin main</code>就能实现本地和远程仓库同步。</p>
+<p>而修改了本地的博客文件后，就会实现本地的内容比远程仓库版本更新一些，push操作就不会报错。</p>
+<p>（当本地的文件比博客文件旧，没有先进行pull，修改了本地文件之后，再进行pull时，git会自动保留最新的文件版本，本地新增的文件不会丢失，所以报错的时候直接<code>git pull origin main</code>即可实现同步，再进行push不会失败）</p>
+<h3 id="方法二-常用设备更新博客"><a href="#方法二-常用设备更新博客" class="headerlink" title="方法二       常用设备更新博客"></a>方法二       常用设备更新博客</h3><p>你想在常用的两台电脑上更新你的博客，例如家里一台电脑、公司一台电脑。</p>
+<p>需要让两台电脑都连上储存着博客源码的<code>私有仓库</code>。</p>
+<p>这里先假设你是在家里的电脑上搭建的博客，但是想去公司更新博客，因此我们这里来讲一下如何使用公司的电脑进行博客的更新。</p>
+<p>由于公司的电脑的环境没有进行配置，因此这里需要进行环境配置，参考本教程的</p>
+<p>【1.1 安装Git】【2.4.2 设置SSH】、【2.4.3 在本地绑定与github的用户名和邮箱】</p>
+<p>然后在公司电脑上建立一个文件夹用于储存博客文件，使用下面的代码将github仓库的博客原文件拉取到这个文件夹内。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:lancou/hexosource.github.io.</span><br></pre></td></tr></table></figure>
+
+<p>由于这个是私有仓库，新设备第一次拉取时会需要验证账号密码。</p>
+<p>后面再想同步公司电脑（旧）与云端仓库（新）时，也可以使用<code>git pull origin main</code>来实现了。</p>
+<p>当在公司修改了博客源文件之后，想把公司电脑上的本地仓库（新）同步到云端仓库（旧）</p>
+<p>依次执行以下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
+
+<p>至此，你应该实现了在公司的电脑更新了你的博客。</p>
+<hr>
+<p>注意，在公司的电脑更新了博客之后，公司电脑的版本&#x3D;云端仓库的版本。</p>
+<p>但此时云端仓库的版本（新），  家里电脑的仓库版本（旧），回到家里面又想更新博客时</p>
+<p>要先拉取云端仓库文件到本地  ，运行命令 <code>git pull origin main</code>   </p>
+<p>把你家里的电脑上的仓库（旧）更新成云端的版本（新），实现   家里电脑的仓库版本&#x3D;云端仓库的版本</p>
+<p>当此时在家里电脑上修改了博客源文件之后，想把家里电脑上的本地仓库（新）同步到云端仓库（旧）</p>
+<p>依次执行以下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
+
+<p>至此，你应该实现了在家里的电脑更新了你的博客。</p>
+<hr>
+<p>如此往复。。。。。。。。。</p>
+<p><code>设备上改博客，最后一件事push代码； 换设备更新博客，第一件事pull代码</code></p>
+<h1 id="四、可能遇到的问题"><a href="#四、可能遇到的问题" class="headerlink" title="四、可能遇到的问题"></a>四、可能遇到的问题</h1><h2 id="1-themes对应主题下的-git文件夹被上传导致的错误"><a href="#1-themes对应主题下的-git文件夹被上传导致的错误" class="headerlink" title="1. themes对应主题下的.git文件夹被上传导致的错误"></a>1. themes对应主题下的.git文件夹被上传导致的错误</h2><p>因为 next 主题文件夹下的.git 文件夹的存在，那么主题文件夹会被识别子项目。从而无法被上传到源码仓库。若是遇到添加屏蔽项，但是还是无法正常上传主题文件夹的情况。</p>
+<p>1.剪切 themes&#x2F;next&#x2F;.git文件夹到其它处</p>
+<p>2.从暂存区删除该文件夹 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git rm --cache themes/next</span><br></pre></td></tr></table></figure>
+
+<p>3.使用git status查看状态</p>
+<img src=" https://img2018.cnblogs.com/blog/812260/201907/812260-20190710151913411-1393275619.png "  style="zoom:50%;" />
+
+<p>4.提交修改</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
+
+
+
+<p>至此问题就解决了。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的hexo博客设置以及next主题个人喜好</title>
     <url>//blog/note/hexo/blog-next-diy.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
@@ -7268,390 +7790,6 @@ device.vibrate(2000);
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何使用Hexo和Github搭建个人博客</title>
-    <url>//blog/note/hexo/blog-create.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="使用Hexo和Github搭建个人博客"><a href="#使用Hexo和Github搭建个人博客" class="headerlink" title="使用Hexo和Github搭建个人博客"></a>使用Hexo和Github搭建个人博客</h1><h1 id="【目录】"><a href="#【目录】" class="headerlink" title="【目录】"></a>【目录】</h1><p>[toc]</p>
-<hr>
-<h1 id="一、如何实现的？"><a href="#一、如何实现的？" class="headerlink" title="一、如何实现的？"></a>一、如何实现的？</h1><p>使用 GitHub Pages 服务搭建博客的好处有：</p>
-<ol>
-<li>全是静态文件，访问速度快；</li>
-<li>免费方便，不用花钱就可以搭建个人博客，不需要服务器不需要后台；</li>
-<li>可以随意绑定自己的域名；</li>
-<li>数据绝对安全，基于 GitHub 的版本管理，想恢复到哪个历史版本都行；</li>
-<li>博客内容可以轻松打包、转移、发布到其它平台；</li>
-<li>自己可以随性所欲的设计，美观大气上档次；</li>
-</ol>
-<hr>
-<h1 id="二、搭建步骤"><a href="#二、搭建步骤" class="headerlink" title="二、搭建步骤"></a>二、搭建步骤</h1><h2 id="2-1-原料准备及配置环境"><a href="#2-1-原料准备及配置环境" class="headerlink" title="2.1 原料准备及配置环境"></a>2.1 原料准备及配置环境</h2><h3 id="1-提前注册好Github账号"><a href="#1-提前注册好Github账号" class="headerlink" title="1.提前注册好Github账号"></a>1.提前注册好Github账号</h3><p>注册账号这个过程不难，需要注意的事项有</p>
-<ul>
-<li><p>账号的用户名将来会用作网址的构成，因此要注意想清楚。</p>
-</li>
-<li><p>如果无法访问github或者访问过程中比较卡顿，可以下载这个GitHub加速器：<a href="https://steampp.net/">https://steampp.net/</a></p>
-</li>
-</ul>
-<hr>
-<h3 id="2-安装Git"><a href="#2-安装Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h3><p>[Git - Downloads (git-scm.com)]          官网：(<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>)</p>
-<img src="../../../images/blog-create/git的下载.png" alt="git的下载" title="git的下载" style="zoom:50%;" />
-
-<p>文件大小约几十Mb，下载完成后，双击安装包开始安装，一路点击 <code>Next</code> 即可。<br>安装完毕后可以使用以下命令测试是否安装成功</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
-
-<img src="../../../images/blog-create/git版本验证.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
-
-<p>后续Hexo框架的更新可以使用如下代码</p>
-<p><code>git clone https://github.com/git/git</code></p>
-<hr>
-<h3 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3.安装node.js"></a>3.安装node.js</h3><p>[Node.js — 在任何地方运行 JavaScript (nodejs.org)]   官网： (<a href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a>)</p>
-<p>文件大小约几十Mb，下载完毕后，开始安装，勾选所有组件，并勾选 Add to Path 将其添加到系统环境变量。</p>
-<p>安装 Node.js 会包含环境变量以及 npm 的安装，安装后，可以在命令行输入如下命令检测 Node.js 是否安装成功：</p>
-<p>第一个命令，这个命令，在 nodejs 安装成功的情况下会显示 nodejs 的版本号。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-
-<img src="../../../images/blog-create/node -v.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
-
-<p>第二个命令：这个命令，在 nodejs 安装成功的情况下会显示 npm 的版本号。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<img src="../../../images/blog-create/npm -v.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
-
-
-
-
-
-<h3 id="4-安装hexo"><a href="#4-安装hexo" class="headerlink" title="4.安装hexo"></a>4.安装hexo</h3><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。Hexo 官网：<a href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="2-2-建立博客"><a href="#2-2-建立博客" class="headerlink" title="2.2 建立博客"></a>2.2 建立博客</h2><h4 id="2-2-1-hexo博客初始化"><a href="#2-2-1-hexo博客初始化" class="headerlink" title="2.2.1 hexo博客初始化"></a>2.2.1 hexo博客初始化</h4><p>下面这个命令会在 “cmd”命令窗口所在的工作目录中， 生成一个名称为 “hexo-blog” 博客文件夹，并自动从下载博客所必须的文件放入其中。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br></pre></td></tr></table></figure>
-
-<p>假设我使用这个默认名称 “hexo-blog”，那么这个“hexo-blog”文件夹就是我们博客的默认文件夹了。</p>
-<p>当然上面这行代码等效于：</p>
-<p>你手动建立了一个<code>hexo-blog</code>的文件夹，并且在该文件夹内运行cmd，输入hexo init 命令，自动下载hexo框架文件，进行初始化。</p>
-<h4 id="2-2-2-在hexo博客文件夹中安装npm"><a href="#2-2-2-在hexo博客文件夹中安装npm" class="headerlink" title="2.2.2 在hexo博客文件夹中安装npm"></a>2.2.2 在hexo博客文件夹中安装npm</h4><p>在博客根文件夹（hexo-blog）中，启动cmd命令行窗口。</p>
-<p>运行下面的命令，在hexo文件夹中安装npm。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>至此，本地的博客已经搭建完毕，等确认本地博客没有问题后，就可以上传到GitHub上，这样网友们就能访问你的博客了。</p>
-<p>下面是博客文件夹中各个文件对应的用途。</p>
-<img src="../../../images/blog-create/博客文件用途.png" alt="git的下载" title="git的下载" style="zoom:50%;" />
-
-<hr>
-<h2 id="2-3-本地化预览-新建博客文章"><a href="#2-3-本地化预览-新建博客文章" class="headerlink" title="2.3 本地化预览 + 新建博客文章"></a>2.3 本地化预览 + 新建博客文章</h2><p>下面4个命令是 hexo 博客框架常用的命令。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p><code>hexo cl</code>全称是<code>hexo clean</code>    清除缓存文件 db.json 和已生成的静态文件 public。网站显示异常时可以执行这条命令试试。</p>
-<p><code>hexo g</code> 全称是<code>hexo generate</code>  作用是把你写的markdown文件转换成html网页文件。</p>
-<p><code>hexo s </code>全称是hexo server&#96;   启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/">http://localhost:4000/</a></p>
-<p><code>hexo d</code> 是 <code>hexo deploy</code> 的缩写。   把本地的博客部署（上传）到GitHub上面去</p>
-<h4 id="2-3-1-本地化预览博客"><a href="#2-3-1-本地化预览博客" class="headerlink" title="2.3.1 本地化预览博客"></a>2.3.1 本地化预览博客</h4><p>由于步骤2.2 建立好了一个本地的博客，因此我们在博客根目录运行cmd，依次运行</p>
-<p>hexo cl</p>
-<img src="../../../images/blog-create/hexocl.png" alt="git的下载" title="git的下载" style="zoom:90%;" />
-
-<p>hexo g</p>
-<img src="../../../images/blog-create/hexog.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>hexo s</p>
-<img src="../../../images/blog-create/hexos.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>复制<code>http://localhost:4000</code> 到浏览器，进行预览。</p>
-<img src="../../../images/blog-create/博客预览.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
-
-<p>回到cmd窗口，按下 ctrl + c  ，可以终止预览。</p>
-<p>至此，可以确认本地化的博客已经建立完毕了。</p>
-<h4 id="2-3-2-新建博客文章"><a href="#2-3-2-新建博客文章" class="headerlink" title="2.3.2 新建博客文章"></a>2.3.2 新建博客文章</h4><p>使用<code>hexo n 我的周报</code>，注意它们之间有空格。即可新建一个名称为“我的周报.md”的文件，储存在<code>\hexo-blog\source\_posts</code>。</p>
-<p>当然，你也可以手动去<code>\hexo-blog\source\_posts</code>文件夹中新建md文件，效果也是一样滴。</p>
-<p>我们先打开这个文件夹，看到里面只有官方自带的一篇hello-world.md文件。</p>
-<img src="../../../images/blog-create/文章截图1.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>接下来，我们使用下面的命令，会在这个文件夹中生成一个  搭建博客教程.md   文件</p>
-<p><code>hexo n 搭建博客教程</code></p>
-<img src="../../../images/blog-create/hexon.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>可以看到确实生成了。</p>
-<img src="../../../images/blog-create/文章截图2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>手动新建一个md文件，可以来比较一下使用<code>hexo n</code>建立的md文件和手动新建的md文件  区别。</p>
-<img src="../../../images/blog-create/文章截图3.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-
-
-
-
-
-
-
-
-<h2 id="2-4-博客上传到Github"><a href="#2-4-博客上传到Github" class="headerlink" title="2.4 博客上传到Github"></a>2.4 博客上传到Github</h2><h4 id="1-使用你的github账号新建一个仓库"><a href="#1-使用你的github账号新建一个仓库" class="headerlink" title="1. 使用你的github账号新建一个仓库"></a>1. 使用你的github账号新建一个仓库</h4><p>登录github，点击<code>Your repositories</code>，进入仓库页面。</p>
-<img src="../../../images/blog-create/搭建仓库1.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-<p>点击<code>New</code>按钮，进入仓库创建页面。</p>
-<img src="../../../images/blog-create/搭建仓库2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-<p>填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>，然后点击<code>Create repository</code>。</p>
-<p>例如，图片里的用户名<code>yaorongke</code>，则他建立的博客仓库名称必须为<code>yaorongke.github.io</code></p>
-<p>将来，图片中的博客的网址就是：<a href="https://yaorongke.github.io/">https://yaorongke.github.io/</a></p>
-<img src="../../../images/blog-create/搭建仓库3.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<h4 id="2-设置SSH——公钥和私钥"><a href="#2-设置SSH——公钥和私钥" class="headerlink" title="2. 设置SSH——公钥和私钥"></a>2. 设置SSH——公钥和私钥</h4><p>这一步是让你的电脑有资格与你的GitHub账号仓库建立联系。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
-
-<p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#x72;&#x6b;&#101;&#115;&#x69;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#109;">&#x65;&#x72;&#x6b;&#101;&#115;&#x69;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#109;</a></p>
-<p>然后依次输入三次回车即可。</p>
-<img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>我在第二个回车之后，那里输入了一个Y，是因为我这台电脑之前就生成过，必须覆盖（overwrite）那个旧文件我就输入了Y。</p>
-<p>新手第一次运行的，直接依次按下3次回车即可。</p>
-<p>成功后，接着去把ssh口令输入到GitHub。</p>
-<p>用记事本打开如图所示刚刚生成的<code>id_rsa.pub</code>文件。     <code>12153</code>是我当前电脑的用户名。</p>
-<p>（id_rsa是私钥，不能泄露；id_rsa.pub是公钥，无所谓）</p>
-<img src="../../../images/blog-create/找到ssh文件.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>复制这个文件内所有文本</p>
-<img src="../../../images/blog-create/rsatxt.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>打开网址   <a href="https://github.com/settings/ssh/new">https://github.com/settings/ssh/new</a></p>
-<p><code>Title</code> 为标题，任意填即可 。      把刚刚粘贴的密钥复制进去，点击<code>Add SSH key</code></p>
-<img src="../../../images/blog-create/添加ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>使用下面的命令，验证是否成功建立本地和GitHub的联系。</p>
-<p><code>ssh -T git@github.com</code></p>
-<p>我第一次测试失败了是因为我开了加速器。我关闭之后再试了一次就成功了。</p>
-<img src="../../../images/blog-create/测试连接github.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>若你也访问<code>GitHub</code>遇到困难，这里我提供两种方法：</p>
-<ul>
-<li><p>复制这个网址里面的host文件，将里面的代码粘贴到你的系统host文件里面即可。<a href="https://gitee.com/if-the-wind/github-hosts/blob/main/hosts#">点我跳转</a></p>
-</li>
-<li><p>下载<code>Watt Toolkit</code>工具箱，里面有个’网络加速’功能，可以</p>
-</li>
-</ul>
-<h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
-<p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
-<p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#x72;&#x6b;&#101;&#115;&#105;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#101;&#x72;&#x6b;&#101;&#115;&#105;&#x40;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a>  成你的github邮箱。</p>
-<p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
-<p>运行结果如下图，不会给任何提示，没事的。</p>
-<img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<h4 id="4-把本地博客上传到github"><a href="#4-把本地博客上传到github" class="headerlink" title="4. 把本地博客上传到github"></a>4. 把本地博客上传到github</h4><h5 id="4-1-修改配置站点配置文件"><a href="#4-1-修改配置站点配置文件" class="headerlink" title="4.1 修改配置站点配置文件"></a>4.1 修改配置站点配置文件</h5><p><code>hexo</code> 有 2 种 <code>_config.yml</code> 文件，</p>
-<p>一个是根目录下的全局的 <code>_config.yml</code>。               一般称为博客站点配置文件。</p>
-<p>一个是各个主题 <code>theme</code> 文件夹下的 <code>_config.yml</code>。   称为主题配置文件。</p>
-<p>打开根目录下博客站点配置文件 <code>_config.yml</code>，配置有关 <code>deploy</code> 的部分：</p>
-<img src="../../../images/blog-create/博客站点配置文件的位置.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>打开博客站点配置文件，找到<code>deploy</code>字段</p>
-<img src="../../../images/blog-create/找到deploy.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>修改成下面这段代码。       </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
-
-<p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;</a>:昵称&#x2F;仓库名称</p>
-<p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
-<p>记得照葫芦画瓢进行修改。</p>
-<h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
-<p><code>npm install hexo-deployer-git --save </code></p>
-<img src="../../../images/blog-create/安装部署工具.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>依次运行下面的代码。</p>
-<p>hexo cl</p>
-<img src="../../../images/blog-create/hexocl2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>hexo g</p>
-<img src="../../../images/blog-create/hexog2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<p>hexo d</p>
-<img src="../../../images/blog-create/hexod2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-<p>可以看到我的上传过程中出现了  <code>waring:LF will be replaced by CRLF</code></p>
-<p>只需要运行这个命令即可解决   <code>git config --global core.safecrlf false</code></p>
-<p>我运行完这个命令后，又重新依次执行了hexo d （上传命令），现在上传就不会出现  waring 警告了。</p>
-<img src="../../../images/blog-create/第一次完整上传.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>至此，你已经上传本地的博客到你的GitHub仓库。  </p>
-<hr>
-<h5 id="4-3-访问你的博客"><a href="#4-3-访问你的博客" class="headerlink" title="4.3 访问你的博客"></a>4.3 访问你的博客</h5><p>我（昵称为lancou）的博客的网址为：lancou.github.io</p>
-<p>同理，你的博客网址也应该是        <code>用户名.github.io</code></p>
-<p>结果我高高兴兴的打开我的博客,额。。。。。。。</p>
-<img src="../../../images/blog-create/第一次上传后显示404.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-<p>下面是官方给的解释。意思是，如果你的网站是第一次发布或者是修改了昵称的话，官方需要花几分钟的时间帮你申请一个证书。</p>
-<img src="../../../images/blog-create/404解释.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>几分钟之后，我的博客网页就可以正常访问啦！   <a href="https://lancou.github.io/">https://lancou.github.io/</a></p>
-<img src="../../../images/blog-create/myblog.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:50%;" />
-
-
-
-
-
-<hr>
-<h1 id="三、（可选）使用Github提供的Action自动化部署更新博客"><a href="#三、（可选）使用Github提供的Action自动化部署更新博客" class="headerlink" title="三、（可选）使用Github提供的Action自动化部署更新博客"></a>三、（可选）使用Github提供的Action自动化部署更新博客</h1><p><strong>这里使用博客的GitHub账号，新建一个私有仓库，存储网站的必要文件，当这些博客文件被修改时，GitHub自动同步更新博客</strong></p>
-<h2 id="1-获取github的token"><a href="#1-获取github的token" class="headerlink" title="1.获取github的token"></a>1.获取github的token</h2><p>为了确保交由<code>Github Action</code>来持续部署时，<code>Github Action</code> 具备足够的权限来进行 <code>hexo deploy</code> 操作,需要先获取 <code>Token</code>。</p>
-<p>访问 Github -&gt;头像（右上角）-&gt;  Settings  -&gt;  Developer Settings  -&gt;  Personal access tokens  -&gt;  generate new token</p>
-<img src="../../../images/blog-create/创建action的token.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>创建的 Token 名称随意，但必须勾选 repo 项 和 workflows 项。</p>
-<img src="../../../images/blog-create/生成token的配置.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-
-
-<p>token 只会显示这一次，之后将无法查看，所以务必保证你已经记录下了 Token。之后如果忘记了就只能重新生成重新配置了。</p>
-<img src="../../../images/blog-create/token.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-
-
-<h2 id="2-创建存放源码的私有仓库"><a href="#2-创建存放源码的私有仓库" class="headerlink" title="2.创建存放源码的私有仓库"></a>2.创建存放源码的私有仓库</h2><p>我们需要创建一个用来存放 <code>Hexo</code> 博客源码的私有仓库</p>
-<img src="../../../images/blog-create/新建仓库.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
-
-<img src="../../../images/blog-create/私有仓库成立.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
-
-<p>这里之所以是私有仓库，是因为在接下来的配置中会用到 <code>Token</code>，如果 <code>Token</code> 被盗用，别人可以肆意操作你的 github 仓库内容，为了避免这一风险，才选择的博客源码闭源。</p>
-<img src="../../../images/blog-create/保存私有仓库的SSH地址.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:40%;" />
-
-
-
-<h2 id="3-配置-Github-Action"><a href="#3-配置-Github-Action" class="headerlink" title="3.配置 Github Action"></a>3.配置 Github Action</h2><ul>
-<li><p>在<code>[博客的文件夹根目录]</code>新建<code>.github</code>文件夹，注意开头是有个小数点<code>.</code>的。（如果这个文件夹已经存在了就跳过这一步）</p>
-</li>
-<li><p>然后在<code>.github</code> 内新建 <code>workflows</code> 文件夹，再在 <code>workflows</code> 文件夹内新建 <code>autodeploy.yml</code>,在<code>autodeploy.yml</code> 里面输入</p>
-</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name: 自动部署</span><br><span class="line"># 当有改动推送到master分支时，启动Action。</span><br><span class="line">on:</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - main</span><br><span class="line">      #2020年10月后github新建仓库默认分支改为main，注意更改。</span><br><span class="line">  release:</span><br><span class="line">    types:</span><br><span class="line">      - published</span><br><span class="line"></span><br><span class="line">jobs:</span><br><span class="line">  deploy:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">      - name: 检查分支</span><br><span class="line">        uses: actions/checkout@v2</span><br><span class="line">        with:</span><br><span class="line">        #这里也要修改分支对应。</span><br><span class="line">          ref: main</span><br><span class="line"></span><br><span class="line">      - name: 安装 Node</span><br><span class="line">        uses: actions/setup-node@v1</span><br><span class="line">        with:</span><br><span class="line">          #这里修改为你的node版本，大版本一致即可,不修改也没啥事。</span><br><span class="line">          node-version: &quot;20.x&quot;</span><br><span class="line"></span><br><span class="line">      - name: 安装 Hexo</span><br><span class="line">        run: |</span><br><span class="line">          export TZ=&#x27;Asia/Shanghai&#x27;</span><br><span class="line">          npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">      - name: 缓存 Hexo</span><br><span class="line">        id: cache-npm</span><br><span class="line">        uses: actions/cache@v3</span><br><span class="line">        env:</span><br><span class="line">          cache-name: cache-node-modules</span><br><span class="line">        with:</span><br><span class="line">          path: node_modules</span><br><span class="line">          key: $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-$&#123;&#123; hashFiles(&#x27;**/package-lock.json&#x27;) &#125;&#125;</span><br><span class="line">          restore-keys: |</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-build-</span><br><span class="line">            $&#123;&#123; runner.os &#125;&#125;-</span><br><span class="line"></span><br><span class="line">      - name: 安装依赖</span><br><span class="line">        if: $&#123;&#123; steps.cache-npm.outputs.cache-hit != &#x27;true&#x27; &#125;&#125;</span><br><span class="line">        run: |</span><br><span class="line">          npm install --save</span><br><span class="line"></span><br><span class="line">      - name: 生成静态文件</span><br><span class="line">        run: |</span><br><span class="line">          hexo clean</span><br><span class="line">          hexo generate</span><br><span class="line">          </span><br><span class="line"></span><br><span class="line">      - name: 部署到Github</span><br><span class="line">        uses: JamesIves/github-pages-deploy-action@v4</span><br><span class="line">        with:</span><br><span class="line">          #刚刚得到的Github Token</span><br><span class="line">          token: ghp_qsdfsdjhdhdfgreytedfbffbsdfaefefsfaf</span><br><span class="line">          #下面这行代码是要替换成你自己的仓库名,注意这里要填写博客网站的仓库名称。</span><br><span class="line">          repository-name: lancou/lancou.github.io</span><br><span class="line">          #注意分支名称</span><br><span class="line">          branch: main</span><br><span class="line">          folder: public</span><br><span class="line">          commit-message: &quot;$&#123;&#123; github.event.head_commit.message &#125;&#125; Updated By Github Actions&quot;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="4-重新设置远程仓库和分支"><a href="#4-重新设置远程仓库和分支" class="headerlink" title="4.重新设置远程仓库和分支"></a>4.重新设置远程仓库和分支</h2><ol>
-<li><p>修改<code>.gitignore</code>,输入以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">.deploy_git*/</span><br><span class="line">.idea</span><br><span class="line">themes/next/.git</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>如果不是 next 主题，记得替换最后一行内容为你自己当前使用的主题。</p>
-<p>（如果使用的是默认的主题，可以不用最后一行，但是默认主题有点丑啊，应该没有人用默认主题吧）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">可能遇到的 bug</span><br><span class="line">因为 next 主题文件夹下的.git 文件夹的存在，那么主题文件夹会被识别子项目。从而无法被上传到源码仓库。若是遇到添加屏蔽项，但是还是无法正常上传主题文件夹的情况。请先将本地源码中的 themes 文件夹移动到别的目录下。然后 commit 一次。接着将 themes 文件夹移动回来，再 commit 一次。</span><br></pre></td></tr></table></figure>
-
-
-
-<ol start="2">
-<li>开始重新设置远程仓库和分支</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote rm origin    # 删除原有仓库链接</span><br><span class="line"></span><br><span class="line">git remote add origin git@github.com:[GithubUsername]/[SourceRepo].git    #[SourceRepo]为新的存放源码的github私有仓库</span><br><span class="line">例如，我的是  git remote add origin git@github.com:lancou/hexosource.git</span><br><span class="line"></span><br><span class="line">git checkout -b main                           # 切换到main分支，</span><br><span class="line"></span><br><span class="line">#2020年10月后github新建仓库默认分支改为main</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;尝试第一次自动部署&quot;</span><br><span class="line">git push origin main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<p>以后只需要使用这三行代码，在博客内容修改后，更新即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;尝试第一次自动部署&quot;</span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
-
-<p>git commit -m “这里的文本用来提示作用，可以随意修改”</p>
-<h2 id="5-异地修改博客"><a href="#5-异地修改博客" class="headerlink" title="5. 异地修改博客"></a>5. 异地修改博客</h2><p>这里提供两种修改方法</p>
-<h3 id="方法一-不常用设备更新博客"><a href="#方法一-不常用设备更新博客" class="headerlink" title="方法一    不常用设备更新博客"></a>方法一    不常用设备更新博客</h3><p>这个远程设备我不常用，例如手机、别人的电脑、网吧等等，我又想更新我的博客该怎么办呢？</p>
-<p>可以直接在网页上登录你的Github账号，在<code>博客私有仓库</code>（也就是我们教程中创建的用于保存博客源码的那个）中，</p>
-<p>打开  source&#x2F;_post，我们的博客源文件就在这里面。</p>
-<img src="../../../images/blog-create/异地修改.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<img src="../../../images/blog-create/异地修改2.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>切记：在网页中手动更新后，你的本地文件还是旧的，相当于本地版本与远程仓库版本不一样了，</p>
-<p>在本地要使用一次  <code>git pull origin main</code>，把远程更改的文件同步到本地之后，本地才能继续把本地新修改的推送到远程。</p>
-<p>参考文档：<a href="https://blog.csdn.net/yingmohuanzhou/article/details/138455235">https://blog.csdn.net/yingmohuanzhou/article/details/138455235</a></p>
-<p><code>下班最后一件事push代码，上班第一件事pull代码</code></p>
-<p>假设你在朋友的电脑上登录你的GitHub账号，使用这种方法修改完成之后，回到家，你想使用自己的电脑再更新一份博客文件进行上传时，你依然遵循依次使用这三行代码进行更新，就会报错failed to push some refs to</p>
-<img src="../../../images/blog-create/远程更新本地报错.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
-
-<p>原因： 	</p>
-<p>当你尝试向你的 Git 仓库推送时遇到的错误消息表明，远程仓库中有你本地没有的更改。这种冲突阻止了 Git 推送你的更改，因为这可能会覆盖其他人所做的更改。</p>
-<p>解决办法</p>
-<ul>
-<li>在你推送你的更改之前，你需要将你的本地仓库与远程仓库同步。这可以通过从远程拉取更改来完成</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
-
-<p>这个命令从名为 origin 的远程的 main 分支获取更新并将它们合并到你当前的分支。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
-
-<p>至此，问题完美解决，实现了本地和远程同步啦。</p>
-<p><strong>总结</strong></p>
-<p>只要本地仓库（本地的文件夹）内容和远程仓库内容不一致的时候，即本地的内容比仓库旧，</p>
-<p>需要先进行 <code>git pull origin main</code>就能实现本地和远程仓库同步。</p>
-<p>而修改了本地的博客文件后，就会实现本地的内容比远程仓库版本更新一些，push操作就不会报错。</p>
-<p>（当本地的文件比博客文件旧，没有先进行pull，修改了本地文件之后，再进行pull时，git会自动保留最新的文件版本，本地新增的文件不会丢失，所以报错的时候直接<code>git pull origin main</code>即可实现同步，再进行push不会失败）</p>
-<h3 id="方法二-常用设备更新博客"><a href="#方法二-常用设备更新博客" class="headerlink" title="方法二       常用设备更新博客"></a>方法二       常用设备更新博客</h3><p>你想在常用的两台电脑上更新你的博客，例如家里一台电脑、公司一台电脑。</p>
-<p>需要让两台电脑都连上储存着博客源码的<code>私有仓库</code>。</p>
-<p>这里先假设你是在家里的电脑上搭建的博客，但是想去公司更新博客，因此我们这里来讲一下如何使用公司的电脑进行博客的更新。</p>
-<p>由于公司的电脑的环境没有进行配置，因此这里需要进行环境配置，参考本教程的</p>
-<p>【1.1 安装Git】【2.4.2 设置SSH】、【2.4.3 在本地绑定与github的用户名和邮箱】</p>
-<p>然后在公司电脑上建立一个文件夹用于储存博客文件，使用下面的代码将github仓库的博客原文件拉取到这个文件夹内。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:lancou/hexosource.github.io.</span><br></pre></td></tr></table></figure>
-
-<p>由于这个是私有仓库，新设备第一次拉取时会需要验证账号密码。</p>
-<p>后面再想同步公司电脑（旧）与云端仓库（新）时，也可以使用<code>git pull origin main</code>来实现了。</p>
-<p>当在公司修改了博客源文件之后，想把公司电脑上的本地仓库（新）同步到云端仓库（旧）</p>
-<p>依次执行以下代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
-
-<p>至此，你应该实现了在公司的电脑更新了你的博客。</p>
-<hr>
-<p>注意，在公司的电脑更新了博客之后，公司电脑的版本&#x3D;云端仓库的版本。</p>
-<p>但此时云端仓库的版本（新），  家里电脑的仓库版本（旧），回到家里面又想更新博客时</p>
-<p>要先拉取云端仓库文件到本地  ，运行命令 <code>git pull origin main</code>   </p>
-<p>把你家里的电脑上的仓库（旧）更新成云端的版本（新），实现   家里电脑的仓库版本&#x3D;云端仓库的版本</p>
-<p>当此时在家里电脑上修改了博客源文件之后，想把家里电脑上的本地仓库（新）同步到云端仓库（旧）</p>
-<p>依次执行以下代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
-
-<p>至此，你应该实现了在家里的电脑更新了你的博客。</p>
-<hr>
-<p>如此往复。。。。。。。。。</p>
-<p><code>设备上改博客，最后一件事push代码； 换设备更新博客，第一件事pull代码</code></p>
-<h1 id="四、可能遇到的问题"><a href="#四、可能遇到的问题" class="headerlink" title="四、可能遇到的问题"></a>四、可能遇到的问题</h1><h2 id="1-themes对应主题下的-git文件夹被上传导致的错误"><a href="#1-themes对应主题下的-git文件夹被上传导致的错误" class="headerlink" title="1. themes对应主题下的.git文件夹被上传导致的错误"></a>1. themes对应主题下的.git文件夹被上传导致的错误</h2><p>因为 next 主题文件夹下的.git 文件夹的存在，那么主题文件夹会被识别子项目。从而无法被上传到源码仓库。若是遇到添加屏蔽项，但是还是无法正常上传主题文件夹的情况。</p>
-<p>1.剪切 themes&#x2F;next&#x2F;.git文件夹到其它处</p>
-<p>2.从暂存区删除该文件夹 </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git rm --cache themes/next</span><br></pre></td></tr></table></figure>
-
-<p>3.使用git status查看状态</p>
-<img src=" https://img2018.cnblogs.com/blog/812260/201907/812260-20190710151913411-1393275619.png "  style="zoom:50%;" />
-
-<p>4.提交修改</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .                                             #添加所有文件到暂存区</span><br><span class="line">git commit -m &quot;尝试开始更新博客&quot;                        </span><br><span class="line">git push origin main                                  #推送你的更改</span><br></pre></td></tr></table></figure>
-
-
-
-<p>至此问题就解决了。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
       </tags>
   </entry>
   <entry>
