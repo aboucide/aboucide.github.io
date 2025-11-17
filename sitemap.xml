@@ -65,6 +65,15 @@
   </url>
   
   <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/undefined</loc>
+    
+    <lastmod>2025-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/index.html</loc>
     
     <lastmod>2025-11-17</lastmod>
@@ -101,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/undefined</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/AutoXjs/UI.html</loc>
     
     <lastmod>2025-11-17</lastmod>
     
@@ -182,15 +191,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/AutoXjs/UI.html</loc>
-    
-    <lastmod>2025-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/AutoXjs/MQTT.html</loc>
     
     <lastmod>2025-11-17</lastmod>
@@ -245,6 +245,24 @@
   </url>
   
   <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/note/mind/biancheng0-1.html</loc>
+    
+    <lastmod>2025-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/getlicense/driving-license.html</loc>
+    
+    <lastmod>2025-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/AutoXjs/base64.html</loc>
     
     <lastmod>2025-11-17</lastmod>
@@ -290,6 +308,15 @@
   </url>
   
   <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/markdown/yufa.html</loc>
+    
+    <lastmod>2025-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/international-chemistry/international-chemistry-study-guide.html</loc>
     
     <lastmod>2025-11-17</lastmod>
@@ -326,25 +353,16 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/note/mind/biancheng0-1.html</loc>
-    
-    <lastmod>2025-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/getlicense/driving-license.html</loc>
-    
-    <lastmod>2025-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/note/teacher/zhuguanti.html</loc>
+    
+    <lastmod>2025-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript1.html</loc>
     
     <lastmod>2025-11-17</lastmod>
     
@@ -371,15 +389,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/markdown/yufa.html</loc>
-    
-    <lastmod>2025-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/html.html</loc>
     
     <lastmod>2025-11-17</lastmod>
@@ -398,7 +407,16 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/code/JavaScript1.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/shijuan/2021-2023.html</loc>
+    
+    <lastmod>2025-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/experiment-videos/allvideos.html</loc>
     
     <lastmod>2025-11-17</lastmod>
     
@@ -515,15 +533,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/software-use/test-paper-analyzer.html</loc>
-    
-    <lastmod>2025-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/easy-mistake/2024zhenti.html</loc>
     
     <lastmod>2025-11-17</lastmod>
@@ -533,16 +542,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/shijuan/2021-2023.html</loc>
-    
-    <lastmod>2025-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/chemistry/experiment-videos/allvideos.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/blog/note/software-use/test-paper-analyzer.html</loc>
     
     <lastmod>2025-11-17</lastmod>
     
@@ -595,13 +595,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/tags/DIY/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/%E5%8C%96%E5%AD%A6%E7%9C%9F%E9%A2%98/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -624,6 +617,13 @@
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/tags/DIY/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -800,13 +800,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -835,6 +828,13 @@
   </url>
   
   <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/liferecord/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -843,20 +843,6 @@
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/liferecord/future-plan/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/software-use/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -877,7 +863,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/markdown/</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6/experiment-videos/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -891,7 +877,56 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6/experiment-videos/</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/software-use/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/Python/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/software-use/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/%E6%95%99%E8%B5%84%E8%80%83%E8%AF%95/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/software-use/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/markdown/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/chemistry/international-chemistry/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -919,28 +954,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/software-use/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/Python/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/%E6%95%99%E8%B5%84%E8%80%83%E8%AF%95/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/software-use/</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/software-use/%E5%BD%95%E5%B1%8F/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -948,20 +962,6 @@
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/note/%E7%BC%96%E7%A8%8B/AutoX-js/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/chemistry/international-chemistry/</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/categories/software-use/%E5%BD%95%E5%B1%8F/</loc>
     <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
