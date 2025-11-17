@@ -1,0 +1,482 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>OBS录屏软件使用教程 | 源的自留地</title><meta name="author" content="Yuan"><meta name="copyright" content="Yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="使用OBS的教程，主要是一些参数的使用建议。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OBS录屏软件使用教程">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/software-use/OBS.html">
+<meta property="og:site_name" content="源的自留地">
+<meta property="og:description" content="使用OBS的教程，主要是一些参数的使用建议。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://obsproject.com/assets/images/new_icon_small-r.png">
+<meta property="article:published_time" content="2025-11-17T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-17T07:35:36.329Z">
+<meta property="article:author" content="Yuan">
+<meta property="article:tag" content="OBS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://obsproject.com/assets/images/new_icon_small-r.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/software-use/OBS.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-3082128886989266',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4901b9157b9977471169d4b6f8d60640";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4MHS6HL58"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D4MHS6HL58');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'OBS录屏软件使用教程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-17 07:35:36'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://obsproject.com/assets/images/new_icon_small-r.png')"><nav id="nav"><span id="blog-info"><a href="/" title="源的自留地"><span class="site-name">源的自留地</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">OBS录屏软件使用教程<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/软件使用教程 software-use/OBS录屏软件使用笔记.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2025-11-17T00:00:00.000Z" title="发表日期 2025-11-17 00:00:00">2025-11-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2025-11-17T07:35:36.329Z" title="最近更新日期 2025-11-17 07:35:36">2025-11-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/">软件使用教程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/%E5%BD%95%E5%B1%8F/">录屏</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="OBS录屏软件使用教程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="OBS软件基础操作指南"><a href="#OBS软件基础操作指南" class="headerlink" title="OBS软件基础操作指南"></a>OBS软件基础操作指南</h1><h2 id="一、软件特点与下载安装"><a href="#一、软件特点与下载安装" class="headerlink" title="一、软件特点与下载安装"></a>一、软件特点与下载安装</h2><h3 id="1-软件核心特点"><a href="#1-软件核心特点" class="headerlink" title="1. 软件核心特点"></a>1. 软件核心特点</h3><ul>
+<li><strong>开源免费</strong>：无功能限制，无需付费即可使用全部核心功能（录屏、直播、多源采集等）</li>
+<li><strong>功能丰富</strong>：支持多场景管理、多来源采集、自定义参数调节，适用于视频制作（录屏剪辑）与直播推流</li>
+<li><strong>跨平台兼容</strong>：支持Windows、macOS、Linux系统</li>
+</ul>
+<h3 id="2-下载渠道"><a href="#2-下载渠道" class="headerlink" title="2. 下载渠道"></a>2. 下载渠道</h3><table>
+<thead>
+<tr>
+<th>下载渠道</th>
+<th>操作说明</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>官网</td>
+<td>访问 <a target="_blank" rel="noopener" href="https://obsproject.com/">obs project.com</a>，根据操作系统（Windows&#x2F;macOS&#x2F;Linux）选择对应版本下载</td>
+<td>推荐首选，确保获取最新官方版本</td>
+</tr>
+<tr>
+<td>Steam</td>
+<td>打开Steam客户端，搜索“OBS Studio”直接安装</td>
+<td>官网下载速度慢或网络不稳定时备选</td>
+</tr>
+</tbody></table>
+<h3 id="3-版本与语言设置"><a href="#3-版本与语言设置" class="headerlink" title="3. 版本与语言设置"></a>3. 版本与语言设置</h3><ul>
+<li><strong>示例版本</strong>：以OBS 31.1.1版本为例（不同版本界面逻辑一致，参数位置基本无差异）</li>
+<li><strong>语言修改</strong>：主界面右侧点击「Settings」（设置）→ 在弹出窗口左侧找到「Language」（语言）→ 选择「简体中文」→ 重启软件生效</li>
+</ul>
+<h2 id="二、OBS主界面操作"><a href="#二、OBS主界面操作" class="headerlink" title="二、OBS主界面操作"></a>二、OBS主界面操作</h2><h3 id="1-画面采集设置"><a href="#1-画面采集设置" class="headerlink" title="1. 画面采集设置"></a>1. 画面采集设置</h3><p>画面采集需在主界面左下角「来源」面板点击「+」号添加，核心采集类型如下：</p>
+<h4 id="（1）显示器采集（常用）"><a href="#（1）显示器采集（常用）" class="headerlink" title="（1）显示器采集（常用）"></a>（1）显示器采集（常用）</h4><ul>
+<li><strong>基础设置</strong>：添加后采集方式选择「自动」，若多屏幕需手动选择目标屏幕</li>
+<li><strong>画面适配</strong>：右键采集源 → 选择「变换」→ 按需调整：<ul>
+<li>常规场景：选「比例适配屏幕」，确保画面无拉伸</li>
+<li>特殊场景（如4:3素材适配16:9画布）：选「拉伸至全屏」</li>
+</ul>
+</li>
+</ul>
+<h4 id="（2）其他常用采集类型"><a href="#（2）其他常用采集类型" class="headerlink" title="（2）其他常用采集类型"></a>（2）其他常用采集类型</h4><table>
+<thead>
+<tr>
+<th>采集类型</th>
+<th>用途</th>
+<th>关键设置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>音频输入采集</td>
+<td>采集麦克风声音</td>
+<td>添加后在「混音器」手动选择对应麦克风设备</td>
+</tr>
+<tr>
+<td>游戏采集</td>
+<td>采集特定游戏窗口（非全屏游戏优先用）</td>
+<td>默认选择「DXGI」模式，避免掉帧或画面卡顿</td>
+</tr>
+<tr>
+<td>浏览器</td>
+<td>直接在OBS中加载网页内容（如直播弹幕、网页素材）</td>
+<td>输入网页URL，可调整窗口大小</td>
+</tr>
+<tr>
+<td>文本&#x2F;图像</td>
+<td>添加静态文字（如直播标题）、图片（如LOGO、背景图）</td>
+<td>拖拽调整位置，支持实时修改内容</td>
+</tr>
+</tbody></table>
+<h3 id="2-音轨与混音器"><a href="#2-音轨与混音器" class="headerlink" title="2. 音轨与混音器"></a>2. 音轨与混音器</h3><h4 id="（1）音频添加与控制"><a href="#（1）音频添加与控制" class="headerlink" title="（1）音频添加与控制"></a>（1）音频添加与控制</h4><ul>
+<li>添加音频输入采集（麦克风）或音频输出采集（桌面声音）后，在主界面中间「混音器」面板可实时调节音量（拖拽滑块）、静音（点击喇叭图标）</li>
+</ul>
+<h4 id="（2）高级音频设置"><a href="#（2）高级音频设置" class="headerlink" title="（2）高级音频设置"></a>（2）高级音频设置</h4><ol>
+<li>点击混音器最下方的「齿轮图标」→ 选择「高级音频属性」</li>
+<li>音轨分配：OBS最多支持6条音轨，建议按用途划分（如：1轨放桌面声音、2轨放麦克风声音），方便后期剪辑时单独控制</li>
+<li>直播音轨设置：直播仅调用1条音轨，需在「高级音频属性」中勾选目标音轨（如勾选1轨），再到「输出设置」中确认对应音轨勾选</li>
+</ol>
+<h3 id="3-画布预览"><a href="#3-画布预览" class="headerlink" title="3. 画布预览"></a>3. 画布预览</h3><ul>
+<li>主界面上方的「画布区域」实时预览当前所有采集源的组合效果，可直接拖拽采集源调整位置、拉伸大小，直观把控最终输出画面</li>
+</ul>
+<h2 id="三、核心设置（Settings）"><a href="#三、核心设置（Settings）" class="headerlink" title="三、核心设置（Settings）"></a>三、核心设置（Settings）</h2><p>点击主界面右侧「Settings」进入设置窗口，以下为关键设置模块详解：</p>
+<h3 id="1-视频设置（Video）"><a href="#1-视频设置（Video）" class="headerlink" title="1. 视频设置（Video）"></a>1. 视频设置（Video）</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>推荐配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础画布分辨率</td>
+<td>决定OBS主界面画布的大小与比例，不影响最终输出分辨率</td>
+<td>1920×1080（1080P）、3840×2160（4K，需硬件支持）</td>
+</tr>
+<tr>
+<td>输出缩放分辨率</td>
+<td>实际录制&#x2F;直播的画面分辨率</td>
+<td>通常与「基础画布分辨率」一致；若硬件性能不足，可降为低分辨率（如4K画布→1080P输出）</td>
+</tr>
+<tr>
+<td>帧率（FPS）</td>
+<td>画面流畅度，数值越高越流畅</td>
+<td>默认60FPS；B站等平台4K内容最高支持120FPS（高帧率需更强编码器性能）</td>
+</tr>
+</tbody></table>
+<h3 id="2-输出设置（Output，输出模式设为「高级」）"><a href="#2-输出设置（Output，输出模式设为「高级」）" class="headerlink" title="2. 输出设置（Output，输出模式设为「高级」）"></a>2. 输出设置（Output，输出模式设为「高级」）</h3><p>输出设置分「录制」和「直播」两个标签页，核心参数如下：</p>
+<h4 id="（1）通用基础设置"><a href="#（1）通用基础设置" class="headerlink" title="（1）通用基础设置"></a>（1）通用基础设置</h4><ul>
+<li><strong>录屏路径</strong>：点击右侧「预览」选择视频保存文件夹（建议选择空间充足的磁盘）</li>
+<li><strong>录像格式</strong>：推荐「混合MP4」（兼容性强，崩溃时大概率能保存文件）；不推荐FLV&#x2F;MKV（兼容性差，需后期转换）</li>
+</ul>
+<h4 id="（2）编码器选择（核心）"><a href="#（2）编码器选择（核心）" class="headerlink" title="（2）编码器选择（核心）"></a>（2）编码器选择（核心）</h4><table>
+<thead>
+<tr>
+<th>场景需求</th>
+<th>推荐编码器</th>
+<th>编码器类型（软&#x2F;硬件）</th>
+<th>理由</th>
+<th>压缩效率对比（vs H.264）</th>
+<th>同画质下原H.264为1GB时的估算大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>录屏后要在手机&#x2F;旧电脑播放</td>
+<td>NVIDIA NVENC H.264</td>
+<td>硬件编码器</td>
+<td>兼容性拉满，所有设备都能打开</td>
+<td>基准（100%）</td>
+<td>1GB（原文件）</td>
+</tr>
+<tr>
+<td>高分辨率（4K&#x2F;8K）录屏</td>
+<td>NVIDIA NVENC HEVC</td>
+<td>硬件编码器</td>
+<td>压缩效率高，省空间，支持高分辨率+HDR</td>
+<td>压缩率高40%（体积为60%）</td>
+<td>约0.6GB</td>
+</tr>
+<tr>
+<td>想节省存储空间（文件更小）</td>
+<td>NVIDIA NVENC HEVC&#x2F;AV1</td>
+<td>硬件编码器</td>
+<td>HEVC兼容性更好，AV1压缩比更高（需RTX 40系显卡）</td>
+<td>HEVC：压缩率高40%（体积60%）；AV1：压缩率高60%（体积40%）</td>
+<td>HEVC约0.6GB；AV1约0.4GB</td>
+</tr>
+<tr>
+<td>追求极致画质（不赶时间）</td>
+<td>x264</td>
+<td>软件编码器</td>
+<td>软件编码算法更精细，相同码率下画质比硬件H.264更好</td>
+<td>画质更优但体积相近</td>
+<td>约1GB（同H.264）</td>
+</tr>
+<tr>
+<td>长期存储&#x2F;低带宽分享</td>
+<td>NVENC AV1（有RTX 40系）</td>
+<td>硬件编码器</td>
+<td>压缩比最高，未来兼容性会逐步普及（没新显卡可选HEVC）</td>
+<td>压缩率高60%（体积为40%）</td>
+<td>约0.4GB（HEVC替代时约0.6GB）</td>
+</tr>
+</tbody></table>
+<p>注：  </p>
+<ul>
+<li>硬件编码器依赖显卡芯片加速（如NVIDIA的NVENC模块），编码速度快、CPU占用低；  </li>
+<li>软件编码器依赖CPU运算，编码速度慢、CPU占用高，但算法优化更精细，同参数下画质可能更优。  </li>
+<li>实际文件大小受分辨率、帧率、码率设置影响，压缩效率为同画质下的理论对比值。</li>
+</ul>
+<h4 id="（3）比特率控制（关键参数，影响画质与文件大小）"><a href="#（3）比特率控制（关键参数，影响画质与文件大小）" class="headerlink" title="（3）比特率控制（关键参数，影响画质与文件大小）"></a>（3）比特率控制（关键参数，影响画质与文件大小）</h4><p>优化后的比特率控制参数表格（修正细节+补充场景适配）：</p>
+<table>
+<thead>
+<tr>
+<th>控制模式</th>
+<th>原理</th>
+<th>适用场景</th>
+<th>推荐设置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CBR（恒定比特率）</td>
+<td>码率固定，不随画面复杂度变化</td>
+<td>直播（保证推流稳定，避免观众卡顿）</td>
+<td>1080P直播：4000-6000 Kbps；4K直播：10000-15000 Kbps</td>
+</tr>
+<tr>
+<td>CQP（恒定QP）</td>
+<td>按画面质量自动调整码率（质量等级越低，码率越高）</td>
+<td>录屏（保证画质，避免静止画面浪费码率）</td>
+<td>质量等级23-28（23：画质清晰，文件较大；28：画质平衡，文件适中）</td>
+</tr>
+<tr>
+<td>VBR&#x2F;CQVBR</td>
+<td>VBR：画面复杂时升码率、简单时降码率；CQVBR：恒定质量+可变码率结合</td>
+<td>录屏（画质与文件体积平衡，比CBR更灵活）</td>
+<td>1080P录屏：VBR上限8000 Kbps；CQVBR质量等级25+码率上限10000 Kbps</td>
+</tr>
+<tr>
+<td>无损录制</td>
+<td>仅支持英伟达显卡，通过CQP&#x3D;0&#x2F;1实现无压缩录制</td>
+<td>专业级画面需求（如视频后期精细剪辑，需保留原始画质）</td>
+<td>CQP&#x3D;0（完全无损，文件体积极大，需充足存储+高性能显卡）</td>
+</tr>
+</tbody></table>
+<h4 id="（4）其他关键参数"><a href="#（4）其他关键参数" class="headerlink" title="（4）其他关键参数"></a>（4）其他关键参数</h4><ul>
+<li><strong>质量等级&#x2F;预设</strong>：数字越小，画质越高、文件越大、越吃性能；若编码器卡顿，可适当提高数值（如从「Quality 1」改为「Quality 3」）</li>
+<li><strong>配置文件</strong>：选「High」（文件小、清晰度高），不推荐Main&#x2F;Baseline（画质差）</li>
+<li><strong>关键帧间隔</strong>：设2秒（符合直播平台要求，剪辑时画面衔接更流畅）</li>
+<li><strong>B帧</strong>：直播设2帧，录屏（显卡支持）设3-4帧（减少文件大小，不影响画质）</li>
+<li><strong>重新缩放输出</strong>：需同时录屏+直播且分辨率不同时开启（如录屏4K，直播1080P）</li>
+<li><strong>音频编码器</strong>：默认「AAC」（非专业音频无需修改）；音频码率最高320 KPPS，可自定义音轨名称（如“麦克风音轨”）</li>
+</ul>
+<h3 id="3-直播设置（Stream）"><a href="#3-直播设置（Stream）" class="headerlink" title="3. 直播设置（Stream）"></a>3. 直播设置（Stream）</h3><ol>
+<li><strong>服务选择</strong>：在「Service」下拉框中点击「显示全部」，找到目标直播平台（如Bilibili、Twitch）</li>
+<li><strong>服务器</strong>：选「全球」或对应地区服务器（如“中国-华东”），确保推流稳定</li>
+<li><strong>推流码获取与填写</strong>：点击「获得推流码」，按平台提示（如登录账号、创建直播间）复制「推流地址」和「串流密钥」，粘贴到OBS对应位置</li>
+</ol>
+<h3 id="4-回放缓存设置（Replay-Buffer）"><a href="#4-回放缓存设置（Replay-Buffer）" class="headerlink" title="4. 回放缓存设置（Replay Buffer）"></a>4. 回放缓存设置（Replay Buffer）</h3><ul>
+<li><strong>功能</strong>：硬盘空间不足时，临时缓存高画质精彩瞬间（如游戏击杀、直播名场面），需手动触发保存</li>
+<li><strong>操作设置</strong>：<ul>
+<li>勾选「启用回放缓存」，设置缓存时间（如30秒，即缓存最近30秒画面）</li>
+<li>CQP等非固定码率模式需设置「最大内存使用量」（默认512MB，可根据内存大小调整，建议测试稳定性）</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-高级设置（Advanced）"><a href="#5-高级设置（Advanced）" class="headerlink" title="5. 高级设置（Advanced）"></a>5. 高级设置（Advanced）</h3><ul>
+<li><strong>进程优先级</strong>：若游戏占满性能导致录屏卡顿，将OBS进程优先级设为「高于正常」或「高」</li>
+<li><strong>色彩范围</strong>：非HDR场景选「常规（limited）」，HDR场景需测试「常规」或「扩展（full）」（避免画面泛白&#x2F;偏色）</li>
+<li><strong>录制保护</strong>：若选MKV&#x2F;FLV格式（崩溃时文件不损坏），可勾选「自动封装为MP4」（录制结束后自动转MP4）；可勾选「覆盖旧文件」（避免重复文件名冲突）</li>
+<li><strong>直播延迟</strong>：按需调整（如“低延迟”适合互动直播，“高延迟”适合稳定推流）</li>
+<li><strong>快捷键</strong>：不建议给「开始直播&#x2F;录制」设快捷键（避免未触发或误操作，导致漏录&#x2F;误开播）</li>
+</ul>
+<h2 id="四、常见问题解决"><a href="#四、常见问题解决" class="headerlink" title="四、常见问题解决"></a>四、常见问题解决</h2><h3 id="1-显示器采集问题"><a href="#1-显示器采集问题" class="headerlink" title="1. 显示器采集问题"></a>1. 显示器采集问题</h3><h4 id="（1）黄边-黑屏"><a href="#（1）黄边-黑屏" class="headerlink" title="（1）黄边&#x2F;黑屏"></a>（1）黄边&#x2F;黑屏</h4><ul>
+<li>原因：游戏与OBS调用的显卡不同（如游戏用核显，OBS用独显）</li>
+<li>解决步骤：<ol>
+<li>打开系统「显示设置」→ 点击「图形设置」→ 选择「浏览」，添加OBS程序（官网下载在C:\Program Files\obs-studio\bin\64bit\obs64.exe；Steam下载在C:\Program Files (x86)\Steam\steamapps\common\OBS Studio\bin\64bit\obs64.exe）</li>
+<li>为OBS设置「高性能GPU」（独立显卡），开启硬件加速</li>
+<li>重启OBS，若无效可换「游戏采集」模式</li>
+</ol>
+</li>
+</ul>
+<h4 id="（2）帧率掉-帧生成时间差"><a href="#（2）帧率掉-帧生成时间差" class="headerlink" title="（2）帧率掉&#x2F;帧生成时间差"></a>（2）帧率掉&#x2F;帧生成时间差</h4><ul>
+<li>解决：在显示器采集设置中，将「采集方式」从「Windows 10采集」改为「DXGI截屏」，减少资源占用</li>
+</ul>
+<h3 id="2-画布色彩问题（泛白-颜色异常）"><a href="#2-画布色彩问题（泛白-颜色异常）" class="headerlink" title="2. 画布色彩问题（泛白&#x2F;颜色异常）"></a>2. 画布色彩问题（泛白&#x2F;颜色异常）</h3><ul>
+<li>解决：进入「高级设置」→ 找到「色彩范围」→ 非HDR场景切换为「常规（limited）」，HDR场景测试「扩展（full）」，重启OBS后查看效果</li>
+</ul>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/OBS/">OBS</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/undefined" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记"><div class="cover" style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">拔牙日记</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><a id="card-info-btn" href="mailto:ahoucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OBS%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97"><span class="toc-number">1.</span> <span class="toc-text">OBS软件基础操作指南</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%BD%AF%E4%BB%B6%E7%89%B9%E7%82%B9%E4%B8%8E%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.</span> <span class="toc-text">一、软件特点与下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%BD%AF%E4%BB%B6%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 软件核心特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BD%E6%B8%A0%E9%81%93"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 下载渠道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%89%88%E6%9C%AC%E4%B8%8E%E8%AF%AD%E8%A8%80%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. 版本与语言设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81OBS%E4%B8%BB%E7%95%8C%E9%9D%A2%E6%93%8D%E4%BD%9C"><span class="toc-number">1.2.</span> <span class="toc-text">二、OBS主界面操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%BB%E9%9D%A2%E9%87%87%E9%9B%86%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 画面采集设置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E6%98%BE%E7%A4%BA%E5%99%A8%E9%87%87%E9%9B%86%EF%BC%88%E5%B8%B8%E7%94%A8%EF%BC%89"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">（1）显示器采集（常用）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E9%87%87%E9%9B%86%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">（2）其他常用采集类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%9F%B3%E8%BD%A8%E4%B8%8E%E6%B7%B7%E9%9F%B3%E5%99%A8"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 音轨与混音器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E9%9F%B3%E9%A2%91%E6%B7%BB%E5%8A%A0%E4%B8%8E%E6%8E%A7%E5%88%B6"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">（1）音频添加与控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E9%AB%98%E7%BA%A7%E9%9F%B3%E9%A2%91%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">（2）高级音频设置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%94%BB%E5%B8%83%E9%A2%84%E8%A7%88"><span class="toc-number">1.2.3.</span> <span class="toc-text">3. 画布预览</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%A0%B8%E5%BF%83%E8%AE%BE%E7%BD%AE%EF%BC%88Settings%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">三、核心设置（Settings）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%A7%86%E9%A2%91%E8%AE%BE%E7%BD%AE%EF%BC%88Video%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">1. 视频设置（Video）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%BE%93%E5%87%BA%E8%AE%BE%E7%BD%AE%EF%BC%88Output%EF%BC%8C%E8%BE%93%E5%87%BA%E6%A8%A1%E5%BC%8F%E8%AE%BE%E4%B8%BA%E3%80%8C%E9%AB%98%E7%BA%A7%E3%80%8D%EF%BC%89"><span class="toc-number">1.3.2.</span> <span class="toc-text">2. 输出设置（Output，输出模式设为「高级」）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E9%80%9A%E7%94%A8%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">（1）通用基础设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E7%BC%96%E7%A0%81%E5%99%A8%E9%80%89%E6%8B%A9%EF%BC%88%E6%A0%B8%E5%BF%83%EF%BC%89"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">（2）编码器选择（核心）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E6%AF%94%E7%89%B9%E7%8E%87%E6%8E%A7%E5%88%B6%EF%BC%88%E5%85%B3%E9%94%AE%E5%8F%82%E6%95%B0%EF%BC%8C%E5%BD%B1%E5%93%8D%E7%94%BB%E8%B4%A8%E4%B8%8E%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%EF%BC%89"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">（3）比特率控制（关键参数，影响画质与文件大小）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E5%85%B6%E4%BB%96%E5%85%B3%E9%94%AE%E5%8F%82%E6%95%B0"><span class="toc-number">1.3.2.4.</span> <span class="toc-text">（4）其他关键参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%9B%B4%E6%92%AD%E8%AE%BE%E7%BD%AE%EF%BC%88Stream%EF%BC%89"><span class="toc-number">1.3.3.</span> <span class="toc-text">3. 直播设置（Stream）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%9B%9E%E6%94%BE%E7%BC%93%E5%AD%98%E8%AE%BE%E7%BD%AE%EF%BC%88Replay-Buffer%EF%BC%89"><span class="toc-number">1.3.4.</span> <span class="toc-text">4. 回放缓存设置（Replay Buffer）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE%EF%BC%88Advanced%EF%BC%89"><span class="toc-number">1.3.5.</span> <span class="toc-text">5. 高级设置（Advanced）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="toc-number">1.4.</span> <span class="toc-text">四、常见问题解决</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%98%BE%E7%A4%BA%E5%99%A8%E9%87%87%E9%9B%86%E9%97%AE%E9%A2%98"><span class="toc-number">1.4.1.</span> <span class="toc-text">1. 显示器采集问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E9%BB%84%E8%BE%B9-%E9%BB%91%E5%B1%8F"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">（1）黄边&#x2F;黑屏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E5%B8%A7%E7%8E%87%E6%8E%89-%E5%B8%A7%E7%94%9F%E6%88%90%E6%97%B6%E9%97%B4%E5%B7%AE"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">（2）帧率掉&#x2F;帧生成时间差</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%BB%E5%B8%83%E8%89%B2%E5%BD%A9%E9%97%AE%E9%A2%98%EF%BC%88%E6%B3%9B%E7%99%BD-%E9%A2%9C%E8%89%B2%E5%BC%82%E5%B8%B8%EF%BC%89"><span class="toc-number">1.4.2.</span> <span class="toc-text">2. 画布色彩问题（泛白&#x2F;颜色异常）</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-17T07:35:36.328Z" title="发表日期 2025-11-17 07:35:36">2025-11-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-17T07:35:36.324Z" title="发表日期 2025-11-17 07:35:36">2025-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/software-use/OBS.html" title="OBS录屏软件使用教程"><img src="https://obsproject.com/assets/images/new_icon_small-r.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OBS录屏软件使用教程"/></a><div class="content"><a class="title" href="/software-use/OBS.html" title="OBS录屏软件使用教程">OBS录屏软件使用教程</a><time datetime="2025-11-17T00:00:00.000Z" title="发表日期 2025-11-17 00:00:00">2025-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记"><div style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div></a><div class="content"><a class="title" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记">拔牙日记</a><time datetime="2025-10-26T11:22:26.000Z" title="发表日期 2025-10-26 11:22:26">2025-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建"><img src="https://img2.baidu.com/it/u=1025364924,3068102242&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=786&amp;h=500w=285&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;dpr=2&amp;pid=1.7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言编程环境搭建"/></a><div class="content"><a class="title" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建">C语言编程环境搭建</a><time datetime="2025-09-17T00:00:00.000Z" title="发表日期 2025-09-17 00:00:00">2025-09-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Yuan</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'aboucide/hexo-aboucide-comment',
+      'data-repo-id': 'R_kgDOM8yVSQ',
+      'data-category-id': 'DIC_kwDOM8yVSc4CjJFp',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
