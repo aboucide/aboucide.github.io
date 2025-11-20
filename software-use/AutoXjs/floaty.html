@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>悬浮窗 floaty | 源途记</title><meta name="author" content="Yuan"><meta name="copyright" content="Yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Floatyfloaty模块提供了悬浮窗的相关函数，可以在屏幕上显示自定义悬浮窗，控制悬浮窗大小、位置等。 悬浮窗在脚本停止运行时会自动关闭，因此，要保持悬浮窗不被关闭，可以用一个空的setInterval来实现，例如： setInterval(()&#x3D;&gt;&#123;&#125;, 1000);  Floatyfloaty.checkPermission()[4.2.17 新增]  返回 {b">
+<meta property="og:type" content="article">
+<meta property="og:title" content="悬浮窗 floaty">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/floaty.html">
+<meta property="og:site_name" content="源途记">
+<meta property="og:description" content="Floatyfloaty模块提供了悬浮窗的相关函数，可以在屏幕上显示自定义悬浮窗，控制悬浮窗大小、位置等。 悬浮窗在脚本停止运行时会自动关闭，因此，要保持悬浮窗不被关闭，可以用一个空的setInterval来实现，例如： setInterval(()&#x3D;&gt;&#123;&#125;, 1000);  Floatyfloaty.checkPermission()[4.2.17 新增]  返回 {b">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/images/logo/autojs-logo.png">
+<meta property="article:published_time" content="2024-12-11T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-20T09:40:59.518Z">
+<meta property="article:author" content="Yuan">
+<meta property="article:tag" content="AutoX.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/images/logo/autojs-logo.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/floaty.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-3082128886989266',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4901b9157b9977471169d4b6f8d60640";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4MHS6HL58"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D4MHS6HL58');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '悬浮窗 floaty',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-20 09:40:59'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="源途记"><span class="site-name">源途记</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">悬浮窗 floaty<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/软件使用教程 software-use/AutoX.js使用说明/悬浮窗Floaty.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2024-12-11T00:00:00.000Z" title="发表日期 2024-12-11 00:00:00">2024-12-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2025-11-20T09:40:59.518Z" title="最近更新日期 2025-11-20 09:40:59">2025-11-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/">软件使用教程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/autojs/">autojs</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="悬浮窗 floaty"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="Floaty"><a href="#Floaty" class="headerlink" title="Floaty"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floaty">Floaty</a></h2><p>floaty模块提供了悬浮窗的相关函数，可以在屏幕上显示自定义悬浮窗，控制悬浮窗大小、位置等。</p>
+<p>悬浮窗在脚本停止运行时会自动关闭，因此，要保持悬浮窗不被关闭，可以用一个空的setInterval来实现，例如：</p>
+<pre><code>setInterval(()=&gt;&#123;&#125;, 1000);
+</code></pre>
+<h2 id="Floaty-1"><a href="#Floaty-1" class="headerlink" title="Floaty"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floaty-1">Floaty</a></h2><h2 id="floaty-checkPermission"><a href="#floaty-checkPermission" class="headerlink" title="floaty.checkPermission()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatycheckpermission">floaty.checkPermission()</a></h2><p><strong>[4.2.17 新增]</strong></p>
+<ul>
+<li>返回 {boolean}</li>
+</ul>
+<p>返回当前应用是否有悬浮窗权限。（不会触发请求权限操作）</p>
+<h2 id="floaty-requestPermission"><a href="#floaty-requestPermission" class="headerlink" title="floaty.requestPermission()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatyrequestpermission">floaty.requestPermission()</a></h2><p><strong>[4.2.17 新增]</strong></p>
+<p>跳转到系统的悬浮窗权限请求界面。</p>
+<pre><code>if (!floaty.checkPermission()) &#123;
+    // 没有悬浮窗权限，提示用户并跳转请求
+    toast(&quot;本脚本需要悬浮窗权限来显示悬浮窗，请在随后的界面中允许并重新运行本脚本。&quot;);
+    floaty.requestPermission();
+    exit();
+&#125; else &#123;
+    toastLog(&#39;已有悬浮窗权限&#39;);
+&#125;
+</code></pre>
+<h2 id="floaty-window-layout"><a href="#floaty-window-layout" class="headerlink" title="floaty.window(layout)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatywindowlayout">floaty.window(layout)</a></h2><ul>
+<li><code>layout</code> {xml} | {View} 悬浮窗界面的XML或者View</li>
+</ul>
+<p>指定悬浮窗的布局，创建并<strong>显示</strong>一个悬浮窗，返回一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatywindow">FloatyWindow</a>对象。</p>
+<p>该悬浮窗自带关闭、调整大小、调整位置按键，可根据需要调用<code>setAdjustEnabled()</code>函数来显示或隐藏。</p>
+<p>其中layout参数可以是xml布局或者一个View，更多信息参见ui模块的说明。</p>
+<p>例子：</p>
+<pre><code>var w = floaty.window(
+    &lt;frame gravity=&quot;center&quot;&gt;
+        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
+    &lt;/frame&gt;
+);
+setTimeout(()=&gt;&#123;
+    w.close();
+&#125;, 2000);
+</code></pre>
+<p>这段代码运行后将会在屏幕上显示悬浮文字，并在两秒后消失。</p>
+<p>另外，因为脚本运行的线程不是UI线程，而所有对控件的修改操作需要在UI线程执行，此时需要用<code>ui.run</code>，例如:</p>
+<pre><code>ui.run(function()&#123;
+    w.text.setText(&quot;文本&quot;);
+&#125;);
+</code></pre>
+<p>有关返回的<code>FloatyWindow</code>对象的说明，参见下面的<code>FloatyWindow</code>章节。</p>
+<h2 id="floaty-rawWindow-layout"><a href="#floaty-rawWindow-layout" class="headerlink" title="floaty.rawWindow(layout)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindowlayout">floaty.rawWindow(layout)</a></h2><ul>
+<li><code>layout</code> {xml} | {View} 悬浮窗界面的XML或者View</li>
+</ul>
+<p>指定悬浮窗的布局，创建并<strong>显示</strong>一个原始悬浮窗，返回一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindow">FloatyRawWindow</a>对象。</p>
+<p>与<code>floaty.window()</code>函数不同的是，该悬浮窗不会增加任何额外设施（例如调整大小、位置按钮），您可以根据自己需要编写任何布局。</p>
+<p>而且，该悬浮窗支持完全全屏，可以覆盖状态栏，因此可以做护眼模式之类的应用。</p>
+<pre><code>var w = floaty.rawWindow(
+    &lt;frame gravity=&quot;center&quot;&gt;
+        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
+    &lt;/frame&gt;
+);
+
+w.setPosition(500, 500);
+
+setTimeout(()=&gt;&#123;
+    w.close();
+&#125;, 2000);
+</code></pre>
+<p>这段代码运行后将会在屏幕上显示悬浮文字，并在两秒后消失。</p>
+<p>有关返回的<code>FloatyRawWindow</code>对象的说明，参见下面的<code>FloatyRawWindow</code>章节。</p>
+<h2 id="floaty-closeAll"><a href="#floaty-closeAll" class="headerlink" title="floaty.closeAll()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatycloseall">floaty.closeAll()</a></h2><p>关闭所有本脚本的悬浮窗。</p>
+<h2 id="FloatyWindow"><a href="#FloatyWindow" class="headerlink" title="FloatyWindow"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatywindow">FloatyWindow</a></h2><p>悬浮窗对象，可通过<code>FloatyWindow.&#123;id&#125;</code>获取悬浮窗界面上的元素。例如, 悬浮窗window上一个控件的id为aaa, 那么<code>window.aaa</code>即可获取到该控件，类似于ui。</p>
+<h2 id="window-setAdjustEnabled-enabled"><a href="#window-setAdjustEnabled-enabled" class="headerlink" title="window.setAdjustEnabled(enabled)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowsetadjustenabledenabled">window.setAdjustEnabled(enabled)</a></h2><ul>
+<li><code>enabled</code> {boolean} 是否启用悬浮窗调整(大小、位置)</li>
+</ul>
+<p>如果enabled为true，则在悬浮窗左上角、右上角显示可供位置、大小调整的标示，就像控制台一样； 如果enabled为false，则隐藏上述标示。</p>
+<h2 id="window-setPosition-x-y"><a href="#window-setPosition-x-y" class="headerlink" title="window.setPosition(x, y)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowsetpositionx-y">window.setPosition(x, y)</a></h2><ul>
+<li><code>x</code> {number} x</li>
+<li><code>x</code> {number} y</li>
+</ul>
+<p>设置悬浮窗位置。</p>
+<h2 id="window-getX"><a href="#window-getX" class="headerlink" title="window.getX()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowgetx">window.getX()</a></h2><p>返回悬浮窗位置的X坐标。</p>
+<h2 id="window-getY"><a href="#window-getY" class="headerlink" title="window.getY()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowgety">window.getY()</a></h2><p>返回悬浮窗位置的Y坐标。</p>
+<h2 id="window-setSize-width-height"><a href="#window-setSize-width-height" class="headerlink" title="window.setSize(width, height)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowsetsizewidth-height">window.setSize(width, height)</a></h2><ul>
+<li><code>width</code> {number} 宽度</li>
+<li><code>height</code> {number} 高度</li>
+</ul>
+<p>设置悬浮窗宽高。</p>
+<h2 id="window-getWidht"><a href="#window-getWidht" class="headerlink" title="window.getWidht()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowgetwidht">window.getWidht()</a></h2><p>返回悬浮窗宽度。</p>
+<h2 id="window-getHeight"><a href="#window-getHeight" class="headerlink" title="window.getHeight()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowgetheight">window.getHeight()</a></h2><p>返回悬浮窗高度。</p>
+<h2 id="window-close"><a href="#window-close" class="headerlink" title="window.close()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowclose">window.close()</a></h2><p>关闭悬浮窗。如果悬浮窗已经是关闭状态，则此函数将不执行任何操作。</p>
+<p>被关闭后的悬浮窗不能再显示。</p>
+<h2 id="window-exitOnClose"><a href="#window-exitOnClose" class="headerlink" title="window.exitOnClose()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowexitonclose">window.exitOnClose()</a></h2><p>使悬浮窗被关闭时自动结束脚本运行。</p>
+<h2 id="FloatyRawWindow"><a href="#FloatyRawWindow" class="headerlink" title="FloatyRawWindow"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindow">FloatyRawWindow</a></h2><p>原始悬浮窗对象，可通过<code>window.&#123;id&#125;</code>获取悬浮窗界面上的元素。例如, 悬浮窗window上一个控件的id为aaa, 那么<code>window.aaa</code>即可获取到该控件，类似于ui。</p>
+<h2 id="window-setTouchable-touchable"><a href="#window-setTouchable-touchable" class="headerlink" title="window.setTouchable(touchable)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowsettouchabletouchable">window.setTouchable(touchable)</a></h2><ul>
+<li><code>touchable</code> {Boolean} 是否可触摸</li>
+</ul>
+<p>设置悬浮窗是否可触摸，如果为true, 则悬浮窗将接收到触摸、点击等事件并且无法继续传递到悬浮窗下面；如果为false, 悬浮窗上的触摸、点击等事件将被直接传递到悬浮窗下面。处于安全考虑，被悬浮窗接收的触摸事情无法再继续传递到下层。</p>
+<p>可以用此特性来制作护眼模式脚本。</p>
+<pre><code>var w = floaty.rawWindow(
+    &lt;frame gravity=&quot;center&quot; bg=&quot;#44ffcc00&quot;/&gt;
+);
+
+w.setSize(-1, -1);
+w.setTouchable(false);
+
+setTimeout(()=&gt;&#123;
+    w.close();
+&#125;, 4000);
+</code></pre>
+<h2 id="window-setPosition-x-y-1"><a href="#window-setPosition-x-y-1" class="headerlink" title="window.setPosition(x, y)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowsetpositionx-y-1">window.setPosition(x, y)</a></h2><ul>
+<li><code>x</code> {number} x</li>
+<li><code>x</code> {number} y</li>
+</ul>
+<p>设置悬浮窗位置。</p>
+<h2 id="window-getX-1"><a href="#window-getX-1" class="headerlink" title="window.getX()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowgetx-1">window.getX()</a></h2><p>返回悬浮窗位置的X坐标。</p>
+<h2 id="window-getY-1"><a href="#window-getY-1" class="headerlink" title="window.getY()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowgety-1">window.getY()</a></h2><p>返回悬浮窗位置的Y坐标。</p>
+<h2 id="window-setSize-width-height-1"><a href="#window-setSize-width-height-1" class="headerlink" title="window.setSize(width, height)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowsetsizewidth-height-1">window.setSize(width, height)</a></h2><ul>
+<li><code>width</code> {number} 宽度</li>
+<li><code>height</code> {number} 高度</li>
+</ul>
+<p>设置悬浮窗宽高。</p>
+<p>特别地，如果设置为-1，则为占满全屏；设置为-2则为根据悬浮窗内容大小而定。例如：</p>
+<pre><code>var w = floaty.rawWindow(
+    &lt;frame gravity=&quot;center&quot; bg=&quot;#77ff0000&quot;&gt;
+        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
+    &lt;/frame&gt;
+);
+
+w.setSize(-1, -1);
+
+setTimeout(()=&gt;&#123;
+    w.close();
+&#125;, 2000);
+</code></pre>
+<h2 id="window-getWidht-1"><a href="#window-getWidht-1" class="headerlink" title="window.getWidht()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowgetwidht-1">window.getWidht()</a></h2><p>返回悬浮窗宽度。</p>
+<h2 id="window-getHeight-1"><a href="#window-getHeight-1" class="headerlink" title="window.getHeight()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowgetheight-1">window.getHeight()</a></h2><p>返回悬浮窗高度。</p>
+<h2 id="window-close-1"><a href="#window-close-1" class="headerlink" title="window.close()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowclose-1">window.close()</a></h2><p>关闭悬浮窗。如果悬浮窗已经是关闭状态，则此函数将不执行任何操作。</p>
+<p>被关闭后的悬浮窗不能再显示。</p>
+<h2 id="window-exitOnClose-1"><a href="#window-exitOnClose-1" class="headerlink" title="window.exitOnClose()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/floaty?id=windowexitonclose-1">window.exitOnClose()</a></h2><p>使悬浮窗被关闭时自动结束脚本运行。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AutoX-js/">AutoX.js</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/software-use/AutoXjs/engines.html" title="引擎 engines"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">引擎 engines</div></div></a></div><div class="next-post pull-right"><a href="/software-use/AutoXjs/shell.html" title="shell"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">shell</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/software-use/AutoXjs/base64.html" title="base64 编码"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">base64 编码</div></div></a></div><div><a href="/software-use/AutoXjs/webview.html" title="webview与html"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">webview与html</div></div></a></div><div><a href="/software-use/AutoXjs/axios.html" title="axios"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">axios</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><a id="card-info-btn" href="mailto:aboucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:aboucide@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Floaty"><span class="toc-number">1.</span> <span class="toc-text">Floaty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Floaty-1"><span class="toc-number">2.</span> <span class="toc-text">Floaty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#floaty-checkPermission"><span class="toc-number">3.</span> <span class="toc-text">floaty.checkPermission()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#floaty-requestPermission"><span class="toc-number">4.</span> <span class="toc-text">floaty.requestPermission()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#floaty-window-layout"><span class="toc-number">5.</span> <span class="toc-text">floaty.window(layout)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#floaty-rawWindow-layout"><span class="toc-number">6.</span> <span class="toc-text">floaty.rawWindow(layout)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#floaty-closeAll"><span class="toc-number">7.</span> <span class="toc-text">floaty.closeAll()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FloatyWindow"><span class="toc-number">8.</span> <span class="toc-text">FloatyWindow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-setAdjustEnabled-enabled"><span class="toc-number">9.</span> <span class="toc-text">window.setAdjustEnabled(enabled)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-setPosition-x-y"><span class="toc-number">10.</span> <span class="toc-text">window.setPosition(x, y)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-getX"><span class="toc-number">11.</span> <span class="toc-text">window.getX()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-getY"><span class="toc-number">12.</span> <span class="toc-text">window.getY()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-setSize-width-height"><span class="toc-number">13.</span> <span class="toc-text">window.setSize(width, height)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-getWidht"><span class="toc-number">14.</span> <span class="toc-text">window.getWidht()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-getHeight"><span class="toc-number">15.</span> <span class="toc-text">window.getHeight()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-close"><span class="toc-number">16.</span> <span class="toc-text">window.close()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-exitOnClose"><span class="toc-number">17.</span> <span class="toc-text">window.exitOnClose()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FloatyRawWindow"><span class="toc-number">18.</span> <span class="toc-text">FloatyRawWindow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-setTouchable-touchable"><span class="toc-number">19.</span> <span class="toc-text">window.setTouchable(touchable)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-setPosition-x-y-1"><span class="toc-number">20.</span> <span class="toc-text">window.setPosition(x, y)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-getX-1"><span class="toc-number">21.</span> <span class="toc-text">window.getX()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-getY-1"><span class="toc-number">22.</span> <span class="toc-text">window.getY()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-setSize-width-height-1"><span class="toc-number">23.</span> <span class="toc-text">window.setSize(width, height)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-getWidht-1"><span class="toc-number">24.</span> <span class="toc-text">window.getWidht()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-getHeight-1"><span class="toc-number">25.</span> <span class="toc-text">window.getHeight()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-close-1"><span class="toc-number">26.</span> <span class="toc-text">window.close()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#window-exitOnClose-1"><span class="toc-number">27.</span> <span class="toc-text">window.exitOnClose()</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.515Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.512Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/software-use/OBS.html" title="OBS录屏软件使用教程"><img src="https://obsproject.com/assets/images/new_icon_small-r.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OBS录屏软件使用教程"/></a><div class="content"><a class="title" href="/software-use/OBS.html" title="OBS录屏软件使用教程">OBS录屏软件使用教程</a><time datetime="2025-11-17T00:00:00.000Z" title="发表日期 2025-11-17 00:00:00">2025-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记"><div style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div></a><div class="content"><a class="title" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记">拔牙日记</a><time datetime="2025-10-26T11:22:26.000Z" title="发表日期 2025-10-26 11:22:26">2025-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建"><img src="https://img2.baidu.com/it/u=1025364924,3068102242&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=786&amp;h=500w=285&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;dpr=2&amp;pid=1.7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言编程环境搭建"/></a><div class="content"><a class="title" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建">C语言编程环境搭建</a><time datetime="2025-09-17T00:00:00.000Z" title="发表日期 2025-09-17 00:00:00">2025-09-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Yuan</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'aboucide/hexo-aboucide-comment',
+      'data-repo-id': 'R_kgDOM8yVSQ',
+      'data-category-id': 'DIC_kwDOM8yVSc4CjJFp',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>

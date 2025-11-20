@@ -1,0 +1,533 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>多线程 threads | 源途记</title><meta name="author" content="Yuan"><meta name="copyright" content="Yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Threads 稳定性: 实验  Threads 模块提供了多线程支持，可以启动新线程来运行脚本。 脚本主线程会等待所有子线程执行完成后才停止执行，因此如果子线程中有死循环，请在必要的时候调用exit()来直接停止脚本或threads.shutDownAll()来停止所有子线程。 通过threads.start()启动的所有线程会在脚本被强制停止时自动停止。 由于 JavaScript 自身没有多">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多线程 threads">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/threads.html">
+<meta property="og:site_name" content="源途记">
+<meta property="og:description" content="Threads 稳定性: 实验  Threads 模块提供了多线程支持，可以启动新线程来运行脚本。 脚本主线程会等待所有子线程执行完成后才停止执行，因此如果子线程中有死循环，请在必要的时候调用exit()来直接停止脚本或threads.shutDownAll()来停止所有子线程。 通过threads.start()启动的所有线程会在脚本被强制停止时自动停止。 由于 JavaScript 自身没有多">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/images/logo/autojs-logo.png">
+<meta property="article:published_time" content="2024-12-11T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-20T09:40:59.517Z">
+<meta property="article:author" content="Yuan">
+<meta property="article:tag" content="AutoX.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/images/logo/autojs-logo.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/threads.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-3082128886989266',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4901b9157b9977471169d4b6f8d60640";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4MHS6HL58"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D4MHS6HL58');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '多线程 threads',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-20 09:40:59'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="源途记"><span class="site-name">源途记</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">多线程 threads<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/软件使用教程 software-use/AutoX.js使用说明/多线程Threads.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2024-12-11T00:00:00.000Z" title="发表日期 2024-12-11 00:00:00">2024-12-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2025-11-20T09:40:59.517Z" title="最近更新日期 2025-11-20 09:40:59">2025-11-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/">软件使用教程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/autojs/">autojs</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="多线程 threads"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="Threads"><a href="#Threads" class="headerlink" title="Threads"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threads">Threads</a></h2><blockquote>
+<p>稳定性: 实验</p>
+</blockquote>
+<p>Threads 模块提供了多线程支持，可以启动新线程来运行脚本。</p>
+<p>脚本主线程会等待所有子线程执行完成后才停止执行，因此如果子线程中有死循环，请在必要的时候调用<code>exit()</code>来直接停止脚本或<code>threads.shutDownAll()</code>来停止所有子线程。</p>
+<p>通过<code>threads.start()</code>启动的所有线程会在脚本被强制停止时自动停止。</p>
+<p>由于 JavaScript 自身没有多线程的支持，因此您可能会遇到意料之外的问题。</p>
+<h2 id="threads"><a href="#threads" class="headerlink" title="threads"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threads-1">threads</a></h2><h2 id="threads-start-action"><a href="#threads-start-action" class="headerlink" title="threads.start(action)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadsstartaction">threads.start(action)</a></h2><ul>
+<li><code>action</code> {Function} 要在新线程执行的函数</li>
+<li>返回 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=thread">Thread</a></li>
+</ul>
+<p>启动一个新线程并执行 action。</p>
+<p>例如:</p>
+<pre><code>threads.start(function()&#123;
+    //在新线程执行的代码
+    while(true)&#123;
+        log(&quot;子线程&quot;);
+    &#125;
+&#125;);
+while(true)&#123;
+    log(&quot;脚本主线程&quot;);
+&#125;
+</code></pre>
+<p>通过该函数返回的<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=thread">Thread</a>对象可以获取该线程的状态，控制该线程的运行中。例如:</p>
+<pre><code>var thread = threads.start(function()&#123;
+    while(true)&#123;
+        log(&quot;子线程&quot;);
+    &#125;
+&#125;);
+//停止线程执行
+thread.interrupt();
+</code></pre>
+<p>更多信息参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=thread">Thread</a>。</p>
+<h2 id="threads-shutDownAll"><a href="#threads-shutDownAll" class="headerlink" title="threads.shutDownAll()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadsshutdownall">threads.shutDownAll()</a></h2><p>停止所有通过<code>threads.start()</code>启动的子线程。</p>
+<h2 id="threads-currentThread"><a href="#threads-currentThread" class="headerlink" title="threads.currentThread()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadscurrentthread">threads.currentThread()</a></h2><ul>
+<li>返回 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=thread">Thread</a></li>
+</ul>
+<p>返回当前线程。</p>
+<h2 id="threads-disposable"><a href="#threads-disposable" class="headerlink" title="threads.disposable()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadsdisposable">threads.disposable()</a></h2><ul>
+<li>返回 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=disposable">Disposable</a></li>
+</ul>
+<p>新建一个 Disposable 对象，用于等待另一个线程的某个一次性结果。更多信息参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=%e7%ba%bf%e7%a8%8b%e9%80%9a%e4%bf%a1">线程通信</a>以及<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=disposable">Disposable</a>。</p>
+<h2 id="threads-atomic-initialValue"><a href="#threads-atomic-initialValue" class="headerlink" title="threads.atomic([initialValue])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadsatomicinitialvalue">threads.atomic([initialValue])</a></h2><ul>
+<li><code>initialValue</code> {number} 初始整数值，默认为 0</li>
+<li>返回<a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLong.html">AtomicLong</a></li>
+</ul>
+<p>新建一个整数原子变量。更多信息参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8">线程安全</a>以及<a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLong.html">AtomicLong</a>。</p>
+<h2 id="threads-lock"><a href="#threads-lock" class="headerlink" title="threads.lock()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadslock">threads.lock()</a></h2><ul>
+<li>返回<a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantLock.html">ReentrantLock</a></li>
+</ul>
+<p>新建一个可重入锁。更多信息参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8">线程安全</a>以及<a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantLock.html">ReentrantLock</a>。</p>
+<h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=thread">Thread</a></h2><p>线程对象，<code>threads.start()</code>返回的对象，用于获取和控制线程的状态，与其他线程交互等。</p>
+<p>Thread 对象提供了和 timers 模块一样的 API，例如<code>setTimeout()</code>, <code>setInterval()</code>等，用于在该线程执行相应的定时回调，从而使线程之间可以直接交互。例如：</p>
+<pre><code>var thread = threads.start(function()&#123;
+    //在子线程执行的定时器
+    setInterval(function()&#123;
+        log(&quot;子线程:&quot; + threads.currentThread());
+    &#125;, 1000);
+&#125;);
+
+log(&quot;当前线程为主线程:&quot; + threads.currentThread());
+
+//等待子线程启动
+thread.waitFor();
+//在子线程执行的定时器
+thread.setTimeout(function()&#123;
+    //这段代码会在子线程执行
+    log(&quot;当前线程为子线程:&quot; + threads.currentThread());
+&#125;, 2000);
+
+sleep(30 * 1000);
+thread.interrupt();
+</code></pre>
+<h2 id="Thread-interrupt"><a href="#Thread-interrupt" class="headerlink" title="Thread.interrupt()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadinterrupt">Thread.interrupt()</a></h2><p>中断线程运行。</p>
+<h2 id="Thread-join-timeout"><a href="#Thread-join-timeout" class="headerlink" title="Thread.join([timeout])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadjointimeout">Thread.join([timeout])</a></h2><ul>
+<li><code>timeout</code> {number} 等待时间，单位毫秒</li>
+</ul>
+<p>等待线程执行完成。如果 timeout 为 0，则会一直等待直至该线程执行完成；否则最多等待 timeout 毫秒的时间。</p>
+<p>例如:</p>
+<pre><code>var sum = 0;
+//启动子线程计算1加到10000
+var thread = threads.start(function()&#123;
+    for(var i = 0; i &lt; 10000; i++)&#123;
+        sum += i;
+    &#125;
+&#125;);
+//等待该线程完成
+thread.join();
+toast(&quot;sum = &quot; + sum);
+</code></pre>
+<h2 id="Thread-isAlive"><a href="#Thread-isAlive" class="headerlink" title="Thread.isAlive()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadisalive">Thread.isAlive()</a></h2><ul>
+<li>返回 {boolean}</li>
+</ul>
+<p>返回线程是否存活。如果线程仍未开始或已经结束，返回<code>false</code>; 如果线程已经开始或者正在运行中，返回<code>true</code>。</p>
+<h2 id="Thread-waitFor"><a href="#Thread-waitFor" class="headerlink" title="Thread.waitFor()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadwaitfor">Thread.waitFor()</a></h2><p>等待线程开始执行。调用<code>threads.start()</code>以后线程仍然需要一定时间才能开始执行，因此调用此函数会等待线程开始执行；如果线程已经处于执行状态则立即返回。</p>
+<pre><code>var thread = threads.start(function()&#123;
+    //do something
+&#125;);
+thread.waitFor();
+thread.setTimeout(function()&#123;
+    //do something
+&#125;, 1000);
+</code></pre>
+<h2 id="Thread-setTimeout-callback-delay-…args"><a href="#Thread-setTimeout-callback-delay-…args" class="headerlink" title="Thread.setTimeout(callback, delay[, …args])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadsettimeoutcallback-delay-args">Thread.setTimeout(callback, delay[, …args])</a></h2><p>参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/timers?id=settimeoutcallback-delay-args">timers.setTimeout</a>。</p>
+<p>区别在于, 该定时器会在该线程执行。如果当前线程仍未开始执行或已经执行结束，则抛出<code>IllegalStateException</code>。</p>
+<pre><code>log(&quot;当前线程(主线程):&quot; + threads.currentThread());
+
+var thread = threads.start(function()&#123;
+    //设置一个空的定时来保持线程的运行状态
+    setInterval(function()&#123;&#125;, 1000);
+&#125;);
+
+sleep(1000);
+thread.setTimeout(function()&#123;
+    log(&quot;当前线程(子线程):&quot; + threads.currentThread());
+    exit();
+&#125;, 1000);
+</code></pre>
+<h2 id="Thread-setInterval-callback-delay-…args"><a href="#Thread-setInterval-callback-delay-…args" class="headerlink" title="Thread.setInterval(callback, delay[, …args])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadsetintervalcallback-delay-args">Thread.setInterval(callback, delay[, …args])</a></h2><p>参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/timers?id=setintervalcallback-delay-args">timers.setInterval()</a>。</p>
+<p>区别在于, 该定时器会在该线程执行。如果当前线程仍未开始执行或已经执行结束，则抛出<code>IllegalStateException</code>。</p>
+<p>参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/timers?id=setimmediatecallback-args">timers.setImmediate</a>。</p>
+<p>区别在于, 该定时器会在该线程执行。如果当前线程仍未开始执行或已经执行结束，则抛出<code>IllegalStateException</code>。</p>
+<h2 id="Thread-clearInterval-id"><a href="#Thread-clearInterval-id" class="headerlink" title="Thread.clearInterval(id)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadclearintervalid">Thread.clearInterval(id)</a></h2><p>参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/timers?id=clearintervalid">timers.clearInterval()</a>。</p>
+<p>区别在于, 该定时器会在该线程执行。如果当前线程仍未开始执行或已经执行结束，则抛出<code>IllegalStateException</code>。</p>
+<h2 id="Thread-clearTimeout-id"><a href="#Thread-clearTimeout-id" class="headerlink" title="Thread.clearTimeout(id)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=threadcleartimeoutid">Thread.clearTimeout(id)</a></h2><p>参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/timers?id=cleartimeoutid">timers.clearTimeout()</a>。</p>
+<p>区别在于, 该定时器会在该线程执行。如果当前线程仍未开始执行或已经执行结束，则抛出<code>IllegalStateException</code>。</p>
+<p>参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/timers?id=clearimmediateid">timers.clearImmediate()</a>。</p>
+<p>区别在于, 该定时器会在该线程执行。如果当前线程仍未开始执行或已经执行结束，则抛出<code>IllegalStateException</code>。</p>
+<h2 id="线程安全"><a href="#线程安全" class="headerlink" title="线程安全"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8">线程安全</a></h2><p>线程安全问题是一个相对专业的编程问题，本章节只提供给有需要的用户。</p>
+<p>引用维基百科的解释：</p>
+<blockquote>
+<p>线程安全是编程中的术语，指某个函数、函数库在多线程环境中被调用时，能够正确地处理多个线程之间的共享变量，使程序功能正确完成。</p>
+</blockquote>
+<p>在 Auto.js 中，线程间变量在符合 JavaScript 变量作用域规则的前提下是共享的，例如全局变量在所有线程都能访问，并且保证他们在所有线程的可见性。但是，不保证任何操作的原子性。例如经典的自增”i++”将不是原子性操作。</p>
+<p>Rhino 和 Auto.js 提供了一些简单的设施来解决简单的线程安全问题，如锁<code>threads.lock()</code>, 函数同步锁<code>sync()</code>, 整数原子变量<code>threads.atomic()</code>等。</p>
+<p>例如，对于多线程共享下的整数的自增操作(自增操作会导致问题，是因为自增操作实际上为<code>i = i + 1</code>，也就是先读取 i 的值, 把他加 1, 再赋值给 i, 如果两个线程同时进行自增操作，可能出现 i 的值只增加了 1 的情况)，应该使用<code>threads.atomic()</code>函数来新建一个整数原子变量，或者使用锁<code>threads.lock()</code>来保证操作的原子性，或者用<code>sync()</code>来增加同步锁。</p>
+<p>线程不安全的代码如下：</p>
+<pre><code>var i = 0;
+threads.start(function()&#123;
+    while(true)&#123;
+        log(i++);
+    &#125;
+&#125;);
+while(true)&#123;
+    log(i++);
+&#125;
+</code></pre>
+<p>此段代码运行后打开日志，可以看到日志中有重复的值出现。</p>
+<p>使用<code>threads.atomic()</code>的线程安全的代码如下:</p>
+<pre><code>//atomic返回的对象保证了自增的原子性
+var i = threads.atomic();
+threads.start(function()&#123;
+    while(true)&#123;
+        log(i.getAndIncrement());
+    &#125;
+&#125;);
+while(true)&#123;
+    log(i.getAndIncrement());
+&#125;
+</code></pre>
+<p>或者:</p>
+<pre><code>//锁保证了操作的原子性
+var lock = threads.lock();
+var i = 0;
+threads.start(function()&#123;
+    while(true)&#123;
+        lock.lock();
+        log(i++);
+        lock.unlock();
+    &#125;
+&#125;);
+while(true)&#123;
+    lock.lock();
+    log(i++);
+    lock.unlock();
+&#125;
+</code></pre>
+<p>或者:</p>
+<pre><code>//sync函数会把里面的函数加上同步锁，使得在同一时刻最多只能有一个线程执行这个函数
+var i = 0;
+var getAndIncrement = sync(function()&#123;
+    return i++;
+&#125;);
+threads.start(function()&#123;
+    while(true)&#123;
+        log(getAndIncrement());
+    &#125;
+&#125;);
+while(true)&#123;
+    log(getAndIncrement());
+&#125;
+</code></pre>
+<p>另外，数组 Array 不是线程安全的，如果有这种复杂的需求，请用 Android 和 Java 相关 API 来实现。例如<code>CopyOnWriteList</code>, <code>Vector</code>等都是代替数组的线程安全的类，用于不同的场景。例如:</p>
+<pre><code>var nums = new java.util.Vector();
+nums.add(123);
+nums.add(456);
+toast(&quot;长度为&quot; + nums.size());
+toast(&quot;第一个元素为&quot; + nums.get(0));
+</code></pre>
+<p>但很明显的是，这些类不像数组那样简便易用，也不能使用诸如<code>slice()</code>之类的方便的函数。在未来可能会加入线程安全的数组来解决这个问题。当然您也可以为每个数组的操作加锁来解决线程安全问题：</p>
+<pre><code>var nums = [];
+var numsLock = threads.lock();
+threads.start(function()&#123;
+    //向数组添加元素123
+    numsLock.lock();
+    nums.push(123);
+    log(&quot;线程: %s, 数组: %s&quot;, threads.currentThread(), nums);
+    numsLock.unlock();
+&#125;);
+
+threads.start(function()&#123;
+    //向数组添加元素456
+    numsLock.lock();
+    nums.push(456);
+    log(&quot;线程: %s, 数组: %s&quot;, threads.currentThread(), nums);
+    numsLock.unlock();
+&#125;);
+
+//删除数组最后一个元素
+numsLock.lock();
+nums.pop();
+log(&quot;线程: %s, 数组: %s&quot;, threads.currentThread(), nums);
+numsLock.unlock();
+</code></pre>
+<h2 id="sync-func"><a href="#sync-func" class="headerlink" title="sync(func)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=syncfunc">sync(func)</a></h2><ul>
+<li><code>func</code> {Function} 函数</li>
+<li>返回 {Function}</li>
+</ul>
+<p>给函数 func 加上同步锁并作为一个新函数返回。</p>
+<pre><code>var i = 0;
+function add(x)&#123;
+    i += x;
+&#125;
+
+var syncAdd = sync(add);
+syncAdd(10);
+toast(i);
+</code></pre>
+<h2 id="线程通信"><a href="#线程通信" class="headerlink" title="线程通信"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/threads?id=%e7%ba%bf%e7%a8%8b%e9%80%9a%e4%bf%a1">线程通信</a></h2><p>Auto.js 提供了一些简单的设施来支持简单的线程通信。<code>threads.disposable()</code>用于一个线程等待另一个线程的(一次性)结果，同时<code>Lock.newCondition()</code>提供了 Condition 对象用于一般的线程通信(await, signal)。另外，<code>events</code>模块也可以用于线程通信，通过指定<code>EventEmiiter</code>的回调执行的线程来实现。</p>
+<p>使用<code>threads.disposable()</code>可以简单地等待和获取某个线程的执行结果。例如要等待某个线程计算”1+…..+10000”:</p>
+<pre><code>var sum = threads.disposable();
+//启动子线程计算
+threads.start(function()&#123;
+    var s = 0;
+    //从1加到10000
+    for(var i = 1; i &lt;= 10000; i++)&#123;
+        s += i;
+    &#125;
+    //通知主线程接收结果
+    sum.setAndNotify(s);
+&#125;);
+//blockedGet()用于等待结果
+toast(&quot;sum = &quot; + sum.blockedGet());
+</code></pre>
+<p>如果上述代码用<code>Condition</code>实现：</p>
+<pre><code>//新建一个锁
+var lock = threads.lock();
+//新建一个条件，即&quot;计算完成&quot;
+var complete = lock.newCondition();
+var sum = 0;
+threads.start(function()&#123;
+    //从1加到10000
+    for(var i = 1; i &lt;= 10000; i++)&#123;
+        sum += i;
+    &#125;
+    //通知主线程接收结果
+    lock.lock();
+    complete.signal();
+    lock.unlock();
+&#125;);
+//等待计算完成
+lock.lock();
+complete.await();
+lock.unlock();
+//打印结果
+toast(&quot;sum = &quot; + sum);
+</code></pre>
+<p>如果上诉代码用<code>events</code>模块实现：</p>
+<pre><code>//新建一个emitter, 并指定回调执行的线程为当前线程
+var sum = events.emitter(threads.currentThread());
+threads.start(function()&#123;
+    var s = 0;
+    //从1加到10000
+    for(var i = 1; i &lt;= 10000; i++)&#123;
+        s += i;
+    &#125;
+    //发送事件result通知主线程接收结果
+    sum.emit(&#39;result&#39;, s);
+&#125;);
+sum.on(&#39;result&#39;, function(s)&#123;
+    toastLog(&quot;sum = &quot; + s + &quot;, 当前线程: &quot; + threads.currentThread());
+&#125;);
+</code></pre>
+<p>有关线程的其他问题，例如生产者消费者等问题，请用 Java 相关方法解决，例如<code>java.util.concurrent.BlockingQueue</code>。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AutoX-js/">AutoX.js</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/software-use/AutoXjs/media.html" title="多媒体 media"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">多媒体 media</div></div></a></div><div class="next-post pull-right"><a href="/software-use/AutoXjs/dialogs.html" title="对话框 dialogs"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">对话框 dialogs</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/software-use/AutoXjs/base64.html" title="base64 编码"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">base64 编码</div></div></a></div><div><a href="/software-use/AutoXjs/webview.html" title="webview与html"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">webview与html</div></div></a></div><div><a href="/software-use/AutoXjs/axios.html" title="axios"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">axios</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><a id="card-info-btn" href="mailto:aboucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:aboucide@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Threads"><span class="toc-number">1.</span> <span class="toc-text">Threads</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#threads"><span class="toc-number">2.</span> <span class="toc-text">threads</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#threads-start-action"><span class="toc-number">3.</span> <span class="toc-text">threads.start(action)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#threads-shutDownAll"><span class="toc-number">4.</span> <span class="toc-text">threads.shutDownAll()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#threads-currentThread"><span class="toc-number">5.</span> <span class="toc-text">threads.currentThread()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#threads-disposable"><span class="toc-number">6.</span> <span class="toc-text">threads.disposable()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#threads-atomic-initialValue"><span class="toc-number">7.</span> <span class="toc-text">threads.atomic([initialValue])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#threads-lock"><span class="toc-number">8.</span> <span class="toc-text">threads.lock()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread"><span class="toc-number">9.</span> <span class="toc-text">Thread</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread-interrupt"><span class="toc-number">10.</span> <span class="toc-text">Thread.interrupt()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread-join-timeout"><span class="toc-number">11.</span> <span class="toc-text">Thread.join([timeout])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread-isAlive"><span class="toc-number">12.</span> <span class="toc-text">Thread.isAlive()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread-waitFor"><span class="toc-number">13.</span> <span class="toc-text">Thread.waitFor()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread-setTimeout-callback-delay-%E2%80%A6args"><span class="toc-number">14.</span> <span class="toc-text">Thread.setTimeout(callback, delay[, …args])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread-setInterval-callback-delay-%E2%80%A6args"><span class="toc-number">15.</span> <span class="toc-text">Thread.setInterval(callback, delay[, …args])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread-clearInterval-id"><span class="toc-number">16.</span> <span class="toc-text">Thread.clearInterval(id)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread-clearTimeout-id"><span class="toc-number">17.</span> <span class="toc-text">Thread.clearTimeout(id)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8"><span class="toc-number">18.</span> <span class="toc-text">线程安全</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sync-func"><span class="toc-number">19.</span> <span class="toc-text">sync(func)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1"><span class="toc-number">20.</span> <span class="toc-text">线程通信</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.515Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.512Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/software-use/OBS.html" title="OBS录屏软件使用教程"><img src="https://obsproject.com/assets/images/new_icon_small-r.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OBS录屏软件使用教程"/></a><div class="content"><a class="title" href="/software-use/OBS.html" title="OBS录屏软件使用教程">OBS录屏软件使用教程</a><time datetime="2025-11-17T00:00:00.000Z" title="发表日期 2025-11-17 00:00:00">2025-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记"><div style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div></a><div class="content"><a class="title" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记">拔牙日记</a><time datetime="2025-10-26T11:22:26.000Z" title="发表日期 2025-10-26 11:22:26">2025-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建"><img src="https://img2.baidu.com/it/u=1025364924,3068102242&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=786&amp;h=500w=285&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;dpr=2&amp;pid=1.7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言编程环境搭建"/></a><div class="content"><a class="title" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建">C语言编程环境搭建</a><time datetime="2025-09-17T00:00:00.000Z" title="发表日期 2025-09-17 00:00:00">2025-09-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Yuan</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'aboucide/hexo-aboucide-comment',
+      'data-repo-id': 'R_kgDOM8yVSQ',
+      'data-category-id': 'DIC_kwDOM8yVSc4CjJFp',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>

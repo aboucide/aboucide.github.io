@@ -1,0 +1,391 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>引擎 engines | 源途记</title><meta name="author" content="Yuan"><meta name="copyright" content="Yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Engines 稳定性: 稳定  engines 模块包含了一些与脚本环境、脚本运行、脚本引擎有关的函数，包括运行其他脚本，关闭脚本等。 例如，获取脚本所在目录： toast(engines.myEngine().cwd());  Enginesengines.execScript(name, script[, config]) name {string} 要运行的脚本名称。这个名称和文件名称无关">
+<meta property="og:type" content="article">
+<meta property="og:title" content="引擎 engines">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/engines.html">
+<meta property="og:site_name" content="源途记">
+<meta property="og:description" content="Engines 稳定性: 稳定  engines 模块包含了一些与脚本环境、脚本运行、脚本引擎有关的函数，包括运行其他脚本，关闭脚本等。 例如，获取脚本所在目录： toast(engines.myEngine().cwd());  Enginesengines.execScript(name, script[, config]) name {string} 要运行的脚本名称。这个名称和文件名称无关">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/images/logo/autojs-logo.png">
+<meta property="article:published_time" content="2024-12-11T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-20T09:40:59.518Z">
+<meta property="article:author" content="Yuan">
+<meta property="article:tag" content="AutoX.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/images/logo/autojs-logo.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/engines.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-3082128886989266',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4901b9157b9977471169d4b6f8d60640";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4MHS6HL58"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D4MHS6HL58');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '引擎 engines',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-20 09:40:59'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="源途记"><span class="site-name">源途记</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">引擎 engines<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/软件使用教程 software-use/AutoX.js使用说明/引擎Engines.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2024-12-11T00:00:00.000Z" title="发表日期 2024-12-11 00:00:00">2024-12-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2025-11-20T09:40:59.518Z" title="最近更新日期 2025-11-20 09:40:59">2025-11-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/">软件使用教程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/autojs/">autojs</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="引擎 engines"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="Engines"><a href="#Engines" class="headerlink" title="Engines"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=engines">Engines</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>engines 模块包含了一些与脚本环境、脚本运行、脚本引擎有关的函数，包括运行其他脚本，关闭脚本等。</p>
+<p>例如，获取脚本所在目录：</p>
+<pre><code>toast(engines.myEngine().cwd());
+</code></pre>
+<h2 id="Engines-1"><a href="#Engines-1" class="headerlink" title="Engines"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=engines-1">Engines</a></h2><h2 id="engines-execScript-name-script-config"><a href="#engines-execScript-name-script-config" class="headerlink" title="engines.execScript(name, script[, config])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=enginesexecscriptname-script-config">engines.execScript(name, script[, config])</a></h2><ul>
+<li><code>name</code> {string} 要运行的脚本名称。这个名称和文件名称无关，只是在任务管理中显示的名称。</li>
+<li><code>script</code> {string} 要运行的脚本内容。</li>
+<li><code>config</code> {Object} 运行配置项<ul>
+<li><code>delay</code> {number} 延迟执行的毫秒数，默认为 0</li>
+<li><code>loopTimes</code> {number} 循环运行次数，默认为 1。0 为无限循环。</li>
+<li><code>interval</code> {number} 循环运行时两次运行之间的时间间隔，默认为 0</li>
+<li><code>path</code> {Array} | {string} 指定脚本运行的目录。这些路径会用于 require 时寻找模块文件。</li>
+</ul>
+</li>
+</ul>
+<p>在新的脚本环境中运行脚本 script。返回一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptexecution">ScriptExectuion</a>对象。</p>
+<p>所谓新的脚本环境，指定是，脚本中的变量和原脚本的变量是不共享的，并且，脚本会在新的线程中运行。</p>
+<p>最简单的例子如下：</p>
+<pre><code>engines.execScript(&quot;hello world&quot;, &quot;toast(&#39;hello world&#39;)&quot;);
+</code></pre>
+<p>如果要循环运行，则：</p>
+<pre><code>//每隔 3 秒运行一次脚本，循环 10 次
+engines.execScript(&quot;hello world&quot;, &quot;toast(&#39;hello world&#39;)&quot;, &#123;
+    loopTimes: 10,
+    interval: 3000
+&#125;);
+</code></pre>
+<p>用字符串来编写脚本非常不方便，可以结合 <code>Function.toString()</code>的方法来执行特定函数:</p>
+<pre><code>function helloWorld()&#123;
+    //注意，这里的变量和脚本主体的变量并不共享
+    toast(&quot;hello world&quot;);
+&#125;
+engines.execScript(&quot;hello world&quot;, &quot;helloWorld();\n&quot; + helloWorld.toString());
+</code></pre>
+<p>如果要传递变量，则可以把这些封装成一个函数：</p>
+<pre><code>function exec(action, args)&#123;
+    args = args || &#123;&#125;;
+    engines.execScript(action.name, action + &quot;(&quot; + JSON.stringify(args) + &quot;);\n&quot; + action.toString());
+&#125;
+
+//要执行的函数，是一个简单的加法
+function add(args)&#123;
+    toast(args.a + args.b);
+&#125;
+
+//在新的脚本环境中执行 1 + 2
+exec(add, &#123;a: 1, b:2&#125;);
+</code></pre>
+<h2 id="engines-execScriptFile-path-config"><a href="#engines-execScriptFile-path-config" class="headerlink" title="engines.execScriptFile(path[, config])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=enginesexecscriptfilepath-config">engines.execScriptFile(path[, config])</a></h2><ul>
+<li><code>path</code> {string} 要运行的脚本路径。</li>
+<li><code>config</code> {Object} 运行配置项<ul>
+<li><code>delay</code> {number} 延迟执行的毫秒数，默认为 0</li>
+<li><code>loopTimes</code> {number} 循环运行次数，默认为 1。0 为无限循环。</li>
+<li><code>interval</code> {number} 循环运行时两次运行之间的时间间隔，默认为 0</li>
+<li><code>path</code> {Array} | {string} 指定脚本运行的目录。这些路径会用于 require 时寻找模块文件。</li>
+</ul>
+</li>
+</ul>
+<p>在新的脚本环境中运行脚本文件 path。返回一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptexecution">ScriptExecution</a>对象。</p>
+<pre><code>engines.execScriptFile(&quot;/sdcard/脚本/1.js&quot;);
+</code></pre>
+<h2 id="engines-execAutoFile-path-config"><a href="#engines-execAutoFile-path-config" class="headerlink" title="engines.execAutoFile(path[, config])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=enginesexecautofilepath-config">engines.execAutoFile(path[, config])</a></h2><ul>
+<li><code>path</code> {string} 要运行的录制文件路径。</li>
+<li><code>config</code> {Object} 运行配置项<ul>
+<li><code>delay</code> {number} 延迟执行的毫秒数，默认为 0</li>
+<li><code>loopTimes</code> {number} 循环运行次数，默认为 1。0 为无限循环。</li>
+<li><code>interval</code> {number} 循环运行时两次运行之间的时间间隔，默认为 0</li>
+<li><code>path</code> {Array} | {string} 指定脚本运行的目录。这些路径会用于 require 时寻找模块文件。</li>
+</ul>
+</li>
+</ul>
+<p>在新的脚本环境中运行录制文件 path。返回一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptexecution">ScriptExecution</a>对象。</p>
+<pre><code>engines.execAutoFile(&quot;/sdcard/脚本/1.auto&quot;);
+</code></pre>
+<h2 id="engines-stopAll"><a href="#engines-stopAll" class="headerlink" title="engines.stopAll()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=enginesstopall">engines.stopAll()</a></h2><p>停止所有正在运行的脚本。包括当前脚本自身。</p>
+<h2 id="engines-stopAllAndToast"><a href="#engines-stopAllAndToast" class="headerlink" title="engines.stopAllAndToast()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=enginesstopallandtoast">engines.stopAllAndToast()</a></h2><p>停止所有正在运行的脚本并显示停止的脚本数量。包括当前脚本自身。</p>
+<h2 id="engines-myEngine"><a href="#engines-myEngine" class="headerlink" title="engines.myEngine()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=enginesmyengine">engines.myEngine()</a></h2><p>返回当前脚本的脚本引擎对象(<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptengine">ScriptEngine</a>)</p>
+<p><strong>[v4.1.0 新增]</strong> 特别的，该对象可以通过<code>execArgv</code>来获取他的运行参数，包括外部参数、intent 等。例如：</p>
+<pre><code>log(engines.myEngine().execArgv);
+</code></pre>
+<p>普通脚本的运行参数通常为空，通过定时任务的广播启动的则可以获取到启动的 intent。</p>
+<h2 id="engines-all"><a href="#engines-all" class="headerlink" title="engines.all()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=enginesall">engines.all()</a></h2><ul>
+<li>返回 {Array}</li>
+</ul>
+<p>返回当前所有正在运行的脚本的脚本引擎<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptengine">ScriptEngine</a>的数组。</p>
+<pre><code>log(engines.all());
+</code></pre>
+<h2 id="ScriptExecution"><a href="#ScriptExecution" class="headerlink" title="ScriptExecution"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptexecution">ScriptExecution</a></h2><p>执行脚本时返回的对象，可以通过他获取执行的引擎、配置等，也可以停止这个执行。</p>
+<p>要停止这个脚本的执行，使用<code>exectuion.getEngine().forceStop()</code>.</p>
+<h2 id="ScriptExecution-getEngine"><a href="#ScriptExecution-getEngine" class="headerlink" title="ScriptExecution.getEngine()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptexecutiongetengine">ScriptExecution.getEngine()</a></h2><p>返回执行该脚本的脚本引擎对象(<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptengine">ScriptEngine</a>)</p>
+<h2 id="ScriptExecution-getConfig"><a href="#ScriptExecution-getConfig" class="headerlink" title="ScriptExecution.getConfig()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptexecutiongetconfig">ScriptExecution.getConfig()</a></h2><p>返回该脚本的运行配置(<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptconfig">ScriptConfig</a>)</p>
+<h2 id="ScriptEngine"><a href="#ScriptEngine" class="headerlink" title="ScriptEngine"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptengine">ScriptEngine</a></h2><p>脚本引擎对象。</p>
+<h2 id="ScriptEngine-isDestroyed"><a href="#ScriptEngine-isDestroyed" class="headerlink" title="ScriptEngine.isDestroyed()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptengineisdestroyed">ScriptEngine.isDestroyed()</a></h2><ul>
+<li>返回 {Boolean}</li>
+</ul>
+<p>检测该脚本是否执行结束</p>
+<pre><code>let e = engines.execScriptFile(&quot;xx.js&quot;);
+sleep(2000);
+log(e.getEngine().isDestroyed())
+</code></pre>
+<h2 id="ScriptEngine-forceStop"><a href="#ScriptEngine-forceStop" class="headerlink" title="ScriptEngine.forceStop()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptengineforcestop">ScriptEngine.forceStop()</a></h2><p>停止脚本引擎的执行。</p>
+<h2 id="ScriptEngine-cwd"><a href="#ScriptEngine-cwd" class="headerlink" title="ScriptEngine.cwd()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptenginecwd">ScriptEngine.cwd()</a></h2><ul>
+<li>返回 {string}</li>
+</ul>
+<p>返回脚本执行的路径。对于一个脚本文件而言为这个脚本所在的文件夹；对于其他脚本，例如字符串脚本，则为<code>null</code>或者执行时的设置值。</p>
+<h2 id="ScriptEngine-getSource"><a href="#ScriptEngine-getSource" class="headerlink" title="ScriptEngine.getSource()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptenginegetsource">ScriptEngine.getSource()</a></h2><ul>
+<li>返回 <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptsource">ScriptSource</a></li>
+</ul>
+<p>返回当前脚本引擎正在执行的脚本对象。</p>
+<pre><code>log(engines.myEngine().getSource());
+</code></pre>
+<h2 id="ScriptEngine-emit-eventName-…args"><a href="#ScriptEngine-emit-eventName-…args" class="headerlink" title="ScriptEngine.emit(eventName[, …args])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptengineemiteventname-args">ScriptEngine.emit(eventName[, …args])</a></h2><ul>
+<li><code>eventName</code> {string} 事件名称</li>
+<li><code>...args</code> {any} 事件参数</li>
+</ul>
+<p>向该脚本引擎发送一个事件，该事件可以在该脚本引擎对应的脚本的 events 模块监听到并在脚本主线程执行事件处理。</p>
+<p>例如脚本 receiver.js 的内容如下：</p>
+<pre><code>//监听 say 事件
+events.on(&quot;say&quot;, function(words)&#123;
+    toastLog(words);
+&#125;);
+//保持脚本运行
+setInterval(()=&gt;&#123;&#125;, 1000);
+</code></pre>
+<p>同一目录另一脚本可以启动他并发送该事件：</p>
+<pre><code>//运行脚本
+var e = engines.execScriptFile(&quot;./receiver.js&quot;);
+//等待脚本启动
+sleep(2000);
+//向该脚本发送事件
+e.getEngine().emit(&quot;say&quot;, &quot;你好&quot;);
+</code></pre>
+<h2 id="ScriptConfig"><a href="#ScriptConfig" class="headerlink" title="ScriptConfig"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=scriptconfig">ScriptConfig</a></h2><p>脚本执行时的配置。</p>
+<h2 id="delay"><a href="#delay" class="headerlink" title="delay"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=delay">delay</a></h2><ul>
+<li>{number}</li>
+</ul>
+<p>延迟执行的毫秒数</p>
+<h2 id="interval"><a href="#interval" class="headerlink" title="interval"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=interval">interval</a></h2><ul>
+<li>{number}</li>
+</ul>
+<p>循环运行时两次运行之间的时间间隔</p>
+<h2 id="loopTimes"><a href="#loopTimes" class="headerlink" title="loopTimes"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=looptimes">loopTimes</a></h2><ul>
+<li>{number}</li>
+</ul>
+<p>循环运行次数</p>
+<h2 id="getPath"><a href="#getPath" class="headerlink" title="getPath()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/engines?id=getpath">getPath()</a></h2><ul>
+<li>返回 {Array}</li>
+</ul>
+<p>返回一个字符串数组表示脚本运行时模块寻找的路径。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AutoX-js/">AutoX.js</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/software-use/AutoXjs/Q&amp;A.html" title="常见问题"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">常见问题</div></div></a></div><div class="next-post pull-right"><a href="/software-use/AutoXjs/floaty.html" title="悬浮窗 floaty"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">悬浮窗 floaty</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/software-use/AutoXjs/base64.html" title="base64 编码"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">base64 编码</div></div></a></div><div><a href="/software-use/AutoXjs/webview.html" title="webview与html"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">webview与html</div></div></a></div><div><a href="/software-use/AutoXjs/axios.html" title="axios"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">axios</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><a id="card-info-btn" href="mailto:aboucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:aboucide@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Engines"><span class="toc-number">1.</span> <span class="toc-text">Engines</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Engines-1"><span class="toc-number">2.</span> <span class="toc-text">Engines</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#engines-execScript-name-script-config"><span class="toc-number">3.</span> <span class="toc-text">engines.execScript(name, script[, config])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#engines-execScriptFile-path-config"><span class="toc-number">4.</span> <span class="toc-text">engines.execScriptFile(path[, config])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#engines-execAutoFile-path-config"><span class="toc-number">5.</span> <span class="toc-text">engines.execAutoFile(path[, config])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#engines-stopAll"><span class="toc-number">6.</span> <span class="toc-text">engines.stopAll()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#engines-stopAllAndToast"><span class="toc-number">7.</span> <span class="toc-text">engines.stopAllAndToast()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#engines-myEngine"><span class="toc-number">8.</span> <span class="toc-text">engines.myEngine()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#engines-all"><span class="toc-number">9.</span> <span class="toc-text">engines.all()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptExecution"><span class="toc-number">10.</span> <span class="toc-text">ScriptExecution</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptExecution-getEngine"><span class="toc-number">11.</span> <span class="toc-text">ScriptExecution.getEngine()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptExecution-getConfig"><span class="toc-number">12.</span> <span class="toc-text">ScriptExecution.getConfig()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptEngine"><span class="toc-number">13.</span> <span class="toc-text">ScriptEngine</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptEngine-isDestroyed"><span class="toc-number">14.</span> <span class="toc-text">ScriptEngine.isDestroyed()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptEngine-forceStop"><span class="toc-number">15.</span> <span class="toc-text">ScriptEngine.forceStop()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptEngine-cwd"><span class="toc-number">16.</span> <span class="toc-text">ScriptEngine.cwd()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptEngine-getSource"><span class="toc-number">17.</span> <span class="toc-text">ScriptEngine.getSource()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptEngine-emit-eventName-%E2%80%A6args"><span class="toc-number">18.</span> <span class="toc-text">ScriptEngine.emit(eventName[, …args])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScriptConfig"><span class="toc-number">19.</span> <span class="toc-text">ScriptConfig</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#delay"><span class="toc-number">20.</span> <span class="toc-text">delay</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#interval"><span class="toc-number">21.</span> <span class="toc-text">interval</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#loopTimes"><span class="toc-number">22.</span> <span class="toc-text">loopTimes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#getPath"><span class="toc-number">23.</span> <span class="toc-text">getPath()</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.515Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.512Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/software-use/OBS.html" title="OBS录屏软件使用教程"><img src="https://obsproject.com/assets/images/new_icon_small-r.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OBS录屏软件使用教程"/></a><div class="content"><a class="title" href="/software-use/OBS.html" title="OBS录屏软件使用教程">OBS录屏软件使用教程</a><time datetime="2025-11-17T00:00:00.000Z" title="发表日期 2025-11-17 00:00:00">2025-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记"><div style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div></a><div class="content"><a class="title" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记">拔牙日记</a><time datetime="2025-10-26T11:22:26.000Z" title="发表日期 2025-10-26 11:22:26">2025-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建"><img src="https://img2.baidu.com/it/u=1025364924,3068102242&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=786&amp;h=500w=285&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;dpr=2&amp;pid=1.7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言编程环境搭建"/></a><div class="content"><a class="title" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建">C语言编程环境搭建</a><time datetime="2025-09-17T00:00:00.000Z" title="发表日期 2025-09-17 00:00:00">2025-09-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Yuan</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'aboucide/hexo-aboucide-comment',
+      'data-repo-id': 'R_kgDOM8yVSQ',
+      'data-category-id': 'DIC_kwDOM8yVSc4CjJFp',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>

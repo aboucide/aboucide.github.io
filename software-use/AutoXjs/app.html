@@ -1,0 +1,467 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>app 相关 | 源途记</title><meta name="author" content="Yuan"><meta name="copyright" content="Yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="autojs的app操作。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="app 相关">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/app.html">
+<meta property="og:site_name" content="源途记">
+<meta property="og:description" content="autojs的app操作。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/images/logo/autojs-logo.png">
+<meta property="article:published_time" content="2024-12-11T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-20T09:40:59.516Z">
+<meta property="article:author" content="Yuan">
+<meta property="article:tag" content="AutoX.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/images/logo/autojs-logo.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/app.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-3082128886989266',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4901b9157b9977471169d4b6f8d60640";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4MHS6HL58"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D4MHS6HL58');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'app 相关',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-20 09:40:59'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="源途记"><span class="site-name">源途记</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">app 相关<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/软件使用教程 software-use/AutoX.js使用说明/基础/app相关.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2024-12-11T00:00:00.000Z" title="发表日期 2024-12-11 00:00:00">2024-12-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2025-11-20T09:40:59.516Z" title="最近更新日期 2025-11-20 09:40:59">2025-11-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/">软件使用教程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/autojs/">autojs</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="app 相关"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="APP"><a href="#APP" class="headerlink" title="APP"></a>APP</h2><p>该模块提供一系列函数，用于使用其他应用、与其他应用交互。例如发送意图、打开文件、发送邮件等。</p>
+<p>同时提供了方便的进阶函数 <code>startActivity</code> 和 <code>sendBroadcast</code> ，用他们可完成app模块没有内置的和其他应用的交互。</p>
+<h2 id="app-versionCode"><a href="#app-versionCode" class="headerlink" title="app.versionCode"></a>app.versionCode</h2><ul>
+<li><code>return</code> {number}</li>
+</ul>
+<p>当前软件版本号，整数值。例如160, 256等。</p>
+<p>如果在Auto.js中运行则为Auto.js的版本号；在打包的软件中则为打包软件的版本号。</p>
+<pre><code>toastLog(app.versionCode);
+</code></pre>
+<h2 id="app-versionName"><a href="#app-versionName" class="headerlink" title="app.versionName"></a>app.versionName</h2><ul>
+<li><code>return</code> {string}</li>
+</ul>
+<p>当前软件的版本名称，例如”3.0.0 Beta”。</p>
+<p>如果在Auto.js中运行则为Auto.js的版本名称；在打包的软件中则为打包软件的版本名称。</p>
+<pre><code>toastLog(app.verionName);
+</code></pre>
+<h2 id="app-autojs-versionCode"><a href="#app-autojs-versionCode" class="headerlink" title="app.autojs.versionCode"></a>app.autojs.versionCode</h2><ul>
+<li><code>return</code> {number}</li>
+</ul>
+<p>Auto.js版本号，整数值。例如160, 256等。</p>
+<h2 id="app-autojs-versionName"><a href="#app-autojs-versionName" class="headerlink" title="app.autojs.versionName"></a>app.autojs.versionName</h2><ul>
+<li><code>return</code> {string}</li>
+</ul>
+<p>Auto.js版本名称，例如”3.0.0 Beta”。</p>
+<h2 id="app-launchApp-appName"><a href="#app-launchApp-appName" class="headerlink" title="app.launchApp(appName)"></a>app.launchApp(appName)</h2><ul>
+<li><code>appName</code> {string} 应用名称</li>
+</ul>
+<p>通过应用名称启动应用。如果该名称对应的应用不存在，则返回false; 否则返回true。如果该名称对应多个应用，则只启动其中某一个。</p>
+<p>该函数也可以作为全局函数使用。</p>
+<pre><code>launchApp(&quot;Auto.js&quot;);
+</code></pre>
+<h2 id="app-launch-packageName"><a href="#app-launch-packageName" class="headerlink" title="app.launch(packageName)"></a>app.launch(packageName)</h2><ul>
+<li><code>packageName</code> {string} 应用包名</li>
+</ul>
+<p>通过应用包名启动应用。如果该包名对应的应用不存在，则返回false；否则返回true。</p>
+<p>该函数也可以作为全局函数使用。</p>
+<pre><code>//启动微信
+launch(&quot;com.tencent.mm&quot;);
+</code></pre>
+<h2 id="app-launchPackage-packageName"><a href="#app-launchPackage-packageName" class="headerlink" title="app.launchPackage(packageName)"></a>app.launchPackage(packageName)</h2><ul>
+<li><code>packageName</code> {string} 应用包名</li>
+</ul>
+<p>相当于<code>app.launch(packageName)</code>。</p>
+<h2 id="app-getPackageName-appName"><a href="#app-getPackageName-appName" class="headerlink" title="app.getPackageName(appName)"></a>app.getPackageName(appName)</h2><ul>
+<li><code>appName</code> {string} 应用名称</li>
+</ul>
+<p>获取应用名称对应的已安装的应用的包名，如果该找不到该应用，返回 <code>null</code> 。如果该名称对应多个应用，则只返回其中某一个的包名。</p>
+<p>该函数也可以作为全局函数使用。</p>
+<pre><code>var name = getPackageName(&quot;QQ&quot;); //返回&quot;com.tencent.mobileqq&quot;
+</code></pre>
+<h2 id="app-getAppName-packageName"><a href="#app-getAppName-packageName" class="headerlink" title="app.getAppName(packageName)"></a>app.getAppName(packageName)</h2><ul>
+<li><code>packageName</code> {string} 应用包名</li>
+</ul>
+<p>获取应用包名对应的已安装的应用的名称。如果该找不到该应用，返回null。</p>
+<p>该函数也可以作为全局函数使用。</p>
+<pre><code>var name = getAppName(&quot;com.tencent.mobileqq&quot;); //返回&quot;QQ&quot;
+</code></pre>
+<h2 id="app-openAppSetting-packageName"><a href="#app-openAppSetting-packageName" class="headerlink" title="app.openAppSetting(packageName)"></a>app.openAppSetting(packageName)</h2><ul>
+<li><code>packageName</code> {string} 应用包名</li>
+<li><code>return</code> {Boolean}</li>
+</ul>
+<p>打开应用的详情页(设置页)。如果找不到该应用，返回false; 否则返回true。</p>
+<p>该函数也可以作为全局函数使用。</p>
+<h2 id="app-viewFile-path"><a href="#app-viewFile-path" class="headerlink" title="app.viewFile(path)"></a>app.viewFile(path)</h2><ul>
+<li><code>path</code> {string} 文件路径</li>
+</ul>
+<p>用其他应用查看文件。文件不存在的情况由查看文件的应用处理。</p>
+<p>如果找不出可以查看该文件的应用，则抛出<code>ActivityNotException</code>。</p>
+<pre><code>//查看文本文件
+app.viewFile(&quot;/sdcard/1.txt&quot;);
+</code></pre>
+<h2 id="app-editFile-path"><a href="#app-editFile-path" class="headerlink" title="app.editFile(path)"></a>app.editFile(path)</h2><ul>
+<li><code>path</code> {string} 文件路径</li>
+</ul>
+<p>用其他应用编辑文件。文件不存在的情况由编辑文件的应用处理。</p>
+<p>如果找不出可以编辑该文件的应用，则抛出<code>ActivityNotException</code>。</p>
+<pre><code>//编辑文本文件
+app.editFile(&#39;/sdcard/1.txt/&#39;);
+</code></pre>
+<h2 id="app-uninstall-packageName"><a href="#app-uninstall-packageName" class="headerlink" title="app.uninstall(packageName)"></a>app.uninstall(packageName)</h2><ul>
+<li><code>packageName</code> {string} 应用包名</li>
+</ul>
+<p>卸载应用。执行后会会弹出卸载应用的提示框。如果该包名的应用未安装，由应用卸载程序处理，可能弹出”未找到应用”的提示。</p>
+<pre><code>//卸载QQ
+app.uninstall(&quot;com.tencent.mobileqq&quot;);
+</code></pre>
+<h2 id="app-openUrl-url"><a href="#app-openUrl-url" class="headerlink" title="app.openUrl(url)"></a>app.openUrl(url)</h2><ul>
+<li><code>url</code> {string} 网站的Url，如果不以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头则默认是”http:&#x2F;&#x2F;“。</li>
+</ul>
+<p>用浏览器打开网站url。</p>
+<p>如果没有安装浏览器应用，则抛出<code>ActivityNotException</code>。</p>
+<h2 id="app-sendEmail-options"><a href="#app-sendEmail-options" class="headerlink" title="app.sendEmail(options)"></a>app.sendEmail(options)</h2><ul>
+<li><code>options</code> {Object} 发送邮件的参数。包括:<ul>
+<li><code>email</code> {string} | {Array} 收件人的邮件地址。如果有多个收件人，则用字符串数组表示</li>
+<li><code>cc</code> {string} | {Array} 抄送收件人的邮件地址。如果有多个抄送收件人，则用字符串数组表示</li>
+<li><code>bcc</code> {string} | {Array} 密送收件人的邮件地址。如果有多个密送收件人，则用字符串数组表示</li>
+<li><code>subject</code> {string} 邮件主题(标题)</li>
+<li><code>text</code> {string} 邮件正文</li>
+<li><code>attachment</code> {string} 附件的路径。</li>
+</ul>
+</li>
+</ul>
+<p>根据选项<code>options</code>调用邮箱应用发送邮件。这些选项均是可选的。</p>
+<p>如果没有安装邮箱应用，则抛出<code>ActivityNotException</code>。</p>
+<pre><code>//发送邮件给10086@qq.com和10001@qq.com。
+app.sendEmail(&#123;
+    email: [&quot;10086@qq.com&quot;, &quot;10001@qq.com&quot;],
+    subject: &quot;这是一个邮件标题&quot;,
+    text: &quot;这是邮件正文&quot;
+&#125;);
+</code></pre>
+<h2 id="app-startActivity-name"><a href="#app-startActivity-name" class="headerlink" title="app.startActivity(name)"></a>app.startActivity(name)</h2><ul>
+<li><code>name</code> {string} 活动名称，可选的值为:<ul>
+<li><code>console</code> 日志界面</li>
+<li><code>settings</code> 设置界面</li>
+</ul>
+</li>
+</ul>
+<p>启动Auto.js的特定界面。该函数在Auto.js内运行则会打开Auto.js内的界面，在打包应用中运行则会打开打包应用的相应界面。</p>
+<pre><code>app.startActivity(&quot;console&quot;);
+</code></pre>
+<h2 id="进阶-意图Intent"><a href="#进阶-意图Intent" class="headerlink" title="进阶: 意图Intent"></a>进阶: 意图Intent</h2><p>Intent(意图) 是一个消息传递对象，您可以使用它从其他应用组件请求操作。尽管 Intent 可以通过多种方式促进组件之间的通信，但其基本用例主要包括以下三个：</p>
+<ul>
+<li><p>启动活动(Activity)： Activity 表示应用中的一个”屏幕”。例如应用主入口都是一个Activity，应用的功能通常也以Activity的形式独立，例如微信的主界面、朋友圈、聊天窗口都是不同的Activity。通过将 Intent 传递给 startActivity()，您可以启动新的 Activity 实例。Intent 描述了要启动的 Activity，并携带了任何必要的数据。</p>
+</li>
+<li><p>启动服务(Service)： Service 是一个不使用用户界面而在后台执行操作的组件。通过将 Intent 传递给 startService()，您可以启动服务执行一次性操作（例如，下载文件）。Intent 描述了要启动的服务，并携带了任何必要的数据。</p>
+</li>
+<li><p>传递广播： 广播是任何应用均可接收的消息。系统将针对系统事件（例如：系统启动或设备开始充电时）传递各种广播。通过将 Intent 传递给 sendBroadcast()、sendOrderedBroadcast() 或 sendStickyBroadcast()，您可以将广播传递给其他应用。</p>
+</li>
+</ul>
+<p>本模块提供了构建Intent的函数(<code>app.intent()</code>), 启动Activity的函数<code>app.startActivity()</code>, 发送广播的函数<code>app.sendBroadcast()</code>。</p>
+<p>使用这些方法可以用来方便的调用其他应用。例如直接打开某个QQ号的个人卡片页，打开某个QQ号的聊天窗口等。</p>
+<pre><code>var qq = &quot;2732014414&quot;;
+app.startActivity(&#123; 
+    action: &quot;android.intent.action.VIEW&quot;, 
+    data:&quot;mqq://im/chat?chat_type=wpa&amp;version=1&amp;src_type=web&amp;uin=&quot; + qq, 
+    packageName: &quot;com.tencent.mobileqq&quot;, 
+&#125;);
+</code></pre>
+<h2 id="app-intent-options"><a href="#app-intent-options" class="headerlink" title="app.intent(options)"></a>app.intent(options)</h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>options</code> {Object} 选项，包括：<ul>
+<li><code>action</code> {string} 意图的Action，指意图要完成的动作，是一个字符串常量，比如”android.intent.action.SEND”。当action以”android.intent.action”开头时，可以省略前缀，直接用”SEND”代替。参见<a target="_blank" rel="noopener" href="https://developer.android.com/reference/android/content/Intent.html#standard-activity-actions">Actions</a>。</li>
+<li><code>type</code> {string} 意图的MimeType，表示和该意图直接相关的数据的类型，表示比如”text&#x2F;plain”为纯文本类型。</li>
+<li><code>data</code> {string} 意图的Data，表示和该意图直接相关的数据，是一个Uri, 可以是文件路径或者Url等。例如要打开一个文件, action为”android.intent.action.VIEW”, data为”file:&#x2F;&#x2F;&#x2F;sdcard&#x2F;1.txt”。</li>
+<li><code>category</code> {Array} 意图的类别。比较少用。参见<a target="_blank" rel="noopener" href="https://developer.android.com/reference/android/content/Intent.html#standard-categories">Categories</a>。</li>
+<li><code>packageName</code> {string} 目标包名</li>
+<li><code>className</code> {string} 目标Activity或Service等组件的名称</li>
+<li><code>extras</code> {Object} 以键值对构成的这个Intent的Extras(额外信息)。提供该意图的其他信息，例如发送邮件时的邮件标题、邮件正文。参见<a target="_blank" rel="noopener" href="https://developer.android.com/reference/android/content/Intent.html#standard-extra-data">Extras</a>。</li>
+<li><code>flags</code> {Array} intent的标识，字符串数组，例如<code>[&quot;activity_new_task&quot;, &quot;grant_read_uri_permission&quot;]</code>。参见<a target="_blank" rel="noopener" href="https://developer.android.com/reference/android/content/Intent.html#setFlags%28int%29">Flags</a>。</li>
+<li><code>root</code> {Boolea} 是否以root权限启动、发送该intent。使用该参数后，不能使用`context.</li>
+</ul>
+</li>
+</ul>
+<p>根据选项，构造一个意图Intent对象。</p>
+<p>例如：</p>
+<pre><code>//打开应用来查看图片文件
+var i = app.intent(&#123;
+    action: &quot;VIEW&quot;,
+    type: &quot;image/png&quot;,
+    data: &quot;file:///sdcard/1.png&quot;
+&#125;);
+context.startActivity(i);
+</code></pre>
+<p>需要注意的是，除非应用专门暴露Activity出来，否则在没有root权限的情况下使用intent是无法跳转到特定Activity、应用的特定界面的。例如我们能通过Intent跳转到QQ的分享界面，是因为QQ对外暴露了分享的Activity；而在没有root权限的情况下，我们无法通过intent跳转到QQ的设置界面，因为QQ并没有暴露这个Activity。</p>
+<p>但如果有root权限，则在intent的参数加上<code>&quot;root&quot;: true</code>即可。例如使用root权限跳转到Auto.js的设置界面为：</p>
+<pre><code>app.startActivity(&#123;
+    packageName: &quot;org.autojs.autojs&quot;,
+    className: &quot;org.autojs.autojs.ui.settings.SettingsActivity_&quot;,
+    root: true
+&#125;);
+</code></pre>
+<p>另外，关于intent的参数如何获取的问题，一些intent是意外发现并且在网络中传播的（例如跳转QQ聊天窗口是因为QQ给网页提供了跳转到客服QQ的方法），如果要自己获取活动的intent的参数，可以通过例如”intent记录”，”隐式启动”等应用拦截内部intent或者查询暴露的intent。其中拦截内部intent需要XPosed框架，或者可以通过反编译等手段获取参数。总之，没有简单直接的方法。</p>
+<p>更多信息，请百度<a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=android%20Intent">安卓Intent</a>或参考<a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/intents-filters.html#Types">Android指南: Intent</a>。</p>
+<h2 id="app-startActivity-options"><a href="#app-startActivity-options" class="headerlink" title="app.startActivity(options)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/app?id=appstartactivityoptions">app.startActivity(options)</a></h2><ul>
+<li><code>options</code> {Object} 选项</li>
+</ul>
+<p>根据选项构造一个Intent，并启动该Activity。</p>
+<pre><code>app.startActivity(&#123;
+    action: &quot;SEND&quot;,
+    type: &quot;text/plain&quot;,
+    data: &quot;file:///sdcard/1.txt&quot;
+&#125;);
+</code></pre>
+<h2 id="app-sendBroadcast-options"><a href="#app-sendBroadcast-options" class="headerlink" title="app.sendBroadcast(options)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/app?id=appsendbroadcastoptions">app.sendBroadcast(options)</a></h2><ul>
+<li><code>options</code> {Object} 选项</li>
+</ul>
+<p>根据选项构造一个Intent，并发送该广播。</p>
+<h2 id="app-startService-options"><a href="#app-startService-options" class="headerlink" title="app.startService(options)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/app?id=appstartserviceoptions">app.startService(options)</a></h2><ul>
+<li><code>options</code> {Object} 选项</li>
+</ul>
+<p>根据选项构造一个Intent，并启动该服务。</p>
+<h2 id="app-sendBroadcast-name"><a href="#app-sendBroadcast-name" class="headerlink" title="app.sendBroadcast(name)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/app?id=appsendbroadcastname">app.sendBroadcast(name)</a></h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>name</code> {string} 特定的广播名称，包括：<ul>
+<li><code>inspect_layout_hierarchy</code> 布局层次分析</li>
+<li><code>inspect_layout_bounds</code> 布局范围</li>
+</ul>
+</li>
+</ul>
+<p>发送以上特定名称的广播可以触发Auto.js的布局分析，方便脚本调试。这些广播在Auto.js发送才有效，在打包的脚本上运行将没有任何效果。</p>
+<pre><code>app.sendBroadcast(&quot;inspect_layout_bounds&quot;);
+</code></pre>
+<h2 id="app-intentToShell-options"><a href="#app-intentToShell-options" class="headerlink" title="app.intentToShell(options)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/app?id=appintenttoshelloptions">app.intentToShell(options)</a></h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>options</code> {Object} 选项</li>
+</ul>
+<p>根据选项构造一个Intent，转换为对应的shell的intent命令的参数。</p>
+<p>例如:</p>
+<pre><code>shell(&quot;am start &quot; + app.intentToShell(&#123;
+    packageName: &quot;org.autojs.autojs&quot;,
+    className: &quot;org.autojs.autojs.ui.settings.SettingsActivity_&quot;
+&#125;), true);
+</code></pre>
+<p>参见<a target="_blank" rel="noopener" href="https://developer.android.com/studio/command-line/adb#IntentSpec">intent参数的规范</a>。</p>
+<h2 id="app-parseUri-uri"><a href="#app-parseUri-uri" class="headerlink" title="app.parseUri(uri)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/app?id=appparseuriuri">app.parseUri(uri)</a></h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>uri</code> {string} 一个代表Uri的字符串，例如”file:&#x2F;&#x2F;&#x2F;sdcard&#x2F;1.txt”, “<a target="_blank" rel="noopener" href="https://www.autojs.org"/">https://www.autojs.org"</a></li>
+<li><code>return</code> {Uri} 一个代表Uri的对象，参见<a target="_blank" rel="noopener" href="https://developer.android.com/reference/android/net/Uri">android.net.Uri</a>。</li>
+</ul>
+<p>解析uri字符串并返回相应的Uri对象。即使Uri格式错误，该函数也会返回一个Uri对象，但之后如果访问该对象的scheme, path等值可能因解析失败而返回<code>null</code>。</p>
+<p>需要注意的是，在高版本Android上，由于系统限制直接在Uri暴露文件的绝对路径，因此如果uri字符串是文件<code>file://...</code>，返回的Uri会是诸如<code>content://...</code>的形式。</p>
+<h2 id="app-getUriForFile-path"><a href="#app-getUriForFile-path" class="headerlink" title="app.getUriForFile(path)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/app?id=appgeturiforfilepath">app.getUriForFile(path)</a></h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>path</code> {string} 文件路径，例如”&#x2F;sdcard&#x2F;1.txt”</li>
+<li><code>return</code> {Uri} 一个指向该文件的Uri的对象，参见<a target="_blank" rel="noopener" href="https://developer.android.com/reference/android/net/Uri">android.net.Uri</a>。</li>
+</ul>
+<p>从一个文件路径创建一个uri对象。需要注意的是，在高版本Android上，由于系统限制直接在Uri暴露文件的绝对路径，因此返回的Uri会是诸如<code>content://...</code>的形式。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AutoX-js/">AutoX.js</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/software-use/AutoXjs/MTQQ.html" title="MTQQ"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">MTQQ</div></div></a></div><div class="next-post pull-right"><a href="/software-use/AutoXjs/websocket.html" title="websocket"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">websocket</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/software-use/AutoXjs/base64.html" title="base64 编码"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">base64 编码</div></div></a></div><div><a href="/software-use/AutoXjs/webview.html" title="webview与html"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">webview与html</div></div></a></div><div><a href="/software-use/AutoXjs/axios.html" title="axios"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">axios</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><a id="card-info-btn" href="mailto:aboucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:aboucide@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#APP"><span class="toc-number">1.</span> <span class="toc-text">APP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-versionCode"><span class="toc-number">2.</span> <span class="toc-text">app.versionCode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-versionName"><span class="toc-number">3.</span> <span class="toc-text">app.versionName</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-autojs-versionCode"><span class="toc-number">4.</span> <span class="toc-text">app.autojs.versionCode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-autojs-versionName"><span class="toc-number">5.</span> <span class="toc-text">app.autojs.versionName</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-launchApp-appName"><span class="toc-number">6.</span> <span class="toc-text">app.launchApp(appName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-launch-packageName"><span class="toc-number">7.</span> <span class="toc-text">app.launch(packageName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-launchPackage-packageName"><span class="toc-number">8.</span> <span class="toc-text">app.launchPackage(packageName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-getPackageName-appName"><span class="toc-number">9.</span> <span class="toc-text">app.getPackageName(appName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-getAppName-packageName"><span class="toc-number">10.</span> <span class="toc-text">app.getAppName(packageName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-openAppSetting-packageName"><span class="toc-number">11.</span> <span class="toc-text">app.openAppSetting(packageName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-viewFile-path"><span class="toc-number">12.</span> <span class="toc-text">app.viewFile(path)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-editFile-path"><span class="toc-number">13.</span> <span class="toc-text">app.editFile(path)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-uninstall-packageName"><span class="toc-number">14.</span> <span class="toc-text">app.uninstall(packageName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-openUrl-url"><span class="toc-number">15.</span> <span class="toc-text">app.openUrl(url)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-sendEmail-options"><span class="toc-number">16.</span> <span class="toc-text">app.sendEmail(options)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-startActivity-name"><span class="toc-number">17.</span> <span class="toc-text">app.startActivity(name)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6-%E6%84%8F%E5%9B%BEIntent"><span class="toc-number">18.</span> <span class="toc-text">进阶: 意图Intent</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-intent-options"><span class="toc-number">19.</span> <span class="toc-text">app.intent(options)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-startActivity-options"><span class="toc-number">20.</span> <span class="toc-text">app.startActivity(options)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-sendBroadcast-options"><span class="toc-number">21.</span> <span class="toc-text">app.sendBroadcast(options)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-startService-options"><span class="toc-number">22.</span> <span class="toc-text">app.startService(options)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-sendBroadcast-name"><span class="toc-number">23.</span> <span class="toc-text">app.sendBroadcast(name)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-intentToShell-options"><span class="toc-number">24.</span> <span class="toc-text">app.intentToShell(options)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-parseUri-uri"><span class="toc-number">25.</span> <span class="toc-text">app.parseUri(uri)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#app-getUriForFile-path"><span class="toc-number">26.</span> <span class="toc-text">app.getUriForFile(path)</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.515Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.512Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/software-use/OBS.html" title="OBS录屏软件使用教程"><img src="https://obsproject.com/assets/images/new_icon_small-r.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OBS录屏软件使用教程"/></a><div class="content"><a class="title" href="/software-use/OBS.html" title="OBS录屏软件使用教程">OBS录屏软件使用教程</a><time datetime="2025-11-17T00:00:00.000Z" title="发表日期 2025-11-17 00:00:00">2025-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记"><div style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div></a><div class="content"><a class="title" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记">拔牙日记</a><time datetime="2025-10-26T11:22:26.000Z" title="发表日期 2025-10-26 11:22:26">2025-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建"><img src="https://img2.baidu.com/it/u=1025364924,3068102242&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=786&amp;h=500w=285&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;dpr=2&amp;pid=1.7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言编程环境搭建"/></a><div class="content"><a class="title" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建">C语言编程环境搭建</a><time datetime="2025-09-17T00:00:00.000Z" title="发表日期 2025-09-17 00:00:00">2025-09-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Yuan</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'aboucide/hexo-aboucide-comment',
+      'data-repo-id': 'R_kgDOM8yVSQ',
+      'data-category-id': 'DIC_kwDOM8yVSc4CjJFp',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>

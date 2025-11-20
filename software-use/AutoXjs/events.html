@@ -1,0 +1,683 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>事件监听 events | 源途记</title><meta name="author" content="Yuan"><meta name="copyright" content="Yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="events 模块提供了监听手机通知、按键、触摸的接口。您可以用他配合自动操作函数完成自动化工作。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="事件监听 events">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/events.html">
+<meta property="og:site_name" content="源途记">
+<meta property="og:description" content="events 模块提供了监听手机通知、按键、触摸的接口。您可以用他配合自动操作函数完成自动化工作。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/images/logo/autojs-logo.png">
+<meta property="article:published_time" content="2024-12-11T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-20T09:40:59.516Z">
+<meta property="article:author" content="Yuan">
+<meta property="article:tag" content="AutoX.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/images/logo/autojs-logo.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/events.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-3082128886989266',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4901b9157b9977471169d4b6f8d60640";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4MHS6HL58"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D4MHS6HL58');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '事件监听 events',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-20 09:40:59'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="源途记"><span class="site-name">源途记</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">事件监听 events<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/软件使用教程 software-use/AutoX.js使用说明/事件监听Events.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2024-12-11T00:00:00.000Z" title="发表日期 2024-12-11 00:00:00">2024-12-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2025-11-20T09:40:59.516Z" title="最近更新日期 2025-11-20 09:40:59">2025-11-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/">软件使用教程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/software-use/autojs/">autojs</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="事件监听 events"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="Events"><a href="#Events" class="headerlink" title="Events"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=events">Events</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>events 模块提供了监听手机通知、按键、触摸的接口。您可以用他配合自动操作函数完成自动化工作。</p>
+<p>events 本身是一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitter">EventEmiiter</a>, 但内置了一些事件、包括按键事件、通知事件、Toast 事件等。</p>
+<p>需要注意的是，事件的处理是单线程的，并且仍然在原线程执行，如果脚本主体或者其他事件处理中有耗时操作、轮询等，则事件将无法得到及时处理（会进入事件队列等待脚本主体或其他事件处理完成才执行）。例如:</p>
+<pre><code>auto();
+events.observeNotification();
+events.on(&#39;toast&#39;, function(t)&#123;
+    //这段代码将得不到执行
+    log(t);
+&#125;);
+while(true)&#123;
+    //死循环
+&#125;
+</code></pre>
+<h2 id="events-emitter"><a href="#events-emitter" class="headerlink" title="events.emitter()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsemitter">events.emitter()</a></h2><p>返回一个新的<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitter">EventEmitter</a>。这个 EventEmitter 没有内置任何事件。</p>
+<h2 id="events-observeKey"><a href="#events-observeKey" class="headerlink" title="events.observeKey()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsobservekey">events.observeKey()</a></h2><p>启用按键监听，例如音量键、Home 键。按键监听使用无障碍服务实现，如果无障碍服务未启用会抛出异常并提示开启。</p>
+<p>只有这个函数成功执行后, <code>onKeyDown</code>, <code>onKeyUp</code>等按键事件的监听才有效。</p>
+<p>该函数在安卓 4.3 以上才能使用。</p>
+<h2 id="events-onKeyDown-keyName-listener"><a href="#events-onKeyDown-keyName-listener" class="headerlink" title="events.onKeyDown(keyName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsonkeydownkeyname-listener">events.onKeyDown(keyName, listener)</a></h2><ul>
+<li><code>keyName</code> {string} 要监听的按键名称</li>
+<li><code>listener</code> {Function} 按键监听器。参数为一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyevent">KeyEvent</a>。</li>
+</ul>
+<p>注册一个按键监听函数，当有 keyName 对应的按键被按下会调用该函数。可用的按键名称参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keys">Keys</a>。</p>
+<p>例如:</p>
+<pre><code>//启用按键监听
+events.observeKey();
+//监听音量上键按下
+events.onKeyDown(&quot;volume_up&quot;, function(event)&#123;
+    toast(&quot;音量上键被按下了&quot;);
+&#125;);
+//监听菜单键按下
+events.onKeyDown(&quot;menu&quot;, function(event)&#123;
+    toast(&quot;菜单键被按下了&quot;);
+    exit();
+&#125;);
+</code></pre>
+<h2 id="events-onKeyUp-keyName-listener"><a href="#events-onKeyUp-keyName-listener" class="headerlink" title="events.onKeyUp(keyName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsonkeyupkeyname-listener">events.onKeyUp(keyName, listener)</a></h2><ul>
+<li><code>keyName</code> {string} 要监听的按键名称</li>
+<li><code>listener</code> {Function} 按键监听器。参数为一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyevent">KeyEvent</a>。</li>
+</ul>
+<p>注册一个按键监听函数，当有 keyName 对应的按键弹起会调用该函数。可用的按键名称参见<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keys">Keys</a>。</p>
+<p>一次完整的按键动作包括了按键按下和弹起。按下事件会在手指按下一个按键的”瞬间”触发, 弹起事件则在手指放开这个按键时触发。</p>
+<p>例如:</p>
+<pre><code>//启用按键监听
+events.observeKey();
+//监听音量下键弹起
+events.onKeyDown(&quot;volume_down&quot;, function(event)&#123;
+    toast(&quot;音量下键弹起&quot;);
+&#125;);
+//监听Home键弹起
+events.onKeyDown(&quot;home&quot;, function(event)&#123;
+    toast(&quot;Home键弹起&quot;);
+    exit();
+&#125;);
+</code></pre>
+<h2 id="events-onceKeyDown-keyName-listener"><a href="#events-onceKeyDown-keyName-listener" class="headerlink" title="events.onceKeyDown(keyName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsoncekeydownkeyname-listener">events.onceKeyDown(keyName, listener)</a></h2><ul>
+<li><code>keyName</code> {string} 要监听的按键名称</li>
+<li><code>listener</code> {Function} 按键监听器。参数为一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyevent">KeyEvent</a></li>
+</ul>
+<p>注册一个按键监听函数，当有 keyName 对应的按键被按下时会调用该函数，之后会注销该按键监听器。</p>
+<p>也就是 listener 只有在 onceKeyDown 调用后的第一次按键事件被调用一次。</p>
+<h2 id="events-onceKeyUp-keyName-listener"><a href="#events-onceKeyUp-keyName-listener" class="headerlink" title="events.onceKeyUp(keyName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsoncekeyupkeyname-listener">events.onceKeyUp(keyName, listener)</a></h2><ul>
+<li><code>keyName</code> {string} 要监听的按键名称</li>
+<li><code>listener</code> {Function} 按键监听器。参数为一个<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyevent">KeyEvent</a></li>
+</ul>
+<p>注册一个按键监听函数，当有 keyName 对应的按键弹起时会调用该函数，之后会注销该按键监听器。</p>
+<p>也就是 listener 只有在 onceKeyUp 调用后的第一次按键事件被调用一次。</p>
+<h2 id="events-removeAllKeyDownListeners-keyName"><a href="#events-removeAllKeyDownListeners-keyName" class="headerlink" title="events.removeAllKeyDownListeners(keyName)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsremoveallkeydownlistenerskeyname">events.removeAllKeyDownListeners(keyName)</a></h2><ul>
+<li><code>keyName</code> {string} 按键名称</li>
+</ul>
+<p>删除该按键的 KeyDown(按下)事件的所有监听。</p>
+<h2 id="events-removeAllKeyUpListeners-keyName"><a href="#events-removeAllKeyUpListeners-keyName" class="headerlink" title="events.removeAllKeyUpListeners(keyName)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsremoveallkeyuplistenerskeyname">events.removeAllKeyUpListeners(keyName)</a></h2><ul>
+<li><code>keyName</code> {string} 按键名称</li>
+</ul>
+<p>删除该按键的 KeyUp(弹起)事件的所有监听。</p>
+<h2 id="events-setKeyInterceptionEnabled-key-enabled"><a href="#events-setKeyInterceptionEnabled-key-enabled" class="headerlink" title="events.setKeyInterceptionEnabled([key, ]enabled)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventssetkeyinterceptionenabledkey-enabled">events.setKeyInterceptionEnabled([key, ]enabled)</a></h2><ul>
+<li><code>enabled</code> {boolean}</li>
+<li><code>key</code> {string} 要屏蔽的按键</li>
+</ul>
+<p>设置按键屏蔽是否启用。所谓按键屏蔽指的是，屏蔽原有按键的功能，例如使得音量键不再能调节音量，但此时仍然能通过按键事件监听按键。</p>
+<p>如果不加参数 key 则会屏蔽所有按键。</p>
+<p>例如，调用<code>events.setKeyInterceptionEnabled(true)</code>会使系统的音量、Home、返回等键不再具有调节音量、回到主页、返回的作用，但此时仍然能通过按键事件监听按键。</p>
+<p>该函数通常于按键监听结合，例如想监听音量键并使音量键按下时不弹出音量调节框则为：</p>
+<pre><code>events.setKeyInterceptionEnabled(&quot;volume_up&quot;, true);
+events.observeKey();
+events.onKeyDown(&quot;volume_up&quot;, ()=&gt;&#123;
+    log(&quot;音量上键被按下&quot;);
+&#125;);
+</code></pre>
+<p>只要有一个脚本屏蔽了某个按键，该按键便会被屏蔽；当脚本退出时，会自动解除所有按键屏蔽。</p>
+<h2 id="events-observeTouch"><a href="#events-observeTouch" class="headerlink" title="events.observeTouch()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsobservetouch">events.observeTouch()</a></h2><p>启用屏幕触摸监听。（需要 root 权限）</p>
+<p>只有这个函数被成功执行后, 触摸事件的监听才有效。</p>
+<p>没有 root 权限调用该函数则什么也不会发生。</p>
+<h2 id="events-setTouchEventTimeout-timeout"><a href="#events-setTouchEventTimeout-timeout" class="headerlink" title="events.setTouchEventTimeout(timeout)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventssettoucheventtimeouttimeout">events.setTouchEventTimeout(timeout)</a></h2><ul>
+<li><code>timeout</code> {number} 两个触摸事件的最小间隔。单位毫秒。默认为 10 毫秒。如果 number 小于 0，视为 0 处理。</li>
+</ul>
+<p>设置两个触摸事件分发的最小时间间隔。</p>
+<p>例如间隔为 10 毫秒的话，前一个触摸事件发生并被注册的监听器处理后，至少要过 10 毫秒才能分发和处理下一个触摸事件，这 10 毫秒之间的触摸将会被忽略。</p>
+<p>建议在满足需要的情况下尽量提高这个间隔。一个简单滑动动作可能会连续触发上百个触摸事件，如果 timeout 设置过低可能造成事件拥堵。强烈建议不要设置 timeout 为 0。</p>
+<h2 id="events-getTouchEventTimeout"><a href="#events-getTouchEventTimeout" class="headerlink" title="events.getTouchEventTimeout()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsgettoucheventtimeout">events.getTouchEventTimeout()</a></h2><p>返回触摸事件的最小时间间隔。</p>
+<h2 id="events-onTouch-listener"><a href="#events-onTouch-listener" class="headerlink" title="events.onTouch(listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsontouchlistener">events.onTouch(listener)</a></h2><ul>
+<li><code>listener</code> {Function} 参数为<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/images.html?id=images_point">Point</a>的函数</li>
+</ul>
+<p>注册一个触摸监听函数。相当于<code>on(&quot;touch&quot;, listener)</code>。</p>
+<p>例如:</p>
+<pre><code>//启用触摸监听
+events.observeTouch();
+//注册触摸监听器
+events.onTouch(function(p)&#123;
+    //触摸事件发生时, 打印出触摸的点的坐标
+    log(p.x + &quot;, &quot; + p.y);
+&#125;);
+</code></pre>
+<h2 id="events-removeAllTouchListeners"><a href="#events-removeAllTouchListeners" class="headerlink" title="events.removeAllTouchListeners()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsremovealltouchlisteners">events.removeAllTouchListeners()</a></h2><p>删除所有事件监听函数。</p>
+<h2 id="事件-‘key’"><a href="#事件-‘key’" class="headerlink" title="事件: ‘key’"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=%e4%ba%8b%e4%bb%b6-39key39">事件: ‘key’</a></h2><ul>
+<li><code>keyCode</code> {number} 键值</li>
+<li><code>event</code> {KeyEvent} 事件</li>
+</ul>
+<p>当有按键被按下或弹起时会触发该事件。 例如：</p>
+<pre><code>auto();
+events.observeKey();
+events.on(&quot;key&quot;, function(keyCode, event)&#123;
+    //处理按键事件
+&#125;);
+</code></pre>
+<p>其中监听器的参数 KeyCode 包括：</p>
+<ul>
+<li><code>keys.home</code> 主页键</li>
+<li><code>keys.back</code> 返回键</li>
+<li><code>keys.menu</code> 菜单键</li>
+<li><code>keys.volume_up</code> 音量上键</li>
+<li><code>keys.volume_down</code> 音量下键</li>
+</ul>
+<p>例如：</p>
+<pre><code>auto();
+events.observeKey();
+events.on(&quot;key&quot;, function(keyCode, event)&#123;
+    if(keyCode == keys.menu &amp;&amp; event.getAction() == event.ACTION_UP)&#123;
+        toast(&quot;菜单键按下&quot;);
+    &#125;
+&#125;);
+</code></pre>
+<h2 id="事件-‘key-down’"><a href="#事件-‘key-down’" class="headerlink" title="事件: ‘key_down’"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=%e4%ba%8b%e4%bb%b6-39key_down39">事件: ‘key_down’</a></h2><ul>
+<li><code>keyCode</code> {number} 键值</li>
+<li><code>event</code> {KeyEvent} 事件</li>
+</ul>
+<p>当有按键被按下时会触发该事件。</p>
+<pre><code>auto();
+events.observeKey();
+events.on(&quot;key_down&quot;, function(keyCode, event)&#123;
+    //处理按键按下事件
+&#125;);
+</code></pre>
+<h2 id="事件-‘key-up’"><a href="#事件-‘key-up’" class="headerlink" title="事件: ‘key_up’"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=%e4%ba%8b%e4%bb%b6-39key_up39">事件: ‘key_up’</a></h2><ul>
+<li><code>keyCode</code> {number} 键值</li>
+<li><code>event</code> {KeyEvent} 事件</li>
+</ul>
+<p>当有按键弹起时会触发该事件。</p>
+<pre><code>auto();
+events.observeKey();
+events.on(&quot;key_up&quot;, function(keyCode, event)&#123;
+    //处理按键弹起事件
+&#125;);
+</code></pre>
+<h2 id="事件-‘exit"><a href="#事件-‘exit" class="headerlink" title="事件: ‘exit`"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=%e4%ba%8b%e4%bb%b6-39exit">事件: ‘exit`</a></h2><p>当脚本正常或者异常退出时会触发该事件。事件处理中如果有异常抛出，则立即中止 exit 事件的处理（即使 exit 事件有多个处理函数）并在控制台和日志中打印该异常。</p>
+<p>一个脚本停止运行时，会关闭该脚本的所有悬浮窗，触发 exit 事件，之后再回收资源。如果 exit 事件的处理中有死循环，则后续资源无法得到及时回收。 此时脚本会停留在任务列表，如果在任务列表中关闭，则会强制结束 exit 事件的处理并回收后续资源。</p>
+<pre><code>log(&quot;开始运行&quot;)
+events.on(&quot;exit&quot;, function()&#123;
+    log(&quot;结束运行&quot;);
+&#125;);
+log(&quot;即将结束运行&quot;);
+</code></pre>
+<h2 id="events-observeNotification"><a href="#events-observeNotification" class="headerlink" title="events.observeNotification()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsobservenotification">events.observeNotification()</a></h2><p>开启通知监听。例如 QQ 消息、微信消息、推送等通知。</p>
+<p>通知监听依赖于通知服务，如果通知服务没有运行，会抛出异常并跳转到通知权限开启界面。（有时即使通知权限已经开启通知服务也没有运行，这时需要关闭权限再重新开启一次）</p>
+<p>例如：</p>
+<pre><code>events.observeNotification();
+events.onNotification(function(notification)&#123;
+    log(notification.getText());
+&#125;);
+</code></pre>
+<h2 id="events-observeToast"><a href="#events-observeToast" class="headerlink" title="events.observeToast()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsobservetoast">events.observeToast()</a></h2><p>开启 Toast 监听。</p>
+<p>Toast 监听依赖于无障碍服务，因此此函数会确保无障碍服务运行。</p>
+<h2 id="事件-‘toast’"><a href="#事件-‘toast’" class="headerlink" title="事件: ‘toast’"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=%e4%ba%8b%e4%bb%b6-39toast39">事件: ‘toast’</a></h2><ul>
+<li><code>toast</code> {Object}<ul>
+<li><code>getText()</code> 获取 Toast 的文本内容</li>
+<li><code>getPackageName()</code> 获取发出 Toast 的应用包名</li>
+</ul>
+</li>
+</ul>
+<p>当有应用发出 toast(气泡消息)时会触发该事件。但 Auto.js 软件本身的 toast 除外。</p>
+<p>例如，要记录发出所有 toast 的应用：</p>
+<pre><code>events.observeToast();
+events.onToast(function(toast)&#123;
+    log(&quot;Toast内容: &quot; + toast.getText() + &quot; 包名: &quot; + toast.getPackageName());
+&#125;);
+</code></pre>
+<h2 id="事件-‘notification’"><a href="#事件-‘notification’" class="headerlink" title="事件: ‘notification’"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=%e4%ba%8b%e4%bb%b6-39notification39">事件: ‘notification’</a></h2><ul>
+<li><code>notification</code> <a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notification">Notification</a> 通知对象</li>
+</ul>
+<p>当有应用发出通知时会触发该事件，参数为<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notification">Notification</a>。</p>
+<p>例如：</p>
+<pre><code>events.observeNotification();
+events.on(&quot;notification&quot;, function(n)&#123;
+    log(&quot;收到新通知:\n 标题: %s, 内容: %s, \n包名: %s&quot;, n.getTitle(), n.getText(), n.getPackageName());
+&#125;);
+</code></pre>
+<h2 id="Notification"><a href="#Notification" class="headerlink" title="Notification"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notification">Notification</a></h2><p>通知对象，可以获取通知详情，包括通知标题、内容、发出通知的包名、时间等，也可以对通知进行操作，比如点击、删除。</p>
+<h2 id="Notification-number"><a href="#Notification-number" class="headerlink" title="Notification.number"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notificationnumber">Notification.number</a></h2><ul>
+<li>{number}</li>
+</ul>
+<p>通知数量。例如 QQ 连续收到两条消息时 number 为 2。</p>
+<h2 id="Notification-when"><a href="#Notification-when" class="headerlink" title="Notification.when"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notificationwhen">Notification.when</a></h2><ul>
+<li>{number}</li>
+</ul>
+<p>通知发出时间的时间戳，可以用于构造<code>Date</code>对象。例如：</p>
+<pre><code>events.observeNotification();
+events.on(&quot;notification&quot;, function(n)&#123;
+    log(&quot;通知时间为&#125;&quot; + new Date(n.when));
+&#125;);
+</code></pre>
+<h2 id="Notification-getPackageName"><a href="#Notification-getPackageName" class="headerlink" title="Notification.getPackageName()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notificationgetpackagename">Notification.getPackageName()</a></h2><ul>
+<li>返回 {string}</li>
+</ul>
+<p>获取发出通知的应用包名。</p>
+<h2 id="Notification-getTitle"><a href="#Notification-getTitle" class="headerlink" title="Notification.getTitle()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notificationgettitle">Notification.getTitle()</a></h2><ul>
+<li>返回 {string}</li>
+</ul>
+<p>获取通知的标题。</p>
+<h2 id="Notification-getText"><a href="#Notification-getText" class="headerlink" title="Notification.getText()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notificationgettext">Notification.getText()</a></h2><ul>
+<li>返回 {string}</li>
+</ul>
+<p>获取通知的内容。</p>
+<h2 id="Notification-click"><a href="#Notification-click" class="headerlink" title="Notification.click()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notificationclick">Notification.click()</a></h2><p>点击该通知。例如对于一条 QQ 消息，点击会进入具体的聊天界面。</p>
+<h2 id="Notification-delete"><a href="#Notification-delete" class="headerlink" title="Notification.delete()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=notificationdelete">Notification.delete()</a></h2><p>删除该通知。该通知将从通知栏中消失。</p>
+<h2 id="KeyEvent"><a href="#KeyEvent" class="headerlink" title="KeyEvent"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyevent">KeyEvent</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<h2 id="KeyEvent-getAction"><a href="#KeyEvent-getAction" class="headerlink" title="KeyEvent.getAction()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyeventgetaction">KeyEvent.getAction()</a></h2><p>返回事件的动作。包括：</p>
+<ul>
+<li><code>KeyEvent.ACTION_DOWN</code> 按下事件</li>
+<li><code>KeyEvent.ACTION_UP</code> 弹起事件</li>
+</ul>
+<h2 id="KeyEvent-getKeyCode"><a href="#KeyEvent-getKeyCode" class="headerlink" title="KeyEvent.getKeyCode()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyeventgetkeycode">KeyEvent.getKeyCode()</a></h2><p>返回按键的键值。包括：</p>
+<ul>
+<li><code>KeyEvent.KEYCODE_HOME</code> 主页键</li>
+<li><code>KeyEvent.KEYCODE_BACK</code> 返回键</li>
+<li><code>KeyEvent.KEYCODE_MENU</code> 菜单键</li>
+<li><code>KeyEvent.KEYCODE_VOLUME_UP</code> 音量上键</li>
+<li><code>KeyEvent.KEYCODE_VOLUME_DOWN</code> 音量下键</li>
+</ul>
+<h2 id="KeyEvent-getEventTime"><a href="#KeyEvent-getEventTime" class="headerlink" title="KeyEvent.getEventTime()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyeventgeteventtime">KeyEvent.getEventTime()</a></h2><ul>
+<li>返回 {number}</li>
+</ul>
+<p>返回事件发生的时间戳。</p>
+<h2 id="KeyEvent-getDownTime"><a href="#KeyEvent-getDownTime" class="headerlink" title="KeyEvent.getDownTime()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyeventgetdowntime">KeyEvent.getDownTime()</a></h2><p>返回最近一次按下事件的时间戳。如果本身是按下事件，则与<code>getEventTime()</code>相同。</p>
+<h2 id="KeyEvent-keyCodeToString-keyCode"><a href="#KeyEvent-keyCodeToString-keyCode" class="headerlink" title="KeyEvent.keyCodeToString(keyCode)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keyeventkeycodetostringkeycode">KeyEvent.keyCodeToString(keyCode)</a></h2><p>把键值转换为字符串。例如 KEYCODE_HOME 转换为”KEYCODE_HOME”。</p>
+<h2 id="keys"><a href="#keys" class="headerlink" title="keys"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=keys">keys</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>按键事件中所有可用的按键名称为：</p>
+<ul>
+<li><code>volume_up</code> 音量上键</li>
+<li><code>volume_down</code> 音量下键</li>
+<li><code>home</code> 主屏幕键</li>
+<li><code>back</code> 返回键</li>
+<li><code>menu</code> 菜单键</li>
+</ul>
+<h2 id="EventEmitter"><a href="#EventEmitter" class="headerlink" title="EventEmitter"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitter">EventEmitter</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<h2 id="EventEmitter-defaultMaxListeners"><a href="#EventEmitter-defaultMaxListeners" class="headerlink" title="EventEmitter.defaultMaxListeners"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitterdefaultmaxlisteners">EventEmitter.defaultMaxListeners</a></h2><p>每个事件默认可以注册最多 10 个监听器。 单个 EventEmitter 实例的限制可以使用 emitter.setMaxListeners(n) 方法改变。 所有 EventEmitter 实例的默认值可以使用 EventEmitter.defaultMaxListeners 属性改变。</p>
+<p>设置 EventEmitter.defaultMaxListeners 要谨慎，因为会影响所有 EventEmitter 实例，包括之前创建的。 因而，调用 emitter.setMaxListeners(n) 优先于 EventEmitter.defaultMaxListeners。</p>
+<p>注意，与 Node.js 不同，<strong>这是一个硬性限制</strong>。 EventEmitter 实例不允许添加更多的监听器，监听器超过最大数量时会抛出 TooManyListenersException。</p>
+<pre><code>emitter.setMaxListeners(emitter.getMaxListeners() + 1);
+emitter.once(&#39;event&#39;, () =&gt; &#123;
+  // 做些操作
+  emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0));
+&#125;);
+</code></pre>
+<h2 id="EventEmitter-addListener-eventName-listener"><a href="#EventEmitter-addListener-eventName-listener" class="headerlink" title="EventEmitter.addListener(eventName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitteraddlistenereventname-listener">EventEmitter.addListener(eventName, listener)</a></h2><ul>
+<li><code>eventName</code> {any}</li>
+<li><code>listener</code> {Function}</li>
+</ul>
+<p>emitter.on(eventName, listener) 的别名。</p>
+<h2 id="EventEmitter-emit-eventName-…args"><a href="#EventEmitter-emit-eventName-…args" class="headerlink" title="EventEmitter.emit(eventName[, …args])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitteremiteventname-args">EventEmitter.emit(eventName[, …args])</a></h2><ul>
+<li><code>eventName</code> {any}</li>
+<li><code>args</code> {any}</li>
+</ul>
+<p>按监听器的注册顺序，同步地调用每个注册到名为 eventName 事件的监听器，并传入提供的参数。</p>
+<p>如果事件有监听器，则返回 true ，否则返回 false。</p>
+<h2 id="EventEmitter-eventNames"><a href="#EventEmitter-eventNames" class="headerlink" title="EventEmitter.eventNames()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemittereventnames">EventEmitter.eventNames()</a></h2><p>返回一个列出触发器已注册监听器的事件的数组。 数组中的值为字符串或符号。</p>
+<pre><code>const myEE = events.emitter();
+myEE.on(&#39;foo&#39;, () =&gt; &#123;&#125;);
+myEE.on(&#39;bar&#39;, () =&gt; &#123;&#125;);
+
+const sym = Symbol(&#39;symbol&#39;);
+myEE.on(sym, () =&gt; &#123;&#125;);
+
+console.log(myEE.eventNames());
+// 打印: [ &#39;foo&#39;, &#39;bar&#39;, Symbol(symbol) ]
+</code></pre>
+<h2 id="EventEmitter-getMaxListeners"><a href="#EventEmitter-getMaxListeners" class="headerlink" title="EventEmitter.getMaxListeners()"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemittergetmaxlisteners">EventEmitter.getMaxListeners()</a></h2><p>返回 EventEmitter 当前的最大监听器限制值，该值可以通过 emitter.setMaxListeners(n) 设置或默认为 EventEmitter.defaultMaxListeners。</p>
+<h2 id="EventEmitter-listenerCount-eventName"><a href="#EventEmitter-listenerCount-eventName" class="headerlink" title="EventEmitter.listenerCount(eventName)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitterlistenercounteventname">EventEmitter.listenerCount(eventName)</a></h2><ul>
+<li><code>eventName</code> {string} 正在被监听的事件名</li>
+</ul>
+<p>返回正在监听名为 eventName 的事件的监听器的数量。</p>
+<h2 id="EventEmitter-listeners-eventName"><a href="#EventEmitter-listeners-eventName" class="headerlink" title="EventEmitter.listeners(eventName)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitterlistenerseventname">EventEmitter.listeners(eventName)</a></h2><ul>
+<li><code>eventName</code> {string}</li>
+</ul>
+<p>返回名为 eventName 的事件的监听器数组的副本。</p>
+<pre><code>server.on(&#39;connection&#39;, (stream) =&gt; &#123;
+  console.log(&#39;someone connected!&#39;);
+&#125;);
+console.log(util.inspect(server.listeners(&#39;connection&#39;)));
+// 打印: [ [Function] ]
+</code></pre>
+<h2 id="EventEmitter-on-eventName-listener"><a href="#EventEmitter-on-eventName-listener" class="headerlink" title="EventEmitter.on(eventName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitteroneventname-listener">EventEmitter.on(eventName, listener)</a></h2><ul>
+<li><code>eventName</code> {any} 事件名</li>
+<li><code>listener</code> {Function} 回调函数</li>
+</ul>
+<p>添加 listener 函数到名为 eventName 的事件的监听器数组的末尾。 不会检查 listener 是否已被添加。 多次调用并传入相同的 eventName 和 listener 会导致 listener 被添加与调用多次。</p>
+<pre><code>server.on(&#39;connection&#39;, (stream) =&gt; &#123;
+  console.log(&#39;有连接！&#39;);
+&#125;);
+</code></pre>
+<p>返回一个 EventEmitter 引用，可以链式调用。</p>
+<p>默认情况下，事件监听器会按照添加的顺序依次调用。 emitter.prependListener() 方法可用于将事件监听器添加到监听器数组的开头。</p>
+<pre><code>const myEE = events.emitter();
+myEE.on(&#39;foo&#39;, () =&gt; console.log(&#39;a&#39;));
+myEE.prependListener(&#39;foo&#39;, () =&gt; console.log(&#39;b&#39;));
+myEE.emit(&#39;foo&#39;);
+// 打印:
+//   b
+//   a
+</code></pre>
+<h2 id="EventEmitter-once-eventName-listener"><a href="#EventEmitter-once-eventName-listener" class="headerlink" title="EventEmitter.once(eventName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitteronceeventname-listener">EventEmitter.once(eventName, listener)</a></h2><ul>
+<li><code>eventName</code> {any} 事件名</li>
+<li><code>listener</code> {Function} 回调函数</li>
+</ul>
+<p>添加一个单次 listener 函数到名为 eventName 的事件。 下次触发 eventName 事件时，监听器会被移除，然后调用。</p>
+<pre><code>server.once(&#39;connection&#39;, (stream) =&gt; &#123;
+  console.log(&#39;首次调用！&#39;);
+&#125;);
+</code></pre>
+<p>返回一个 EventEmitter 引用，可以链式调用。</p>
+<p>默认情况下，事件监听器会按照添加的顺序依次调用。 emitter.prependOnceListener() 方法可用于将事件监听器添加到监听器数组的开头。</p>
+<pre><code>const myEE = events.emitter();
+myEE.once(&#39;foo&#39;, () =&gt; console.log(&#39;a&#39;));
+myEE.prependOnceListener(&#39;foo&#39;, () =&gt; console.log(&#39;b&#39;));
+myEE.emit(&#39;foo&#39;);
+// 打印:
+//   b
+//   a
+</code></pre>
+<h2 id="EventEmitter-prependListener-eventName-listener"><a href="#EventEmitter-prependListener-eventName-listener" class="headerlink" title="EventEmitter.prependListener(eventName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitterprependlistenereventname-listener">EventEmitter.prependListener(eventName, listener)</a></h2><ul>
+<li><code>eventName</code> {any} 事件名</li>
+<li><code>listener</code> {Function} 回调函数</li>
+</ul>
+<p>添加 listener 函数到名为 eventName 的事件的监听器数组的开头。 不会检查 listener 是否已被添加。 多次调用并传入相同的 eventName 和 listener 会导致 listener 被添加与调用多次。</p>
+<pre><code>server.prependListener(&#39;connection&#39;, (stream) =&gt; &#123;
+  console.log(&#39;有连接！&#39;);
+&#125;);
+</code></pre>
+<p>返回一个 EventEmitter 引用，可以链式调用。</p>
+<h2 id="EventEmitter-prependOnceListener-eventName-listener"><a href="#EventEmitter-prependOnceListener-eventName-listener" class="headerlink" title="EventEmitter.prependOnceListener(eventName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitterprependoncelistenereventname-listener">EventEmitter.prependOnceListener(eventName, listener)</a></h2><ul>
+<li><code>eventName</code> {any} 事件名</li>
+<li><code>listener</code> {Function} 回调函数</li>
+</ul>
+<p>添加一个单次 listener 函数到名为 eventName 的事件的监听器数组的开头。 下次触发 eventName 事件时，监听器会被移除，然后调用。</p>
+<pre><code>server.prependOnceListener(&#39;connection&#39;, (stream) =&gt; &#123;
+  console.log(&#39;首次调用！&#39;);
+&#125;);
+</code></pre>
+<p>返回一个 EventEmitter 引用，可以链式调用。</p>
+<h2 id="EventEmitter-removeAllListeners-eventName"><a href="#EventEmitter-removeAllListeners-eventName" class="headerlink" title="EventEmitter.removeAllListeners([eventName])"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitterremovealllistenerseventname">EventEmitter.removeAllListeners([eventName])</a></h2><ul>
+<li><code>eventName</code> {any}</li>
+</ul>
+<p>移除全部或指定 eventName 的监听器。</p>
+<p>注意，在代码中移除其他地方添加的监听器是一个不好的做法，尤其是当 EventEmitter 实例是其他组件或模块创建的。</p>
+<p>返回一个 EventEmitter 引用，可以链式调用。</p>
+<h2 id="EventEmitter-removeListener-eventName-listener"><a href="#EventEmitter-removeListener-eventName-listener" class="headerlink" title="EventEmitter.removeListener(eventName, listener)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemitterremovelistenereventname-listener">EventEmitter.removeListener(eventName, listener)</a></h2><ul>
+<li><code>eventName</code> {any}</li>
+<li><code>listener</code> {Function}</li>
+</ul>
+<p>从名为 eventName 的事件的监听器数组中移除指定的 listener。</p>
+<pre><code>const callback = (stream) =&gt; &#123;
+  console.log(&#39;有连接！&#39;);
+&#125;;
+server.on(&#39;connection&#39;, callback);
+// ...
+server.removeListener(&#39;connection&#39;, callback);
+</code></pre>
+<p>removeListener 最多只会从监听器数组里移除一个监听器实例。 如果任何单一的监听器被多次添加到指定 eventName 的监听器数组中，则必须多次调用 removeListener 才能移除每个实例。</p>
+<p>注意，一旦一个事件被触发，所有绑定到它的监听器都会按顺序依次触发。 这意味着，在事件触发后、最后一个监听器完成执行前，任何 removeListener() 或 removeAllListeners() 调用都不会从 emit() 中移除它们。 随后的事件会像预期的那样发生。</p>
+<pre><code>const myEmitter = events.emitter();
+
+const callbackA = () =&gt; &#123;
+  console.log(&#39;A&#39;);
+  myEmitter.removeListener(&#39;event&#39;, callbackB);
+&#125;;
+
+const callbackB = () =&gt; &#123;
+  console.log(&#39;B&#39;);
+&#125;;
+
+myEmitter.on(&#39;event&#39;, callbackA);
+
+myEmitter.on(&#39;event&#39;, callbackB);
+
+// callbackA 移除了监听器 callbackB，但它依然会被调用。
+// 触发是内部的监听器数组为 [callbackA, callbackB]
+myEmitter.emit(&#39;event&#39;);
+// 打印:
+//   A
+//   B
+
+// callbackB 被移除了。
+// 内部监听器数组为 [callbackA]
+myEmitter.emit(&#39;event&#39;);
+// 打印:
+//   A
+</code></pre>
+<p>因为监听器是使用内部数组进行管理的，所以调用它会改变在监听器被移除后注册的任何监听器的位置索引。 虽然这不会影响监听器的调用顺序，但意味着由 emitter.listeners() 方法返回的监听器数组副本需要被重新创建。</p>
+<p>返回一个 EventEmitter 引用，可以链式调用。</p>
+<h2 id="EventEmitter-setMaxListeners-n"><a href="#EventEmitter-setMaxListeners-n" class="headerlink" title="EventEmitter.setMaxListeners(n)"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventemittersetmaxlistenersn">EventEmitter.setMaxListeners(n)</a></h2><ul>
+<li><code>n</code> {number}</li>
+</ul>
+<p>默认情况下，如果为特定事件添加了超过 10 个监听器，则 EventEmitter 会打印一个警告。 此限制有助于寻找内存泄露。 但是，并不是所有的事件都要被限为 10 个。 emitter.setMaxListeners() 方法允许修改指定的 EventEmitter 实例的限制。 值设为 Infinity（或 0）表明不限制监听器的数量。</p>
+<p>返回一个 EventEmitter 引用，可以链式调用。</p>
+<h2 id="events-broadcast"><a href="#events-broadcast" class="headerlink" title="events.broadcast"></a><a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/events?id=eventsbroadcast">events.broadcast</a></h2><p>脚本间广播</p>
+<p>脚本间通信除了使用 engines 模块提供的<code>ScriptEngine.emit()</code>方法以外，也可以使用 events 模块提供的 broadcast 广播。</p>
+<p>events.broadcast 本身是一个 EventEmitter，但它的事件是在脚本间共享的，所有脚本都能发送和监听这些事件；事件处理会在脚本主线程执行（后续可能加入函数<code>onThisThread(eventName, ...args)</code>来提供在其他线程执行的能力）。</p>
+<p>例如在一个脚本发送一个广播 hello:</p>
+<pre><code>events.broadcast.emit(&quot;hello&quot;, &quot;小明&quot;);
+</code></pre>
+<p>在其他脚本中监听并处理：</p>
+<pre><code>events.broadcast.on(&quot;hello&quot;, function(name)&#123;
+    toast(&quot;你好, &quot; + name);
+&#125;);
+//保持脚本运行
+setInterval(()=&gt;&#123;&#125;, 1000);
+</code></pre>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AutoX-js/">AutoX.js</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/software-use/AutoXjs/module.html" title="模块 module"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">模块 module</div></div></a></div><div class="next-post pull-right"><a href="/software-use/AutoXjs/sensors.html" title="传感器 sensors"><img class="cover" src="/../../../images/logo/autojs-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">传感器 sensors</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/software-use/AutoXjs/base64.html" title="base64 编码"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">base64 编码</div></div></a></div><div><a href="/software-use/AutoXjs/webview.html" title="webview与html"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">webview与html</div></div></a></div><div><a href="/software-use/AutoXjs/axios.html" title="axios"><img class="cover" src="/../../../images/logo/autojs-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2025-11-20</div><div class="title">axios</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">68</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">28</div></a></div><a id="card-info-btn" href="mailto:aboucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:aboucide@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Events"><span class="toc-number">1.</span> <span class="toc-text">Events</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-emitter"><span class="toc-number">2.</span> <span class="toc-text">events.emitter()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-observeKey"><span class="toc-number">3.</span> <span class="toc-text">events.observeKey()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-onKeyDown-keyName-listener"><span class="toc-number">4.</span> <span class="toc-text">events.onKeyDown(keyName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-onKeyUp-keyName-listener"><span class="toc-number">5.</span> <span class="toc-text">events.onKeyUp(keyName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-onceKeyDown-keyName-listener"><span class="toc-number">6.</span> <span class="toc-text">events.onceKeyDown(keyName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-onceKeyUp-keyName-listener"><span class="toc-number">7.</span> <span class="toc-text">events.onceKeyUp(keyName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-removeAllKeyDownListeners-keyName"><span class="toc-number">8.</span> <span class="toc-text">events.removeAllKeyDownListeners(keyName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-removeAllKeyUpListeners-keyName"><span class="toc-number">9.</span> <span class="toc-text">events.removeAllKeyUpListeners(keyName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-setKeyInterceptionEnabled-key-enabled"><span class="toc-number">10.</span> <span class="toc-text">events.setKeyInterceptionEnabled([key, ]enabled)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-observeTouch"><span class="toc-number">11.</span> <span class="toc-text">events.observeTouch()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-setTouchEventTimeout-timeout"><span class="toc-number">12.</span> <span class="toc-text">events.setTouchEventTimeout(timeout)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-getTouchEventTimeout"><span class="toc-number">13.</span> <span class="toc-text">events.getTouchEventTimeout()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-onTouch-listener"><span class="toc-number">14.</span> <span class="toc-text">events.onTouch(listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-removeAllTouchListeners"><span class="toc-number">15.</span> <span class="toc-text">events.removeAllTouchListeners()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98key%E2%80%99"><span class="toc-number">16.</span> <span class="toc-text">事件: ‘key’</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98key-down%E2%80%99"><span class="toc-number">17.</span> <span class="toc-text">事件: ‘key_down’</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98key-up%E2%80%99"><span class="toc-number">18.</span> <span class="toc-text">事件: ‘key_up’</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98exit"><span class="toc-number">19.</span> <span class="toc-text">事件: ‘exit&#96;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-observeNotification"><span class="toc-number">20.</span> <span class="toc-text">events.observeNotification()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-observeToast"><span class="toc-number">21.</span> <span class="toc-text">events.observeToast()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98toast%E2%80%99"><span class="toc-number">22.</span> <span class="toc-text">事件: ‘toast’</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6-%E2%80%98notification%E2%80%99"><span class="toc-number">23.</span> <span class="toc-text">事件: ‘notification’</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification"><span class="toc-number">24.</span> <span class="toc-text">Notification</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification-number"><span class="toc-number">25.</span> <span class="toc-text">Notification.number</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification-when"><span class="toc-number">26.</span> <span class="toc-text">Notification.when</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification-getPackageName"><span class="toc-number">27.</span> <span class="toc-text">Notification.getPackageName()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification-getTitle"><span class="toc-number">28.</span> <span class="toc-text">Notification.getTitle()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification-getText"><span class="toc-number">29.</span> <span class="toc-text">Notification.getText()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification-click"><span class="toc-number">30.</span> <span class="toc-text">Notification.click()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification-delete"><span class="toc-number">31.</span> <span class="toc-text">Notification.delete()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KeyEvent"><span class="toc-number">32.</span> <span class="toc-text">KeyEvent</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KeyEvent-getAction"><span class="toc-number">33.</span> <span class="toc-text">KeyEvent.getAction()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KeyEvent-getKeyCode"><span class="toc-number">34.</span> <span class="toc-text">KeyEvent.getKeyCode()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KeyEvent-getEventTime"><span class="toc-number">35.</span> <span class="toc-text">KeyEvent.getEventTime()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KeyEvent-getDownTime"><span class="toc-number">36.</span> <span class="toc-text">KeyEvent.getDownTime()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KeyEvent-keyCodeToString-keyCode"><span class="toc-number">37.</span> <span class="toc-text">KeyEvent.keyCodeToString(keyCode)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#keys"><span class="toc-number">38.</span> <span class="toc-text">keys</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter"><span class="toc-number">39.</span> <span class="toc-text">EventEmitter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-defaultMaxListeners"><span class="toc-number">40.</span> <span class="toc-text">EventEmitter.defaultMaxListeners</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-addListener-eventName-listener"><span class="toc-number">41.</span> <span class="toc-text">EventEmitter.addListener(eventName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-emit-eventName-%E2%80%A6args"><span class="toc-number">42.</span> <span class="toc-text">EventEmitter.emit(eventName[, …args])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-eventNames"><span class="toc-number">43.</span> <span class="toc-text">EventEmitter.eventNames()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-getMaxListeners"><span class="toc-number">44.</span> <span class="toc-text">EventEmitter.getMaxListeners()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-listenerCount-eventName"><span class="toc-number">45.</span> <span class="toc-text">EventEmitter.listenerCount(eventName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-listeners-eventName"><span class="toc-number">46.</span> <span class="toc-text">EventEmitter.listeners(eventName)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-on-eventName-listener"><span class="toc-number">47.</span> <span class="toc-text">EventEmitter.on(eventName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-once-eventName-listener"><span class="toc-number">48.</span> <span class="toc-text">EventEmitter.once(eventName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-prependListener-eventName-listener"><span class="toc-number">49.</span> <span class="toc-text">EventEmitter.prependListener(eventName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-prependOnceListener-eventName-listener"><span class="toc-number">50.</span> <span class="toc-text">EventEmitter.prependOnceListener(eventName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-removeAllListeners-eventName"><span class="toc-number">51.</span> <span class="toc-text">EventEmitter.removeAllListeners([eventName])</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-removeListener-eventName-listener"><span class="toc-number">52.</span> <span class="toc-text">EventEmitter.removeListener(eventName, listener)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventEmitter-setMaxListeners-n"><span class="toc-number">53.</span> <span class="toc-text">EventEmitter.setMaxListeners(n)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#events-broadcast"><span class="toc-number">54.</span> <span class="toc-text">events.broadcast</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.515Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/undefined" title="无题">无题</a><time datetime="2025-11-20T09:40:59.512Z" title="发表日期 2025-11-20 09:40:59">2025-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/software-use/OBS.html" title="OBS录屏软件使用教程"><img src="https://obsproject.com/assets/images/new_icon_small-r.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OBS录屏软件使用教程"/></a><div class="content"><a class="title" href="/software-use/OBS.html" title="OBS录屏软件使用教程">OBS录屏软件使用教程</a><time datetime="2025-11-17T00:00:00.000Z" title="发表日期 2025-11-17 00:00:00">2025-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记"><div style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div></a><div class="content"><a class="title" href="/blog/liferecord/%E6%8B%94%E7%89%99%E6%97%A5%E8%AE%B0.html" title="拔牙日记">拔牙日记</a><time datetime="2025-10-26T11:22:26.000Z" title="发表日期 2025-10-26 11:22:26">2025-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建"><img src="https://img2.baidu.com/it/u=1025364924,3068102242&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=786&amp;h=500w=285&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;dpr=2&amp;pid=1.7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言编程环境搭建"/></a><div class="content"><a class="title" href="/blog/note/code/cprogramming/c01.html" title="C语言编程环境搭建">C语言编程环境搭建</a><time datetime="2025-09-17T00:00:00.000Z" title="发表日期 2025-09-17 00:00:00">2025-09-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Yuan</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'aboucide/hexo-aboucide-comment',
+      'data-repo-id': 'R_kgDOM8yVSQ',
+      'data-category-id': 'DIC_kwDOM8yVSc4CjJFp',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
