@@ -1,135 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>观影/追番记录</title>
-    <url>//blog/liferecord/essay/zhuifan.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
-<thead>
-<tr>
-<th>名称</th>
-<th align="left">日期  +  进度</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仙逆⭐⭐⭐⭐⭐</td>
-<td align="left">2025年4月23日   看完第 85 集</td>
-<td></td>
-</tr>
-<tr>
-<td>凡人修仙传⭐⭐⭐⭐⭐</td>
-<td align="left">2025年4月23日   看完第138集</td>
-<td></td>
-</tr>
-<tr>
-<td>遮天<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年11月18日  看完第83集</td>
-<td>叶凡。</td>
-</tr>
-<tr>
-<td>完美世界<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年10月15日  看完第184集</td>
-<td>石昊ko仙殿继承人。</td>
-</tr>
-<tr>
-<td>永生第四季 海噬仙灵<br />⭐⭐⭐⭐⭐<br /></td>
-<td align="left">2024年10月21日   看完第13集（第53集）</td>
-<td>（周五更新）到达海市</td>
-</tr>
-<tr>
-<td>剑来   <br />⭐⭐⭐<br /></td>
-<td align="left">2024年9月20日   看完第8集</td>
-<td>陈平安的小镇要崩溃了。</td>
-</tr>
-<tr>
-<td>师兄啊师兄⭐⭐⭐⭐</td>
-<td align="left">2024年11月18日 看完第59集</td>
-<td>目前更新到了第63集</td>
-</tr>
-<tr>
-<td>牧神记⭐⭐⭐⭐</td>
-<td align="left">2024年12月4日 看完第7集</td>
-<td>秦牧刚刚破壁成功。</td>
-</tr>
-<tr>
-<td>大道朝天⭐⭐⭐</td>
-<td align="left">2025年1月21日 看完第1季（共16集）</td>
-<td></td>
-</tr>
-<tr>
-<td>斗破苍穹⭐⭐⭐⭐</td>
-<td align="left">2025年4月23日 看完第143集</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td align="left"></td>
-<td></td>
-</tr>
-</tbody></table>
-<img id="myImage" src="http://risespark.test.upcdn.net/%E3%80%90%E5%93%B2%E9%A3%8E%E5%A3%81%E7%BA%B8%E3%80%91%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97-%E5%B0%8F%E7%8B%97-%E6%8A%A4%E7%9C%BC.png" alt="图片描述">
-<script>
-  var img = document.getElementById('myImage');
-  var backupSrc = "https://file.couqiao.net/pic/2022/04/30/626d2b266cba5.webp";
-  // 监听加载失败事件，切换到备用链接
-  img.addEventListener('error', function() {
-    this.src = backupSrc;
-  });
-</script>
-
-<hr>
-]]></content>
-      <categories>
-        <category>生活记录</category>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>追番</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我的hexo博客设置以及next主题个人喜好</title>
-    <url>//blog/note/hexo/blog-next-diy.html</url>
+    <url>//hexo/blog-next-diy.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>next配置文件（theme文件夹—next文件夹—config.yml）——主题配置文件</p>
 <p>hexo配置文件（博客根目录文件夹内的—config.yml）——博客配置文件</p>
 <h1 id="一、博客配置文件的修改"><a href="#一、博客配置文件的修改" class="headerlink" title="一、博客配置文件的修改"></a>一、博客配置文件的修改</h1><h2 id="1-修改站点语言为中文"><a href="#1-修改站点语言为中文" class="headerlink" title="1.修改站点语言为中文"></a>1.修改站点语言为中文</h2><p>打开配置文件，搜索 language，找到如下代码：</p>
@@ -394,8 +267,34 @@
       </tags>
   </entry>
   <entry>
+    <title>博客内嵌入视频-测试</title>
+    <url>//hexo/video-test.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是使用html的video标签插入视频</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot;xxxxxx.mp4&quot;  width=&quot;100%&quot; height=&quot;100%&quot;  poster=&quot;xxxxxx.jpg&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+<p>src是视频的地址；poster是可以设置视频的封面（可选）</p>
+<p><video src="https://cesium.com/public/SandcastleSampleData/big-buck-bunny_trailer.mp4"  width="100%" height="100%" poster="https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg" controls="controls"></video></p>
+<p>下面是B站引用的视频。autoplay&#x3D;0          (1自动播放，0点击播放)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;autoplay=0&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+
+<iframe src="//player.bilibili.com/player.html?aid=754099091&bvid=BV1mk4y1m7nr&cid=220770745&page=1&autoplay=0&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何使用Hexo和Github搭建个人博客</title>
-    <url>//blog/note/hexo/blog-create.html</url>
+    <url>//hexo/blog-create.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="使用Hexo和Github搭建个人博客"><a href="#使用Hexo和Github搭建个人博客" class="headerlink" title="使用Hexo和Github搭建个人博客"></a>使用Hexo和Github搭建个人博客</h1><h1 id="【目录】"><a href="#【目录】" class="headerlink" title="【目录】"></a>【目录】</h1><p>[toc]</p>
 <hr>
 <h1 id="一、如何实现的？"><a href="#一、如何实现的？" class="headerlink" title="一、如何实现的？"></a>一、如何实现的？</h1><p>使用 GitHub Pages 服务搭建博客的好处有：</p>
@@ -531,7 +430,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#x72;&#x6b;&#x65;&#115;&#105;&#64;&#x71;&#113;&#46;&#x63;&#111;&#x6d;">&#x65;&#x72;&#x6b;&#x65;&#115;&#105;&#64;&#x71;&#113;&#46;&#x63;&#111;&#x6d;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#x65;&#114;&#107;&#101;&#x73;&#x69;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#x65;&#114;&#107;&#101;&#x73;&#x69;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -568,7 +467,7 @@
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#x6b;&#x65;&#115;&#x69;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">&#x65;&#x72;&#x6b;&#x65;&#115;&#x69;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#109;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#x6b;&#x65;&#x73;&#105;&#64;&#x71;&#x71;&#x2e;&#99;&#111;&#x6d;">&#x65;&#x72;&#x6b;&#x65;&#x73;&#105;&#64;&#x71;&#x71;&#x2e;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -588,9 +487,9 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
@@ -769,7 +668,6 @@
 <p>至此问题就解决了。</p>
 ]]></content>
       <categories>
-        <category>note</category>
         <category>hexo</category>
       </categories>
       <tags>
@@ -778,34 +676,8 @@
       </tags>
   </entry>
   <entry>
-    <title>博客内嵌入视频-测试</title>
-    <url>//blog/hexo/video1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是使用html的video标签插入视频</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot;xxxxxx.mp4&quot;  width=&quot;100%&quot; height=&quot;100%&quot;  poster=&quot;xxxxxx.jpg&quot; controls=&quot;controls&quot;&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
-<p>src是视频的地址；poster是可以设置视频的封面（可选）</p>
-<p><video src="https://cesium.com/public/SandcastleSampleData/big-buck-bunny_trailer.mp4"  width="100%" height="100%" poster="https://youimg1.c-ctrip.com/target/010341200061sysx2A203_D_10000_1200.jpg" controls="controls"></video></p>
-<p>下面是B站引用的视频。autoplay&#x3D;0          (1自动播放，0点击播放)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=754099091&amp;bvid=BV1mk4y1m7nr&amp;cid=220770745&amp;page=1&amp;autoplay=0&amp;high_quality=1&amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
-
-
-<iframe src="//player.bilibili.com/player.html?aid=754099091&bvid=BV1mk4y1m7nr&cid=220770745&page=1&autoplay=0&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>这是一篇加密文章的测试，密码6666</title>
-    <url>//blog/hexo/jiami.html</url>
+    <url>//hexo/jiami.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
   <script id="hbeData" type="hbeData" data-hmacdigest="844a2b6db8e718bd3f5938101a7071258b83b13fd06f30995920f81a958635e9">591ad66477dc9f8d468bd98487d7d9f9cd9b9f6ee2197f4aecb152b8361f8df989fae85024aa73cbf6d601a62a94cdb2786bc0b21df69df0903f55ad88b8513e4bf063cb617d8927952d8c8ba2a1601aa90f921ef93b49195f1e6bdec3c16faffd4087343b56bad90f52318b131d240138d2a0e16dca7a136fb492c81aa21cca30a511a7d18681e22bebabcbd90e1ee5587d4afe536a5c98ab9e4c827b0b51ff3cafb1b3679f9a96eabc6591dc8aaae55de456ee7469337a0cb1e037ccc27548428cbc6f4b9a3b5151720e8bc2de7239ac63dff284624ac4961fbf4e4bf1e611c95a32bf5ce7f443d866034410670fbee5563fb23e69007f35188c8adace031ec4eb3370f8b9ca2c2f9d268621749b6bc669a4fe2e2c05943b87e4b15bdb2680bc9aa5703d881c6cfefbc86ce67c79aeeb36c1e81320605744d2a512325a0be655b9d9cf5fbeb577085a869a9f1cea6695f371b775f2d24e7a1bb5d6a11e0f490aa56aefbb589825377f7d3fd947b2d3440e04b6de125724a8b60e3db0b5da41</script>
   <div class="hbe hbe-content">
@@ -969,41 +841,6 @@
       </tags>
   </entry>
   <entry>
-    <title>近三年全国各省市高考化学真题分享（学生版+教师版）</title>
-    <url>//blog/chemistry/shijuan/2021-2023.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、获取通道"><a href="#一、获取通道" class="headerlink" title="一、获取通道"></a>一、获取通道</h1><p>链接:<a href="https://caiyun.139.com/m/i?065Ct6gI60upp">https://caiyun.139.com/m/i?065Ct6gI60upp</a><br>提取码:PgLi<br>复制内容打开移动云盘PC客户端，操作更方便哦</p>
-<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVl6WldDeWhjVVJJa3FxRk5adFJVUmtCOTdNTmNLM0JyZVgwNk5JZTJDM1lqZz9lPVFKZGVYbQ.png" style="zoom:67%;" />
-
-
-
-
-
-
-
-<h1 id="二、学生版实例"><a href="#二、学生版实例" class="headerlink" title="二、学生版实例"></a>二、学生版实例</h1><p><code>习题实例，习题+答案，但是每道习题后无答案。试卷的最后面是详细的答案与解析</code></p>
-<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVZyeUMwUGVmUnhLaUUyTURXVFN4TUVCS0tHeVJhYjM1ZjRlclZKN0E2OWo1Zz9lPXRyNkhvag.png" style="zoom:67%;" />
-
-
-
-
-
-
-
-<p><code>答案与解析</code></p>
-<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVpUY3B1OEl4WjlEdW1rSlFKTGotbFVCazQtYWcwdWxwZE9rRGp1Y1F6enNhZz9lPXIzSEJLcQ.png" style="zoom:67%;" />
-
-<h1 id="三、教师版"><a href="#三、教师版" class="headerlink" title="三、教师版"></a>三、教师版</h1><p><code>习题实例，习题+答案，但是每道习题后跟着答案与解析。</code></p>
-<p>注意：教师版前半部分和学生版一样，后半部分才是<code>每道习题后跟着答案</code></p>
-<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVpWbEk0MFhxbEpCbWxEa0wwdFZ4d0lCbmVyeTFDZy1yeVhzUGRJbkM2ckZxdz9lPWNmeFFsTA.png" style="zoom:67%;" />]]></content>
-      <categories>
-        <category>高中化学</category>
-        <category>试卷</category>
-      </categories>
-      <tags>
-        <tag>download</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2024高考化学易错题整理</title>
     <url>//blog/chemistry/easy-mistake/2024zhenti.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024高考易错题整理"><a href="#2024高考易错题整理" class="headerlink" title="2024高考易错题整理"></a>2024高考易错题整理</h1><h2 id="2024年甘肃卷"><a href="#2024年甘肃卷" class="headerlink" title="2024年甘肃卷"></a>2024年甘肃卷</h2><h3 id="1、灼烧海带制取海带灰"><a href="#1、灼烧海带制取海带灰" class="headerlink" title="1、灼烧海带制取海带灰"></a>1、灼烧海带制取海带灰</h3><p><strong>均匀加热</strong>：在灼烧过程中，确保海带均匀受热，避免局部过热导致燃烧。可以通过缓慢移动坩埚或瓷盘来实现均匀加热。（坩埚不能使用陶土网，应该是放在泥三角上）</p>
@@ -1072,6 +909,41 @@
       </tags>
   </entry>
   <entry>
+    <title>近三年全国各省市高考化学真题分享（学生版+教师版）</title>
+    <url>//blog/chemistry/shijuan/2021-2023.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、获取通道"><a href="#一、获取通道" class="headerlink" title="一、获取通道"></a>一、获取通道</h1><p>链接:<a href="https://caiyun.139.com/m/i?065Ct6gI60upp">https://caiyun.139.com/m/i?065Ct6gI60upp</a><br>提取码:PgLi<br>复制内容打开移动云盘PC客户端，操作更方便哦</p>
+<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVl6WldDeWhjVVJJa3FxRk5adFJVUmtCOTdNTmNLM0JyZVgwNk5JZTJDM1lqZz9lPVFKZGVYbQ.png" style="zoom:67%;" />
+
+
+
+
+
+
+
+<h1 id="二、学生版实例"><a href="#二、学生版实例" class="headerlink" title="二、学生版实例"></a>二、学生版实例</h1><p><code>习题实例，习题+答案，但是每道习题后无答案。试卷的最后面是详细的答案与解析</code></p>
+<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVZyeUMwUGVmUnhLaUUyTURXVFN4TUVCS0tHeVJhYjM1ZjRlclZKN0E2OWo1Zz9lPXRyNkhvag.png" style="zoom:67%;" />
+
+
+
+
+
+
+
+<p><code>答案与解析</code></p>
+<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVpUY3B1OEl4WjlEdW1rSlFKTGotbFVCazQtYWcwdWxwZE9rRGp1Y1F6enNhZz9lPXIzSEJLcQ.png" style="zoom:67%;" />
+
+<h1 id="三、教师版"><a href="#三、教师版" class="headerlink" title="三、教师版"></a>三、教师版</h1><p><code>习题实例，习题+答案，但是每道习题后跟着答案与解析。</code></p>
+<p>注意：教师版前半部分和学生版一样，后半部分才是<code>每道习题后跟着答案</code></p>
+<img src="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVpWbEk0MFhxbEpCbWxEa0wwdFZ4d0lCbmVyeTFDZy1yeVhzUGRJbkM2ckZxdz9lPWNmeFFsTA.png" style="zoom:67%;" />]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>试卷</category>
+      </categories>
+      <tags>
+        <tag>download</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>高中化学90个实验视频汇总</title>
     <url>//blog/chemistry/experiment-videos/allvideos.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
@@ -1092,6 +964,133 @@
       </categories>
       <tags>
         <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>观影/追番记录</title>
+    <url>//blog/liferecord/essay/zhuifan.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
+<thead>
+<tr>
+<th>名称</th>
+<th align="left">日期  +  进度</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仙逆⭐⭐⭐⭐⭐</td>
+<td align="left">2025年4月23日   看完第 85 集</td>
+<td></td>
+</tr>
+<tr>
+<td>凡人修仙传⭐⭐⭐⭐⭐</td>
+<td align="left">2025年4月23日   看完第138集</td>
+<td></td>
+</tr>
+<tr>
+<td>遮天<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年11月18日  看完第83集</td>
+<td>叶凡。</td>
+</tr>
+<tr>
+<td>完美世界<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年10月15日  看完第184集</td>
+<td>石昊ko仙殿继承人。</td>
+</tr>
+<tr>
+<td>永生第四季 海噬仙灵<br />⭐⭐⭐⭐⭐<br /></td>
+<td align="left">2024年10月21日   看完第13集（第53集）</td>
+<td>（周五更新）到达海市</td>
+</tr>
+<tr>
+<td>剑来   <br />⭐⭐⭐<br /></td>
+<td align="left">2024年9月20日   看完第8集</td>
+<td>陈平安的小镇要崩溃了。</td>
+</tr>
+<tr>
+<td>师兄啊师兄⭐⭐⭐⭐</td>
+<td align="left">2024年11月18日 看完第59集</td>
+<td>目前更新到了第63集</td>
+</tr>
+<tr>
+<td>牧神记⭐⭐⭐⭐</td>
+<td align="left">2024年12月4日 看完第7集</td>
+<td>秦牧刚刚破壁成功。</td>
+</tr>
+<tr>
+<td>大道朝天⭐⭐⭐</td>
+<td align="left">2025年1月21日 看完第1季（共16集）</td>
+<td></td>
+</tr>
+<tr>
+<td>斗破苍穹⭐⭐⭐⭐</td>
+<td align="left">2025年4月23日 看完第143集</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+</tr>
+</tbody></table>
+<img id="myImage" src="http://risespark.test.upcdn.net/%E3%80%90%E5%93%B2%E9%A3%8E%E5%A3%81%E7%BA%B8%E3%80%91%E5%8F%AF%E7%88%B1%E5%B0%8F%E7%8B%97-%E5%B0%8F%E7%8B%97-%E6%8A%A4%E7%9C%BC.png" alt="图片描述">
+<script>
+  var img = document.getElementById('myImage');
+  var backupSrc = "https://file.couqiao.net/pic/2022/04/30/626d2b266cba5.webp";
+  // 监听加载失败事件，切换到备用链接
+  img.addEventListener('error', function() {
+    this.src = backupSrc;
+  });
+</script>
+
+<hr>
+]]></content>
+      <categories>
+        <category>生活记录</category>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>追番</tag>
       </tags>
   </entry>
   <entry>
@@ -1217,89 +1216,8 @@
       </tags>
   </entry>
   <entry>
-    <title>DFX工作台脚本-使用步骤</title>
-    <url>//blog/note/software-use/DFX-GZT.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<h1 id="这脚本用来干什么的"><a href="#这脚本用来干什么的" class="headerlink" title="这脚本用来干什么的"></a>这脚本用来干什么的</h1><p>自动完成发放课后作业（1张试卷），给当前【开课中】及【未开课】的学生。</p>
-<p>共计发送<code>5次</code>。</p>
-<p>预计此脚本，每天能为您节省<code>420秒</code>。</p>
-<hr>
-<h1 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h1><h2 id="安装浏览器插件——油猴（共6步）"><a href="#安装浏览器插件——油猴（共6步）" class="headerlink" title="安装浏览器插件——油猴（共6步）"></a>安装浏览器插件——油猴（共6步）</h2><p>这里以<code>Windows</code>系统自带的<code>Edge</code>浏览器为例。谷歌浏览器的安装步骤类似。</p>
-<p>1、下载浏览器——油猴插件</p>
-<p><a href="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWMtd3pfdmxZTnBNdHQ0djVUX3FILVVCTDBaZnRuS0lBV1puWmY0U2tHUm41dz9lPXZvYkd0Sw.crx">点我下载</a></p>
-<p>2、安装油猴插件</p>
-<ul>
-<li>①点击<code>Edge</code>浏览器右上角的<code>设置</code>（即图中所示：三个小圆点）</li>
-</ul>
-<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gk1f7x4j31e70u0aji.jpg "  style="zoom:50%;" />
-
-<ul>
-<li>②点击<code>扩展</code></li>
-</ul>
-<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hu2gm10tdcj30ki11i77m.jpg "  style="zoom:30%;" />
-
-<ul>
-<li>③点击<code>管理扩展</code></li>
-</ul>
-<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gmqrzxvj30wz0ie0va.jpg "  style="zoom:40%;" />
-
-<ul>
-<li>④打开<code>开发者人员模式</code>的开关</li>
-</ul>
-<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gnbq01wj31mq0u07ag.jpg "  style="zoom:50%;" />
-
-<ul>
-<li>⑤打开刚下载的插件所在的文件夹，将刚刚下载的这个插件按住鼠标不松，拖放到浏览器这个界面，浏览器会有提示，再松开鼠标，插件就可以安装了。</li>
-</ul>
-<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hu2go7q0vjj31lc0u0795.jpg "  style="zoom:50%;" />
-
-<ul>
-<li>⑥在弹出的新窗口中，点击<code>添加扩展</code></li>
-</ul>
-<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8hu2gqxp8l9j315l0u0794.jpg "  style="zoom:40%;" />
-
-<p>至此第一步<strong>油猴插件</strong>就安装完毕。</p>
-<hr>
-<h2 id="安装脚本（共2步）"><a href="#安装脚本（共2步）" class="headerlink" title="安装脚本（共2步）"></a>安装脚本（共2步）</h2><p><a href="https://greasyfork.org/zh-CN/scripts/510404-dfx%E5%B7%A5%E4%BD%9C%E5%8F%B0%E5%8A%A9%E6%89%8B">点我去脚本网址</a></p>
-<ul>
-<li>①打开上面的脚本网址，界面如下图所示，点击<code>安装此脚本</code></li>
-</ul>
-<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8hu2gt7i0i4j31oj0u0tg0.jpg "  style="zoom:50%;" />
-
-<ul>
-<li>②在新窗口中，点击<code>安装</code></li>
-</ul>
-<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8hu2grnvbtrj31u90u046m.jpg "  style="zoom:50%;" />
-
-<p>至此脚本安装也结束了。</p>
-<hr>
-<h2 id="启动-使用脚本"><a href="#启动-使用脚本" class="headerlink" title="启动&#x2F;使用脚本"></a>启动&#x2F;使用脚本</h2><ul>
-<li><a href="https://we.xdf.cn/main/home">打开高中工作台 </a></li>
-</ul>
-<p>如下图所示，安装脚本后，网页中会出现一个<code>绿色的小太阳</code>，可以随意拖放，双击<code>绿色小太阳</code>即可启动脚本。</p>
-<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gx7gzcqj30gz0mljsm.jpg "  style="zoom:30%;" />
-
-<ul>
-<li>使用的注意事项</li>
-</ul>
-<blockquote>
-<p>1、脚本启动前，网页必须在“高中工作台”的<a href="https://we.xdf.cn/main/home">首页</a>，然后再双击启动脚本。</p>
-<p>因为脚本的第一步是去点击“试卷库”，脚本找不到试卷库，脚本会自动停止。</p>
-<p>2、脚本运行中，鼠标只要不要去点击浏览器，随便你去什么事情都可以。</p>
-<p>3、如果想运行到中途，终止脚本，刷新网页即可，或者直接关闭网页重新打开都可以。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>笔记</category>
-        <category>software-use</category>
-      </categories>
-      <tags>
-        <tag>脚本</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CSS学习笔记</title>
-    <url>//blog/note/code/CSS.html</url>
+    <url>//note/code/CSS.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
 <h1 id="CSS-学习笔记"><a href="#CSS-学习笔记" class="headerlink" title="CSS 学习笔记"></a>CSS 学习笔记</h1><h1 id="CSS-基础"><a href="#CSS-基础" class="headerlink" title="CSS 基础"></a>CSS 基础</h1><h2 id="CSS-是什么？"><a href="#CSS-是什么？" class="headerlink" title="CSS 是什么？"></a>CSS 是什么？</h2><p>常说前端三件套：<code>HTML</code> 、<code>CSS</code>、<code>javaScript</code> 。可以将这三者的关系视为：</p>
 <ul>
@@ -1747,6 +1665,87 @@
       </categories>
       <tags>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DFX工作台脚本-使用步骤</title>
+    <url>//note/software-use/DFX-GZT.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<h1 id="这脚本用来干什么的"><a href="#这脚本用来干什么的" class="headerlink" title="这脚本用来干什么的"></a>这脚本用来干什么的</h1><p>自动完成发放课后作业（1张试卷），给当前【开课中】及【未开课】的学生。</p>
+<p>共计发送<code>5次</code>。</p>
+<p>预计此脚本，每天能为您节省<code>420秒</code>。</p>
+<hr>
+<h1 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h1><h2 id="安装浏览器插件——油猴（共6步）"><a href="#安装浏览器插件——油猴（共6步）" class="headerlink" title="安装浏览器插件——油猴（共6步）"></a>安装浏览器插件——油猴（共6步）</h2><p>这里以<code>Windows</code>系统自带的<code>Edge</code>浏览器为例。谷歌浏览器的安装步骤类似。</p>
+<p>1、下载浏览器——油猴插件</p>
+<p><a href="https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRWMtd3pfdmxZTnBNdHQ0djVUX3FILVVCTDBaZnRuS0lBV1puWmY0U2tHUm41dz9lPXZvYkd0Sw.crx">点我下载</a></p>
+<p>2、安装油猴插件</p>
+<ul>
+<li>①点击<code>Edge</code>浏览器右上角的<code>设置</code>（即图中所示：三个小圆点）</li>
+</ul>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gk1f7x4j31e70u0aji.jpg "  style="zoom:50%;" />
+
+<ul>
+<li>②点击<code>扩展</code></li>
+</ul>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hu2gm10tdcj30ki11i77m.jpg "  style="zoom:30%;" />
+
+<ul>
+<li>③点击<code>管理扩展</code></li>
+</ul>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gmqrzxvj30wz0ie0va.jpg "  style="zoom:40%;" />
+
+<ul>
+<li>④打开<code>开发者人员模式</code>的开关</li>
+</ul>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gnbq01wj31mq0u07ag.jpg "  style="zoom:50%;" />
+
+<ul>
+<li>⑤打开刚下载的插件所在的文件夹，将刚刚下载的这个插件按住鼠标不松，拖放到浏览器这个界面，浏览器会有提示，再松开鼠标，插件就可以安装了。</li>
+</ul>
+<img src=" https://dlink.host/wx4.sinaimg.cn/large/007ERWx2ly8hu2go7q0vjj31lc0u0795.jpg "  style="zoom:50%;" />
+
+<ul>
+<li>⑥在弹出的新窗口中，点击<code>添加扩展</code></li>
+</ul>
+<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8hu2gqxp8l9j315l0u0794.jpg "  style="zoom:40%;" />
+
+<p>至此第一步<strong>油猴插件</strong>就安装完毕。</p>
+<hr>
+<h2 id="安装脚本（共2步）"><a href="#安装脚本（共2步）" class="headerlink" title="安装脚本（共2步）"></a>安装脚本（共2步）</h2><p><a href="https://greasyfork.org/zh-CN/scripts/510404-dfx%E5%B7%A5%E4%BD%9C%E5%8F%B0%E5%8A%A9%E6%89%8B">点我去脚本网址</a></p>
+<ul>
+<li>①打开上面的脚本网址，界面如下图所示，点击<code>安装此脚本</code></li>
+</ul>
+<img src=" https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8hu2gt7i0i4j31oj0u0tg0.jpg "  style="zoom:50%;" />
+
+<ul>
+<li>②在新窗口中，点击<code>安装</code></li>
+</ul>
+<img src=" https://dlink.host/wx1.sinaimg.cn/large/007ERWx2ly8hu2grnvbtrj31u90u046m.jpg "  style="zoom:50%;" />
+
+<p>至此脚本安装也结束了。</p>
+<hr>
+<h2 id="启动-使用脚本"><a href="#启动-使用脚本" class="headerlink" title="启动&#x2F;使用脚本"></a>启动&#x2F;使用脚本</h2><ul>
+<li><a href="https://we.xdf.cn/main/home">打开高中工作台 </a></li>
+</ul>
+<p>如下图所示，安装脚本后，网页中会出现一个<code>绿色的小太阳</code>，可以随意拖放，双击<code>绿色小太阳</code>即可启动脚本。</p>
+<img src=" https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8hu2gx7gzcqj30gz0mljsm.jpg "  style="zoom:30%;" />
+
+<ul>
+<li>使用的注意事项</li>
+</ul>
+<blockquote>
+<p>1、脚本启动前，网页必须在“高中工作台”的<a href="https://we.xdf.cn/main/home">首页</a>，然后再双击启动脚本。</p>
+<p>因为脚本的第一步是去点击“试卷库”，脚本找不到试卷库，脚本会自动停止。</p>
+<p>2、脚本运行中，鼠标只要不要去点击浏览器，随便你去什么事情都可以。</p>
+<p>3、如果想运行到中途，终止脚本，刷新网页即可，或者直接关闭网页重新打开都可以。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>软件使用教程</category>
+      </categories>
+      <tags>
+        <tag>脚本</tag>
       </tags>
   </entry>
   <entry>
@@ -13429,216 +13428,6 @@ w.click();
       </tags>
   </entry>
   <entry>
-    <title>控制台 console</title>
-    <url>//software-use/AutoXjs/console.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Console"><a href="#Console" class="headerlink" title="Console"></a><a href="http://doc.autoxjs.com/#/console?id=console">Console</a></h1><h2 id="Console-1"><a href="#Console-1" class="headerlink" title="Console"></a><a href="http://doc.autoxjs.com/#/console?id=console">Console</a></h2><blockquote>
-<p>稳定性: 稳定</p>
-</blockquote>
-<p>控制台模块提供了一个和Web浏览器中相似的用于调试的控制台。用于输出一些调试信息、中间结果等。 console模块中的一些函数也可以直接作为全局函数使用，例如log, print等。</p>
-<h2 id="console-show-autoHide"><a href="#console-show-autoHide" class="headerlink" title="console.show(autoHide)"></a><a href="http://doc.autoxjs.com/#/console?id=consoleshowautohide">console.show(autoHide)</a></h2><ul>
-<li><p><code>autoHide</code> {boolean} 是否自动隐藏，默认false当程序结束的时候是否自动隐藏控制 显示控制台。这会显示一个控制台的悬浮窗(需要悬浮窗权限)。</p>
-<p>console.show(true); &#x2F;&#x2F;程序结束自动 隐藏控制台<br>console.show();   &#x2F;&#x2F;结束不会自动隐藏控制台</p>
-</li>
-</ul>
-<h2 id="console-hide"><a href="#console-hide" class="headerlink" title="console.hide()"></a><a href="http://doc.autoxjs.com/#/console?id=consolehide">console.hide()</a></h2><p>隐藏控制台悬浮窗。</p>
-<h2 id="console-clear"><a href="#console-clear" class="headerlink" title="console.clear()"></a><a href="http://doc.autoxjs.com/#/console?id=consoleclear">console.clear()</a></h2><p>清空控制台。</p>
-<h2 id="console-log-data-…args"><a href="#console-log-data-…args" class="headerlink" title="console.log([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consolelogdata-args">console.log([data][, …args])</a></h2><ul>
-<li><code>data</code> {any}</li>
-<li><code>...args</code> {any}</li>
-</ul>
-<p>打印到控制台，并带上换行符。 可以传入多个参数，第一个参数作为主要信息，其他参数作为类似于 <a href="http://man7.org/linux/man-pages/man3/printf.3.html">printf(3)</a> 中的代替值（参数都会传给 util.format()）。</p>
-<pre><code>const count = 5;
-console.log(&#39;count: %d&#39;, count);
-// 打印: count: 5 到 stdout
-console.log(&#39;count:&#39;, count);
-// 打印: count: 5 到 stdout
-</code></pre>
-<p>详见 util.format()。</p>
-<p>该函数也可以作为全局函数使用。</p>
-<h2 id="console-verbose-data-…args"><a href="#console-verbose-data-…args" class="headerlink" title="console.verbose([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoleverbosedata-args">console.verbose([data][, …args])</a></h2><ul>
-<li><code>data</code> {any}</li>
-<li><code>...args</code> {any}</li>
-</ul>
-<p>与console.log类似，但输出结果以灰色字体显示。输出优先级低于log，用于输出观察性质的信息。</p>
-<h2 id="console-info-data-…args"><a href="#console-info-data-…args" class="headerlink" title="console.info([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoleinfodata-args">console.info([data][, …args])</a></h2><ul>
-<li><code>data</code> {any}</li>
-<li><code>...args</code> {any}</li>
-</ul>
-<p>与console.log类似，但输出结果以绿色字体显示。输出优先级高于log, 用于输出重要信息。</p>
-<h2 id="console-warn-data-…args"><a href="#console-warn-data-…args" class="headerlink" title="console.warn([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consolewarndata-args">console.warn([data][, …args])</a></h2><ul>
-<li><code>data</code> {any}</li>
-<li><code>...args</code> {any}</li>
-</ul>
-<p>与console.log类似，但输出结果以蓝色字体显示。输出优先级高于info, 用于输出警告信息。</p>
-<h2 id="console-error-data-…args"><a href="#console-error-data-…args" class="headerlink" title="console.error([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoleerrordata-args">console.error([data][, …args])</a></h2><ul>
-<li><code>data</code> {any}</li>
-<li><code>...args</code> {any}</li>
-</ul>
-<p>与console.log类似，但输出结果以红色字体显示。输出优先级高于warn, 用于输出错误信息。</p>
-<h2 id="console-assert-value-message"><a href="#console-assert-value-message" class="headerlink" title="console.assert(value, message)"></a><a href="http://doc.autoxjs.com/#/console?id=consoleassertvalue-message">console.assert(value, message)</a></h2><ul>
-<li><code>value</code> {any} 要断言的布尔值</li>
-<li><code>message</code> {string} value为false时要输出的信息</li>
-</ul>
-<p>断言。如果value为false则输出错误信息message并停止脚本运行。</p>
-<pre><code>var a = 1 + 1;
-console.assert(a == 3, &quot;加法出错啦&quot;);
-</code></pre>
-<h2 id="console-time-label"><a href="#console-time-label" class="headerlink" title="console.time([label])"></a><a href="http://doc.autoxjs.com/#/console?id=consoletimelabel">console.time([label])</a></h2><p><strong>[v4.1.0新增]</strong></p>
-<ul>
-<li><code>label</code> {String} 计时器标签，可省略</li>
-</ul>
-<p>启动一个计时器，用以计算一个操作的持续时间。 计时器由一个唯一的 <code>label</code> 标识。 若<code>label</code>重复，则会覆盖上一个同名<code>label</code>的计时器。 以同名 <code>label</code>调用 <code>console.timeEnd()</code> 来停止计时器，并以毫秒为单位将持续时间输出到控制台。</p>
-<h2 id="console-timeEnd-label"><a href="#console-timeEnd-label" class="headerlink" title="console.timeEnd(label)"></a><a href="http://doc.autoxjs.com/#/console?id=consoletimeendlabel">console.timeEnd(label)</a></h2><p><strong>[v4.1.0新增]</strong></p>
-<ul>
-<li><code>label</code> {String} 计时器标签</li>
-</ul>
-<p>停止之前通过调用 <code>console.time()</code> 启动的定时器，并打印结果到控制台。 调用 <code>console.timeEnd()</code> 后定时器会被删除。如果不存在标签指定的定时器则会打印 <code>NaNms</code>。</p>
-<pre><code>console.time(&#39;求和&#39;);
-var sum = 0;
-for(let i = 0; i &lt; 100000; i++)&#123;
-    sum += i;
-&#125;
-console.timeEnd(&#39;求和&#39;);
-// 打印 求和: xxx ms
-</code></pre>
-<h2 id="console-trace-data-…args"><a href="#console-trace-data-…args" class="headerlink" title="console.trace([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoletracedata-args">console.trace([data][, …args])</a></h2><p><strong>[v4.1.0新增]</strong></p>
-<ul>
-<li><code>data</code> {any}</li>
-<li><code>...args</code> {any}</li>
-</ul>
-<p>与console.log类似，同时会打印出调用这个函数所在的调用栈信息（即当前运行的文件、行数等信息）。</p>
-<pre><code>console.trace(&#39;Show me&#39;);
-// 打印: (堆栈跟踪会根据被调用的跟踪的位置而变化)
-// Show me
-//  at &lt;test&gt;:7
-</code></pre>
-<h2 id="console-input-data-…args"><a href="#console-input-data-…args" class="headerlink" title="console.input(data[, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoleinputdata-args">console.input(data[, …args])</a></h2><ul>
-<li><code>data</code> {any}</li>
-<li><code>...args</code> {any}</li>
-</ul>
-<p>与<code>console.log</code>一样输出信息，并在控制台显示输入框等待输入。按控制台的确认按钮后会将输入的字符串用<code>eval</code>计算后返回。</p>
-<p><strong>部分机型可能会有控制台不显示输入框的情况，属于bug。</strong></p>
-<p>例如：</p>
-<pre><code>var n = console.input(&quot;请输入一个数字:&quot;); 
-//输入123之后：
-toast(n + 1);
-//显示124
-</code></pre>
-<h2 id="console-rawInput-data-…args"><a href="#console-rawInput-data-…args" class="headerlink" title="console.rawInput(data[, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consolerawinputdata-args">console.rawInput(data[, …args])</a></h2><ul>
-<li><code>data</code> {any}</li>
-<li><code>...args</code> {any}</li>
-</ul>
-<p>与console.log一样输出信息，并在控制台显示输入框等待输入。按控制台的确认按钮后会将输入的字符串直接返回。</p>
-<p>部分机型可能会有控制台不显示输入框的情况，属于bug。</p>
-<p>例如：</p>
-<pre><code>var n = console.rawInput(&quot;请输入一个数字:&quot;); 
-//输入123之后：
-toast(n + 1);
-//显示1231
-</code></pre>
-<h2 id="console-setSize-w-h"><a href="#console-setSize-w-h" class="headerlink" title="console.setSize(w, h)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetsizew-h">console.setSize(w, h)</a></h2><ul>
-<li><code>w</code> {number} 宽度</li>
-<li><code>h</code> {number} 高度</li>
-</ul>
-<p>设置控制台的大小，单位像素。</p>
-<pre><code>console.show();
-//设置控制台大小为屏幕的四分之一
-console.setSize(device.width / 2, device.height / 2);
-</code></pre>
-<h2 id="console-setPosition-x-y"><a href="#console-setPosition-x-y" class="headerlink" title="console.setPosition(x, y)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetpositionx-y">console.setPosition(x, y)</a></h2><ul>
-<li><code>x</code> {number} 横坐标</li>
-<li><code>y</code> {number} 纵坐标</li>
-</ul>
-<p>设置控制台的位置，单位像素。</p>
-<pre><code>console.show();
-console.setPosition(100, 100);
-</code></pre>
-<h2 id="console-setGlobalLogConfig-config"><a href="#console-setGlobalLogConfig-config" class="headerlink" title="console.setGlobalLogConfig(config)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetgloballogconfigconfig">console.setGlobalLogConfig(config)</a></h2><p><strong>[v4.1.0新增]</strong></p>
-<ul>
-<li><code>config</code> {Object} 日志配置，可选的项有：<ul>
-<li><code>file</code> {string} 日志文件路径，将会把日志写入该文件中</li>
-<li><code>maxFileSize</code> {number} 最大文件大小，单位字节，默认为512 * 1024 (512KB)</li>
-<li><code>rootLevel</code> {string} 写入的日志级别，默认为”ALL”（所有日志），可以为”OFF”(关闭), “DEBUG”, “INFO”, “WARN”, “ERROR”, “FATAL”等。</li>
-<li><code>maxBackupSize</code> {number} 日志备份文件最大数量，默认为5</li>
-<li><code>filePattern</code> {string} 日志写入格式，参见<a href="http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/PatternLayout.html">PatternLayout</a></li>
-</ul>
-</li>
-</ul>
-<p>设置日志保存的路径和配置。例如把日志保存到”&#x2F;sdcard&#x2F;1.txt”:</p>
-<pre><code>console.setGlobalLogConfig(&#123;
-    &quot;file&quot;: &quot;/sdcard/1.txt&quot;
-&#125;);
-</code></pre>
-<h2 id="print-text"><a href="#print-text" class="headerlink" title="print(text)"></a><a href="http://doc.autoxjs.com/#/console?id=printtext">print(text)</a></h2><ul>
-<li>text {string} | {Object} 要打印到控制台的信息</li>
-</ul>
-<p>相当于<code>log(text)</code>。</p>
-<h2 id="console-setTitle-title-color-size"><a href="#console-setTitle-title-color-size" class="headerlink" title="console.setTitle(title,color,size)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesettitletitlecolorsize">console.setTitle(title,color,size)</a></h2><p><strong>[v4.2.5新增]</strong></p>
-<ul>
-<li><code>title</code> {string} 标题</li>
-<li><code>color</code> {string} 颜色值 #AARRGGBB</li>
-<li><code>size</code> {number} 标题高度，字号会随高度变化，单位是dp</li>
-</ul>
-<p>设置标题名称，字体颜色，标题栏高度</p>
-<pre><code>console.setTitle(&quot;中文&quot;,&quot;#ff11ee00&quot;,30);
-console.setTitle(&quot;中文&quot;);
-console.setTitle(&quot;中文&quot;,&quot;#ff11ee00&quot;);
-</code></pre>
-<h2 id="console-setLogSize-size"><a href="#console-setLogSize-size" class="headerlink" title="console.setLogSize(size)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetlogsizesize">console.setLogSize(size)</a></h2><p><strong>[v4.2.5新增]</strong></p>
-<ul>
-<li><code>size</code> {number} 字号大小，单位是dp或sp 20以内比较合适<br>设置log字号大小</li>
-</ul>
-<p><strong>需要在显示控制台之后才能设置，否则空指针</strong></p>
-<pre><code>function myrandom(min,max)&#123;
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-&#125;
-
-threads.start(function () &#123;
-    console.show();
-    console.setTitle(&quot;中文&quot;,&quot;#ff11ee00&quot;,30);
-    console.setCanInput(false);
-    var i=0;    
-    do &#123;
-        console.setLogSize(myrandom(4,20) );
-        console.setCanInput(i%2==0);
-        i++;
-        console.log(&quot;i-----&gt;&quot;+i);
-        sleep(3000);
-    &#125; while (true);
-
-&#125;); 
-</code></pre>
-<p>​      </p>
-<h2 id="console-setCanInput-can"><a href="#console-setCanInput-can" class="headerlink" title="console.setCanInput(can)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetcaninputcan">console.setCanInput(can)</a></h2><p><strong>[v4.2.5新增]</strong></p>
-<ul>
-<li><code>can</code> {boolean} true 或 false 可以输入或不可以输入</li>
-</ul>
-<p>控制 console 是否可以输入文字</p>
-<pre><code>console.setCanInput(false);
-</code></pre>
-<h2 id="console-setBackgroud-color"><a href="#console-setBackgroud-color" class="headerlink" title="console.setBackgroud(color)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetbackgroudcolor">console.setBackgroud(color)</a></h2><p><strong>[v4.2.5新增]</strong></p>
-<ul>
-<li><code>color</code> {string} 颜色值 #AARRGGBB</li>
-</ul>
-<p>设置 console 背景色,<strong>需要在显示控制台之后才能设置，否则空指针</strong></p>
-<pre><code>console.setBackgroud(&quot;#33ef0000&quot;);
-</code></pre>
-<h2 id="console-setMaxLines-maxLines"><a href="#console-setMaxLines-maxLines" class="headerlink" title="console.setMaxLines(maxLines);"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetmaxlinesmaxlines">console.setMaxLines(maxLines);</a></h2><p><strong>[v5.0.2新增]</strong></p>
-<ul>
-<li><p><code>maxLines</code> {number} 最大行数 如 10 行 设置 console 显示最大行数，默认-1，不限 ，超出行数系统会清空，从0开始显示 不限制，显示列表过长，android内存又不足，系统会回收console的引用，即console 将不显示。</p>
-<p>console.setMaxLines(500);</p>
-</li>
-</ul>
-<h2 id="console-setBackground"><a href="#console-setBackground" class="headerlink" title="console.setBackground()"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetbackground">console.setBackground()</a></h2>]]></content>
-      <categories>
-        <category>软件使用教程</category>
-        <category>autojs</category>
-      </categories>
-      <tags>
-        <tag>AutoX.js</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>定时器 timers</title>
     <url>//software-use/AutoXjs/timers.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Timers"><a href="#Timers" class="headerlink" title="Timers"></a><a href="http://doc.autoxjs.com/#/timers?id=timers">Timers</a></h1><h2 id="Timers-1"><a href="#Timers-1" class="headerlink" title="Timers"></a><a href="http://doc.autoxjs.com/#/timers?id=timers">Timers</a></h2><blockquote>
@@ -13901,6 +13690,216 @@ setTimeout(function()&#123;
 <li>TAG_LAST_ KEYCODE 85</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>软件使用教程</category>
+        <category>autojs</category>
+      </categories>
+      <tags>
+        <tag>AutoX.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>控制台 console</title>
+    <url>//software-use/AutoXjs/console.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Console"><a href="#Console" class="headerlink" title="Console"></a><a href="http://doc.autoxjs.com/#/console?id=console">Console</a></h1><h2 id="Console-1"><a href="#Console-1" class="headerlink" title="Console"></a><a href="http://doc.autoxjs.com/#/console?id=console">Console</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>控制台模块提供了一个和Web浏览器中相似的用于调试的控制台。用于输出一些调试信息、中间结果等。 console模块中的一些函数也可以直接作为全局函数使用，例如log, print等。</p>
+<h2 id="console-show-autoHide"><a href="#console-show-autoHide" class="headerlink" title="console.show(autoHide)"></a><a href="http://doc.autoxjs.com/#/console?id=consoleshowautohide">console.show(autoHide)</a></h2><ul>
+<li><p><code>autoHide</code> {boolean} 是否自动隐藏，默认false当程序结束的时候是否自动隐藏控制 显示控制台。这会显示一个控制台的悬浮窗(需要悬浮窗权限)。</p>
+<p>console.show(true); &#x2F;&#x2F;程序结束自动 隐藏控制台<br>console.show();   &#x2F;&#x2F;结束不会自动隐藏控制台</p>
+</li>
+</ul>
+<h2 id="console-hide"><a href="#console-hide" class="headerlink" title="console.hide()"></a><a href="http://doc.autoxjs.com/#/console?id=consolehide">console.hide()</a></h2><p>隐藏控制台悬浮窗。</p>
+<h2 id="console-clear"><a href="#console-clear" class="headerlink" title="console.clear()"></a><a href="http://doc.autoxjs.com/#/console?id=consoleclear">console.clear()</a></h2><p>清空控制台。</p>
+<h2 id="console-log-data-…args"><a href="#console-log-data-…args" class="headerlink" title="console.log([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consolelogdata-args">console.log([data][, …args])</a></h2><ul>
+<li><code>data</code> {any}</li>
+<li><code>...args</code> {any}</li>
+</ul>
+<p>打印到控制台，并带上换行符。 可以传入多个参数，第一个参数作为主要信息，其他参数作为类似于 <a href="http://man7.org/linux/man-pages/man3/printf.3.html">printf(3)</a> 中的代替值（参数都会传给 util.format()）。</p>
+<pre><code>const count = 5;
+console.log(&#39;count: %d&#39;, count);
+// 打印: count: 5 到 stdout
+console.log(&#39;count:&#39;, count);
+// 打印: count: 5 到 stdout
+</code></pre>
+<p>详见 util.format()。</p>
+<p>该函数也可以作为全局函数使用。</p>
+<h2 id="console-verbose-data-…args"><a href="#console-verbose-data-…args" class="headerlink" title="console.verbose([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoleverbosedata-args">console.verbose([data][, …args])</a></h2><ul>
+<li><code>data</code> {any}</li>
+<li><code>...args</code> {any}</li>
+</ul>
+<p>与console.log类似，但输出结果以灰色字体显示。输出优先级低于log，用于输出观察性质的信息。</p>
+<h2 id="console-info-data-…args"><a href="#console-info-data-…args" class="headerlink" title="console.info([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoleinfodata-args">console.info([data][, …args])</a></h2><ul>
+<li><code>data</code> {any}</li>
+<li><code>...args</code> {any}</li>
+</ul>
+<p>与console.log类似，但输出结果以绿色字体显示。输出优先级高于log, 用于输出重要信息。</p>
+<h2 id="console-warn-data-…args"><a href="#console-warn-data-…args" class="headerlink" title="console.warn([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consolewarndata-args">console.warn([data][, …args])</a></h2><ul>
+<li><code>data</code> {any}</li>
+<li><code>...args</code> {any}</li>
+</ul>
+<p>与console.log类似，但输出结果以蓝色字体显示。输出优先级高于info, 用于输出警告信息。</p>
+<h2 id="console-error-data-…args"><a href="#console-error-data-…args" class="headerlink" title="console.error([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoleerrordata-args">console.error([data][, …args])</a></h2><ul>
+<li><code>data</code> {any}</li>
+<li><code>...args</code> {any}</li>
+</ul>
+<p>与console.log类似，但输出结果以红色字体显示。输出优先级高于warn, 用于输出错误信息。</p>
+<h2 id="console-assert-value-message"><a href="#console-assert-value-message" class="headerlink" title="console.assert(value, message)"></a><a href="http://doc.autoxjs.com/#/console?id=consoleassertvalue-message">console.assert(value, message)</a></h2><ul>
+<li><code>value</code> {any} 要断言的布尔值</li>
+<li><code>message</code> {string} value为false时要输出的信息</li>
+</ul>
+<p>断言。如果value为false则输出错误信息message并停止脚本运行。</p>
+<pre><code>var a = 1 + 1;
+console.assert(a == 3, &quot;加法出错啦&quot;);
+</code></pre>
+<h2 id="console-time-label"><a href="#console-time-label" class="headerlink" title="console.time([label])"></a><a href="http://doc.autoxjs.com/#/console?id=consoletimelabel">console.time([label])</a></h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>label</code> {String} 计时器标签，可省略</li>
+</ul>
+<p>启动一个计时器，用以计算一个操作的持续时间。 计时器由一个唯一的 <code>label</code> 标识。 若<code>label</code>重复，则会覆盖上一个同名<code>label</code>的计时器。 以同名 <code>label</code>调用 <code>console.timeEnd()</code> 来停止计时器，并以毫秒为单位将持续时间输出到控制台。</p>
+<h2 id="console-timeEnd-label"><a href="#console-timeEnd-label" class="headerlink" title="console.timeEnd(label)"></a><a href="http://doc.autoxjs.com/#/console?id=consoletimeendlabel">console.timeEnd(label)</a></h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>label</code> {String} 计时器标签</li>
+</ul>
+<p>停止之前通过调用 <code>console.time()</code> 启动的定时器，并打印结果到控制台。 调用 <code>console.timeEnd()</code> 后定时器会被删除。如果不存在标签指定的定时器则会打印 <code>NaNms</code>。</p>
+<pre><code>console.time(&#39;求和&#39;);
+var sum = 0;
+for(let i = 0; i &lt; 100000; i++)&#123;
+    sum += i;
+&#125;
+console.timeEnd(&#39;求和&#39;);
+// 打印 求和: xxx ms
+</code></pre>
+<h2 id="console-trace-data-…args"><a href="#console-trace-data-…args" class="headerlink" title="console.trace([data][, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoletracedata-args">console.trace([data][, …args])</a></h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>data</code> {any}</li>
+<li><code>...args</code> {any}</li>
+</ul>
+<p>与console.log类似，同时会打印出调用这个函数所在的调用栈信息（即当前运行的文件、行数等信息）。</p>
+<pre><code>console.trace(&#39;Show me&#39;);
+// 打印: (堆栈跟踪会根据被调用的跟踪的位置而变化)
+// Show me
+//  at &lt;test&gt;:7
+</code></pre>
+<h2 id="console-input-data-…args"><a href="#console-input-data-…args" class="headerlink" title="console.input(data[, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consoleinputdata-args">console.input(data[, …args])</a></h2><ul>
+<li><code>data</code> {any}</li>
+<li><code>...args</code> {any}</li>
+</ul>
+<p>与<code>console.log</code>一样输出信息，并在控制台显示输入框等待输入。按控制台的确认按钮后会将输入的字符串用<code>eval</code>计算后返回。</p>
+<p><strong>部分机型可能会有控制台不显示输入框的情况，属于bug。</strong></p>
+<p>例如：</p>
+<pre><code>var n = console.input(&quot;请输入一个数字:&quot;); 
+//输入123之后：
+toast(n + 1);
+//显示124
+</code></pre>
+<h2 id="console-rawInput-data-…args"><a href="#console-rawInput-data-…args" class="headerlink" title="console.rawInput(data[, …args])"></a><a href="http://doc.autoxjs.com/#/console?id=consolerawinputdata-args">console.rawInput(data[, …args])</a></h2><ul>
+<li><code>data</code> {any}</li>
+<li><code>...args</code> {any}</li>
+</ul>
+<p>与console.log一样输出信息，并在控制台显示输入框等待输入。按控制台的确认按钮后会将输入的字符串直接返回。</p>
+<p>部分机型可能会有控制台不显示输入框的情况，属于bug。</p>
+<p>例如：</p>
+<pre><code>var n = console.rawInput(&quot;请输入一个数字:&quot;); 
+//输入123之后：
+toast(n + 1);
+//显示1231
+</code></pre>
+<h2 id="console-setSize-w-h"><a href="#console-setSize-w-h" class="headerlink" title="console.setSize(w, h)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetsizew-h">console.setSize(w, h)</a></h2><ul>
+<li><code>w</code> {number} 宽度</li>
+<li><code>h</code> {number} 高度</li>
+</ul>
+<p>设置控制台的大小，单位像素。</p>
+<pre><code>console.show();
+//设置控制台大小为屏幕的四分之一
+console.setSize(device.width / 2, device.height / 2);
+</code></pre>
+<h2 id="console-setPosition-x-y"><a href="#console-setPosition-x-y" class="headerlink" title="console.setPosition(x, y)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetpositionx-y">console.setPosition(x, y)</a></h2><ul>
+<li><code>x</code> {number} 横坐标</li>
+<li><code>y</code> {number} 纵坐标</li>
+</ul>
+<p>设置控制台的位置，单位像素。</p>
+<pre><code>console.show();
+console.setPosition(100, 100);
+</code></pre>
+<h2 id="console-setGlobalLogConfig-config"><a href="#console-setGlobalLogConfig-config" class="headerlink" title="console.setGlobalLogConfig(config)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetgloballogconfigconfig">console.setGlobalLogConfig(config)</a></h2><p><strong>[v4.1.0新增]</strong></p>
+<ul>
+<li><code>config</code> {Object} 日志配置，可选的项有：<ul>
+<li><code>file</code> {string} 日志文件路径，将会把日志写入该文件中</li>
+<li><code>maxFileSize</code> {number} 最大文件大小，单位字节，默认为512 * 1024 (512KB)</li>
+<li><code>rootLevel</code> {string} 写入的日志级别，默认为”ALL”（所有日志），可以为”OFF”(关闭), “DEBUG”, “INFO”, “WARN”, “ERROR”, “FATAL”等。</li>
+<li><code>maxBackupSize</code> {number} 日志备份文件最大数量，默认为5</li>
+<li><code>filePattern</code> {string} 日志写入格式，参见<a href="http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/PatternLayout.html">PatternLayout</a></li>
+</ul>
+</li>
+</ul>
+<p>设置日志保存的路径和配置。例如把日志保存到”&#x2F;sdcard&#x2F;1.txt”:</p>
+<pre><code>console.setGlobalLogConfig(&#123;
+    &quot;file&quot;: &quot;/sdcard/1.txt&quot;
+&#125;);
+</code></pre>
+<h2 id="print-text"><a href="#print-text" class="headerlink" title="print(text)"></a><a href="http://doc.autoxjs.com/#/console?id=printtext">print(text)</a></h2><ul>
+<li>text {string} | {Object} 要打印到控制台的信息</li>
+</ul>
+<p>相当于<code>log(text)</code>。</p>
+<h2 id="console-setTitle-title-color-size"><a href="#console-setTitle-title-color-size" class="headerlink" title="console.setTitle(title,color,size)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesettitletitlecolorsize">console.setTitle(title,color,size)</a></h2><p><strong>[v4.2.5新增]</strong></p>
+<ul>
+<li><code>title</code> {string} 标题</li>
+<li><code>color</code> {string} 颜色值 #AARRGGBB</li>
+<li><code>size</code> {number} 标题高度，字号会随高度变化，单位是dp</li>
+</ul>
+<p>设置标题名称，字体颜色，标题栏高度</p>
+<pre><code>console.setTitle(&quot;中文&quot;,&quot;#ff11ee00&quot;,30);
+console.setTitle(&quot;中文&quot;);
+console.setTitle(&quot;中文&quot;,&quot;#ff11ee00&quot;);
+</code></pre>
+<h2 id="console-setLogSize-size"><a href="#console-setLogSize-size" class="headerlink" title="console.setLogSize(size)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetlogsizesize">console.setLogSize(size)</a></h2><p><strong>[v4.2.5新增]</strong></p>
+<ul>
+<li><code>size</code> {number} 字号大小，单位是dp或sp 20以内比较合适<br>设置log字号大小</li>
+</ul>
+<p><strong>需要在显示控制台之后才能设置，否则空指针</strong></p>
+<pre><code>function myrandom(min,max)&#123;
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+&#125;
+
+threads.start(function () &#123;
+    console.show();
+    console.setTitle(&quot;中文&quot;,&quot;#ff11ee00&quot;,30);
+    console.setCanInput(false);
+    var i=0;    
+    do &#123;
+        console.setLogSize(myrandom(4,20) );
+        console.setCanInput(i%2==0);
+        i++;
+        console.log(&quot;i-----&gt;&quot;+i);
+        sleep(3000);
+    &#125; while (true);
+
+&#125;); 
+</code></pre>
+<p>​      </p>
+<h2 id="console-setCanInput-can"><a href="#console-setCanInput-can" class="headerlink" title="console.setCanInput(can)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetcaninputcan">console.setCanInput(can)</a></h2><p><strong>[v4.2.5新增]</strong></p>
+<ul>
+<li><code>can</code> {boolean} true 或 false 可以输入或不可以输入</li>
+</ul>
+<p>控制 console 是否可以输入文字</p>
+<pre><code>console.setCanInput(false);
+</code></pre>
+<h2 id="console-setBackgroud-color"><a href="#console-setBackgroud-color" class="headerlink" title="console.setBackgroud(color)"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetbackgroudcolor">console.setBackgroud(color)</a></h2><p><strong>[v4.2.5新增]</strong></p>
+<ul>
+<li><code>color</code> {string} 颜色值 #AARRGGBB</li>
+</ul>
+<p>设置 console 背景色,<strong>需要在显示控制台之后才能设置，否则空指针</strong></p>
+<pre><code>console.setBackgroud(&quot;#33ef0000&quot;);
+</code></pre>
+<h2 id="console-setMaxLines-maxLines"><a href="#console-setMaxLines-maxLines" class="headerlink" title="console.setMaxLines(maxLines);"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetmaxlinesmaxlines">console.setMaxLines(maxLines);</a></h2><p><strong>[v5.0.2新增]</strong></p>
+<ul>
+<li><p><code>maxLines</code> {number} 最大行数 如 10 行 设置 console 显示最大行数，默认-1，不限 ，超出行数系统会清空，从0开始显示 不限制，显示列表过长，android内存又不足，系统会回收console的引用，即console 将不显示。</p>
+<p>console.setMaxLines(500);</p>
+</li>
+</ul>
+<h2 id="console-setBackground"><a href="#console-setBackground" class="headerlink" title="console.setBackground()"></a><a href="http://doc.autoxjs.com/#/console?id=consolesetbackground">console.setBackground()</a></h2>]]></content>
       <categories>
         <category>软件使用教程</category>
         <category>autojs</category>
@@ -14756,6 +14755,213 @@ threads.start(&#123;
 ui.statusBarColor(&quot;#000000&quot;);
 </code></pre>
 <h2 id="尺寸的单位-Dimension"><a href="#尺寸的单位-Dimension" class="headerlink" title="尺寸的单位: Dimension"></a><a href="http://doc.autoxjs.com/#/ui?id=%e5%b0%ba%e5%af%b8%e7%9a%84%e5%8d%95%e4%bd%8d-dimension">尺寸的单位: Dimension</a></h2><h2 id="Drawables"><a href="#Drawables" class="headerlink" title="Drawables"></a><a href="http://doc.autoxjs.com/#/ui?id=drawables">Drawables</a></h2><h2 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a><a href="http://doc.autoxjs.com/#/ui?id=%e9%a2%9c%e8%89%b2">颜色</a></h2><p><strong>(完善中…)</strong></p>
+]]></content>
+      <categories>
+        <category>软件使用教程</category>
+        <category>autojs</category>
+      </categories>
+      <tags>
+        <tag>AutoX.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络请求 http</title>
+    <url>//software-use/AutoXjs/http.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a><a href="http://doc.autoxjs.com/#/http?id=http">HTTP</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>http模块提供一些进行http请求的函数。</p>
+<h2 id="http-get-url-options-callback"><a href="#http-get-url-options-callback" class="headerlink" title="http.get(url[, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httpgeturl-options-callback">http.get(url[, options, callback])</a></h2><ul>
+<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
+<li><code>options</code> {Object} 请求选项。参见[http.request()][]。</li>
+<li><code>callback</code> {Function} 回调函数，可选，其参数是一个[Response][]对象。如果不加回调函数，则该请求将阻塞、同步地执行。</li>
+</ul>
+<p>对地址url进行一次HTTP GET 请求。如果没有回调函数，则在请求完成或失败时返回此次请求的响应(参见[Response][])。</p>
+<p>最简单GET请求如下:</p>
+<pre><code>console.show();
+var r = http.get(&quot;www.baidu.com&quot;);
+log(&quot;code = &quot; + r.statusCode);
+log(&quot;html = &quot; + r.body.string());
+</code></pre>
+<p>采用回调形式的GET请求如下：</p>
+<pre><code>console.show();
+http.get(&quot;www.baidu.com&quot;, &#123;&#125;, function(res, err)&#123;
+    if(err)&#123;
+        console.error(err);
+        return;
+    &#125;
+    log(&quot;code = &quot; + res.statusCode);
+    log(&quot;html = &quot; + res.body.string());
+&#125;);
+</code></pre>
+<p>如果要增加HTTP头部信息，则在options参数中添加，例如：</p>
+<pre><code>console.show();
+var r = http.get(&quot;www.baidu.com&quot;, &#123;
+    headers: &#123;
+        &#39;Accept-Language&#39;: &#39;zh-cn,zh;q=0.5&#39;,
+        &#39;User-Agent&#39;: &#39;Mozilla/5.0(Macintosh;IntelMacOSX10_7_0)AppleWebKit/535.11(KHTML,likeGecko)Chrome/17.0.963.56Safari/535.11&#39;
+    &#125;
+&#125;);
+log(&quot;code = &quot; + r.statusCode);
+log(&quot;html = &quot; + r.body.string());
+</code></pre>
+<p>一个请求天气并解析返回的天气JSON结果的例子如下：</p>
+<pre><code>var city = &quot;广州&quot;;
+var res = http.get(&quot;http://www.sojson.com/open/api/weather/json.shtml?city=&quot; + city);
+if(res.statusCode != 200)&#123;
+    toast(&quot;请求失败: &quot; + res.statusCode + &quot; &quot; + res.statusMessage);
+&#125;else&#123;
+    var weather = res.body.json();
+    log(weather);
+    toast(util.format(&quot;温度: %s 湿度: %s 空气质量: %s&quot;, weather.data.wendu,
+        weather.data.shidu, weather.quality));
+&#125;
+</code></pre>
+<h2 id="http-post-url-data-options-callback"><a href="#http-post-url-data-options-callback" class="headerlink" title="http.post(url, data[, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httpposturl-data-options-callback">http.post(url, data[, options, callback])</a></h2><ul>
+<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
+<li><code>data</code> {string} | {Object} POST数据。</li>
+<li><code>options</code> {Object} 请求选项。</li>
+<li><code>callback</code> {Function} 回调，其参数是一个[Response][]对象。如果不加回调参数，则该请求将阻塞、同步地执行。</li>
+</ul>
+<p>对地址url进行一次HTTP POST 请求。如果没有回调函数，则在请求完成或失败时返回此次请求的响应(参见[Response][])。</p>
+<p>其中POST数据可以是字符串或键值对。具体含义取决于options.contentType的值。默认为”application&#x2F;x-www-form-urlencoded”(表单提交), 这种方式是JQuery的ajax函数的默认方式。</p>
+<p>一个模拟表单提交登录淘宝的例子如下:</p>
+<pre><code>var url = &quot;https://login.taobao.com/member/login.jhtml&quot;;
+var username = &quot;你的用户名&quot;;
+var password = &quot;你的密码&quot;;
+var res = http.post(url, &#123;
+    &quot;TPL_username&quot;: username,
+    &quot;TPL_password&quot;: password
+&#125;);
+var html = res.body.string();
+if(html.contains(&quot;页面跳转中&quot;))&#123;
+    toast(&quot;登录成功&quot;);
+&#125;else&#123;
+    toast(&quot;登录失败&quot;);
+&#125;
+</code></pre>
+<h2 id="http-postJson-url-data-options-callback"><a href="#http-postJson-url-data-options-callback" class="headerlink" title="http.postJson(url[, data, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httppostjsonurl-data-options-callback">http.postJson(url[, data, options, callback])</a></h2><ul>
+<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
+<li><code>data</code> {Object} POST数据。</li>
+<li><code>options</code> {Object} 请求选项。</li>
+<li><code>callback</code> {Function} 回调，其参数是一个[Response][]对象。如果不加回调参数，则该请求将阻塞、同步地执行。</li>
+</ul>
+<p>以JSON格式向目标Url发起POST请求。如果没有回调函数，则在请求完成或失败时返回此次请求的响应(参见[Response][])。</p>
+<p>JSON格式指的是，将会调用<code>JSON.stringify()</code>把data对象转换为JSON字符串，并在HTTP头部信息中把”Content-Type”属性置为”application&#x2F;json”。这种方式是AngularJS的ajax函数的默认方式。</p>
+<p>一个调用图灵机器人接口的例子如下：</p>
+<pre><code>var url = &quot;http://www.tuling123.com/openapi/api&quot;;
+r = http.postJson(url, &#123;
+    key: &quot;65458a5df537443b89b31f1c03202a80&quot;,
+    info: &quot;你好啊&quot;,
+    userid: &quot;1&quot;,
+&#125;);
+toastLog(r.body.string());
+</code></pre>
+<h2 id="http-postMultipart-url-files-options-callback"><a href="#http-postMultipart-url-files-options-callback" class="headerlink" title="http.postMultipart(url, files[, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httppostmultiparturl-files-options-callback">http.postMultipart(url, files[, options, callback])</a></h2><ul>
+<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
+<li><code>files</code> {Object} POST数据。</li>
+<li><code>options</code> {Object} 请求选项。</li>
+<li><code>callback</code> {Function} 回调，其参数是一个<code>Response</code>对象。如果不加回调参数，则该请求将阻塞、同步地执行。</li>
+</ul>
+<p>向目标地址发起类型为multipart&#x2F;form-data的请求（通常用于文件上传等), 其中files参数是{name1: value1, name2: value2, …}的键值对，value的格式可以是以下几种情况：</p>
+<ol>
+<li><code>string</code></li>
+<li>文件类型，即open()返回的类型</li>
+<li>[fileName, filePath]</li>
+<li>[fileName, mimeType, filePath]</li>
+</ol>
+<p>其中1属于非文件参数，2、3、4为文件参数。举个例子，最简单的文件上传的请求为：</p>
+<pre><code>var res = http.postMultipart(url, &#123;
+    file: open(&quot;/sdcard/1.txt&quot;)
+&#125;);
+log(res.body.string());
+</code></pre>
+<p>如果使用格式2，则代码为</p>
+<pre><code>var res = http.postMultipart(url, &#123;
+    file: [&quot;1.txt&quot;, &quot;/sdcard/1.txt&quot;]
+&#125;);
+log(res.body.string());
+</code></pre>
+<p>如果使用格式3，则代码为</p>
+<pre><code>var res = http.postMultipart(url, &#123;
+    file: [&quot;1.txt&quot;, &quot;text/plain&quot;, &quot;/sdcard/1.txt&quot;]
+&#125;);
+log(res.body.string());
+</code></pre>
+<p>如果使用格式2的同时要附带非文件参数”appId&#x3D;abcdefghijk”，则为:</p>
+<pre><code>var res = http.postMultipart(url, &#123;
+    appId: &quot;adcdefghijk&quot;,
+    file: open(&quot;/sdcard/1.txt&quot;)
+&#125;);
+log(res.body.string());
+</code></pre>
+<h2 id="http-request-url-options-callback"><a href="#http-request-url-options-callback" class="headerlink" title="http.request(url[, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httprequesturl-options-callback">http.request(url[, options, callback])</a></h2><ul>
+<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
+<li><code>options</code> {Object} 请求选项。参见[http.buildRequest()][]。</li>
+<li><code>callback</code> {Function} 回调，其参数是一个[Response][]对象。如果不加回调参数，则该请求将阻塞、同步地执行。</li>
+</ul>
+<p>对目标地址url发起一次HTTP请求。如果没有回调函数，则在请求完成或失败时返回此次请求的响应(参见[Response][])。</p>
+<p>选项options可以包含以下属性：</p>
+<ul>
+<li><code>headers</code> {Object} 键值对形式的HTTP头部信息。有关HTTP头部信息，参见<a href="http://www.runoob.com/http/http-header-fields.html">菜鸟教程：HTTP响应头信息</a>。</li>
+<li><code>method</code> {string} HTTP请求方法。包括”GET”, “POST”, “PUT”, “DELET”, “PATCH”。</li>
+<li><code>contentType</code> {string} HTTP头部信息中的”Content-Type”, 表示HTTP请求的内容类型。例如”text&#x2F;plain”, “application&#x2F;json”。更多信息参见<a href="http://www.runoob.com/http/http-content-type.html">菜鸟教程：HTTP contentType</a>。</li>
+<li><code>body</code> {string} | {Array} | {Function} HTTP请求的内容。可以是一个字符串，也可以是一个字节数组；或者是一个以<a href="https://github.com/square/okio/blob/master/okio/src/main/java/okio/BufferedSink.java">BufferedSink</a>为参数的函数。</li>
+</ul>
+<p>该函数是get, post, postJson等函数的基础函数。因此除非是PUT, DELET等请求，或者需要更高定制的HTTP请求，否则直接使用get, post, postJson等函数会更加方便。</p>
+<h2 id="Response"><a href="#Response" class="headerlink" title="Response"></a><a href="http://doc.autoxjs.com/#/http?id=response">Response</a></h2><p>HTTP请求的响应。</p>
+<h2 id="Response-statusCode"><a href="#Response-statusCode" class="headerlink" title="Response.statusCode"></a><a href="http://doc.autoxjs.com/#/http?id=responsestatuscode">Response.statusCode</a></h2><ul>
+<li>{number}</li>
+</ul>
+<p>当前响应的HTTP状态码。例如200(OK), 404(Not Found)等。</p>
+<p>有关HTTP状态码的信息，参见<a href="http://www.runoob.com/http/http-status-codes.html">菜鸟教程：HTTP状态码</a>。</p>
+<h2 id="Response-statusMessage"><a href="#Response-statusMessage" class="headerlink" title="Response.statusMessage"></a><a href="http://doc.autoxjs.com/#/http?id=responsestatusmessage">Response.statusMessage</a></h2><ul>
+<li>{string}</li>
+</ul>
+<p>当前响应的HTTP状态信息。例如”OK”, “Bad Request”, “Forbidden”。</p>
+<p>有关HTTP状态码的信息，参见<a href="http://www.runoob.com/http/http-status-codes.html">菜鸟教程：HTTP状态码</a>。</p>
+<p>例子：</p>
+<pre><code>var res = http.get(&quot;www.baidu.com&quot;);
+if(res.statusCode &gt;= 200 &amp;&amp; res.statusCode &lt; 300)&#123;
+    toast(&quot;页面获取成功!&quot;);
+&#125;else if(res.statusCode == 404)&#123;
+    toast(&quot;页面没找到哦...&quot;);
+&#125;else&#123;
+    toast(&quot;错误: &quot; + res.statusCode + &quot; &quot; + res.statusMessage);
+&#125;
+</code></pre>
+<ul>
+<li>{Object}</li>
+</ul>
+<p>当前响应的HTTP头部信息。该对象的键是响应头名称，值是各自的响应头值。 所有响应头名称都是小写的(吗)。</p>
+<p>有关HTTP头部信息，参见<a href="http://www.runoob.com/http/http-header-fields.html">菜鸟教程：HTTP响应头信息</a>。</p>
+<p>例子:</p>
+<pre><code>console.show();
+var res = http.get(&quot;www.qq.com&quot;);
+console.log(&quot;HTTP Headers:&quot;)
+for(var headerName in res.headers)&#123;
+    console.log(&quot;%s: %s&quot;, headerName, res.headers[headerName]);
+&#125;
+</code></pre>
+<h2 id="Response-body"><a href="#Response-body" class="headerlink" title="Response.body"></a><a href="http://doc.autoxjs.com/#/http?id=responsebody">Response.body</a></h2><ul>
+<li>{Object}</li>
+</ul>
+<p>当前响应的内容。他有以下属性和函数：</p>
+<ul>
+<li>bytes() {Array} 以字节数组形式返回响应内容</li>
+<li>string() {string} 以字符串形式返回响应内容</li>
+<li>json() {Object} 把响应内容作为JSON格式的数据并调用JSON.parse，返回解析后的对象</li>
+<li>contentType {string} 当前响应的内容类型</li>
+</ul>
+<h2 id="Response-request"><a href="#Response-request" class="headerlink" title="Response.request"></a><a href="http://doc.autoxjs.com/#/http?id=responserequest">Response.request</a></h2><ul>
+<li>{Request} 当前响应所对应的请求。参见[Request][]。</li>
+</ul>
+<h2 id="Response-url"><a href="#Response-url" class="headerlink" title="Response.url"></a><a href="http://doc.autoxjs.com/#/http?id=responseurl">Response.url</a></h2><ul>
+<li>{number} 当前响应所对应的请求URL。</li>
+</ul>
+<h2 id="Response-method"><a href="#Response-method" class="headerlink" title="Response.method"></a><a href="http://doc.autoxjs.com/#/http?id=responsemethod">Response.method</a></h2><ul>
+<li>{string} 当前响应所对应的HTTP请求的方法。例如”GET”, “POST”, “PUT”等。</li>
+</ul>
 ]]></content>
       <categories>
         <category>软件使用教程</category>
@@ -15773,212 +15979,5 @@ device.vibrate(2000);
 <li>已有分支尚未跟踪远程分支时，通过<code>git branch -u 远程跟踪分支</code>来跟踪远程分支</li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>网络请求 http</title>
-    <url>//software-use/AutoXjs/http.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a><a href="http://doc.autoxjs.com/#/http?id=http">HTTP</a></h2><blockquote>
-<p>稳定性: 稳定</p>
-</blockquote>
-<p>http模块提供一些进行http请求的函数。</p>
-<h2 id="http-get-url-options-callback"><a href="#http-get-url-options-callback" class="headerlink" title="http.get(url[, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httpgeturl-options-callback">http.get(url[, options, callback])</a></h2><ul>
-<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
-<li><code>options</code> {Object} 请求选项。参见[http.request()][]。</li>
-<li><code>callback</code> {Function} 回调函数，可选，其参数是一个[Response][]对象。如果不加回调函数，则该请求将阻塞、同步地执行。</li>
-</ul>
-<p>对地址url进行一次HTTP GET 请求。如果没有回调函数，则在请求完成或失败时返回此次请求的响应(参见[Response][])。</p>
-<p>最简单GET请求如下:</p>
-<pre><code>console.show();
-var r = http.get(&quot;www.baidu.com&quot;);
-log(&quot;code = &quot; + r.statusCode);
-log(&quot;html = &quot; + r.body.string());
-</code></pre>
-<p>采用回调形式的GET请求如下：</p>
-<pre><code>console.show();
-http.get(&quot;www.baidu.com&quot;, &#123;&#125;, function(res, err)&#123;
-    if(err)&#123;
-        console.error(err);
-        return;
-    &#125;
-    log(&quot;code = &quot; + res.statusCode);
-    log(&quot;html = &quot; + res.body.string());
-&#125;);
-</code></pre>
-<p>如果要增加HTTP头部信息，则在options参数中添加，例如：</p>
-<pre><code>console.show();
-var r = http.get(&quot;www.baidu.com&quot;, &#123;
-    headers: &#123;
-        &#39;Accept-Language&#39;: &#39;zh-cn,zh;q=0.5&#39;,
-        &#39;User-Agent&#39;: &#39;Mozilla/5.0(Macintosh;IntelMacOSX10_7_0)AppleWebKit/535.11(KHTML,likeGecko)Chrome/17.0.963.56Safari/535.11&#39;
-    &#125;
-&#125;);
-log(&quot;code = &quot; + r.statusCode);
-log(&quot;html = &quot; + r.body.string());
-</code></pre>
-<p>一个请求天气并解析返回的天气JSON结果的例子如下：</p>
-<pre><code>var city = &quot;广州&quot;;
-var res = http.get(&quot;http://www.sojson.com/open/api/weather/json.shtml?city=&quot; + city);
-if(res.statusCode != 200)&#123;
-    toast(&quot;请求失败: &quot; + res.statusCode + &quot; &quot; + res.statusMessage);
-&#125;else&#123;
-    var weather = res.body.json();
-    log(weather);
-    toast(util.format(&quot;温度: %s 湿度: %s 空气质量: %s&quot;, weather.data.wendu,
-        weather.data.shidu, weather.quality));
-&#125;
-</code></pre>
-<h2 id="http-post-url-data-options-callback"><a href="#http-post-url-data-options-callback" class="headerlink" title="http.post(url, data[, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httpposturl-data-options-callback">http.post(url, data[, options, callback])</a></h2><ul>
-<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
-<li><code>data</code> {string} | {Object} POST数据。</li>
-<li><code>options</code> {Object} 请求选项。</li>
-<li><code>callback</code> {Function} 回调，其参数是一个[Response][]对象。如果不加回调参数，则该请求将阻塞、同步地执行。</li>
-</ul>
-<p>对地址url进行一次HTTP POST 请求。如果没有回调函数，则在请求完成或失败时返回此次请求的响应(参见[Response][])。</p>
-<p>其中POST数据可以是字符串或键值对。具体含义取决于options.contentType的值。默认为”application&#x2F;x-www-form-urlencoded”(表单提交), 这种方式是JQuery的ajax函数的默认方式。</p>
-<p>一个模拟表单提交登录淘宝的例子如下:</p>
-<pre><code>var url = &quot;https://login.taobao.com/member/login.jhtml&quot;;
-var username = &quot;你的用户名&quot;;
-var password = &quot;你的密码&quot;;
-var res = http.post(url, &#123;
-    &quot;TPL_username&quot;: username,
-    &quot;TPL_password&quot;: password
-&#125;);
-var html = res.body.string();
-if(html.contains(&quot;页面跳转中&quot;))&#123;
-    toast(&quot;登录成功&quot;);
-&#125;else&#123;
-    toast(&quot;登录失败&quot;);
-&#125;
-</code></pre>
-<h2 id="http-postJson-url-data-options-callback"><a href="#http-postJson-url-data-options-callback" class="headerlink" title="http.postJson(url[, data, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httppostjsonurl-data-options-callback">http.postJson(url[, data, options, callback])</a></h2><ul>
-<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
-<li><code>data</code> {Object} POST数据。</li>
-<li><code>options</code> {Object} 请求选项。</li>
-<li><code>callback</code> {Function} 回调，其参数是一个[Response][]对象。如果不加回调参数，则该请求将阻塞、同步地执行。</li>
-</ul>
-<p>以JSON格式向目标Url发起POST请求。如果没有回调函数，则在请求完成或失败时返回此次请求的响应(参见[Response][])。</p>
-<p>JSON格式指的是，将会调用<code>JSON.stringify()</code>把data对象转换为JSON字符串，并在HTTP头部信息中把”Content-Type”属性置为”application&#x2F;json”。这种方式是AngularJS的ajax函数的默认方式。</p>
-<p>一个调用图灵机器人接口的例子如下：</p>
-<pre><code>var url = &quot;http://www.tuling123.com/openapi/api&quot;;
-r = http.postJson(url, &#123;
-    key: &quot;65458a5df537443b89b31f1c03202a80&quot;,
-    info: &quot;你好啊&quot;,
-    userid: &quot;1&quot;,
-&#125;);
-toastLog(r.body.string());
-</code></pre>
-<h2 id="http-postMultipart-url-files-options-callback"><a href="#http-postMultipart-url-files-options-callback" class="headerlink" title="http.postMultipart(url, files[, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httppostmultiparturl-files-options-callback">http.postMultipart(url, files[, options, callback])</a></h2><ul>
-<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
-<li><code>files</code> {Object} POST数据。</li>
-<li><code>options</code> {Object} 请求选项。</li>
-<li><code>callback</code> {Function} 回调，其参数是一个<code>Response</code>对象。如果不加回调参数，则该请求将阻塞、同步地执行。</li>
-</ul>
-<p>向目标地址发起类型为multipart&#x2F;form-data的请求（通常用于文件上传等), 其中files参数是{name1: value1, name2: value2, …}的键值对，value的格式可以是以下几种情况：</p>
-<ol>
-<li><code>string</code></li>
-<li>文件类型，即open()返回的类型</li>
-<li>[fileName, filePath]</li>
-<li>[fileName, mimeType, filePath]</li>
-</ol>
-<p>其中1属于非文件参数，2、3、4为文件参数。举个例子，最简单的文件上传的请求为：</p>
-<pre><code>var res = http.postMultipart(url, &#123;
-    file: open(&quot;/sdcard/1.txt&quot;)
-&#125;);
-log(res.body.string());
-</code></pre>
-<p>如果使用格式2，则代码为</p>
-<pre><code>var res = http.postMultipart(url, &#123;
-    file: [&quot;1.txt&quot;, &quot;/sdcard/1.txt&quot;]
-&#125;);
-log(res.body.string());
-</code></pre>
-<p>如果使用格式3，则代码为</p>
-<pre><code>var res = http.postMultipart(url, &#123;
-    file: [&quot;1.txt&quot;, &quot;text/plain&quot;, &quot;/sdcard/1.txt&quot;]
-&#125;);
-log(res.body.string());
-</code></pre>
-<p>如果使用格式2的同时要附带非文件参数”appId&#x3D;abcdefghijk”，则为:</p>
-<pre><code>var res = http.postMultipart(url, &#123;
-    appId: &quot;adcdefghijk&quot;,
-    file: open(&quot;/sdcard/1.txt&quot;)
-&#125;);
-log(res.body.string());
-</code></pre>
-<h2 id="http-request-url-options-callback"><a href="#http-request-url-options-callback" class="headerlink" title="http.request(url[, options, callback])"></a><a href="http://doc.autoxjs.com/#/http?id=httprequesturl-options-callback">http.request(url[, options, callback])</a></h2><ul>
-<li><code>url</code> {string} 请求的URL地址，需要以”http:&#x2F;&#x2F;“或”https:&#x2F;&#x2F;“开头。如果url没有以”http:&#x2F;&#x2F;“开头，则默认为”http:&#x2F;&#x2F;“。</li>
-<li><code>options</code> {Object} 请求选项。参见[http.buildRequest()][]。</li>
-<li><code>callback</code> {Function} 回调，其参数是一个[Response][]对象。如果不加回调参数，则该请求将阻塞、同步地执行。</li>
-</ul>
-<p>对目标地址url发起一次HTTP请求。如果没有回调函数，则在请求完成或失败时返回此次请求的响应(参见[Response][])。</p>
-<p>选项options可以包含以下属性：</p>
-<ul>
-<li><code>headers</code> {Object} 键值对形式的HTTP头部信息。有关HTTP头部信息，参见<a href="http://www.runoob.com/http/http-header-fields.html">菜鸟教程：HTTP响应头信息</a>。</li>
-<li><code>method</code> {string} HTTP请求方法。包括”GET”, “POST”, “PUT”, “DELET”, “PATCH”。</li>
-<li><code>contentType</code> {string} HTTP头部信息中的”Content-Type”, 表示HTTP请求的内容类型。例如”text&#x2F;plain”, “application&#x2F;json”。更多信息参见<a href="http://www.runoob.com/http/http-content-type.html">菜鸟教程：HTTP contentType</a>。</li>
-<li><code>body</code> {string} | {Array} | {Function} HTTP请求的内容。可以是一个字符串，也可以是一个字节数组；或者是一个以<a href="https://github.com/square/okio/blob/master/okio/src/main/java/okio/BufferedSink.java">BufferedSink</a>为参数的函数。</li>
-</ul>
-<p>该函数是get, post, postJson等函数的基础函数。因此除非是PUT, DELET等请求，或者需要更高定制的HTTP请求，否则直接使用get, post, postJson等函数会更加方便。</p>
-<h2 id="Response"><a href="#Response" class="headerlink" title="Response"></a><a href="http://doc.autoxjs.com/#/http?id=response">Response</a></h2><p>HTTP请求的响应。</p>
-<h2 id="Response-statusCode"><a href="#Response-statusCode" class="headerlink" title="Response.statusCode"></a><a href="http://doc.autoxjs.com/#/http?id=responsestatuscode">Response.statusCode</a></h2><ul>
-<li>{number}</li>
-</ul>
-<p>当前响应的HTTP状态码。例如200(OK), 404(Not Found)等。</p>
-<p>有关HTTP状态码的信息，参见<a href="http://www.runoob.com/http/http-status-codes.html">菜鸟教程：HTTP状态码</a>。</p>
-<h2 id="Response-statusMessage"><a href="#Response-statusMessage" class="headerlink" title="Response.statusMessage"></a><a href="http://doc.autoxjs.com/#/http?id=responsestatusmessage">Response.statusMessage</a></h2><ul>
-<li>{string}</li>
-</ul>
-<p>当前响应的HTTP状态信息。例如”OK”, “Bad Request”, “Forbidden”。</p>
-<p>有关HTTP状态码的信息，参见<a href="http://www.runoob.com/http/http-status-codes.html">菜鸟教程：HTTP状态码</a>。</p>
-<p>例子：</p>
-<pre><code>var res = http.get(&quot;www.baidu.com&quot;);
-if(res.statusCode &gt;= 200 &amp;&amp; res.statusCode &lt; 300)&#123;
-    toast(&quot;页面获取成功!&quot;);
-&#125;else if(res.statusCode == 404)&#123;
-    toast(&quot;页面没找到哦...&quot;);
-&#125;else&#123;
-    toast(&quot;错误: &quot; + res.statusCode + &quot; &quot; + res.statusMessage);
-&#125;
-</code></pre>
-<ul>
-<li>{Object}</li>
-</ul>
-<p>当前响应的HTTP头部信息。该对象的键是响应头名称，值是各自的响应头值。 所有响应头名称都是小写的(吗)。</p>
-<p>有关HTTP头部信息，参见<a href="http://www.runoob.com/http/http-header-fields.html">菜鸟教程：HTTP响应头信息</a>。</p>
-<p>例子:</p>
-<pre><code>console.show();
-var res = http.get(&quot;www.qq.com&quot;);
-console.log(&quot;HTTP Headers:&quot;)
-for(var headerName in res.headers)&#123;
-    console.log(&quot;%s: %s&quot;, headerName, res.headers[headerName]);
-&#125;
-</code></pre>
-<h2 id="Response-body"><a href="#Response-body" class="headerlink" title="Response.body"></a><a href="http://doc.autoxjs.com/#/http?id=responsebody">Response.body</a></h2><ul>
-<li>{Object}</li>
-</ul>
-<p>当前响应的内容。他有以下属性和函数：</p>
-<ul>
-<li>bytes() {Array} 以字节数组形式返回响应内容</li>
-<li>string() {string} 以字符串形式返回响应内容</li>
-<li>json() {Object} 把响应内容作为JSON格式的数据并调用JSON.parse，返回解析后的对象</li>
-<li>contentType {string} 当前响应的内容类型</li>
-</ul>
-<h2 id="Response-request"><a href="#Response-request" class="headerlink" title="Response.request"></a><a href="http://doc.autoxjs.com/#/http?id=responserequest">Response.request</a></h2><ul>
-<li>{Request} 当前响应所对应的请求。参见[Request][]。</li>
-</ul>
-<h2 id="Response-url"><a href="#Response-url" class="headerlink" title="Response.url"></a><a href="http://doc.autoxjs.com/#/http?id=responseurl">Response.url</a></h2><ul>
-<li>{number} 当前响应所对应的请求URL。</li>
-</ul>
-<h2 id="Response-method"><a href="#Response-method" class="headerlink" title="Response.method"></a><a href="http://doc.autoxjs.com/#/http?id=responsemethod">Response.method</a></h2><ul>
-<li>{string} 当前响应所对应的HTTP请求的方法。例如”GET”, “POST”, “PUT”等。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件使用教程</category>
-        <category>autojs</category>
-      </categories>
-      <tags>
-        <tag>AutoX.js</tag>
-      </tags>
   </entry>
 </search>
