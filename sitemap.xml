@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/notes/index.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/shuoshuo/index.html</loc>
     
     <lastmod>2025-12-23</lastmod>
@@ -21,6 +12,15 @@
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/tags/index.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/notes/index.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -47,6 +47,15 @@
   </url>
   
   <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/undefined</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/categories/index.html</loc>
     
     <lastmod>2025-12-23</lastmod>
@@ -65,42 +74,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/floaty.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/shell.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/ocr.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/canvas.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/crypto.html</loc>
     
     <lastmod>2025-12-23</lastmod>
@@ -110,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/undefined</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/canvas.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -164,6 +137,51 @@
   </url>
   
   <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/floaty.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/shell.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/ocr.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/device.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/UiSelect.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/timers.html</loc>
     
     <lastmod>2025-12-23</lastmod>
@@ -182,15 +200,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/files.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/console.html</loc>
     
     <lastmod>2025-12-23</lastmod>
@@ -200,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/http.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/files.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -218,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/device.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/ui.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -227,7 +236,106 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/ui.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/http.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/colors&pic.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/MTQQ.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/app.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/function.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/xy.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/websocket.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/note/getlicense/driving-license.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/base64.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/webview.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/axios.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/module.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -272,70 +380,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/colors&pic.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/app.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/websocket.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/function.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/xy.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/UiSelect.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/MTQQ.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/note/getlicense/driving-license.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/note/code/JavaScript1.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -380,51 +425,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/base64.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/axios.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/module.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/AutoXjs/webview.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/undefined</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/note/code/html.html</loc>
     
     <lastmod>2025-12-23</lastmod>
@@ -443,7 +443,43 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/note/code/JavaScript1.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/chemistry/international-chemistry/international-chemistry-study-guide.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/note/software-use/wei-ruan-shuang-pin.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/note/mind/How-To-Ask-Questions-The-Smart-Way.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/undefined</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/note/teacher/zhuguanti.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -542,51 +578,6 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/chemistry/international-chemistry/international-chemistry-study-guide.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/note/software-use/wei-ruan-shuang-pin.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/note/mind/How-To-Ask-Questions-The-Smart-Way.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/note/teacher/zhuguanti.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/daily-life/11.html</loc>
-    
-    <lastmod>2025-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/software-use/%E5%90%8C%E6%AD%A5%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%88%B0GitHub.html</loc>
     
     <lastmod>2025-12-23</lastmod>
@@ -614,7 +605,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/hexo/blog-create.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/hexo/jiami.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -623,7 +614,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/aboucide/aboucide.github.io.git/hexo/jiami.html</loc>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/hexo/blog-create.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
@@ -660,6 +651,15 @@
   
   <url>
     <loc>https://github.com/aboucide/aboucide.github.io.git/chemistry/experiment-videos/allvideos.html</loc>
+    
+    <lastmod>2025-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/aboucide/aboucide.github.io.git/daily-life/11.html</loc>
     
     <lastmod>2025-12-23</lastmod>
     
