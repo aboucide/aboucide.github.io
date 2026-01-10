@@ -430,7 +430,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 注册时的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>例如，我的github注册邮箱是<code>erkesi@qq.com</code>,因此我输入的就是下面这个命令</p>
-<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#x6b;&#101;&#x73;&#x69;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#101;&#114;&#x6b;&#101;&#x73;&#x69;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>ssh-keygen -t rsa -C  <a href="mailto:&#101;&#114;&#x6b;&#101;&#x73;&#x69;&#x40;&#113;&#x71;&#x2e;&#x63;&#111;&#109;">&#101;&#114;&#x6b;&#101;&#x73;&#x69;&#x40;&#113;&#x71;&#x2e;&#x63;&#111;&#109;</a></p>
 <p>然后依次输入三次回车即可。</p>
 <img src="../../../images/blog-create/生成ssh.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
 
@@ -467,7 +467,7 @@
 <h4 id="3-在本地绑定-Github的用户名和邮箱"><a href="#3-在本地绑定-Github的用户名和邮箱" class="headerlink" title="3.在本地绑定 Github的用户名和邮箱"></a>3.在本地绑定 Github的用户名和邮箱</h4><p>这样你去联系github，他才知道你这台电脑是使用了哪个账号去访问的刚刚那个仓库。</p>
 <p>输入以下命令：让本地的私钥绑定你“注册时用户名”。   记得手动修改  lancou  成你的名称。    引号是英文的引号，别弄成了中文。</p>
 <p><code>git config --global user.name</code> “lancou” </p>
-<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#x65;&#x72;&#x6b;&#x65;&#115;&#105;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#x65;&#x72;&#x6b;&#x65;&#115;&#105;&#64;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a>  成你的github邮箱。</p>
+<p>输入命令：让本地的私钥绑定 “注册时邮箱”   。              记得手动修改  <a href="mailto:&#101;&#114;&#x6b;&#x65;&#115;&#x69;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">&#101;&#114;&#x6b;&#x65;&#115;&#x69;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;</a>  成你的github邮箱。</p>
 <p><code>git config --global user.email &quot;erkesi@qq.com&quot;</code></p>
 <p>运行结果如下图，不会给任何提示，没事的。</p>
 <img src="../../../images/blog-create/绑定用户名和邮箱.png" alt="当图片损坏消失，这里的文字会显示出来代替图片" title="图片的名称" style="zoom:70%;" />
@@ -487,9 +487,9 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:lancou/lancou.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>相当于是告诉Hexo框架，接下来你要把博客上传（部署）到哪里去。</p>
-<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;</a>:昵称&#x2F;仓库名称</p>
+<p>其中你需要修改的地方是repo这一行，repo: <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#109;</a>:昵称&#x2F;仓库名称</p>
 <p>我的GitHub昵称是<code>lancou</code>，创建的仓库名称我设置的是<code>lancou.github.io</code>，所以我的repo这一行代码如下</p>
-<p>repo: <a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#46;&#x63;&#111;&#x6d;</a>:lancou&#x2F;lancou.github.io</p>
+<p>repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a>:lancou&#x2F;lancou.github.io</p>
 <p>记得照葫芦画瓢进行修改。</p>
 <h5 id="4-2-安装hexo上传（部署）工具"><a href="#4-2-安装hexo上传（部署）工具" class="headerlink" title="4.2 安装hexo上传（部署）工具"></a>4.2 安装hexo上传（部署）工具</h5><p>在博客的根目录下，运行cmd，输入下面的代码即可。     我2秒就安装完毕啦，飞一般地速度。</p>
 <p><code>npm install hexo-deployer-git --save </code></p>
@@ -943,6 +943,59 @@
       </tags>
   </entry>
   <entry>
+    <title>高中化学90个实验视频汇总</title>
+    <url>//chemistry/experiment-videos/allvideos.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+<hr>
+<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
+
+
+
+
+
+<h1 id="03配置100毫升1mo1L氯化钠溶液"><a href="#03配置100毫升1mo1L氯化钠溶液" class="headerlink" title="03配置100毫升1mo1L氯化钠溶液"></a>03配置100毫升1mo1L氯化钠溶液</h1><h1 id="04氢氧化铁胶体制备、丁达尔效应"><a href="#04氢氧化铁胶体制备、丁达尔效应" class="headerlink" title="04氢氧化铁胶体制备、丁达尔效应"></a>04氢氧化铁胶体制备、丁达尔效应</h1><h1 id="05离子反应"><a href="#05离子反应" class="headerlink" title="05离子反应"></a>05离子反应</h1><h1 id="06钠的性质"><a href="#06钠的性质" class="headerlink" title="06钠的性质"></a>06钠的性质</h1><h1 id="07铁与水蒸气反应"><a href="#07铁与水蒸气反应" class="headerlink" title="07铁与水蒸气反应"></a>07铁与水蒸气反应</h1><h1 id="08铝与酸、碱溶液的反应"><a href="#08铝与酸、碱溶液的反应" class="headerlink" title="08铝与酸、碱溶液的反应"></a>08铝与酸、碱溶液的反应</h1><h1 id="09过氧化钠的性质"><a href="#09过氧化钠的性质" class="headerlink" title="09过氧化钠的性质"></a>09过氧化钠的性质</h1><h1 id="10碳酸钠和碳酸氢钠的性质"><a href="#10碳酸钠和碳酸氢钠的性质" class="headerlink" title="10碳酸钠和碳酸氢钠的性质"></a>10碳酸钠和碳酸氢钠的性质</h1><h1 id="11焰色反应"><a href="#11焰色反应" class="headerlink" title="11焰色反应"></a>11焰色反应</h1><h1 id="12铁的氢氧化物的制备"><a href="#12铁的氢氧化物的制备" class="headerlink" title="12铁的氢氧化物的制备"></a>12铁的氢氧化物的制备</h1><h1 id="13三价铁离子的检验"><a href="#13三价铁离子的检验" class="headerlink" title="13三价铁离子的检验"></a>13三价铁离子的检验</h1><h1 id="14铁盐和亚铁盐的一些性质"><a href="#14铁盐和亚铁盐的一些性质" class="headerlink" title="14铁盐和亚铁盐的一些性质"></a>14铁盐和亚铁盐的一些性质</h1><h1 id="15硅酸的制备、硅酸钠的性质"><a href="#15硅酸的制备、硅酸钠的性质" class="headerlink" title="15硅酸的制备、硅酸钠的性质"></a>15硅酸的制备、硅酸钠的性质</h1><h1 id="16氢气在氯气中燃烧"><a href="#16氢气在氯气中燃烧" class="headerlink" title="16氢气在氯气中燃烧"></a>16氢气在氯气中燃烧</h1><h1 id="17氯水、氯气的漂白作用"><a href="#17氯水、氯气的漂白作用" class="headerlink" title="17氯水、氯气的漂白作用"></a>17氯水、氯气的漂白作用</h1><h1 id="18氯离子的检验"><a href="#18氯离子的检验" class="headerlink" title="18氯离子的检验"></a>18氯离子的检验</h1><h1 id="19二氧化硫的制备与性质"><a href="#19二氧化硫的制备与性质" class="headerlink" title="19二氧化硫的制备与性质"></a>19二氧化硫的制备与性质</h1><h1 id="20氨溶于水的喷泉实验"><a href="#20氨溶于水的喷泉实验" class="headerlink" title="20氨溶于水的喷泉实验"></a>20氨溶于水的喷泉实验</h1><h1 id="21氨的实验室制法"><a href="#21氨的实验室制法" class="headerlink" title="21氨的实验室制法"></a>21氨的实验室制法</h1><h1 id="22铜与浓硫酸的反应"><a href="#22铜与浓硫酸的反应" class="headerlink" title="22铜与浓硫酸的反应"></a>22铜与浓硫酸的反应</h1><h1 id="23钾在空气中燃烧"><a href="#23钾在空气中燃烧" class="headerlink" title="23钾在空气中燃烧"></a>23钾在空气中燃烧</h1><h1 id="24钾与水的反应"><a href="#24钾与水的反应" class="headerlink" title="24钾与水的反应"></a>24钾与水的反应</h1><h1 id="25新制饱和氯水与溴化钠溶液的反应"><a href="#25新制饱和氯水与溴化钠溶液的反应" class="headerlink" title="25新制饱和氯水与溴化钠溶液的反应"></a>25新制饱和氯水与溴化钠溶液的反应</h1><h1 id="26新制饱和氯水与碘化钾溶液的反应"><a href="#26新制饱和氯水与碘化钾溶液的反应" class="headerlink" title="26新制饱和氯水与碘化钾溶液的反应"></a>26新制饱和氯水与碘化钾溶液的反应</h1><h1 id="27溴水与碘化钾溶液的反应"><a href="#27溴水与碘化钾溶液的反应" class="headerlink" title="27溴水与碘化钾溶液的反应"></a>27溴水与碘化钾溶液的反应</h1><h1 id="28镁与沸水的反应"><a href="#28镁与沸水的反应" class="headerlink" title="28镁与沸水的反应"></a>28镁与沸水的反应</h1><h1 id="29镁铝与盐酸反应的对比实验"><a href="#29镁铝与盐酸反应的对比实验" class="headerlink" title="29镁铝与盐酸反应的对比实验"></a>29镁铝与盐酸反应的对比实验</h1><h1 id="30钠与氯气反应"><a href="#30钠与氯气反应" class="headerlink" title="30钠与氯气反应"></a>30钠与氯气反应</h1><h1 id="31测定铝与盐酸反应的热效应"><a href="#31测定铝与盐酸反应的热效应" class="headerlink" title="31测定铝与盐酸反应的热效应"></a>31测定铝与盐酸反应的热效应</h1><h1 id="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"><a href="#32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应" class="headerlink" title="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"></a>32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应</h1><h1 id="33测定酸碱中和反应的热效应"><a href="#33测定酸碱中和反应的热效应" class="headerlink" title="33测定酸碱中和反应的热效应"></a>33测定酸碱中和反应的热效应</h1><h1 id="34乙醇与钠的反应"><a href="#34乙醇与钠的反应" class="headerlink" title="34乙醇与钠的反应"></a>34乙醇与钠的反应</h1><h1 id="35锌铜原电池"><a href="#35锌铜原电池" class="headerlink" title="35锌铜原电池"></a>35锌铜原电池</h1><h1 id="36水果电池"><a href="#36水果电池" class="headerlink" title="36水果电池"></a>36水果电池</h1><h1 id="37温度对化学反应速率的影响"><a href="#37温度对化学反应速率的影响" class="headerlink" title="37温度对化学反应速率的影响"></a>37温度对化学反应速率的影响</h1><h1 id="38催化剂对化学反应速率的影响"><a href="#38催化剂对化学反应速率的影响" class="headerlink" title="38催化剂对化学反应速率的影响"></a>38催化剂对化学反应速率的影响</h1><h1 id="39甲烷和氯气反应所需条件的对比实验"><a href="#39甲烷和氯气反应所需条件的对比实验" class="headerlink" title="39甲烷和氯气反应所需条件的对比实验"></a>39甲烷和氯气反应所需条件的对比实验</h1><h1 id="40石蜡油分解实验及其分解产物的性质实验"><a href="#40石蜡油分解实验及其分解产物的性质实验" class="headerlink" title="40石蜡油分解实验及其分解产物的性质实验"></a>40石蜡油分解实验及其分解产物的性质实验</h1><h1 id="41葡萄糖跟新制氢氧化铜悬浊液反应"><a href="#41葡萄糖跟新制氢氧化铜悬浊液反应" class="headerlink" title="41葡萄糖跟新制氢氧化铜悬浊液反应"></a>41葡萄糖跟新制氢氧化铜悬浊液反应</h1><h1 id="42碘酒与淀粉作用"><a href="#42碘酒与淀粉作用" class="headerlink" title="42碘酒与淀粉作用"></a>42碘酒与淀粉作用</h1><h1 id="43蛋白质的颜色反应"><a href="#43蛋白质的颜色反应" class="headerlink" title="43蛋白质的颜色反应"></a>43蛋白质的颜色反应</h1><h1 id="44蔗糖的水解及其产物的验证"><a href="#44蔗糖的水解及其产物的验证" class="headerlink" title="44蔗糖的水解及其产物的验证"></a>44蔗糖的水解及其产物的验证</h1><h1 id="45铝热反应"><a href="#45铝热反应" class="headerlink" title="45铝热反应"></a>45铝热反应</h1><h1 id="46葡萄糖的银镜反应"><a href="#46葡萄糖的银镜反应" class="headerlink" title="46葡萄糖的银镜反应"></a>46葡萄糖的银镜反应</h1><h1 id="47淀粉的水解"><a href="#47淀粉的水解" class="headerlink" title="47淀粉的水解"></a>47淀粉的水解</h1><h1 id="48蛋白质的性质"><a href="#48蛋白质的性质" class="headerlink" title="48蛋白质的性质"></a>48蛋白质的性质</h1><h1 id="49维生素C的还原性"><a href="#49维生素C的还原性" class="headerlink" title="49维生素C的还原性"></a>49维生素C的还原性</h1><h1 id="50不同条件下铁钉的锈蚀"><a href="#50不同条件下铁钉的锈蚀" class="headerlink" title="50不同条件下铁钉的锈蚀"></a>50不同条件下铁钉的锈蚀</h1><h1 id="51合成氨"><a href="#51合成氨" class="headerlink" title="51合成氨"></a>51合成氨</h1><h1 id="52硫酸铜跟氨水的反应"><a href="#52硫酸铜跟氨水的反应" class="headerlink" title="52硫酸铜跟氨水的反应"></a>52硫酸铜跟氨水的反应</h1><h1 id="53氯化铁溶液跟硫氰化钾溶液反应"><a href="#53氯化铁溶液跟硫氰化钾溶液反应" class="headerlink" title="53氯化铁溶液跟硫氰化钾溶液反应"></a>53氯化铁溶液跟硫氰化钾溶液反应</h1><h1 id="54碘单质在不同溶剂中的溶解性"><a href="#54碘单质在不同溶剂中的溶解性" class="headerlink" title="54碘单质在不同溶剂中的溶解性"></a>54碘单质在不同溶剂中的溶解性</h1><h1 id="55碘单质的升华"><a href="#55碘单质的升华" class="headerlink" title="55碘单质的升华"></a>55碘单质的升华</h1><h1 id="56镁条在二氧化碳中燃烧"><a href="#56镁条在二氧化碳中燃烧" class="headerlink" title="56镁条在二氧化碳中燃烧"></a>56镁条在二氧化碳中燃烧</h1><h1 id="57测量锌与硫酸反应速率"><a href="#57测量锌与硫酸反应速率" class="headerlink" title="57测量锌与硫酸反应速率"></a>57测量锌与硫酸反应速率</h1><h1 id="58高锰酸钾溶液与草酸溶液的反应"><a href="#58高锰酸钾溶液与草酸溶液的反应" class="headerlink" title="58高锰酸钾溶液与草酸溶液的反应"></a>58高锰酸钾溶液与草酸溶液的反应</h1><h1 id="59硫代硫酸钠溶液跟稀硫酸的反应"><a href="#59硫代硫酸钠溶液跟稀硫酸的反应" class="headerlink" title="59硫代硫酸钠溶液跟稀硫酸的反应"></a>59硫代硫酸钠溶液跟稀硫酸的反应</h1><h1 id="60温度与碘化钾被氧化的关系"><a href="#60温度与碘化钾被氧化的关系" class="headerlink" title="60温度与碘化钾被氧化的关系"></a>60温度与碘化钾被氧化的关系</h1><h1 id="61过氧化氢与二氧化锰作用"><a href="#61过氧化氢与二氧化锰作用" class="headerlink" title="61过氧化氢与二氧化锰作用"></a>61过氧化氢与二氧化锰作用</h1><h1 id="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"><a href="#62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用" class="headerlink" title="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"></a>62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用</h1><h1 id="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"><a href="#63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用" class="headerlink" title="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"></a>63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用</h1><h1 id="64淀粉溶液跟唾液、稀硫酸作用"><a href="#64淀粉溶液跟唾液、稀硫酸作用" class="headerlink" title="64淀粉溶液跟唾液、稀硫酸作用"></a>64淀粉溶液跟唾液、稀硫酸作用</h1><h1 id="65重硌酸钾溶液在不同酸度时的颜色"><a href="#65重硌酸钾溶液在不同酸度时的颜色" class="headerlink" title="65重硌酸钾溶液在不同酸度时的颜色"></a>65重硌酸钾溶液在不同酸度时的颜色</h1><h1 id="66三氯化铁跟不同浓度的硫氰化钾溶液反应"><a href="#66三氯化铁跟不同浓度的硫氰化钾溶液反应" class="headerlink" title="66三氯化铁跟不同浓度的硫氰化钾溶液反应"></a>66三氯化铁跟不同浓度的硫氰化钾溶液反应</h1><h1 id="67二氧化氮和四氧化二氮的相互转化"><a href="#67二氧化氮和四氧化二氮的相互转化" class="headerlink" title="67二氧化氮和四氧化二氮的相互转化"></a>67二氧化氮和四氧化二氮的相互转化</h1><h1 id="68相同条件下，镁条跟盐酸和醋酸的反应"><a href="#68相同条件下，镁条跟盐酸和醋酸的反应" class="headerlink" title="68相同条件下，镁条跟盐酸和醋酸的反应"></a>68相同条件下，镁条跟盐酸和醋酸的反应</h1><h1 id="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"><a href="#69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应" class="headerlink" title="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"></a>69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应</h1><h1 id="70用PH计测量溶液的PH"><a href="#70用PH计测量溶液的PH" class="headerlink" title="70用PH计测量溶液的PH"></a>70用PH计测量溶液的PH</h1><h1 id="71实验测定酸碱反应曲线"><a href="#71实验测定酸碱反应曲线" class="headerlink" title="71实验测定酸碱反应曲线"></a>71实验测定酸碱反应曲线</h1><h1 id="72相同条件下，测定不同盐溶液的PH"><a href="#72相同条件下，测定不同盐溶液的PH" class="headerlink" title="72相同条件下，测定不同盐溶液的PH"></a>72相同条件下，测定不同盐溶液的PH</h1><h1 id="73三氧化铁溶液的配制"><a href="#73三氧化铁溶液的配制" class="headerlink" title="73三氧化铁溶液的配制"></a>73三氧化铁溶液的配制</h1><h1 id="74沉淀的溶解"><a href="#74沉淀的溶解" class="headerlink" title="74沉淀的溶解"></a>74沉淀的溶解</h1><h1 id="75沉淀的转化"><a href="#75沉淀的转化" class="headerlink" title="75沉淀的转化"></a>75沉淀的转化</h1><h1 id="76铜锌硫酸原电池"><a href="#76铜锌硫酸原电池" class="headerlink" title="76铜锌硫酸原电池"></a>76铜锌硫酸原电池</h1><h1 id="77氯化钠溶液的电解"><a href="#77氯化钠溶液的电解" class="headerlink" title="77氯化钠溶液的电解"></a>77氯化钠溶液的电解</h1><h1 id="78氯化铜溶液的电解"><a href="#78氯化铜溶液的电解" class="headerlink" title="78氯化铜溶液的电解"></a>78氯化铜溶液的电解</h1><h1 id="79电镀"><a href="#79电镀" class="headerlink" title="79电镀"></a>79电镀</h1><h1 id="80铁的吸氧腐蚀"><a href="#80铁的吸氧腐蚀" class="headerlink" title="80铁的吸氧腐蚀"></a>80铁的吸氧腐蚀</h1><h1 id="81验证牺牲阳极的阴极保护法"><a href="#81验证牺牲阳极的阴极保护法" class="headerlink" title="81验证牺牲阳极的阴极保护法"></a>81验证牺牲阳极的阴极保护法</h1><h1 id="82水的电解与氢氧混合气爆鸣的微型实验"><a href="#82水的电解与氢氧混合气爆鸣的微型实验" class="headerlink" title="82水的电解与氢氧混合气爆鸣的微型实验"></a>82水的电解与氢氧混合气爆鸣的微型实验</h1><h1 id="83氯气的生成及其性质的微型实验"><a href="#83氯气的生成及其性质的微型实验" class="headerlink" title="83氯气的生成及其性质的微型实验"></a>83氯气的生成及其性质的微型实验</h1><h1 id="84污水处理"><a href="#84污水处理" class="headerlink" title="84污水处理"></a>84污水处理</h1><h1 id="85蒸馏"><a href="#85蒸馏" class="headerlink" title="85蒸馏"></a>85蒸馏</h1><h1 id="86从海带中提取碘"><a href="#86从海带中提取碘" class="headerlink" title="86从海带中提取碘"></a>86从海带中提取碘</h1><h1 id="87硫酸亚铁铵的制备"><a href="#87硫酸亚铁铵的制备" class="headerlink" title="87硫酸亚铁铵的制备"></a>87硫酸亚铁铵的制备</h1><h1 id="88乙酸乙酯的制备及反应条件探究"><a href="#88乙酸乙酯的制备及反应条件探究" class="headerlink" title="88乙酸乙酯的制备及反应条件探究"></a>88乙酸乙酯的制备及反应条件探究</h1><h1 id="89氢氧化铝的制"><a href="#89氢氧化铝的制" class="headerlink" title="89氢氧化铝的制"></a>89氢氧化铝的制</h1><h1 id="90几种无机离子的检验"><a href="#90几种无机离子的检验" class="headerlink" title="90几种无机离子的检验"></a>90几种无机离子的检验</h1>]]></content>
+      <categories>
+        <category>高中化学</category>
+        <category>实验视频</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
+    <url>//solution/Wifi.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
+<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
+<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
+<p>问题已经描述完毕，下面是我的解决方法。</p>
+<hr>
+<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
+
+<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
+
+<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
+
+<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
+
+
+
+<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
+<hr>
+<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
+<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
+]]></content>
+      <categories>
+        <category>常见电脑疑难的解决方案</category>
+      </categories>
+      <tags>
+        <tag>wifi</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>观影/追番记录</title>
     <url>//media-logs/essay/zhuifan.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><table>
@@ -1067,59 +1120,6 @@
       </categories>
       <tags>
         <tag>追番</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WiFi连接问题——能连的上其他WiFi，但是某个wifi连不上。</title>
-    <url>//solution/Wifi.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1.问题描述"></a>1.问题描述</h1><p>我的电脑突然无法连接<code>Edu</code>这个wifi了，但是其他人的电脑设备包括我的手机都能正常连接并使用，因此排除是路由器的问题。</p>
-<p>我的电脑昨天还能正常连接这个wifi，今天突然就不行了。</p>
-<p>连接WiFi，提示<code>无法连接到该wifi</code></p>
-<p>问题已经描述完毕，下面是我的解决方法。</p>
-<hr>
-<h1 id="2、解决方法"><a href="#2、解决方法" class="headerlink" title="2、解决方法"></a>2、解决方法</h1><h2 id="2-1-打开设备管理器"><a href="#2-1-打开设备管理器" class="headerlink" title="2.1 打开设备管理器"></a>2.1 打开设备管理器</h2><img src=" https://im.gurl.eu.org/file/09484fab4b26f49a6663a.png "  style="zoom:50%;" />
-
-<h2 id="2-2-找到【网络适配器】中的wifi模块"><a href="#2-2-找到【网络适配器】中的wifi模块" class="headerlink" title="2.2 找到【网络适配器】中的wifi模块"></a>2.2 找到【网络适配器】中的wifi模块</h2><img src=" https://im.gurl.eu.org/file/9169269d6aafc445c40f1.png "  style="zoom:50%;" />
-
-<h2 id="2-3-右键，打开属性"><a href="#2-3-右键，打开属性" class="headerlink" title="2.3 右键，打开属性"></a>2.3 右键，打开属性</h2><img src=" https://im.gurl.eu.org/file/07ae550adc81298e1de42.png "  style="zoom:50%;" />
-
-<h2 id="2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】"><a href="#2-4-选择【高级】-选择【802-11-ax-ac-n-abg】-设置“值”为【802-11-a-b-g】" class="headerlink" title="2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】"></a>2.4 选择【高级】-选择【802.11.ax&#x2F;ac&#x2F;n&#x2F;abg】-设置“值”为【802.11.a&#x2F;b&#x2F;g】</h2><img src=" https://im.gurl.eu.org/file/e37de8a3d82a9b839ca69.png "  style="zoom:50%;" />
-
-
-
-<h2 id="2-4-连接wifi即可。"><a href="#2-4-连接wifi即可。" class="headerlink" title="2.4 连接wifi即可。"></a>2.4 连接wifi即可。</h2><p>至此，我的问题已经解决。</p>
-<hr>
-<h1 id="3-原理"><a href="#3-原理" class="headerlink" title="3.原理"></a>3.原理</h1><p>我也不清楚，玄学啊！</p>
-<p>参考：<a href="https://blog.csdn.net/HurryBen/article/details/120509784">https://blog.csdn.net/HurryBen/article/details/120509784</a></p>
-]]></content>
-      <categories>
-        <category>常见电脑疑难的解决方案</category>
-      </categories>
-      <tags>
-        <tag>wifi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高中化学90个实验视频汇总</title>
-    <url>//chemistry/experiment-videos/allvideos.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="01-粗盐提纯"><a href="#01-粗盐提纯" class="headerlink" title="01 粗盐提纯"></a>01 粗盐提纯</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVo5UjRWOUZDMGxFczQ3d1cxQ2VveFlCRzdtSmp1Z2lCQ3VfbWM1eUZpMEgtUT9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9eWtRS2l6.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"粗盐提纯","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-<hr>
-<h1 id="02萃取与分液"><a href="#02萃取与分液" class="headerlink" title="02萃取与分液"></a>02萃取与分液</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","video":{"url":"https://dlink.host/sharepoint/aHR0cHM6Ly8ycDQwenAtbXkuc2hhcmVwb2ludC5jb20vOnY6L2cvcGVyc29uYWwvemhvbmd5dWFuXzJwNDB6cF9vbm1pY3Jvc29mdF9jb20vRVgyTnJtcVRhTVZJcm11VXFpQ3ktMElCRHp4aHpaSzVITHI0UWd4MFctOG5Udz9uYXY9ZXlKeVpXWmxjbkpoYkVsdVptOGlPbnNpY21WbVpYSnlZV3hCY0hBaU9pSlBibVZFY21sMlpVWnZja0oxYzJsdVpYTnpJaXdpY21WbVpYSnlZV3hCY0hCUWJHRjBabTl5YlNJNklsZGxZaUlzSW5KbFptVnljbUZzVFc5a1pTSTZJblpwWlhjaUxDSnlaV1psY25KaGJGWnBaWGNpT2lKTmVVWnBiR1Z6VEdsdWEwTnZjSGtpZlgwJmU9cUp2MkND.mp4","pic":"https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-
-
-
-
-
-
-<h1 id="03配置100毫升1mo1L氯化钠溶液"><a href="#03配置100毫升1mo1L氯化钠溶液" class="headerlink" title="03配置100毫升1mo1L氯化钠溶液"></a>03配置100毫升1mo1L氯化钠溶液</h1><h1 id="04氢氧化铁胶体制备、丁达尔效应"><a href="#04氢氧化铁胶体制备、丁达尔效应" class="headerlink" title="04氢氧化铁胶体制备、丁达尔效应"></a>04氢氧化铁胶体制备、丁达尔效应</h1><h1 id="05离子反应"><a href="#05离子反应" class="headerlink" title="05离子反应"></a>05离子反应</h1><h1 id="06钠的性质"><a href="#06钠的性质" class="headerlink" title="06钠的性质"></a>06钠的性质</h1><h1 id="07铁与水蒸气反应"><a href="#07铁与水蒸气反应" class="headerlink" title="07铁与水蒸气反应"></a>07铁与水蒸气反应</h1><h1 id="08铝与酸、碱溶液的反应"><a href="#08铝与酸、碱溶液的反应" class="headerlink" title="08铝与酸、碱溶液的反应"></a>08铝与酸、碱溶液的反应</h1><h1 id="09过氧化钠的性质"><a href="#09过氧化钠的性质" class="headerlink" title="09过氧化钠的性质"></a>09过氧化钠的性质</h1><h1 id="10碳酸钠和碳酸氢钠的性质"><a href="#10碳酸钠和碳酸氢钠的性质" class="headerlink" title="10碳酸钠和碳酸氢钠的性质"></a>10碳酸钠和碳酸氢钠的性质</h1><h1 id="11焰色反应"><a href="#11焰色反应" class="headerlink" title="11焰色反应"></a>11焰色反应</h1><h1 id="12铁的氢氧化物的制备"><a href="#12铁的氢氧化物的制备" class="headerlink" title="12铁的氢氧化物的制备"></a>12铁的氢氧化物的制备</h1><h1 id="13三价铁离子的检验"><a href="#13三价铁离子的检验" class="headerlink" title="13三价铁离子的检验"></a>13三价铁离子的检验</h1><h1 id="14铁盐和亚铁盐的一些性质"><a href="#14铁盐和亚铁盐的一些性质" class="headerlink" title="14铁盐和亚铁盐的一些性质"></a>14铁盐和亚铁盐的一些性质</h1><h1 id="15硅酸的制备、硅酸钠的性质"><a href="#15硅酸的制备、硅酸钠的性质" class="headerlink" title="15硅酸的制备、硅酸钠的性质"></a>15硅酸的制备、硅酸钠的性质</h1><h1 id="16氢气在氯气中燃烧"><a href="#16氢气在氯气中燃烧" class="headerlink" title="16氢气在氯气中燃烧"></a>16氢气在氯气中燃烧</h1><h1 id="17氯水、氯气的漂白作用"><a href="#17氯水、氯气的漂白作用" class="headerlink" title="17氯水、氯气的漂白作用"></a>17氯水、氯气的漂白作用</h1><h1 id="18氯离子的检验"><a href="#18氯离子的检验" class="headerlink" title="18氯离子的检验"></a>18氯离子的检验</h1><h1 id="19二氧化硫的制备与性质"><a href="#19二氧化硫的制备与性质" class="headerlink" title="19二氧化硫的制备与性质"></a>19二氧化硫的制备与性质</h1><h1 id="20氨溶于水的喷泉实验"><a href="#20氨溶于水的喷泉实验" class="headerlink" title="20氨溶于水的喷泉实验"></a>20氨溶于水的喷泉实验</h1><h1 id="21氨的实验室制法"><a href="#21氨的实验室制法" class="headerlink" title="21氨的实验室制法"></a>21氨的实验室制法</h1><h1 id="22铜与浓硫酸的反应"><a href="#22铜与浓硫酸的反应" class="headerlink" title="22铜与浓硫酸的反应"></a>22铜与浓硫酸的反应</h1><h1 id="23钾在空气中燃烧"><a href="#23钾在空气中燃烧" class="headerlink" title="23钾在空气中燃烧"></a>23钾在空气中燃烧</h1><h1 id="24钾与水的反应"><a href="#24钾与水的反应" class="headerlink" title="24钾与水的反应"></a>24钾与水的反应</h1><h1 id="25新制饱和氯水与溴化钠溶液的反应"><a href="#25新制饱和氯水与溴化钠溶液的反应" class="headerlink" title="25新制饱和氯水与溴化钠溶液的反应"></a>25新制饱和氯水与溴化钠溶液的反应</h1><h1 id="26新制饱和氯水与碘化钾溶液的反应"><a href="#26新制饱和氯水与碘化钾溶液的反应" class="headerlink" title="26新制饱和氯水与碘化钾溶液的反应"></a>26新制饱和氯水与碘化钾溶液的反应</h1><h1 id="27溴水与碘化钾溶液的反应"><a href="#27溴水与碘化钾溶液的反应" class="headerlink" title="27溴水与碘化钾溶液的反应"></a>27溴水与碘化钾溶液的反应</h1><h1 id="28镁与沸水的反应"><a href="#28镁与沸水的反应" class="headerlink" title="28镁与沸水的反应"></a>28镁与沸水的反应</h1><h1 id="29镁铝与盐酸反应的对比实验"><a href="#29镁铝与盐酸反应的对比实验" class="headerlink" title="29镁铝与盐酸反应的对比实验"></a>29镁铝与盐酸反应的对比实验</h1><h1 id="30钠与氯气反应"><a href="#30钠与氯气反应" class="headerlink" title="30钠与氯气反应"></a>30钠与氯气反应</h1><h1 id="31测定铝与盐酸反应的热效应"><a href="#31测定铝与盐酸反应的热效应" class="headerlink" title="31测定铝与盐酸反应的热效应"></a>31测定铝与盐酸反应的热效应</h1><h1 id="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"><a href="#32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应" class="headerlink" title="32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应"></a>32观察八水合氢氧化钡晶体与氯化铵晶体反应的热效应</h1><h1 id="33测定酸碱中和反应的热效应"><a href="#33测定酸碱中和反应的热效应" class="headerlink" title="33测定酸碱中和反应的热效应"></a>33测定酸碱中和反应的热效应</h1><h1 id="34乙醇与钠的反应"><a href="#34乙醇与钠的反应" class="headerlink" title="34乙醇与钠的反应"></a>34乙醇与钠的反应</h1><h1 id="35锌铜原电池"><a href="#35锌铜原电池" class="headerlink" title="35锌铜原电池"></a>35锌铜原电池</h1><h1 id="36水果电池"><a href="#36水果电池" class="headerlink" title="36水果电池"></a>36水果电池</h1><h1 id="37温度对化学反应速率的影响"><a href="#37温度对化学反应速率的影响" class="headerlink" title="37温度对化学反应速率的影响"></a>37温度对化学反应速率的影响</h1><h1 id="38催化剂对化学反应速率的影响"><a href="#38催化剂对化学反应速率的影响" class="headerlink" title="38催化剂对化学反应速率的影响"></a>38催化剂对化学反应速率的影响</h1><h1 id="39甲烷和氯气反应所需条件的对比实验"><a href="#39甲烷和氯气反应所需条件的对比实验" class="headerlink" title="39甲烷和氯气反应所需条件的对比实验"></a>39甲烷和氯气反应所需条件的对比实验</h1><h1 id="40石蜡油分解实验及其分解产物的性质实验"><a href="#40石蜡油分解实验及其分解产物的性质实验" class="headerlink" title="40石蜡油分解实验及其分解产物的性质实验"></a>40石蜡油分解实验及其分解产物的性质实验</h1><h1 id="41葡萄糖跟新制氢氧化铜悬浊液反应"><a href="#41葡萄糖跟新制氢氧化铜悬浊液反应" class="headerlink" title="41葡萄糖跟新制氢氧化铜悬浊液反应"></a>41葡萄糖跟新制氢氧化铜悬浊液反应</h1><h1 id="42碘酒与淀粉作用"><a href="#42碘酒与淀粉作用" class="headerlink" title="42碘酒与淀粉作用"></a>42碘酒与淀粉作用</h1><h1 id="43蛋白质的颜色反应"><a href="#43蛋白质的颜色反应" class="headerlink" title="43蛋白质的颜色反应"></a>43蛋白质的颜色反应</h1><h1 id="44蔗糖的水解及其产物的验证"><a href="#44蔗糖的水解及其产物的验证" class="headerlink" title="44蔗糖的水解及其产物的验证"></a>44蔗糖的水解及其产物的验证</h1><h1 id="45铝热反应"><a href="#45铝热反应" class="headerlink" title="45铝热反应"></a>45铝热反应</h1><h1 id="46葡萄糖的银镜反应"><a href="#46葡萄糖的银镜反应" class="headerlink" title="46葡萄糖的银镜反应"></a>46葡萄糖的银镜反应</h1><h1 id="47淀粉的水解"><a href="#47淀粉的水解" class="headerlink" title="47淀粉的水解"></a>47淀粉的水解</h1><h1 id="48蛋白质的性质"><a href="#48蛋白质的性质" class="headerlink" title="48蛋白质的性质"></a>48蛋白质的性质</h1><h1 id="49维生素C的还原性"><a href="#49维生素C的还原性" class="headerlink" title="49维生素C的还原性"></a>49维生素C的还原性</h1><h1 id="50不同条件下铁钉的锈蚀"><a href="#50不同条件下铁钉的锈蚀" class="headerlink" title="50不同条件下铁钉的锈蚀"></a>50不同条件下铁钉的锈蚀</h1><h1 id="51合成氨"><a href="#51合成氨" class="headerlink" title="51合成氨"></a>51合成氨</h1><h1 id="52硫酸铜跟氨水的反应"><a href="#52硫酸铜跟氨水的反应" class="headerlink" title="52硫酸铜跟氨水的反应"></a>52硫酸铜跟氨水的反应</h1><h1 id="53氯化铁溶液跟硫氰化钾溶液反应"><a href="#53氯化铁溶液跟硫氰化钾溶液反应" class="headerlink" title="53氯化铁溶液跟硫氰化钾溶液反应"></a>53氯化铁溶液跟硫氰化钾溶液反应</h1><h1 id="54碘单质在不同溶剂中的溶解性"><a href="#54碘单质在不同溶剂中的溶解性" class="headerlink" title="54碘单质在不同溶剂中的溶解性"></a>54碘单质在不同溶剂中的溶解性</h1><h1 id="55碘单质的升华"><a href="#55碘单质的升华" class="headerlink" title="55碘单质的升华"></a>55碘单质的升华</h1><h1 id="56镁条在二氧化碳中燃烧"><a href="#56镁条在二氧化碳中燃烧" class="headerlink" title="56镁条在二氧化碳中燃烧"></a>56镁条在二氧化碳中燃烧</h1><h1 id="57测量锌与硫酸反应速率"><a href="#57测量锌与硫酸反应速率" class="headerlink" title="57测量锌与硫酸反应速率"></a>57测量锌与硫酸反应速率</h1><h1 id="58高锰酸钾溶液与草酸溶液的反应"><a href="#58高锰酸钾溶液与草酸溶液的反应" class="headerlink" title="58高锰酸钾溶液与草酸溶液的反应"></a>58高锰酸钾溶液与草酸溶液的反应</h1><h1 id="59硫代硫酸钠溶液跟稀硫酸的反应"><a href="#59硫代硫酸钠溶液跟稀硫酸的反应" class="headerlink" title="59硫代硫酸钠溶液跟稀硫酸的反应"></a>59硫代硫酸钠溶液跟稀硫酸的反应</h1><h1 id="60温度与碘化钾被氧化的关系"><a href="#60温度与碘化钾被氧化的关系" class="headerlink" title="60温度与碘化钾被氧化的关系"></a>60温度与碘化钾被氧化的关系</h1><h1 id="61过氧化氢与二氧化锰作用"><a href="#61过氧化氢与二氧化锰作用" class="headerlink" title="61过氧化氢与二氧化锰作用"></a>61过氧化氢与二氧化锰作用</h1><h1 id="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"><a href="#62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用" class="headerlink" title="62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用"></a>62过氧化氢跟三氧化铁溶液、硫酸铜溶液作用</h1><h1 id="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"><a href="#63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用" class="headerlink" title="63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用"></a>63草酸溶液跟高锰酸钾溶液、硫酸锰混合作用</h1><h1 id="64淀粉溶液跟唾液、稀硫酸作用"><a href="#64淀粉溶液跟唾液、稀硫酸作用" class="headerlink" title="64淀粉溶液跟唾液、稀硫酸作用"></a>64淀粉溶液跟唾液、稀硫酸作用</h1><h1 id="65重硌酸钾溶液在不同酸度时的颜色"><a href="#65重硌酸钾溶液在不同酸度时的颜色" class="headerlink" title="65重硌酸钾溶液在不同酸度时的颜色"></a>65重硌酸钾溶液在不同酸度时的颜色</h1><h1 id="66三氯化铁跟不同浓度的硫氰化钾溶液反应"><a href="#66三氯化铁跟不同浓度的硫氰化钾溶液反应" class="headerlink" title="66三氯化铁跟不同浓度的硫氰化钾溶液反应"></a>66三氯化铁跟不同浓度的硫氰化钾溶液反应</h1><h1 id="67二氧化氮和四氧化二氮的相互转化"><a href="#67二氧化氮和四氧化二氮的相互转化" class="headerlink" title="67二氧化氮和四氧化二氮的相互转化"></a>67二氧化氮和四氧化二氮的相互转化</h1><h1 id="68相同条件下，镁条跟盐酸和醋酸的反应"><a href="#68相同条件下，镁条跟盐酸和醋酸的反应" class="headerlink" title="68相同条件下，镁条跟盐酸和醋酸的反应"></a>68相同条件下，镁条跟盐酸和醋酸的反应</h1><h1 id="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"><a href="#69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应" class="headerlink" title="69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应"></a>69相同条件下，醋酸、硼酸分别和碳酸钠溶液反应</h1><h1 id="70用PH计测量溶液的PH"><a href="#70用PH计测量溶液的PH" class="headerlink" title="70用PH计测量溶液的PH"></a>70用PH计测量溶液的PH</h1><h1 id="71实验测定酸碱反应曲线"><a href="#71实验测定酸碱反应曲线" class="headerlink" title="71实验测定酸碱反应曲线"></a>71实验测定酸碱反应曲线</h1><h1 id="72相同条件下，测定不同盐溶液的PH"><a href="#72相同条件下，测定不同盐溶液的PH" class="headerlink" title="72相同条件下，测定不同盐溶液的PH"></a>72相同条件下，测定不同盐溶液的PH</h1><h1 id="73三氧化铁溶液的配制"><a href="#73三氧化铁溶液的配制" class="headerlink" title="73三氧化铁溶液的配制"></a>73三氧化铁溶液的配制</h1><h1 id="74沉淀的溶解"><a href="#74沉淀的溶解" class="headerlink" title="74沉淀的溶解"></a>74沉淀的溶解</h1><h1 id="75沉淀的转化"><a href="#75沉淀的转化" class="headerlink" title="75沉淀的转化"></a>75沉淀的转化</h1><h1 id="76铜锌硫酸原电池"><a href="#76铜锌硫酸原电池" class="headerlink" title="76铜锌硫酸原电池"></a>76铜锌硫酸原电池</h1><h1 id="77氯化钠溶液的电解"><a href="#77氯化钠溶液的电解" class="headerlink" title="77氯化钠溶液的电解"></a>77氯化钠溶液的电解</h1><h1 id="78氯化铜溶液的电解"><a href="#78氯化铜溶液的电解" class="headerlink" title="78氯化铜溶液的电解"></a>78氯化铜溶液的电解</h1><h1 id="79电镀"><a href="#79电镀" class="headerlink" title="79电镀"></a>79电镀</h1><h1 id="80铁的吸氧腐蚀"><a href="#80铁的吸氧腐蚀" class="headerlink" title="80铁的吸氧腐蚀"></a>80铁的吸氧腐蚀</h1><h1 id="81验证牺牲阳极的阴极保护法"><a href="#81验证牺牲阳极的阴极保护法" class="headerlink" title="81验证牺牲阳极的阴极保护法"></a>81验证牺牲阳极的阴极保护法</h1><h1 id="82水的电解与氢氧混合气爆鸣的微型实验"><a href="#82水的电解与氢氧混合气爆鸣的微型实验" class="headerlink" title="82水的电解与氢氧混合气爆鸣的微型实验"></a>82水的电解与氢氧混合气爆鸣的微型实验</h1><h1 id="83氯气的生成及其性质的微型实验"><a href="#83氯气的生成及其性质的微型实验" class="headerlink" title="83氯气的生成及其性质的微型实验"></a>83氯气的生成及其性质的微型实验</h1><h1 id="84污水处理"><a href="#84污水处理" class="headerlink" title="84污水处理"></a>84污水处理</h1><h1 id="85蒸馏"><a href="#85蒸馏" class="headerlink" title="85蒸馏"></a>85蒸馏</h1><h1 id="86从海带中提取碘"><a href="#86从海带中提取碘" class="headerlink" title="86从海带中提取碘"></a>86从海带中提取碘</h1><h1 id="87硫酸亚铁铵的制备"><a href="#87硫酸亚铁铵的制备" class="headerlink" title="87硫酸亚铁铵的制备"></a>87硫酸亚铁铵的制备</h1><h1 id="88乙酸乙酯的制备及反应条件探究"><a href="#88乙酸乙酯的制备及反应条件探究" class="headerlink" title="88乙酸乙酯的制备及反应条件探究"></a>88乙酸乙酯的制备及反应条件探究</h1><h1 id="89氢氧化铝的制"><a href="#89氢氧化铝的制" class="headerlink" title="89氢氧化铝的制"></a>89氢氧化铝的制</h1><h1 id="90几种无机离子的检验"><a href="#90几种无机离子的检验" class="headerlink" title="90几种无机离子的检验"></a>90几种无机离子的检验</h1>]]></content>
-      <categories>
-        <category>高中化学</category>
-        <category>实验视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
@@ -3074,6 +3074,35 @@
       </categories>
       <tags>
         <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IDEA激活方法</title>
+    <url>//software-use/IDEA-active.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><img src="https://image.baidu.com/search/down?url=https://wx4.sinaimg.cn/mw690/007ERWx2gy1i963avnwkwj30g8069tab.jpg"  style="zoom:150%;" />
+
+<h1 id="一、下载安装IDEA"><a href="#一、下载安装IDEA" class="headerlink" title="一、下载安装IDEA"></a>一、下载安装IDEA</h1><ol>
+<li>官网下载最新版安装。<br>   官网： <a href="https://www.jetbrains.com/zh-cn/idea/">https://www.jetbrains.com/zh-cn/idea/</a></li>
+</ol>
+<p> 2. 如果已安装，则直接更新到最新版本即可。如果更新后激活失效，重新激活一遍。</p>
+<p> 3. 如果更新到最新版后激活失败的，卸载软件，重启电脑，重新安装激活。</p>
+<h1 id="二、使用激活脚本"><a href="#二、使用激活脚本" class="headerlink" title="二、使用激活脚本"></a>二、使用激活脚本</h1><p>脚本下载地址：</p>
+<p>注意：脚本下载后解压，放到一个固定的位置，路径名称中不要出现中文，激活后不可移动</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Windows：双击执行 脚本中\scripts\install-all-users.vbs</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Linux/MACOS：执行 脚本中\scripts\install.sh</span><br></pre></td></tr></table></figure>
+
+<h1 id="三、填写激活码"><a href="#三、填写激活码" class="headerlink" title="三、填写激活码"></a>三、填写激活码</h1><p>1、运行脚本之后，大约10秒后，打开IDEA。</p>
+<p>2、启动时会出现激活框，复制刚下载的激活文件中对应的软件激活码激活即可；</p>
+<p>若新版本软件不会自动弹出激活，点击【设置 → 管理订阅】能看到未激活信息，如下图，手动选择激活码，复制激活即可。</p>
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>1、特别注意：激活脚本激活后不可移动和修改，路径中不可出现中文；</p>
+<p>2、激活码无效：卸载脚本和程序，重启电脑，再从头来一遍；</p>
+<p>3、没有找到xxx.jar，检查杀毒软件；</p>
+]]></content>
+      <categories>
+        <category>软件使用教程</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+        <tag>IntelliJ IDEA</tag>
       </tags>
   </entry>
   <entry>
@@ -8020,6 +8049,63 @@
 <p>关闭当前终端</p>
 <p>再按<code>F5</code>运行代码，乱码必解决。</p>
 <hr>
+<h1 id="Java-代码逻辑优化"><a href="#Java-代码逻辑优化" class="headerlink" title="Java 代码逻辑优化"></a>Java 代码逻辑优化</h1><h2 id="执行效率"><a href="#执行效率" class="headerlink" title="执行效率"></a>执行效率</h2><p>1、开发中，如果既可以使用条件运算符，又可以使用if-else，推荐使用条件运算符。因为执行效率稍高。</p>
+<ul>
+<li>条件运算符格式：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">(条件表达式)? 表达式<span class="number">1</span>:表达式<span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>说明：条件表达式是boolean类型的结果，根据boolean的值选择表达式1或表达式2</li>
+</ul>
+<p>2、逻辑运算符</p>
+<ul>
+<li><p><strong>区分“&amp;”和“&amp;&amp;”：</strong></p>
+<ul>
+<li><p>相同点：如果符号左边是true，则二者都执行符号右边的操作</p>
+</li>
+<li><p>不同点：&amp; ： 如果符号左边是false,则继续执行符号右边的操作</p>
+</li>
+</ul>
+<p>​                     &amp;&amp; ：如果符号左边是false,则不再继续执行符号右边的操作</p>
+<ul>
+<li>建议：开发中，推荐使用 &amp;&amp;</li>
+</ul>
+</li>
+<li><p><strong>区分“|”和“||”：</strong></p>
+<ul>
+<li><p>相同点：如果符号左边是false，则二者都执行符号右边的操作</p>
+</li>
+<li><p>不同点：| ： 如果符号左边是true，则继续执行符号右边的操作</p>
+<p>​               || ：如果符号左边是true，则不再继续执行符号右边的操作</p>
+</li>
+<li><p>建议：开发中，推荐使用 ||</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>3、if-else语句与switch-case语句比较</p>
+<ul>
+<li><p>结论：凡是使用switch-case的结构都可以转换为if-else结构。反之，不成立。</p>
+</li>
+<li><p>开发经验：如果既可以使用switch-case，又可以使用if-else，建议使用switch-case。因为效率稍高。</p>
+</li>
+<li><p>细节对比：</p>
+<ul>
+<li>if-else语句优势<ul>
+<li>if语句的条件是一个布尔类型值，if条件表达式为true则进入分支，可以用于范围的判断，也可以用于等值的判断，<code>使用范围更广</code>。</li>
+<li>switch语句的条件是一个常量值（byte,short,int,char,枚举,String），只能判断某个变量或表达式的结果是否等于某个常量值，<code>使用场景较狭窄</code>。</li>
+</ul>
+</li>
+<li>switch语句优势<ul>
+<li>当条件是判断某个变量或表达式是否等于某个固定的常量值时，使用if和switch都可以，习惯上使用switch更多。因为<code>效率稍高</code>。当条件是区间范围的判断时，只能使用if语句。</li>
+<li>使用switch可以利用<code>穿透性</code>，同时执行多个分支，而if…else没有穿透性。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="Java-语言规则特别注意的地方"><a href="#Java-语言规则特别注意的地方" class="headerlink" title="Java 语言规则特别注意的地方"></a>Java 语言规则特别注意的地方</h1><p>1、<strong>boolean类型数据只有两个值：true、false，无其它。</strong></p>
 ]]></content>
       <categories>
         <category>笔记</category>
@@ -8041,45 +8127,6 @@
       </categories>
       <tags>
         <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>base64 编码</title>
-    <url>//software-use/AutoXjs/base64.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Base64编码"><a href="#Base64编码" class="headerlink" title="Base64编码"></a><a href="http://doc.autoxjs.com/#/base64?id=base64%e7%bc%96%e7%a0%81">Base64编码</a></h2><p>提供基本的 Base64 转换函数。</p>
-<h2 id="base64-encode-str-encoding-‘utf-8’"><a href="#base64-encode-str-encoding-‘utf-8’" class="headerlink" title="$base64.encode(str[, encoding &#x3D; ‘utf-8’)"></a><a href="http://doc.autoxjs.com/#/base64?id=base64encodestr-encoding-39utf-839">$base64.encode(str[, encoding &#x3D; ‘utf-8’)</a></h2><ul>
-<li><code>str</code> {string} 要编码的字符串</li>
-<li><code>encoding</code> {string} 可选，字符编码</li>
-</ul>
-<p>将字符串str <code>autox.js</code> 使用Base64编码并返回编码后的字符串。</p>
-<pre><code>log($base64.encode(&quot;autox.js&quot;));
-// 日志输出 YXV0b3gunM=
-</code></pre>
-<h2 id="base64-decode-str-encoding-‘utf-8’"><a href="#base64-decode-str-encoding-‘utf-8’" class="headerlink" title="$base64.decode(str[, encoding &#x3D; ‘utf-8’])"></a><a href="http://doc.autoxjs.com/#/base64?id=base64decodestr-encoding-39utf-839">$base64.decode(str[, encoding &#x3D; ‘utf-8’])</a></h2><ul>
-<li><code>str</code> {string} 要解码的字符串</li>
-<li><code>encoding</code> {string} 可选，字符编码</li>
-</ul>
-<p>将字符串st <code>YXV0b3gunM=</code> r使用Base64解码并返回解码后的字符串。</p>
-<pre><code>log($base64.decode(&quot;YXV0b3gunM&quot;));
-// 日志输出 autox.js
-</code></pre>
-<p>[</p>
-<p>上一页</p>
-<p>事件与监听 - Events</p>
-<p>高级</p>
-<p>](<a href="http://doc.autoxjs.com/#/events">http://doc.autoxjs.com/#/events</a>)</p>
-<p>[</p>
-<p>下一页</p>
-<p>消息处理(加密、摘要) - Crypto</p>
-<p>高级</p>
-<p>](<a href="http://doc.autoxjs.com/#/crypto">http://doc.autoxjs.com/#/crypto</a>)</p>
-]]></content>
-      <categories>
-        <category>软件使用教程</category>
-        <category>autojs</category>
-      </categories>
-      <tags>
-        <tag>AutoX.js</tag>
       </tags>
   </entry>
   <entry>
@@ -8333,6 +8380,45 @@ ui.loadLocalHtmlBtn.on(&#39;click&#39;, () =&gt; &#123;
       </tags>
   </entry>
   <entry>
+    <title>base64 编码</title>
+    <url>//software-use/AutoXjs/base64.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Base64编码"><a href="#Base64编码" class="headerlink" title="Base64编码"></a><a href="http://doc.autoxjs.com/#/base64?id=base64%e7%bc%96%e7%a0%81">Base64编码</a></h2><p>提供基本的 Base64 转换函数。</p>
+<h2 id="base64-encode-str-encoding-‘utf-8’"><a href="#base64-encode-str-encoding-‘utf-8’" class="headerlink" title="$base64.encode(str[, encoding &#x3D; ‘utf-8’)"></a><a href="http://doc.autoxjs.com/#/base64?id=base64encodestr-encoding-39utf-839">$base64.encode(str[, encoding &#x3D; ‘utf-8’)</a></h2><ul>
+<li><code>str</code> {string} 要编码的字符串</li>
+<li><code>encoding</code> {string} 可选，字符编码</li>
+</ul>
+<p>将字符串str <code>autox.js</code> 使用Base64编码并返回编码后的字符串。</p>
+<pre><code>log($base64.encode(&quot;autox.js&quot;));
+// 日志输出 YXV0b3gunM=
+</code></pre>
+<h2 id="base64-decode-str-encoding-‘utf-8’"><a href="#base64-decode-str-encoding-‘utf-8’" class="headerlink" title="$base64.decode(str[, encoding &#x3D; ‘utf-8’])"></a><a href="http://doc.autoxjs.com/#/base64?id=base64decodestr-encoding-39utf-839">$base64.decode(str[, encoding &#x3D; ‘utf-8’])</a></h2><ul>
+<li><code>str</code> {string} 要解码的字符串</li>
+<li><code>encoding</code> {string} 可选，字符编码</li>
+</ul>
+<p>将字符串st <code>YXV0b3gunM=</code> r使用Base64解码并返回解码后的字符串。</p>
+<pre><code>log($base64.decode(&quot;YXV0b3gunM&quot;));
+// 日志输出 autox.js
+</code></pre>
+<p>[</p>
+<p>上一页</p>
+<p>事件与监听 - Events</p>
+<p>高级</p>
+<p>](<a href="http://doc.autoxjs.com/#/events">http://doc.autoxjs.com/#/events</a>)</p>
+<p>[</p>
+<p>下一页</p>
+<p>消息处理(加密、摘要) - Crypto</p>
+<p>高级</p>
+<p>](<a href="http://doc.autoxjs.com/#/crypto">http://doc.autoxjs.com/#/crypto</a>)</p>
+]]></content>
+      <categories>
+        <category>软件使用教程</category>
+        <category>autojs</category>
+      </categories>
+      <tags>
+        <tag>AutoX.js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>axios</title>
     <url>//software-use/AutoXjs/axios.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="axios"><a href="#axios" class="headerlink" title="axios"></a><a href="http://doc.autoxjs.com/#/axios?id=axios">axios</a></h1><h2 id="axios-1"><a href="#axios-1" class="headerlink" title="axios"></a><a href="http://doc.autoxjs.com/#/axios?id=axios">axios</a></h2><p>v6.3.9新增</p>
@@ -8476,6 +8562,276 @@ module.exports = function(width) &#123;
 <li><p><code>__filename</code> 当前模块的文件名。 这是当前模块文件的已解析符号链接的绝对路径。</p>
 </li>
 </ul>
+]]></content>
+      <categories>
+        <category>软件使用教程</category>
+        <category>autojs</category>
+      </categories>
+      <tags>
+        <tag>AutoX.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>传感器 sensors</title>
+    <url>//software-use/AutoXjs/sensors.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Sensors"><a href="#Sensors" class="headerlink" title="Sensors"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensors">Sensors</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>sensors 模块提供了获取手机上的传感器的信息的支持，这些传感器包括距离传感器、光线光感器、重力传感器、方向传感器等。需要指出的是，脚本只能获取传感器的数据，<strong>不能模拟或伪造传感器的数据和事件</strong>，因此诸如模拟摇一摇的功能是无法实现的。</p>
+<p>要监听一个传感器时，需要使用<code>sensors.register()</code>注册监听器，之后才能开始监听；不需要监听时则调用<code>sensors.unregister()</code>注销监听器。在脚本结束时会自动注销所有的监听器。同时，这种监听会使脚本保持运行状态，如果不注销监听器，脚本会一直保持运行状态。</p>
+<p>例如，监听光线传感器的代码为：</p>
+<pre><code>//光线传感器监听
+sensors.register(&quot;light&quot;).on(&quot;change&quot;, (event, light)=&gt;&#123;
+    log(&quot;当前光强度为&quot;, light);
+&#125;);
+</code></pre>
+<p>要注意的是，每个传感器的数据并不相同，所以对他们调用<code>on()</code>监听事件时的回调函数参数也不是相同，例如光线传感器参数为<code>(event, light)</code>，加速度传感器参数为<code>(event, ax, ay, az)</code>。甚至在某些设备上的传感器参数有所增加，例如华为手机的距离传感器为三个参数，一般手机只有一个参数。</p>
+<p>常用的传感器及其事件参数如下表：</p>
+<ul>
+<li><p><code>accelerometer</code> 加速度传感器，参数<code>(event, ax, ay, az)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>ax</code> {number} x 轴上的加速度，单位 m&#x2F;s^2</li>
+<li><code>ay</code> {number} y 轴上的加速度，单位 m&#x2F;s^2</li>
+<li><code>az</code> {number} z 轴上的加速度，单位 m&#x2F;s^2 这里的 x 轴，y 轴，z 轴所属的坐标系统如下图(其中 z 轴垂直于设备屏幕表面):</li>
+</ul>
+<p>!<img src="http://doc.autoxjs.com/axis_device.png" alt="axis_device"></p>
+</li>
+<li><p><code>orientation</code> 方向传感器，参数<code>(event, azimuth, pitch, roll)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>azimuth</code> {number} 方位角，从地磁指北方向线起，依顺时针方向到 y 轴之间的水平夹角，单位角度，范围 0~359</li>
+<li><code>pitch</code> {number} 绕 x 轴旋转的角度，当设备水平放置时该值为 0，当设备顶部翘起时该值为正数，当设备尾部翘起时该值为负数，单位角度，范围-180~180</li>
+<li><code>roll</code> {number} 绕 y 轴顺时针旋转的角度，单位角度，范围-90~90</li>
+</ul>
+</li>
+<li><p><code>gyroscope</code> 陀螺仪传感器，参数<code>(event, wx, wy, wz)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>wx</code> {number} 绕 x 轴的角速度，单位弧度&#x2F;s</li>
+<li><code>wy</code> {number} 绕 y 轴的角速度，单位弧度&#x2F;s</li>
+<li><code>wz</code> {number} 绕 z 轴的角速度，单位弧度&#x2F;s</li>
+</ul>
+</li>
+<li><p><code>magnetic_field</code> 磁场传感器，参数<code>(event, bx, by, bz)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>bx</code> {number} x 轴上的磁场强度，单位 uT</li>
+<li><code>by</code> {number} y 轴上的磁场强度，单位 uT</li>
+<li><code>bz</code> {number} z 轴上的磁场强度，单位 uT</li>
+</ul>
+</li>
+<li><p><code>gravity</code> 重力传感器，参数<code>(event, gx, gy, gz)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>gx</code> {number} x 轴上的重力加速度，单位 m&#x2F;s^2</li>
+<li><code>gy</code> {number} y 轴上的重力加速度，单位 m&#x2F;s^2</li>
+<li><code>gz</code> {number} z 轴上的重力加速度，单位 m&#x2F;s^2</li>
+</ul>
+</li>
+<li><p><code>linear_acceleration</code> 线性加速度传感器，参数<code>(event, ax, ay, az)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>ax</code> {number} x 轴上的线性加速度，单位 m&#x2F;s^2</li>
+<li><code>ay</code> {number} y 轴上的线性加速度，单位 m&#x2F;s^2</li>
+<li><code>az</code> {number} z 轴上的线性加速度，单位 m&#x2F;s^2</li>
+</ul>
+</li>
+<li><p><code>ambient_temperature</code> 环境温度传感器，大部分设备并不支持，参数<code>(event, t)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>t</code> {number} 环境温度，单位摄氏度。</li>
+</ul>
+</li>
+<li><p><code>light</code> 光线传感器，参数<code>(event, light)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>light</code> {number} 环境光强度，单位 lux</li>
+</ul>
+</li>
+<li><p><code>pressure</code> 压力传感器，参数<code>(event, p)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>p</code> {number} 大气压，单位 hPa</li>
+</ul>
+</li>
+<li><p><code>proximity</code> 距离传感器，参数<code>(event, distance)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>distance</code> {number} 一般指设备前置摄像头旁边的距离传感器到前方障碍物的距离，并且很多设备上这个值只有两种情况：当障碍物较近时该值为 0，当障碍物较远或在范围内没有障碍物时该值为 5</li>
+</ul>
+</li>
+<li><p><code>relative_humidity</code> 湿度传感器，大部分设备并不支持，参数<code>(event, rh)</code>:</p>
+<ul>
+<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
+<li><code>rh</code> {number} 相对湿度，范围为 0~100（百分比）</li>
+</ul>
+</li>
+</ul>
+<h2 id="sensors-register-sensorName-delay"><a href="#sensors-register-sensorName-delay" class="headerlink" title="sensors.register(sensorName[, delay])"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensorsregistersensorname-delay">sensors.register(sensorName[, delay])</a></h2><ul>
+<li><code>sensorName</code> {string} 传感器名称，常用的传感器名称如上面所述</li>
+<li><code>delay</code> {number} 传感器数据更新频率，可选，默认为<code>sensors.delay.normal</code>。可用的值如下：<ul>
+<li><code>sensors.delay.normal</code> 正常频率</li>
+<li><code>sensors.delay.ui</code> 适合于用户界面的更新频率</li>
+<li><code>sensors.delay.game</code> 适合于游戏的更新频率</li>
+<li><code>sensors.delay.fastest</code> 最快的更新频率】</li>
+</ul>
+</li>
+<li>返回 <a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmiiter</a></li>
+</ul>
+<p>注册一个传感器监听并返回<a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>。</p>
+<p>例如:</p>
+<pre><code>console.show();
+//注册传感器监听
+var sensor = sensors.register(&quot;gravity&quot;);
+if(sensor == null)&#123;
+    toast(&quot;不支持重力传感器&quot;);
+    exit();
+&#125;
+//监听数据
+sensor.on(&quot;change&quot;, (gx, gy, gz)=&gt;&#123;
+    log(&quot;重力加速度: %d, %d, %d&quot;, gx, gy, gz);
+&#125;);
+</code></pre>
+<p>可以通过 delay 参数来指定传感器数据的更新频率，例如：</p>
+<pre><code>var sensor = sensors.register(&quot;gravity&quot;, sensors.delay.game);
+</code></pre>
+<p>另外，如果不支持<code>sensorName</code>所指定的传感器，那么该函数将返回<code>null</code>；但如果<code>sensors.ignoresUnsupportedSensor</code>的值被设置为<code>true</code>, 则该函数会返回一个不会分发任何传感器事件的<a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>。</p>
+<p>例如:</p>
+<pre><code>sensors.ignoresUnsupportedSensor = true;
+//无需null判断
+sensors.register(&quot;gravity&quot;).on(&quot;change&quot;, (gx, gy, gz)=&gt;&#123;
+    log(&quot;重力加速度: %d, %d, %d&quot;, gx, gy, gz);
+&#125;);
+</code></pre>
+<p>更多信息，参见<a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>和<a href="http://doc.autoxjs.com/#/sensors?id=ignoresunsupportedsensor">sensors.ignoresUnsupportedSensor</a>。</p>
+<h2 id="sensors-unregister-emitter"><a href="#sensors-unregister-emitter" class="headerlink" title="sensors.unregister(emitter)"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensorsunregisteremitter">sensors.unregister(emitter)</a></h2><ul>
+<li><code>emiiter</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a></li>
+</ul>
+<p>注销该传感器监听器。被注销的监听器将不再能监听传感器数据。</p>
+<pre><code>//注册一个传感器监听器
+var sensor = sensors.register(&quot;gravity&quot;);
+if(sensor == null)&#123;
+    exit();
+&#125;
+//2秒后注销该监听器
+setTimeout(()=&gt; &#123;
+    sensors.unregister(sensor);
+&#125;, 2000);
+</code></pre>
+<h2 id="sensors-unregisterAll"><a href="#sensors-unregisterAll" class="headerlink" title="sensors.unregisterAll()"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensorsunregisterall">sensors.unregisterAll()</a></h2><p>注销所有传感器监听器。</p>
+<h2 id="sensors-ignoresUnsupportedSensor"><a href="#sensors-ignoresUnsupportedSensor" class="headerlink" title="sensors.ignoresUnsupportedSensor"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensorsignoresunsupportedsensor">sensors.ignoresUnsupportedSensor</a></h2><ul>
+<li>{boolean}</li>
+</ul>
+<p>表示是否忽略不支持的传感器。如果该值被设置为<code>true</code>，则函数<code>sensors.register()</code>即使对不支持的传感器也会返回一个无任何数据的虚拟传感器监听，也就是<code>sensors.register()</code>不会返回<code>null</code>从而避免非空判断，并且此时会触发<code>sensors</code>的”unsupported_sensor”事件。</p>
+<pre><code>//忽略不支持的传感器
+sensors.ignoresUnsupportedSensor = true;
+//监听有不支持的传感器时的事件
+sensors.on(&quot;unsupported_sensor&quot;, function(sensorName)&#123;
+    toastLog(&quot;不支持的传感器: &quot; + sensorName);
+&#125;);
+//随便注册一个不存在的传感器。
+log(sensors.register(&quot;aaabbb&quot;));
+</code></pre>
+<h2 id="事件-‘unsupported-sensor’"><a href="#事件-‘unsupported-sensor’" class="headerlink" title="事件: ‘unsupported_sensor’"></a><a href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39unsupported_sensor39">事件: ‘unsupported_sensor’</a></h2><ul>
+<li><code>sensorName</code> {string} 不支持的传感器名称</li>
+</ul>
+<p>当<code>sensors.ignoresUnsupportedSensor</code>被设置为<code>true</code>并且有不支持的传感器被注册时触发该事件。事件参数的传感器名称。</p>
+<h2 id="SensorEventEmitter"><a href="#SensorEventEmitter" class="headerlink" title="SensorEventEmitter"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a></h2><p>注册传感器返回的对象，其本身是一个 EventEmmiter，用于监听传感器事件。</p>
+<h2 id="事件-‘change’"><a href="#事件-‘change’" class="headerlink" title="事件: ‘change’"></a><a href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39change39">事件: ‘change’</a></h2><ul>
+<li><code>..args</code> {Any} 传感器参数</li>
+</ul>
+<p>当传感器数据改变时触发该事件；该事件触发的最高频繁由<code>sensors.register()</code>指定的 delay 参数决定。</p>
+<p>事件参数根据传感器类型不同而不同，具体参见本章最前面的列表。</p>
+<p>一个监听光线传感器和加速度传感器并且每 0.5 秒获取一个数据并最终写入一个 csv 表格文件的例子如下：</p>
+<pre><code>//csv文件路径
+cosnt csvPath = &quot;/sdcard/data.csv&quot;;
+//记录光线传感器的数据
+var light = 0;
+//记录加速度传感器的数据
+var ax = 0;
+var ay = 0;
+var az = 0;
+//监听光线传感器
+sensors.register(&quot;light&quot;, sensors.delay.fastest)
+    .on(&quot;change&quot;, l =&gt; &#123;
+        light = l;
+    &#125;);
+//监听加速度传感器
+sensors.register(&quot;accelerometer&quot;, sensors.delay.fastest)
+    .on(&quot;change&quot;, (ax0, ay0, az0) =&gt; &#123;
+        ax = ax0;
+        ay = ay0;
+        az = az0;
+    &#125;);
+
+var file = open(csvPath, &quot;w&quot;);
+//写csv表格头
+file.writeline(&quot;light,ax,ay,az&quot;)
+//每0.5秒获取一次数据并写入文件
+setInterval(()=&gt;&#123;
+    file.writeline(util.format(&quot;%d,%d,%d,%d&quot;, light, ax, ay, az));
+&#125;, 500);
+//10秒后退出并打开文件
+setTimeout(()=&gt;&#123;
+    file.close();
+    sensors.unregsiterAll();
+    app.viewFile(csvPath);
+&#125;, 10 * 1000);
+</code></pre>
+<h2 id="事件-‘accuracy-change’"><a href="#事件-‘accuracy-change’" class="headerlink" title="事件: ‘accuracy_change’"></a><a href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39accuracy_change39">事件: ‘accuracy_change’</a></h2><ul>
+<li><code>accuracy</code> {number} 表示传感器精度。为以下值之一:<ul>
+<li>-1 传感器未连接</li>
+<li>0 传感器不可读</li>
+<li>1 低精度</li>
+<li>2 中精度</li>
+<li>3 高精度</li>
+</ul>
+</li>
+</ul>
+<p>当传感器精度改变时会触发的事件。比较少用。</p>
+]]></content>
+      <categories>
+        <category>软件使用教程</category>
+        <category>autojs</category>
+      </categories>
+      <tags>
+        <tag>AutoX.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>协程</title>
+    <url>//software-use/AutoXjs/bluebird.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="协程"><a href="#协程" class="headerlink" title="协程"></a><a href="http://doc.autoxjs.com/#/continuation?id=%e5%8d%8f%e7%a8%8b">协程</a></h1><h2 id="协程-1"><a href="#协程-1" class="headerlink" title="协程"></a><a href="http://doc.autoxjs.com/#/continuation?id=%e5%8d%8f%e7%a8%8b">协程</a></h2><p>见 App 中 <code>示例代码 / 协程</code></p>
+<h2 id="Promise-coroutine"><a href="#Promise-coroutine" class="headerlink" title="Promise.coroutine()"></a><a href="http://doc.autoxjs.com/#/continuation?id=promisecoroutine">Promise.coroutine()</a></h2><p><strong>v6.3.7 新增</strong> 在该版本引入bluebird后你可以使用bluebird带来的一项协程特性，这个方法接收一个<strong>Generator 函数</strong>作为参数，函数内部可以像<strong>async函数</strong>一样编写，返回一个返回值为<code>Promise</code>的函数，说起来可能有点难以理解，具体看下方例子</p>
+<pre><code>//async函数写法
+let main = async function(s) &#123;
+    var result = await Promise.resolve(&quot;value:&quot;+s);
+    return result;
+&#125;
+//Generator 函数写法
+let main = Promise.coroutine(function*(s) &#123;
+    var result = yield Promise.resolve(&quot;value:&quot;+s);
+    return result;
+&#125;)
+
+main(&#39;test&#39;).then(log)
+</code></pre>
+<p>可以看到只要将await关键换成yield就能够代替还不支持的async函数，下方是一个异步循环的例子</p>
+<pre><code>let main = Promise.coroutine(function*(size) &#123;
+    for (var i = 0; i &lt; size; i++) &#123;
+        yield Promise.delay(1000);
+        log(i);
+    &#125;
+    log(&#39;end&#39;)
+&#125;)
+main(10);//在控制台每秒输出一个数字
+</code></pre>
+<p>与async函数不同的是yield关键字作为表达式使用时必须带上圆括号，否则会有语法错误，在默认情况下yield后面只能是Promise或带有then方法的对象，要处理其他类型数据需要使用<code>Promise.coroutine.addYieldHandler()</code>添加处理器</p>
+<h2 id="Promise-coroutine-addYieldHandler-handler"><a href="#Promise-coroutine-addYieldHandler-handler" class="headerlink" title="Promise.coroutine.addYieldHandler(handler)"></a><a href="http://doc.autoxjs.com/#/continuation?id=promisecoroutineaddyieldhandlerhandler">Promise.coroutine.addYieldHandler(handler)</a></h2><ul>
+<li>handler {function} 处理函数</li>
+</ul>
+<p>函数的参数为yield 的导出，反回值为yield的反回</p>
 ]]></content>
       <categories>
         <category>软件使用教程</category>
@@ -8932,276 +9288,6 @@ myEmitter.emit(&#39;event&#39;);
 //保持脚本运行
 setInterval(()=&gt;&#123;&#125;, 1000);
 </code></pre>
-]]></content>
-      <categories>
-        <category>软件使用教程</category>
-        <category>autojs</category>
-      </categories>
-      <tags>
-        <tag>AutoX.js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>传感器 sensors</title>
-    <url>//software-use/AutoXjs/sensors.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Sensors"><a href="#Sensors" class="headerlink" title="Sensors"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensors">Sensors</a></h2><blockquote>
-<p>稳定性: 稳定</p>
-</blockquote>
-<p>sensors 模块提供了获取手机上的传感器的信息的支持，这些传感器包括距离传感器、光线光感器、重力传感器、方向传感器等。需要指出的是，脚本只能获取传感器的数据，<strong>不能模拟或伪造传感器的数据和事件</strong>，因此诸如模拟摇一摇的功能是无法实现的。</p>
-<p>要监听一个传感器时，需要使用<code>sensors.register()</code>注册监听器，之后才能开始监听；不需要监听时则调用<code>sensors.unregister()</code>注销监听器。在脚本结束时会自动注销所有的监听器。同时，这种监听会使脚本保持运行状态，如果不注销监听器，脚本会一直保持运行状态。</p>
-<p>例如，监听光线传感器的代码为：</p>
-<pre><code>//光线传感器监听
-sensors.register(&quot;light&quot;).on(&quot;change&quot;, (event, light)=&gt;&#123;
-    log(&quot;当前光强度为&quot;, light);
-&#125;);
-</code></pre>
-<p>要注意的是，每个传感器的数据并不相同，所以对他们调用<code>on()</code>监听事件时的回调函数参数也不是相同，例如光线传感器参数为<code>(event, light)</code>，加速度传感器参数为<code>(event, ax, ay, az)</code>。甚至在某些设备上的传感器参数有所增加，例如华为手机的距离传感器为三个参数，一般手机只有一个参数。</p>
-<p>常用的传感器及其事件参数如下表：</p>
-<ul>
-<li><p><code>accelerometer</code> 加速度传感器，参数<code>(event, ax, ay, az)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>ax</code> {number} x 轴上的加速度，单位 m&#x2F;s^2</li>
-<li><code>ay</code> {number} y 轴上的加速度，单位 m&#x2F;s^2</li>
-<li><code>az</code> {number} z 轴上的加速度，单位 m&#x2F;s^2 这里的 x 轴，y 轴，z 轴所属的坐标系统如下图(其中 z 轴垂直于设备屏幕表面):</li>
-</ul>
-<p>!<img src="http://doc.autoxjs.com/axis_device.png" alt="axis_device"></p>
-</li>
-<li><p><code>orientation</code> 方向传感器，参数<code>(event, azimuth, pitch, roll)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>azimuth</code> {number} 方位角，从地磁指北方向线起，依顺时针方向到 y 轴之间的水平夹角，单位角度，范围 0~359</li>
-<li><code>pitch</code> {number} 绕 x 轴旋转的角度，当设备水平放置时该值为 0，当设备顶部翘起时该值为正数，当设备尾部翘起时该值为负数，单位角度，范围-180~180</li>
-<li><code>roll</code> {number} 绕 y 轴顺时针旋转的角度，单位角度，范围-90~90</li>
-</ul>
-</li>
-<li><p><code>gyroscope</code> 陀螺仪传感器，参数<code>(event, wx, wy, wz)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>wx</code> {number} 绕 x 轴的角速度，单位弧度&#x2F;s</li>
-<li><code>wy</code> {number} 绕 y 轴的角速度，单位弧度&#x2F;s</li>
-<li><code>wz</code> {number} 绕 z 轴的角速度，单位弧度&#x2F;s</li>
-</ul>
-</li>
-<li><p><code>magnetic_field</code> 磁场传感器，参数<code>(event, bx, by, bz)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>bx</code> {number} x 轴上的磁场强度，单位 uT</li>
-<li><code>by</code> {number} y 轴上的磁场强度，单位 uT</li>
-<li><code>bz</code> {number} z 轴上的磁场强度，单位 uT</li>
-</ul>
-</li>
-<li><p><code>gravity</code> 重力传感器，参数<code>(event, gx, gy, gz)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>gx</code> {number} x 轴上的重力加速度，单位 m&#x2F;s^2</li>
-<li><code>gy</code> {number} y 轴上的重力加速度，单位 m&#x2F;s^2</li>
-<li><code>gz</code> {number} z 轴上的重力加速度，单位 m&#x2F;s^2</li>
-</ul>
-</li>
-<li><p><code>linear_acceleration</code> 线性加速度传感器，参数<code>(event, ax, ay, az)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>ax</code> {number} x 轴上的线性加速度，单位 m&#x2F;s^2</li>
-<li><code>ay</code> {number} y 轴上的线性加速度，单位 m&#x2F;s^2</li>
-<li><code>az</code> {number} z 轴上的线性加速度，单位 m&#x2F;s^2</li>
-</ul>
-</li>
-<li><p><code>ambient_temperature</code> 环境温度传感器，大部分设备并不支持，参数<code>(event, t)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>t</code> {number} 环境温度，单位摄氏度。</li>
-</ul>
-</li>
-<li><p><code>light</code> 光线传感器，参数<code>(event, light)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>light</code> {number} 环境光强度，单位 lux</li>
-</ul>
-</li>
-<li><p><code>pressure</code> 压力传感器，参数<code>(event, p)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>p</code> {number} 大气压，单位 hPa</li>
-</ul>
-</li>
-<li><p><code>proximity</code> 距离传感器，参数<code>(event, distance)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>distance</code> {number} 一般指设备前置摄像头旁边的距离传感器到前方障碍物的距离，并且很多设备上这个值只有两种情况：当障碍物较近时该值为 0，当障碍物较远或在范围内没有障碍物时该值为 5</li>
-</ul>
-</li>
-<li><p><code>relative_humidity</code> 湿度传感器，大部分设备并不支持，参数<code>(event, rh)</code>:</p>
-<ul>
-<li><code>event</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensorevent">SensorEvent</a> 传感器事件，用于获取传感器数据变化时的所有信息</li>
-<li><code>rh</code> {number} 相对湿度，范围为 0~100（百分比）</li>
-</ul>
-</li>
-</ul>
-<h2 id="sensors-register-sensorName-delay"><a href="#sensors-register-sensorName-delay" class="headerlink" title="sensors.register(sensorName[, delay])"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensorsregistersensorname-delay">sensors.register(sensorName[, delay])</a></h2><ul>
-<li><code>sensorName</code> {string} 传感器名称，常用的传感器名称如上面所述</li>
-<li><code>delay</code> {number} 传感器数据更新频率，可选，默认为<code>sensors.delay.normal</code>。可用的值如下：<ul>
-<li><code>sensors.delay.normal</code> 正常频率</li>
-<li><code>sensors.delay.ui</code> 适合于用户界面的更新频率</li>
-<li><code>sensors.delay.game</code> 适合于游戏的更新频率</li>
-<li><code>sensors.delay.fastest</code> 最快的更新频率】</li>
-</ul>
-</li>
-<li>返回 <a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmiiter</a></li>
-</ul>
-<p>注册一个传感器监听并返回<a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>。</p>
-<p>例如:</p>
-<pre><code>console.show();
-//注册传感器监听
-var sensor = sensors.register(&quot;gravity&quot;);
-if(sensor == null)&#123;
-    toast(&quot;不支持重力传感器&quot;);
-    exit();
-&#125;
-//监听数据
-sensor.on(&quot;change&quot;, (gx, gy, gz)=&gt;&#123;
-    log(&quot;重力加速度: %d, %d, %d&quot;, gx, gy, gz);
-&#125;);
-</code></pre>
-<p>可以通过 delay 参数来指定传感器数据的更新频率，例如：</p>
-<pre><code>var sensor = sensors.register(&quot;gravity&quot;, sensors.delay.game);
-</code></pre>
-<p>另外，如果不支持<code>sensorName</code>所指定的传感器，那么该函数将返回<code>null</code>；但如果<code>sensors.ignoresUnsupportedSensor</code>的值被设置为<code>true</code>, 则该函数会返回一个不会分发任何传感器事件的<a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>。</p>
-<p>例如:</p>
-<pre><code>sensors.ignoresUnsupportedSensor = true;
-//无需null判断
-sensors.register(&quot;gravity&quot;).on(&quot;change&quot;, (gx, gy, gz)=&gt;&#123;
-    log(&quot;重力加速度: %d, %d, %d&quot;, gx, gy, gz);
-&#125;);
-</code></pre>
-<p>更多信息，参见<a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a>和<a href="http://doc.autoxjs.com/#/sensors?id=ignoresunsupportedsensor">sensors.ignoresUnsupportedSensor</a>。</p>
-<h2 id="sensors-unregister-emitter"><a href="#sensors-unregister-emitter" class="headerlink" title="sensors.unregister(emitter)"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensorsunregisteremitter">sensors.unregister(emitter)</a></h2><ul>
-<li><code>emiiter</code> <a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a></li>
-</ul>
-<p>注销该传感器监听器。被注销的监听器将不再能监听传感器数据。</p>
-<pre><code>//注册一个传感器监听器
-var sensor = sensors.register(&quot;gravity&quot;);
-if(sensor == null)&#123;
-    exit();
-&#125;
-//2秒后注销该监听器
-setTimeout(()=&gt; &#123;
-    sensors.unregister(sensor);
-&#125;, 2000);
-</code></pre>
-<h2 id="sensors-unregisterAll"><a href="#sensors-unregisterAll" class="headerlink" title="sensors.unregisterAll()"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensorsunregisterall">sensors.unregisterAll()</a></h2><p>注销所有传感器监听器。</p>
-<h2 id="sensors-ignoresUnsupportedSensor"><a href="#sensors-ignoresUnsupportedSensor" class="headerlink" title="sensors.ignoresUnsupportedSensor"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensorsignoresunsupportedsensor">sensors.ignoresUnsupportedSensor</a></h2><ul>
-<li>{boolean}</li>
-</ul>
-<p>表示是否忽略不支持的传感器。如果该值被设置为<code>true</code>，则函数<code>sensors.register()</code>即使对不支持的传感器也会返回一个无任何数据的虚拟传感器监听，也就是<code>sensors.register()</code>不会返回<code>null</code>从而避免非空判断，并且此时会触发<code>sensors</code>的”unsupported_sensor”事件。</p>
-<pre><code>//忽略不支持的传感器
-sensors.ignoresUnsupportedSensor = true;
-//监听有不支持的传感器时的事件
-sensors.on(&quot;unsupported_sensor&quot;, function(sensorName)&#123;
-    toastLog(&quot;不支持的传感器: &quot; + sensorName);
-&#125;);
-//随便注册一个不存在的传感器。
-log(sensors.register(&quot;aaabbb&quot;));
-</code></pre>
-<h2 id="事件-‘unsupported-sensor’"><a href="#事件-‘unsupported-sensor’" class="headerlink" title="事件: ‘unsupported_sensor’"></a><a href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39unsupported_sensor39">事件: ‘unsupported_sensor’</a></h2><ul>
-<li><code>sensorName</code> {string} 不支持的传感器名称</li>
-</ul>
-<p>当<code>sensors.ignoresUnsupportedSensor</code>被设置为<code>true</code>并且有不支持的传感器被注册时触发该事件。事件参数的传感器名称。</p>
-<h2 id="SensorEventEmitter"><a href="#SensorEventEmitter" class="headerlink" title="SensorEventEmitter"></a><a href="http://doc.autoxjs.com/#/sensors?id=sensoreventemitter">SensorEventEmitter</a></h2><p>注册传感器返回的对象，其本身是一个 EventEmmiter，用于监听传感器事件。</p>
-<h2 id="事件-‘change’"><a href="#事件-‘change’" class="headerlink" title="事件: ‘change’"></a><a href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39change39">事件: ‘change’</a></h2><ul>
-<li><code>..args</code> {Any} 传感器参数</li>
-</ul>
-<p>当传感器数据改变时触发该事件；该事件触发的最高频繁由<code>sensors.register()</code>指定的 delay 参数决定。</p>
-<p>事件参数根据传感器类型不同而不同，具体参见本章最前面的列表。</p>
-<p>一个监听光线传感器和加速度传感器并且每 0.5 秒获取一个数据并最终写入一个 csv 表格文件的例子如下：</p>
-<pre><code>//csv文件路径
-cosnt csvPath = &quot;/sdcard/data.csv&quot;;
-//记录光线传感器的数据
-var light = 0;
-//记录加速度传感器的数据
-var ax = 0;
-var ay = 0;
-var az = 0;
-//监听光线传感器
-sensors.register(&quot;light&quot;, sensors.delay.fastest)
-    .on(&quot;change&quot;, l =&gt; &#123;
-        light = l;
-    &#125;);
-//监听加速度传感器
-sensors.register(&quot;accelerometer&quot;, sensors.delay.fastest)
-    .on(&quot;change&quot;, (ax0, ay0, az0) =&gt; &#123;
-        ax = ax0;
-        ay = ay0;
-        az = az0;
-    &#125;);
-
-var file = open(csvPath, &quot;w&quot;);
-//写csv表格头
-file.writeline(&quot;light,ax,ay,az&quot;)
-//每0.5秒获取一次数据并写入文件
-setInterval(()=&gt;&#123;
-    file.writeline(util.format(&quot;%d,%d,%d,%d&quot;, light, ax, ay, az));
-&#125;, 500);
-//10秒后退出并打开文件
-setTimeout(()=&gt;&#123;
-    file.close();
-    sensors.unregsiterAll();
-    app.viewFile(csvPath);
-&#125;, 10 * 1000);
-</code></pre>
-<h2 id="事件-‘accuracy-change’"><a href="#事件-‘accuracy-change’" class="headerlink" title="事件: ‘accuracy_change’"></a><a href="http://doc.autoxjs.com/#/sensors?id=%e4%ba%8b%e4%bb%b6-39accuracy_change39">事件: ‘accuracy_change’</a></h2><ul>
-<li><code>accuracy</code> {number} 表示传感器精度。为以下值之一:<ul>
-<li>-1 传感器未连接</li>
-<li>0 传感器不可读</li>
-<li>1 低精度</li>
-<li>2 中精度</li>
-<li>3 高精度</li>
-</ul>
-</li>
-</ul>
-<p>当传感器精度改变时会触发的事件。比较少用。</p>
-]]></content>
-      <categories>
-        <category>软件使用教程</category>
-        <category>autojs</category>
-      </categories>
-      <tags>
-        <tag>AutoX.js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>协程</title>
-    <url>//software-use/AutoXjs/bluebird.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="协程"><a href="#协程" class="headerlink" title="协程"></a><a href="http://doc.autoxjs.com/#/continuation?id=%e5%8d%8f%e7%a8%8b">协程</a></h1><h2 id="协程-1"><a href="#协程-1" class="headerlink" title="协程"></a><a href="http://doc.autoxjs.com/#/continuation?id=%e5%8d%8f%e7%a8%8b">协程</a></h2><p>见 App 中 <code>示例代码 / 协程</code></p>
-<h2 id="Promise-coroutine"><a href="#Promise-coroutine" class="headerlink" title="Promise.coroutine()"></a><a href="http://doc.autoxjs.com/#/continuation?id=promisecoroutine">Promise.coroutine()</a></h2><p><strong>v6.3.7 新增</strong> 在该版本引入bluebird后你可以使用bluebird带来的一项协程特性，这个方法接收一个<strong>Generator 函数</strong>作为参数，函数内部可以像<strong>async函数</strong>一样编写，返回一个返回值为<code>Promise</code>的函数，说起来可能有点难以理解，具体看下方例子</p>
-<pre><code>//async函数写法
-let main = async function(s) &#123;
-    var result = await Promise.resolve(&quot;value:&quot;+s);
-    return result;
-&#125;
-//Generator 函数写法
-let main = Promise.coroutine(function*(s) &#123;
-    var result = yield Promise.resolve(&quot;value:&quot;+s);
-    return result;
-&#125;)
-
-main(&#39;test&#39;).then(log)
-</code></pre>
-<p>可以看到只要将await关键换成yield就能够代替还不支持的async函数，下方是一个异步循环的例子</p>
-<pre><code>let main = Promise.coroutine(function*(size) &#123;
-    for (var i = 0; i &lt; size; i++) &#123;
-        yield Promise.delay(1000);
-        log(i);
-    &#125;
-    log(&#39;end&#39;)
-&#125;)
-main(10);//在控制台每秒输出一个数字
-</code></pre>
-<p>与async函数不同的是yield关键字作为表达式使用时必须带上圆括号，否则会有语法错误，在默认情况下yield后面只能是Promise或带有then方法的对象，要处理其他类型数据需要使用<code>Promise.coroutine.addYieldHandler()</code>添加处理器</p>
-<h2 id="Promise-coroutine-addYieldHandler-handler"><a href="#Promise-coroutine-addYieldHandler-handler" class="headerlink" title="Promise.coroutine.addYieldHandler(handler)"></a><a href="http://doc.autoxjs.com/#/continuation?id=promisecoroutineaddyieldhandlerhandler">Promise.coroutine.addYieldHandler(handler)</a></h2><ul>
-<li>handler {function} 处理函数</li>
-</ul>
-<p>函数的参数为yield 的导出，反回值为yield的反回</p>
 ]]></content>
       <categories>
         <category>软件使用教程</category>
@@ -11161,151 +11247,6 @@ e.getEngine().emit(&quot;say&quot;, &quot;你好&quot;);
       </tags>
   </entry>
   <entry>
-    <title>悬浮窗 floaty</title>
-    <url>//software-use/AutoXjs/floaty.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Floaty"><a href="#Floaty" class="headerlink" title="Floaty"></a><a href="http://doc.autoxjs.com/#/floaty?id=floaty">Floaty</a></h2><p>floaty模块提供了悬浮窗的相关函数，可以在屏幕上显示自定义悬浮窗，控制悬浮窗大小、位置等。</p>
-<p>悬浮窗在脚本停止运行时会自动关闭，因此，要保持悬浮窗不被关闭，可以用一个空的setInterval来实现，例如：</p>
-<pre><code>setInterval(()=&gt;&#123;&#125;, 1000);
-</code></pre>
-<h2 id="Floaty-1"><a href="#Floaty-1" class="headerlink" title="Floaty"></a><a href="http://doc.autoxjs.com/#/floaty?id=floaty-1">Floaty</a></h2><h2 id="floaty-checkPermission"><a href="#floaty-checkPermission" class="headerlink" title="floaty.checkPermission()"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatycheckpermission">floaty.checkPermission()</a></h2><p><strong>[4.2.17 新增]</strong></p>
-<ul>
-<li>返回 {boolean}</li>
-</ul>
-<p>返回当前应用是否有悬浮窗权限。（不会触发请求权限操作）</p>
-<h2 id="floaty-requestPermission"><a href="#floaty-requestPermission" class="headerlink" title="floaty.requestPermission()"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatyrequestpermission">floaty.requestPermission()</a></h2><p><strong>[4.2.17 新增]</strong></p>
-<p>跳转到系统的悬浮窗权限请求界面。</p>
-<pre><code>if (!floaty.checkPermission()) &#123;
-    // 没有悬浮窗权限，提示用户并跳转请求
-    toast(&quot;本脚本需要悬浮窗权限来显示悬浮窗，请在随后的界面中允许并重新运行本脚本。&quot;);
-    floaty.requestPermission();
-    exit();
-&#125; else &#123;
-    toastLog(&#39;已有悬浮窗权限&#39;);
-&#125;
-</code></pre>
-<h2 id="floaty-window-layout"><a href="#floaty-window-layout" class="headerlink" title="floaty.window(layout)"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatywindowlayout">floaty.window(layout)</a></h2><ul>
-<li><code>layout</code> {xml} | {View} 悬浮窗界面的XML或者View</li>
-</ul>
-<p>指定悬浮窗的布局，创建并<strong>显示</strong>一个悬浮窗，返回一个<a href="http://doc.autoxjs.com/#/floaty?id=floatywindow">FloatyWindow</a>对象。</p>
-<p>该悬浮窗自带关闭、调整大小、调整位置按键，可根据需要调用<code>setAdjustEnabled()</code>函数来显示或隐藏。</p>
-<p>其中layout参数可以是xml布局或者一个View，更多信息参见ui模块的说明。</p>
-<p>例子：</p>
-<pre><code>var w = floaty.window(
-    &lt;frame gravity=&quot;center&quot;&gt;
-        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
-    &lt;/frame&gt;
-);
-setTimeout(()=&gt;&#123;
-    w.close();
-&#125;, 2000);
-</code></pre>
-<p>这段代码运行后将会在屏幕上显示悬浮文字，并在两秒后消失。</p>
-<p>另外，因为脚本运行的线程不是UI线程，而所有对控件的修改操作需要在UI线程执行，此时需要用<code>ui.run</code>，例如:</p>
-<pre><code>ui.run(function()&#123;
-    w.text.setText(&quot;文本&quot;);
-&#125;);
-</code></pre>
-<p>有关返回的<code>FloatyWindow</code>对象的说明，参见下面的<code>FloatyWindow</code>章节。</p>
-<h2 id="floaty-rawWindow-layout"><a href="#floaty-rawWindow-layout" class="headerlink" title="floaty.rawWindow(layout)"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindowlayout">floaty.rawWindow(layout)</a></h2><ul>
-<li><code>layout</code> {xml} | {View} 悬浮窗界面的XML或者View</li>
-</ul>
-<p>指定悬浮窗的布局，创建并<strong>显示</strong>一个原始悬浮窗，返回一个<a href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindow">FloatyRawWindow</a>对象。</p>
-<p>与<code>floaty.window()</code>函数不同的是，该悬浮窗不会增加任何额外设施（例如调整大小、位置按钮），您可以根据自己需要编写任何布局。</p>
-<p>而且，该悬浮窗支持完全全屏，可以覆盖状态栏，因此可以做护眼模式之类的应用。</p>
-<pre><code>var w = floaty.rawWindow(
-    &lt;frame gravity=&quot;center&quot;&gt;
-        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
-    &lt;/frame&gt;
-);
-
-w.setPosition(500, 500);
-
-setTimeout(()=&gt;&#123;
-    w.close();
-&#125;, 2000);
-</code></pre>
-<p>这段代码运行后将会在屏幕上显示悬浮文字，并在两秒后消失。</p>
-<p>有关返回的<code>FloatyRawWindow</code>对象的说明，参见下面的<code>FloatyRawWindow</code>章节。</p>
-<h2 id="floaty-closeAll"><a href="#floaty-closeAll" class="headerlink" title="floaty.closeAll()"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatycloseall">floaty.closeAll()</a></h2><p>关闭所有本脚本的悬浮窗。</p>
-<h2 id="FloatyWindow"><a href="#FloatyWindow" class="headerlink" title="FloatyWindow"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatywindow">FloatyWindow</a></h2><p>悬浮窗对象，可通过<code>FloatyWindow.&#123;id&#125;</code>获取悬浮窗界面上的元素。例如, 悬浮窗window上一个控件的id为aaa, 那么<code>window.aaa</code>即可获取到该控件，类似于ui。</p>
-<h2 id="window-setAdjustEnabled-enabled"><a href="#window-setAdjustEnabled-enabled" class="headerlink" title="window.setAdjustEnabled(enabled)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetadjustenabledenabled">window.setAdjustEnabled(enabled)</a></h2><ul>
-<li><code>enabled</code> {boolean} 是否启用悬浮窗调整(大小、位置)</li>
-</ul>
-<p>如果enabled为true，则在悬浮窗左上角、右上角显示可供位置、大小调整的标示，就像控制台一样； 如果enabled为false，则隐藏上述标示。</p>
-<h2 id="window-setPosition-x-y"><a href="#window-setPosition-x-y" class="headerlink" title="window.setPosition(x, y)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetpositionx-y">window.setPosition(x, y)</a></h2><ul>
-<li><code>x</code> {number} x</li>
-<li><code>x</code> {number} y</li>
-</ul>
-<p>设置悬浮窗位置。</p>
-<h2 id="window-getX"><a href="#window-getX" class="headerlink" title="window.getX()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetx">window.getX()</a></h2><p>返回悬浮窗位置的X坐标。</p>
-<h2 id="window-getY"><a href="#window-getY" class="headerlink" title="window.getY()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgety">window.getY()</a></h2><p>返回悬浮窗位置的Y坐标。</p>
-<h2 id="window-setSize-width-height"><a href="#window-setSize-width-height" class="headerlink" title="window.setSize(width, height)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetsizewidth-height">window.setSize(width, height)</a></h2><ul>
-<li><code>width</code> {number} 宽度</li>
-<li><code>height</code> {number} 高度</li>
-</ul>
-<p>设置悬浮窗宽高。</p>
-<h2 id="window-getWidht"><a href="#window-getWidht" class="headerlink" title="window.getWidht()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetwidht">window.getWidht()</a></h2><p>返回悬浮窗宽度。</p>
-<h2 id="window-getHeight"><a href="#window-getHeight" class="headerlink" title="window.getHeight()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetheight">window.getHeight()</a></h2><p>返回悬浮窗高度。</p>
-<h2 id="window-close"><a href="#window-close" class="headerlink" title="window.close()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowclose">window.close()</a></h2><p>关闭悬浮窗。如果悬浮窗已经是关闭状态，则此函数将不执行任何操作。</p>
-<p>被关闭后的悬浮窗不能再显示。</p>
-<h2 id="window-exitOnClose"><a href="#window-exitOnClose" class="headerlink" title="window.exitOnClose()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowexitonclose">window.exitOnClose()</a></h2><p>使悬浮窗被关闭时自动结束脚本运行。</p>
-<h2 id="FloatyRawWindow"><a href="#FloatyRawWindow" class="headerlink" title="FloatyRawWindow"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindow">FloatyRawWindow</a></h2><p>原始悬浮窗对象，可通过<code>window.&#123;id&#125;</code>获取悬浮窗界面上的元素。例如, 悬浮窗window上一个控件的id为aaa, 那么<code>window.aaa</code>即可获取到该控件，类似于ui。</p>
-<h2 id="window-setTouchable-touchable"><a href="#window-setTouchable-touchable" class="headerlink" title="window.setTouchable(touchable)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsettouchabletouchable">window.setTouchable(touchable)</a></h2><ul>
-<li><code>touchable</code> {Boolean} 是否可触摸</li>
-</ul>
-<p>设置悬浮窗是否可触摸，如果为true, 则悬浮窗将接收到触摸、点击等事件并且无法继续传递到悬浮窗下面；如果为false, 悬浮窗上的触摸、点击等事件将被直接传递到悬浮窗下面。处于安全考虑，被悬浮窗接收的触摸事情无法再继续传递到下层。</p>
-<p>可以用此特性来制作护眼模式脚本。</p>
-<pre><code>var w = floaty.rawWindow(
-    &lt;frame gravity=&quot;center&quot; bg=&quot;#44ffcc00&quot;/&gt;
-);
-
-w.setSize(-1, -1);
-w.setTouchable(false);
-
-setTimeout(()=&gt;&#123;
-    w.close();
-&#125;, 4000);
-</code></pre>
-<h2 id="window-setPosition-x-y-1"><a href="#window-setPosition-x-y-1" class="headerlink" title="window.setPosition(x, y)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetpositionx-y-1">window.setPosition(x, y)</a></h2><ul>
-<li><code>x</code> {number} x</li>
-<li><code>x</code> {number} y</li>
-</ul>
-<p>设置悬浮窗位置。</p>
-<h2 id="window-getX-1"><a href="#window-getX-1" class="headerlink" title="window.getX()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetx-1">window.getX()</a></h2><p>返回悬浮窗位置的X坐标。</p>
-<h2 id="window-getY-1"><a href="#window-getY-1" class="headerlink" title="window.getY()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgety-1">window.getY()</a></h2><p>返回悬浮窗位置的Y坐标。</p>
-<h2 id="window-setSize-width-height-1"><a href="#window-setSize-width-height-1" class="headerlink" title="window.setSize(width, height)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetsizewidth-height-1">window.setSize(width, height)</a></h2><ul>
-<li><code>width</code> {number} 宽度</li>
-<li><code>height</code> {number} 高度</li>
-</ul>
-<p>设置悬浮窗宽高。</p>
-<p>特别地，如果设置为-1，则为占满全屏；设置为-2则为根据悬浮窗内容大小而定。例如：</p>
-<pre><code>var w = floaty.rawWindow(
-    &lt;frame gravity=&quot;center&quot; bg=&quot;#77ff0000&quot;&gt;
-        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
-    &lt;/frame&gt;
-);
-
-w.setSize(-1, -1);
-
-setTimeout(()=&gt;&#123;
-    w.close();
-&#125;, 2000);
-</code></pre>
-<h2 id="window-getWidht-1"><a href="#window-getWidht-1" class="headerlink" title="window.getWidht()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetwidht-1">window.getWidht()</a></h2><p>返回悬浮窗宽度。</p>
-<h2 id="window-getHeight-1"><a href="#window-getHeight-1" class="headerlink" title="window.getHeight()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetheight-1">window.getHeight()</a></h2><p>返回悬浮窗高度。</p>
-<h2 id="window-close-1"><a href="#window-close-1" class="headerlink" title="window.close()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowclose-1">window.close()</a></h2><p>关闭悬浮窗。如果悬浮窗已经是关闭状态，则此函数将不执行任何操作。</p>
-<p>被关闭后的悬浮窗不能再显示。</p>
-<h2 id="window-exitOnClose-1"><a href="#window-exitOnClose-1" class="headerlink" title="window.exitOnClose()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowexitonclose-1">window.exitOnClose()</a></h2><p>使悬浮窗被关闭时自动结束脚本运行。</p>
-]]></content>
-      <categories>
-        <category>软件使用教程</category>
-        <category>autojs</category>
-      </categories>
-      <tags>
-        <tag>AutoX.js</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>shell</title>
     <url>//software-use/AutoXjs/shell.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>shell 即 Unix Shell，在类 Unix 系统提供与操作系统交互的一系列命令。</p>
@@ -11724,6 +11665,151 @@ log(result.text)
 </code></pre>
 </li>
 </ul>
+]]></content>
+      <categories>
+        <category>软件使用教程</category>
+        <category>autojs</category>
+      </categories>
+      <tags>
+        <tag>AutoX.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>悬浮窗 floaty</title>
+    <url>//software-use/AutoXjs/floaty.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Floaty"><a href="#Floaty" class="headerlink" title="Floaty"></a><a href="http://doc.autoxjs.com/#/floaty?id=floaty">Floaty</a></h2><p>floaty模块提供了悬浮窗的相关函数，可以在屏幕上显示自定义悬浮窗，控制悬浮窗大小、位置等。</p>
+<p>悬浮窗在脚本停止运行时会自动关闭，因此，要保持悬浮窗不被关闭，可以用一个空的setInterval来实现，例如：</p>
+<pre><code>setInterval(()=&gt;&#123;&#125;, 1000);
+</code></pre>
+<h2 id="Floaty-1"><a href="#Floaty-1" class="headerlink" title="Floaty"></a><a href="http://doc.autoxjs.com/#/floaty?id=floaty-1">Floaty</a></h2><h2 id="floaty-checkPermission"><a href="#floaty-checkPermission" class="headerlink" title="floaty.checkPermission()"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatycheckpermission">floaty.checkPermission()</a></h2><p><strong>[4.2.17 新增]</strong></p>
+<ul>
+<li>返回 {boolean}</li>
+</ul>
+<p>返回当前应用是否有悬浮窗权限。（不会触发请求权限操作）</p>
+<h2 id="floaty-requestPermission"><a href="#floaty-requestPermission" class="headerlink" title="floaty.requestPermission()"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatyrequestpermission">floaty.requestPermission()</a></h2><p><strong>[4.2.17 新增]</strong></p>
+<p>跳转到系统的悬浮窗权限请求界面。</p>
+<pre><code>if (!floaty.checkPermission()) &#123;
+    // 没有悬浮窗权限，提示用户并跳转请求
+    toast(&quot;本脚本需要悬浮窗权限来显示悬浮窗，请在随后的界面中允许并重新运行本脚本。&quot;);
+    floaty.requestPermission();
+    exit();
+&#125; else &#123;
+    toastLog(&#39;已有悬浮窗权限&#39;);
+&#125;
+</code></pre>
+<h2 id="floaty-window-layout"><a href="#floaty-window-layout" class="headerlink" title="floaty.window(layout)"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatywindowlayout">floaty.window(layout)</a></h2><ul>
+<li><code>layout</code> {xml} | {View} 悬浮窗界面的XML或者View</li>
+</ul>
+<p>指定悬浮窗的布局，创建并<strong>显示</strong>一个悬浮窗，返回一个<a href="http://doc.autoxjs.com/#/floaty?id=floatywindow">FloatyWindow</a>对象。</p>
+<p>该悬浮窗自带关闭、调整大小、调整位置按键，可根据需要调用<code>setAdjustEnabled()</code>函数来显示或隐藏。</p>
+<p>其中layout参数可以是xml布局或者一个View，更多信息参见ui模块的说明。</p>
+<p>例子：</p>
+<pre><code>var w = floaty.window(
+    &lt;frame gravity=&quot;center&quot;&gt;
+        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
+    &lt;/frame&gt;
+);
+setTimeout(()=&gt;&#123;
+    w.close();
+&#125;, 2000);
+</code></pre>
+<p>这段代码运行后将会在屏幕上显示悬浮文字，并在两秒后消失。</p>
+<p>另外，因为脚本运行的线程不是UI线程，而所有对控件的修改操作需要在UI线程执行，此时需要用<code>ui.run</code>，例如:</p>
+<pre><code>ui.run(function()&#123;
+    w.text.setText(&quot;文本&quot;);
+&#125;);
+</code></pre>
+<p>有关返回的<code>FloatyWindow</code>对象的说明，参见下面的<code>FloatyWindow</code>章节。</p>
+<h2 id="floaty-rawWindow-layout"><a href="#floaty-rawWindow-layout" class="headerlink" title="floaty.rawWindow(layout)"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindowlayout">floaty.rawWindow(layout)</a></h2><ul>
+<li><code>layout</code> {xml} | {View} 悬浮窗界面的XML或者View</li>
+</ul>
+<p>指定悬浮窗的布局，创建并<strong>显示</strong>一个原始悬浮窗，返回一个<a href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindow">FloatyRawWindow</a>对象。</p>
+<p>与<code>floaty.window()</code>函数不同的是，该悬浮窗不会增加任何额外设施（例如调整大小、位置按钮），您可以根据自己需要编写任何布局。</p>
+<p>而且，该悬浮窗支持完全全屏，可以覆盖状态栏，因此可以做护眼模式之类的应用。</p>
+<pre><code>var w = floaty.rawWindow(
+    &lt;frame gravity=&quot;center&quot;&gt;
+        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
+    &lt;/frame&gt;
+);
+
+w.setPosition(500, 500);
+
+setTimeout(()=&gt;&#123;
+    w.close();
+&#125;, 2000);
+</code></pre>
+<p>这段代码运行后将会在屏幕上显示悬浮文字，并在两秒后消失。</p>
+<p>有关返回的<code>FloatyRawWindow</code>对象的说明，参见下面的<code>FloatyRawWindow</code>章节。</p>
+<h2 id="floaty-closeAll"><a href="#floaty-closeAll" class="headerlink" title="floaty.closeAll()"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatycloseall">floaty.closeAll()</a></h2><p>关闭所有本脚本的悬浮窗。</p>
+<h2 id="FloatyWindow"><a href="#FloatyWindow" class="headerlink" title="FloatyWindow"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatywindow">FloatyWindow</a></h2><p>悬浮窗对象，可通过<code>FloatyWindow.&#123;id&#125;</code>获取悬浮窗界面上的元素。例如, 悬浮窗window上一个控件的id为aaa, 那么<code>window.aaa</code>即可获取到该控件，类似于ui。</p>
+<h2 id="window-setAdjustEnabled-enabled"><a href="#window-setAdjustEnabled-enabled" class="headerlink" title="window.setAdjustEnabled(enabled)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetadjustenabledenabled">window.setAdjustEnabled(enabled)</a></h2><ul>
+<li><code>enabled</code> {boolean} 是否启用悬浮窗调整(大小、位置)</li>
+</ul>
+<p>如果enabled为true，则在悬浮窗左上角、右上角显示可供位置、大小调整的标示，就像控制台一样； 如果enabled为false，则隐藏上述标示。</p>
+<h2 id="window-setPosition-x-y"><a href="#window-setPosition-x-y" class="headerlink" title="window.setPosition(x, y)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetpositionx-y">window.setPosition(x, y)</a></h2><ul>
+<li><code>x</code> {number} x</li>
+<li><code>x</code> {number} y</li>
+</ul>
+<p>设置悬浮窗位置。</p>
+<h2 id="window-getX"><a href="#window-getX" class="headerlink" title="window.getX()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetx">window.getX()</a></h2><p>返回悬浮窗位置的X坐标。</p>
+<h2 id="window-getY"><a href="#window-getY" class="headerlink" title="window.getY()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgety">window.getY()</a></h2><p>返回悬浮窗位置的Y坐标。</p>
+<h2 id="window-setSize-width-height"><a href="#window-setSize-width-height" class="headerlink" title="window.setSize(width, height)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetsizewidth-height">window.setSize(width, height)</a></h2><ul>
+<li><code>width</code> {number} 宽度</li>
+<li><code>height</code> {number} 高度</li>
+</ul>
+<p>设置悬浮窗宽高。</p>
+<h2 id="window-getWidht"><a href="#window-getWidht" class="headerlink" title="window.getWidht()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetwidht">window.getWidht()</a></h2><p>返回悬浮窗宽度。</p>
+<h2 id="window-getHeight"><a href="#window-getHeight" class="headerlink" title="window.getHeight()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetheight">window.getHeight()</a></h2><p>返回悬浮窗高度。</p>
+<h2 id="window-close"><a href="#window-close" class="headerlink" title="window.close()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowclose">window.close()</a></h2><p>关闭悬浮窗。如果悬浮窗已经是关闭状态，则此函数将不执行任何操作。</p>
+<p>被关闭后的悬浮窗不能再显示。</p>
+<h2 id="window-exitOnClose"><a href="#window-exitOnClose" class="headerlink" title="window.exitOnClose()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowexitonclose">window.exitOnClose()</a></h2><p>使悬浮窗被关闭时自动结束脚本运行。</p>
+<h2 id="FloatyRawWindow"><a href="#FloatyRawWindow" class="headerlink" title="FloatyRawWindow"></a><a href="http://doc.autoxjs.com/#/floaty?id=floatyrawwindow">FloatyRawWindow</a></h2><p>原始悬浮窗对象，可通过<code>window.&#123;id&#125;</code>获取悬浮窗界面上的元素。例如, 悬浮窗window上一个控件的id为aaa, 那么<code>window.aaa</code>即可获取到该控件，类似于ui。</p>
+<h2 id="window-setTouchable-touchable"><a href="#window-setTouchable-touchable" class="headerlink" title="window.setTouchable(touchable)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsettouchabletouchable">window.setTouchable(touchable)</a></h2><ul>
+<li><code>touchable</code> {Boolean} 是否可触摸</li>
+</ul>
+<p>设置悬浮窗是否可触摸，如果为true, 则悬浮窗将接收到触摸、点击等事件并且无法继续传递到悬浮窗下面；如果为false, 悬浮窗上的触摸、点击等事件将被直接传递到悬浮窗下面。处于安全考虑，被悬浮窗接收的触摸事情无法再继续传递到下层。</p>
+<p>可以用此特性来制作护眼模式脚本。</p>
+<pre><code>var w = floaty.rawWindow(
+    &lt;frame gravity=&quot;center&quot; bg=&quot;#44ffcc00&quot;/&gt;
+);
+
+w.setSize(-1, -1);
+w.setTouchable(false);
+
+setTimeout(()=&gt;&#123;
+    w.close();
+&#125;, 4000);
+</code></pre>
+<h2 id="window-setPosition-x-y-1"><a href="#window-setPosition-x-y-1" class="headerlink" title="window.setPosition(x, y)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetpositionx-y-1">window.setPosition(x, y)</a></h2><ul>
+<li><code>x</code> {number} x</li>
+<li><code>x</code> {number} y</li>
+</ul>
+<p>设置悬浮窗位置。</p>
+<h2 id="window-getX-1"><a href="#window-getX-1" class="headerlink" title="window.getX()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetx-1">window.getX()</a></h2><p>返回悬浮窗位置的X坐标。</p>
+<h2 id="window-getY-1"><a href="#window-getY-1" class="headerlink" title="window.getY()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgety-1">window.getY()</a></h2><p>返回悬浮窗位置的Y坐标。</p>
+<h2 id="window-setSize-width-height-1"><a href="#window-setSize-width-height-1" class="headerlink" title="window.setSize(width, height)"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowsetsizewidth-height-1">window.setSize(width, height)</a></h2><ul>
+<li><code>width</code> {number} 宽度</li>
+<li><code>height</code> {number} 高度</li>
+</ul>
+<p>设置悬浮窗宽高。</p>
+<p>特别地，如果设置为-1，则为占满全屏；设置为-2则为根据悬浮窗内容大小而定。例如：</p>
+<pre><code>var w = floaty.rawWindow(
+    &lt;frame gravity=&quot;center&quot; bg=&quot;#77ff0000&quot;&gt;
+        &lt;text id=&quot;text&quot;&gt;悬浮文字&lt;/text&gt;
+    &lt;/frame&gt;
+);
+
+w.setSize(-1, -1);
+
+setTimeout(()=&gt;&#123;
+    w.close();
+&#125;, 2000);
+</code></pre>
+<h2 id="window-getWidht-1"><a href="#window-getWidht-1" class="headerlink" title="window.getWidht()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetwidht-1">window.getWidht()</a></h2><p>返回悬浮窗宽度。</p>
+<h2 id="window-getHeight-1"><a href="#window-getHeight-1" class="headerlink" title="window.getHeight()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowgetheight-1">window.getHeight()</a></h2><p>返回悬浮窗高度。</p>
+<h2 id="window-close-1"><a href="#window-close-1" class="headerlink" title="window.close()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowclose-1">window.close()</a></h2><p>关闭悬浮窗。如果悬浮窗已经是关闭状态，则此函数将不执行任何操作。</p>
+<p>被关闭后的悬浮窗不能再显示。</p>
+<h2 id="window-exitOnClose-1"><a href="#window-exitOnClose-1" class="headerlink" title="window.exitOnClose()"></a><a href="http://doc.autoxjs.com/#/floaty?id=windowexitonclose-1">window.exitOnClose()</a></h2><p>使悬浮窗被关闭时自动结束脚本运行。</p>
 ]]></content>
       <categories>
         <category>软件使用教程</category>
@@ -14046,254 +14132,6 @@ threads.start(function () &#123;
       </tags>
   </entry>
   <entry>
-    <title>文件管理 files</title>
-    <url>//software-use/AutoXjs/files.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Files"><a href="#Files" class="headerlink" title="Files"></a><a href="http://doc.autoxjs.com/#/files?id=files">Files</a></h2><blockquote>
-<p>稳定性: 稳定</p>
-</blockquote>
-<p>files模块提供了一些常见的文件处理，包括文件读写、移动、复制、删掉等。</p>
-<p>一次性的文件读写可以直接使用<code>files.read()</code>, <code>files.write()</code>, <code>files.append()</code>等方便的函数，但如果需要频繁读写或随机读写，则使用<code>open()</code>函数打开一个文件对象来操作文件，并在操作完毕后调用<code>close()</code>函数关闭文件。</p>
-<h2 id="files-isFile-path"><a href="#files-isFile-path" class="headerlink" title="files.isFile(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesisfilepath">files.isFile(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>返回路径path是否是文件。</p>
-<pre><code>log(files.isDir(&quot;/sdcard/文件夹/&quot;)); //返回false
-log(files.isDir(&quot;/sdcard/文件.txt&quot;)); //返回true
-</code></pre>
-<h2 id="files-isDir-path"><a href="#files-isDir-path" class="headerlink" title="files.isDir(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesisdirpath">files.isDir(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>返回路径path是否是文件夹。</p>
-<pre><code>log(files.isDir(&quot;/sdcard/文件夹/&quot;)); //返回true
-log(files.isDir(&quot;/sdcard/文件.txt&quot;)); //返回false
-</code></pre>
-<h2 id="files-isEmptyDir-path"><a href="#files-isEmptyDir-path" class="headerlink" title="files.isEmptyDir(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesisemptydirpath">files.isEmptyDir(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>返回文件夹path是否为空文件夹。如果该路径并非文件夹，则直接返回<code>false</code>。</p>
-<h2 id="files-join-parent-child"><a href="#files-join-parent-child" class="headerlink" title="files.join(parent, child)"></a><a href="http://doc.autoxjs.com/#/files?id=filesjoinparent-child">files.join(parent, child)</a></h2><ul>
-<li><code>parent</code> {string} 父目录路径</li>
-<li><code>child</code> {string} 子路径</li>
-<li>返回 {string}</li>
-</ul>
-<p>连接两个路径并返回，例如<code>files.join(&quot;/sdcard/&quot;, &quot;1.txt&quot;)</code>返回”&#x2F;sdcard&#x2F;1.txt”。</p>
-<h2 id="files-create-path"><a href="#files-create-path" class="headerlink" title="files.create(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filescreatepath">files.create(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>创建一个文件或文件夹并返回是否创建成功。如果文件已经存在，则直接返回<code>false</code>。</p>
-<pre><code>files.create(&quot;/sdcard/新文件夹/&quot;);
-</code></pre>
-<h2 id="files-createWithDirs-path"><a href="#files-createWithDirs-path" class="headerlink" title="files.createWithDirs(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filescreatewithdirspath">files.createWithDirs(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>创建一个文件或文件夹并返回是否创建成功。如果文件所在文件夹不存在，则先创建他所在的一系列文件夹。如果文件已经存在，则直接返回<code>false</code>。</p>
-<pre><code>files.createWithDirs(&quot;/sdcard/新文件夹/新文件夹/新文件夹/1.txt&quot;);
-</code></pre>
-<h2 id="files-exists-path"><a href="#files-exists-path" class="headerlink" title="files.exists(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesexistspath">files.exists(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>返回在路径path处的文件是否存在。</p>
-<h2 id="files-ensureDir-path"><a href="#files-ensureDir-path" class="headerlink" title="files.ensureDir(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesensuredirpath">files.ensureDir(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-</ul>
-<p>确保路径path所在的文件夹存在。如果该路径所在文件夹不存在，则创建该文件夹。</p>
-<p>例如对于路径”&#x2F;sdcard&#x2F;Download&#x2F;ABC&#x2F;1.txt”，如果&#x2F;Download&#x2F;文件夹不存在，则会先创建Download，再创建ABC文件夹。</p>
-<h2 id="files-read-path-encoding-“utf-8”"><a href="#files-read-path-encoding-“utf-8”" class="headerlink" title="files.read(path[, encoding &#x3D; “utf-8”])"></a><a href="http://doc.autoxjs.com/#/files?id=filesreadpath-encoding-quotutf-8quot">files.read(path[, encoding &#x3D; “utf-8”])</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li><code>encoding</code> {string} 字符编码，可选，默认为utf-8</li>
-<li>返回 {string}</li>
-</ul>
-<p>读取文本文件path的所有内容并返回。如果文件不存在，则抛出<code>FileNotFoundException</code>。</p>
-<pre><code>log(files.read(&quot;/sdcard/1.txt&quot;));
-</code></pre>
-<h2 id="files-readBytes-path"><a href="#files-readBytes-path" class="headerlink" title="files.readBytes(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesreadbytespath">files.readBytes(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {byte[]}</li>
-</ul>
-<p>读取文件path的所有内容并返回一个字节数组。如果文件不存在，则抛出<code>FileNotFoundException</code>。</p>
-<p>注意，该数组是Java的数组，不具有JavaScript数组的forEach, slice等函数。</p>
-<p>一个以16进制形式打印文件的例子如下:</p>
-<pre><code>var data = files.readBytes(&quot;/sdcard/1.png&quot;);
-var sb = new java.lang.StringBuilder();
-for(var i = 0; i &lt; data.length; i++)&#123;
-    sb.append(data[i].toString(16));
-&#125;
-log(sb.toString());
-</code></pre>
-<h2 id="files-write-path-text-encoding-“utf-8”"><a href="#files-write-path-text-encoding-“utf-8”" class="headerlink" title="files.write(path, text[, encoding &#x3D; “utf-8”])"></a><a href="http://doc.autoxjs.com/#/files?id=fileswritepath-text-encoding-quotutf-8quot">files.write(path, text[, encoding &#x3D; “utf-8”])</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li><code>text</code> {string} 要写入的文本内容</li>
-<li><code>encoding</code> {string} 字符编码</li>
-</ul>
-<p>把text写入到文件path中。如果文件存在则覆盖，不存在则创建。</p>
-<pre><code>var text = &quot;文件内容&quot;;
-//写入文件
-files.write(&quot;/sdcard/1.txt&quot;, text);
-//用其他应用查看文件
-app.viewFile(&quot;/sdcard/1.txt&quot;);
-</code></pre>
-<h2 id="files-writeBytes-path-bytes"><a href="#files-writeBytes-path-bytes" class="headerlink" title="files.writeBytes(path, bytes)"></a><a href="http://doc.autoxjs.com/#/files?id=fileswritebytespath-bytes">files.writeBytes(path, bytes)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li><code>bytes</code> {byte[]} 字节数组，要写入的二进制数据</li>
-</ul>
-<p>把bytes写入到文件path中。如果文件存在则覆盖，不存在则创建。</p>
-<h2 id="files-append-path-text-encoding-‘utf-8’"><a href="#files-append-path-text-encoding-‘utf-8’" class="headerlink" title="files.append(path, text[, encoding &#x3D; ‘utf-8’])"></a><a href="http://doc.autoxjs.com/#/files?id=filesappendpath-text-encoding-39utf-839">files.append(path, text[, encoding &#x3D; ‘utf-8’])</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li><code>text</code> {string} 要写入的文本内容</li>
-<li><code>encoding</code> {string} 字符编码</li>
-</ul>
-<p>把text追加到文件path的末尾。如果文件不存在则创建。</p>
-<pre><code>var text = &quot;追加的文件内容&quot;;
-files.append(&quot;/sdcard/1.txt&quot;, text);
-files.append(&quot;/sdcard/1.txt&quot;, text);
-//用其他应用查看文件
-app.viewFile(&quot;/sdcard/1.txt&quot;);
-</code></pre>
-<h2 id="files-appendBytes-path-text-encoding-‘utf-8’"><a href="#files-appendBytes-path-text-encoding-‘utf-8’" class="headerlink" title="files.appendBytes(path, text[, encoding &#x3D; ‘utf-8’])"></a><a href="http://doc.autoxjs.com/#/files?id=filesappendbytespath-text-encoding-39utf-839">files.appendBytes(path, text[, encoding &#x3D; ‘utf-8’])</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li><code>bytes</code> {byte[]} 字节数组，要写入的二进制数据</li>
-</ul>
-<p>把bytes追加到文件path的末尾。如果文件不存在则创建。</p>
-<h2 id="files-copy-fromPath-toPath"><a href="#files-copy-fromPath-toPath" class="headerlink" title="files.copy(fromPath, toPath)"></a><a href="http://doc.autoxjs.com/#/files?id=filescopyfrompath-topath">files.copy(fromPath, toPath)</a></h2><ul>
-<li><code>fromPath</code> {string} 要复制的原文件路径</li>
-<li><code>toPath</code> {string} 复制到的文件路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>复制文件，返回是否复制成功。例如<code>files.copy(&quot;/sdcard/1.txt&quot;, &quot;/sdcard/Download/1.txt&quot;)</code>。</p>
-<h2 id="files-move-fromPath-toPath"><a href="#files-move-fromPath-toPath" class="headerlink" title="files.move(fromPath, toPath)"></a><a href="http://doc.autoxjs.com/#/files?id=filesmovefrompath-topath">files.move(fromPath, toPath)</a></h2><ul>
-<li><code>fromPath</code> {string} 要移动的原文件路径</li>
-<li><code>toPath</code> {string} 移动到的文件路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>移动文件，返回是否移动成功。例如<code>files.move(&quot;/sdcard/1.txt&quot;, &quot;/sdcard/Download/1.txt&quot;)</code>会把1.txt文件从sd卡根目录移动到Download文件夹。</p>
-<h2 id="files-rename-path-newName"><a href="#files-rename-path-newName" class="headerlink" title="files.rename(path, newName)"></a><a href="http://doc.autoxjs.com/#/files?id=filesrenamepath-newname">files.rename(path, newName)</a></h2><ul>
-<li><code>path</code> {string} 要重命名的原文件路径</li>
-<li><code>newName</code> {string} 要重命名的新文件名</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>重命名文件，并返回是否重命名成功。例如<code>files.rename(&quot;/sdcard/1.txt&quot;, &quot;2.txt&quot;)</code>。</p>
-<h2 id="files-renameWithoutExtension-path-newName"><a href="#files-renameWithoutExtension-path-newName" class="headerlink" title="files.renameWithoutExtension(path, newName)"></a><a href="http://doc.autoxjs.com/#/files?id=filesrenamewithoutextensionpath-newname">files.renameWithoutExtension(path, newName)</a></h2><ul>
-<li><code>path</code> {string} 要重命名的原文件路径</li>
-<li><code>newName</code> {string} 要重命名的新文件名</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>重命名文件，不包含拓展名，并返回是否重命名成功。例如<code>files.rename(&quot;/sdcard/1.txt&quot;, &quot;2&quot;)</code>会把”1.txt”重命名为”2.txt”。</p>
-<h2 id="files-getName-path"><a href="#files-getName-path" class="headerlink" title="files.getName(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesgetnamepath">files.getName(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {string}</li>
-</ul>
-<p>返回文件的文件名。例如<code>files.getName(&quot;/sdcard/1.txt&quot;)</code>返回”1.txt”。</p>
-<h2 id="files-getNameWithoutExtension-path"><a href="#files-getNameWithoutExtension-path" class="headerlink" title="files.getNameWithoutExtension(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesgetnamewithoutextensionpath">files.getNameWithoutExtension(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {string}</li>
-</ul>
-<p>返回不含拓展名的文件的文件名。例如<code>files.getName(&quot;/sdcard/1.txt&quot;)</code>返回”1”。</p>
-<h2 id="files-getExtension-path"><a href="#files-getExtension-path" class="headerlink" title="files.getExtension(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesgetextensionpath">files.getExtension(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {string}</li>
-</ul>
-<p>返回文件的拓展名。例如<code>files.getExtension(&quot;/sdcard/1.txt&quot;)</code>返回”txt”。</p>
-<h2 id="files-remove-path"><a href="#files-remove-path" class="headerlink" title="files.remove(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesremovepath">files.remove(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>删除文件或<strong>空文件夹</strong>，返回是否删除成功。</p>
-<h2 id="files-removeDir-path"><a href="#files-removeDir-path" class="headerlink" title="files.removeDir(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesremovedirpath">files.removeDir(path)</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li><code>path</code> {string} 路径</li>
-<li>返回 {boolean}</li>
-</ul>
-<p>删除文件夹，如果文件夹不为空，则删除该文件夹的所有内容再删除该文件夹，返回是否全部删除成功。</p>
-<h2 id="files-getSdcardPath"><a href="#files-getSdcardPath" class="headerlink" title="files.getSdcardPath()"></a><a href="http://doc.autoxjs.com/#/files?id=filesgetsdcardpath">files.getSdcardPath()</a></h2><ul>
-<li>返回 {string}</li>
-</ul>
-<p>返回SD卡路径。所谓SD卡，即外部存储器。</p>
-<h2 id="files-cwd"><a href="#files-cwd" class="headerlink" title="files.cwd()"></a><a href="http://doc.autoxjs.com/#/files?id=filescwd">files.cwd()</a></h2><ul>
-<li>返回 {string}</li>
-</ul>
-<p>返回脚本的”当前工作文件夹路径”。该路径指的是，如果脚本本身为脚本文件，则返回这个脚本文件所在目录；否则返回<code>null</code>获取其他设定路径。</p>
-<p>例如，对于脚本文件”&#x2F;sdcard&#x2F;脚本&#x2F;1.js”运行<code>files.cwd()</code>返回”&#x2F;sdcard&#x2F;脚本&#x2F;“。</p>
-<h2 id="files-path-relativePath"><a href="#files-path-relativePath" class="headerlink" title="files.path(relativePath)"></a><a href="http://doc.autoxjs.com/#/files?id=filespathrelativepath">files.path(relativePath)</a></h2><ul>
-<li><code>relativePath</code> {string} 相对路径</li>
-<li>返回 {string}</li>
-</ul>
-<p>返回相对路径对应的绝对路径。例如<code>files.path(&quot;./1.png&quot;)</code>，如果运行这个语句的脚本位于文件夹”&#x2F;sdcard&#x2F;脚本&#x2F;“中，则返回<code>&quot;/sdcard/脚本/1.png&quot;</code>。</p>
-<h2 id="files-listDir-path-filter"><a href="#files-listDir-path-filter" class="headerlink" title="files.listDir(path[, filter])"></a><a href="http://doc.autoxjs.com/#/files?id=fileslistdirpath-filter">files.listDir(path[, filter])</a></h2><ul>
-<li><code>path</code> {string} 路径</li>
-<li><code>filter</code> {Function} 过滤函数，可选。接收一个<code>string</code>参数（文件名），返回一个<code>boolean</code>值。</li>
-</ul>
-<p>列出文件夹path下的满足条件的文件和文件夹的名称的数组。如果不加filter参数，则返回所有文件和文件夹。</p>
-<p>列出sdcard目录下所有文件和文件夹为:</p>
-<pre><code>var arr = files.listDir(&quot;/sdcard/&quot;);
-log(arr);
-</code></pre>
-<p>列出脚本目录下所有js脚本文件为:</p>
-<pre><code>var dir = &quot;/sdcard/脚本/&quot;;
-var jsFiles = files.listDir(dir, function(name)&#123;
-    return name.endsWith(&quot;.js&quot;) &amp;&amp; files.isFile(files.join(dir, name));
-&#125;);
-log(jsFiles);
-</code></pre>
-<h2 id="open-path-mode-“r”-encoding-“utf-8”-bufferSize-8192"><a href="#open-path-mode-“r”-encoding-“utf-8”-bufferSize-8192" class="headerlink" title="open(path[, mode &#x3D; “r”, encoding &#x3D; “utf-8”, bufferSize &#x3D; 8192])"></a><a href="http://doc.autoxjs.com/#/files?id=openpath-mode-quotrquot-encoding-quotutf-8quot-buffersize-8192">open(path[, mode &#x3D; “r”, encoding &#x3D; “utf-8”, bufferSize &#x3D; 8192])</a></h2><ul>
-<li><code>path</code> {string} 文件路径，例如”&#x2F;sdcard&#x2F;1.txt”。</li>
-<li><code>mode</code> {string} 文件打开模式，包括:<ul>
-<li><code>r</code>: 只读文本模式。该模式下只能对文件执行<strong>文本</strong>读取操作。</li>
-<li><code>w</code>: 只写文本模式。该模式下只能对文件执行<strong>文本</strong>覆盖写入操作。</li>
-<li><code>a</code>: 附加文本模式。该模式下将会把写入的文本附加到文件末尾。</li>
-<li><code>rw</code>: 随机读写文本模式。该模式下将会把写入的文本附加到文件末尾。<br>目前暂不支持二进制模式，随机读写模式。</li>
-</ul>
-</li>
-<li><code>encoding</code> {string} 字符编码。</li>
-<li><code>bufferSize</code> {number} 文件读写的缓冲区大小。</li>
-</ul>
-<p>打开一个文件。根据打开模式返回不同的文件对象。包括：</p>
-<ul>
-<li>“r”: 返回一个ReadableTextFile对象。</li>
-<li>“w”, “a”: 返回一个WritableTextFile对象。</li>
-</ul>
-<p>对于”w”模式，如果文件并不存在，则会创建一个，已存在则会清空该文件内容；其他模式文件不存在会抛出FileNotFoundException。</p>
-<h2 id="ReadableTextFile"><a href="#ReadableTextFile" class="headerlink" title="ReadableTextFile"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfile">ReadableTextFile</a></h2><p>可读文件对象。</p>
-<h2 id="ReadableTextFile-read"><a href="#ReadableTextFile-read" class="headerlink" title="ReadableTextFile.read()"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfileread">ReadableTextFile.read()</a></h2><p>返回该文件剩余的所有内容的字符串。</p>
-<h2 id="ReadableTextFile-read-maxCount"><a href="#ReadableTextFile-read-maxCount" class="headerlink" title="ReadableTextFile.read(maxCount)"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfilereadmaxcount">ReadableTextFile.read(maxCount)</a></h2><ul>
-<li><code>maxCount</code> {Number} 最大读取的字符数量</li>
-</ul>
-<p>读取该文件接下来最长为maxCount的字符串并返回。即使文件剩余内容不足maxCount也不会出错。</p>
-<h2 id="ReadableTextFile-readline"><a href="#ReadableTextFile-readline" class="headerlink" title="ReadableTextFile.readline()"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfilereadline">ReadableTextFile.readline()</a></h2><p>读取一行并返回（不包含换行符）。</p>
-<h2 id="ReadableTextFile-readlines"><a href="#ReadableTextFile-readlines" class="headerlink" title="ReadableTextFile.readlines()"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfilereadlines">ReadableTextFile.readlines()</a></h2><p>读取剩余的所有行，并返回它们按顺序组成的字符串数组。</p>
-<h2 id="close"><a href="#close" class="headerlink" title="close()"></a><a href="http://doc.autoxjs.com/#/files?id=close">close()</a></h2><p>关闭该文件。</p>
-<p><strong>打开一个文件不再使用时务必关闭</strong></p>
-<h2 id="PWritableTextFile"><a href="#PWritableTextFile" class="headerlink" title="PWritableTextFile"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfile">PWritableTextFile</a></h2><p>可写文件对象。</p>
-<h2 id="PWritableTextFile-write-text"><a href="#PWritableTextFile-write-text" class="headerlink" title="PWritableTextFile.write(text)"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfilewritetext">PWritableTextFile.write(text)</a></h2><ul>
-<li><code>text</code> {string} 文本</li>
-</ul>
-<p>把文本内容text写入到文件中。</p>
-<h2 id="PWritableTextFile-writeline-line"><a href="#PWritableTextFile-writeline-line" class="headerlink" title="PWritableTextFile.writeline(line)"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfilewritelineline">PWritableTextFile.writeline(line)</a></h2><ul>
-<li><code>text</code> {string} 文本</li>
-</ul>
-<p>把文本line写入到文件中并写入一个换行符。</p>
-<h2 id="PWritableTextFile-writelines-lines"><a href="#PWritableTextFile-writelines-lines" class="headerlink" title="PWritableTextFile.writelines(lines)"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfilewritelineslines">PWritableTextFile.writelines(lines)</a></h2><ul>
-<li><code>lines</code> {Array} 字符串数组</li>
-</ul>
-<p>把很多行写入到文件中….</p>
-<h2 id="PWritableTextFile-flush"><a href="#PWritableTextFile-flush" class="headerlink" title="PWritableTextFile.flush()"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfileflush">PWritableTextFile.flush()</a></h2><p>把缓冲区内容输出到文件中。</p>
-<h2 id="PWritableTextFile-close"><a href="#PWritableTextFile-close" class="headerlink" title="PWritableTextFile.close()"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfileclose">PWritableTextFile.close()</a></h2><p>关闭文件。同时会被缓冲区内容输出到文件。</p>
-<p><strong>打开一个文件写入后，不再使用时务必关闭，否则文件可能会丢失</strong></p>
-]]></content>
-      <categories>
-        <category>软件使用教程</category>
-        <category>autojs</category>
-      </categories>
-      <tags>
-        <tag>AutoX.js</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>本地储存 storages</title>
     <url>//software-use/AutoXjs/storages.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Storages"><a href="#Storages" class="headerlink" title="Storages"></a><a href="http://doc.autoxjs.com/#/storages?id=storages">Storages</a></h2><blockquote>
@@ -15099,6 +14937,254 @@ for(var headerName in res.headers)&#123;
 <h2 id="Response-method"><a href="#Response-method" class="headerlink" title="Response.method"></a><a href="http://doc.autoxjs.com/#/http?id=responsemethod">Response.method</a></h2><ul>
 <li>{string} 当前响应所对应的HTTP请求的方法。例如”GET”, “POST”, “PUT”等。</li>
 </ul>
+]]></content>
+      <categories>
+        <category>软件使用教程</category>
+        <category>autojs</category>
+      </categories>
+      <tags>
+        <tag>AutoX.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文件管理 files</title>
+    <url>//software-use/AutoXjs/files.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Files"><a href="#Files" class="headerlink" title="Files"></a><a href="http://doc.autoxjs.com/#/files?id=files">Files</a></h2><blockquote>
+<p>稳定性: 稳定</p>
+</blockquote>
+<p>files模块提供了一些常见的文件处理，包括文件读写、移动、复制、删掉等。</p>
+<p>一次性的文件读写可以直接使用<code>files.read()</code>, <code>files.write()</code>, <code>files.append()</code>等方便的函数，但如果需要频繁读写或随机读写，则使用<code>open()</code>函数打开一个文件对象来操作文件，并在操作完毕后调用<code>close()</code>函数关闭文件。</p>
+<h2 id="files-isFile-path"><a href="#files-isFile-path" class="headerlink" title="files.isFile(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesisfilepath">files.isFile(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>返回路径path是否是文件。</p>
+<pre><code>log(files.isDir(&quot;/sdcard/文件夹/&quot;)); //返回false
+log(files.isDir(&quot;/sdcard/文件.txt&quot;)); //返回true
+</code></pre>
+<h2 id="files-isDir-path"><a href="#files-isDir-path" class="headerlink" title="files.isDir(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesisdirpath">files.isDir(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>返回路径path是否是文件夹。</p>
+<pre><code>log(files.isDir(&quot;/sdcard/文件夹/&quot;)); //返回true
+log(files.isDir(&quot;/sdcard/文件.txt&quot;)); //返回false
+</code></pre>
+<h2 id="files-isEmptyDir-path"><a href="#files-isEmptyDir-path" class="headerlink" title="files.isEmptyDir(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesisemptydirpath">files.isEmptyDir(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>返回文件夹path是否为空文件夹。如果该路径并非文件夹，则直接返回<code>false</code>。</p>
+<h2 id="files-join-parent-child"><a href="#files-join-parent-child" class="headerlink" title="files.join(parent, child)"></a><a href="http://doc.autoxjs.com/#/files?id=filesjoinparent-child">files.join(parent, child)</a></h2><ul>
+<li><code>parent</code> {string} 父目录路径</li>
+<li><code>child</code> {string} 子路径</li>
+<li>返回 {string}</li>
+</ul>
+<p>连接两个路径并返回，例如<code>files.join(&quot;/sdcard/&quot;, &quot;1.txt&quot;)</code>返回”&#x2F;sdcard&#x2F;1.txt”。</p>
+<h2 id="files-create-path"><a href="#files-create-path" class="headerlink" title="files.create(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filescreatepath">files.create(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>创建一个文件或文件夹并返回是否创建成功。如果文件已经存在，则直接返回<code>false</code>。</p>
+<pre><code>files.create(&quot;/sdcard/新文件夹/&quot;);
+</code></pre>
+<h2 id="files-createWithDirs-path"><a href="#files-createWithDirs-path" class="headerlink" title="files.createWithDirs(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filescreatewithdirspath">files.createWithDirs(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>创建一个文件或文件夹并返回是否创建成功。如果文件所在文件夹不存在，则先创建他所在的一系列文件夹。如果文件已经存在，则直接返回<code>false</code>。</p>
+<pre><code>files.createWithDirs(&quot;/sdcard/新文件夹/新文件夹/新文件夹/1.txt&quot;);
+</code></pre>
+<h2 id="files-exists-path"><a href="#files-exists-path" class="headerlink" title="files.exists(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesexistspath">files.exists(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>返回在路径path处的文件是否存在。</p>
+<h2 id="files-ensureDir-path"><a href="#files-ensureDir-path" class="headerlink" title="files.ensureDir(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesensuredirpath">files.ensureDir(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+</ul>
+<p>确保路径path所在的文件夹存在。如果该路径所在文件夹不存在，则创建该文件夹。</p>
+<p>例如对于路径”&#x2F;sdcard&#x2F;Download&#x2F;ABC&#x2F;1.txt”，如果&#x2F;Download&#x2F;文件夹不存在，则会先创建Download，再创建ABC文件夹。</p>
+<h2 id="files-read-path-encoding-“utf-8”"><a href="#files-read-path-encoding-“utf-8”" class="headerlink" title="files.read(path[, encoding &#x3D; “utf-8”])"></a><a href="http://doc.autoxjs.com/#/files?id=filesreadpath-encoding-quotutf-8quot">files.read(path[, encoding &#x3D; “utf-8”])</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li><code>encoding</code> {string} 字符编码，可选，默认为utf-8</li>
+<li>返回 {string}</li>
+</ul>
+<p>读取文本文件path的所有内容并返回。如果文件不存在，则抛出<code>FileNotFoundException</code>。</p>
+<pre><code>log(files.read(&quot;/sdcard/1.txt&quot;));
+</code></pre>
+<h2 id="files-readBytes-path"><a href="#files-readBytes-path" class="headerlink" title="files.readBytes(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesreadbytespath">files.readBytes(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {byte[]}</li>
+</ul>
+<p>读取文件path的所有内容并返回一个字节数组。如果文件不存在，则抛出<code>FileNotFoundException</code>。</p>
+<p>注意，该数组是Java的数组，不具有JavaScript数组的forEach, slice等函数。</p>
+<p>一个以16进制形式打印文件的例子如下:</p>
+<pre><code>var data = files.readBytes(&quot;/sdcard/1.png&quot;);
+var sb = new java.lang.StringBuilder();
+for(var i = 0; i &lt; data.length; i++)&#123;
+    sb.append(data[i].toString(16));
+&#125;
+log(sb.toString());
+</code></pre>
+<h2 id="files-write-path-text-encoding-“utf-8”"><a href="#files-write-path-text-encoding-“utf-8”" class="headerlink" title="files.write(path, text[, encoding &#x3D; “utf-8”])"></a><a href="http://doc.autoxjs.com/#/files?id=fileswritepath-text-encoding-quotutf-8quot">files.write(path, text[, encoding &#x3D; “utf-8”])</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li><code>text</code> {string} 要写入的文本内容</li>
+<li><code>encoding</code> {string} 字符编码</li>
+</ul>
+<p>把text写入到文件path中。如果文件存在则覆盖，不存在则创建。</p>
+<pre><code>var text = &quot;文件内容&quot;;
+//写入文件
+files.write(&quot;/sdcard/1.txt&quot;, text);
+//用其他应用查看文件
+app.viewFile(&quot;/sdcard/1.txt&quot;);
+</code></pre>
+<h2 id="files-writeBytes-path-bytes"><a href="#files-writeBytes-path-bytes" class="headerlink" title="files.writeBytes(path, bytes)"></a><a href="http://doc.autoxjs.com/#/files?id=fileswritebytespath-bytes">files.writeBytes(path, bytes)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li><code>bytes</code> {byte[]} 字节数组，要写入的二进制数据</li>
+</ul>
+<p>把bytes写入到文件path中。如果文件存在则覆盖，不存在则创建。</p>
+<h2 id="files-append-path-text-encoding-‘utf-8’"><a href="#files-append-path-text-encoding-‘utf-8’" class="headerlink" title="files.append(path, text[, encoding &#x3D; ‘utf-8’])"></a><a href="http://doc.autoxjs.com/#/files?id=filesappendpath-text-encoding-39utf-839">files.append(path, text[, encoding &#x3D; ‘utf-8’])</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li><code>text</code> {string} 要写入的文本内容</li>
+<li><code>encoding</code> {string} 字符编码</li>
+</ul>
+<p>把text追加到文件path的末尾。如果文件不存在则创建。</p>
+<pre><code>var text = &quot;追加的文件内容&quot;;
+files.append(&quot;/sdcard/1.txt&quot;, text);
+files.append(&quot;/sdcard/1.txt&quot;, text);
+//用其他应用查看文件
+app.viewFile(&quot;/sdcard/1.txt&quot;);
+</code></pre>
+<h2 id="files-appendBytes-path-text-encoding-‘utf-8’"><a href="#files-appendBytes-path-text-encoding-‘utf-8’" class="headerlink" title="files.appendBytes(path, text[, encoding &#x3D; ‘utf-8’])"></a><a href="http://doc.autoxjs.com/#/files?id=filesappendbytespath-text-encoding-39utf-839">files.appendBytes(path, text[, encoding &#x3D; ‘utf-8’])</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li><code>bytes</code> {byte[]} 字节数组，要写入的二进制数据</li>
+</ul>
+<p>把bytes追加到文件path的末尾。如果文件不存在则创建。</p>
+<h2 id="files-copy-fromPath-toPath"><a href="#files-copy-fromPath-toPath" class="headerlink" title="files.copy(fromPath, toPath)"></a><a href="http://doc.autoxjs.com/#/files?id=filescopyfrompath-topath">files.copy(fromPath, toPath)</a></h2><ul>
+<li><code>fromPath</code> {string} 要复制的原文件路径</li>
+<li><code>toPath</code> {string} 复制到的文件路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>复制文件，返回是否复制成功。例如<code>files.copy(&quot;/sdcard/1.txt&quot;, &quot;/sdcard/Download/1.txt&quot;)</code>。</p>
+<h2 id="files-move-fromPath-toPath"><a href="#files-move-fromPath-toPath" class="headerlink" title="files.move(fromPath, toPath)"></a><a href="http://doc.autoxjs.com/#/files?id=filesmovefrompath-topath">files.move(fromPath, toPath)</a></h2><ul>
+<li><code>fromPath</code> {string} 要移动的原文件路径</li>
+<li><code>toPath</code> {string} 移动到的文件路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>移动文件，返回是否移动成功。例如<code>files.move(&quot;/sdcard/1.txt&quot;, &quot;/sdcard/Download/1.txt&quot;)</code>会把1.txt文件从sd卡根目录移动到Download文件夹。</p>
+<h2 id="files-rename-path-newName"><a href="#files-rename-path-newName" class="headerlink" title="files.rename(path, newName)"></a><a href="http://doc.autoxjs.com/#/files?id=filesrenamepath-newname">files.rename(path, newName)</a></h2><ul>
+<li><code>path</code> {string} 要重命名的原文件路径</li>
+<li><code>newName</code> {string} 要重命名的新文件名</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>重命名文件，并返回是否重命名成功。例如<code>files.rename(&quot;/sdcard/1.txt&quot;, &quot;2.txt&quot;)</code>。</p>
+<h2 id="files-renameWithoutExtension-path-newName"><a href="#files-renameWithoutExtension-path-newName" class="headerlink" title="files.renameWithoutExtension(path, newName)"></a><a href="http://doc.autoxjs.com/#/files?id=filesrenamewithoutextensionpath-newname">files.renameWithoutExtension(path, newName)</a></h2><ul>
+<li><code>path</code> {string} 要重命名的原文件路径</li>
+<li><code>newName</code> {string} 要重命名的新文件名</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>重命名文件，不包含拓展名，并返回是否重命名成功。例如<code>files.rename(&quot;/sdcard/1.txt&quot;, &quot;2&quot;)</code>会把”1.txt”重命名为”2.txt”。</p>
+<h2 id="files-getName-path"><a href="#files-getName-path" class="headerlink" title="files.getName(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesgetnamepath">files.getName(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {string}</li>
+</ul>
+<p>返回文件的文件名。例如<code>files.getName(&quot;/sdcard/1.txt&quot;)</code>返回”1.txt”。</p>
+<h2 id="files-getNameWithoutExtension-path"><a href="#files-getNameWithoutExtension-path" class="headerlink" title="files.getNameWithoutExtension(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesgetnamewithoutextensionpath">files.getNameWithoutExtension(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {string}</li>
+</ul>
+<p>返回不含拓展名的文件的文件名。例如<code>files.getName(&quot;/sdcard/1.txt&quot;)</code>返回”1”。</p>
+<h2 id="files-getExtension-path"><a href="#files-getExtension-path" class="headerlink" title="files.getExtension(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesgetextensionpath">files.getExtension(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {string}</li>
+</ul>
+<p>返回文件的拓展名。例如<code>files.getExtension(&quot;/sdcard/1.txt&quot;)</code>返回”txt”。</p>
+<h2 id="files-remove-path"><a href="#files-remove-path" class="headerlink" title="files.remove(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesremovepath">files.remove(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>删除文件或<strong>空文件夹</strong>，返回是否删除成功。</p>
+<h2 id="files-removeDir-path"><a href="#files-removeDir-path" class="headerlink" title="files.removeDir(path)"></a><a href="http://doc.autoxjs.com/#/files?id=filesremovedirpath">files.removeDir(path)</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li><code>path</code> {string} 路径</li>
+<li>返回 {boolean}</li>
+</ul>
+<p>删除文件夹，如果文件夹不为空，则删除该文件夹的所有内容再删除该文件夹，返回是否全部删除成功。</p>
+<h2 id="files-getSdcardPath"><a href="#files-getSdcardPath" class="headerlink" title="files.getSdcardPath()"></a><a href="http://doc.autoxjs.com/#/files?id=filesgetsdcardpath">files.getSdcardPath()</a></h2><ul>
+<li>返回 {string}</li>
+</ul>
+<p>返回SD卡路径。所谓SD卡，即外部存储器。</p>
+<h2 id="files-cwd"><a href="#files-cwd" class="headerlink" title="files.cwd()"></a><a href="http://doc.autoxjs.com/#/files?id=filescwd">files.cwd()</a></h2><ul>
+<li>返回 {string}</li>
+</ul>
+<p>返回脚本的”当前工作文件夹路径”。该路径指的是，如果脚本本身为脚本文件，则返回这个脚本文件所在目录；否则返回<code>null</code>获取其他设定路径。</p>
+<p>例如，对于脚本文件”&#x2F;sdcard&#x2F;脚本&#x2F;1.js”运行<code>files.cwd()</code>返回”&#x2F;sdcard&#x2F;脚本&#x2F;“。</p>
+<h2 id="files-path-relativePath"><a href="#files-path-relativePath" class="headerlink" title="files.path(relativePath)"></a><a href="http://doc.autoxjs.com/#/files?id=filespathrelativepath">files.path(relativePath)</a></h2><ul>
+<li><code>relativePath</code> {string} 相对路径</li>
+<li>返回 {string}</li>
+</ul>
+<p>返回相对路径对应的绝对路径。例如<code>files.path(&quot;./1.png&quot;)</code>，如果运行这个语句的脚本位于文件夹”&#x2F;sdcard&#x2F;脚本&#x2F;“中，则返回<code>&quot;/sdcard/脚本/1.png&quot;</code>。</p>
+<h2 id="files-listDir-path-filter"><a href="#files-listDir-path-filter" class="headerlink" title="files.listDir(path[, filter])"></a><a href="http://doc.autoxjs.com/#/files?id=fileslistdirpath-filter">files.listDir(path[, filter])</a></h2><ul>
+<li><code>path</code> {string} 路径</li>
+<li><code>filter</code> {Function} 过滤函数，可选。接收一个<code>string</code>参数（文件名），返回一个<code>boolean</code>值。</li>
+</ul>
+<p>列出文件夹path下的满足条件的文件和文件夹的名称的数组。如果不加filter参数，则返回所有文件和文件夹。</p>
+<p>列出sdcard目录下所有文件和文件夹为:</p>
+<pre><code>var arr = files.listDir(&quot;/sdcard/&quot;);
+log(arr);
+</code></pre>
+<p>列出脚本目录下所有js脚本文件为:</p>
+<pre><code>var dir = &quot;/sdcard/脚本/&quot;;
+var jsFiles = files.listDir(dir, function(name)&#123;
+    return name.endsWith(&quot;.js&quot;) &amp;&amp; files.isFile(files.join(dir, name));
+&#125;);
+log(jsFiles);
+</code></pre>
+<h2 id="open-path-mode-“r”-encoding-“utf-8”-bufferSize-8192"><a href="#open-path-mode-“r”-encoding-“utf-8”-bufferSize-8192" class="headerlink" title="open(path[, mode &#x3D; “r”, encoding &#x3D; “utf-8”, bufferSize &#x3D; 8192])"></a><a href="http://doc.autoxjs.com/#/files?id=openpath-mode-quotrquot-encoding-quotutf-8quot-buffersize-8192">open(path[, mode &#x3D; “r”, encoding &#x3D; “utf-8”, bufferSize &#x3D; 8192])</a></h2><ul>
+<li><code>path</code> {string} 文件路径，例如”&#x2F;sdcard&#x2F;1.txt”。</li>
+<li><code>mode</code> {string} 文件打开模式，包括:<ul>
+<li><code>r</code>: 只读文本模式。该模式下只能对文件执行<strong>文本</strong>读取操作。</li>
+<li><code>w</code>: 只写文本模式。该模式下只能对文件执行<strong>文本</strong>覆盖写入操作。</li>
+<li><code>a</code>: 附加文本模式。该模式下将会把写入的文本附加到文件末尾。</li>
+<li><code>rw</code>: 随机读写文本模式。该模式下将会把写入的文本附加到文件末尾。<br>目前暂不支持二进制模式，随机读写模式。</li>
+</ul>
+</li>
+<li><code>encoding</code> {string} 字符编码。</li>
+<li><code>bufferSize</code> {number} 文件读写的缓冲区大小。</li>
+</ul>
+<p>打开一个文件。根据打开模式返回不同的文件对象。包括：</p>
+<ul>
+<li>“r”: 返回一个ReadableTextFile对象。</li>
+<li>“w”, “a”: 返回一个WritableTextFile对象。</li>
+</ul>
+<p>对于”w”模式，如果文件并不存在，则会创建一个，已存在则会清空该文件内容；其他模式文件不存在会抛出FileNotFoundException。</p>
+<h2 id="ReadableTextFile"><a href="#ReadableTextFile" class="headerlink" title="ReadableTextFile"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfile">ReadableTextFile</a></h2><p>可读文件对象。</p>
+<h2 id="ReadableTextFile-read"><a href="#ReadableTextFile-read" class="headerlink" title="ReadableTextFile.read()"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfileread">ReadableTextFile.read()</a></h2><p>返回该文件剩余的所有内容的字符串。</p>
+<h2 id="ReadableTextFile-read-maxCount"><a href="#ReadableTextFile-read-maxCount" class="headerlink" title="ReadableTextFile.read(maxCount)"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfilereadmaxcount">ReadableTextFile.read(maxCount)</a></h2><ul>
+<li><code>maxCount</code> {Number} 最大读取的字符数量</li>
+</ul>
+<p>读取该文件接下来最长为maxCount的字符串并返回。即使文件剩余内容不足maxCount也不会出错。</p>
+<h2 id="ReadableTextFile-readline"><a href="#ReadableTextFile-readline" class="headerlink" title="ReadableTextFile.readline()"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfilereadline">ReadableTextFile.readline()</a></h2><p>读取一行并返回（不包含换行符）。</p>
+<h2 id="ReadableTextFile-readlines"><a href="#ReadableTextFile-readlines" class="headerlink" title="ReadableTextFile.readlines()"></a><a href="http://doc.autoxjs.com/#/files?id=readabletextfilereadlines">ReadableTextFile.readlines()</a></h2><p>读取剩余的所有行，并返回它们按顺序组成的字符串数组。</p>
+<h2 id="close"><a href="#close" class="headerlink" title="close()"></a><a href="http://doc.autoxjs.com/#/files?id=close">close()</a></h2><p>关闭该文件。</p>
+<p><strong>打开一个文件不再使用时务必关闭</strong></p>
+<h2 id="PWritableTextFile"><a href="#PWritableTextFile" class="headerlink" title="PWritableTextFile"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfile">PWritableTextFile</a></h2><p>可写文件对象。</p>
+<h2 id="PWritableTextFile-write-text"><a href="#PWritableTextFile-write-text" class="headerlink" title="PWritableTextFile.write(text)"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfilewritetext">PWritableTextFile.write(text)</a></h2><ul>
+<li><code>text</code> {string} 文本</li>
+</ul>
+<p>把文本内容text写入到文件中。</p>
+<h2 id="PWritableTextFile-writeline-line"><a href="#PWritableTextFile-writeline-line" class="headerlink" title="PWritableTextFile.writeline(line)"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfilewritelineline">PWritableTextFile.writeline(line)</a></h2><ul>
+<li><code>text</code> {string} 文本</li>
+</ul>
+<p>把文本line写入到文件中并写入一个换行符。</p>
+<h2 id="PWritableTextFile-writelines-lines"><a href="#PWritableTextFile-writelines-lines" class="headerlink" title="PWritableTextFile.writelines(lines)"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfilewritelineslines">PWritableTextFile.writelines(lines)</a></h2><ul>
+<li><code>lines</code> {Array} 字符串数组</li>
+</ul>
+<p>把很多行写入到文件中….</p>
+<h2 id="PWritableTextFile-flush"><a href="#PWritableTextFile-flush" class="headerlink" title="PWritableTextFile.flush()"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfileflush">PWritableTextFile.flush()</a></h2><p>把缓冲区内容输出到文件中。</p>
+<h2 id="PWritableTextFile-close"><a href="#PWritableTextFile-close" class="headerlink" title="PWritableTextFile.close()"></a><a href="http://doc.autoxjs.com/#/files?id=pwritabletextfileclose">PWritableTextFile.close()</a></h2><p>关闭文件。同时会被缓冲区内容输出到文件。</p>
+<p><strong>打开一个文件写入后，不再使用时务必关闭，否则文件可能会丢失</strong></p>
 ]]></content>
       <categories>
         <category>软件使用教程</category>
