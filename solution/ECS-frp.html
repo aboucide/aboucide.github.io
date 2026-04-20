@@ -1,0 +1,406 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>云服务器搭建内网穿透服务 | 源途记</title><meta name="author" content="Yuan"><meta name="copyright" content="Yuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="使用ECS搭建内网穿透。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="云服务器搭建内网穿透服务">
+<meta property="og:url" content="https://github.com/aboucide/aboucide.github.io.git/solution/ECS-frp.html">
+<meta property="og:site_name" content="源途记">
+<meta property="og:description" content="使用ECS搭建内网穿透。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg">
+<meta property="article:published_time" content="2026-04-11T18:55:17.000Z">
+<meta property="article:modified_time" content="2026-04-20T13:44:26.674Z">
+<meta property="article:author" content="Yuan">
+<meta property="article:tag" content="frp">
+<meta property="article:tag" content="ECS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/aboucide/aboucide.github.io.git/solution/ECS-frp.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-3082128886989266',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4901b9157b9977471169d4b6f8d60640";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4MHS6HL58"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D4MHS6HL58');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "nr4zxz4vpa");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":180,"position":"top","messagePrev":"这篇文章已经发布","messageNext":"天了，请注意考虑本文内容是否失效，仅作参考使用."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '云服务器搭建内网穿透服务',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-04-20 13:44:26'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer-when-downgrade" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">77</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">48</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://dlink.host/wx2.sinaimg.cn/large/007ERWx2ly8hzlf1o7457j31yl0u0alu.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="源途记"><span class="site-name">源途记</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-navicon"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/categories/note/"><i class="fa-fw fas fa fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-screwdriver-wrench"></i><span> OL tool</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/OLtool/m3u8-downloader/index-m3u8.html"><span> m3u8视频下载</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-file-code"></i><span> HTML学习记录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Demo/"><i class="fa-fw far fa-file-code"></i><span> all html demo</span></a></li><li><a class="site-page child" href="/html/html-learn-paiban.html"><i class="fa-fw fas fa-code"></i><span> 1、排版标签</span></a></li><li><a class="site-page child" href="/html/html-learn-table.html"><i class="fa-fw fas fa-code"></i><span> 2、表格的使用</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">云服务器搭建内网穿透服务<a class="post-edit-link" href="https://github.com/aboucide/hexo-blog-source/tree/main/source/_posts/云服务器搭建内网穿透服务.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表日期</span><time class="post-meta-date-created" datetime="2026-04-11T18:55:17.000Z" title="发表日期 2026-04-11 18:55:17">2026-04-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">最近更新日期</span><time class="post-meta-date-updated" datetime="2026-04-20T13:44:26.674Z" title="最近更新日期 2026-04-20 13:44:26">2026-04-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/solution/">折腾记录</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="云服务器搭建内网穿透服务"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">本文总阅读次数:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="一、环境搭建"><a href="#一、环境搭建" class="headerlink" title="一、环境搭建"></a>一、环境搭建</h1><h2 id="第一步：连接到你的云服务器"><a href="#第一步：连接到你的云服务器" class="headerlink" title="第一步：连接到你的云服务器"></a>第一步：连接到你的云服务器</h2><p>我这使用的是 SSH连接。</p>
+<h2 id="第二步：更新系统软件包（保持系统最新）"><a href="#第二步：更新系统软件包（保持系统最新）" class="headerlink" title="第二步：更新系统软件包（保持系统最新）"></a>第二步：更新系统软件包（保持系统最新）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update &amp;&amp; apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<p><strong>作用</strong>：更新软件源列表并升级所有已安装的软件包，确保系统安全和稳定。</p>
+<h2 id="第三步：安装-frp-服务端-frps"><a href="#第三步：安装-frp-服务端-frps" class="headerlink" title="第三步：安装 frp 服务端 (frps)"></a>第三步：安装 frp 服务端 (frps)</h2><p>frp 是一个轻量级的内网穿透工具，服务端运行在你的云服务器上，负责接收公网请求并转发到内网。</p>
+<h3 id="3-1-下载-frp"><a href="#3-1-下载-frp" class="headerlink" title="3.1 下载 frp"></a>3.1 下载 frp</h3><p>去<a href="https://github.com/fatedier/frp/releases">frp发布页</a>查询目前最新版本，然后复制对应版本的文件连接，使用以下命令进行下载。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /root</span><br><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.68.0/frp_0.68.0_linux_arm64.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p><strong>作用</strong>：从 GitHub 下载 frp 0.68.0 版本的 Linux 压缩包。</p>
+<p>由于服务器网络问题，我这里选用的是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://ghproxy.net/https://github.com/fatedier/frp/releases/download/v0.68.0/frp_0.68.0_linux_arm64.tar.gz</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-2-解压"><a href="#3-2-解压" class="headerlink" title="3.2 解压"></a>3.2 解压</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf frp_0.68.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p><strong>作用</strong>：解压得到 <code>frp_0.68.0_linux_amd64</code> 文件夹。</p>
+<h3 id="3-3-进入文件夹并查看内容"><a href="#3-3-进入文件夹并查看内容" class="headerlink" title="3.3 进入文件夹并查看内容"></a>3.3 进入文件夹并查看内容</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd frp_0.68.0_linux_amd64</span><br><span class="line">ls -l</span><br></pre></td></tr></table></figure>
+
+<p>你会看到 <code>frps</code> 和 <code>frps.toml</code> 等文件。<code>frps</code> 是服务端程序，<code>frps.toml</code> 是配置文件。</p>
+<h3 id="3-4-配置-frps"><a href="#3-4-配置-frps" class="headerlink" title="3.4 配置 frps"></a>3.4 配置 frps</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano frps.toml</span><br></pre></td></tr></table></figure>
+
+<p>删除原有内容，输入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">bindPort = 7000</span><br><span class="line">vhostHTTPPort = 8080</span><br><span class="line">vhostHTTPSPort = 8443</span><br></pre></td></tr></table></figure>
+
+<p>按 <code>Ctrl+X</code>，按 <code>Y</code>，按 <code>Enter</code> 保存。</p>
+<p><strong>作用</strong>：</p>
+<ul>
+<li><code>bindPort = 7000</code>：frp 客户端（你内网的 frpc）连接此端口建立隧道。</li>
+<li><code>vhostHTTPPort = 8080</code>：frp 将接收到的 HTTP 流量转发到此端口，之后由 Nginx 接收。</li>
+<li><code>vhostHTTPSPort = 8443</code>：类似，用于 HTTPS 流量。</li>
+</ul>
+<h3 id="3-5-测试运行-frps"><a href="#3-5-测试运行-frps" class="headerlink" title="3.5 测试运行 frps"></a>3.5 测试运行 frps</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./frps -c frps.toml</span><br></pre></td></tr></table></figure>
+
+<p>如果看到 <code>start frps success</code> 字样，按 <code>Ctrl+C</code> 停止。测试通过后，我们把它做成系统服务。</p>
+<h3 id="3-6-创建-systemd-服务（实现开机自启）"><a href="#3-6-创建-systemd-服务（实现开机自启）" class="headerlink" title="3.6 创建 systemd 服务（实现开机自启）"></a>3.6 创建 systemd 服务（实现开机自启）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/systemd/system/frps.service</span><br></pre></td></tr></table></figure>
+
+<p>粘贴以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Frp Server</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">WorkingDirectory=/root/frp_0.61.0_linux_amd64</span><br><span class="line">ExecStart=/root/frp_0.61.0_linux_amd64/frps -c /root/frp_0.61.0_linux_amd64/frps.toml</span><br><span class="line">Restart=on-failure</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>保存退出。</p>
+<p><strong>作用</strong>：让 systemd 管理 frps，开机自动启动，异常退出时会自动重启。</p>
+<h3 id="3-7-启动-frps-服务"><a href="#3-7-启动-frps-服务" class="headerlink" title="3.7 启动 frps 服务"></a>3.7 启动 frps 服务</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl enable frps --now</span><br></pre></td></tr></table></figure>
+
+<p><strong>作用</strong>：重新加载 systemd 配置，设置 frps 开机自启并立即启动。</p>
+<h3 id="3-8-检查状态"><a href="#3-8-检查状态" class="headerlink" title="3.8 检查状态"></a>3.8 检查状态</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status frps</span><br></pre></td></tr></table></figure>
+
+<p>应该显示 <code>active (running)</code>。</p>
+<p>确认状态显示 <code>active (running)</code> 后，按 <code>q</code> 退出。</p>
+<h2 id="第四步：安装-Nginx（作为公网入口）"><a href="#第四步：安装-Nginx（作为公网入口）" class="headerlink" title="第四步：安装 Nginx（作为公网入口）"></a>第四步：安装 Nginx（作为公网入口）</h2><p>Nginx 是一个高性能的 Web 服务器和反向代理。这里它负责接收来自公网的 HTTP&#x2F;HTTPS 请求，并根据域名转发给 frp 的虚拟主机端口。</p>
+<h3 id="4-1-安装-Nginx"><a href="#4-1-安装-Nginx" class="headerlink" title="4.1 安装 Nginx"></a>4.1 安装 Nginx</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install nginx -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-验证-Nginx-是否运行"><a href="#4-2-验证-Nginx-是否运行" class="headerlink" title="4.2 验证 Nginx 是否运行"></a>4.2 验证 Nginx 是否运行</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status nginx</span><br></pre></td></tr></table></figure>
+
+<p>浏览器访问 <code>http://120.79.200.141</code>，应该能看到 Nginx 欢迎页。</p>
+<h2 id="第五步、在内网服务器上安装frp客户端"><a href="#第五步、在内网服务器上安装frp客户端" class="headerlink" title="第五步、在内网服务器上安装frp客户端"></a>第五步、在内网服务器上安装frp客户端</h2><p>假设你已经可以通过 SSH 登录到 <code>192.168.3.69</code>（或者在那台机器上直接操作）。</p>
+<p>内网服务器通常需要通过本地网络访问。假设你有一台电脑在内网，可以用 SSH 连接 <code>192.168.3.69</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /root</span><br><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.68.0/frp_0.68.0_linux_amd64.tar.gz</span><br><span class="line">tar -zxvf frp_0.68.0_linux_amd64.tar.gz</span><br><span class="line">cd frp_0.68.0_linux_amd64</span><br></pre></td></tr></table></figure>
+<p>只需要 <code>frpc</code> 和 <code>frpc.toml</code>两个文件即可。</p>
+<p>至此环境搭建已经完成。</p>
+<hr>
+<h1 id="二、开始配置内网穿透"><a href="#二、开始配置内网穿透" class="headerlink" title="二、开始配置内网穿透"></a>二、开始配置内网穿透</h1><p>假设你有两个网站：<code>site1.example.com</code> 和 <code>site2.example.com</code>（请替换为你自己的真实域名）。</p>
+<h2 id="1、域名解析"><a href="#1、域名解析" class="headerlink" title="1、域名解析"></a>1、域名解析</h2><p>去你的域名服务商（如阿里云、Cloudflare）添加 A 记录：</p>
+<ul>
+<li>主机记录 <code>site1</code> → 记录值 <code>120.79.200.141</code></li>
+<li>主机记录 <code>site2</code> → 记录值 <code>120.79.200.141</code></li>
+</ul>
+<p>（如果你用的是二级域名如 <code>site1.example.com</code>，主机记录填 <code>site1</code>）</p>
+<p>等待 DNS 生效（通常<strong>几分钟</strong>到几小时）。</p>
+<p>然后继续完成以下步骤：</p>
+<h2 id="2、在云服务器创建网站的配置文件"><a href="#2、在云服务器创建网站的配置文件" class="headerlink" title="2、在云服务器创建网站的配置文件"></a>2、在云服务器创建网站的配置文件</h2><p>创建配置文件，第一个网站：site1.example.com<br>连接云服务器，执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/nginx/sites-available/site1</span><br></pre></td></tr></table></figure>
+
+<p>粘贴以下内容（注意把 <code>site1.example.com</code> 换成你的域名）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name site1.example.com;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:8080;</span><br><span class="line">        proxy_set_header Host $host;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header X-Forwarded-Proto $scheme;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>保存退出。</p>
+<p><strong>作用</strong>：当用户访问 <code>site1.example.com</code> 时，云服务器上的Nginx 将请求转发到家里的 <code>8080</code> 端口（即 frps 监听的 HTTP 虚拟主机端口）。</p>
+<hr>
+<p>创建第二个网站的配置文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/nginx/sites-available/site2</span><br></pre></td></tr></table></figure>
+<p>内容类似，把 <code>server_name</code> 换成第二个域名。</p>
+<h2 id="3、启用站点"><a href="#3、启用站点" class="headerlink" title="3、启用站点"></a>3、启用站点</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /etc/nginx/sites-available/site1 /etc/nginx/sites-enabled/</span><br><span class="line">ln -s /etc/nginx/sites-available/site2 /etc/nginx/sites-enabled/</span><br></pre></td></tr></table></figure>
+
+<p><strong>作用</strong>：在 <code>sites-enabled</code> 目录创建符号链接，Nginx 会加载这些配置。</p>
+<h2 id="4、测试-Nginx-配置语法"><a href="#4、测试-Nginx-配置语法" class="headerlink" title="4、测试 Nginx 配置语法"></a>4、测试 Nginx 配置语法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -t</span><br></pre></td></tr></table></figure>
+
+<p>如果显示 <code>syntax is ok</code> 和 <code>test is successful</code>，则配置正确。</p>
+<h2 id="5、重载-Nginx-使配置生效"><a href="#5、重载-Nginx-使配置生效" class="headerlink" title="5、重载 Nginx 使配置生效"></a>5、重载 Nginx 使配置生效</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl reload nginx</span><br></pre></td></tr></table></figure>
+
+<h2 id="6、开放云服务器防火墙和安全组"><a href="#6、开放云服务器防火墙和安全组" class="headerlink" title="6、开放云服务器防火墙和安全组"></a>6、开放云服务器防火墙和安全组</h2><h3 id="6-1-检查-ufw-状态"><a href="#6-1-检查-ufw-状态" class="headerlink" title="6.1 检查 ufw 状态"></a>6.1 检查 ufw 状态</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ufw status</span><br></pre></td></tr></table></figure>
+
+<p>如果显示 <code>inactive</code>，跳过；如果 <code>active</code>，则需要放行端口。</p>
+<h3 id="6-2-放行云服务器的必要端口（如果-ufw-开启）"><a href="#6-2-放行云服务器的必要端口（如果-ufw-开启）" class="headerlink" title="6.2 放行云服务器的必要端口（如果 ufw 开启）"></a>6.2 放行云服务器的必要端口（如果 ufw 开启）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ufw allow 22/tcp   # SSH</span><br><span class="line">ufw allow 80/tcp   # HTTP</span><br><span class="line">ufw allow 443/tcp  # HTTPS（将来用）</span><br><span class="line">ufw allow 7000/tcp # frp 控制端口</span><br></pre></td></tr></table></figure>
+
+<p>然后 <code>ufw reload</code>。</p>
+<h3 id="6-3-阿里云安全组设置（非常重要）"><a href="#6-3-阿里云安全组设置（非常重要）" class="headerlink" title="6.3 阿里云安全组设置（非常重要）"></a>6.3 阿里云安全组设置（非常重要）</h3><p>登录阿里云控制台，找到你的实例 → 安全组 → 配置规则 → 添加入方向：</p>
+<ul>
+<li>端口：80&#x2F;80，授权对象：0.0.0.0&#x2F;0</li>
+<li>端口：443&#x2F;443，授权对象：0.0.0.0&#x2F;0</li>
+<li>端口：7000&#x2F;7000，授权对象：0.0.0.0&#x2F;0</li>
+</ul>
+<p><strong>作用</strong>：允许公网访问这些端口。</p>
+<hr>
+<h2 id="在内网服务器（192-168-3-69）上配置-frp-客户端-frpc"><a href="#在内网服务器（192-168-3-69）上配置-frp-客户端-frpc" class="headerlink" title="在内网服务器（192.168.3.69）上配置 frp 客户端 (frpc)"></a>在内网服务器（192.168.3.69）上配置 frp 客户端 (frpc)</h2><p>假设你已经可以通过 SSH 登录到 <code>192.168.3.69</code>（或者在那台机器上直接操作）。</p>
+<p>内网服务器通常需要通过本地网络访问。假设你有一台电脑在内网，可以用 SSH 连接 <code>192.168.3.69</code>。</p>
+<h3 id="1、-配置-frpc-toml"><a href="#1、-配置-frpc-toml" class="headerlink" title="1、 配置 frpc.toml"></a>1、 配置 frpc.toml</h3><p>打开<code>frpc.toml</code>文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano frpc.toml</span><br></pre></td></tr></table></figure>
+
+<p>输入以下内容（注意修改域名和本地端口）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">serverAddr = &quot;120.79.200.141&quot;</span><br><span class="line">serverPort = 7000</span><br><span class="line"></span><br><span class="line">[[proxies]]</span><br><span class="line">name = &quot;site1&quot;</span><br><span class="line">type = &quot;http&quot;</span><br><span class="line">localIP = &quot;127.0.0.1&quot;</span><br><span class="line">localPort = 3000        # 内网服务器上 site1 的端口</span><br><span class="line">customDomains = [&quot;site1.example.com&quot;]</span><br><span class="line"></span><br><span class="line">[[proxies]]</span><br><span class="line">name = &quot;site2&quot;</span><br><span class="line">type = &quot;http&quot;</span><br><span class="line">localIP = &quot;127.0.0.1&quot;</span><br><span class="line">localPort = 3001        # 内网服务器上 site2 的端口</span><br><span class="line">customDomains = [&quot;site2.example.com&quot;]</span><br></pre></td></tr></table></figure>
+
+<p>保存退出。</p>
+<p><strong>作用</strong>：告诉 frpc 连接到你的云服务器，并将指定域名的 HTTP 请求转发到内网服务器的对应端口。</p>
+<h3 id="2、测试运行-frpc"><a href="#2、测试运行-frpc" class="headerlink" title="2、测试运行 frpc"></a>2、测试运行 frpc</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./frpc -c frpc.toml</span><br></pre></td></tr></table></figure>
+
+<p>如果看到 <code>start proxy success</code>，说明隧道建立成功。按 <code>Ctrl+C</code> 停止，然后我们让它后台运行。</p>
+<h3 id="3、使用-systemd-管理-frpc（可选，推荐）"><a href="#3、使用-systemd-管理-frpc（可选，推荐）" class="headerlink" title="3、使用 systemd 管理 frpc（可选，推荐）"></a>3、使用 systemd 管理 frpc（可选，推荐）</h3><p>类似云服务器，创建服务文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/systemd/system/frpc.service</span><br></pre></td></tr></table></figure>
+
+<p>内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Frp Client</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">WorkingDirectory=/root/frp_0.61.0_linux_amd64</span><br><span class="line">ExecStart=/root/frp_0.61.0_linux_amd64/frpc -c /root/frp_0.61.0_linux_amd64/frpc.toml</span><br><span class="line">Restart=on-failure</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+
+
+<p>启动：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl enable frpc --now</span><br><span class="line">systemctl status frpc</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="第八步：测试访问"><a href="#第八步：测试访问" class="headerlink" title="第八步：测试访问"></a>第八步：测试访问</h2><p>在内网服务器上确保你的网站服务正在运行（例如 <code>python -m http.server 3000</code> 测试）。然后在外网用浏览器访问 <code>http://site1.example.com</code>，应该能看到你的网站内容。</p>
+<hr>
+<h2 id="常见问题排查"><a href="#常见问题排查" class="headerlink" title="常见问题排查"></a>常见问题排查</h2><ol>
+<li><strong>访问不了</strong>：检查云服务器安全组是否开放 80 端口；检查 Nginx 配置中的 <code>server_name</code> 是否与域名完全一致；检查 frpc 日志（<code>journalctl -u frpc -f</code>）。</li>
+<li><strong>502 Bad Gateway</strong>：frps 未运行或端口不对；检查 frps 的 <code>vhostHTTPPort</code> 是否 8080，Nginx 的 <code>proxy_pass</code> 是否指向 <code>http://127.0.0.1:8080</code>。</li>
+<li><strong>404 Not Found</strong>：frpc 配置中的 <code>customDomains</code> 可能未匹配上，或者内网网站服务未启动。</li>
+</ol>
+<hr>
+<h2 id="移动frp和配置文件到指定目录启动"><a href="#移动frp和配置文件到指定目录启动" class="headerlink" title="移动frp和配置文件到指定目录启动"></a>移动frp和配置文件到指定目录启动</h2><p>（这一步用不着，只是我喜欢把软件放在指定目录，方便管理）</p>
+<h3 id="移动-frpc-可执行文件和配置文件"><a href="#移动-frpc-可执行文件和配置文件" class="headerlink" title="移动 frpc 可执行文件和配置文件"></a>移动 frpc 可执行文件和配置文件</h3><p>假设你当前 frpc 在 <code>/home/risespark/frp/</code> 目录下：</p>
+<p>我想把frpc和配置文件移动到指定目录<code>&quot;/mnt/1T-disk/DIY-docker配置文件/我的阿里云服务器-内网穿透/&quot;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 移动 frpc 可执行文件到新目录</span><br><span class="line">sudo mv /home/risespark/frp/frpc &quot;/mnt/1T-disk/DIY-docker配置文件/我的阿里云服务器-内网穿透/&quot;</span><br><span class="line"></span><br><span class="line"># 移动配置文件 frpc.toml</span><br><span class="line">sudo mv /home/risespark/frp/frpc.toml &quot;/mnt/1T-disk/DIY-docker配置文件/我的阿里云服务器-内网穿透/&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>创建一个软链接</strong>到简单路径，这样既保留你的目录结构，又避免 systemd 解析问题</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 1. 创建一个无空格无中文的软链接目录</span><br><span class="line">sudo ln -s &quot;/mnt/1T-disk/DIY-docker配置文件/我的阿里云服务器-内网穿透&quot; /opt/frpc-data</span><br><span class="line"></span><br><span class="line"># 2. 验证软链接</span><br><span class="line">ls -l /opt/frpc-data</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="修改-systemd-服务文件"><a href="#修改-systemd-服务文件" class="headerlink" title="修改 systemd 服务文件"></a>修改 systemd 服务文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/systemd/system/frpc.service</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Frp Client Service</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">User=root</span><br><span class="line">WorkingDirectory=/opt/frpc-data</span><br><span class="line">ExecStart=/opt/frpc-data/frpc -c /opt/frpc-data/frpc.toml</span><br><span class="line">Restart=on-failure</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>保存退出。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 3. 确保 frpc 可执行权限</span><br><span class="line">sudo chmod +x /opt/frpc-data/frpc</span><br><span class="line"></span><br><span class="line"># 4. 重新加载并重启</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart frpc</span><br><span class="line">sudo systemctl status frpc</span><br></pre></td></tr></table></figure>
+
+<p>这样应该不会再报错，并且配置文件和程序仍然实际存储在你指定的中文目录下（通过软链接访问）。</p>
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo journalctl -u frpc -n 20</span><br></pre></td></tr></table></figure>
+
+<p>应该看到 <code>start proxy success</code>。</p>
+<p>然后测试访问网站。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/frp/">frp</a><a class="post-meta__tags" href="/tags/ECS/">ECS</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>点我对博主进行赞赏——最真诚的认可🍻！</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/paymentCode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/images/paymentCode/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/paymentCode/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/note/1.html" title="数组1"><div class="cover" style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">数组1</div></div></a></div><div class="next-post pull-right"><a href="/solution/tablebook.html" title="tablebook从零搭建教程-从安装到部署全流程"><img class="cover" src="https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8ibsoehcgdej31qd0u0460.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">tablebook从零搭建教程-从安装到部署全流程</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://puui.qpic.cn/vpic_cover/l3165317c7s/l3165317c7s_hz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yuan</div><div class="author-info__description">日拱一卒，不期而至</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">77</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">48</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div><a id="card-info-btn" href="mailto:aboucide@qq.com"><i class="fab fa fa-envelope"></i><span>联系我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:aboucide@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">1.</span> <span class="toc-text">一、环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E8%BF%9E%E6%8E%A5%E5%88%B0%E4%BD%A0%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">1.1.</span> <span class="toc-text">第一步：连接到你的云服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E6%9B%B4%E6%96%B0%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%8C%85%EF%BC%88%E4%BF%9D%E6%8C%81%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">第二步：更新系统软件包（保持系统最新）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E5%AE%89%E8%A3%85-frp-%E6%9C%8D%E5%8A%A1%E7%AB%AF-frps"><span class="toc-number">1.3.</span> <span class="toc-text">第三步：安装 frp 服务端 (frps)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E4%B8%8B%E8%BD%BD-frp"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 下载 frp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E8%A7%A3%E5%8E%8B"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 解压</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E8%BF%9B%E5%85%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E5%B9%B6%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AE%B9"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.3 进入文件夹并查看内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E9%85%8D%E7%BD%AE-frps"><span class="toc-number">1.3.4.</span> <span class="toc-text">3.4 配置 frps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E6%B5%8B%E8%AF%95%E8%BF%90%E8%A1%8C-frps"><span class="toc-number">1.3.5.</span> <span class="toc-text">3.5 测试运行 frps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-%E5%88%9B%E5%BB%BA-systemd-%E6%9C%8D%E5%8A%A1%EF%BC%88%E5%AE%9E%E7%8E%B0%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%EF%BC%89"><span class="toc-number">1.3.6.</span> <span class="toc-text">3.6 创建 systemd 服务（实现开机自启）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-%E5%90%AF%E5%8A%A8-frps-%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.3.7.</span> <span class="toc-text">3.7 启动 frps 服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8-%E6%A3%80%E6%9F%A5%E7%8A%B6%E6%80%81"><span class="toc-number">1.3.8.</span> <span class="toc-text">3.8 检查状态</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E5%AE%89%E8%A3%85-Nginx%EF%BC%88%E4%BD%9C%E4%B8%BA%E5%85%AC%E7%BD%91%E5%85%A5%E5%8F%A3%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">第四步：安装 Nginx（作为公网入口）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%AE%89%E8%A3%85-Nginx"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 安装 Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E9%AA%8C%E8%AF%81-Nginx-%E6%98%AF%E5%90%A6%E8%BF%90%E8%A1%8C"><span class="toc-number">1.4.2.</span> <span class="toc-text">4.2 验证 Nginx 是否运行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5%E3%80%81%E5%9C%A8%E5%86%85%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E5%AE%89%E8%A3%85frp%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-number">1.5.</span> <span class="toc-text">第五步、在内网服务器上安装frp客户端</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AE%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F"><span class="toc-number">2.</span> <span class="toc-text">二、开始配置内网穿透</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="toc-number">2.1.</span> <span class="toc-text">1、域名解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">2、在云服务器创建网站的配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%90%AF%E7%94%A8%E7%AB%99%E7%82%B9"><span class="toc-number">2.3.</span> <span class="toc-text">3、启用站点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E6%B5%8B%E8%AF%95-Nginx-%E9%85%8D%E7%BD%AE%E8%AF%AD%E6%B3%95"><span class="toc-number">2.4.</span> <span class="toc-text">4、测试 Nginx 配置语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E9%87%8D%E8%BD%BD-Nginx-%E4%BD%BF%E9%85%8D%E7%BD%AE%E7%94%9F%E6%95%88"><span class="toc-number">2.5.</span> <span class="toc-text">5、重载 Nginx 使配置生效</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E5%BC%80%E6%94%BE%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%98%B2%E7%81%AB%E5%A2%99%E5%92%8C%E5%AE%89%E5%85%A8%E7%BB%84"><span class="toc-number">2.6.</span> <span class="toc-text">6、开放云服务器防火墙和安全组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E6%A3%80%E6%9F%A5-ufw-%E7%8A%B6%E6%80%81"><span class="toc-number">2.6.1.</span> <span class="toc-text">6.1 检查 ufw 状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E6%94%BE%E8%A1%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%BF%85%E8%A6%81%E7%AB%AF%E5%8F%A3%EF%BC%88%E5%A6%82%E6%9E%9C-ufw-%E5%BC%80%E5%90%AF%EF%BC%89"><span class="toc-number">2.6.2.</span> <span class="toc-text">6.2 放行云服务器的必要端口（如果 ufw 开启）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E9%98%BF%E9%87%8C%E4%BA%91%E5%AE%89%E5%85%A8%E7%BB%84%E8%AE%BE%E7%BD%AE%EF%BC%88%E9%9D%9E%E5%B8%B8%E9%87%8D%E8%A6%81%EF%BC%89"><span class="toc-number">2.6.3.</span> <span class="toc-text">6.3 阿里云安全组设置（非常重要）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E5%86%85%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88192-168-3-69%EF%BC%89%E4%B8%8A%E9%85%8D%E7%BD%AE-frp-%E5%AE%A2%E6%88%B7%E7%AB%AF-frpc"><span class="toc-number">2.7.</span> <span class="toc-text">在内网服务器（192.168.3.69）上配置 frp 客户端 (frpc)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81-%E9%85%8D%E7%BD%AE-frpc-toml"><span class="toc-number">2.7.1.</span> <span class="toc-text">1、 配置 frpc.toml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E6%B5%8B%E8%AF%95%E8%BF%90%E8%A1%8C-frpc"><span class="toc-number">2.7.2.</span> <span class="toc-text">2、测试运行 frpc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E4%BD%BF%E7%94%A8-systemd-%E7%AE%A1%E7%90%86-frpc%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%8C%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">2.7.3.</span> <span class="toc-text">3、使用 systemd 管理 frpc（可选，推荐）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E6%AD%A5%EF%BC%9A%E6%B5%8B%E8%AF%95%E8%AE%BF%E9%97%AE"><span class="toc-number">2.8.</span> <span class="toc-text">第八步：测试访问</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5"><span class="toc-number">2.9.</span> <span class="toc-text">常见问题排查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8frp%E5%92%8C%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%88%B0%E6%8C%87%E5%AE%9A%E7%9B%AE%E5%BD%95%E5%90%AF%E5%8A%A8"><span class="toc-number">2.10.</span> <span class="toc-text">移动frp和配置文件到指定目录启动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8-frpc-%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.10.1.</span> <span class="toc-text">移动 frpc 可执行文件和配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-systemd-%E6%9C%8D%E5%8A%A1%E6%96%87%E4%BB%B6"><span class="toc-number">2.10.2.</span> <span class="toc-text">修改 systemd 服务文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81"><span class="toc-number">2.10.3.</span> <span class="toc-text">验证</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/note/driving-test/subject-2-exercises.html" title="科目二——习题讲解">科目二——习题讲解</a><time datetime="2026-04-15T00:00:00.000Z" title="发表日期 2026-04-15 00:00:00">2026-04-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/note/driving-test/subject-1-point-deduction-rules.html" title="科目一扣分题完整清单（12/9/6/3/1分五档）附速记口诀">科目一扣分题完整清单（12/9/6/3/1分五档）附速记口诀</a><time datetime="2026-04-15T00:00:00.000Z" title="发表日期 2026-04-15 00:00:00">2026-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/note/1.html" title="数组1"><div style="background: 【可选】文章缩略图(若无top_img,文章页顶部将显，可设为false/图片地址/留空)"></div></a><div class="content"><a class="title" href="/note/1.html" title="数组1">数组1</a><time datetime="2026-04-14T22:31:49.000Z" title="发表日期 2026-04-14 22:31:49">2026-04-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/solution/ECS-frp.html" title="云服务器搭建内网穿透服务">云服务器搭建内网穿透服务</a><time datetime="2026-04-11T18:55:17.000Z" title="发表日期 2026-04-11 18:55:17">2026-04-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/solution/tablebook.html" title="tablebook从零搭建教程-从安装到部署全流程"><img src="https://dlink.host/wx3.sinaimg.cn/large/007ERWx2ly8ibsoehcgdej31qd0u0460.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="tablebook从零搭建教程-从安装到部署全流程"/></a><div class="content"><a class="title" href="/solution/tablebook.html" title="tablebook从零搭建教程-从安装到部署全流程">tablebook从零搭建教程-从安装到部署全流程</a><time datetime="2026-03-30T14:27:12.000Z" title="发表日期 2026-03-30 14:27:12">2026-03-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By Yuan</div><div class="framework-info"><span>本博客框架基于 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>本博客使用的主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'aboucide/hexo-aboucide-comment',
+      'data-repo-id': 'R_kgDOM8yVSQ',
+      'data-category-id': 'DIC_kwDOM8yVSc4CjJFp',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
